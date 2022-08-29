@@ -1,3 +1,4 @@
+
 //function for Media Query menu animation
 const navSlide=()=>{
     const burger= document.querySelector('.burger');
@@ -13,4 +14,5 @@ const navSlide=()=>{
     });
 }
 navSlide();
+
 

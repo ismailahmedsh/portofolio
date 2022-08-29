@@ -55,7 +55,7 @@
 
 
 
-
+    /*main page*/
     .homepage-card{
         display: flex;
     }
@@ -79,6 +79,36 @@
         padding: 10px 30px;
         z-index: 1;
     }
+    /*main page section 2*/
+    .section-two{
+        min-height: 100vh;
+    }
+    .section-two div{
+        margin:5%;
+    }
+    .section-two .aboutme-name{
+        justify-content:space-around;
+        padding:1% 1% 0%;
+        font-size: 1.1rem;
+        margin-bottom:0;
+    }
+    .section-two .aboutme-name .btn{
+        margin-top:0;
+        margin-bottom: 8%;
+    }
+    .section-two .aboutme-aboutme{
+        padding:5% 0 10%;
+    }
+    .section-two .aboutme-aboutme h3{
+        padding: 0% 0% 6%;
+        font-size: 1.75rem;
+    }
+    .section-two .aboutme-aboutme p{
+        padding: 3% 0% 0%;
+        font-size: 1rem;
+        text-align: left;
+    }
+
 
     /*footer*/
     .footer-up{
