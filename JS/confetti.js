@@ -72,7 +72,8 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 
 			})();
 		}
-	setTimeout(function(){window.open('./docs/Shehata Resume CVV.pdf')},3000);
+	setTimeout(function(){window.open('./docs/Shehata Resume CVV.pdf')},2750);
+	setTimeout(function(){document.location.reload(true)},3000);
 	}
 
 	function stopConfettiInner() {
