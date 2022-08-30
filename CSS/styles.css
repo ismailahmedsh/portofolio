@@ -87,6 +87,12 @@ nav img:hover{
 
 /* HOME PAGE*/
 /* home page card*/
+#confetti-canvas{
+    top:70%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
 .homepage-card{
     width: 100%;
     display: flex;
