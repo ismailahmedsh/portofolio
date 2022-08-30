@@ -1,5 +1,5 @@
 var maxParticleCount = 150; //set max confetti count
-var particleSpeed = 2; //set the particle animation speed
+var particleSpeed = 3; //set the particle animation speed
 var startConfetti; //call to start confetti animation
 var stopConfetti; //call to stop adding confetti
 var toggleConfetti; //call to start or stop the confetti animation depending on whether it's already running
@@ -12,7 +12,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 	removeConfetti = removeConfettiInner;
 	var colors = ["DodgerBlue", "OliveDrab", "Gold", "Pink", "SlateBlue", "LightBlue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"]
 	var streamingConfetti = false;
-	var animationTimer = 200;
+	var animationTimer = 150;
 	var particles = [];
 	var waveAngle = 0;
 	
@@ -57,7 +57,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 		while (particles.length < maxParticleCount)
 			particles.push(resetParticle({}, width, height));
 		streamingConfetti = true;
-		if (animationTimer === 200) {
+		if (animationTimer === 150) {
 			(function runAnimation() {
 				context.clearRect(0, 0, window.innerWidth, window.innerHeight);
 				if (particles.length === 0)
@@ -66,12 +66,13 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 					updateParticles();
 					drawParticles(context);
 					animationTimer = requestAnimFrame(runAnimation);
-					if(animationTimer === 200)
-						removeConfettiInner()
+					if(animationTimer === 150)
+						removeConfettiInner();
 				}
 
 			})();
 		}
+	setTimeout(function(){window.open('./docs/Shehata Resume CVV.pdf')},3000);
 	}
 
 	function stopConfettiInner() {
