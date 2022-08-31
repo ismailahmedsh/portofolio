@@ -84,9 +84,11 @@ nav img:hover{
 }
 /* NAVIGATION BUTTONS*/
 
-
-
-/* HOME PAGE*/
+/* preloader*/
+#preloader{
+  background-color: #000;
+}
+/* HOME PAGE section one*/
 /* home page card*/
 #confetti-canvas{
     top:70%;
@@ -147,7 +149,7 @@ nav img:hover{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
     column-gap: 2%;
-    height: 50vh;
+    height: 80vh;
     text-align: center;
     align-content: center;
 }
@@ -172,14 +174,23 @@ nav img:hover{
     margin-bottom: 10%;
 }
 .section-two .aboutme-aboutme{
-    padding:5% 10%;
-    transform: 2s;
+    padding:5% 5%;
+    margin: 0 5%;
+    border: 2px #fff solid;
+    border-radius: 25px;
+    position: relative;
+    top:0;
+    transition: top ease 0.5s;
+}
+.section-two .aboutme-aboutme:hover{
+  top: -15px;
+  
 }
 .section-two .aboutme-aboutme h3{
     margin: 0;
     padding: 0% 0% 3%;
     font-size: 2rem;
-    border-bottom: 2px solid white;
+    border-bottom: 0.5px solid gray;
 }
 .section-two .aboutme-aboutme p{
     margin: 0;
@@ -188,6 +199,34 @@ nav img:hover{
 }
 /*section2 end*/
 /*section3*/
+.section-three{
+  margin: 10% 0 15%;
+}
+.section-three-title{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  padding:2% 2%;
+  font-size: 2rem;
+  color: white;
+}
+.section-three-title h3{
+  text-align: center;
+}
+.section-three-title::after{
+  content: '';
+  width: 0%;
+  height: 4px;
+  background: #f44336;
+  display: block;
+  margin: 1% auto;
+  transition: 0.5s;
+}
+.section-three-title:hover::after{
+  width: 100%;
+  cursor: pointer;
+}
 .wrapper{
     max-width: 1080px;
     margin: 50px auto;
@@ -273,6 +312,7 @@ nav img:hover{
   .row section .details .title{
     font-size: 22px;
     font-weight: 600;
+    color: #ad0101;
   }
   .row section p{
     margin: 10px 0 17px 0;

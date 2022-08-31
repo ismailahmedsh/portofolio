@@ -110,7 +110,10 @@
 
     }
 
-
+    /*section 3*/
+    .section-three{
+        margin: 30% 0 15%;
+      }
     /*footer*/
     .footer-up{
         font-size:12px;

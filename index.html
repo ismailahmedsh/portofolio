@@ -20,8 +20,8 @@
                 <nav>
                         <a href="./index.html"><img src="./Images/Screenshot_2022-08-14_230341-removebg.png"/></a>
                             <ul class="nav-links">
-                                <li><a>About</a></li>
-                                <li><a>Work</a></li>
+                                <li><a href="#aboutme">About</a></li>
+                                <li><a href="#experience">Experience</a></li>
                                 <li><a>Projects</a></li>
                                 <li><a href="./contact.html">Contact</a></li>
                             </ul>
@@ -35,6 +35,7 @@
         </header>
         <!--body-->
         <body>
+          <div id="preloader"></div>
             <section class="main-area">
                 <div class="homepage-card">
                     <div class="img">
@@ -46,7 +47,7 @@
                 </div>
             </section>
 
-            <section class="section-two">
+            <section id="aboutme" class="section-two">
                 <div class="aboutme-name">
                     <h2>I'm <span class="name-autotype"></span></h2>
                     <div class="div-btn"><button onclick="startConfetti();" class="btn" href="./docs/Shehata Resume CVV.pdf"><a>Resume</a></button></div>
@@ -54,7 +55,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
                 <script>
                     var typed = new Typed(".name-autotype",{
-                        strings:["Ahmed Ismail Shehata","a Mechanical Engineer","a Programmer","a Mechatronics Engineer"],
+                        strings:["Ahmed Ismail Shehata","your favourite Engineer","a Programmer","a Mechatronics Engineer"],
                         typeSpeed:150,
                         backSpedd:150,
                         loop:true
@@ -70,10 +71,11 @@
 
             </section>
 
-            <section class="section-three">
+            <section id="experience" class="section-three">
+              <div  class="section-three-title"><h3>Experience</h3></div>
                 <div class="wrapper">
                     <div class="center-line">
-                      <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+                      <a href="#experience" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
                     </div>
                     <div class="row row-1">
                       <section>
@@ -83,8 +85,7 @@
                           <span><i>September 2021</i></span>
                         </div>
                         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-                        <div class="bottom">
-                          <a href="#">Read more</a>
+                        <div class="bottom">                       
                           <i>Dubai, United Arab Emirates</i>
                         </div>
                       </section>
@@ -93,12 +94,11 @@
                       <section>
                         <i class="icon fas fa-briefcase"></i>
                         <div class="details">
-                          <span class="title">Mechanical Engineer</span>
+                          <span class="title">Production Engineer</span>
                           <span><i>September 2020</i></span>
                         </div>
                         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-                        <div class="bottom">
-                          <a href="#">Read more</a>
+                        <div class="bottom">                      
                           <i>Dubai, United Arab Emirates</i>
                         </div>
                       </section>
@@ -111,8 +111,7 @@
                           <span><i>October 2019</i></span>
                         </div>
                         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-                        <div class="bottom">
-                          <a href="#">Read more</a>
+                        <div class="bottom">                       
                           <i>Dubai, United Arab Emirates</i>
                         </div>
                       </section>
@@ -125,8 +124,7 @@
                           <span><i>August 2018</i></span>
                         </div>
                         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-                        <div class="bottom">
-                          <a href="#">Read more</a>
+                        <div class="bottom">                         
                           <i>Dubai, United Arab Emirates</i>
                         </div>
                       </section>
@@ -140,7 +138,6 @@
                         </div>
                         <p>Bachelor of Science in Mechanical Engineering<br> The American University of Sharjah</p>
                         <div class="bottom">
-                          <a href="#">Read more</a>
                           <i>Sharjah, United Arab Emirates</i>
                         </div>
                       </section>
