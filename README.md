@@ -11,10 +11,10 @@ Interested in working with me? Need help on your project? Or just wanna say hi? 
 **ismailahmedsh@gmail.com**
 
 ### Socials
-- LinkedIn: [raflymln](http://linkedin.com/in/ahmedismailshehata)
-- Twitter: [@raflymln](http://twitter.com/ismailahmedsh)
-- Instagram: [@raflymln_](http://instagram.com/ismailahmedsh)
+- LinkedIn: [Ahmed Shehata](http://linkedin.com/in/ahmedismailshehata)
+- Twitter: [@ismailahmedsh](http://twitter.com/ismailahmedsh)
+- Instagram: [@ismailahmedsh](http://instagram.com/ismailahmedsh)
 
 ### Posts
-- Github: [raflymln](http://github.com/ismailahmedsh)
+- Github: [ismailahmedsh](http://github.com/ismailahmedsh)
 
