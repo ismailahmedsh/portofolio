@@ -4,7 +4,7 @@
     <head>
         <title>Ahmed Ismail Shehata</title>
         <meta name="viewport" content="with=device-wdith, initial-scale=1.0">
-        <link rel="shortcut icon" type="'image/x-icon" href="./Images/Screenshot 2022-08-14 143147.png">
+        <link rel="shortcut icon" type="'image/x-icon" href="./Images/default.webp">
         <link rel="stylesheet" href="./CSS/styles.css" >
         <link rel="stylesheet" href="./CSS/stylesmediaQ.css" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
         <!--Header-->
         <header>
                 <nav>
-                        <a href="./index.html"><img src="./Images/Screenshot_2022-08-14_230341-removebg.png"/></a>
+                        <a href="#"><img src="./Images/Screenshot_2022-08-14_230341-removebg.png"/></a>
                             <ul class="nav-links">
                                 <li><a href="#aboutme">About</a></li>
                                 <li><a href="#experience">Experience</a></li>
@@ -35,11 +35,17 @@
         </header>
         <!--body-->
         <body>
-          <div id="preloader"></div>
+            <div class="start-loader">
+              
+            </div>
+
+
             <section class="main-area">
                 <div class="homepage-card">
                     <div class="img">
-                            <p><span class="span-hello">Hello!</span> and welcome to my page</p>
+                            <div class="container">
+                              <div class="text"></div>
+                            </div>
                             <div class="div-btn">
                                 <a class="btn" href="./contact.html">Contact</a>
                             </div>
@@ -85,8 +91,9 @@
                           <span><i>September 2021</i></span>
                         </div>
                         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-                        <div class="bottom">                       
-                          <i>Dubai, United Arab Emirates</i>
+                        <div class="bottom">          
+                          <a href="https://www.vitronic.com/en-us/corporate-home" target="_blank">Vitronic Machine Vision</a>              
+                          <i>Dubai, UAE</i>
                         </div>
                       </section>
                     </div>
@@ -98,8 +105,9 @@
                           <span><i>September 2020</i></span>
                         </div>
                         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-                        <div class="bottom">                      
-                          <i>Dubai, United Arab Emirates</i>
+                        <div class="bottom">           
+                          <a href="https://wilo.com/ae/en/" target="_blank">Wilo Group</a>             
+                          <i>Dubai, UAE</i>
                         </div>
                       </section>
                     </div>
@@ -111,8 +119,9 @@
                           <span><i>October 2019</i></span>
                         </div>
                         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-                        <div class="bottom">                       
-                          <i>Dubai, United Arab Emirates</i>
+                        <div class="bottom">
+                          <a href="https://www.tkelevator.com/ae-en/" target="_blank">Thyssenkrupp</a>                        
+                          <i>Dubai, UAE</i>
                         </div>
                       </section>
                     </div>
@@ -124,8 +133,9 @@
                           <span><i>August 2018</i></span>
                         </div>
                         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-                        <div class="bottom">                         
-                          <i>Dubai, United Arab Emirates</i>
+                        <div class="bottom">    
+                          <a href="https://nabooda-auto.com/" target="_blank">Audi</a>                     
+                          <i>Dubai, UAE</i>
                         </div>
                       </section>
                     </div>
@@ -136,9 +146,11 @@
                           <span class="title">University</span>
                           <span><i>September 2015</i></span>
                         </div>
-                        <p>Bachelor of Science in Mechanical Engineering<br> The American University of Sharjah</p>
+                        <p>Bachelor of Science<br>Degree in Mechanical Engineering</p>
                         <div class="bottom">
-                          <i>Sharjah, United Arab Emirates</i>
+                          <a href="https://www.aus.edu/" target="_blank">American Univeristy of Sharjah</a> 
+                          <i>Sharjah, UAE</i>
+
                         </div>
                       </section>
                     </div>
@@ -160,9 +172,10 @@
                 <p>Made and built by Ahmed Ismail Shehata!</p>
             </div>
         </footer>
-
     <script src="./JS/burger.js"></script>
     <script src="./JS/confetti.js"></script>
+    <script src="./JS/textscramble.js"></script>
+    <script src="./JS/preloader.js"></script>
     <canvas></canvas>
     </main>
 </html>
