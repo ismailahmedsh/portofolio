@@ -64,8 +64,8 @@ const phrases = [
   'Hello There!',
   'Welcome to my page',
   'I\'m Ahmed Shehata',
-  'since you\'re here',
-  'let me show you why'
+  'Since you\'re here',
+  'Let me show you why'
 ]
 
 const el = document.querySelector('.text')

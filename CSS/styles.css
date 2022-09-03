@@ -137,8 +137,8 @@ nav img:hover{
 .homepage-card .img{
     width: 100%;
     padding: 120px 70px;
-    background: hwb(0 95% 3% / 0.5) url('../Images/code.gif') ;
-    box-shadow: 0 0 40px 0 rgba(0,0,0, 0.7);
+    background: hwb(0 95% 3% / 0.5) url('../Images/code3.gif') ;
+    box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.2);
 }
 .main-area .container { 
   height: 50vh;
@@ -154,7 +154,7 @@ nav img:hover{
   font-weight: 900;
   font-size: 100px;
   color: #f44336;
-  text-shadow: 4px 4px #000;
+  text-shadow: 4px 4px #fff;
 }
 .dud{
   color:#757575;
@@ -209,13 +209,6 @@ nav img:hover{
     margin: 0 5%;
     border: 2px #fff solid;
     border-radius: 25px;
-    position: relative;
-    top:0;
-    transition: top ease 0.5s;
-}
-.section-two .aboutme-aboutme:hover{
-  top: -15px;
-  
 }
 .section-two .aboutme-aboutme h3{
     margin: 0;
@@ -240,16 +233,20 @@ nav img:hover{
   margin: 0% auto;
   justify-content: center;
   align-items: top;
-  padding:0% 1%;
+  padding:0;
   font-size: 2rem;
   color: white;
   overflow: hidden; 
   position: relative;
-  border-bottom: #f44336 5px solid;
+}
+.section-three-line{
+border-bottom: #f44336 3px solid;
+margin: 0% 15%;
 }
 .section-three-title h3{
   width: 100%;
   height: 100%;
+  padding:0% 5%;
   position:absolute;
   transform: translateX(100%);
   animation: scrolling 5s linear infinite;
@@ -347,7 +344,7 @@ nav img:hover{
   .row section .details .title{
     font-size: 22px;
     font-weight: 600;
-    color: #ad0101;
+    color: #f44336;
   }
   .row section p{
     margin: 10px 0 17px 0;
