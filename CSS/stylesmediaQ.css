@@ -100,14 +100,15 @@
     /*main page section 2*/
 
     .section-two{
+        margin-top: 2%;
         height: 100%;
         padding-bottom: 30%;
     }
     .section-two .aboutme-name{
-        justify-content:space-around;
+        justify-content:space-evenly;
         padding:1% 1% 0%;
         font-size: 1.1rem;
-        margin-top:20%;
+        margin-top:5%;
         margin-bottom:0;
     }
     .section-two .aboutme-name .btn{
@@ -131,7 +132,7 @@
 
     /*section 3*/
     .section-three{
-        margin: 30% 0 15%;
+        margin: 5% 0 15%;
       }
     /*footer*/
     .footer-up{

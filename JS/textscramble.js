@@ -61,6 +61,7 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
+  '',
   'Hello There!',
   'Welcome to my page',
   'I\'m Ahmed Shehata',
