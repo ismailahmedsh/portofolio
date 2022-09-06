@@ -26,6 +26,19 @@ p {
 
 main {
   background: url('../Images/background.gif');
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.section-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-padding: 0;
+}
+
+.section-container::-webkit-scrollbar {
+  display: none;
 }
 
 /* /////////////////////////////////////////preloader//////////////////////////////////////////////////// */
@@ -55,7 +68,6 @@ main {
 header {
   top: 0;
   background-color: black;
-
 }
 
 .header-after-animation {
@@ -140,6 +152,11 @@ nav img:hover {
 /* /////////////////////////////////////////section one//////////////////////////////////////////////////// */
 /* HOME PAGE section one*/
 
+.container-one {
+  scroll-snap-align: start;
+  resize: none;
+}
+
 .homepage-card {
   width: 100%;
   display: flex;
@@ -147,6 +164,7 @@ nav img:hover {
   justify-content: center;
   align-items: center;
   margin: 0;
+  resize: none;
 }
 
 .homepage-card .img {
@@ -155,6 +173,7 @@ nav img:hover {
   padding: 120px 70px;
   background: hwb(0 95% 3% / 0.5) url('../Images/code3.gif');
   box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.2);
+  resize: none;
 }
 
 .main-area .container {
@@ -186,18 +205,25 @@ nav img:hover {
 
 /* /////////////////////////////////////////section two//////////////////////////////////////////////////// */
 #confetti-canvas {
-  position: absolute;
-  top: 120%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+#aboutme {
+  scroll-snap-align: start;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
 }
 
 .section-two {
+  margin: 3.5% 5% 5%;
   background: #000;
-  margin: 30% 5%;
   border-radius: 15px;
   column-gap: 2%;
-  height: 50vh;
+  height: 75vh;
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -215,8 +241,8 @@ nav img:hover {
   position: absolute;
   top: 40%;
   left: 5%;
-  height: 25vh;
-  width: 100vw;
+  height: 5vh;
+  width: 33vw;
   padding: 0;
 }
 
@@ -227,8 +253,8 @@ nav img:hover {
 
 .wrapper-aboutme {
   position: absolute;
-  top: 20%;
-  right: 0;
+  top: 30%;
+  right: 5%;
   margin: 0;
   padding: 0;
   height: 20vh;
@@ -247,8 +273,8 @@ nav img:hover {
 }
 
 .section-two .aboutme-aboutme {
-  padding: 5% 5%;
-  margin: 0 5%;
+  padding: 5%;
+  margin: 0;
   border-radius: 25px;
 }
 
@@ -257,11 +283,13 @@ nav img:hover {
   padding: 0% 0% 3%;
   border-bottom: 0.5px solid gray;
   text-align: center;
+  font-size: 2rem;
 }
 
 .section-two .aboutme-aboutme p {
   margin: 0;
   padding: 3% 0% 0%;
+  font-size: 1rem;
 
 }
 
@@ -274,9 +302,6 @@ nav img:hover {
 }
 
 @media screen and (max-width:950px) {
-  .section-two {
-    height: 90vh;
-  }
 
   .section-two .aboutme-name {
     position: absolute;
@@ -284,7 +309,7 @@ nav img:hover {
     left: 25%;
     right: 25%;
     height: auto;
-    width: auto;
+    width: 55vw;
     padding: 0;
   }
 
@@ -311,7 +336,49 @@ nav img:hover {
   .section-two .div-btn {
     position: absolute;
     top: 25%;
-    left: 35%;
+    left: 37%;
+    right: 50%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .section-two .aboutme-name {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    right: 25%;
+    height: auto;
+    width: 55vw;
+    padding: 0;
+  }
+
+  .wrapper-aboutme {
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    right: 10%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 75%;
+  }
+
+  .wrapper-aboutme .aboutme-aboutme h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .wrapper-aboutme .aboutme-aboutme p {
+    font-size: 0.9rem;
+  }
+
+  .section-two .div-btn {
+    position: absolute;
+    top: 25%;
+    left: 37%;
     right: 50%;
     margin: 0;
     padding: 0;
@@ -371,6 +438,8 @@ nav img:hover {
 /* /////////////////////////////////////////section three//////////////////////////////////////////////////// */
 .section-three {
   margin: 10% 0 15%;
+  height: 175vh;
+  scroll-snap-align: start;
 }
 
 .section-three-title {
@@ -388,7 +457,7 @@ nav img:hover {
 }
 
 .section-three-line {
-  border-bottom: #f44336 3px solid;
+  border-bottom: #f44336 5px solid;
   margin: 0% 15%;
 }
 
@@ -414,7 +483,7 @@ nav img:hover {
 .wrapper {
   width: 100%;
   margin: 50px auto;
-  padding: 0 20px;
+  padding: 0 2%;
   position: relative;
 }
 
@@ -603,9 +672,11 @@ nav img:hover {
 
 /* /////////////////////////////////////////footer//////////////////////////////////////////////////// */
 footer {
+  scroll-snap-align: start;
+  height: 31vh;
   width: 100%;
   text-align: center;
-  padding: 30px 0;
+  padding: 0;
   color: white;
 }
 

@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-    type='text/css'>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
 </head>
 <main>
   <!------------------------------preloader------------------------------>
@@ -40,160 +39,170 @@
     </nav>
   </header>
   <!------------------------------Header--------------------------------->
-
+  
   <body>
     <!------------------------------section one------------------------>
-    <section class="main-area">
-      <div class="homepage-card">
-        <div class="img">
-          <div class="container">
-            <div class="text"></div>
-          </div>
-          <div class="div-btn">
-            <a class="btn" href="./contact.html">Contact</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!------------------------------section two------------------------>
-    <section id="aboutme" class="section-two">
-      <div id="particles">
-        <div class="aboutme-name">
-          <h2>I'm <span class="name-autotype"></span></h2>
-        </div>
-        <div class="div-btn">
-          <button onclick="startConfetti();" class="btn" href="./docs/Shehata Resume CVV.pdf"><a>Resume</a></button>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-          var typed = new Typed(".name-autotype", {
-            strings: ["Ahmed Ismail Shehata", "your favourite Engineer", "a Programmer", "a Mechanical Engineer"],
-            typeSpeed: 150,
-            backSpedd: 150,
-            loop: true
-          })
-        </script>
-        <div class="wrapper-aboutme">
-          <div class="box-aboutme">
-            <div class="aboutme-aboutme">
-              <h3>Me, Myself, and I</h3>
-              <p>Hello! My name is Ahmed Ismail Shehata and let me tell you a bit about myself, I am 24 year old
-                Egyptian
-                Canadian,
-                an R&D mechatronics engineer at Vitronic Machine Vision with a background in mechanical engineering from
-                the American
-                University of Sharjah from the UAE gathering around 3 years of experience in engineering with room for
-                more!</p>
+    <div class="section-container">
+      <section class="main-area">
+        <div class="container-one">
+          <div class="homepage-card">
+            <div class="img">
+              <div class="container">
+                <div class="text"></div>
+              </div>
+              <div class="div-btn">
+                <a class="btn" href="./contact.html">Contact</a>
+              </div>
             </div>
           </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-      </div>
-    </section>
-    <!------------------------------section three----------------------->
-    <section id="experience" class="section-three">
-      <div class="section-three-title">
-        <h3>&#128640;Experience&#128640;</h3>
-      </div>
-      <div class="section-three-line"></div>
-      <div class="wrapper" class="particule">
-        <div class="center-line">
-          <a href="#experience" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+      </section>
+      <!------------------------------section two------------------------>
+      <section id="aboutme">
+        <div class="section-two">
+          <div id="particles">
+            <div class="aboutme-name">
+              <h2>I'm <span class="name-autotype"></span></h2>
+            </div>
+            <div class="div-btn">
+              <button onclick="startConfetti();" class="btn" href="./docs/Shehata Resume CVV.pdf"><a>Resume</a></button>
+            </div>
+            
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+              var typed = new Typed(".name-autotype", {
+                strings: ["Ahmed Ismail Shehata", "your favourite Engineer", "a Programmer", "a Mechanical Engineer"],
+                typeSpeed: 150,
+                backSpedd: 150,
+                loop: true
+              })
+            </script>
+            <div class="wrapper-aboutme">
+              <div class="box-aboutme">
+                <div class="aboutme-aboutme">
+                  <h3>Me, Myself, and I</h3>
+                  <p>Hello! My name is Ahmed Ismail Shehata and let me tell you a bit about myself, I am 24 year old
+                    Egyptian
+                    Canadian,
+                    an R&D mechatronics engineer at Vitronic Machine Vision with a background in mechanical engineering
+                    from
+                    the American
+                    University of Sharjah from the UAE gathering around 3 years of experience in engineering with room
+                    for
+                    more!</p>
+                </div>
+              </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+          </div>
         </div>
-        <div class="row row-1">
-          <section>
-            <i class="icon fas fa-home"></i>
-            <div class="details">
-              <span class="title">R&D Mechatronics Engineer</span>
-              <span><i>September 2021</i></span>
-            </div>
-            <p>A research & development engineer focused on developing future localised technology adding unto the
-              product portofolio for Vitronic MENA, focused on the traffic technology industry.</p>
-            <div class="bottom">
-              <a href="https://www.vitronic.com/en-us/corporate-home" target="_blank">Vitronic Machine Vision</a>
-              <i>Dubai, UAE</i>
-            </div>
-          </section>
+      </section>
+      <!------------------------------section three----------------------->
+      <section id="experience" class="section-three">
+        <div class="section-three-title">
+          <h3>&#128640;Experience&#128640;</h3>
         </div>
-        <div class="row row-2">
-          <section>
-            <i class="icon fas fa-briefcase"></i>
-            <div class="details">
-              <span class="title">Production Engineer</span>
-              <span><i>September 2020</i></span>
-            </div>
-            <p>A production engineer in a german water soluitons and pump manufacturer handling an assembly plant's
-              incoming projects through raw material to full scale assembly porduction while monitoring the assembly
-              house for increased efficiency, upgrades, and productivity</p>
-            <div class="bottom">
-              <a href="https://wilo.com/ae/en/" target="_blank">Wilo Group</a>
-              <i>Dubai, UAE</i>
-            </div>
-          </section>
+        <div class="section-three-line"></div>
+        <div class="wrapper" class="particule">
+          <div class="center-line">
+            <a href="" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+          </div>
+          <div class="row row-1">
+            <section>
+              <i class="icon fas fa-home"></i>
+              <div class="details">
+                <span class="title">R&D Mechatronics Engineer</span>
+                <span><i>September 2021</i></span>
+              </div>
+              <p>A research & development engineer focused on developing future localised technology adding unto the
+                product portofolio for Vitronic MENA, focused on the traffic technology industry.</p>
+              <div class="bottom">
+                <a href="https://www.vitronic.com/en-us/corporate-home" target="_blank">Vitronic Machine Vision</a>
+                <i>Dubai, UAE</i>
+              </div>
+            </section>
+          </div>
+          <div class="row row-2">
+            <section>
+              <i class="icon fas fa-briefcase"></i>
+              <div class="details">
+                <span class="title">Production Engineer</span>
+                <span><i>September 2020</i></span>
+              </div>
+              <p>A production engineer in a german water soluitons and pump manufacturer handling an assembly plant's
+                incoming projects through raw material to full scale assembly porduction while monitoring the assembly
+                house for increased efficiency, upgrades, and productivity</p>
+              <div class="bottom">
+                <a href="https://wilo.com/ae/en/" target="_blank">Wilo Group</a>
+                <i>Dubai, UAE</i>
+              </div>
+            </section>
+          </div>
+          <div class="row row-1">
+            <section>
+              <i class="icon fas fa-briefcase"></i>
+              <div class="details">
+                <span class="title">Technical Support Engineer</span>
+                <span><i>October 2019</i></span>
+              </div>
+              <p>A support Engineer in a German elevator manufacturer within the support center team focused on handling
+                incoming major projects through design and application selection of company products to support incoming
+                tenders</p>
+              <div class="bottom">
+                <a href="https://www.tkelevator.com/ae-en/" target="_blank">Thyssenkrupp</a>
+                <i>Dubai, UAE</i>
+              </div>
+            </section>
+          </div>
+          <div class="row row-2">
+            <section>
+              <i class="icon fas fa-briefcase"></i>
+              <div class="details">
+                <span class="title">Service Engineer</span>
+                <span><i>August 2018</i></span>
+              </div>
+              <p>A graduate program for a service engineer on a rotational basis passing through 3 different teams:
+                Express team, Heavy team, Quality team through service, maintenance, and quality check-ups</p>
+              <div class="bottom">
+                <a href="https://nabooda-auto.com/" target="_blank">Audi</a>
+                <i>Dubai, UAE</i>
+              </div>
+            </section>
+          </div>
+          <div class="row row-1">
+            <section>
+              <i class="icon fas fa-school"></i>
+              <div class="details">
+                <span class="title">University</span>
+                <span><i>September 2015</i></span>
+              </div>
+              <p>Bachelor of Science<br>Degree in Mechanical Engineering<br>American University of Sharjah</p>
+              <div class="bottom">
+                <a href="https://www.aus.edu/" target="_blank">A.U.S.</a>
+                <i>Sharjah, UAE</i>
+              </div>
+            </section>
+          </div>
         </div>
-        <div class="row row-1">
-          <section>
-            <i class="icon fas fa-briefcase"></i>
-            <div class="details">
-              <span class="title">Technical Support Engineer</span>
-              <span><i>October 2019</i></span>
-            </div>
-            <p>A support Engineer in a German elevator manufacturer within the support center team focused on handling
-              incoming major projects through design and application selection of company products to support incoming
-              tenders</p>
-            <div class="bottom">
-              <a href="https://www.tkelevator.com/ae-en/" target="_blank">Thyssenkrupp</a>
-              <i>Dubai, UAE</i>
-            </div>
-          </section>
+      </section>
+      <!------------------------------footer-------------------------------->
+      <footer>
+        <div class="footer">
+          <h4>Thank you!</h4>
+          <p>Kindly feel free to contact me! ask me any question and let us work together!</p>
         </div>
-        <div class="row row-2">
-          <section>
-            <i class="icon fas fa-briefcase"></i>
-            <div class="details">
-              <span class="title">Service Engineer</span>
-              <span><i>August 2018</i></span>
-            </div>
-            <p>A graduate program for a service engineer on a rotational basis passing through 3 different teams:
-              Express team, Heavy team, Quality team through service, maintenance, and quality check-ups</p>
-            <div class="bottom">
-              <a href="https://nabooda-auto.com/" target="_blank">Audi</a>
-              <i>Dubai, UAE</i>
-            </div>
-          </section>
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/ahmedismailshehata/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/ismailahmedsh/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="./contact.html"><i class="fa fa-envelope-o"></i></a>
         </div>
-        <div class="row row-1">
-          <section>
-            <i class="icon fas fa-school"></i>
-            <div class="details">
-              <span class="title">University</span>
-              <span><i>September 2015</i></span>
-            </div>
-            <p>Bachelor of Science<br>Degree in Mechanical Engineering<br>American University of Sharjah</p>
-            <div class="bottom">
-              <a href="https://www.aus.edu/" target="_blank">A.U.S.</a>
-              <i>Sharjah, UAE</i>
-            </div>
-          </section>
+        <div class="footer-trademark">
+          <p>&reg; Made and built by Ahmed Ismail Shehata!</p>
         </div>
-      </div>
-    </section>
+      </footer>
+    </div>
   </body>
-  <!------------------------------footer-------------------------------->
-  <footer>
-    <div class="footer">
-      <h4>Thank you!</h4>
-      <p>Kindly feel free to contact me! ask me any question and let us work together!</p>
-    </div>
-    <div class="footer-icons">
-      <a href="https://www.linkedin.com/in/ahmedismailshehata/" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/ismailahmedsh/" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="./contact.html"><i class="fa fa-envelope-o"></i></a>
-    </div>
-    <div class="footer-trademark">
-      <p>Made and built by Ahmed Ismail Shehata!</p>
-    </div>
-  </footer>
+
   <script src="./JS/burger.js"></script>
   <script src="./JS/confetti.js"></script>
   <script src="./JS/textscramble.js"></script>
@@ -201,8 +210,7 @@
   <script src="./JS/spider.js"></script>
   <script src="./JS/aboutmetilt.js"></script>
   <script src="./JS/polygons.js"></script>
-  <canvas></canvas>
+<canvas>
 </main>
-
 </html>
 <!--  C:\Users\aish\Documents\VS Studio\Studying Projects\Portofolio\index.html -->
