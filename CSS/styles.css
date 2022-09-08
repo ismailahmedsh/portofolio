@@ -440,7 +440,7 @@ nav img:hover {
   height: 175vh;
   scroll-snap-align: start;
 }
-@media screen and (min-width:375px) and (max-width:650px) {
+@media screen and (min-width:350px) and (max-width:650px) {
   .section-three {
     height: 250vh;
   }
@@ -674,8 +674,228 @@ nav img:hover {
   background: #f44336;
   transition: 0.5s;
 }
+/* /////////////////////////////////////////section four/////////////////////////////////////////////// */
+#section-four{
+  margin:0;
+  scroll-snap-align: start;
+  height: 85vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-sectionfour{
+  height: 80vh;
+  width:90%;
+}
+.container-sectionfour .content{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.sphere-container{
+  width:100%;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15%;
+}
+.tagcloud {
+  width: 60%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.tagcloud--item:hover {
+  color:#f44336;
+  font-size: 25px;
+  cursor: pointer;
+}
 
-/* /////////////////////////////////////////main end//////////////////////////////////////////////////// */
+.glitch {
+  width: 450px;
+  color: #f44336;
+  font-size: 5rem;
+  position: relative;
+  font-weight: 700;
+}
+@media screen and (max-width:950px){
+  .container-sectionfour .content{
+    flex-direction: column-reverse;
+  }
+  .sphere-container{
+    margin-right: 0;
+  }
+  .glitch {
+    left:15%;
+    margin-bottom: 2%;
+    font-size: 3rem;
+  }
+}
+
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(21px, 9999px, 21px, 0);
+  }
+  5% {
+    clip: rect(48px, 9999px, 95px, 0);
+  }
+  10% {
+    clip: rect(97px, 9999px, 24px, 0);
+  }
+  15% {
+    clip: rect(5px, 9999px, 38px, 0);
+  }
+  20% {
+    clip: rect(77px, 9999px, 70px, 0);
+  }
+  25% {
+    clip: rect(83px, 9999px, 91px, 0);
+  }
+  30% {
+    clip: rect(60px, 9999px, 39px, 0);
+  }
+  35% {
+    clip: rect(93px, 9999px, 77px, 0);
+  }
+  40% {
+    clip: rect(79px, 9999px, 7px, 0);
+  }
+  45% {
+    clip: rect(100px, 9999px, 68px, 0);
+  }
+  50% {
+    clip: rect(43px, 9999px, 83px, 0);
+  }
+  55% {
+    clip: rect(62px, 9999px, 68px, 0);
+  }
+  60% {
+    clip: rect(78px, 9999px, 68px, 0);
+  }
+  65% {
+    clip: rect(42px, 9999px, 7px, 0);
+  }
+  70% {
+    clip: rect(73px, 9999px, 90px, 0);
+  }
+  75% {
+    clip: rect(21px, 9999px, 44px, 0);
+  }
+  80% {
+    clip: rect(84px, 9999px, 77px, 0);
+  }
+  85% {
+    clip: rect(68px, 9999px, 8px, 0);
+  }
+  90% {
+    clip: rect(20px, 9999px, 23px, 0);
+  }
+  95% {
+    clip: rect(67px, 9999px, 92px, 0);
+  }
+  100% {
+    clip: rect(49px, 9999px, 83px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: yellow;
+  background: rgb(0,0,0);
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(73px, 9999px, 93px, 0);
+  }
+  5% {
+    clip: rect(50px, 9999px, 21px, 0);
+  }
+  10% {
+    clip: rect(95px, 9999px, 75px, 0);
+  }
+  15% {
+    clip: rect(1px, 9999px, 23px, 0);
+  }
+  20% {
+    clip: rect(61px, 9999px, 95px, 0);
+  }
+  25% {
+    clip: rect(35px, 9999px, 72px, 0);
+  }
+  30% {
+    clip: rect(71px, 9999px, 36px, 0);
+  }
+  35% {
+    clip: rect(1px, 9999px, 53px, 0);
+  }
+  40% {
+    clip: rect(88px, 9999px, 67px, 0);
+  }
+  45% {
+    clip: rect(73px, 9999px, 34px, 0);
+  }
+  50% {
+    clip: rect(64px, 9999px, 40px, 0);
+  }
+  55% {
+    clip: rect(3px, 9999px, 56px, 0);
+  }
+  60% {
+    clip: rect(68px, 9999px, 97px, 0);
+  }
+  65% {
+    clip: rect(39px, 9999px, 81px, 0);
+  }
+  70% {
+    clip: rect(76px, 9999px, 71px, 0);
+  }
+  75% {
+    clip: rect(15px, 9999px, 54px, 0);
+  }
+  80% {
+    clip: rect(38px, 9999px, 84px, 0);
+  }
+  85% {
+    clip: rect(77px, 9999px, 83px, 0);
+  }
+  90% {
+    clip: rect(57px, 9999px, 36px, 0);
+  }
+  95% {
+    clip: rect(34px, 9999px, 71px, 0);
+  }
+  100% {
+    clip: rect(19px, 9999px, 19px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: blue;
+  background: rgb(0,0,0);
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+/* /////////////////////////////////////////main end/////////////////////////////////////////////////// */
 
 /* /////////////////////////////////////////footer//////////////////////////////////////////////////// */
 footer {
@@ -721,17 +941,44 @@ footer {
 
 /* /////////////////////////////////////////Contact Page//////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
-/* /////////////////////////////////////////start//////////////////////////////////////////////////// */
-.location {
+#section-five{
+  scroll-snap-align: start;
   width: 100%;
-  height: 500px;
-  margin: 0px 0px 100px;
+  height: 90vh;
+  padding: 5%;
 }
-
-.location iframe {
-  height: 100%;
+.section-five-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-
+.location{
+  position: relative;
+}
+.location iframe{
+  height: 70vh;
+  border-radius: 15px;
+  filter:  saturate(100%) saturate(100%);
+  touch-action: pan-x pan-y;
+}
+.map-area{
+  position: absolute;
+  width: 15vw;
+  height: 5vw;
+  top:5%;
+  right:5%;
+  backdrop-filter:invert(80%) blur(1px);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map-area p{
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #f44336;
+  font-style: oblique;
+}
 .contact-us {
   width: 80%;
   margin: auto;
@@ -749,15 +996,19 @@ footer {
 .contact-col div {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-top: 15%;
   color: white;
+  transition: 0.25s
 }
-
+.contact-col div:hover {
+  color: #f44336;
+}
 .contact-col div .fa {
   font-size: 28px;
-  color: white;
+  color: #f44336;
   margin: 10px;
   margin-right: 30px;
+  transition: 0.25s;
 }
 
 .contact-col div p {
@@ -765,7 +1016,7 @@ footer {
 }
 
 .contact-col div h5 {
-  font-size: 18px;
+  font-size: 1rem;
   margin-bottom: 5px;
   font-weight: 400;
 }
@@ -775,7 +1026,21 @@ footer {
   width: 100%;
   padding: 15px;
   margin-bottom: 17px;
+  border-radius: 10px;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   box-sizing: border-box;
+  color: #f44336;
+}
+@media screen and (max-width:950px){
+  .section-five{
+    height: 100%;
+  }
+  .section-five-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .location{
+    display: none;
+  }
 }

@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+    type='text/css'>
 </head>
 <main>
   <!------------------------------preloader------------------------------>
@@ -28,7 +29,7 @@
         <li><a>About</a></li>
         <li><a>Experience</a></li>
         <li><a>Skills</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="#section-five">Contact</a></li>
       </ul>
 
       <div class="burger">
@@ -39,7 +40,7 @@
     </nav>
   </header>
   <!------------------------------Header--------------------------------->
-  
+
   <body>
     <!------------------------------section one------------------------>
     <div class="section-container">
@@ -67,7 +68,7 @@
             <div class="div-btn">
               <button onclick="startConfetti();" class="btn" href="./docs/Shehata Resume CVV.pdf"><a>Resume</a></button>
             </div>
-            
+
             <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
             <script>
               var typed = new Typed(".name-autotype", {
@@ -82,14 +83,16 @@
                 <div class="aboutme-aboutme">
                   <h3>Me, Myself, and I</h3>
                   <p>Hello! My name is Ahmed Ismail Shehata and let me tell you a bit about myself, I am 24 year old
-                    Egyptian
-                    Canadian,
+                    Egyptian Canadian,
                     an R&D mechatronics engineer at Vitronic Machine Vision with a background in mechanical engineering
                     from
-                    the American
-                    University of Sharjah from the UAE gathering around 3 years of experience in engineering with room
-                    for
-                    more!</p>
+                    the American University of Sharjah from the UAE gathering around 3 years of experience in
+                    engineering
+                    with room for more! I like to build hardware and software systems that make the impossible
+                    inevitable.
+                    If you are interested in my journey, read the details below or download my resumé. I enjoy meeting
+                    people from
+                    all disciplines, so feel free to contact me!</p>
                 </div>
               </div>
             </div>
@@ -185,6 +188,64 @@
           </div>
         </div>
       </section>
+      <!------------------------------section four-------------------------->
+      <section id="section-four">
+        <div class="container-sectionfour">
+          <div class="img-section4"><img src=""></div>
+          <div class="content">
+            <div class="sphere-container"><span class="Sphere"></span></div>
+            <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+            <div class="glitch" data-text="XP pts">Skills</div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------section five-------------------------->
+      <section id="section-five">
+        <div class="section-five-container">
+          <div class="contact-us">
+            <div class="row">
+              <div class="contact-col">
+                <div>
+                  <i class="fa fa-home"></i>
+                  <span>
+                    <h5>District 9, Jumeriah Park</h5>
+                    <p>Dubai, United Arab Emirates</p>
+                  </span>
+                </div>
+                <div>
+                  <i class="fa fa-phone"></i>
+                  <span>
+                    <h5>+971 56 979 3511</h5>
+                    <p>Monday to Saturday</p>
+                  </span>
+                </div>
+                <div>
+                  <i class="fa fa-envelope-o"></i>
+                  <span>
+                    <h5>ismailahmedsh@gmail</h5>
+                    <p>Email Me!</p>
+                  </span>
+                </div>
+              </div>
+              <div class="contact-col">
+                <form action="https://formspree.io/f/mayknlgj" method="post" target="_blank">
+                  <input type="text" name="name" placeholder="Enter Your Name" required>
+                  <input type="email" name="email" placeholder="Enter Your Email Address" required>
+                  <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                  <input type="hidden" name="_next" value="" />
+                  <textarea rows="8" name="message" placeholder="Enter your message" required></textarea>
+                  <button type="submit" class="btn">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.6426091731553!2d55.16474082919839!3d25.048647998997865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91d5075ad77cc3c0!2zMjXCsDAyJzU1LjEiTiA1NcKwMDknNTUuMCJF!5e0!3m2!1sen!2sae!4v1660753714558!5m2!1sen!2sae"
+              width="100%" height="auto" style="border:0;" allowfullscreen=""></iframe>
+            <div class="map-area"><p>Find me Here<br>Let us get in touch!</p></div>
+          </div>
+        </div>
+      </section>
       <!------------------------------footer-------------------------------->
       <footer>
         <div class="footer">
@@ -210,7 +271,9 @@
   <script src="./JS/spider.js"></script>
   <script src="./JS/aboutmetilt.js"></script>
   <script src="./JS/polygons.js"></script>
-<canvas>
+  <script src="./JS/cloud.js"></script>
+  <canvas>
 </main>
+
 </html>
 <!--  C:\Users\aish\Documents\VS Studio\Studying Projects\Portofolio\index.html -->
