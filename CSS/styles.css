@@ -437,7 +437,7 @@ nav img:hover {
 /* /////////////////////////////////////////section three//////////////////////////////////////////////////// */
 .section-three {
   margin: 10% 0 15%;
-  height: 175vh;
+  height: 130%;
   scroll-snap-align: start;
 }
 @media screen and (min-width:350px) and (max-width:650px) {
@@ -908,7 +908,9 @@ nav img:hover {
 }
 @media screen and (max-width:450px){
   #section-five{
-    margin-bottom: 70%;
+    margin-bottom: 35%;
+    margin-top:40%;
+    height: 85vh;
   }
 }
 .section-five-container{
@@ -921,27 +923,29 @@ nav img:hover {
 .location iframe{
   height: 70vh;
   border-radius: 15px;
-  filter:  saturate(100%) saturate(100%);
+  filter:  saturate(200%);
   touch-action: pan-x pan-y;
+  pointer-events: all;
 }
 .map-area{
   position: absolute;
   width: 15vw;
   height: 5vw;
   top:5%;
-  right:5%;
-  backdrop-filter:invert(80%) blur(1px);
+  right:25%;
+  backdrop-filter:invert(80%) blur(3px);
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid white;
 }
 .map-area p{
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 900;
   color: #f44336;
-  font-style: oblique;
+  font-style: normal;
 }
 .contact-us {
   width: 80%;
@@ -996,6 +1000,9 @@ nav img:hover {
   box-sizing: border-box;
   color: #f44336;
 }
+.contact-col button{
+  margin:0;
+}
 @media screen and (max-width:950px){
   .section-five{
     height: 100%;
@@ -1008,7 +1015,7 @@ nav img:hover {
     display: none;
   }
 }
-/*footer*/
+/*footer********************************************************************/
 footer{
 scroll-snap-align: end;
 height: 35vh;
