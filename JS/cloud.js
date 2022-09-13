@@ -2,7 +2,7 @@ const Texts = [
     'HTML', 'CSS', 'JAVASCRIPT',
     'AutoCAD', 'SolidWorks', 'Inventor',
     'Arduino', 'MATLAB',
-    'C LANG','Microsoft Office','ERP systems'
+    'C LANG','Microsoft Office','ERP systems','LabView'
 ];
     let y=0;
     var windowWidth = window.innerWidth;
