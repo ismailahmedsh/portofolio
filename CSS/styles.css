@@ -28,6 +28,12 @@ main {
   height: 100vh;
   overflow-y: hidden;
 }
+@media screen and (max-width:750px){
+  .section-container {
+    margin-top: 100px;
+    transition: 0s;
+  }
+}
 .section-container {
   scroll-snap-type:y mandatory;
   overflow-y: scroll;
@@ -52,7 +58,7 @@ main {
 }
 
 .disappear {
-  animation: vanish 3.5s forwards;
+  animation: vanish 1.3s forwards;
 }
 
 @keyframes vanish {
@@ -70,7 +76,8 @@ header {
 }
 .header-after-animation {
   animation: 1s forwards;
-  position: sticky;
+  position: absolute;
+  width: 100%;
   z-index: 15;
 }
 
