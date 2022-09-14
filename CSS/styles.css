@@ -29,9 +29,11 @@ main {
   overflow-y: hidden;
 }
 @media screen and (max-width:750px){
-  .section-container {
-    margin-top: 100px;
-    transition: 0s;
+  body {
+    margin-top: 30%;
+  }
+  .header-after-animation {
+    position:fixed;
   }
 }
 .section-container {
