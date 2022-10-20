@@ -986,8 +986,8 @@ nav img:hover {
 @media screen and (max-width:450px) {
   #section-five {
     margin-bottom: 35%;
-    margin-top: 40%;
-    height: 85vh;
+    margin-top: 30%;
+    height: 90vh;
   }
 }
 
@@ -1122,6 +1122,7 @@ footer {
   margin-bottom: 25px;
   margin-top: 20px;
   font-weight: 600;
+  color: #fff;
 }
 
 .footer p {
