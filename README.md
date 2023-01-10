@@ -12,8 +12,8 @@ Interested in working with me? Need help on your project? Or just wanna say hi? 
 
 ### Socials
 - LinkedIn: [Ahmed Shehata](http://linkedin.com/in/ahmedismailshehata)
-- Twitter: [@ismailahmedsh](http://twitter.com/ismailahmedsh)
-- Instagram: [@ismailahmedsh](http://instagram.com/ismailahmedsh)
+- Twitter: [@ismailahmedsh](http://twitter.com/ahmed_issh)
+- Instagram: [@ismailahmedsh](http://instagram.com/ahmed_issh)
 
 ### Posts
 - Github: [ismailahmedsh](http://github.com/ismailahmedsh)
