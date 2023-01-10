@@ -459,7 +459,7 @@ nav img:hover {
 
 .section-three {
   margin: 10% 0 15%;
-  height: 130%;
+  height: 150%;
   scroll-snap-align: start;
   scroll-margin-top: 2em;
 }
