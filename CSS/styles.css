@@ -190,9 +190,6 @@ nav img:hover {
   box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.2);
   resize: none;
 }
-.homepage-card .img .counter{
-  float: right;
-}
 .main-area .container {
   height: 50vh;
   max-height: 50vh;
@@ -1116,6 +1113,10 @@ nav img:hover {
 }
 /*footer********************************************************************/
 footer {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content:flex-end;
   scroll-snap-align: end;
   height: 35vh;
   text-align: center;
@@ -1154,4 +1155,7 @@ footer {
   font-size: 10px;
   font-weight: 400;
   font-style: italic;
+}
+.counter-box{
+  margin-top: 10px;
 }
