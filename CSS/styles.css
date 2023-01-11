@@ -456,7 +456,7 @@ nav img:hover {
 
 .section-three {
   margin: 10% 0 15%;
-  height: 210%;
+  height: 215%;
   scroll-snap-align: start;
   scroll-margin-top: 2em;
 }
@@ -978,7 +978,6 @@ nav img:hover {
 /* /////////////////////////////////////////Contact Page//////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
 #section-five {
-  padding-top: 5%;
   scroll-snap-align: start;
   width: 100%;
   height: 90vh;
@@ -988,8 +987,8 @@ nav img:hover {
 @media screen and (max-width:450px) {
   #section-five {
     margin-bottom: 35%;
-    margin-top: 30%;
-    height: 110vh;
+    margin-top: 0%;
+    height: 100vh;
   }
 }
 
