@@ -1001,6 +1001,8 @@ nav img:hover {
 
 .location {
   position: relative;
+  border: 1px solid gray;
+  border-radius: 14px;
 }
 
 .location iframe {
@@ -1015,22 +1017,22 @@ nav img:hover {
   position: absolute;
   width: 15vw;
   height: 5vw;
-  top: 5%;
-  right: 25%;
-  backdrop-filter: invert(80%) blur(3px);
+  top: 1%;
+  right: 5%;
+  backdrop-filter: invert(100%) blur(10px);
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid gray;
 }
 
 .map-area p {
   text-align: center;
   font-size: 1rem;
   font-weight: 900;
-  color: #f44336;
-  font-style: normal;
+  color: whitesmoke;
+  font-style:oblique;
 }
 
 .contact-us {
