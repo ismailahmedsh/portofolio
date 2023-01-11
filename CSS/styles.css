@@ -190,7 +190,55 @@ nav img:hover {
   box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.2);
   resize: none;
 }
-
+.website-counter-box{
+  display: flex;
+  margin-left: auto;
+  backdrop-filter: blur(5px);
+  height: 50px;
+  width: 80px;
+  border-radius: 30px;
+  border: 1.5px dotted #847978;
+  font-weight: 700;
+  font-size: 13px;
+}
+.website-counter-text{
+  margin-left: 7px;
+  color: #f44336;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-style: italic;
+}
+.website-counter{
+  margin-right: 5px;
+  margin-left: 4px;
+  color: #fff;
+  font-family:'Nunito Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width:900px) {
+  .website-counter-box{
+    height: 40px;
+    width: 70px;
+    font-weight: 600;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width:600px) {
+  .website-counter-box{
+    height: 30px;
+    width: 50px;
+    font-weight: 600;
+    font-size: 9px;
+  }
+  .website-counter-text{
+    margin-left: 1px;
+  }
+}
 .main-area .container {
   height: 50vh;
   max-height: 50vh;
