@@ -401,7 +401,7 @@ nav img:hover {
 
 @media screen and (max-width:455px) {
   .section-two {
-    height: 80vh;
+    height: 70vh;
   }
 
   .section-two .aboutme-name {
