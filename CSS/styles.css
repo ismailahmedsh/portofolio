@@ -986,9 +986,8 @@ nav img:hover {
 
 @media screen and (max-width:450px) {
   #section-five {
-    margin-bottom: 35%;
     margin-top: 0%;
-    height: 100vh;
+    height: 150vh;
   }
 }
 
@@ -1044,13 +1043,13 @@ nav img:hover {
 
 .contact-col {
   flex-basis: 48%;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .contact-col div {
   display: flex;
   align-items: center;
-  margin-top: 15%;
+  margin-bottom: 15%;
   color: white;
   transition: 0.25s
 }
