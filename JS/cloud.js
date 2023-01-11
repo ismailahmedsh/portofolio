@@ -1,8 +1,8 @@
 const Texts = [
-    'HTML', 'CSS', 'JAVASCRIPT',
+    'HTML', 'CSS', 'JavaScript',
     'AutoCAD', 'SolidWorks', 'Inventor',
-    'Arduino', 'MATLAB',
-    'C LANG','Microsoft Office','ERP systems','LabView'
+    'Arduino', 'MatLab',
+    'C Program','Microsoft Office','ERP system','LabView'
 ];
     let y=0;
     var windowWidth = window.innerWidth;
