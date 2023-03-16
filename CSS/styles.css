@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  cursor: none;
 }
 
 html {
@@ -146,11 +147,6 @@ nav img:hover {
 .nav-links li:hover::after {
   width: 100%;
 }
-
-.nav-links li:hover {
-  cursor: pointer;
-}
-
 .burger {
   display: none;
 }
@@ -703,7 +699,6 @@ nav img:hover {
   font-size: 13px;
   font-weight: 600;
   background: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
   z-index: 5;
 }
 
@@ -761,7 +756,6 @@ nav img:hover {
 .tagcloud--item:hover {
   color: #f44336;
   font-size: 25px;
-  cursor: pointer;
 }
 
 .glitch {
@@ -1155,7 +1149,6 @@ footer {
 .footer-icons .fa {
   color: white;
   margin: 0 2%;
-  cursor: pointer;
   padding: 18px 0;
 }
 
