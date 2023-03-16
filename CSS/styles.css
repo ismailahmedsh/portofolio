@@ -1146,17 +1146,6 @@ footer {
   padding: 0 4%;
 }
 
-.footer-icons .fa {
-  color: white;
-  margin: 0 2%;
-  padding: 18px 0;
-}
-
-.footer-icons .fa:hover {
-  color: #f44336;
-  transition: 0.5s;
-}
-
 .footer-trademark p {
   font-size: 10px;
   font-weight: 400;
@@ -1164,4 +1153,22 @@ footer {
 }
 .counter-box{
   margin-top: 10px;
+}
+.support {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+.support a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.8rem;
+  backface-visibility: hidden;
+  transition: all 150ms ease;
+}
+.support a:hover {
+  transform: scale(1.1);
+  color: red;
 }

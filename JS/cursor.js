@@ -8,7 +8,7 @@ class BigCircle {
   
       this.pointerX = 0
       this.pointerY = 0
-      this.cursorSize = 40
+      this.cursorSize = 27
   
       this.circleStyle = {
         boxSizing: 'border-box',
