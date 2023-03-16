@@ -133,16 +133,6 @@ nav img:hover {
   font-size: 13px;
   font-weight: 600;
 }
-#caution{
-  color: red;
-  text-decoration: none;
-  font-weight: 900;
-}
-@media screen and (max-width:850px) {
-  #caution{
-    color: black;
-  }
-}
 .nav-links li::after {
   content: '';
   width: 0%;
