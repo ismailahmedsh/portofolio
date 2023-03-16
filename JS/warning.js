@@ -56,7 +56,16 @@ abort.addEventListener("click", function () {
 
 var reload = document.getElementById("restart");
 reload.addEventListener("click", function () {
-	window.open('./index.html','_self');
+	panel.classList.remove("show");
+	turnOff.classList.remove("close");
+	turnOffHor.classList.remove("close");
+	abort.classList.remove("hide");
+	detonate.classList.remove("show");
+	cover.classList.remove("opened");
+	btn.classList.remove("pushed");
+	this.classList.remove("show");
+	time.classList.remove("crono");
+	time.innerText = 9;
 });
 
 setTimeout(function () {
