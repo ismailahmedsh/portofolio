@@ -1,0 +1,20 @@
+alirezarezvani/claude-skills	29175	2026-11-02	MIT	380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable re
+LeoYeAI/agent-master-skills	2175	2026-11-02	MIT	🧠 Curated collection of 2700+ best agent skills — AI, coding, marketing, design, finance and more. Harness-agn
+brycewang-stanford/Awesome-Journal-Skills	1353	2026-09-27	MIT	Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济
+komako-workshop/digital-oracle	907	2026-07-26	MIT	AI agent skill that answers macro questions — housing, gold, BTC, geopolitics — with probability estimates min
+KylinMountain/TradingAgents-AShare	887	2026-10-30	NOASSERTION	A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部
+quant-sentiment-ai/claude-equity-research	752	2026-11-02	MIT	🔌 Claude Code Plugin for institutional-grade equity research.   Install with /plugin marketplace add. Generate
+agiprolabs/claude-trading-skills	508	2026-09-03	MIT	68 trading, DeFi, and quantitative finance Agent Skills. Works with Claude Code, Cursor, Codex, Gemini CLI, an
+AojdevStudio/Finance-Guru	332	2026-10-30	AGPL-3.0	Self-hosted family office engine: typed Python calculators, a private SQLite ledger, and specialist agents for
+ALAGENT-HKU/x2strategy	283	2026-06-12	none	Extract structured strategy specifications from quantitative finance research papers — Agent Skill for GitHub 
+franklee16/academic-research-skills	232	2026-09-18	none	Comprehensive collection of Claude Code skills for academic research in economics, finance, and social science
+JoelLewis/finance_skills	220	2026-07-18	MIT	Claude Code skill plugins for financial services — 81 skills across 7 domain plugins covering investment manag
+ahacker-1/cre-agent-skills	133	2026-09-02	Apache-2.0	Commercial real estate AI agent skills for CRE underwriting, due diligence, financing, brokerage, legal and cl
+chase-manning/ai-hedge-fund	97	2026-10-17	MIT	An autonomous multi asset AI fund. Claude proposes, code disposes.
+kimlawtech/korean-jangbu-for	87	2026-08-29	Apache-2.0	한국 스타트업, 1인 법인, 프리랜서, 개인 사업자를 위한 장부 자동 생성 Claude Code 스킬. 카드명세서 PDF·은행 CSV → 재무제표·세무사 전달 CSV 자동 생성. Level 2 민감
+zubair-trabzada/ai-finance-claude	84	2026-05-12	NOASSERTION	AI personal finance & financial planning engine for Claude Code. Analyze cash flow, debt, investments, retirem
+StanleyChanH/Tushare-Finance-Skill-for-Claude-Code	80	2026-11-02	MIT	专为 Claude Code 设计的 Tushare Pro 金融数据技能包，支持 220+ 个接口，用自然语言获取 A 股行情、财务数据、宏观经济等金融数据。
+Danielopol/Claude-Code-Playbooks	66	2026-11-01	NOASSERTION	Free, open-source library of 1,179+ copy-paste CLAUDE.md playbooks for Claude Code — covering finance, marketi
+jeremylongshore/excel-analyst-pro-skill-md	61	2026-10-14	NOASSERTION	Professional financial modeling toolkit for Claude Code with auto-invoked Skills. Build DCF models, LBO analys
+miron-tech/wholesaler-claude-skills	52	2026-10-08	MIT	Free Claude Code skills for real estate wholesalers: property recon, comps and ARV, rehab estimates, creative 
+WYRE-AI/msp-claude-plugins	52	2026-11-02	Apache-2.0	The community-driven Claude Code plugin marketplace for MSPs — 70+ plugins across PSA, RMM, security, document

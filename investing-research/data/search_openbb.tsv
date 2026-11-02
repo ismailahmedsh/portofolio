@@ -1,0 +1,20 @@
+openbq-org/OpenBB	75033	2026-11-02	NOASSERTION	Open Data Platform for analysts, quants and AI agents.
+JerBouma/FinanceDatabase	9577	2026-11-01	MIT	This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies
+OpenBB-finance/agents-for-openbb	411	2026-07-01	MIT	Custom agents for OpenBB Workspace
+OpenBB-finance/backends-for-openbb	219	2026-07-29	MIT	Backend template to bring your own data into the OpenBB Workspace
+OpenBB-finance/awesome-openbb	135	2026-06-30	MIT	Links to awesome OpenBB apps, widgets and AI agents
+finanalyzer/openbb_akshare	128	2026-05-08	NOASSERTION	OpenBB extension for AKShare.
+fonrex/fonrex	79	2026-11-02	AGPL-3.0	Financial data, unlocked.
+OpenBB-finance/openbb-ai	76	2026-08-18	MIT	SDK for building agents compatible with OpenBB Workspace
+ronielambrosio/openbb-finance	59	2026-11-02	none	OpenBB Finance: Open-Source Investment Research and Quantitative Analysis Platform
+OpenBB-finance/openbb-docs	48	2026-09-29	MIT	OpenBB documentation website repository.
+deeleeramone/RRG-Dashboard	45	2026-07-12	MIT	A Streamlit dashboard for creating relative rotation graphs using the OpenBB Platform.
+finanalyzer/openbb_tushare	32	2026-05-08	NOASSERTION	OpenBB extension for Tushare
+varrdinc/varrd	25	2026-08-31	MIT	AI-powered trading research platform. Test any idea on stocks, futures, and crypto with event studies, backtes
+OpenBB-finance/agent-rita	24	2026-08-26	MIT	An open-source, model-agnostic agent for the OpenBB Workspace
+OpenBB-finance/openbb-platform-pro-backend	20	2026-08-24	MIT	Widgets JSON for OpenBB Terminal Pro
+OpenBB-finance/openbb-metricsv2	19	2026-10-01	MIT	Fuels the OpenBB company public metrics
+OpenBB-finance/uptime	15	2026-09-01	MIT	📈 Uptime monitor and status page for OpenBB, powered by @upptime
+pi-2r/Quant-Science	15	2026-08-19	none	Python Quant Stack
+finanalyzer/tdx	14	2026-05-08	NOASSERTION	OpenBB extension for TdxQuant
+OpenBB-finance/widgets-library	13	2026-08-24	MIT	OpenBB Terminal Pro widgets library

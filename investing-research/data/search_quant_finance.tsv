@@ -1,0 +1,20 @@
+openbq-org/OpenBB	75033	2026-11-02	NOASSERTION	Open Data Platform for analysts, quants and AI agents.
+microsoft/qlib	49940	2026-10-30	MIT	Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from expl
+vnpy/vnpy	46208	2026-10-27	MIT	基于Python的开源量化交易平台开发框架
+wilsonfreitas/awesome-quant	30413	2026-11-02	none	A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)
+akfamily/akshare	23178	2026-11-02	MIT	AKShare is an elegant and simple financial data interface library for Python, built for human beings! 开源财经数据接口
+paperswithbacktest/awesome-systematic-trading	15140	2026-09-28	none	A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.
+goldmansachs/gs-quant	13876	2026-10-28	Apache-2.0	Python toolkit for quantitative finance
+OpenByteInc/QuantDinger	13445	2026-11-02	Apache-2.0	Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Research, build P
+ranaroussi/quantstats	7779	2026-11-02	Apache-2.0	Portfolio analytics for quants, written in Python
+ricequant/rqalpha	6848	2026-10-28	NOASSERTION	A extendable, replaceable Python algorithmic backtest && trading framework supporting multiple securities
+georgezouq/awesome-ai-in-finance	6716	2026-09-08	CC0-1.0	🔬 A curated list of awesome LLMs & deep learning strategies & tools in financial market.
+The-Swarm-Corporation/AutoHedge	6608	2026-05-11	MIT	Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents
+thuquant/awesome-quant	5704	2026-11-02	MIT	中国的Quant相关资源索引
+google/tf-quant-finance	5558	2026-08-06	Apache-2.0	High-performance TensorFlow library for quantitative finance.
+wangzhe3224/awesome-systematic-trading	5369	2026-10-18	MIT	A curated list of insanely awesome libraries, packages and resources for systematic trading. Crypto, Stock, Fu
+Micro-sheep/efinance	4097	2026-07-17	MIT	efinance 是一个可以快速获取基金、股票、债券、期货数据的 Python 库，回测以及量化交易的好帮手！🚀🚀🚀
+fasiondog/hikyuu	3676	2026-11-02	Apache-2.0	An open-source, high-performance quantitative trading framework in C++/Python focused on strategy analysis and
+imbue-bit/AlphaGPT	3231	2026-06-12	Apache-2.0	基于深度强化学习的开源自动因子工厂。
+LLMQuant/quant-mind	3125	2026-08-15	MIT	QuantMind is an open source agent-native knowledge extraction and retrieval framework for quantitative finance
+akfamily/akquant	2491	2026-10-30	MIT	AKQuant is a high-performance quantitative research and trading framework built on Rust and Python! 开源量化回测框架

@@ -1,0 +1,20 @@
+JerBouma/FinanceDatabase	9577	2026-11-01	MIT	This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies
+alpacahq/alpaca-mcp-server	1055	2026-10-27	MIT	Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build st
+Oft3r/agentic-trading-desk	323	2026-10-19	MIT	AI-assisted trading desk for short-term technical analysis on stocks & ETFs via Robinhood MCP. Deterministic P
+pseudo-longinus/quant-buddy-skills	199	2026-10-30	MIT	宽宝 QuantBuddy： 一整套面向Agent Invesment投资研究与决策的底层设施与能力的调用skill， 覆盖A股/港股/美股/期货/宏观/ETF的量化分析与计算。支持行情、估值、财务查询、选股筛选、因子计
+fja05680/brownbear	16	2026-10-15	MIT	Financial tool for the construction and analysis of stock and ETF portfolios
+furic/richfolio	14	2026-10-13	none	A zero-maintenance morning email digest for your investment portfolio. Set your target allocations once — get 
+laozdao/etf-quant-dao	12	2026-05-23	Apache-2.0	基于 ETF 资金流向数据的 A 股市场趋势量化分析工具 | ETF fund flow quantitative trend analysis for China A-share market
+kidulthhh-dotcom/china-stock-fund-analysis-skill	10	2026-07-14	Apache-2.0	面向 Codex 的中国股票与境内基金分析 Skill。它将 Anthropic financial-services 仓库中有价值的金融研究流程，改编为适合中国市场、适合 Codex 使用、默认不依赖付费终端或付费墙数
+aidaman01/trend-allocation-research-bot	10	2026-10-08	NOASSERTION	Faber-style trend-following asset allocation across 7 ETFs: a research backtest (2007–2026) with no look-ahead
+rootofdata/KRX-Financial-BigData-Idea	5	2026-07-11	none	Development of Funds Based on ETF Analysis and Prediction of Stocks
+afthabvp/indian-market-mcp	5	2026-06-08	MIT	Full-featured MCP server for Indian stock market — NSE, BSE, MCX, Mutual Funds, F&O, ETFs, IPO, Bonds, Commodi
+goww7/halalterminal-claude-skills	5	2026-10-20	Apache-2.0	Claude Code plugin — Shariah-compliant stock screening, halal portfolio builder with DCA, ETF analysis (5 meth
+laurentvv/Trading-AI	5	2026-10-22	none	Advanced Hybrid AI expert system for NASDAQ & Oil (WTI) ETF trading. Merges Quantitative ML, LLMs (Gemma 4, Ge
+charleslau1988/A-ETF-Analysis	4	2026-05-07	none	A股ETF板块资金分析系统 - 基于集思录数据的板块资金流向分析与建仓/抱团/出货信号识别
+fenicola/Ark-Invest-skill-or-luck	4	2026-10-11	MIT	Factor model analysis of ARK Invest ETFs to assess manager skill vs systematic risk exposure
+alpha4em/stock-sector-eda	4	2026-08-15	none	Risk-adjusted return analysis of 10 S&P sector ETFs vs. SPY and a risk-free benchmark (2019–2025) — Sharpe/Sor
+MichaelRochonnn/technical-analysis-chart-reading	3	2026-07-05	none	Murphy-style Codex Skill for technical chart analysis across stocks, crypto, futures, ETFs, FX, and OHLCV data
+22ABLE22/a-share-desk	3	2026-10-28	none	Stock/ETF analysis desk for China A-shares (SH/SZ): holdings PnL, K-line signals, factor scoring, fundamentals
+1476989162/ashare-etf-analysis	2	2026-08-31	none	A股ETF
+memory125/etf-analysis	2	2026-06-12	none	ETF基金深度分析工作流 v2.0 — 15维评分卡、风险雷达、杀猪盘检测、定投策略、HTML报告

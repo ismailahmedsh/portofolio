@@ -1,0 +1,269 @@
+TauricResearch/TradingAgents	119922	2026-10-27	Apache-2.0	TradingAgents: Multi-Agents LLM Financial Trading Framework
+openbq-org/OpenBB	75033	2026-11-02	NOASSERTION	Open Data Platform for analysts, quants and AI agents.
+virattt/ai-hedge-fund	64442	2026-11-02	MIT	An AI Hedge Fund Team
+freqtrade/freqtrade	56337	2026-11-02	GPL-3.0	Free, open source crypto trading bot
+microsoft/qlib	49940	2026-10-30	MIT	Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from expl
+vnpy/vnpy	46208	2026-10-27	MIT	基于Python的开源量化交易平台开发框架
+ccxt/ccxt	44684	2026-11-02	MIT	A unified trading API with more than 100 crypto exchanges and prediction markets in JavaScript / TypeScript / 
+HKUDS/Vibe-Trading	37468	2026-11-02	MIT	"Vibe-Trading: Your Personal Trading Agent"
+hsliuping/TradingAgents-CN	32767	2026-09-22	NOASSERTION	基于多智能体LLM的中文金融交易框架 - TradingAgents中文增强版
+wilsonfreitas/awesome-quant	30413	2026-11-02	none	A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)
+alirezarezvani/claude-skills	29175	2026-11-02	MIT	380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable re
+akfamily/akshare	23178	2026-11-02	MIT	AKShare is an elegant and simple financial data interface library for Python, built for human beings! 开源财经数据接口
+QuantConnect/Lean	22349	2026-11-02	Apache-2.0	Lean Algorithmic Trading Engine by QuantConnect (Python, C#)
+stefan-jansen/machine-learning-for-trading	21680	2026-10-29	MIT	Code for Machine Learning for Trading, 3rd edition — from data sourcing to live execution.
+hummingbot/hummingbot	20913	2026-10-20	Apache-2.0	Open source software that helps you create and deploy high-frequency crypto trading bots
+paperswithbacktest/awesome-systematic-trading	15140	2026-09-28	none	A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.
+goldmansachs/gs-quant	13876	2026-10-28	Apache-2.0	Python toolkit for quantitative finance
+OpenByteInc/QuantDinger	13445	2026-11-02	Apache-2.0	Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Research, build P
+StockSharp/StockSharp	11041	2026-10-25	NOASSERTION	Algorithmic trading and quantitative trading open source platform to develop trading robots (stock markets, fo
+polakowo/vectorbt	9645	2026-10-28	NOASSERTION	The research engine that gives you an unfair advantage. Run thousands of trading ideas before others finish on
+JerBouma/FinanceDatabase	9577	2026-11-01	MIT	This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies
+kernc/backtesting.py	9180	2026-08-05	AGPL-3.0	🔎 📈 🐍 💰  Backtest trading strategies in Python.
+jesse-ai/jesse	8758	2026-10-31	MIT	An advanced crypto trading bot written in Python
+ranaroussi/quantstats	7779	2026-11-02	Apache-2.0	Portfolio analytics for quants, written in Python
+shy3130/tick-stock-panel	6903	2026-11-02	MIT	TSP自托管、零运维的 A 股「自建策略 + 监控 + 回测」量化工作台  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源
+Drakkar-Software/OctoBot	6885	2026-11-02	GPL-3.0	Free open source crypto trading bot to automate AI, Grid, DCA and TradingView strategies on Binance, Hyperliqu
+ricequant/rqalpha	6848	2026-10-28	NOASSERTION	A extendable, replaceable Python algorithmic backtest && trading framework supporting multiple securities
+georgezouq/awesome-ai-in-finance	6716	2026-09-08	CC0-1.0	🔬 A curated list of awesome LLMs & deep learning strategies & tools in financial market.
+The-Swarm-Corporation/AutoHedge	6608	2026-05-11	MIT	Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents
+PyPortfolio/PyPortfolioOpt	6141	2026-07-07	MIT	Financial portfolio optimization in python, including classical efficient frontier, Black-Litterman, Hierarchi
+Mathieu2301/TradingView-API	5808	2026-10-30	none	📈 Get real-time stocks from TradingView
+Superalgos/Superalgos	5757	2026-11-02	Apache-2.0	Free, open-source crypto trading bot, automated bitcoin / cryptocurrency trading software, algorithmic trading
+thuquant/awesome-quant	5704	2026-11-02	MIT	中国的Quant相关资源索引
+freqtrade/freqtrade-strategies	5619	2026-09-08	GPL-3.0	Free trading strategies for Freqtrade bot
+chrisleekr/binance-trading-bot	5596	2026-11-02	Apache-2.0	Automated Binance trading bot with pluggable strategies, historical backtesting, and a live dashboard
+google/tf-quant-finance	5558	2026-08-06	Apache-2.0	High-performance TensorFlow library for quantitative finance.
+wangzhe3224/awesome-systematic-trading	5369	2026-10-18	MIT	A curated list of insanely awesome libraries, packages and resources for systematic trading. Crypto, Stock, Fu
+atilaahmettaner/tradingview-mcp	5191	2026-10-29	MIT	MCP server for market analysis in AI assistants: screeners, multi-timeframe technical analysis, backtests and 
+dcajasn/Riskfolio-Lib	4583	2026-10-30	BSD-3-Clause	Portfolio Optimization in Python
+Jakeschincariol/day-trader-skill	4550	2026-10-20	MIT	11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, an
+mortdeus/solana-copy-sniper-mev-trading-bot	4513	2026-10-30	BSD-3-Clause	🆓Free High speed solana mev arbitrage Sniper Copy Trading Bot, gRPC shred stream Pumpfun Bundler, Pumpfun Cont
+shashankvemuri/Finance	4360	2026-09-12	MIT	Python toolkit for quantitative finance: stock analysis, technical indicators, strategy backtesting, portfolio
+zvtvz/zvt	4323	2026-07-01	MIT	modular quant framework.
+Micro-sheep/efinance	4097	2026-07-17	MIT	efinance 是一个可以快速获取基金、股票、债券、期货数据的 Python 库，回测以及量化交易的好帮手！🚀🚀🚀
+simonlin1212/TradingAgents-astock	3889	2026-10-30	Apache-2.0	A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-share multi-agent investment re
+fasiondog/hikyuu	3676	2026-11-02	Apache-2.0	An open-source, high-performance quantitative trading framework in C++/Python focused on strategy analysis and
+edtechre/pybroker	3667	2026-11-02	NOASSERTION	Algorithmic Trading in Python with Machine Learning
+Haehnchen/crypto-trading-bot	3545	2026-08-02	MIT	Cryptocurrency trading bot in javascript for Bitfinex, Bitmex, Binance, Bybit ... (public edition)
+iterativv/NostalgiaForInfinity	3508	2026-11-02	GPL-3.0	Trading strategy for the Freqtrade crypto bot
+thrasher-corp/gocryptotrader	3467	2026-11-02	MIT	A cryptocurrency trading bot and framework supporting multiple exchanges written in Golang.
+imbue-bit/AlphaGPT	3231	2026-06-12	Apache-2.0	基于深度强化学习的开源自动因子工厂。
+LLMQuant/quant-mind	3125	2026-08-15	MIT	QuantMind is an open source agent-native knowledge extraction and retrieval framework for quantitative finance
+hello245m/free-stockdb	3104	2026-10-12	MIT	面向 A 股日K、分钟K与ETF分钟数据的本地量化引擎，集成增量同步、本地缓存、复权、批量查询、回测与指标计算。
+alsk1992/CloddsBot	3063	2026-10-02	MIT	Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hy
+skfolio/skfolio	2579	2026-10-29	BSD-3-Clause	Python library for portfolio optimization, factor model construction, and risk management built on scikit-lear
+botcrypto-io/awesome-crypto-trading-bots	2547	2026-08-10	CC0-1.0	Awesome crypto trading bots
+study8677/awesome-architecture	2494	2026-09-21	MIT	🧭 Architecture-first system design: 26 bilingual tutorials, 25 architecture templates, and 6 end-to-end cases 
+akfamily/akquant	2491	2026-10-30	MIT	AKQuant is a high-performance quantitative research and trading framework built on Rust and Python! 开源量化回测框架
+ginlix-ai/LangAlpha	2238	2026-11-02	Apache-2.0	Claude Code for Financial Market
+coding-kitties/investing-algorithm-framework	2230	2026-11-01	Apache-2.0	Framework for quantitative trading. Complete framework for development, backtesting, and deploying automated t
+LeoYeAI/agent-master-skills	2175	2026-11-02	MIT	🧠 Curated collection of 2700+ best agent skills — AI, coding, marketing, design, finance and more. Harness-agn
+enarjord/passivbot	2154	2026-11-02	Unlicense	Trading bot running on Bybit, Bitget, OKX, GateIO, Binance, Kucoin, WEEX and Hyperliquid
+olaxbt/ai-market-maker	2111	2026-08-20	AGPL-3.0	Agentic AI Hedge Fund OS (AIMM)
+fabston/TradingView-Webhook-Bot	1891	2026-10-26	MIT	📊 Send TradingView alerts to Telegram, Discord, Slack, Twitter and Email. 
+asavinov/intelligent-trading-bot	1890	2026-11-01	MIT	Intelligent Trading Bot: Automatically generating signals and trading based on machine learning and feature en
+Barca0412/Introduction-to-Quantitative-Finance	1857	2026-11-02	MIT	AI+金融（量化）：1.多因子股票量化框架开源教程 2.学界和业界的经典资料收录 3.AI + 金融的相关工作，包括LLM, Agent, benchmark(evaluation), etc.
+c9s/bbgo	1677	2026-11-02	AGPL-3.0	The modern cryptocurrency trading bot framework written in Go.
+rodrigo-brito/ninjabot	1637	2026-11-01	MIT	A fast trading bot platform for cryptocurrency in Go (Binance)
+goldspanlabs/optopsy	1510	2026-06-30	AGPL-3.0	A nimble options research and backtesting library for Python
+brycewang-stanford/Awesome-Journal-Skills	1353	2026-09-27	MIT	Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济
+facioquo/stock-indicators-dotnet	1250	2026-11-02	Apache-2.0	Stock Indicators for .NET is a C# NuGet package that transforms raw equity, commodity, forex, or cryptocurrenc
+freqtrade/frequi	1109	2026-10-31	GPL-3.0	Freqtrade UI - Frontend for Freqtrade
+kyky2347/ALTA	1076	2026-11-01	Apache-2.0	Autonomous LLM Trading Asterism — a research-only multi-agent trading platform with evidence-first research, a
+alpacahq/alpaca-mcp-server	1055	2026-10-27	MIT	Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build st
+freqtrade/technical	1036	2026-10-29	GPL-3.0	Various indicators developed or collected for the Freqtrade
+merovinh/best-of-algorithmic-trading	1028	2026-10-29	CC-BY-SA-4.0	A ranked list of algorithmic trading open-source libraries, frameworks, bots, tools, books, communities, educa
+ZhangJinHaHaHa/AgentLens	1014	2026-08-24	AGPL-3.0	Agentlens is a trusted agent trading platform.  Here, you can quickly find the Agent that meets your needs, an
+Superior-Trade/trading-terminal	1009	2026-10-30	Apache-2.0	Self-hosted AI trading terminal for Hyperliquid: chart read in, validated Freqtrade/Nautilus-Trader strategy o
+LLMQuant/awesome-trading-agents	968	2026-08-13	CC0-1.0	Curated list of LLM-driven trading agents, MCP servers, and agent skills for market research, strategy, and ex
+komako-workshop/digital-oracle	907	2026-07-26	MIT	AI agent skill that answers macro questions — housing, gold, BTC, geopolitics — with probability estimates min
+KylinMountain/TradingAgents-AShare	887	2026-10-30	NOASSERTION	A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部
+gbeced/basana	877	2026-10-23	NOASSERTION	A Python async and event driven framework for algorithmic trading, with a focus on crypto currencies.
+AsyncAlgoTrading/aat	842	2026-07-27	Apache-2.0	Asynchronous, event-driven algorithmic trading in Python and C++
+quant-sentiment-ai/claude-equity-research	752	2026-11-02	MIT	🔌 Claude Code Plugin for institutional-grade equity research.   Install with /plugin marketplace add. Generate
+wshobson/maverick-mcp	717	2026-11-02	MIT	Stock market MCP server for Yahoo Finance data, technical analysis, portfolio tracking, and Python backtesting
+TheFourGreatErrors/alpha-rptr	706	2026-06-19	MIT	A trading bot for automated algorithmic trading on Binance Futures, Bybit, BitMEX and FTX written in python.
+saidsurucu/borsa-mcp	658	2026-09-24	MIT	MCP Server for Turkish & American Stock Exchange and Fund Data
+ssssi/freqtrade_strs	651	2026-07-24	none	Trading Strategies for Freqtrade
+ryanfrigo/kalshi-ai-trading-bot	641	2026-10-30	MIT	The honest edge layer for Kalshi prediction markets - an agent-native toolkit (CLI, MCP server, Claude skill) 
+billpwchan/futu_algo	618	2026-10-22	Apache-2.0	Futu Algorithmic Trading Solution (Python) 基於富途OpenAPI所開發量化交易程序
+josephchenhk/qtrader	549	2026-09-07	none	A Light Event-Driven Algorithmic Trading Engine
+robaho/go-trader	522	2026-06-30	GPL-3.0	financial exchange written in Go, designed for algorithmic trading tests
+agiprolabs/claude-trading-skills	508	2026-09-03	MIT	68 trading, DeFi, and quantitative finance Agent Skills. Works with Claude Code, Cursor, Codex, Gemini CLI, an
+NVIDIA-AI-Blueprints/portfolio-optimization	502	2026-09-15	Apache-2.0	Powered by NVIDIA cuOpt: a GPU-accelerated portfolio optimization toolkit for building, backtesting, and scali
+neurallayer/roboquant	469	2026-09-18	Apache-2.0	Roboquant is  a fast, flexible, user-friendly and completely free algorithmic trading platform 
+ericrisco/rsc-harness	444	2026-11-01	MIT	Your agent invents things because it has no memory, and can't touch your database because it has no arms. rsc 
+nateemma/strategies	442	2026-10-27	GPL-3.0	Custom trading strategies using the freqtrade framework
+alexanderwanyoike/the0	433	2026-11-01	Apache-2.0	Open Source Algorithmic Trading Engine
+cn-vhql/FactorHub	432	2026-07-12	none	FactorHub is an open-source modern quantitative factor analysis platform designed specifically for the Chinese
+TorchTrade/torchtrade	430	2026-10-08	MIT	Modular reinforcement learning framework for algorithmic trading
+robcerda/monarch-mcp-server	429	2026-10-26	MIT	MCP Server for use with Monarch Money
+OpenBB-finance/agents-for-openbb	411	2026-07-01	MIT	Custom agents for OpenBB Workspace
+0xethanq/astra-quant-agent	408	2026-10-03	NOASSERTION	结合多大模型分析与确定性代码风控的自主量化交易系统 ｜ Autonomous crypto trading system with multi-LLM analysis, deterministic Python ris
+xang1234/stock-screener	408	2026-11-02	Apache-2.0	CANSLIM & Minervini stock screener for 12 markets (US, China, HK, Japan, India, Korea, Taiwan & more). 80+ fil
+moss-site/moss-trade-bot-skills	392	2026-10-20	MIT-0	LLM-powered trading agents that turn plain natural language into a five-pillar strategy: Trend, Mean-Reversion
+stefanoamorelli/sec-edgar-mcp	384	2026-11-01	AGPL-3.0	A SEC EDGAR MCP (Model Context Protocol) Server
+tradingstrategy-ai/trading-strategy	381	2026-10-28	NOASSERTION	Python framework for quantitative financial analysis and trading algorithms on decentralised exchanges
+himanshu2406/Algo.Py	368	2026-06-30	NOASSERTION	The Next-Gen Algorithmic Trading Framework 🚀 (Early Beta)
+Alex2Yang97/yahoo-finance-mcp	365	2026-09-19	MIT	This is a Model Context Protocol (MCP) server that provides comprehensive financial data from Yahoo Finance. I
+gameworkerkim/vibe-investing	353	2026-11-02	none	AI-powered Vibe Investing for NASDAQ, S&P500 & crypto: LLM quant trading tools, multi-agent backtesting, and d
+AojdevStudio/Finance-Guru	332	2026-10-30	AGPL-3.0	Self-hosted family office engine: typed Python calculators, a private SQLite ledger, and specialist agents for
+convexfi/riskparity.py	327	2026-08-31	MIT	Fast and scalable construction of risk parity portfolios
+Oft3r/agentic-trading-desk	323	2026-10-19	MIT	AI-assisted trading desk for short-term technical analysis on stocks & ETFs via Robinhood MCP. Deterministic P
+fortitudo-tech/fortitudo.tech	313	2026-10-08	GPL-3.0	Entropy Pooling views and stress testing combined with Conditional Value-at-Risk (CVaR) portfolio optimization
+longsurf-ai/openchart	292	2026-10-30	MIT	OSS trading workspace with your favorite agents
+evelyyyyynnnnn/3.0-Financial-Ai-Systems	284	2026-10-18	none	Machine learning and optimization models designed to enhance financial system stability through portfolio opti
+ALAGENT-HKU/x2strategy	283	2026-06-12	none	Extract structured strategy specifications from quantitative finance research papers — Agent Skill for GitHub 
+microsoft/finnts	280	2026-11-02	NOASSERTION	Microsoft Finance Time Series Forecasting Framework (FinnTS) is a forecasting package that utilizes cutting-ed
+huygiatrng/AlpacaTradingAgent	279	2026-10-27	Apache-2.0	AlpacaTradingAgent: Multi-Agents LLM Financial Trading Framework and perform trades on alpaca
+mbk-dev/okama	275	2026-10-27	MIT	Investment portfolio and stocks analyzing tools for Python with free historical data
+EthanXiang777/circuit-framework	274	2026-07-16	Apache-2.0	Circuit Framework — multi-agent LLM trading research system
+yennanliu/InvestSkill	272	2026-10-24	MIT	US stock analysis skills for LLMs (Claude code, Codex, Gemini ...)  | #AI
+BlockRunAI/awesome-finance-mcp	254	2026-09-05	none	A curated list of MCP servers for AI finance agents
+ceyyy427/finathink	249	2026-11-01	MIT	Finathink — Financial Research Optimizer for auditable, point-in-time research, mathematical learning, and con
+daniel3303/Equibles	240	2026-11-02	AGPL-3.0	Self-hosted, open-source financial data MCP server for AI agents — SEC filings, XBRL financials, 13F holdings,
+zwldarren/akshare-one-mcp	240	2026-10-29	MIT	MCP server that provides access to Chinese stock market data using akshare-one
+franklee16/academic-research-skills	232	2026-09-18	none	Comprehensive collection of Claude Code skills for academic research in economics, finance, and social science
+apiguru-app/amazon-scraper-v2	226	2026-09-21	Apache-2.0	Agent-ready Amazon Scraper API: real-time product details (batch ASIN), offers & stock, reviews, search, best 
+JoelLewis/finance_skills	220	2026-07-18	MIT	Claude Code skill plugins for financial services — 81 skills across 7 domain plugins covering investment manag
+OpenBB-finance/backends-for-openbb	219	2026-07-29	MIT	Backend template to bring your own data into the OpenBB Workspace
+Superior-Trade/superior-skills	218	2026-09-10	MIT	Open agent skills and tool schemas for Superior Trade — build, backtest, and deploy trading strategies on Hype
+cloudQuant/backtrader	207	2026-11-02	GPL-3.0	Optimized Python fork of Backtrader for strategy backtesting and live trading, with vectorized and event-drive
+fzn0x/idx	206	2026-11-02	MIT	Analyze the Indonesian stock market (IDX/IHSG) from web terminal, CLI, or any AI agents via MCP server. IHSG P
+imsatoshi/GeneTrader	204	2026-07-29	MIT	Genetic Algorithm Optimization for Trading Strategies
+letehaha/moneymatter	201	2026-11-02	AGPL-3.0	Open-source, self-hosted budget tracker and personal finance app. Bank sync, multi-currency, investments, and 
+pseudo-longinus/quant-buddy-skills	199	2026-10-30	MIT	宽宝 QuantBuddy： 一整套面向Agent Invesment投资研究与决策的底层设施与能力的调用skill， 覆盖A股/港股/美股/期货/宏观/ETF的量化分析与计算。支持行情、估值、财务查询、选股筛选、因子计
+jjlabsio/korea-stock-mcp	184	2026-11-02	ISC	MCP Server for Korean stock analysis. 한국 주식 분석을 위한 MCP 서버입니다.  
+SilvioBaratto/optimizer	177	2026-10-31	NOASSERTION	LLM agents decide, skfolio optimizes, you approve. Portfolio optimization with a market-data pipeline and pape
+p-zombie/freqtrade	177	2026-11-01	none	Automatically deploy freqtrade to a remote Docker host and auto update strategies. 
+JingHao-Leon/dsh-alpha-desk	168	2026-09-23	MIT	把 dsh 会话变成合规、可复现、可追责的 AI 投研工作台：ai-hedge-fund 回测 + risk-gate 风控 + cron 盯盘 + 记忆复盘 | compliance-first AI investme
+DojoCodingLabs/remotion-superpowers	156	2026-10-29	MIT	🎬 Full video production studio for Remotion — for Claude Code, Codex, Gemini CLI & any Agent Skills agent. AI 
+imbenrabi/Financial-Modeling-Prep-MCP-Server	150	2026-10-14	Apache-2.0	A Model Context Protocol (MCP) implementation for Financial Modeling Prep, enabling AI assistants to access an
+OctagonAI/octagon-mcp-server	148	2026-07-09	MIT	An MCP server for public & prediction markets research. Ask natural-language questions and get structured, sou
+Tapetide-hq/nse-bse-indian-stock-market-data-mcp	146	2026-10-28	MIT	Indian stock market MCP server for NSE & BSE — 48 tools (55 with aliases) for about 8,000 stocks: live quotes,
+kennethleungty/Finance-LLMs	146	2026-08-25	MIT	Comprehensive Compilation of Real-World LLM & AI Agent Use Cases in Financial Services
+Mastaaa1987/freqtrade-strategie	141	2026-09-15	MIT	My Freqtrade Strategie that really works well .... Backtests included & Real Live Trade Result's ....
+anurag3407/career-pilot	137	2026-11-01	MIT	An open-source, AI-powered career platform for resume optimization, mock interviews, and job tracking, Archite
+OpenBB-finance/awesome-openbb	135	2026-06-30	MIT	Links to awesome OpenBB apps, widgets and AI agents
+TheoBrigitte/freqtrade	135	2026-09-27	none	Freqtrade strategies, configurations and dry-runs
+ahacker-1/cre-agent-skills	133	2026-09-02	Apache-2.0	Commercial real estate AI agent skills for CRE underwriting, due diligence, financing, brokerage, legal and cl
+henrylin99/freqtrade-tutorials	132	2026-07-19	none	freqtrade教程，freqtrade-tutorials
+stefanoamorelli/fred-mcp-server	130	2026-08-22	AGPL-3.0	Open-source FRED MCP Server (Federal Reserve Economic Data)
+finanalyzer/openbb_akshare	128	2026-05-08	NOASSERTION	OpenBB extension for AKShare.
+rooneyrulz/agentic-stock-research-system	120	2026-09-15	none	A sophisticated multi-agent AI system for analyzing Indian NSE-listed stocks using real-time data, technical i
+tomfunk/fungible	114	2026-11-01	MIT	Terminal UI and Desktop GUI for personal finance — Plaid sync, CSV import, AI assistant, and MCP server
+akutishevsky/lunchmoney-mcp	112	2026-08-03	MIT	A Model Context Protocol (MCP) server implementation for LunchMoney, providing programmatic access to personal
+edrisranjbar/lifeos	112	2026-11-02	MIT	Self-hosted life OS: habits, goals, Kanban, finance and focus, with an MCP server for AI.
+zhensherlock/sp500-mcp-server	109	2026-10-29	AGPL-3.0	An MCP server and Next.js web app for querying S&P 500 company data from Supabase, with tools for company info
+LuxAlgo/luxalgo-mcp-server	105	2026-10-25	MIT	The LuxAlgo ecosystem as MCP tools: free and keyless.
+initial-d/ml-quant-trading	103	2026-11-02	MIT	PyTorch ML quant research: 213 factors, bias correction, portfolio optimization, backtesting, and System-One/J
+chase-manning/ai-hedge-fund	97	2026-10-17	MIT	An autonomous multi asset AI fund. Claude proposes, code disposes.
+liuyuelintop/react-portfolio	89	2026-10-12	none	An interactive React 18 portfolio featuring AI-powered career assistance, dynamic project showcases with live 
+QuantiaAI/helm-agents	88	2026-06-23	Apache-2.0	多智能体 LLM 股票/加密交易决策台 —— 13 位 AI 分析师研究、辩论、风控压测,收敛出可追溯、可实时观看的交易决策。 | Multi-agent LLM trading desk: 13 AI analysts
+ignaciohermosillacornejo/copilot-money-mcp	88	2026-11-02	MIT	MCP server for Copilot Money App - AI powered personal finance queries using local data
+LLMQuant/data-mcp	87	2026-08-27	MIT	The knowledge harness for AI‑native finance — MCP server for LLMQuant Data.
+kimlawtech/korean-jangbu-for	87	2026-08-29	Apache-2.0	한국 스타트업, 1인 법인, 프리랜서, 개인 사업자를 위한 장부 자동 생성 Claude Code 스킬. 카드명세서 PDF·은행 CSV → 재무제표·세무사 전달 CSV 자동 생성. Level 2 민감
+immois/astro-zen	84	2026-09-25	MIT	Minimalist, accessible and SEO-optimized personal portfolio website template.
+zubair-trabzada/ai-finance-claude	84	2026-05-12	NOASSERTION	AI personal finance & financial planning engine for Claude Code. Analyze cash flow, debt, investments, retirem
+G-OTW/OpenTraderWorld	82	2026-10-30	NOASSERTION	Free and source-available, self-hostable trading workspace: data, backtest, trading journal, news aggregator, 
+dokson/hedge-fund-tracker	82	2026-11-02	NOASSERTION	📊 Hedge Fund Tracker: Track SEC 13F/13D filings with AI-Powered Insights for Stock Investments
+shuizhengqi1/futu-stock-mcp-server	81	2026-05-03	MIT	mcp server for futuniuniu stock
+DaviddTech/ai-trading-agent	80	2026-09-11	MIT	Build your own AI hedge fund with Claude, Codex, Cursor & OpenClaw. The agent-native skills directory for Trad
+QuantConnect/mcp-server	80	2026-10-26	Apache-2.0	Official QuantConnect MCP Server to use AI with QuantConnect
+StanleyChanH/Tushare-Finance-Skill-for-Claude-Code	80	2026-11-02	MIT	专为 Claude Code 设计的 Tushare Pro 金融数据技能包，支持 220+ 个接口，用自然语言获取 A 股行情、财务数据、宏观经济等金融数据。
+fonrex/fonrex	79	2026-11-02	AGPL-3.0	Financial data, unlocked.
+sigmafieldlabs/finalytics	78	2026-11-02	Apache-2.0	SigmaField Portfolio Library
+OpenBB-finance/openbb-ai	76	2026-08-18	MIT	SDK for building agents compatible with OpenBB Workspace
+abdulvahabaa/react-ts-personal-portfolio	76	2026-06-14	MIT	My personal developer portfolio built with React and TypeScript. Features a component-driven architecture, opt
+jxlarrea/voice-satellite-card-llm-tools	76	2026-09-20	MIT	LLM tools for Home Assistant that extends Voice Satellite with weather, financial, image and video search capa
+siqiwang0712-commits/financial-risk-agent	76	2026-10-20	Apache-2.0	Evidence-grounded financial risk analysis from corporate filings, combining constrained LLM interpretation, de
+dragon1086/kospi-kosdaq-stock-server	74	2026-09-11	MIT	An MCP server that provides KOSPI/KOSDAQ stock data using FastMCP
+djienne/YOUTUBE_STRATEGIES_FREQTRADE	73	2026-10-03	none	Depot contenant les fichiers de stratégies et de configurations présentés dans la chaine Youtube.
+The-FinAI/FinCon	71	2026-10-08	MIT	FinCon: a synthesized LLM multi-agent system with conceptual verbal reinforcement for financial decision makin
+Danielopol/Claude-Code-Playbooks	66	2026-11-01	NOASSERTION	Free, open-source library of 1,179+ copy-paste CLAUDE.md playbooks for Claude Code — covering finance, marketi
+surajrimal07/NepseAPI-Unofficial	64	2026-10-16	MIT	Unlock Nepal Stock Exchange (NEPSE) data with this powerful unofficial API. Features REST, WebSocket, and a fi
+Mircea-MMXXI/azapy	63	2026-05-10	GPL-3.0	Financial Portfolio Optimization Algorithms
+jerome-benoit/freqai-strategies	63	2026-11-02	none	Freqtrade FreqAI strategies
+tbdavid2019/ai-hedge-fund-API	63	2026-10-15	AGPL-3.0	如果把幾位股神做成AI 開一家投資公司會如何？世界級分析師一起分析個股 https://hedgeapi.afpicapital.com/skill.md
+NTZ12345678/freqtrade_chinese_discord	62	2026-10-19	none	freqtrade中文社区，欢迎来耍(非官方的)
+jeremylongshore/excel-analyst-pro-skill-md	61	2026-10-14	NOASSERTION	Professional financial modeling toolkit for Claude Code with auto-invoked Skills. Build DCF models, LBO analys
+Chamanrajragu/purffle-shorts	59	2026-11-02	MIT	Free open-source AI YouTube Shorts generator and faceless video maker in Python. Any LLM (GPT, Claude, Gemini,
+ronielambrosio/openbb-finance	59	2026-11-02	none	OpenBB Finance: Open-Source Investment Research and Quantitative Analysis Platform
+tradermonty/finviz-mcp-server	58	2026-05-10	MIT	MCP server providing stock screening, fundamental analysis, news, and SEC filing tools powered by Finviz.
+aicoincom/coinos-skills	57	2026-08-29	MIT	AiCoin crypto toolkit for AI agents — 40+ tools for real-time prices, K-lines, AI analysis, funding rates, wha
+oujingzhou/openfr	57	2026-05-09	none	OpenFR：Multi-Agents for financial research
+INo-xious/stockbit-mcp	56	2026-11-02	MIT	Model Context Protocol (MCP) server for Stockbit (Indonesian / IDX market) — broker summary / bandarmology, qu
+Adity-star/mcp-yfinance-server	54	2026-05-21	MIT	Real-time stock API with Python, MCP server example, yfinance stock analysis dashboard
+HMAKT99/ClawTank	52	2026-11-01	Apache-2.0	Open-source RDP server for macOS. Use your Mac mini or Mac Studio from a MacBook, Windows, iPad or Linux with 
+WYRE-AI/msp-claude-plugins	52	2026-11-02	Apache-2.0	The community-driven Claude Code plugin marketplace for MSPs — 70+ plugins across PSA, RMM, security, document
+miron-tech/wholesaler-claude-skills	52	2026-10-08	MIT	Free Claude Code skills for real estate wholesalers: property recon, comps and ARV, rehab estimates, creative 
+OpenBB-finance/openbb-docs	48	2026-09-29	MIT	OpenBB documentation website repository.
+brandononchain/opentrade	48	2026-05-17	none	The most powerful open-source TradingView AI agent. 50 tools, 15 models (Claude, GPT, Gemini, Qwen, DeepSeek, 
+deeleeramone/RRG-Dashboard	45	2026-07-12	MIT	A Streamlit dashboard for creating relative rotation graphs using the OpenBB Platform.
+bnymnDev/shopware-mcp	37	2026-11-01	MIT	MCP server for Shopware 6. Products, orders, customers, stock, documents, a one-call health audit and sales re
+dx-corp/orbit-agent	33	2026-11-02	MIT	A brutally honest "high‑orbit" startup advisor you can text or run from the CLI. Built with DSPy, it provides 
+typhonun/DcaTpStrategy	33	2026-05-07	MIT	基于freqtrade的DcaTp量化策略
+QTinman/CoinBrowser	32	2026-10-21	none	Coinbrowser is a pair selection tool for Freqtrade and a simple crypto trading-simulator
+finanalyzer/openbb_tushare	32	2026-05-08	NOASSERTION	OpenBB extension for Tushare
+pulpoff/freqmon	32	2026-09-14	none	Freqtrade multiple instances monitor dashboard
+OpenFinArena/OpenFinArena	29	2026-08-28	none	Benchmarking LLMs and Agents in Rigorous Financial Analysis and Forecast
+vansh-121/Multi-Agent-AI-Finance-Assistant	29	2026-10-21	MIT	The Multi-Agent AI Finance Assistant is an open-source platform designed to provide intelligent financial anal
+LLMQuant/llmquant-hermes	26	2026-07-22	MIT	Turn your Hermes agent into a financial analyst — on-demand equities / macro / options / prediction-market ana
+davidalmeida90/glassbench	25	2026-10-28	Apache-2.0	Connect and benchmark finance agent systems in one open-source platform, then trade on them. TradingAgents and
+varrdinc/varrd	25	2026-08-31	MIT	AI-powered trading research platform. Test any idea on stocks, futures, and crypto with event studies, backtes
+OpenBB-finance/agent-rita	24	2026-08-26	MIT	An open-source, model-agnostic agent for the OpenBB Workspace
+coopersimson96/kronos-claude-skill	24	2026-05-28	none	Wall Street's billion dollar stock prediction AI as a Claude skill. Run hedge-fund-grade technical analysis fr
+Skopaq-AI/skopaqtrader	23	2026-10-02	Apache-2.0	Open-source AI algorithmic trading platform for Indian equities. Multi-agent LLM pipeline with autonomous daem
+actionow-ai/x2t	22	2026-06-11	MIT	把财经博主的喊单变成可追踪的战绩:AI 标立场 · 记转向 · 回测跑赢大盘 | Turn finfluencer noise into trackable signals — AI stance labeling, f
+poetony/FinAgents	22	2026-06-21	MIT	Multi-agent LLM-powered financial analysis framework for stocks.
+Codehagen/hodget	21	2026-07-27	AGPL-3.0	An open-source AI hedge fund. A panel of AI analysts and quant models research tickers, each forms a view, and
+Ap6pack/ai-day-trader-agent	20	2026-10-13	MIT	A modular Python bot that analyzes real-time stock market data and news sentiment to generate actionable trade
+Felix-au/QuantX-Stock-Analysis-and-Forecast	20	2026-07-21	MIT	An advanced stock analysis and forecasting platform.  QuantX provides real-time financial metrics, key technic
+OpenBB-finance/openbb-platform-pro-backend	20	2026-08-24	MIT	Widgets JSON for OpenBB Terminal Pro
+OpenBB-finance/openbb-metricsv2	19	2026-10-01	MIT	Fuels the OpenBB company public metrics
+crollila/High-Frequency-Trading-Algorithm-with-Instant-News-Sentiment-Analysis	19	2026-08-12	none	My AI HF news trading bot, executes BUY/SELL SHORT/COVER, CALL trades within <100ms from news release dependin
+ramuza0113-sketch/lumina-ai-hedge-fund	19	2026-11-02	NOASSERTION	Autonomous Multi-Agent Quantitative Hedge Fund Studio powered by LangGraph, Qlib Alpha158, Google TimesFM & 3D
+TipRanks/mcp	16	2026-07-22	MIT	Official TipRanks MCP server — live analyst ratings, Smart Score, technicals, options, insider/hedge-fund acti
+fja05680/brownbear	16	2026-10-15	MIT	Financial tool for the construction and analysis of stock and ETF portfolios
+AshayK003/nse-sentiment-analyzer	15	2026-10-14	AGPL-3.0	NSE Stock Sentiment Analyzer — Enter any NSE ticker & get live price + news sentiment in one dashboard. Stream
+OpenBB-finance/uptime	15	2026-09-01	MIT	📈 Uptime monitor and status page for OpenBB, powered by @upptime
+pi-2r/Quant-Science	15	2026-08-19	none	Python Quant Stack
+2464404039/a-share-agents	14	2026-07-17	MIT	基于开源项目 virattt/ai-hedge-fund 二次开发，全面适配 A 股市场。更改为t+1规则，引入多个a股数据源。
+finanalyzer/tdx	14	2026-05-08	NOASSERTION	OpenBB extension for TdxQuant
+furic/richfolio	14	2026-10-13	none	A zero-maintenance morning email digest for your investment portfolio. Set your target allocations once — get 
+OpenBB-finance/widgets-library	13	2026-08-24	MIT	OpenBB Terminal Pro widgets library
+laozdao/etf-quant-dao	12	2026-05-23	Apache-2.0	基于 ETF 资金流向数据的 A 股市场趋势量化分析工具 | ETF fund flow quantitative trend analysis for China A-share market
+PelleNybe/Crypto-MCP-Server---by-Corax-CoLAB	10	2026-10-25	MIT	An Autonomous Hedge Fund AI Orchestrator by Corax CoLAB. Features Multi-Agent Consensus (Gemini, Claude, OpenA
+aidaman01/trend-allocation-research-bot	10	2026-10-08	NOASSERTION	Faber-style trend-following asset allocation across 7 ETFs: a research backtest (2007–2026) with no look-ahead
+kidulthhh-dotcom/china-stock-fund-analysis-skill	10	2026-07-14	Apache-2.0	面向 Codex 的中国股票与境内基金分析 Skill。它将 Anthropic financial-services 仓库中有价值的金融研究流程，改编为适合中国市场、适合 Codex 使用、默认不依赖付费终端或付费墙数
+safteinzz/AITradeTrendTracker	10	2026-07-23	MIT	A machine learning-driven platform that integrates sentiment analysis and advanced predictive modeling to fore
+td-02/ai-native-hedge-fund	10	2026-09-29	none	Free AI-native hedge fund prototype with local agents, backtesting, and Alpaca paper execution
+riccardone/ai-hedge-fund-net	9	2026-07-12	MIT	.Net algorithmic program that provides trading signals by analysing stocks using multiple AI agents
+singh-rounak/LLM-Stock-Price-Prediction	9	2026-06-10	none	Developed an end-to-end stock price prediction model by integrating LLM-based sentiment analysis of financial 
+Harsh-Jain-10/StockVisionPro	8	2026-10-04	MIT	📈 StockVision Pro — AI-powered stock analytics dashboard built with React + Vite. Features live market data fo
+kohoj/finstack	7	2026-10-14	MIT	An operating system for investment thinking — one person + AI = a hedge fund's research department
+potato-uu/cn-hedge-fund	7	2026-05-12	NOASSERTION	中国 A 股 / 港股 / 美股多智能体投资分析 — 8 位投资大师人格 + 4 分析师 + A 股实战手册。纯 prompt，适配任何支持 skill 的 AI 助手。
+HarshitBadam/trade-intel	6	2026-08-23	NOASSERTION	Stock research dashboard unifying market data and AI-derived news sentiment, with a built-in research assistan
+lifeadventurer/sentify	6	2026-10-28	GPL-3.0	Leveraging Sentiment Analysis on News for Stock Market Insights
+ArshiBansal/Stock_Market_Analysis	5	2026-11-01	MIT	Real-time prices via yfinance, on-demand training of 8 models, consistent backtesting, ensemble forecasts with
+Salmanahmed1078/Stock-Marketing-Analysis-Agent	5	2026-07-15	MIT	Telegram bot that delivers comprehensive US stock analysis combining real-time technical data, AI-powered news
+afthabvp/indian-market-mcp	5	2026-06-08	MIT	Full-featured MCP server for Indian stock market — NSE, BSE, MCX, Mutual Funds, F&O, ETFs, IPO, Bonds, Commodi
+calsify/MarketLoom	5	2026-07-26	none	MarketLoom is an autonomous multi-agent intelligence platform that seamlessly weaves live quantitative financi
+goww7/halalterminal-claude-skills	5	2026-10-20	Apache-2.0	Claude Code plugin — Shariah-compliant stock screening, halal portfolio builder with DCA, ETF analysis (5 meth
+laurentvv/Trading-AI	5	2026-10-22	none	Advanced Hybrid AI expert system for NASDAQ & Oil (WTI) ETF trading. Merges Quantitative ML, LLMs (Gemma 4, Ge
+rootofdata/KRX-Financial-BigData-Idea	5	2026-07-11	none	Development of Funds Based on ETF Analysis and Prediction of Stocks
+Godsfav5/sentimeter	4	2026-10-14	MIT	📈 Automate stock trading on the Indonesian Stock Exchange with Sentimeter, a bot that analyzes news sentiment 
+LuthfiMirza/Implementasi-Analisis-Sentimen-BeritaSaham	4	2026-10-21	MIT	Laravel-based IDX stock sentiment analysis dashboard with news aggregation, technical ranking, prediction eval
+alpha4em/stock-sector-eda	4	2026-08-15	none	Risk-adjusted return analysis of 10 S&P sector ETFs vs. SPY and a risk-free benchmark (2019–2025) — Sharpe/Sor
+charleslau1988/A-ETF-Analysis	4	2026-05-07	none	A股ETF板块资金分析系统 - 基于集思录数据的板块资金流向分析与建仓/抱团/出货信号识别
+fenicola/Ark-Invest-skill-or-luck	4	2026-10-11	MIT	Factor model analysis of ARK Invest ETFs to assess manager skill vs systematic risk exposure
+minnobug/stock-data-pipeline	4	2026-05-25	MIT	ELT pipeline for Vietnam stock market (HOSE & HNX) — collecting OHLC data and news sentiment using Python, Pos
+22ABLE22/a-share-desk	3	2026-10-28	none	Stock/ETF analysis desk for China A-shares (SH/SZ): holdings PnL, K-line signals, factor scoring, fundamentals
+AnyegaAlex/Sentiment-Driven-Stock-Price-Prediction-Using-News-Headlines	3	2026-10-19	MIT	An end-to-end application that predicts stock price movements using sentiment analysis of financial news headl
+Brad-zqh/us-stock-quant	3	2026-10-30	none	Quantitative equity research platform for U.S. and China A-share markets, featuring multi-factor screening, ne
+MichaelRochonnn/technical-analysis-chart-reading	3	2026-07-05	none	Murphy-style Codex Skill for technical chart analysis across stocks, crypto, futures, ETFs, FX, and OHLCV data
+mohdozairqureshi/Stocker	3	2026-08-21	none	I made this project for my college major project , it runs a sentiment  analysis on news articles from the int
+narin-kura/NewsToStocks	3	2026-09-18	NOASSERTION	📈 Investment recommendation AI agent. Scrapes financial news (Reuters, CNBC, WSJ, Reddit), performs NLP sentim
+1476989162/ashare-etf-analysis	2	2026-08-31	none	A股ETF
+memory125/etf-analysis	2	2026-06-12	none	ETF基金深度分析工作流 v2.0 — 15维评分卡、风险雷达、杀猪盘检测、定投策略、HTML报告

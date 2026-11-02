@@ -1,0 +1,20 @@
+HKUDS/Vibe-Trading	37468	2026-11-02	MIT	"Vibe-Trading: Your Personal Trading Agent"
+stefan-jansen/machine-learning-for-trading	21680	2026-10-29	MIT	Code for Machine Learning for Trading, 3rd edition — from data sourcing to live execution.
+hummingbot/hummingbot	20913	2026-10-20	Apache-2.0	Open source software that helps you create and deploy high-frequency crypto trading bots
+OpenByteInc/QuantDinger	13445	2026-11-02	Apache-2.0	Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Research, build P
+StockSharp/StockSharp	11041	2026-10-25	NOASSERTION	Algorithmic trading and quantitative trading open source platform to develop trading robots (stock markets, fo
+polakowo/vectorbt	9645	2026-10-28	NOASSERTION	The research engine that gives you an unfair advantage. Run thousands of trading ideas before others finish on
+kernc/backtesting.py	9180	2026-08-05	AGPL-3.0	🔎 📈 🐍 💰  Backtest trading strategies in Python.
+shy3130/tick-stock-panel	6903	2026-11-02	MIT	TSP自托管、零运维的 A 股「自建策略 + 监控 + 回测」量化工作台  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源
+ricequant/rqalpha	6848	2026-10-28	NOASSERTION	A extendable, replaceable Python algorithmic backtest && trading framework supporting multiple securities
+Mathieu2301/TradingView-API	5808	2026-10-30	none	📈 Get real-time stocks from TradingView
+Superalgos/Superalgos	5757	2026-11-02	Apache-2.0	Free, open-source crypto trading bot, automated bitcoin / cryptocurrency trading software, algorithmic trading
+chrisleekr/binance-trading-bot	5596	2026-11-02	Apache-2.0	Automated Binance trading bot with pluggable strategies, historical backtesting, and a live dashboard
+wangzhe3224/awesome-systematic-trading	5369	2026-10-18	MIT	A curated list of insanely awesome libraries, packages and resources for systematic trading. Crypto, Stock, Fu
+atilaahmettaner/tradingview-mcp	5191	2026-10-29	MIT	MCP server for market analysis in AI assistants: screeners, multi-timeframe technical analysis, backtests and 
+Jakeschincariol/day-trader-skill	4550	2026-10-20	MIT	11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, an
+shashankvemuri/Finance	4360	2026-09-12	MIT	Python toolkit for quantitative finance: stock analysis, technical indicators, strategy backtesting, portfolio
+zvtvz/zvt	4323	2026-07-01	MIT	modular quant framework.
+fasiondog/hikyuu	3676	2026-11-02	Apache-2.0	An open-source, high-performance quantitative trading framework in C++/Python focused on strategy analysis and
+edtechre/pybroker	3667	2026-11-02	NOASSERTION	Algorithmic Trading in Python with Machine Learning
+hello245m/free-stockdb	3104	2026-10-12	MIT	面向 A 股日K、分钟K与ETF分钟数据的本地量化引擎，集成增量同步、本地缓存、复权、批量查询、回测与指标计算。

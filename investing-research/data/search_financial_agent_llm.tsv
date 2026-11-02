@@ -1,0 +1,20 @@
+TauricResearch/TradingAgents	119922	2026-10-27	Apache-2.0	TradingAgents: Multi-Agents LLM Financial Trading Framework
+ginlix-ai/LangAlpha	2238	2026-11-02	Apache-2.0	Claude Code for Financial Market
+komako-workshop/digital-oracle	907	2026-07-26	MIT	AI agent skill that answers macro questions — housing, gold, BTC, geopolitics — with probability estimates min
+microsoft/finnts	280	2026-11-02	NOASSERTION	Microsoft Finance Time Series Forecasting Framework (FinnTS) is a forecasting package that utilizes cutting-ed
+huygiatrng/AlpacaTradingAgent	279	2026-10-27	Apache-2.0	AlpacaTradingAgent: Multi-Agents LLM Financial Trading Framework and perform trades on alpaca
+yennanliu/InvestSkill	272	2026-10-24	MIT	US stock analysis skills for LLMs (Claude code, Codex, Gemini ...)  | #AI
+daniel3303/Equibles	240	2026-11-02	AGPL-3.0	Self-hosted, open-source financial data MCP server for AI agents — SEC filings, XBRL financials, 13F holdings,
+kennethleungty/Finance-LLMs	146	2026-08-25	MIT	Comprehensive Compilation of Real-World LLM & AI Agent Use Cases in Financial Services
+QuantiaAI/helm-agents	88	2026-06-23	Apache-2.0	多智能体 LLM 股票/加密交易决策台 —— 13 位 AI 分析师研究、辩论、风控压测,收敛出可追溯、可实时观看的交易决策。 | Multi-agent LLM trading desk: 13 AI analysts
+siqiwang0712-commits/financial-risk-agent	76	2026-10-20	Apache-2.0	Evidence-grounded financial risk analysis from corporate filings, combining constrained LLM interpretation, de
+jxlarrea/voice-satellite-card-llm-tools	76	2026-09-20	MIT	LLM tools for Home Assistant that extends Voice Satellite with weather, financial, image and video search capa
+The-FinAI/FinCon	71	2026-10-08	MIT	FinCon: a synthesized LLM multi-agent system with conceptual verbal reinforcement for financial decision makin
+oujingzhou/openfr	57	2026-05-09	none	OpenFR：Multi-Agents for financial research
+dx-corp/orbit-agent	33	2026-11-02	MIT	A brutally honest "high‑orbit" startup advisor you can text or run from the CLI. Built with DSPy, it provides 
+vansh-121/Multi-Agent-AI-Finance-Assistant	29	2026-10-21	MIT	The Multi-Agent AI Finance Assistant is an open-source platform designed to provide intelligent financial anal
+OpenFinArena/OpenFinArena	29	2026-08-28	none	Benchmarking LLMs and Agents in Rigorous Financial Analysis and Forecast
+LLMQuant/llmquant-hermes	26	2026-07-22	MIT	Turn your Hermes agent into a financial analyst — on-demand equities / macro / options / prediction-market ana
+Skopaq-AI/skopaqtrader	23	2026-10-02	Apache-2.0	Open-source AI algorithmic trading platform for Indian equities. Multi-agent LLM pipeline with autonomous daem
+poetony/FinAgents	22	2026-06-21	MIT	Multi-agent LLM-powered financial analysis framework for stocks.
+actionow-ai/x2t	22	2026-06-11	MIT	把财经博主的喊单变成可追踪的战绩:AI 标立场 · 记转向 · 回测跑赢大盘 | Turn finfluencer noise into trackable signals — AI stance labeling, f

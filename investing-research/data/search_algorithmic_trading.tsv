@@ -1,0 +1,20 @@
+QuantConnect/Lean	22349	2026-11-02	Apache-2.0	Lean Algorithmic Trading Engine by QuantConnect (Python, C#)
+StockSharp/StockSharp	11041	2026-10-25	NOASSERTION	Algorithmic trading and quantitative trading open source platform to develop trading robots (stock markets, fo
+ricequant/rqalpha	6848	2026-10-28	NOASSERTION	A extendable, replaceable Python algorithmic backtest && trading framework supporting multiple securities
+Superalgos/Superalgos	5757	2026-11-02	Apache-2.0	Free, open-source crypto trading bot, automated bitcoin / cryptocurrency trading software, algorithmic trading
+edtechre/pybroker	3667	2026-11-02	NOASSERTION	Algorithmic Trading in Python with Machine Learning
+coding-kitties/investing-algorithm-framework	2230	2026-11-01	Apache-2.0	Framework for quantitative trading. Complete framework for development, backtesting, and deploying automated t
+goldspanlabs/optopsy	1510	2026-06-30	AGPL-3.0	A nimble options research and backtesting library for Python
+facioquo/stock-indicators-dotnet	1250	2026-11-02	Apache-2.0	Stock Indicators for .NET is a C# NuGet package that transforms raw equity, commodity, forex, or cryptocurrenc
+merovinh/best-of-algorithmic-trading	1028	2026-10-29	CC-BY-SA-4.0	A ranked list of algorithmic trading open-source libraries, frameworks, bots, tools, books, communities, educa
+gbeced/basana	877	2026-10-23	NOASSERTION	A Python async and event driven framework for algorithmic trading, with a focus on crypto currencies.
+AsyncAlgoTrading/aat	842	2026-07-27	Apache-2.0	Asynchronous, event-driven algorithmic trading in Python and C++
+TheFourGreatErrors/alpha-rptr	706	2026-06-19	MIT	A trading bot for automated algorithmic trading on Binance Futures, Bybit, BitMEX and FTX written in python.
+billpwchan/futu_algo	618	2026-10-22	Apache-2.0	Futu Algorithmic Trading Solution (Python) 基於富途OpenAPI所開發量化交易程序
+josephchenhk/qtrader	549	2026-09-07	none	A Light Event-Driven Algorithmic Trading Engine
+robaho/go-trader	522	2026-06-30	GPL-3.0	financial exchange written in Go, designed for algorithmic trading tests
+neurallayer/roboquant	469	2026-09-18	Apache-2.0	Roboquant is  a fast, flexible, user-friendly and completely free algorithmic trading platform 
+alexanderwanyoike/the0	433	2026-11-01	Apache-2.0	Open Source Algorithmic Trading Engine
+TorchTrade/torchtrade	430	2026-10-08	MIT	Modular reinforcement learning framework for algorithmic trading
+tradingstrategy-ai/trading-strategy	381	2026-10-28	NOASSERTION	Python framework for quantitative financial analysis and trading algorithms on decentralised exchanges
+himanshu2406/Algo.Py	368	2026-06-30	NOASSERTION	The Next-Gen Algorithmic Trading Framework 🚀 (Early Beta)

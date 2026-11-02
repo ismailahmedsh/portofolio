@@ -1,0 +1,20 @@
+freqtrade/freqtrade	56337	2026-11-02	GPL-3.0	Free, open source crypto trading bot
+freqtrade/freqtrade-strategies	5619	2026-09-08	GPL-3.0	Free trading strategies for Freqtrade bot
+iterativv/NostalgiaForInfinity	3508	2026-11-02	GPL-3.0	Trading strategy for the Freqtrade crypto bot
+freqtrade/frequi	1109	2026-10-31	GPL-3.0	Freqtrade UI - Frontend for Freqtrade
+freqtrade/technical	1036	2026-10-29	GPL-3.0	Various indicators developed or collected for the Freqtrade
+Superior-Trade/trading-terminal	1009	2026-10-30	Apache-2.0	Self-hosted AI trading terminal for Hyperliquid: chart read in, validated Freqtrade/Nautilus-Trader strategy o
+ssssi/freqtrade_strs	651	2026-07-24	none	Trading Strategies for Freqtrade
+nateemma/strategies	442	2026-10-27	GPL-3.0	Custom trading strategies using the freqtrade framework
+imsatoshi/GeneTrader	204	2026-07-29	MIT	Genetic Algorithm Optimization for Trading Strategies
+p-zombie/freqtrade	177	2026-11-01	none	Automatically deploy freqtrade to a remote Docker host and auto update strategies. 
+Mastaaa1987/freqtrade-strategie	141	2026-09-15	MIT	My Freqtrade Strategie that really works well .... Backtests included & Real Live Trade Result's ....
+TheoBrigitte/freqtrade	135	2026-09-27	none	Freqtrade strategies, configurations and dry-runs
+henrylin99/freqtrade-tutorials	132	2026-07-19	none	freqtrade教程，freqtrade-tutorials
+djienne/YOUTUBE_STRATEGIES_FREQTRADE	73	2026-10-03	none	Depot contenant les fichiers de stratégies et de configurations présentés dans la chaine Youtube.
+jerome-benoit/freqai-strategies	63	2026-11-02	none	Freqtrade FreqAI strategies
+NTZ12345678/freqtrade_chinese_discord	62	2026-10-19	none	freqtrade中文社区，欢迎来耍(非官方的)
+aicoincom/coinos-skills	57	2026-08-29	MIT	AiCoin crypto toolkit for AI agents — 40+ tools for real-time prices, K-lines, AI analysis, funding rates, wha
+typhonun/DcaTpStrategy	33	2026-05-07	MIT	基于freqtrade的DcaTp量化策略
+QTinman/CoinBrowser	32	2026-10-21	none	Coinbrowser is a pair selection tool for Freqtrade and a simple crypto trading-simulator
+pulpoff/freqmon	32	2026-09-14	none	Freqtrade multiple instances monitor dashboard

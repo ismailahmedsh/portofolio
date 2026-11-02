@@ -1,0 +1,20 @@
+wshobson/maverick-mcp	717	2026-11-02	MIT	Stock market MCP server for Yahoo Finance data, technical analysis, portfolio tracking, and Python backtesting
+saidsurucu/borsa-mcp	658	2026-09-24	MIT	MCP Server for Turkish & American Stock Exchange and Fund Data
+xang1234/stock-screener	408	2026-11-02	Apache-2.0	CANSLIM & Minervini stock screener for 12 markets (US, China, HK, Japan, India, Korea, Taiwan & more). 80+ fil
+zwldarren/akshare-one-mcp	240	2026-10-29	MIT	MCP server that provides access to Chinese stock market data using akshare-one
+apiguru-app/amazon-scraper-v2	226	2026-09-21	Apache-2.0	Agent-ready Amazon Scraper API: real-time product details (batch ASIN), offers & stock, reviews, search, best 
+fzn0x/idx	206	2026-11-02	MIT	Analyze the Indonesian stock market (IDX/IHSG) from web terminal, CLI, or any AI agents via MCP server. IHSG P
+jjlabsio/korea-stock-mcp	184	2026-11-02	ISC	MCP Server for Korean stock analysis. 한국 주식 분석을 위한 MCP 서버입니다.  
+DojoCodingLabs/remotion-superpowers	156	2026-10-29	MIT	🎬 Full video production studio for Remotion — for Claude Code, Codex, Gemini CLI & any Agent Skills agent. AI 
+imbenrabi/Financial-Modeling-Prep-MCP-Server	150	2026-10-14	Apache-2.0	A Model Context Protocol (MCP) implementation for Financial Modeling Prep, enabling AI assistants to access an
+OctagonAI/octagon-mcp-server	148	2026-07-09	MIT	An MCP server for public & prediction markets research. Ask natural-language questions and get structured, sou
+Tapetide-hq/nse-bse-indian-stock-market-data-mcp	146	2026-10-28	MIT	Indian stock market MCP server for NSE & BSE — 48 tools (55 with aliases) for about 8,000 stocks: live quotes,
+shuizhengqi1/futu-stock-mcp-server	81	2026-05-03	MIT	mcp server for futuniuniu stock
+dragon1086/kospi-kosdaq-stock-server	74	2026-09-11	MIT	An MCP server that provides KOSPI/KOSDAQ stock data using FastMCP
+surajrimal07/NepseAPI-Unofficial	64	2026-10-16	MIT	Unlock Nepal Stock Exchange (NEPSE) data with this powerful unofficial API. Features REST, WebSocket, and a fi
+Chamanrajragu/purffle-shorts	59	2026-11-02	MIT	Free open-source AI YouTube Shorts generator and faceless video maker in Python. Any LLM (GPT, Claude, Gemini,
+tradermonty/finviz-mcp-server	58	2026-05-10	MIT	MCP server providing stock screening, fundamental analysis, news, and SEC filing tools powered by Finviz.
+INo-xious/stockbit-mcp	56	2026-11-02	MIT	Model Context Protocol (MCP) server for Stockbit (Indonesian / IDX market) — broker summary / bandarmology, qu
+Adity-star/mcp-yfinance-server	54	2026-05-21	MIT	Real-time stock API with Python, MCP server example, yfinance stock analysis dashboard
+HMAKT99/ClawTank	52	2026-11-01	Apache-2.0	Open-source RDP server for macOS. Use your Mac mini or Mac Studio from a MacBook, Windows, iPad or Linux with 
+bnymnDev/shopware-mcp	37	2026-11-01	MIT	MCP server for Shopware 6. Products, orders, customers, stock, documents, a one-call health audit and sales re

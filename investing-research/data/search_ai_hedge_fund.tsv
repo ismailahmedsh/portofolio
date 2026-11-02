@@ -1,0 +1,20 @@
+virattt/ai-hedge-fund	64442	2026-11-02	MIT	An AI Hedge Fund Team
+The-Swarm-Corporation/AutoHedge	6608	2026-05-11	MIT	Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents
+olaxbt/ai-market-maker	2111	2026-08-20	AGPL-3.0	Agentic AI Hedge Fund OS (AIMM)
+JingHao-Leon/dsh-alpha-desk	168	2026-09-23	MIT	把 dsh 会话变成合规、可复现、可追责的 AI 投研工作台：ai-hedge-fund 回测 + risk-gate 风控 + cron 盯盘 + 记忆复盘 | compliance-first AI investme
+chase-manning/ai-hedge-fund	97	2026-10-17	MIT	An autonomous multi asset AI fund. Claude proposes, code disposes.
+dokson/hedge-fund-tracker	82	2026-11-02	NOASSERTION	📊 Hedge Fund Tracker: Track SEC 13F/13D filings with AI-Powered Insights for Stock Investments
+DaviddTech/ai-trading-agent	80	2026-09-11	MIT	Build your own AI hedge fund with Claude, Codex, Cursor & OpenClaw. The agent-native skills directory for Trad
+tbdavid2019/ai-hedge-fund-API	63	2026-10-15	AGPL-3.0	如果把幾位股神做成AI 開一家投資公司會如何？世界級分析師一起分析個股 https://hedgeapi.afpicapital.com/skill.md
+brandononchain/opentrade	48	2026-05-17	none	The most powerful open-source TradingView AI agent. 50 tools, 15 models (Claude, GPT, Gemini, Qwen, DeepSeek, 
+davidalmeida90/glassbench	25	2026-10-28	Apache-2.0	Connect and benchmark finance agent systems in one open-source platform, then trade on them. TradingAgents and
+coopersimson96/kronos-claude-skill	24	2026-05-28	none	Wall Street's billion dollar stock prediction AI as a Claude skill. Run hedge-fund-grade technical analysis fr
+Codehagen/hodget	21	2026-07-27	AGPL-3.0	An open-source AI hedge fund. A panel of AI analysts and quant models research tickers, each forms a view, and
+ramuza0113-sketch/lumina-ai-hedge-fund	19	2026-11-02	NOASSERTION	Autonomous Multi-Agent Quantitative Hedge Fund Studio powered by LangGraph, Qlib Alpha158, Google TimesFM & 3D
+TipRanks/mcp	16	2026-07-22	MIT	Official TipRanks MCP server — live analyst ratings, Smart Score, technicals, options, insider/hedge-fund acti
+2464404039/a-share-agents	14	2026-07-17	MIT	基于开源项目 virattt/ai-hedge-fund 二次开发，全面适配 A 股市场。更改为t+1规则，引入多个a股数据源。
+td-02/ai-native-hedge-fund	10	2026-09-29	none	Free AI-native hedge fund prototype with local agents, backtesting, and Alpaca paper execution
+PelleNybe/Crypto-MCP-Server---by-Corax-CoLAB	10	2026-10-25	MIT	An Autonomous Hedge Fund AI Orchestrator by Corax CoLAB. Features Multi-Agent Consensus (Gemini, Claude, OpenA
+riccardone/ai-hedge-fund-net	9	2026-07-12	MIT	.Net algorithmic program that provides trading signals by analysing stocks using multiple AI agents
+potato-uu/cn-hedge-fund	7	2026-05-12	NOASSERTION	中国 A 股 / 港股 / 美股多智能体投资分析 — 8 位投资大师人格 + 4 分析师 + A 股实战手册。纯 prompt，适配任何支持 skill 的 AI 助手。
+kohoj/finstack	7	2026-10-14	MIT	An operating system for investment thinking — one person + AI = a hedge fund's research department

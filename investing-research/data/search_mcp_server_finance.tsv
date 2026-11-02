@@ -1,0 +1,20 @@
+wshobson/maverick-mcp	717	2026-11-02	MIT	Stock market MCP server for Yahoo Finance data, technical analysis, portfolio tracking, and Python backtesting
+robcerda/monarch-mcp-server	429	2026-10-26	MIT	MCP Server for use with Monarch Money
+xang1234/stock-screener	408	2026-11-02	Apache-2.0	CANSLIM & Minervini stock screener for 12 markets (US, China, HK, Japan, India, Korea, Taiwan & more). 80+ fil
+stefanoamorelli/sec-edgar-mcp	384	2026-11-01	AGPL-3.0	A SEC EDGAR MCP (Model Context Protocol) Server
+Alex2Yang97/yahoo-finance-mcp	365	2026-09-19	MIT	This is a Model Context Protocol (MCP) server that provides comprehensive financial data from Yahoo Finance. I
+BlockRunAI/awesome-finance-mcp	254	2026-09-05	none	A curated list of MCP servers for AI finance agents
+daniel3303/Equibles	240	2026-11-02	AGPL-3.0	Self-hosted, open-source financial data MCP server for AI agents — SEC filings, XBRL financials, 13F holdings,
+fzn0x/idx	206	2026-11-02	MIT	Analyze the Indonesian stock market (IDX/IHSG) from web terminal, CLI, or any AI agents via MCP server. IHSG P
+letehaha/moneymatter	201	2026-11-02	AGPL-3.0	Open-source, self-hosted budget tracker and personal finance app. Bank sync, multi-currency, investments, and 
+stefanoamorelli/fred-mcp-server	130	2026-08-22	AGPL-3.0	Open-source FRED MCP Server (Federal Reserve Economic Data)
+tomfunk/fungible	114	2026-11-01	MIT	Terminal UI and Desktop GUI for personal finance — Plaid sync, CSV import, AI assistant, and MCP server
+akutishevsky/lunchmoney-mcp	112	2026-08-03	MIT	A Model Context Protocol (MCP) server implementation for LunchMoney, providing programmatic access to personal
+edrisranjbar/lifeos	112	2026-11-02	MIT	Self-hosted life OS: habits, goals, Kanban, finance and focus, with an MCP server for AI.
+zhensherlock/sp500-mcp-server	109	2026-10-29	AGPL-3.0	An MCP server and Next.js web app for querying S&P 500 company data from Supabase, with tools for company info
+LuxAlgo/luxalgo-mcp-server	105	2026-10-25	MIT	The LuxAlgo ecosystem as MCP tools: free and keyless.
+ignaciohermosillacornejo/copilot-money-mcp	88	2026-11-02	MIT	MCP server for Copilot Money App - AI powered personal finance queries using local data
+LLMQuant/data-mcp	87	2026-08-27	MIT	The knowledge harness for AI‑native finance — MCP server for LLMQuant Data.
+G-OTW/OpenTraderWorld	82	2026-10-30	NOASSERTION	Free and source-available, self-hostable trading workspace: data, backtest, trading journal, news aggregator, 
+QuantConnect/mcp-server	80	2026-10-26	Apache-2.0	Official QuantConnect MCP Server to use AI with QuantConnect
+dragon1086/kospi-kosdaq-stock-server	74	2026-09-11	MIT	An MCP server that provides KOSPI/KOSDAQ stock data using FastMCP

@@ -1,0 +1,20 @@
+TauricResearch/TradingAgents	119922	2026-10-27	Apache-2.0	TradingAgents: Multi-Agents LLM Financial Trading Framework
+HKUDS/Vibe-Trading	37468	2026-11-02	MIT	"Vibe-Trading: Your Personal Trading Agent"
+hsliuping/TradingAgents-CN	32767	2026-09-22	NOASSERTION	基于多智能体LLM的中文金融交易框架 - TradingAgents中文增强版
+simonlin1212/TradingAgents-astock	3889	2026-10-30	Apache-2.0	A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-share multi-agent investment re
+study8677/awesome-architecture	2494	2026-09-21	MIT	🧭 Architecture-first system design: 26 bilingual tutorials, 25 architecture templates, and 6 end-to-end cases 
+ginlix-ai/LangAlpha	2238	2026-11-02	Apache-2.0	Claude Code for Financial Market
+Barca0412/Introduction-to-Quantitative-Finance	1857	2026-11-02	MIT	AI+金融（量化）：1.多因子股票量化框架开源教程 2.学界和业界的经典资料收录 3.AI + 金融的相关工作，包括LLM, Agent, benchmark(evaluation), etc.
+kyky2347/ALTA	1076	2026-11-01	Apache-2.0	Autonomous LLM Trading Asterism — a research-only multi-agent trading platform with evidence-first research, a
+ZhangJinHaHaHa/AgentLens	1014	2026-08-24	AGPL-3.0	Agentlens is a trusted agent trading platform.  Here, you can quickly find the Agent that meets your needs, an
+LLMQuant/awesome-trading-agents	968	2026-08-13	CC0-1.0	Curated list of LLM-driven trading agents, MCP servers, and agent skills for market research, strategy, and ex
+KylinMountain/TradingAgents-AShare	887	2026-10-30	NOASSERTION	A 股多智能体智能投研系统 — 基于 TradingAgents 架构，15 名 AI Agent 模拟机构协作与实时辩论对抗，全流程可视化，支持 OpenClaw / Claude Code 集成，Docker 一键部
+ryanfrigo/kalshi-ai-trading-bot	641	2026-10-30	MIT	The honest edge layer for Kalshi prediction markets - an agent-native toolkit (CLI, MCP server, Claude skill) 
+ericrisco/rsc-harness	444	2026-11-01	MIT	Your agent invents things because it has no memory, and can't touch your database because it has no arms. rsc 
+0xethanq/astra-quant-agent	408	2026-10-03	NOASSERTION	结合多大模型分析与确定性代码风控的自主量化交易系统 ｜ Autonomous crypto trading system with multi-LLM analysis, deterministic Python ris
+moss-site/moss-trade-bot-skills	392	2026-10-20	MIT-0	LLM-powered trading agents that turn plain natural language into a five-pillar strategy: Trend, Mean-Reversion
+gameworkerkim/vibe-investing	353	2026-11-02	none	AI-powered Vibe Investing for NASDAQ, S&P500 & crypto: LLM quant trading tools, multi-agent backtesting, and d
+longsurf-ai/openchart	292	2026-10-30	MIT	OSS trading workspace with your favorite agents
+huygiatrng/AlpacaTradingAgent	279	2026-10-27	Apache-2.0	AlpacaTradingAgent: Multi-Agents LLM Financial Trading Framework and perform trades on alpaca
+EthanXiang777/circuit-framework	274	2026-07-16	Apache-2.0	Circuit Framework — multi-agent LLM trading research system
+Superior-Trade/superior-skills	218	2026-09-10	MIT	Open agent skills and tool schemas for Superior Trade — build, backtest, and deploy trading strategies on Hype

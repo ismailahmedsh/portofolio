@@ -1,0 +1,20 @@
+rooneyrulz/agentic-stock-research-system	120	2026-09-15	none	A sophisticated multi-agent AI system for analyzing Indian NSE-listed stocks using real-time data, technical i
+Ap6pack/ai-day-trader-agent	20	2026-10-13	MIT	A modular Python bot that analyzes real-time stock market data and news sentiment to generate actionable trade
+Felix-au/QuantX-Stock-Analysis-and-Forecast	20	2026-07-21	MIT	An advanced stock analysis and forecasting platform.  QuantX provides real-time financial metrics, key technic
+crollila/High-Frequency-Trading-Algorithm-with-Instant-News-Sentiment-Analysis	19	2026-08-12	none	My AI HF news trading bot, executes BUY/SELL SHORT/COVER, CALL trades within <100ms from news release dependin
+AshayK003/nse-sentiment-analyzer	15	2026-10-14	AGPL-3.0	NSE Stock Sentiment Analyzer — Enter any NSE ticker & get live price + news sentiment in one dashboard. Stream
+safteinzz/AITradeTrendTracker	10	2026-07-23	MIT	A machine learning-driven platform that integrates sentiment analysis and advanced predictive modeling to fore
+singh-rounak/LLM-Stock-Price-Prediction	9	2026-06-10	none	Developed an end-to-end stock price prediction model by integrating LLM-based sentiment analysis of financial 
+Harsh-Jain-10/StockVisionPro	8	2026-10-04	MIT	📈 StockVision Pro — AI-powered stock analytics dashboard built with React + Vite. Features live market data fo
+lifeadventurer/sentify	6	2026-10-28	GPL-3.0	Leveraging Sentiment Analysis on News for Stock Market Insights
+HarshitBadam/trade-intel	6	2026-08-23	NOASSERTION	Stock research dashboard unifying market data and AI-derived news sentiment, with a built-in research assistan
+ArshiBansal/Stock_Market_Analysis	5	2026-11-01	MIT	Real-time prices via yfinance, on-demand training of 8 models, consistent backtesting, ensemble forecasts with
+Salmanahmed1078/Stock-Marketing-Analysis-Agent	5	2026-07-15	MIT	Telegram bot that delivers comprehensive US stock analysis combining real-time technical data, AI-powered news
+calsify/MarketLoom	5	2026-07-26	none	MarketLoom is an autonomous multi-agent intelligence platform that seamlessly weaves live quantitative financi
+minnobug/stock-data-pipeline	4	2026-05-25	MIT	ELT pipeline for Vietnam stock market (HOSE & HNX) — collecting OHLC data and news sentiment using Python, Pos
+Godsfav5/sentimeter	4	2026-10-14	MIT	📈 Automate stock trading on the Indonesian Stock Exchange with Sentimeter, a bot that analyzes news sentiment 
+LuthfiMirza/Implementasi-Analisis-Sentimen-BeritaSaham	4	2026-10-21	MIT	Laravel-based IDX stock sentiment analysis dashboard with news aggregation, technical ranking, prediction eval
+Brad-zqh/us-stock-quant	3	2026-10-30	none	Quantitative equity research platform for U.S. and China A-share markets, featuring multi-factor screening, ne
+narin-kura/NewsToStocks	3	2026-09-18	NOASSERTION	📈 Investment recommendation AI agent. Scrapes financial news (Reuters, CNBC, WSJ, Reddit), performs NLP sentim
+AnyegaAlex/Sentiment-Driven-Stock-Price-Prediction-Using-News-Headlines	3	2026-10-19	MIT	An end-to-end application that predicts stock price movements using sentiment analysis of financial news headl
+mohdozairqureshi/Stocker	3	2026-08-21	none	I made this project for my college major project , it runs a sentiment  analysis on news articles from the int

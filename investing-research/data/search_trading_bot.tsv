@@ -1,0 +1,20 @@
+freqtrade/freqtrade	56337	2026-11-02	GPL-3.0	Free, open source crypto trading bot
+ccxt/ccxt	44684	2026-11-02	MIT	A unified trading API with more than 100 crypto exchanges and prediction markets in JavaScript / TypeScript / 
+hummingbot/hummingbot	20913	2026-10-20	Apache-2.0	Open source software that helps you create and deploy high-frequency crypto trading bots
+jesse-ai/jesse	8758	2026-10-31	MIT	An advanced crypto trading bot written in Python
+Drakkar-Software/OctoBot	6885	2026-11-02	GPL-3.0	Free open source crypto trading bot to automate AI, Grid, DCA and TradingView strategies on Binance, Hyperliqu
+Superalgos/Superalgos	5757	2026-11-02	Apache-2.0	Free, open-source crypto trading bot, automated bitcoin / cryptocurrency trading software, algorithmic trading
+freqtrade/freqtrade-strategies	5619	2026-09-08	GPL-3.0	Free trading strategies for Freqtrade bot
+chrisleekr/binance-trading-bot	5596	2026-11-02	Apache-2.0	Automated Binance trading bot with pluggable strategies, historical backtesting, and a live dashboard
+mortdeus/solana-copy-sniper-mev-trading-bot	4513	2026-10-30	BSD-3-Clause	🆓Free High speed solana mev arbitrage Sniper Copy Trading Bot, gRPC shred stream Pumpfun Bundler, Pumpfun Cont
+Haehnchen/crypto-trading-bot	3545	2026-08-02	MIT	Cryptocurrency trading bot in javascript for Bitfinex, Bitmex, Binance, Bybit ... (public edition)
+iterativv/NostalgiaForInfinity	3508	2026-11-02	GPL-3.0	Trading strategy for the Freqtrade crypto bot
+thrasher-corp/gocryptotrader	3467	2026-11-02	MIT	A cryptocurrency trading bot and framework supporting multiple exchanges written in Golang.
+alsk1992/CloddsBot	3063	2026-10-02	MIT	Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hy
+botcrypto-io/awesome-crypto-trading-bots	2547	2026-08-10	CC0-1.0	Awesome crypto trading bots
+coding-kitties/investing-algorithm-framework	2230	2026-11-01	Apache-2.0	Framework for quantitative trading. Complete framework for development, backtesting, and deploying automated t
+enarjord/passivbot	2154	2026-11-02	Unlicense	Trading bot running on Bybit, Bitget, OKX, GateIO, Binance, Kucoin, WEEX and Hyperliquid
+fabston/TradingView-Webhook-Bot	1891	2026-10-26	MIT	📊 Send TradingView alerts to Telegram, Discord, Slack, Twitter and Email. 
+asavinov/intelligent-trading-bot	1890	2026-11-01	MIT	Intelligent Trading Bot: Automatically generating signals and trading based on machine learning and feature en
+c9s/bbgo	1677	2026-11-02	AGPL-3.0	The modern cryptocurrency trading bot framework written in Go.
+rodrigo-brito/ninjabot	1637	2026-11-01	MIT	A fast trading bot platform for cryptocurrency in Go (Binance)
