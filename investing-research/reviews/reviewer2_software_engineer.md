@@ -61,3 +61,38 @@ Caught: round 2 found that the monthly Account table with CAD balances was being
 3. Verify FRED from plain Python; until then macro is context and cannot mark a day DEGRADED.
 4. Run Python first and call Claude only on change days; that cuts cost, risk and build time at once.
 5. Budget 15-20 hours for the cut-down MVP, not 25-35 for the full design, and allow yfinance patch bumps whenever a past report reproduces.
+
+## Re-review of plan v4 (2026-11-03)
+
+Object: `plan/plan_v4.md`, "Changes from v3" table verified against P6, P8, P9, P10, P11, P12, P13, P14.
+
+### Blocking issues from the v3 review
+
+| # | Issue | Status | Pointer |
+|---|---|---|---|
+| B1 | Grounding gate had no enforcement point | **CLOSED** | P6 tree (model writes only gitignored `reports/staging/*.prose.md`); P8 SKILL.md steps 5-7 (`--check` explicit, model never writes the final file); P8 wrapper (`--assemble` after `claude` exits, tmp+rename, `DEGRADED (grounding)` stub on failure or missing staging file); P9 idempotency on the assembled file; P10 "Enforcement point" |
+| B2 | Least privilege rested on SKILL.md `allowed-tools` | **CLOSED** | P8 `.claude/settings.json` (four exact allow strings; deny git, curl, wget, gh, pip, ssh, WebFetch, WebSearch, `mcp__*`, writes elsewhere); Assumption 20 negative test gating every scheduled run; P13; P14 Phase 2a. Leaving the deny spelling to the test is right |
+| B3 | Two writers, two bases, one branch | **CLOSED** | P8 wrappers (single writer, default branch, fast-forward push, no worktree/rsync/rebase, refuses off-default commits); P8 cloud paragraph (Phase 5 replacement only); P11; P14 Phases 3 and 5 |
+
+### Material concerns
+
+| # | Concern | Status | Pointer |
+|---|---|---|---|
+| 1 | FRED unverified from Python | CLOSED | P9 Macro row; P10 policy states; Phase 2a; Assumption 19 |
+| 2 | `claude -p` exits 0 on error | CLOSED | P8 wrapper `ok()` parses `subtype`/`is_error` |
+| 3 | Partial files on budget stop | CLOSED | P9 caching; P8 atomic assembly; measured change-day run |
+| 4 | Digit-grep false positives | CLOSED | P10 whitelist (tables, template, stress line, headlines, date) |
+| 5 | Ledger tolerance vs Close | CLOSED | P10 two-check reconciliation; P6 `unit_price` = confirmed fill |
+| 6 | yfinance bumps, 3.13 lock, pandas | CLOSED | P13 pinning and fallback ladder; P6 |
+| 7 | Cloud egress as primary | CLOSED | P8 cloud paragraph; P14 Phase 5 |
+| 8 | Platform details | CLOSED | P8 wrapper comments; `uvx` strings stay a stated Assumption, acceptable |
+
+### Residual, non-blocking
+
+1. On a change day `run_daily.py --date today` runs twice (wrapper, then skill step 1); the `flags.csv` append and hash chain must be idempotent by date or the chain check fires on a duplicate row.
+2. The wrapper's `set -e` with `out=$(python run_daily.py ...)` ends the run on an uncaught Python exception before `--assemble`, contradicting "never a failed run"; `run_daily.py` must trap vendor errors and always exit 0 with a state.
+3. The monthly Opus run at `--max-budget-usd 3` is unmeasured; a stop yields a stub review, acceptable, but measure one real run in Phase 4.
+
+### Final verdict: APPROVE
+
+No blocking issue remains. v4 is buildable by one person in the stated 15-20 hours, fails closed at a Python enforcement point, has a committed and tested permission boundary, and has one writer per artifact. The residual items are Phase 2a implementation notes, not plan changes.
