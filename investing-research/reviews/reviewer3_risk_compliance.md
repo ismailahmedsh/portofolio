@@ -60,3 +60,22 @@ Strict, not rubber-stamped: round 1 of each audit failed or barely passed, resea
 3. Book a cross-border tax consult before you have a home in Egypt available to you (owned or not) or approach 150 days there in any 12 months; the plan's trigger is slightly too narrow today.
 4. The report's "trend overlay costs 1.4-3.3 pts/yr" is really 0.5-3.3; the conclusion (show it, never trade on it) holds, but the number should be corrected.
 5. The monitor is legally and operationally safe as designed (no broker, no advice, no sharing); its data path is tolerated rather than licensed, so treat a Yahoo outage as expected and keep the EODHD fallback ready.
+
+## Re-review of plan v4 (2026-11-03)
+
+Read: `plan/plan_v4.md` (change table, then P2-P5, P9, P12, P14) and the report's revision line, Bottom line and fact 6.
+
+| # | Item | Status | Pointer |
+|---|---|---|---|
+| 1 | Canonical fact 6 overlay cost | **CLOSED** | Report fact 6 now "0.5-3.3 pts/yr" citing all SMA10 and ABSMOM12 rows of `overlay_results.csv`; R11 coverage row, plan P2 and P5 agree; XEQT ABSMOM12 (0.75 pts) stays visible |
+| 2 | Egypt trigger (b); Scenario B omissions | **CLOSED** | P4 trigger (b) "acquiring, inheriting, or having continuous use of a dwelling", availability named as the treaty test; Scenario B names departure tax (non-registered only) and the 1%/month TFSA penalty; action "stop TFSA and FHSA contributions the day Canadian residence is in doubt" |
+| 3 | Horizon and emergency fund gate | **CLOSED** | P14 milestone 1 is a written gate in `plan/changes.md` (3-6 months of expenses, 15+ years, no withdrawal inside 5 years, the 2020/2022 answer) with XGRO on failure; mirrored in P1 M3, P2, P3 |
+| 4 | Yahoo path tolerated, not licensed | **CLOSED** | P9 "Licensing posture: tolerated, not licensed" states the ToS conflict, its operational nature and EODHD as the licensed route |
+| 5 | Rule 4 bring-forward lever | **CLOSED** | P3 Rule 4 struck; emergency fund never drawn into the portfolio |
+| 6 | "85-93%" sentence | **CLOSED** | Report Bottom line and plan P2 quote SEBI 93%, Brazil 1.1%, Taiwan under 1% with their populations; no "85-93" remains outside the change log |
+| 7 | Validation honor-system edges | **CLOSED** (note) | P12: hash-chained append-only `flags.csv` verified each run and committed; `experiments/variants.jsonl` logged by the harness; hit rate labelled "not a statistic" below 30 changes. The chain stops careless edits, not a determined owner; git history is the real second record, adequate for a personal tool |
+| 8 | v3 unaudited | PARTIALLY CLOSED | v4 is reviewer-checked, not auditor-scored; acceptable at the review stage |
+
+v4 adds no compliance exposure: no broker access, no sharing, no advice language, private reports; one scheduler on the default branch removes the two-writer conflict. Pausing TFSA/FHSA contributions on residence doubt is the right default; RRSP contributions remain permitted for a non-resident with room.
+
+**Final verdict: APPROVE.** Blocking issues: none. Residual risks 1-5 stand; mitigations are now stronger on 1, 2 and 4.
