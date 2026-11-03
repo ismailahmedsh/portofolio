@@ -73,3 +73,25 @@ Two residual notes, neither a condition: the marginal-rate rule of thumb ("secon
 **Final verdict: APPROVE.**
 
 Blocking issues: None.
+
+## Review of plan v5, UAE resident (2026-11-03)
+
+Read `gapfill3_uae_resident_canadian.md` (Q1-Q6, drag and decision tables) and `plan_v5.md` ("Changes from v4", P1-P4, P14).
+
+**Residency gate.** Correct. The Canada-UAE treaty's Article 4(1)(b)(i) nationality clause is a known trap for Canadians in the Gulf and the notes read it right: no tie-breaker, no s.250(5), status on facts alone. Two branches, with Branch B sent to an adviser before the first buy, is the right structure, and the Phase 1 test (three significant ties, secondary ties, day counts, accountant confirmation, NR73 optional) is sufficient. One precision point: the deemed disposition covers only property held on the departure date; positions bought after departure are outside it, and if departure was years ago the T1161/T1243 filings may already be late.
+
+**VWRA over SPYY/ACWD.** Defensible. Two basis points is inside the drag model's error and VWRA's share class is about three times the size.
+
+**Rejections.** Both right. VT: 30% withholding with no treaty plus Form 706-NA exposure above US$60,000 is a real estate risk. XEQT via IBKR as a non-resident: 25% Part XIII with no treaty cap, uncreditable look-through withholding, CAD mismatch.
+
+**80/20 fallback.** Sensible: a USD-hedged global aggregate (AGGU or VAGU) is the correct bond sleeve for a USD earner.
+
+**Departure, TFSA, RRSP, re-entry.** T1161 (C$25,000), T1243, T1244 and the C$16,500 security threshold are correct; TFSA kept, never contributed to (1%/month); RRSP kept, 25% on withdrawals; FHSA to the accountant. The order (residency facts, departure filings, stop registered contributions, broker test, Sarwa exit, first buy) is right. Re-entry FMV step-up, unwinding election and T1135 from year two are correct. **Where I disagree with the notes:** "Canada has no notional distribution rule" for a foreign accumulating fund overlooks s.94.1 (offshore investment fund property), which imputes income at the prescribed rate plus 2% on cost when a main reason for holding is tax deferral. A broad index UCITS held long before return usually passes the motive test, but that is an adviser question bearing on re-entry option (a), not a settled fact.
+
+**Sarwa exit.** Right: 0.4-0.85% plus underlying TERs against 0.14% plus USD 20 a year. Liquidating after the residency gate is the correct sequence.
+
+**Harm check.** Nothing in v5 would harm the owner if followed. Two additions: keep residual USD cash at the broker minimal and hold a DIFC or ADGM will, since UAE succession does not default to a Canadian will; and treat "IBKR Canada can carry LSE lines" as unconfirmed for a Canadian-resident account.
+
+**Verdict: APPROVE WITH CONDITIONS.** Blocking issues: None.
+
+Conditions: (1) P4 step 7: add s.94.1 to the re-entry adviser list and soften "no annual income inclusion" to "generally none, subject to s.94.1"; (2) P4 step 2: deemed disposition applies only to property held on the departure date, and past-year filings may be late; (3) P4 or P5: a one-line will and minimal-cash note.

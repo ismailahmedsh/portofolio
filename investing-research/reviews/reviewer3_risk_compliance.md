@@ -79,3 +79,23 @@ Read: `plan/plan_v4.md` (change table, then P2-P5, P9, P12, P14) and the report'
 v4 adds no compliance exposure: no broker access, no sharing, no advice language, private reports; one scheduler on the default branch removes the two-writer conflict. Pausing TFSA/FHSA contributions on residence doubt is the right default; RRSP contributions remain permitted for a non-resident with room.
 
 **Final verdict: APPROVE.** Blocking issues: none. Residual risks 1-5 stand; mitigations are now stronger on 1, 2 and 4.
+
+## Review of plan v5, UAE resident (2026-11-03)
+
+Read: `gapfill3_uae_resident_canadian.md` and `plan/plan_v5.md` (change table, P2, P4, P5, P13, P15, Assumptions, Phase 1).
+
+**Source check.** The Article 4(1)(b)(i) reading (UAE-resident individuals are UAE nationals, so no tie-breaker and no s.250(5) route for a Canadian citizen) matches the Justice Laws text quoted and the CRA Folio; "status is factual-only" follows. Part XIII at 25% on XEQT income distributions with no treaty cut is supported; the 36 bps rests on an assumed 90/10 income split and says so. Departure-tax, TFSA 1%/month and RRSP 25% rules are quoted from CRA primary pages. The drag table's inputs are labelled assumptions and Assumption 23 rightly says the ranking is robust, the point estimates not. Two overclaims:
+
+1. **"Canada has no notional-distribution rule for foreign accumulating ETFs" (Q6; P4 step 7a).** Section 94.1 (offshore investment fund property) can impute income at the prescribed rate plus 2% on a non-resident fund interest where a main reason for holding it is to defer Canadian tax; an accumulating UCITS in a taxable account after re-entry is the textbook case. Option (a) "keep VWRA in taxable, no annual inclusion" asserts an outcome the source cannot support. Re-entry is adviser-gated, so not blocking; replace with "s.94.1 exposure to be assessed; VWRD or a Canadian-listed fund may be preferred in taxable on return".
+2. **Departure-tax scope (P4 step 2)** says the deemed disposition "covers the Sarwa holdings"; it covers only property owned on the departure date, not positions bought after leaving.
+
+**Residency gate.** Safe in direction: a wrong "resident" answer costs efficiency (Branch B); a wrong "non-resident" answer is the harmful one, and Branch B sends the owner to an adviser at once. Two gaps:
+
+3. **Timing.** Milestone 1a needs the accountant *booked*, not confirmed, before money moves, yet step 5 liquidates Sarwa Invest in the same fortnight; if the facts land in Branch B that is a Canadian taxable disposition. Condition: Sarwa liquidation and the first VWRA buy wait for written confirmation of Branch A; cancelling registered-account buys proceeds immediately.
+4. **The departure is probably in the past.** If the departure-year return, T1161 or T1243 was never filed, or TFSA contributions were made since, penalties accrue now (T1161 C$25/day to C$2,500; TFSA 1%/month retroactively). Condition: step 1 adds "state the departure year; if its forms were not filed or any TFSA/FHSA contribution was made since, remediation (Voluntary Disclosures Program if applicable) precedes any new investing".
+
+**New unknowns.** IBKR entity (read from the agreement; product unaffected), UCITS recurring eligibility (whole-share fallback), FHSA on emigration (contributions stopped, on the accountant's list) and AGGU/VAGU (verified only if the gate fails) each have a safe default. Egypt triggers carry over intact, with the correct note that Branch A has no second residence to tie-break against.
+
+**Hidden risk.** A move to a third country re-opens every question here; the P5 residency-change trigger should name "any change of country of residence", not only Canada and Egypt.
+
+**Verdict: APPROVE WITH CONDITIONS.** Blocking issues: none. Conditions: items 1-4.
