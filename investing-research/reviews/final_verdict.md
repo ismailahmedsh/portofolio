@@ -40,3 +40,19 @@ From 00-framework.md: the pipeline passes when the research audit passes its thr
 3. Questrade pricing is from secondary sources; the plan defaults to Wealthsimple.
 4. Egypt Scenario B tax specifics remain partly unverified; the adviser trigger covers this.
 5. Plan v4 was reviewer-checked, not auditor-scored; reviewer 3 judged this acceptable at the review stage.
+
+## Addendum 2026-11-03: owner is a Canadian citizen resident in the UAE
+
+The owner disclosed after approval that they live in the UAE, invest through Interactive Brokers and are moving about US$2,500 per month from Sarwa. A third research round (gapfill3_uae_resident_canadian.md) and plan v5 followed.
+
+| Stage | Result |
+|-------|--------|
+| Gap-fill research round 3 | Canada-UAE treaty residency is limited to UAE nationals, so Canadian status is purely factual; Part XIII withholding 25 percent with no treaty cut; Irish UCITS all-world fund via IBKR at 34-40 bps all-in drag versus 55-80 bps for XEQT via IBKR and about 75 bps for US-listed VT |
+| Plan v5 | Two-branch residency gate; Branch A (factual non-resident, expected): VWRA on the LSE in USD, SPYY/ACWD alternative; Branch B (still resident): v4 stands with an adviser engaged immediately |
+| Reviewer 1 (portfolio) on v5 | APPROVE WITH CONDITIONS, no blockers |
+| Reviewer 3 (risk and compliance) on v5 | APPROVE WITH CONDITIONS, no blockers |
+| Post-review patch | All conditions applied in plan_v5.md: departure-tax scope, past-departure filing check, Sarwa sale waits for written Branch A confirmation, s.94.1 on re-entry, will and residual cash, residency trigger for any country |
+
+Reviewer 2 (engineering) was not re-run: the toolkit design did not change beyond tickers, currency and the cron time zone.
+
+Current approved plan: plan/plan_v5.md.

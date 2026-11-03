@@ -6,7 +6,7 @@ Self-contained study produced 2026-11-02 to 2026-11-03. Start with the three fil
 |------|------------|
 | 00-framework.md | Goal G0, 15 research pillars, 15 research audit pillars, 15 planning pillars, 15 plan audit pillars, agent plan and loop rules |
 | **reports/ETF long term and AI research tools.md** | Consolidated research report (about 11,700 words) with the "Canonical facts" section that resolves every cross-file contradiction |
-| **plan/plan_v4.md** | The approved plan (P1 to P15). v1 to v3 are kept for history with change lists |
+| **plan/plan_v5.md** | The approved plan (P1 to P15) for a Canadian citizen resident in the UAE. v1 to v4 are kept for history with change lists |
 | **reviews/final_verdict.md** | Cycle record and the three reviewers' final verdicts |
 | research_notes/ | Eight note files from two research rounds, each with Takeaway, Cited Findings, Inferences, Gaps and a URL per claim; gapfill2_data/ holds replication scripts and results |
 | audits/ | Research audits rounds 1 and 2; plan audits rounds 1 and 2; scoring template |
