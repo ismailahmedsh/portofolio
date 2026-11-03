@@ -52,3 +52,24 @@ The research-audit-plan-audit cycle earned its keep on structure and consistency
 3. Ignore the DIY mix and the RRSP US-listed switch until you have well over C$250,000; both save less than they cost in attention.
 4. Keep a tax ledger in any taxable account that includes reinvested distributions, not only your buys.
 5. Treat the monitor as a journal, not an adviser; monthly only, and shut it off the first time it makes you want to change a contribution.
+
+## Re-review of plan v4 (2026-11-03)
+
+Read the "Changes from v3 (post-review)" table and verified each item in P1, P2, P3, P4 and P14 of `plan/plan_v4.md`.
+
+| My concern | Status | Pointer |
+|---|---|---|
+| 1. Account order, marginal-rate test | CLOSED | P4 step 2 (FHSA first, room accrues only once opened), step 3 (RRSP first when current marginal rate exceeds expected retirement rate, TFSA when in doubt, recorded in `plan/changes.md`); P2 primary table; P3 Rule 2 step 1; `accounts.yaml` `account_order` |
+| 2. Phantom distributions in ACB ledger | CLOSED | P3 Rule 2 step 3 and Rule 5 (`kind=phantom` row per taxable holding per year from T3); P4 step 5 |
+| 3. DIY mix presented as neutral | CLOSED | P2 heading and intro now say "deliberate US-underweight, EAFE/EM-overweight tilt", 53/35/12 vs 64/26/10 stated, forecaster citation removed, XEQT-weight variant is the default; Assumption 13 |
+| 4. RRSP US-listed switch at C$100k | CLOSED | P4 step 4: C$250,000, IBKR only, estate-tax exposure and Wealthsimple's Norbert's Gambit limitation named; Assumption 14 |
+| 5. Cost framing | CLOSED | P13 Cost setups: marginal cost $0 if Pro already paid, else ~24 bps on C$100,000, monitor paid for as a journal, never as an input |
+| 6. Drawdown tolerance asserted | CLOSED | P14 Phase 1 milestone 1: written gate (emergency fund figure, horizon, 2020/2022 answer) before any account is funded; failure makes XGRO the core from the first buy; P1 M3; Assumption 2 |
+| 7. Rule 4 bring-forward lever | CLOSED | P3 Rule 4: struck, invest-on-receipt only |
+| 8. FWT 15 vs 22 bps | CLOSED (no change needed) | P1 M4 already computed at 22 bps (41 bps all-in, 45 ceiling); I accept that |
+
+Two residual notes, neither a condition: the marginal-rate rule of thumb ("second federal bracket") is a reasonable shortcut but should be revisited once the owner knows whether a pension adjustment or OAS clawback applies in retirement; and the P2 DIY weights are still carried, which is fine now that they are labelled a tilt and the XEQT-weight variant is the default. The reviewer-2 restructuring (single local scheduler, settings-level deny list, assembly step outside the model) also reduces the one monitor risk I cared about, which is the model nudging a contribution decision.
+
+**Final verdict: APPROVE.**
+
+Blocking issues: None.
