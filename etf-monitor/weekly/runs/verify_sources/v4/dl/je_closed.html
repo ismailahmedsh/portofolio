@@ -1,0 +1,702 @@
+<!DOCTYPE html> <html prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-DE" lang="en-DE" data-testid="translated-page_html"> <head> <script>
+/*<![CDATA[*/
+
+        window.GLOBALS = window.GLOBALS || {}
+    
+/*]]>*/
+</script> <script src="https://web.cmp.usercentrics.eu/tcf/stub.js"></script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="--DQiTMqEc3oVX" async></script>
+<script>
+ (function() {
+   window.addEventListener('UC_UI_INITIALIZED', function(event) {
+     if (window.__ucCmp && typeof window.__ucCmp.changeLanguage === 'function') {
+         window.__ucCmp.changeLanguage("en").then(function() {
+               console.log('Changed Usercentrics language to',"en");
+             })['catch'](function(err) {
+               console.error('Usercentrics language change failed', err);
+             });
+         }
+   });
+  })();
+</script>
+
+ <script>console.log('Using UserCentrics CMP for consent tracking. Draft mode: Off.');</script>
+   <script src="/scripts/custom/usercentrics-youtube.js?20261103-124835" defer></script>  <script src="/scripts/vendor/lazysizes.min.js?20261103-124835" async></script>  <link rel="preconnect" href="https://www.google-analytics.com">  <link rel="preload" as="font" href="/fonts/Poppins-Regular.woff2" type="font/woff2" crossorigin="anonymous"> <link rel="preload" as="font" href="/fonts/Poppins-SemiBold.woff2" type="font/woff2" crossorigin="anonymous"> <link rel="preload" as="font" href="/fonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous"> <link rel="preload" as="font" href="/fonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous"> <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <meta http-equiv="Cache-control" content="no-store"/> <meta http-equiv="Pragma" content="no-cache"/> <meta http-equiv="Expires" content="0"/> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> <meta id="metaViewport" name="viewport" content="width=device-width, initial-scale=1"/> <script type="text/javascript">
+/*<![CDATA[*/
+
+        window.GLOBALS = window.GLOBALS || {}
+
+        if (screen.width <= 720) {
+            document.getElementById('metaViewport')
+                .setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
+        }
+    
+/*]]>*/
+</script> <meta name="apple-mobile-web-app-capable" content="yes"/> <meta name="mobile-web-app-capable" content="yes"/>  <link rel="manifest" href="/manifest.json"> <meta name="theme-color" content="#fff"> <link rel="icon" href="/favicon.ico?v4" sizes="32x32"> <link rel="icon" href="/icon.svg" type="image/svg+xml"> <link rel="apple-touch-icon" href="/apple-touch-icon.png"> <script type="text/javascript" defer src="/scripts/custom/jquery/jquery.blockUI-2.70.0.min.js"></script>  <link rel="stylesheet" href="/style/base/fa/fontawesome.min.css?20261103-124835"> <link rel="stylesheet" href="/style/base/fa/solid.min.css?20261103-124835"> <link rel="stylesheet" href="/style/base/fa/brands.min.css?20261103-124835" media="none" onload="if(media!=='all')media='all'"> <noscript><link rel="stylesheet" href="/style/base/fa/brands.min.css?20261103-124835"></noscript> <link rel="stylesheet" href="/style/base/fa/regular.min.css?20261103-124835" media="none" onload="if(media!=='all')media='all'"> <noscript><link rel="stylesheet" href="/style/base/fa/regular.min.css?20261103-124835"></noscript> <link rel="stylesheet" href="/style/base/fa/v4-shims.min.css?20261103-124835" media="none" onload="if(media!=='all')media='all'"> <noscript><link rel="stylesheet" href="/style/base/fa/v4-shims.min.css?20261103-124835"></noscript>  <link rel="preload" as="font" href="/fonts/OpenSans-Regular.woff2" type="font/woff2" crossorigin="anonymous"> <link rel="preload" as="font" href="/fonts/OpenSans-Bold.woff2" type="font/woff2" crossorigin="anonymous"> <link rel="stylesheet" type="text/css" href="/style/base.min.css?20261103-124835" media="screen"/> <link rel="stylesheet" type="text/css" href="/style/base/bootstrap.min.css?20261103-124835" media="screen"/> <link rel="stylesheet" type="text/css" href="/style/legacy/nbk-legacy.min.css?20261103-124835" media="screen"/> <link rel="stylesheet" type="text/css" href="/style/legacy/nbk-legacy-print.min.css?20261103-124835" media="print"/> <link rel="stylesheet" type="text/css" href="/style/sprite/sprite-indicators.min.css?20261103-124835" media="screen"/>   <script type="text/javascript" src="/scripts/vendor/jquery/jquery-3.5.1.min.js"></script>   <script type="text/javascript">
+/*<![CDATA[*/
+
+            // 1. Safely initialize the VWO object and a fallback init function.
+            // This ensures the VWO object always exists and init() can be called.
+            window.VWO = window.VWO || [];
+            window.VWO.init = window.VWO.init || function(state) { window.VWO.consentState = state; }
+
+            // 2. Set the initial consent state to "pending" by default.
+            // This state will be updated once the user interacts with the banner.
+            window.VWO.init(2);
+            console.log('VWO consent state set to PENDING (2) by default.');
+
+            // 3. Add the event listener for Usercentrics events.
+            window.addEventListener('UC_CONSENT', function (event) {
+                console.log('UC_CONSENT processing for VWO. Event detail.', event.detail);
+
+                // Access the VWO service directly by its ID as a key in the object
+                const vwoService = event.detail.services['SJDM9Niuo-X'];
+
+                // Safely get its consent status
+                const vwoConsentStatus = vwoService?.consent?.given;
+
+                console.log('VWO service consent status is:', vwoConsentStatus);
+
+                if (vwoConsentStatus) {
+                    console.log('Consent to VWO given. Initializing VWO with state 1.');
+                    window.VWO.init(1); // Accepted
+                }
+                else
+                {
+                    console.log('Consent to VWO not given. Initializing VWO with state 3.');
+                    window.VWO.init(3); // Declined
+                }
+            });
+
+        
+/*]]>*/
+</script> <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com"/> <script type="text/javascript" id="vwoCode">
+/*<![CDATA[*/
+
+            window._vwo_code || (function() {
+            var account_id=886528,
+            version=2.1,
+            settings_tolerance=2000,
+            hide_element='body',
+            hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+            /* DO NOT EDIT BELOW THIS LINE */
+            f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={nonce:v&&v.nonce,use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}v&&t.setAttribute('nonce',v.nonce);d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var n=this.getSettings(),i=d.createElement('script'),r=this;t=t||{};if(n){i.textContent=n;d.getElementsByTagName('head')[0].appendChild(i);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200||o.status===304){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var n=this.hide_element(),i=n?n+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=i;else t.appendChild(d.createTextNode(i));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var i=d.createElement('div');i.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;display: block !important;';i.setAttribute('id','_vis_opt_path_hides');i.classList.add('_vis_hide_layer');t.parentNode.insertBefore(i,t.nextSibling)}var o=window._vis_opt_url||d.URL,s='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(o)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:s})}else{this.load(s+'&x=true')}}};w._vwo_code=code;code.init();})();
+        
+/*]]>*/
+</script>   <script type="text/javascript" id="com-drinvestmentcontrol-nbk-webapp-pages-content-AbstractContentPage-0">
+/*<![CDATA[*/
+
+				$(function () {
+					if (inIframe()) {
+						// In iframe - hide logo, header, menu and bottom menu
+						$('.header').hide();
+						$('.menu').hide();
+						$('.footer').hide();
+						$('body').attr('id', 'widget-ft');
+					}
+				});
+    
+/*]]>*/
+</script> <script type="text/javascript" id="pageVars">
+/*<![CDATA[*/
+var PAGE_VARS = {"navBannerCookieName":"nav-banner-v9"};
+/*]]>*/
+</script>
+<script type="text/javascript" id="jlang">
+/*<![CDATA[*/
+$.jlang = 'en';
+/*]]>*/
+</script>
+<script type="text/javascript" id="analytics">
+/*<![CDATA[*/
+window.addEventListener('load', function (e) {(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://sst.justetf.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PFLTQWT');window.dataLayer = window.dataLayer || [];
+window.gtag = function(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+   ad_user_data: 'denied',
+   ad_personalization: 'denied',
+   ad_storage: 'denied',
+   analytics_storage: 'denied',
+   wait_for_update: 500 
+}); 
+gtag('js', new Date());gtag('set', {
+    'dimension1': 'visitor',
+    'dimension2': 'en_DE',
+    'dimension3': 'DE',
+    'dimension4': 'PRIVATE',
+    'dimension5': 'visitor',
+    'dimension6': '',
+});
+gtagFlush();});
+/*]]>*/
+</script>
+<script type="text/javascript" id="iframeCheck">
+/*<![CDATA[*/
+$(function () {if (inIframe()) {document.documentElement.style.display = 'hidden';window.top.location.href=window.location.href;} else {document.documentElement.style.display = 'block';}});
+/*]]>*/
+</script>
+<meta name="apple-itunes-app" content="app-id=1595046405"><meta name="google-adsense-account" content="ca-pub-4964469721535269"/><script type="text/javascript" src="/scripts/vendor/jquery/jquery-main.min.js?20261103-124835"></script>
+<script type="text/javascript" src="/wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-1755078882000.js"></script>
+<script type="text/javascript" id="wicket-ajax-debug-enable">
+/*<![CDATA[*/
+Wicket.Log.enabled=true;
+/*]]>*/
+</script>
+<script type="text/javascript" id="wicket-ajax-base-url">
+/*<![CDATA[*/
+Wicket.Ajax.baseUrl="en-de/page-not-found.html";
+/*]]>*/
+</script>
+ <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge">  <meta name="robots" content="noindex, nofollow"/> <title>Page Not Found | justETF</title> <script type="text/javascript">
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { 
+Wicket.Ajax.ajax({"u":"/en-de/page-not-found.html?0-1.0-headerJ-navigation-logInPanel-universeModalPanel-modal&_wicket=1","c":"universe-modal","e":"hidden.bs.modal"});;
+Wicket.Ajax.ajax({"u":"/en-de/page-not-found.html?0-1.0-headerJ-navigation-logInPanel-universeModalPanel-modal-form-country&_wicket=1","m":"POST","c":"country2","e":"change"});;
+Wicket.Ajax.ajax({"u":"/en-de/page-not-found.html?0-1.0-headerJ-navigation-logInPanel-universeModalPanel-modal-form-submitButton&_wicket=1","m":"POST","c":"universe-modal-save","f":"universe-modal-form","sc":"submitButton","bh":[function(attrs){_block(); clicked = null;}],"sh":[function(attrs, jqXHR, data, textStatus){_unblock(); clicked = null;}],"fh":[function(attrs, jqXHR, errorMessage, textStatus){_unblock(); clicked = null;}],"dh":[function(attrs){_unblock();}],"dep":[function(attrs){return { pageUrl: location.href };}],"e":"click","pd":true});;
+Wicket.Ajax.ajax({"u":"/en-de/page-not-found.html?0-1.0-headerJ-navigation-mainSearchPanel-searchForm-query&_wicket=1","c":"search-input","e":"focus"});;
+Wicket.Ajax.ajax({"u":"/en-de/page-not-found.html?0-1.1-headerJ-navigation-mainSearchPanel-searchForm-query&_wicket=1","m":"POST","c":"search-input","f":"searchForm3","e":"keyup","tr":{"id":"quick-search-query","d":250,"p":true}});;
+Wicket.Ajax.ajax({"u":"/en-de/page-not-found.html?0-1.0-headerJ-navigation-mainSearchPanel-searchForm-submit&_wicket=1","c":"submit","e":"click"});;
+Wicket.Ajax.ajax({"u":"/en-de/page-not-found.html?0-1.1-headerJ-navigation-mainSearchPanel-searchForm-submit&_wicket=1","m":"POST","c":"submit","f":"searchForm3","sc":"p::submit","bh":[function(attrs){_block(); clicked = null;}],"sh":[function(attrs, jqXHR, data, textStatus){_unblock(); clicked = null;}],"fh":[function(attrs, jqXHR, errorMessage, textStatus){_unblock(); clicked = null;}],"dh":[function(attrs){_unblock();}],"e":"click","pd":true});;
+Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+;});
+/*]]>*/
+</script>
+</head> <body class="header-fixed-space datatables-theme nbk-theme" data-testid="translated-page_body"> <script>
+/*<![CDATA[*/
+
+    patchWicketAPI()
+
+/*]]>*/
+</script>  <div id="navbar" data-testid="base-page_header"> <style>
+/*<![CDATA[*/
+
+            /*rules needed to prevent the vertical unstyled layout */
+             .navbar {
+                width: 100%;
+            }
+           .container-fluid, .navbar-nav, .d-flex {
+                display: flex;
+            }
+            .dropdown-menu,  .modal  {
+               display: none;
+            }
+        
+/*]]>*/
+</style> <div class="container-xxl"><a href="#page-content" class="skip-to-main">Skip to main content</a></div> <header> <link rel="stylesheet" href="/style/nbk.min.css?20261103-124835"> <link rel="stylesheet" href="/style/base/fa/fontawesome.min.css?20261103-124835" media="none" onload="if(media!=='all')media='all'"> <link rel="stylesheet" href="/style/base/fa/solid.min.css?20261103-124835" media="none" onload="if(media!=='all')media='all'"> <script defer type="text/javascript" src="/scripts/custom/nbk.bundle.min.js?20261103-124835"></script> <div class="navbar navbar-expand-xl flex-column border-secondary bg-white" data-testid="base-page_navigation">  <div class="container-fluid flex-grow-1 container-xxl position-relative flex-nowrap">  <a href="/en-de/" class="navbar-brand"><img src="/images/logo/justetf-logo.png?v2" alt="justETF Logo" height="32"/></a>  <button class="navbar-toggler nav-icon-btn order-1" type="button" id="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Menu"> <span class="navbar-toggler-icon"></span> </button> <nav class="d-flex align-items-center flex-shrink-0"> <div class="navbar-collapse collapse" id="navbarContent" data-testid="base-page_main-menu-panel"> <ul class="navbar-nav"> <li class="nav-item dropdown">  <button type="button" class="nav-link nav-link-expandable" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"> <i class="nav-link-icon d-xl-none me-3 fa-solid fa-magnifying-glass" aria-hidden="true"></i> <span>Search</span> </button>  <ul class="dropdown-menu"> <li class="dropdown-item-card"> <div class="card card-sm"> <div class="h6 fw-normal m-0">ETF screener</div> <div class="text-muted mb-2 disclaimer">Find your next ETF</div> <a href="/en-de/search.html?search=ETFS" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Search', 'ETF Search');" class="btn btn-primary stretched-link"> Find ETFs </a> </div> </li> <li> <a class="dropdown-item" href="/en-de/etf-lists.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Search', 'ETF Lists');"> ETF lists by category </a> </li> <li> <a class="dropdown-item" href="/en-de/etf-comparison.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Search', 'Customised ETF Comparison');"> ETF comparison<i class="fa-solid fa-fire-flame-curved text-primary ms-2 d-inline"></i> <div class="disclaimer">Compare selected ETFs</div> </a> </li>    <li> <a class="dropdown-item" href="/en-de/asset-comparisons/index-comparisons/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Search', 'Index comparisons');"> Popular index comparisons </a> </li> <li> <a class="dropdown-item" href="/en-de/asset-comparisons/etf-comparisons/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Search', 'ETF comparisons');"> Popular ETF comparisons </a> </li>   <li> <a class="dropdown-item" href="/en-de/etf-provider/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Search', 'ETF Provider');"> ETF providers </a> </li> <li> <a class="dropdown-item" href="/en-de/etf-list-overview.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Search', 'ETF Sitemap');"> List of all ETFs </a> </li> <li> <a class="dropdown-item" href="/en-de/stock-profiles/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Search', 'All Stocks');"> List of stocks </a> </li> </ul>  </li><li class="nav-item dropdown">  <button type="button" class="nav-link nav-link-expandable" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"> <i class="nav-link-icon d-xl-none me-3 fa-solid fa-chart-line-up" aria-hidden="true"></i> <span>Markets</span> </button>  <div class="dropdown-menu two-columns"> <div class="row gx-5"> <div class="col-xl-6"> <ul class="list list-unstyled"> <li class="dropdown-item-card"> <div class="card card-sm"> <div class="h6 fw-normal m-0">Best/Worst ETF performers</div> <div class="text-muted mb-2 disclaimer">ETF rankings at a glance</div> <a href="/en-de/market-overview/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Top/Flop');" class="btn btn-primary stretched-link"> Learn more </a> </div> </li> <li> <a class="dropdown-item" href="/en-de/market-overview/equity/etf-equity-market-world.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Market Overview');"> Market overview </a> </li> <li> <a class="dropdown-item" href="/en-de/market-overview/the-best-etfs.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Best ETF');"> Best ETFs </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Investment Guides');"> ETF investment guides<i class="fa-solid fa-fire-flame-curved text-primary ms-2 d-inline"></i> <div class="disclaimer">ETF compass for themes, indices & co.</div> </a> </li>   <li> <a class="dropdown-item" href="/en-de/how-to/msci-world-etfs.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'ETF Guide - MSCI World');"> MSCI World ETFs </a> </li>   <li> <a class="dropdown-item" href="/en-de/how-to/invest-in-defense.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'ETF Guide - Defence');"> Defense ETFs </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to/nasdaq-100-etfs.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'ETF Guide - Nasdaq 100');"> Nasdaq 100 ETFs </a> </li>    <li> <a class="dropdown-item" href="/en-de/how-to/invest-in-bitcoin.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'ETF Guide - Bitcoin');"> Bitcoin ETFs </a> </li>   </ul> </div>  <div class="col-lg-12 col-xl-6"> <ul class="list list-unstyled"> <li> <a class="dropdown-item" href="/en-de/how-to/sp-500-etfs.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'ETF Guide - SnP 500');"> S&P 500 ETFs </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to/invest-in-artificial-intelligence.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'ETF Guide - AI');"> Artificial intelligence (AI) ETFs </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to-stocks/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Stock Guides');"> Stock investment guides<i class="fa-solid fa-fire-flame-curved text-primary ms-2 d-inline"></i> <div class="disclaimer">Discover various categories of stocks</div> </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to-stocks/defense-stocks/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Stock Guide - Defence');"> Defense stocks </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to-stocks/dividend-stocks-world/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Stock Guide - Dividend World');"> Dividend stocks </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to-stocks/usa-stocks/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Stock Guide - USA');"> US stocks </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to-stocks/china-stocks/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Stock Guide - China');"> Chinese stocks </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to-stocks/artificial-intelligence-stocks/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Stock Guide - AI');"> AI stocks </a> </li> <li> <a class="dropdown-item" href="/en-de/how-to-stocks/robotics-stocks/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Markets', 'Stock Guide - Robotics');"> Robotics stocks </a> </li> </ul> </div>  </div> </div>  </li><li class="nav-item dropdown">  <button type="button" class="nav-link nav-link-expandable" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"> <i class="nav-link-icon d-xl-none me-3 fa-solid fa-graduation-cap" aria-hidden="true"></i> <span>Knowledge</span> </button>  <div class="dropdown-menu two-columns"> <div class="row gx-5"> <div class="col-xl-6"> <ul class="list list-unstyled"> <li class="dropdown-item-card"> <div class="card card-sm"> <div class="h6 fw-normal m-0">Article overview</div> <div class="text-muted mb-2 disclaimer">Expand your knowledge of ETFs</div> <a href="/en-de/academy/academy-overview.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'AcademyOverview');" class="btn btn-primary stretched-link"> Browse now </a> </div> </li> <li> <a class="dropdown-item" href="/en-de/academy/what-is-an-etf.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Academy', 'WasSindETFs');"> What is an ETF? </a> </li> <li> <a class="dropdown-item" href="/en-de/academy/etf-for-beginners.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Academy', 'ETF Rookie');"> ETF for beginners </a> </li>  <li> <a class="dropdown-item" href="/en-de/calculators/avd-calculator/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Academy', 'AVD Calculator');"> Retirement account calculator </a> </li>  <li> <a class="dropdown-item" href="/en-de/news/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Academy', 'Latest Articles');" class="btn btn-primary stretched-link"> Latest articles<i class="fa-solid fa-fire-flame-curved text-primary ms-2 d-inline" aria-hidden="true"></i> <div class="disclaimer">Analysis by our ETF experts</div> </a> </li> </ul> </div> <div class="col-lg-12 col-xl-6"> <ul class="list list-unstyled"> <li> <a class="dropdown-item" href="/en-de/news/etf/distributing-or-accumulating-etfs-how-to-handle-investment-income.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Academy', 'Distributing or accumulating');"> Distributing or accumulating ETFs? </a> </li> <li> <a class="dropdown-item" href="/en-de/academy/etf-savings-plan.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Academy', 'Academy ETF Sparplan');"> Create your own ETF Savings Plan: The Ultimate Guide </a> </li> <li> <a class="dropdown-item" href="/en-de/etf-savings-plan/etf-savings-plan-calculator.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Academy', 'Sparplan Rechner');"> ETF savings plan calculator </a> </li> <li> <a class="dropdown-item" href="/en-de/newsletter.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Academy', 'Newsletter');" class="btn btn-primary stretched-link"> justETF newsletter<i class="fa-solid fa-fire-flame-curved text-primary ms-2 d-inline" aria-hidden="true"></i> <div class="disclaimer">Stay up to date</div> </a> </li> </ul> </div> </div> </div>  </li><li class="nav-item dropdown">  <button type="button" class="nav-link nav-link-expandable" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"> <i class="nav-link-icon d-xl-none me-3 fa-solid fa-scale-balanced" aria-hidden="true"></i> <span>Comparisons</span> </button>     <ul class="dropdown-menu"> <li class="dropdown-item-card"> <div class="card card-sm"> <div class="h6 fw-normal m-0">Broker comparison 2026</div> <div class="text-muted mb-2 disclaimer">Review of all offers</div> <a href="/en-de/comparison/online-broker-comparison.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Comparison', 'OBV');" class="btn btn-primary stretched-link"> Compare now </a> </div> </li> <li> <a class="dropdown-item" href="/en-de/comparison/savings-plan-comparison.html" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Comparison', 'SPV');" class="btn btn-primary stretched-link"> ETF savings plan comparison<i class="fa-solid fa-fire-flame-curved text-primary ms-2 d-inline" aria-hidden="true"></i> <div class="disclaimer">Which broker is the best?</div> </a> </li>  <li> <a class="dropdown-item" href="/en-de/comparison/overnight-account/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Comparison', 'TGV');"> Overnight account comparison </a> </li>   <li> <a class="dropdown-item" href="/en-de/vergleiche/juniordepot/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Comparison', 'Kinderdepot');"> Child savings account comparison </a> </li>   <li> <a class="dropdown-item" href="/en-de/vergleiche/neobroker/" onmousedown="gaW('send', 'event', 'HeaderMenu-en-de', 'Comparison', 'Neobroker');"> Neobroker comparison </a> </li>  </ul>  </li> <li class="nav-item dropdown d-xl-none"> <button class="nav-link nav-link-expandable" data-bs-toggle="dropdown" aria-expanded="false"> <i class="nav-link-icon fa-solid fa-user me-3" aria-hidden="true"></i> <span>Login</span> </button> <ul class="dropdown-menu"> <li class="dropdown-item-card" data-testid="login-nav_mobile_item-card"> <div class="card card-sm"> <div class="h6 fw-normal m-0" aria-hidden="true">My Profile</div> <div class="text-muted mb-2 disclaimer">To the portfolio overview</div> <a class="btn btn-primary stretched-link" href="/en-de/login.html" onmousedown="gaW(&#039;send&#039;, &#039;event&#039;, &#039;HeaderMenu-en-de&#039;, &#039;Login&#039;, &#039;Login&#039;);" data-testid="login-nav_mobile_btn-login"> Login </a> </div> </li> <li data-testid="login-nav_mobile_item-register"> <a class="dropdown-item" href="/en-de/registration.html" onmousedown="gaW(&#039;send&#039;, &#039;event&#039;, &#039;HeaderMenu-en-de&#039;, &#039;Login&#039;, &#039;Register&#039;);" data-testid="login-nav_mobile_link-register"> Sign up for free! </a> </li> <li data-testid="login-nav_mobile_item-watchlist"> <a class="dropdown-item" href="https://www.justetf.com/en-de/watchlist.html?listId=first&amp;login=true" onmousedown="gaW(&#039;send&#039;, &#039;event&#039;, &#039;HeaderMenu-en-de&#039;, &#039;Login&#039;, &#039;Watchlists&#039;);" data-testid="login-nav_mobile_link-watchlist"> My Watchlists </a> </li> </ul> </li> <li class="dropdown-footer bg-secondary d-flex d-xl-none align-items-center mt-auto"> <button class="d-flex align-items-center btn p-1 ps-0 me-1" data-bs-toggle="modal" data-bs-target="#universe-modal"> <span class="me-2"> <svg aria-hidden="true" focusable="false" data-prefix="far" height="16" data-icon="globe" class="svg-btn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 464c7.4 0 27-7.2 47.6-48.4c8.8-17.7 16.4-39.2 22-63.6l-139.2 0c5.6 24.4 13.2 45.9 22 63.6C229 456.8 248.6 464 256 464zM178.5 304l155 0c1.6-15.3 2.5-31.4 2.5-48s-.9-32.7-2.5-48l-155 0c-1.6 15.3-2.5 31.4-2.5 48s.9 32.7 2.5 48zm7.9-144l139.2 0c-5.6-24.4-13.2-45.9-22-63.6C283 55.2 263.4 48 256 48s-27 7.2-47.6 48.4c-8.8 17.7-16.4 39.2-22 63.6zm195.3 48c1.5 15.5 2.2 31.6 2.2 48s-.8 32.5-2.2 48l76.7 0c3.6-15.4 5.6-31.5 5.6-48s-1.9-32.6-5.6-48l-76.7 0zm58.8-48c-21.4-41.1-56.1-74.1-98.4-93.4c14.1 25.6 25.3 57.5 32.6 93.4l65.9 0zm-303.3 0c7.3-35.9 18.5-67.7 32.6-93.4c-42.3 19.3-77 52.3-98.4 93.4l65.9 0zM53.6 208c-3.6 15.4-5.6 31.5-5.6 48s1.9 32.6 5.6 48l76.7 0c-1.5-15.5-2.2-31.6-2.2-48s.8-32.5 2.2-48l-76.7 0zM342.1 445.4c42.3-19.3 77-52.3 98.4-93.4l-65.9 0c-7.3 35.9-18.5 67.7-32.6 93.4zm-172.2 0c-14.1-25.6-25.3-57.5-32.6-93.4l-65.9 0c21.4 41.1 56.1 74.1 98.4 93.4zM256 512A256 256 0 1 1 256 0a256 256 0 1 1 0 512z"></path></svg> </span> <small>Deutschland/English</small> </button> </li> </ul> </div> </nav> <div class="d-flex ml-auto align-items-center flex-grow-1 justify-content-end">  <div id="nav-search" class="flex-grow-1"> <form class="search" id="searchForm3" method="post" action="/en-de/page-not-found.html?0-1.-headerJ-navigation-mainSearchPanel-searchForm&amp;_wicket=1"><div id="searchForm3_hf_0" hidden="" class="hidden-fields"></div> <button id="submit" class="d-none" onmousedown="clicked=&#039;submit&#039;" name="p::submit"></button> <div class="search-form" data-bs-toggle="search" data-bs-auto-close="outside"> <div class="position-relative"> <span class="search-icon"> <span><svg aria-hidden="true" height="16" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-btn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg></span> </span> <label for="search-input" class="visually-hidden"> Open Quick Search</label> <input id="search-input" type="text" class="form-control" aria-describedby="search" aria-expanded="false" autocomplete="off" value="" name="query" placeholder="Search for ETFs, ISIN, WKN, investment guides and articles" onkeypress="var evt = (evt) ? evt : event;  var cc = (evt.charCode) ? evt.charCode : ((evt.which) ? evt.which : evt.keyCode); if (cc == 13 || cc == 3) { this.getRootNode().getElementById(&#039;submit&#039;).click(); return false; }" onmousedown="gaW(&#039;send&#039;, &#039;event&#039;, &#039;QuickSearch&#039;, &#039;Impressions&#039;);" data-testid="quick-search-input"> <button type="button" class="search-clear" data-testid="quick-search-clear-btn" aria-label="Close Quick Search"> <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> </button> <button id="search-submit" type="button" class="search-submit btn btn-primary" onclick="this.getRootNode().getElementById('submit').click();" data-testid="quick-search-submit-btn"> <span><svg aria-hidden="true" height="16" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-btn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg></span> </button> <button id="search-back" type="button" class="search-back btn btn-outline-secondary" data-testid="quick-search-back-btn" aria-label="Close Quick Search"> <span><svg aria-hidden="true" height="16" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-btn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg></span> </button> </div> </div> <div class="dropdown-menu w-100 pt-3 pb-0"> <div id="content4" hidden="" data-wicket-placeholder=""></div> </div> </form> </div>  <button id="search-toggler" class="nav-icon-btn d-md-none search-toggler" type="button" aria-label="Open Quick Search"> <span><svg aria-hidden="true" height="16" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-btn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg></span> </button> <div data-testid="base-page_etf-selection-panel" id="etfSelectionPanel5"> <div id="navCart" class="dropdown cart"> <button id="nav-cart-toggler" class="nav-icon-btn cart-btn d-xl-none cart-toggler" data-bs-toggle="collapse" data-bs-target="#cart-content" aria-expanded="false" aria-controls="cart-content"> <i class="fa-solid fa-xmark text-primary" aria-label="Close"></i> <span role="status" aria-live="polite" aria-atomic="true"> <span class="visually-hidden">ETF Selection</span> <span class="cart-counter" id="cartCounterMobile6">0</span> </span> </button> <button class="nav-icon-btn cart-btn d-none d-xl-flex btn-transparent" aria-expanded="false" aria-controls="cart-content" data-bs-toggle="dropdown" id="cartToggleDesktop7"> <span role="status" aria-live="polite" aria-atomic="true"> <span class="visually-hidden">ETF Selection</span> <span class="cart-counter">0</span> </span> </button> <div id="cart-content" class="dropdown-menu dropdown-menu-end"> <ul id="cartContent8" hidden="" data-wicket-placeholder=""></ul> <div class="cart-content" id="cartEmptyContent9"> <div class="mb-3">Your selection basket is empty.</div> <div class="small mb-2">Define a selection of ETFs which you would like to compare.</div><div class="small">Add an ETF by clicking "Compare" on an ETF profile or by checkmarking <i class="fa-solid fa-square-check text-primary"></i> an ETF in the ETF search.</div> </div> </div> </div> <script>
+/*<![CDATA[*/
+
+        (function(){
+            const cart = document.getElementById('navCart')
+
+            window.GLOBALS.pulseCart = function() {
+                const buttons = cart.querySelectorAll('.cart-btn');
+                buttons.forEach(button => {
+                    button.classList.add('cart-btn-pulse');
+
+                    button.addEventListener('animationend', () => {
+                        button.classList.remove('cart-btn-pulse');
+                    }, { once: true }); // `once: true` removes the listener after it runs
+                });
+            }
+        })()
+    
+/*]]>*/
+</script> </div> <button class="nav-icon-btn country-language-selector" type="button" data-bs-toggle="modal" data-bs-target="#universe-modal" aria-controls="universe-modal" aria-label="Deutschland/English" data-testid="base-page_country-language-selector"> <img class="country-language-selector-flag" alt="" src="/images/flags/circle/de.svg"/> <span class="country-language-selector-label">EN</span> </button>  <div class="dropdown header-login" data-testid="login-menu_container-login"> <button class="nav-icon-btn d-none d-xl-block" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-controls="login-dropdown-menu" data-testid="login-menu_btn-toggle-login"> <span><svg aria-hidden="true" height="16" focusable="false" data-prefix="fas" data-icon="user" class="svg-btn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"></path></svg></span> <span class="visually-hidden">My Profile</span> </button> <div class="dropdown-menu dropdown-menu-end" id="login-dropdown-menu" data-testid="login-menu_dropdown-login"> <ul class="list list-unstyled" data-testid="login-menu_list-login"> <li class="dropdown-item-card" data-testid="login-nav_item-card"> <div class="card card-sm"> <div class="h6 fw-normal m-0" aria-hidden="true">My Profile</div> <div class="text-muted mb-2 disclaimer">To the portfolio overview</div> <a class="btn btn-primary stretched-link" href="/en-de/login.html" onmousedown="gaW(&#039;send&#039;, &#039;event&#039;, &#039;HeaderMenu-en-de&#039;, &#039;Login&#039;, &#039;Login&#039;);" data-testid="login-nav_btn-login"> Login </a> </div> </li> <li data-testid="login-nav_item-register"> <a class="dropdown-item" href="/en-de/registration.html" onmousedown="gaW(&#039;send&#039;, &#039;event&#039;, &#039;HeaderMenu-en-de&#039;, &#039;Login&#039;, &#039;Register&#039;);" data-testid="login-nav_link-register"> Sign up for free! </a> </li> <li data-testid="login-nav_item-watchlist"> <a class="dropdown-item" href="https://www.justetf.com/en-de/watchlist.html?listId=first&amp;login=true" onmousedown="gaW(&#039;send&#039;, &#039;event&#039;, &#039;HeaderMenu-en-de&#039;, &#039;Login&#039;, &#039;Watchlists&#039;);" data-testid="login-nav_link-watchlist"> My Watchlists </a> </li> </ul> <div class="dropdown-footer bg-secondary d-none d-xl-flex align-items-center" data-testid="login-menu_footer-login"> <button class="d-flex align-items-center btn p-1 ps-0 me-1" data-bs-toggle="modal" data-bs-target="#universe-modal" data-testid="login-menu_btn-universe-login"> <span class="me-2"> <svg aria-hidden="true" focusable="false" data-prefix="far" height="16" data-icon="globe" class="svg-btn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 464c7.4 0 27-7.2 47.6-48.4c8.8-17.7 16.4-39.2 22-63.6l-139.2 0c5.6 24.4 13.2 45.9 22 63.6C229 456.8 248.6 464 256 464zM178.5 304l155 0c1.6-15.3 2.5-31.4 2.5-48s-.9-32.7-2.5-48l-155 0c-1.6 15.3-2.5 31.4-2.5 48s.9 32.7 2.5 48zm7.9-144l139.2 0c-5.6-24.4-13.2-45.9-22-63.6C283 55.2 263.4 48 256 48s-27 7.2-47.6 48.4c-8.8 17.7-16.4 39.2-22 63.6zm195.3 48c1.5 15.5 2.2 31.6 2.2 48s-.8 32.5-2.2 48l76.7 0c3.6-15.4 5.6-31.5 5.6-48s-1.9-32.6-5.6-48l-76.7 0zm58.8-48c-21.4-41.1-56.1-74.1-98.4-93.4c14.1 25.6 25.3 57.5 32.6 93.4l65.9 0zm-303.3 0c7.3-35.9 18.5-67.7 32.6-93.4c-42.3 19.3-77 52.3-98.4 93.4l65.9 0zM53.6 208c-3.6 15.4-5.6 31.5-5.6 48s1.9 32.6 5.6 48l76.7 0c-1.5-15.5-2.2-31.6-2.2-48s.8-32.5 2.2-48l-76.7 0zM342.1 445.4c42.3-19.3 77-52.3 98.4-93.4l-65.9 0c-7.3 35.9-18.5 67.7-32.6 93.4zm-172.2 0c-14.1-25.6-25.3-57.5-32.6-93.4l-65.9 0c21.4 41.1 56.1 74.1 98.4 93.4zM256 512A256 256 0 1 1 256 0a256 256 0 1 1 0 512z"></path></svg> </span> <small data-testid="login-menu_label-universe-login">Deutschland/English</small> </button> </div> </div> </div>  <div> <div data-testid="universe-modal_backdrop" id="universe-modal-backdrop"></div> <div class="modal fade" data-bs-backdrop="true" data-bs-keyboard="false" tabindex="-1" aria-labelledby="universe-modal-title" data-testid="universe-modal_container" id="universe-modal"> <form class="modal-dialog modal-dialog-centered" data-testid="universe-modal_form" id="universe-modal-form" method="post" action="/en-de/page-not-found.html?0-1.-headerJ-navigation-logInPanel-universeModalPanel-modal-form&amp;_wicket=1"><div id="universe-modal-form_hf_0" hidden="" class="hidden-fields"></div> <div class="modal-content" data-testid="universe-modal_content"> <div class="modal-header" data-testid="universe-modal_header"> <h5 class="modal-title" data-testid="universe-modal_title" id="universe-modal-title">Change your settings</h5> <button type="button" class="btn-close" data-bs-dismiss="modal" data-testid="universe-modal_btn-close"><span class="visually-hidden">Close</span></button> </div> <div class="modal-body" data-testid="universe-modal_body"> <div class="row align-items-baseline mb-3" data-testid="universe-modal_row-country"> <label class="col-12 col-sm-6" data-testid="universe-modal_label-country" id="universe-modal-label-country">Country</label> <div class="col-12 col-sm-6"> <select class="form-select" data-testid="universe-modal_select-country" name="country" id="country2" aria-labelledby="universe-modal-label-country">
+<option selected="selected" value="DE">Deutschland</option>
+<option value="AT">Österreich</option>
+<option value="CH">Schweiz</option>
+<option value="GB">United Kingdom</option>
+<option value="IT">Italia</option>
+<option value="FR">France</option>
+<option value="ES">España</option>
+<option value="NL">Nederland</option>
+<option value="BE">Belgique</option>
+<option value="LU">Luxembourg</option>
+<option value="XE">Other (Europe)</option>
+</select> </div> </div> <div class="row align-items-baseline mb-3" data-testid="universe-modal_row-language"> <label class="col-12 col-sm-6" data-testid="universe-modal_label-language" id="universe-modal-label-language">Language</label> <div class="col-12 col-sm-6"> <select class="form-select" data-testid="universe-modal_select-language" name="language" id="languagea" aria-labelledby="universe-modal-label-language">
+<option value="de">German</option>
+<option selected="selected" value="en">English</option>
+</select> </div> </div> <div class="row align-items-baseline" data-testid="universe-modal_row-universe"> <label class="col-12 col-sm-6" data-testid="universe-modal_label-universe" id="universe-modal-label-universe">Investor type</label> <div class="col-12 col-sm-6"> <select class="form-select" data-testid="universe-modal_select-universe" name="universeType" id="universeTypeb" aria-labelledby="universe-modal-label-universe">
+<option selected="selected" value="PRIVATE">Private Investor</option>
+<option value="INSTITUTIONAL">Professional Investor</option>
+</select> </div> </div> <div id="otherCountryWarningc" hidden="" data-wicket-placeholder=""></div> <div id="hideCheckboxContainerd" hidden="" data-wicket-placeholder=""></div> </div> <div class="modal-footer" data-testid="universe-modal_footer"> <button type="button" class="btn btn-outline-secondary flex-grow-1" data-bs-dismiss="modal" data-testid="universe-modal_btn-cancel">Cancel</button> <button type="submit" class="btn btn-primary flex-grow-1 ms-2" data-testid="universe-modal_btn-save" onmousedown="clicked=&#039;universe-modal-save&#039;" name="submitButton" id="universe-modal-save">Save</button> </div> </div> </form> <script>
+/*<![CDATA[*/
+
+            (function (universeModal) {
+                $(universeModal).on('shown.bs.modal', function () {
+                    $(document.querySelector('#shadow-nav').shadowRoot.querySelector('.skip-to-main')).hide();
+                });
+                $(universeModal).on('hidden.bs.modal', function () {
+                    $(document.querySelector('#shadow-nav').shadowRoot.querySelector('.skip-to-main')).show();
+                });
+            })(document.currentScript.closest('.modal'));
+        
+/*]]>*/
+</script> </div>  </div>   </div> </div> </div> <script defer src="/scripts/vendor/body-scroll-lock-upgrade.js"></script> <script>
+/*<![CDATA[*/
+
+                (function () {
+                    let menuTransition = false
+                    let isSearchOpen = false
+                    let lastBreakpointCompare = compareLayoutBreakpoints(getLayoutBreakpoint(), "lg")
+
+                    const navbar = document.getElementById('navbar')
+                    const cart = document.getElementById('navCart')
+                    const navbarContent = document.getElementById('navbarContent')
+                    const navSearch = document.getElementById('nav-search')
+                    const search = navSearch.querySelector('.search')
+                    const dropdownWrapper = navSearch.querySelector('[data-bs-toggle="search"]')
+                    const searchInput = document.getElementById('search-input')
+                    const searchToggler = document.getElementById('search-toggler')
+                    const cartContent = document.getElementById('cart-content')
+                    const searchClear = search.querySelector('.search-clear')
+                    const searchBack = document.getElementById('search-back')
+                    const searchSubmit = document.getElementById('search-submit')
+                    const loginDropdown = document.querySelector('.header-login')
+
+                    const activeSearchMode = navbar.classList.contains('search-screen')
+
+                    searchBack.addEventListener('click', (e) => {
+                        e.stopPropagation()
+                        hideSearchDropdown()
+                    })
+
+                    function updateSearchInputState() {
+                        if (searchInput.value === '') {
+                            search.classList.remove('has-input')
+                        } else {
+                            search.classList.add('has-input')
+                        }
+                    }
+
+                    searchInput.addEventListener('input', updateSearchInputState)
+
+                    updateSearchInputState()
+
+                    function updateSearchInput(value) {
+                        searchInput.value = value
+
+                        searchInput.dispatchEvent(new Event('input', {bubbles: true}));
+                        searchInput.dispatchEvent(new Event('keyup')); // Triggers wicket ajax behaviour
+
+                        updateSearchInputState()
+                    }
+
+                    function openSearchDropdown() {
+                        nbk.Dropdown.getOrCreateInstance(dropdownWrapper).show()
+
+                        navbar.classList.add('search-expanded')
+                    }
+
+                    function hideSearchDropdown(clear) {
+                        searchInput.blur()
+                        nbk.Dropdown.getOrCreateInstance(dropdownWrapper).hide()
+                        navbar.classList.remove('search-expanded')
+                        if (clear) {
+                            updateSearchInput('')
+                        }
+                    }
+
+                    function hideCartMenu() {
+                        let cartCollapse = nbk.Collapse.getInstance(cartContent)
+                        if (cartCollapse) {
+                            cartCollapse.hide()
+                        }
+
+                        let cartDropdown = nbk.Dropdown.getInstance(cart.querySelector('[data-bs-toggle="dropdown"]'))
+                        if (cartDropdown) {
+                            cartDropdown.hide()
+                        }
+                    }
+
+                    function hideNavbarMenu() {
+                        let navbarCollapse = nbk.Collapse.getInstance(navbarContent)
+                        if (navbarCollapse) {
+                            navbarCollapse.hide()
+                        }
+                    }
+
+
+                    window.GLOBALS.hideSearchDropdown = hideSearchDropdown
+                    window.GLOBALS.openSearchDropdown = openSearchDropdown
+
+                    window.GLOBALS.collapseMobileSearch = function() {
+                        if (window.matchMedia("(min-width: 768px)").matches) {
+                            search.style.height = null
+                        } else {
+                            search.style.height = '0px'
+                        }
+                        document.documentElement.style.setProperty('--bs-navbar-offset', (0 - 1) + 'px')
+                    }
+
+                    document.addEventListener("DOMContentLoaded", function () {
+                        if (activeSearchMode) {
+                            window.GLOBALS.lockSearchQuery = function(query) {
+                                if (query) {
+                                    searchInput.setAttribute('data-locked-query', query)
+                                } else {
+                                    searchInput.removeAttribute('data-locked-query')
+                                }
+                                updateSearchInput(query)
+                            }
+
+                            searchSubmit.addEventListener('click', () => {
+                                window.GLOBALS.lockSearchQuery(searchInput.value)
+                            })
+
+                        }
+
+                        let lastScroll = document.documentElement.scrollTop
+
+                        function updateSearchBar() {
+                            if (dropdownWrapper.classList.contains('show')
+                                || window.matchMedia("(min-width: 768px)").matches) {
+                                return
+                            }
+
+                            let currentScroll = document.documentElement.scrollTop
+                            let delta = currentScroll - lastScroll
+
+                            if (Math.abs(delta) >= dropdownWrapper.offsetHeight * 2 && currentScroll > 0) {
+                                return // Ignore big jumps, might be an anchor scrolling
+                            }
+
+                            let newTop = parseInt((dropdownWrapper.style.top || '0px').replace('px', '')) - delta
+
+                            if (currentScroll < 0) {
+                                dropdownWrapper.style.top = null
+                                newTop = 0
+                            } else {
+                                if (delta > 0) {
+                                    if (newTop < -dropdownWrapper.offsetHeight + 2) {
+                                        newTop = -dropdownWrapper.offsetHeight + 2
+                                    }
+                                } else if (delta < 0) {
+                                    if (newTop > 0) {
+                                        newTop = 0
+                                    }
+                                }
+
+                                dropdownWrapper.style.top = newTop + 'px'
+                            }
+
+                            let visibleHeight = dropdownWrapper.offsetHeight + newTop
+
+                            if (Math.max(0, currentScroll) + visibleHeight <= dropdownWrapper.offsetHeight) {
+                                dropdownWrapper.classList.remove('border-bottom', 'border-secondary')
+                            } else {
+                                dropdownWrapper.classList.add('border-bottom', 'border-secondary')
+                            }
+
+                            search.style.height = (Math.max(1, visibleHeight)) + 'px'
+                            document.body.style.setProperty('--bs-navbar-offset', (visibleHeight - 1) + 'px')
+                        }
+
+                        window.addEventListener('resize', () => {
+                            const breakpoint = getLayoutBreakpoint()
+
+                            const compare = compareLayoutBreakpoints(breakpoint, "lg")
+
+                            if (compare !== lastBreakpointCompare) {
+                                if (compare <= 0) {
+                                    hideSearchDropdown()
+                                }
+                                lastBreakpointCompare = compare;
+                            }
+
+                            if (window.matchMedia("(min-width: 768px)").matches) {
+                                search.style.height = null
+                                document.body.style.removeProperty('--bs-navbar-offset')
+                                dropdownWrapper.classList.remove('border-bottom', 'border-secondary')
+                            } else {
+                                updateSearchBar()
+                            }
+
+                        })
+
+                        updateSearchBar()
+
+                        setTimeout(() => {
+                            document.addEventListener('scroll', e => {
+                                updateSearchBar()
+
+                                lastScroll = document.documentElement.scrollTop
+                            })
+
+                            updateSearchBar()
+                        }, 0)
+
+                        window.GLOBALS.hideCart = hideCartMenu
+
+                        window.GLOBALS.closeNavigation = function () {
+                            navbar.querySelectorAll('[data-bs-toggle="dropdown"]')
+                                .forEach(d => {
+                                    const instance = nbk.Dropdown.getInstance(d)
+
+                                    if (instance) {
+                                        instance.hide()
+                                    }
+                                })
+
+                            hideSearchDropdown()
+                            hideCartMenu()
+                            hideNavbarMenu()
+                        }
+
+                        // for mobile and tablet: handle open/hide of menu vs cart
+                        nbk.EventHandler.on(cart.getRootNode(), 'show.bs.collapse', '#navbarContent', (e) => {
+                            if (menuTransition) {
+                                e.preventDefault()
+                                return
+                            }
+                            menuTransition = true
+
+                            setTimeout(() => {
+                                hideSearchDropdown()
+                                hideCartMenu()
+                            }, 5)
+                        })
+
+                        nbk.EventHandler.on(cart.getRootNode(), 'shown.bs.collapse', '#navbarContent', () => {
+                            menuTransition = false
+                        })
+
+                        nbk.EventHandler.on(cart.getRootNode(), 'show.bs.collapse', '#cart-content', (e) => {
+                            if (menuTransition) {
+                                e.preventDefault()
+                                return
+                            }
+                            menuTransition = true
+
+                            setTimeout(() => {
+                                hideSearchDropdown()
+                                hideNavbarMenu()
+                            }, 5)
+
+                            setTimeout(() => {
+                                e.delegateTarget.classList.add('active')
+                                document.body.classList.add('overflow-hidden')
+                            }, 0)
+                        })
+
+                        nbk.EventHandler.on(cart.getRootNode(), 'shown.bs.collapse', '#cart-content', (e) => {
+                            menuTransition = false
+                        })
+
+                        nbk.EventHandler.on(cart.getRootNode(), 'hide.bs.collapse', '#cart-content', (e) => {
+                            setTimeout(() => {
+                                e.delegateTarget.classList.remove('active')
+                                document.body.classList.remove('overflow-hidden')
+                            }, 0)
+                        })
+                        // block end
+
+                        navSearch.addEventListener('show.bs.dropdown', (e) => {
+                            if (menuTransition) {
+                                e.preventDefault()
+                                return
+                            }
+                            setTimeout(() => {
+                                hideCartMenu()
+                                hideNavbarMenu()
+                            }, 5)
+
+                            dropdownWrapper.style.removeProperty('top')
+
+                            if (!window.matchMedia("(min-width: 1200px)").matches) {
+                                bodyScrollLockUpgrade.disableBodyScroll(search, {
+                                    allowTouchMove: (el) => {
+                                        return el.shadowRoot || !![...search.querySelectorAll('[body-scroll-lock="allow"]')].find(e => e.contains(el))
+                                    }
+                                })
+                            }
+
+                            document.body.classList.add('search-open')
+                            search.classList.add('active')
+                            search.style.height = null
+                            searchInput.focus()
+                            searchToggler.setAttribute('aria-expanded', 'true')
+                            navbarContent.classList.add('d-none')
+
+                            isSearchOpen = true
+                        })
+
+                        navSearch.addEventListener('hide.bs.dropdown', (e) => {
+                            if (e.clickEvent) {
+                                if (navSearch.contains(e.clickEvent.target)) {
+                                    e.preventDefault()
+                                    return
+                                }
+
+                                if (window.matchMedia("(max-width: 769px)").matches) {
+                                    if (!searchToggler.contains(e.clickEvent.target)) {
+                                        e.preventDefault()
+                                        return
+                                    }
+                                }
+                            }
+
+                            if (!window.matchMedia("(min-width: 992px)").matches) {
+                                navbar.classList.remove('search-expanded')
+                            }
+                            if (activeSearchMode) {
+                                updateSearchInput(searchInput.getAttribute('data-locked-query'))
+                            }
+
+                            bodyScrollLockUpgrade.enableBodyScroll(search);
+
+                            document.body.classList.remove('search-open')
+                            searchToggler.setAttribute('aria-expanded', 'false')
+                            search.classList.remove('active')
+                            navbarContent.classList.remove('d-none')
+
+                            searchInput.scrollLeft = searchInput.scrollWidth
+
+                            isSearchOpen = false
+                        })
+
+                        //hide search if cart, login or logo are focused (for keyboard)
+                        const cartButton = cart.querySelector('[data-bs-toggle="dropdown"]');
+                        const cartMobileButton = cart.querySelector('[data-bs-toggle="collapse"]');
+                        const loginButton = loginDropdown?.querySelector('[data-bs-toggle="dropdown"]');
+                        const logoLink = navbar.querySelector('a.navbar-brand');
+                        const navButton = navbar.querySelector('#navbar-toggler');
+
+                        [cartButton, loginButton, logoLink, searchToggler, cartMobileButton, navButton].forEach(button => {
+                            button?.addEventListener('focus', () => {
+                                if (search.classList.contains('active')) {
+                                    hideSearchDropdown();
+                                }
+                            });
+                        });
+
+
+                        // hide search on the click outside
+                        document.addEventListener('click', (e) => {
+                            if (!navSearch) return;
+
+                            // Get full event path to detect clicks inside search dropdown (including its shadow DOM)
+                            const path = e.composedPath();
+                            const clickedInsideDropdown = path.includes(navSearch);
+
+                            if (!clickedInsideDropdown) {
+                                if (search.classList.contains('active')) {
+                                   hideSearchDropdown();
+                                }
+                            }
+                        });
+
+                        window.visualViewport.addEventListener("resize", () => {
+                            search.style.setProperty('--bs-viewport-height', (window.visualViewport.height) + 'px')
+                        })
+
+                        searchInput.addEventListener('focusin', (e) => {
+                            setTimeout(() => {search.style.setProperty('--bs-viewport-height', (window.visualViewport.height) + 'px')}, 0)
+                        })
+
+                        searchInput.addEventListener('focusout', (e) => {
+                            search.style.setProperty('--bs-viewport-height', (window.innerHeight) + 'px')
+                        })
+
+                        searchInput.addEventListener('input', (e) => {
+                            if (e.target.value.length > 0) {
+                            } else {
+                            }
+                        })
+
+                        searchInput.addEventListener("focus", (e) => {
+                            search.classList.add('focus')
+
+                            // Only the content placeholder indicates that the dropdown has not loaded yet.
+                            if (search.querySelector(':scope > .dropdown-menu > [data-wicket-placeholder]') == null) {
+                                openSearchDropdown()
+                            }
+                        });
+
+                        searchInput.addEventListener("blur", (e) => {
+                            search.classList.remove('focus')
+                        });
+
+                        searchClear.addEventListener('click', (e) => {
+                            updateSearchInput('')
+                            searchInput.focus()
+                        })
+
+                        navbarContent.addEventListener('show.bs.collapse', e => {
+                            setTimeout(() => {
+                                navbarContent.classList.add('active')
+                                document.body.classList.add('overflow-hidden')
+                            }, 0)
+                        })
+
+                        navbarContent.addEventListener('hide.bs.collapse', e => {
+                            setTimeout(() => {
+                                navbarContent.classList.remove('active')
+                                document.body.classList.remove('overflow-hidden')
+                            }, 0)
+
+                            navbarContent.querySelectorAll('a[data-js-href]').forEach(a => a.removeAttribute('href'))
+                        })
+
+                        searchToggler.addEventListener('click', (e) => {
+                            e.stopPropagation()
+                            searchInput.focus()
+                        })
+                    });
+
+                    Wicket.Event.add(window, "domready", () => {
+                        if (document.activeElement
+                            && document.activeElement.shadowRoot
+                            && document.activeElement.shadowRoot.activeElement === searchInput) {
+                            // Trigger ajax behaviour
+                            searchInput.dispatchEvent(new Event('focus'))
+                        }
+                    })
+                })()
+            
+/*]]>*/
+</script> </header> </div> <script>
+/*<![CDATA[*/
+
+        shadowDomWrap(document.getElementById('navbar'), 'shadow-nav')
+
+        document.addEventListener('DOMContentLoaded', e => {
+            const shadowNavContainer = document.getElementById('shadow-nav')
+            const shadowRoot = shadowNavContainer.shadowRoot
+
+            nbk.Modal.initializeDomRoot(shadowRoot)
+            nbk.Dropdown.initializeDomRoot(shadowRoot)
+            nbk.Collapse.initializeDomRoot(shadowRoot)
+        });
+    
+/*]]>*/
+</script> <main id="page-content" class="wrapper"> <div id="to-top-trigger"></div>    <div class="content_alt2">  <div> <div class="container"> <div class="err_page"> <div class="h1">Page not found</div> <div class="nbk_sep">&nbsp;</div> <div class="row text-center"> <div class="col-sm-4"> <div class="nbk_sep">&nbsp;</div> <a class="light-link text-decoration-none" href="/en-de/search.html?search=ETFS" onmousedown="gaW('send', 'event', '404', 'ETF Screener');"> <span class="fa fa-search teaser-icon-s background-lightblue"></span><br/> <h4 class="h4">ETF screener</h4> </a> <div>Search and compare the best ETFs.</div> </div> <div class="col-sm-4"> <div class="nbk_sep">&nbsp;</div> <a class="light-link text-decoration-none" href="/en-de/how-to/" onmousedown="gaW('send', 'event', '404', 'How To');"> <span class="fa-regular fa-compass teaser-icon-s background-lightblue"></span><br/> <h4 class="h4">ETF investment guides</h4> </a> <div>Get information on various investment topics.</div> </div> <div class="col-sm-4"> <div class="nbk_sep">&nbsp;</div> <a class="light-link text-decoration-none" href="/en-de/academy/" onmousedown="gaW('send', 'event', '404', 'Academy');"> <span class="fa fa-graduation-cap teaser-icon-s background-lightblue"></span><br/> <h4 class="h4">ETF knowledge</h4> </a> <div>Become ETF-fit with lots of information about ETFs.</div> </div> </div> </div> </div> <div class="nbk_sep">&nbsp;</div> <div class="nbk_sep">&nbsp;</div> <div class="nbk_sep">&nbsp;</div> </div>     </div>  </main> <div data-testid="base-page_menu-bottom"> <footer> <script>
+		(function() {
+			const shadowRoot = shadowDomWrap(document.querySelector('footer'), 'shadow-footer').shadowRoot
+
+			document.addEventListener('DOMContentLoaded', e => {
+				nbk.Modal.initializeDomRoot(shadowRoot)
+			});
+		})()
+	</script> <link rel="stylesheet" href="/style/base/fa/fontawesome.min.css?20261103-124835"> <link rel="stylesheet" type="text/css" href="/style/nbk.min.css?20261103-124835"> <div class="footer-top pt-7 pb-7"> <div class="container-xxl"> <div class="row gy-7"> <div class="col-lg-4"> <a href="/en-de/"><img data-auto-sized width="256" height="64" id="logo-footer" data-auto-size class="footer-logo" src="/images/logo/justetf-logo.png?v2" alt="justETF - to homepage"></a> <p> <small>justETF is the leading knowledge base for your ETF strategies. We provide guidance with ETF comparisons, portfolio strategies, portfolio simulations and investment guides.</small> </p>  <a class="btn btn-primary d-block" href="/en-de/registration.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Button', 'Registration');">Registration</a>   <div class="d-flex gap-2 mt-4"> <a href="https://www.facebook.com/justetf" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Recomend', 'Facebook');" target="_blank" rel="noopener noreferrer" class="social-icon-b5 social-icon-facebook" aria-label="Facebook" aria-describedby="sm-window-hint"></a> <a href="https://twitter.com/justetf" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Recomend', 'Twitter');" target="_blank" rel="noopener noreferrer" class="social-icon-b5 social-icon-twitter" aria-label="X" aria-describedby="sm-window-hint"></a> <a href="https://www.linkedin.com/company/justetf" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Recomend', 'LinkedIn');" target="_blank" rel="noopener noreferrer" class="social-icon-b5 social-icon-linkedin" aria-label="LinkedIn" aria-describedby="sm-window-hint"></a> <span class="d-none" id="sm-window-hint">öffnet in neuem Fenster</span> </div> <div class="mt-4"> <div class="d-flex align-items-center"> <button class="d-flex align-items-center btn p-1 me-1 btn-transparent" data-bs-toggle="modal" data-bs-target="#universe-modal"> <i class="fa-regular fa-globe me-2" aria-hidden="true"></i> <small>Deutschland/English</small> <span class="visually-hidden">Select Country and Language</span> </button> </div> </div> </div> <div class="col-lg-4 col-md-6"> <h4 class="h6">justETF Offer</h4> <ul class="table-list-linked small arrow-list">  <li> <a href="/en-de/our-offer.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Offering', 'ETF Portfolio Tool');">ETF Portfolio Tool</a> </li>  <li> <a href="/en-de/white-paper.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Offering', 'ETF-Whitepaper');">ETF white paper</a> </li> <li> <a href="/en-de/tutorial/" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Offering', 'Tutorial');">Tutorial</a> </li> <li> <a href="/en-de/contact.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Offering', 'Contact');">Contact</a> </li> </ul> </div> <div class="col-lg-4 col-md-6"> <h4 class="h6">Company</h4> <ul class="table-list-linked small arrow-list"> <li> <a href="/en-de/about/" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Company', 'About');">About justETF</a> </li> <li> <a href="/en-de/about/team/" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Company', 'Team');">Editorial team</a> </li> <li> <a href="/en-de/about/press.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Company', 'Press');">Press</a> </li> <li> <a href="/en-de/about/become-partner.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Company', 'Partner');">Become a partner</a> </li>  <li> <a href="/en-de/about/career.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Company', 'Career');">Career</a> </li>  </ul> </div> <div class="col-12 text-center"> <a href="/link/app-apple-de/Footer" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Badge', 'Apple');" target="_blank" rel="noopener noreferrer"> <img data-auto-sized width="298" height="100" data-auto-size class="img-responsive lazyload inline-block m-1 mb-2" src="/images/data/badge-apple-en-footer.png" alt="Aus dem App Store herunterladen" style="max-height: 50px; width: auto;"> </a> <a href="/link/app-google-de/Footer" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Badge', 'Google');" target="_blank" rel="noopener noreferrer"> <img data-auto-sized width="336" height="100" data-auto-size class="img-responsive lazyload inline-block m-1 mb-2" src="/images/data/badge-google-en-footer.png" alt="Aus dem Google Play herunterladen" style="max-height: 50px; width: auto;"> </a> </div> </div> </div> </div> <div class="footer-bottom"> <div class="container-xxl text-center"> <small>&copy; 2011-2026 justETF.com &nbsp; <a class="light-link" href="/en-de/about/data-privacy.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Bottom', 'Data privacy');">Data privacy</a> |  <a class="light-link" href="#" onClick="UC_UI.showSecondLayer();" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Bottom', 'Privacy settings');">Privacy settings</a> |  <a class="light-link" href="/en-de/about/legal-terms.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Bottom', 'Legal terms');">Legal terms</a> |  <a class="light-link" href="/documents/justetf_accessibility_statement.pdf" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Bottom', 'Accessibility');">Accessibility Statement</a> |  <a class="light-link" href="/en-de/about/legal-notice.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Bottom', 'Legal notice');">Legal notice</a> |    <a class="light-link" href="/en-de/login.html?followup=settings.html%23subscription" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Bottom', 'Cancel');">Cancel contract</a> | <a class="light-link" href="/en-de/withdrawal.html" onmousedown="gaW('send', 'event', 'Footer-en-de', 'Bottom', 'Withdrawal');">Withdraw from contract</a> </small> </div> </div> </footer> </div> <div id="loginPopupe" hidden="" data-wicket-placeholder=""></div> <div id="createWatchListPopupf" hidden="" data-wicket-placeholder=""></div> <div id="selectPortfolioPopup10" hidden="" data-wicket-placeholder=""></div>  <div id="universeMenuPopup11" hidden="" data-wicket-placeholder=""></div> <button class="back-to-top-btn btn btn-sm" id="topcontrol" data-testid="base-page_back-to-top_button"><span class="visually-hidden sr-only">Back to top</span><i class="fa-solid fa-chevron-up" aria-hidden="true"></i></button>    <script defer type="text/javascript" src="/scripts/vendor/bootstrap3/bootstrap.min.js?20261103-124835"></script> <script type="text/javascript" src="/scripts/vendor/jquery/jquery.cookie-1.4.1.min.js"></script> <script defer type="text/javascript" src="/scripts/vendor/bootstrap3/bootstrap-main.min.js?20261103-124835"></script>  <script type="text/javascript">
+/*<![CDATA[*/
+
+    jQuery(document).ready(function() {
+        App.init();
+    });
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+            .then(function(reg) {
+                console.log('Service Worker registration succeeded. Scope is ' + reg.scope);
+            })
+            .catch(function(error) {
+                console.error('Service Worker registration failed with ' + error);
+            });
+    }
+
+/*]]>*/
+</script> </body> </html>

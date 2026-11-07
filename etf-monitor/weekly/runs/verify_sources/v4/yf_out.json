@@ -1,0 +1,95 @@
+{
+ "VWRA.L": {
+  "bid": 184.98,
+  "ask": 185.0,
+  "bidSize": null,
+  "askSize": null,
+  "regularMarketPrice": 184.98,
+  "currency": "USD",
+  "annualHoldingsTurnover": null,
+  "navPrice": 183.4672,
+  "rmt_utc": "2026-11-06 18:56:42+00:00",
+  "spread_bp": 1.1,
+  "closes": 24,
+  "last_close": [
+   "2026-11-06",
+   184.98
+  ]
+ },
+ "CSPX.L": {
+  "bid": 841.29,
+  "ask": 799.2,
+  "bidSize": 1000,
+  "askSize": 5000,
+  "regularMarketPrice": 802.21,
+  "currency": "USD",
+  "annualHoldingsTurnover": null,
+  "navPrice": null,
+  "rmt_utc": "2026-11-06 18:49:11+00:00",
+  "spread_bp": -513.1,
+  "closes": 24,
+  "last_close": [
+   "2026-11-06",
+   802.21
+  ]
+ },
+ "IWDA.L": {
+  "bid": 141.75,
+  "ask": 142.09,
+  "bidSize": 100088,
+  "askSize": 561,
+  "regularMarketPrice": 141.98,
+  "currency": "USD",
+  "annualHoldingsTurnover": null,
+  "navPrice": 140.9885,
+  "rmt_utc": "2026-11-06 18:27:51+00:00",
+  "spread_bp": 24.0,
+  "closes": 24,
+  "last_close": [
+   "2026-11-06",
+   141.98
+  ]
+ },
+ "EIMI.L": {
+  "bid": 48.75,
+  "ask": 48.77,
+  "bidSize": 0,
+  "askSize": 0,
+  "regularMarketPrice": 48.91,
+  "currency": "USD",
+  "annualHoldingsTurnover": null,
+  "navPrice": 48.3878,
+  "rmt_utc": "2026-11-06 17:03:07+00:00",
+  "spread_bp": 4.1,
+  "closes": 24,
+  "last_close": [
+   "2026-11-06",
+   48.91
+  ]
+ },
+ "EWJ": {
+  "n_divs_365d_to_today": 2,
+  "last_div": "2026-06-15",
+  "ttm_yield_pct": 4.04
+ },
+ "EWU": {
+  "n_divs_365d_to_today": 2,
+  "last_div": "2026-06-15",
+  "ttm_yield_pct": 3.17
+ },
+ "EWG": {
+  "n_divs_365d_to_today": 1,
+  "last_div": "2026-06-15",
+  "ttm_yield_pct": 2.0
+ },
+ "MCHI": {
+  "n_divs_365d_to_today": 2,
+  "last_div": "2026-06-15",
+  "ttm_yield_pct": 2.11
+ },
+ "INDA": {
+  "n_divs_365d_to_today": 0,
+  "last_div": "2024-12-17",
+  "ttm_yield_pct": 0.0
+ }
+}
