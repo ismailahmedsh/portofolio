@@ -1,0 +1,249 @@
+{
+  "pillar_id": "J01",
+  "pillar_name": "Global macro and central banks",
+  "week": "2026-W45",
+  "window": "2026-10-31..2026-11-07",
+  "bucket_scores": {
+    "govt_bonds": {
+      "score": 0,
+      "confidence": "medium",
+      "rationale": "Headwinds and tailwinds roughly offset. Against duration: October payrolls beat (+165k vs ~59k expected, AHE +0.4% m/m), ISM manufacturing prices paid stayed above 70 (75.2), CME pricing for a December Fed hike was ~77% after the report, and the BoE hiked to 4% on 5 Nov with members signalling more. In favour: Brent fell ~13% on the week on US-Iran de-escalation hopes, the Democratic midterm sweep was read by JPMorgan and BondBloxx as reducing deficit growth, Treasury held coupon sizes ($125bn refunding), and haven demand during the AI equity rout pulled the 2-year down roughly 10-13bp on the week (to ~4.5%) while the 10-year held near 4.86% and the 30-year near 5.27%. Note Treasury dropped 'at least' from its coupon-size guidance, which strategists read as a hint of larger auctions in 2027-28.",
+      "headlines": [
+        {
+          "date": "2026-11-03",
+          "title": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "10-year Treasury rises as investors exit tech stocks, look ahead to jobs data",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/treasury-yields-bonds-interest-rates.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Quarterly Refunding Statement of Assistant Secretary for Financial Markets",
+          "source": "U.S. Treasury",
+          "url": "https://home.treasury.gov/news/press-releases/sb0678"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Bank Rate increased to 4% - November 2026 Monetary Policy Summary and Minutes",
+          "source": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Oil Posts Biggest Weekly Drop Since 2022",
+          "source": "Rigzone (Bloomberg report)",
+          "url": "https://www.rigzone.com/news/oil_posts_biggest_weekly_drop_since_2022-06-nov-2026-185035-article"
+        }
+      ]
+    },
+    "credit_bonds": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "US IG issuance hit a record $1.88tn year-to-date (LSEG via Reuters), with hyperscalers about a fifth of supply, and CDS on big AI spenders has set records (Oracle 5y at 325bp in October). The AI equity rout and talk of data-centre restrictions after the midterms hit the issuers driving that supply, while the macro backdrop of global rate hikes raises refinancing costs. Spreads are still tight in absolute terms (ICE BofA US HY OAS 3.48% on 5 Nov per FRED, up from 3.32% on 4 Nov) and demand for quality deals held (Apple $7.5bn), so a mild rather than strong headwind.",
+      "headlines": [
+        {
+          "date": "2026-11-06",
+          "title": "Big Tech drives US corporate bond sales to annual record high, data shows",
+          "source": "Reuters (via SRN News)",
+          "url": "https://www.freedom969.com/business/big-tech-drives-us-corporate-bond-sales-to-annual-record-high-data-shows"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Wall Street Peers Into Abyss of AI Trade as Midterms Expose Risk",
+          "source": "Bloomberg (via Yahoo Finance)",
+          "url": "https://finance.yahoo.com/technology/ai/articles/wall-street-peers-abyss-ai-093002270.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        }
+      ]
+    },
+    "global_equity": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "The macro mix turned less supportive: a synchronized hiking or hawkish-hold stance (Fed December hike largely priced, BoE and RBA hikes this week, ECB and BoJ signalling December moves at end-October meetings) collided with an AI-led selloff that spread globally on 5-6 Nov (Nikkei -6%, Kospi -6% after a halt, Taiwan into a bear market, Stoxx 600 down over 1%). Offsets are solid US growth data (ISM 55.5, payrolls beat) and a sharp drop in oil, which eases the energy-inflation impulse. Equity-specific AI regulation risk sits mainly with other pillars; the macro read is a mild headwind.",
+      "headlines": [
+        {
+          "date": "2026-11-06",
+          "title": "European stocks join global rout after worst US chip sell-off since 2020",
+          "source": "Euronews",
+          "url": "https://www.euronews.com/2026/11/06/global-stock-rout-deepens-as-ai-data-centre-fears-fuel-worst-us-chip-sell-off-since-2020"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Global stocks reel after $2.5 trillion wiped off US markets over AI fears",
+          "source": "CNN",
+          "url": "https://us.cnn.com/2026/11/05/markets/asian-markets-us-rout-ai-investment-intl-hnk"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Bank Rate increased to 4% - November 2026 Monetary Policy Summary and Minutes",
+          "source": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+        }
+      ]
+    },
+    "us_large_broad": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "The S&P 500 fell 4.4% on 5 Nov (worst day since April 2025) and ended the week lower despite a small Friday rebound to 7,376.86; VIX closed at 25.6. From a macro angle the strong jobs report and wage growth raised December hike odds and lifted yields across the curve, a valuation headwind for a mega-cap-heavy index, while divided government after the midterms raises fiscal and regulatory uncertainty. Robust activity data (ISM manufacturing 55.5, jobless claims 189k) and lower oil limit the downside to a mild headwind.",
+      "headlines": [
+        {
+          "date": "2026-11-06",
+          "title": "Stock market today: Nasdaq and S&P 500 rebound, Dow slips to cap bruising week for AI stocks",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Wall Street Peers Into Abyss of AI Trade as Midterms Expose Risk",
+          "source": "Bloomberg (via Yahoo Finance)",
+          "url": "https://finance.yahoo.com/technology/ai/articles/wall-street-peers-abyss-ai-093002270.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Manufacturing PMI at 55.5%; October 2026 ISM Manufacturing PMI Report",
+          "source": "ISM via PR Newswire (Morningstar)",
+          "url": "https://www.morningstar.com/news/pr-newswire/20261102la86073/manufacturing-pmi-at-555-october-2026-ism-manufacturing-pmi-report"
+        }
+      ]
+    },
+    "multi_asset_alt": {
+      "score": -1,
+      "confidence": "low",
+      "rationale": "With central banks fighting energy-driven inflation (Fed, BoE, RBA, ECB all in or near hiking mode), the stock-bond correlation remains less reliable as a diversifier: Treasuries rallied as a haven on 4-5 Nov but gave it back on Friday's strong payrolls, while equities fell sharply. Balanced portfolios therefore faced pressure on the equity sleeve with only partial bond offset. Low confidence because falling oil and fiscal-restraint hopes could restore bond hedging value quickly.",
+      "headlines": [
+        {
+          "date": "2026-11-05",
+          "title": "10-year Treasury rises as investors exit tech stocks, look ahead to jobs data",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/treasury-yields-bonds-interest-rates.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Stock market today: Nasdaq and S&P 500 rebound, Dow slips to cap bruising week for AI stocks",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Bank Rate increased to 4% - November 2026 Monetary Policy Summary and Minutes",
+          "source": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+        }
+      ]
+    },
+    "gold_precious": {
+      "score": 0,
+      "confidence": "medium",
+      "rationale": "Spot gold rebounded about 4.8% on the week (best in over two months) from a one-year low of $3,869.85 on 30 Oct, helped by a softer dollar early in the week and risk-off flows, but slipped ~0.7-1% to about $4,060 on Friday as the strong jobs report lifted the dollar and yields. The underlying macro remains a headwind for a non-yielding asset (a further Fed hike priced, real yields high, oil and energy-inflation hedging demand fading), offset by geopolitical and equity-stress hedging demand. Net neutral.",
+      "headlines": [
+        {
+          "date": "2026-11-06",
+          "title": "Gold drops, on track for best week in over 2 months before U.S. payrolls",
+          "source": "CNBC (Reuters)",
+          "url": "https://www.cnbc.com/amp/2026/11/06/gold-eases-on-inflation-worries-from-higher-oil-us-payrolls-data-in-focus.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Current price of gold: November 4, 2026",
+          "source": "Fortune",
+          "url": "https://fortune.com/article/current-price-of-gold-11-04-2026/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        }
+      ]
+    }
+  },
+  "regime_notes": "Risk-off this week. The defining macro theme is a global tightening cycle in response to the Middle East energy shock: the Fed held at 3.75-4.00% on 28 Oct with two hawkish dissents and markets price ~75-77% odds of a December hike after the October payroll beat (+165k, wages +0.4% m/m); the BoE hiked 8-1 to 4% on 5 Nov and projects CPI near 5% by mid-2027; the RBA reportedly hiked to 4.85% on 3 Nov (secondary sources only); the ECB (2.50%) and BoJ (1.25%) held at end-October but flagged December hikes. On top of that, the Democratic midterm sweep triggered an AI-led global equity rout (S&P 500 -4.4% on 5 Nov, VIX ~25.6), with havens bid. Partial offsets: Brent fell about 13% on the week on US-Iran de-escalation hopes, which lowers the inflation impulse, and divided government is read as fiscally restraining, which helps the long end. US activity data are strong (ISM manufacturing 55.5), so this is a rates-and-valuation risk-off, not a recession scare.",
+  "red_flags": [],
+  "upcoming_events": [
+    {
+      "date": "2026-11-09",
+      "event": "US Treasury 3-year note auction ($58bn)",
+      "buckets": [
+        "govt_bonds"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "event": "US Treasury 10-year note auction ($42bn)",
+      "buckets": [
+        "govt_bonds",
+        "credit_bonds"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "event": "US Treasury 30-year bond auction ($25bn)",
+      "buckets": [
+        "govt_bonds",
+        "multi_asset_alt"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "event": "PBoC loan prime rate fixing",
+      "buckets": [
+        "global_equity"
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "event": "FOMC decision (Dec 8-9), December hike ~75% priced",
+      "buckets": [
+        "govt_bonds",
+        "credit_bonds",
+        "us_large_broad",
+        "global_equity",
+        "gold_precious",
+        "multi_asset_alt"
+      ]
+    },
+    {
+      "date": "2026-12-17",
+      "event": "ECB decision with new staff projections; BoE decision",
+      "buckets": [
+        "govt_bonds",
+        "global_equity",
+        "multi_asset_alt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pillar_id": "J08",
+  "pillar_name": "Middle East, Gulf and geopolitics",
+  "week": "2026-W45",
+  "window": "2026-10-31..2026-11-07",
+  "bucket_scores": {
+    "mena_gulf": {
+      "score": 0,
+      "confidence": "medium",
+      "rationale": "Facts: Gulf bourses rallied midweek (Nov 4: Dubai +4%, Qatar +2.8%, Saudi +1.7%; Nov 5: Qatar +1.8%, Saudi and Abu Dhabi +0.6%) on bets that Democratic midterm gains narrow the room for a wider US-Iran war, and Aramco beat estimates (adjusted net income $31.2bn, base dividend $21.9bn, but the performance-linked dividend is still suspended). Against that, Saudi Q3 oil revenue fell 23% y/y and the 9M deficit reached SR244.3bn, the 2027 pre-budget deficit was raised to 3.6% of GDP, tanker attacks in Hormuz continue and drones were intercepted over Riyadh and Mecca on Nov 6. Interpretation: a US-Iran deal via Qatari mediation would be a strong tailwind and renewed US strikes a strong headwind; with neither confirmed and fiscal news negative, the net 1-3 month view is neutral.",
+      "headlines": [
+        {"date": "2026-11-05", "title": "Gulf stocks gain as investors assess US midterm fallout", "source": "Business Recorder (Reuters)", "url": "https://www.brecorder.com/news/40447433/gulf-stocks-gain-as-investors-assess-us-midterm-fallout"},
+        {"date": "2026-11-05", "title": "Mideast Stocks: Most Gulf equities gain on easing Iran fears after US midterms, earnings", "source": "Zawya (Reuters)", "url": "https://www.zawya.com/en/capital-markets/mideast-stocks-most-gulf-equities-gain-on-easing-iran-fears-after-us-midterms-earnings-2022479"},
+        {"date": "2026-11-03", "title": "Saudi Arabia posts $22.38bn budget deficit in Q3", "source": "Arab News", "url": "https://www.arabnews.com/business/saudi-arabia-posts-2238bn-budget-deficit-in-q3-3009626"},
+        {"date": "2026-11-03", "title": "Aramco's profit rises as refining margins strengthen amid Iran war", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/03/saudi-aramcos-third-quarter-middle-east-.html"},
+        {"date": "2026-11-06", "title": "Iran war updates: Trump says US talking to Tehran's representatives", "source": "Al Jazeera (live blog)", "url": "https://www.aljazeera.com/amp/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran"}
+      ]
+    },
+    "global_equity": {
+      "score": 0,
+      "confidence": "medium",
+      "rationale": "Geopolitical angle only. Facts: Democrats won both chambers of Congress, MSCI All-World rose 1.38% on Nov 4 and Trump acknowledged the Iran war contributed to the losses; Qatar says the US and Iran remain committed to mediation and Trump says he has no immediate plans for new strikes. However, at least five vessels have been hit in Hormuz since Nov 1 (35 in October), Trump warned the US may have to 'destroy' the rest of Iran, and Reuters sources still expect renewed strikes. Russia tariff/sanction measures are waived pending a 60-day review, and the US-China tariff truce runs to Jan 10. Interpretation: escalation risk eased modestly but not resolved; net geopolitical effect on global equities is neutral (this week's Nov 5 tech sell-off was domestic-political/AI driven, not geopolitical).",
+      "headlines": [
+        {"date": "2026-11-04", "title": "World shares advance as Democrats' victory eases political uncertainty", "source": "Reuters via Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-dip-investors-010842458.html"},
+        {"date": "2026-11-06", "title": "More ships attacked in Persian Gulf, oil prices rebound slightly after post-midterm plunge", "source": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/"},
+        {"date": "2026-11-05", "title": "Iran Maintains Pressure as Three Tankers Hit in Hormuz", "source": "MarineLink (Reuters)", "url": "https://www.marinelink.com/news/iran-maintains-pressure-three-tankers-hit-544179"},
+        {"date": "2026-11-06", "title": "Trump's Russian oil deal unravels as tankers change course", "source": "Washington Times", "url": "https://washingtontimes.com/news/2026/nov/6/donald-trumps-russian-oil-deal-unravels-tankers-change-course"}
+      ]
+    },
+    "energy_oil": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "Geopolitical angle only. Facts: Brent fell nearly 9% to $94.62 on Nov 4 and about 15% week-on-week to ~$99 by Nov 6, after settling at $117.64 (expiring Dec contract) on Oct 30, as traders priced in US-Iran diplomatic progress; Aramco cut December Asian OSPs by $2/bbl. OPEC+ core members held December targets, but Gulf members still pump well below quota due to Hormuz disruption, and analysts flag a possible 2027 surplus if Gulf flows normalise. Interpretation: the war risk premium is now skewed to the downside over 1-3 months (any deal or Hormuz reopening releases shut-in supply), though continued tanker attacks and possible renewed US strikes keep two-way tail risk very high.",
+      "headlines": [
+        {"date": "2026-10-31", "title": "OPEC+ keeps December oil output targets steady ahead of tougher call for 2027", "source": "CNBC", "url": "https://www.cnbc.com/2026/10/31/opec-oil-output-targets-december.html"},
+        {"date": "2026-11-04", "title": "World shares advance as Democrats' victory eases political uncertainty", "source": "Reuters via Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-dip-investors-010842458.html"},
+        {"date": "2026-11-06", "title": "The Iran War Isn't Over, but Oil Traders Are Already Pricing In Peace (analysis)", "source": "Oilprice.com", "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Isnt-Over-but-Oil-Traders-Are-Already-Pricing-In-Peace.html"},
+        {"date": "2026-11-06", "title": "More ships attacked in Persian Gulf, oil prices rebound slightly after post-midterm plunge", "source": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/"}
+      ]
+    }
+  },
+  "regime_notes": "The US-Iran war (since February) and the Strait of Hormuz remain the dominant driver for Gulf assets and oil. The Democratic sweep in the Nov 3 midterms, which Trump partly blamed on the war, shifted markets toward pricing de-escalation: Brent dropped about 15% on the week and Gulf equities rallied, led by Dubai and Qatar. Qatari mediation is active but Iran demands an end to the US naval blockade, sanctions relief and frozen funds before reopening Hormuz, and tanker attacks continued daily through Nov 6. Saudi public finances are deteriorating (Q3 oil revenue -23% y/y, 2027 deficit seen at 3.6% of GDP) because export volumes, not prices, are constrained. Key swing factors next: a deal or renewed US strikes, the OPEC+ capacity review and Nov 29 2027-quota meeting, and the MSCI November review.",
+  "red_flags": [
+    {"target": "KSA, UAE, QAT", "issue": "Active regional war: daily tanker attacks in Hormuz, a tanker reportedly hit off Qatar, drones intercepted over Riyadh and Mecca (Nov 6); Iran's supreme leader reportedly ordered responses 'without geographical limitations'. Direct physical risk to Gulf holdings and possible market disruption.", "url": "https://www.aljazeera.com/amp/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran"},
+    {"target": "QAT", "issue": "QatarEnergy LNG force majeure has been extended month by month (through at least November per late-September reports); Ras Laffan export capacity reportedly cut ~17% by missile strikes, repairs possibly 3-5 years. Background, outside window.", "url": "https://thenationalnews.com/business/energy/2026/09/28/qatar-extends-lng-force-majeure-as-hormuz-disruption-threatens-winter-supply"},
+    {"target": "KSA", "issue": "Aramco (large KSA weight) keeps its performance-linked dividend suspended; Saudi fiscal deficit widening and Q3 oil revenue -23% y/y.", "url": "https://www.arabnews.com/business/saudi-arabia-posts-2238bn-budget-deficit-in-q3-3009626"},
+    {"target": "USO, XOP, OIH, XLE, VDE", "issue": "Extreme two-way geopolitical gap risk in crude: Brent -9% in one session (Nov 4), ~-15% on the week, and a reported $6 flash crash; a US-Iran deal could remove a large war premium while renewed strikes could reverse it. USO is most exposed via front-month futures.", "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Isnt-Over-but-Oil-Traders-Are-Already-Pricing-In-Peace.html"},
+    {"target": "INDA, EPI, TUR", "issue": "US Treasury issued new sanctions on India- and Turkey-based firms and individuals for ties to Iran (Nov 4) and warned of more; listed-holding exposure not confirmed, likely limited.", "url": "https://www.thestar.com.my/news/world/2026/11/05/us-slaps-sanctions-on-indian-turkish-firms-and-people-for-aiding-iran"},
+    {"target": "INDA, EPI, TUR, MCHI, FXI", "issue": "Russia sanctions: 100% tariffs on top buyers of Russian oil under the Graham Sanctioning Russia and Iran Act were waived on Oct 16 pending a ~60-day review; reinstatement would hit the largest buyers of Russian energy.", "url": "https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/"}
+  ],
+  "upcoming_events": [
+    {"date": "2026-11-11", "event": "MSCI November 2026 index review announcement (effective Dec 1); possible Saudi/UAE/Qatar adds/deletes", "buckets": ["mena_gulf", "em_broad"]},
+    {"date": "2026-11-15", "event": "OPEC+ production capacity review expected by mid-November (approximate date)", "buckets": ["energy_oil", "mena_gulf"]},
+    {"date": "2026-11-16", "event": "Aramco Q3 base dividend record date (payment Nov 25)", "buckets": ["mena_gulf", "energy_oil"]},
+    {"date": "2026-11-29", "event": "Full OPEC+ (21 members) meeting to set 2027 quotas", "buckets": ["energy_oil", "mena_gulf"]},
+    {"date": "2026-12-15", "event": "Approximate end of 60-day review of waived Russia oil-buyer tariffs/sanctions", "buckets": ["energy_oil", "india", "china", "em_broad"]},
+    {"date": "2027-01-10", "event": "Expiry of US-China tariff escalation pause", "buckets": ["global_equity", "china"]}
+  ]
+}

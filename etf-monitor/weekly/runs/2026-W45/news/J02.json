@@ -1,0 +1,68 @@
+{
+  "pillar_id": "J02",
+  "pillar_name": "US equity market and earnings",
+  "week": "2026-W45",
+  "window": "2026-10-31..2026-11-07",
+  "bucket_scores": {
+    "us_large_broad": {
+      "score": 0,
+      "confidence": "medium",
+      "rationale": "Fact: with most companies reported, Q3 2026 S&P 500 blended EPS growth is 31.4% and revenue growth 14.3%. 84% beat EPS, but the average beat was only 2.7%, and analysts expect 28.4% growth in Q4 (FactSet, Nov 6). Fact: the S&P 500 fell 2.68% on the week, after a 4.4% drop on Nov 5, its worst day since April 2025. The Nasdaq entered a correction as AI and chip stocks sold off, partly on worries that the Democratic Congress will restrict data-center buildout. Interpretation: BofA described the drop as multiple compression rather than estimate cuts, and the forward P/E is now 17.7. That leaves strong earnings against higher volatility, tech-concentration risk and live December Fed-hike risk, so the net score is neutral.",
+      "headlines": [
+        {"date": "2026-11-06", "title": "S&P 500 Earnings Season Update: November 6, 2026", "source": "FactSet Insight", "url": "https://insight.factset.com/sp-500-earnings-season-update-november-6-2026"},
+        {"date": "2026-11-05", "title": "Stock market today: Dow plunges 1,800 points, Nasdaq enters correction in AI trade meltdown", "source": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html"},
+        {"date": "2026-11-06", "title": "Stock market news for Nov. 6, 2026", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"},
+        {"date": "2026-11-06", "title": "Post-Market & Weekly Summary (2026-11-06)", "source": "The Closing Print", "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-06/"}
+      ]
+    },
+    "us_small_mid_value": {
+      "score": 1,
+      "confidence": "low",
+      "rationale": "Fact: in the Nov 5 rout, Large Value (IVE) fell 2.80% and Large Growth (IVW) fell 5.75%. Over one month, IVE is +2.6% against IVW -11.6%, and Small Value (IJS) is up 16.2% year to date. The Russell 2000 fell 2.05% on the week, against -2.68% for the S&P 500. Fact: October ISM manufacturing rose to 55.5, and payrolls beat (+165k), which supports domestic cyclical earnings. Interpretation: rotation away from AI megacaps and firm domestic data favor value and mid-caps. December Fed-hike risk (roughly 70% priced before the jobs report) is the main headwind for leveraged small caps, so confidence is low.",
+      "headlines": [
+        {"date": "2026-11-06", "title": "AI Trade Unwinds as Tech Leads Broad Selloff", "source": "ETF Action", "url": "https://www.etfaction.com/ai-trade-unwinds-as-tech-leads-broad-selloff/"},
+        {"date": "2026-11-02", "title": "Stock market news for Nov. 2, 2026 (rotation into old-economy names; ISM 55.5)", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html"},
+        {"date": "2026-11-06", "title": "Post-Market & Weekly Summary (2026-11-06)", "source": "The Closing Print", "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-06/"}
+      ]
+    },
+    "us_factor_dividend": {
+      "score": 1,
+      "confidence": "low",
+      "rationale": "Fact: defensive and income sectors held up in the selloff. On Nov 5, Staples (XLP) fell 0.75% and Utilities (XLU) 0.71%, against 4.4% for the S&P 500. Over one month, XLP is +12.6%, Health Care +10.5% and XLU +8.3%. Fact: McDonald's raised its dividend 4% (Nov 4) and Lam Research authorized a $25B buyback; companies have authorized a record pace of buybacks in 2026, and November is typically the heaviest month for executing them (secondary source). Interpretation: the AI de-rating favors quality and dividend factors. The offsets are a 10-year yield near 4.86% and possible Fed tightening, which keep the tailwind mild.",
+      "headlines": [
+        {"date": "2026-11-06", "title": "AI Trade Unwinds as Tech Leads Broad Selloff", "source": "ETF Action", "url": "https://www.etfaction.com/ai-trade-unwinds-as-tech-leads-broad-selloff/"},
+        {"date": "2026-11-04", "title": "McDonald's Rises 5% as Earnings Beat Outweighs U.S. Sales Dip (dividend raised 4%)", "source": "24/7 Wall St. via Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonald-rises-5-earnings-beat-160448146.html"},
+        {"date": "2026-11-06", "title": "Stock market news for Nov. 6, 2026 (Lam Research $25B buyback)", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"}
+      ]
+    },
+    "consumer": {
+      "score": 0,
+      "confidence": "medium",
+      "rationale": "Fact: October payrolls rose 165k (about 65k expected), unemployment fell to 4.1%, and hourly earnings rose 0.4% m/m. Preliminary November UMich sentiment improved to 51 from 48 but stays near record lows, and 1-year inflation expectations are elevated (4.7% in October). Fact: earnings were mixed. McDonald's US comps were -0.2%, though they improved through the quarter. Airbnb beat and guided Q4 revenue above consensus, Uber gross bookings rose 20%, and DraftKings missed. Interpretation: solid jobs and income support spending, while oil near $90-98, weak sentiment and Fed-hike risk weigh, so the net reading is neutral with an upside tilt.",
+      "headlines": [
+        {"date": "2026-11-06", "title": "Stock market today: Nasdaq and S&P 500 rebound, Dow slips to cap bruising week for AI stocks (jobs, UMich, Airbnb)", "source": "Yahoo Finance", "url": "https://ca.finance.yahoo.com/news/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"},
+        {"date": "2026-11-04", "title": "McDonald's Rises 5% as Earnings Beat Outweighs U.S. Sales Dip; Chipotle Climbs 4%, Starbucks Gains 3%", "source": "24/7 Wall St. via Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonald-rises-5-earnings-beat-160448146.html"},
+        {"date": "2026-11-06", "title": "Stock market news for Nov. 6, 2026 (DraftKings miss, Airbnb beat)", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"}
+      ]
+    },
+    "financials": {
+      "score": 0,
+      "confidence": "medium",
+      "rationale": "Fact: Financials (XLF) rose 1.15% on the week while the S&P 500 fell 2.7%. AIG beat Q3 estimates on 42.5% higher net investment income and 7% premium growth, but its combined ratio rose to 91.3% on convective-storm catastrophe losses. Fact: Democrats won the Senate (about 54 seats) and are projected to win the House, raising oversight and regulatory risk. The Fed is trying to finalize a capital-rule overhaul by year end, and Senate control limits the White House's ability to reshape the Fed. Interpretation: the curve is steep (2y 4.51%, 10y 4.86%) and the economy is firm, which helps net interest income. Higher regulatory risk from 2027 and catastrophe losses offset that, so the net reading is neutral.",
+      "headlines": [
+        {"date": "2026-11-03", "title": "AIG beats profit estimates on premium growth, investment income", "source": "Reuters via WMBD", "url": "https://wmbdradio.com/2026/11/03/aig-beats-profit-estimates-on-premium-growth-investment-income/"},
+        {"date": "2026-11-04", "title": "US midterm election results and markets", "source": "XTB", "url": "https://www.xtb.com/en/education/us-midterm-election-results-markets"},
+        {"date": "2026-11-06", "title": "Post-Market & Weekly Summary (2026-11-06)", "source": "The Closing Print", "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-06/"}
+      ]
+    }
+  },
+  "regime_notes": "Two forces dominated the week. First, the midterms gave Democrats the Senate (about 54 seats) and a projected House majority, which means gridlock with the White House from January and more oversight. Second, a violent AI and semiconductor de-rating on Nov 5: the S&P 500 fell 4.4%, the Nasdaq entered a correction and the VIX jumped more than 65% intraday, partly on fears of restrictions on data-center buildout. Fundamentals are strong. Q3 S&P 500 EPS growth is 31.4% blended with 84% beating, although the average beat is small, and the forward P/E has compressed to 17.7. Leadership rotated hard from growth to value, defensives and healthcare. Macro is hawkish: payrolls rose 165k, unemployment is 4.1%, ISM prices are 75.2 and oil is near $90-98, which keeps a December 9 Fed hike live (about 70% priced before the jobs report). October CPI and PPI next week are the key swing factor for multiples.",
+  "red_flags": [],
+  "upcoming_events": [
+    {"date": "2026-11-09", "event": "Week of Nov 9: October CPI and PPI releases (exact dates per BLS calendar)", "buckets": ["us_large_broad", "us_small_mid_value", "us_factor_dividend", "consumer", "financials"]},
+    {"date": "2026-11-27", "event": "Black Friday, start of holiday shopping season; retailer Q3 reports (Walmart, Target, Home Depot) due mid/late November", "buckets": ["consumer"]},
+    {"date": "2026-12-04", "event": "November jobs report, last major data before FOMC", "buckets": ["us_large_broad", "us_small_mid_value", "financials"]},
+    {"date": "2026-12-09", "event": "FOMC decision; markets priced about 70% odds of a 25bp hike before the October jobs beat", "buckets": ["us_large_broad", "us_small_mid_value", "us_factor_dividend", "consumer", "financials"]},
+    {"date": "2027-01-10", "event": "US-China tariff truce expiry (extended from Nov 10, 2026)", "buckets": ["us_large_broad", "consumer"]}
+  ]
+}

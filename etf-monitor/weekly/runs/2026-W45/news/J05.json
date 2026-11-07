@@ -1,0 +1,57 @@
+{
+  "pillar_id": "J05",
+  "pillar_name": "Europe and developed markets ex-US/Japan",
+  "week": "2026-W45",
+  "window": "2026-10-31..2026-11-07",
+  "bucket_scores": {
+    "europe": {
+      "score": 0,
+      "confidence": "medium",
+      "rationale": "Facts: euro area flash HICP rose to 4.0% in October (energy +20.8%, core steady at 2.5%), the October composite PMI slowed to about 51.9 flash, and the BoE hiked 25bp to 4.0% on 5 Nov (8-1) with CPI projected near 5% in mid-2027 and a stated case for another rise. The offsets: TTF gas fell about 16% from its four-year high and Brent fell sharply on US-Iran diplomacy hopes after the US midterms. The STOXX 600 nearly hit a record on Thursday and finished the week only about 0.2% lower despite the US tech rout, with more than half of reporters beating Q3 estimates. Interpretation: the energy relief is real but rests on diplomacy (EU storage is about 74% full against an 86% five-year norm, and the Qatar force majeure runs to end-December), and hawkish ECB/BoE risk plus the Rheinmetall-led defence selloff balance it, so the net is neutral.",
+      "headlines": [
+        {"date": "2026-11-04", "title": "Euro area annual inflation up to 4.0% (flash estimate, October 2026)", "source": "Eurostat", "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap"},
+        {"date": "2026-11-05", "title": "Bank Rate increased to 4% - November 2026 Monetary Policy Summary and Minutes", "source": "Bank of England", "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"},
+        {"date": "2026-11-05", "title": "European gas prices slide more than 15% from 4-year high on Iran deal hopes", "source": "Trading and Investment News (citing ING, Oilprice.com)", "url": "https://www.tradingandinvestmentnews.co.uk/european-gas-prices-slide-more-than-15-from-a-4-year-high-on-iran-deal-hopes/"},
+        {"date": "2026-11-05", "title": "Rheinmetall shares plunge more than 17% after profit warning over order delays", "source": "Euronews", "url": "https://www.euronews.com/2026/11/05/rheinmetall-shares-plunge-more-than-17-after-profit-warning-over-order-delays"},
+        {"date": "2026-11-06", "title": "Stoxx 600 erases its weekly gain as tech rout hits Europe, but index still leads the S&P 500 this year", "source": "The Private Banker (citing Bloomberg, Investing.com)", "url": "https://leprivatebanker.com/2026/11/06/stoxx-600-erases-its-weekly-gain-as-tech-rout-hits-europe-but-index-still-leads-the-sp-500-this-year/"},
+        {"date": "2026-11-05", "title": "Pound hits highest level since its crash after 2016 Brexit vote", "source": "The Guardian (via AOL)", "url": "https://www.aol.co.uk/articles/pound-hits-highest-level-since-111430000.html"}
+      ]
+    },
+    "developed_ex_us": {
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Facts: the main developed-market central banks outside the US are tightening against energy-driven inflation. The RBA hiked to 4.85% (6-3) on 3 Nov, the BoE to 4.0% on 5 Nov, and the BoC to 2.5% on 28 Oct. Canada lost 4,700 jobs in October as unemployment rose to 6.7%, its third straight month of job losses. The supports are that the dollar weakened after the US midterms (sterling's trade-weighted index is at its highest since June 2016), falling oil and gas prices ease the terms-of-trade squeeze for energy importers, and ex-US indices are less exposed to AI and held up better than the Nasdaq in the 5-6 Nov selloff. Interpretation: tightening into slowing growth roughly offsets currency and energy relief. Japan is outside this pillar, so confidence is low.",
+      "headlines": [
+        {"date": "2026-11-03", "title": "Statement by the Monetary Policy Board: Monetary Policy Decision (cash rate raised to 4.85%)", "source": "Reserve Bank of Australia", "url": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html"},
+        {"date": "2026-11-06", "title": "Labour Force Survey, October 2026", "source": "Statistics Canada", "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261106/dq261106a-eng.htm"},
+        {"date": "2026-11-07", "title": "Canada lost 4,700 jobs in October as unemployment rate climbs to 6.7%", "source": "BNN Bloomberg", "url": "https://www.bnnbloomberg.ca/business/2026/11/07/canada-lost-4700-jobs-in-october-as-unemployment-rate-climbs-to-67/"},
+        {"date": "2026-11-05", "title": "Bank Rate increased to 4% - November 2026 Monetary Policy Summary and Minutes", "source": "Bank of England", "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"},
+        {"date": "2026-11-06", "title": "Stoxx 600 erases its weekly gain as tech rout hits Europe, but index still leads the S&P 500 this year", "source": "The Private Banker (citing Bloomberg, Investing.com)", "url": "https://leprivatebanker.com/2026/11/06/stoxx-600-erases-its-weekly-gain-as-tech-rout-hits-europe-but-index-still-leads-the-sp-500-this-year/"}
+      ]
+    },
+    "asia_dev_other": {
+      "score": -1,
+      "confidence": "low",
+      "rationale": "Facts: the RBA delivered its fifth hike of 2026 (to 4.85%), said inflation will not fall below 3% until late 2027, and flagged slowing output, falling house prices and rising unemployment. Singapore's DBS (net profit -5% y/y) and UOB both missed Q3 estimates, with net interest margins compressing, and all three Singapore bank stocks fell in results week. Hong Kong's Hang Seng rose 5.1% for the week, its best since March 2025, on China support measures, but fell 1.3% on Friday as the US AI selloff spread to Asia (Reuters). Interpretation: Australian tightening into a slowdown, softer Singapore bank earnings and AI-repricing risk for tech-heavy Asian developed markets outweigh the Hong Kong rebound, so this is a mild headwind. Korea and Taiwan were not researched in depth, so confidence is low.",
+      "headlines": [
+        {"date": "2026-11-03", "title": "RBA lifts interest rates to highest level in 18 years to try to dampen inflation", "source": "ABC News", "url": "https://www.abc.net.au/news/2026-11-03/rba-lifts-interest-rates-november-2026-highest-rate-in-18-years/107340050"},
+        {"date": "2026-11-05", "title": "DBS third quarter net profit at SGD 2.81 billion", "source": "DBS (issuer press release)", "url": "https://www.dbs.com/newsroom/DBS_third_quarter_net_profit_at_SGD_2_81_billion"},
+        {"date": "2026-11-06", "title": "DBS and UOB miss, OCBC beats: what Q3 2026 results say about Singapore banks", "source": "Dr Wealth (analysis)", "url": "https://drwealth.com/dbs-and-uob-miss-ocbc-beats-what-q3-2026-results-say-about-singapore-banks/"},
+        {"date": "2026-11-07", "title": "China, HK stocks tumble as global tech selloff deepens", "source": "Reuters via Business Recorder", "url": "https://brecorder.com/news/40447851/china-hk-stocks-tumble-as-global-tech-selloff-deepens"}
+      ]
+    }
+  },
+  "regime_notes": "The week turned on two US-driven shocks. First, the Democratic midterm sweep raised hopes for a US-Iran deal (Qatar is mediating), and Brent and TTF gas dropped sharply from their highs. That is the single biggest potential relief for Europe's energy-driven inflation (euro area HICP is at 4.0% with energy at +20.8%), but EU gas storage is only about 74% full and Qatari LNG remains under force majeure, so a breakdown in talks would quickly reverse the move. Second, the Nasdaq fell about 5.5% on 5 Nov on AI and antitrust repricing, and Europe and the other developed markets fell less because they hold less AI exposure. Central banks outside the US are hiking, not cutting: the BoE hiked to 4.0% (first rise since 2023), the RBA to 4.85% and the BoC to 2.5%, and the ECB held at 2.50% on 29 Oct with December live, so rate risk is a headwind for duration-sensitive sectors and for housing in Australia, the UK and Canada. A weaker dollar (sterling's trade-weighted index is at its highest since June 2016, and GBP/EUR is above 1.20) helps unhedged USD-based holders of European ETFs. European defence lost momentum after Rheinmetall's second guidance cut and the selloff on US defence-scrutiny worries.",
+  "red_flags": [
+    {"target": "European defence ETFs (industrials_defense_infra / europe)", "issue": "Holding-level, not fund-level: Rheinmetall, a top weight in most European defence ETFs, cut its 2026 guidance for the second time and fell more than 17% on 5 Nov (down 48% YTD), and BAE, Leonardo and Saab also fell. Check each fund's concentration.", "url": "https://www.euronews.com/2026/11/05/rheinmetall-shares-plunge-more-than-17-after-profit-warning-over-order-delays"}
+  ],
+  "upcoming_events": [
+    {"date": "2026-11-10", "event": "STOXX 600 Q3 earnings continue (Vodafone, Infineon, Henkel); heavy reporting week 9-13 Nov", "buckets": ["europe"]},
+    {"date": "2026-11-13", "event": "Eurostat euro area Q3 GDP second estimate (flash was +0.4% q/q)", "buckets": ["europe", "developed_ex_us"]},
+    {"date": "2026-11-18", "event": "Eurostat final October HICP (flash 4.0%)", "buckets": ["europe", "govt_bonds"]},
+    {"date": "2026-12-04", "event": "Canada Labour Force Survey, November", "buckets": ["developed_ex_us"]},
+    {"date": "2026-12-08", "event": "RBA monetary policy decision", "buckets": ["asia_dev_other", "developed_ex_us"]},
+    {"date": "2026-12-09", "event": "Bank of Canada rate decision; German Arminius/Boxer funding decision expected", "buckets": ["developed_ex_us", "europe"]},
+    {"date": "2026-12-17", "event": "ECB and Bank of England rate decisions", "buckets": ["europe", "developed_ex_us"]}
+  ]
+}

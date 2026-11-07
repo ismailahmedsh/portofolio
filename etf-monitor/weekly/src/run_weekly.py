@@ -1,0 +1,147 @@
+"""Weekly run: scores 200 ETFs on 100 pillars, applies evidence-based decision rules, writes the report.
+Usage: python3 -I src/run_weekly.py --week 2026-W45 [--fetch]"""
+import argparse, json, subprocess, sys
+from datetime import date
+from pathlib import Path
+import numpy as np, pandas as pd
+sys.path.insert(0, str(Path(__file__).parent))
+import pillars as P
+
+ROOT = Path(__file__).resolve().parents[1]
+
+def yaml_lite(p):
+    out = {}
+    for line in Path(p).read_text().splitlines():
+        line = line.split("#")[0].rstrip()
+        if not line or line.startswith(" ") is False and ":" not in line: continue
+        if line.startswith("  ") and cur: out[cur][line.strip().split(":")[0]] = line.split(":", 1)[1].strip()
+        elif ":" in line:
+            k, v = line.split(":", 1); v = v.strip(); cur = None
+            if v == "": out[k] = {}; cur = k
+            else: out[k] = v
+    return out
+
+def main():
+    ap = argparse.ArgumentParser(); ap.add_argument("--week", required=True); ap.add_argument("--fetch", action="store_true")
+    a = ap.parse_args(); wd = ROOT / "runs" / a.week; wd.mkdir(parents=True, exist_ok=True)
+    if a.fetch: subprocess.run([sys.executable, "-I", str(ROOT / "src" / "fetch.py"), "--facts"], check=True)
+    cfg = yaml_lite(ROOT / "config" / "portfolio.yaml")
+    core, core_ucits = cfg["core"]["proxy"], cfg["core"]["ucits"]; sat_share = float(cfg.get("satellite_share", 0))
+    d = P.load(); u = P.universe()
+    V, bucket = P.compute_quant(d)
+    readings = P.macro_readings(); macro = P.macro_bucket_scores(readings, set(bucket.values()))
+    news, meta = P.news_scores(wd / "news")
+    Pm, F = P.score(V, bucket, macro, news)
+    asof = d["adj"]["SPY"].dropna().index[-1].date()
+    F["rank"] = F.composite.rank(ascending=False).astype(int); F["bucket"] = F.index.map(bucket)
+    umap = dict(zip(u.ticker, u.ucits_candidate)); F["ucits"] = [umap[t] if V.loc[t, "G08"] == 1 else "" for t in F.index]
+    V.round(6).to_csv(wd / "pillar_values.csv"); Pm.round(1).to_csv(wd / "pillar_scores.csv"); F.round(1).to_csv(wd / "family_scores.csv")
+    # history for week-over-week and month-to-date views
+    hp = ROOT / "runs" / "history.csv"
+    h = pd.read_csv(hp) if hp.exists() else pd.DataFrame(columns=["week", "asof", "ticker", "composite", "rank"])
+    h = h[h.week != a.week]
+    h = pd.concat([h, pd.DataFrame({"week": a.week, "asof": str(asof), "ticker": F.index, "composite": F.composite.round(2), "rank": F["rank"]})])
+    h.to_csv(hp, index=False)
+    prev_weeks = sorted(w for w in h.week.unique() if w < a.week)
+    prev = h[h.week == prev_weeks[-1]].set_index("ticker")["rank"] if prev_weeks else None
+    F["rank_change"] = (prev.reindex(F.index) - F["rank"]) if prev is not None else np.nan
+
+    # ---------- decision rules (see DECISION_RULES.md) ----------
+    flags = []
+    for pid, j in meta.items():
+        for rf in j.get("red_flags", []): flags.append((pid, rf.get("target", ""), rf.get("issue", ""), rf.get("url", "")))
+    structural = ("clos", "liquidat", "merg", "suspend", "delist", "fee increase", "terminat", "sanction")
+    core_flags = [f for f in flags if (core_ucits in f[1] or f[1] == core) and any(k in f[2].lower() for k in structural)]
+    ucits_px = d["adj"].get(core_ucits + ".L")
+    ucits_ok = ucits_px is not None and ucits_px.dropna().index[-1].date() >= (pd.Timestamp(asof) - pd.Timedelta(days=7)).date()
+    er = V.loc[core, "G01"]
+    core_decision, core_reason = "HOLD and keep depositing", "No structural red flag for the core fund."
+    if core_flags or not ucits_ok or (er and er > 0.30):
+        core_decision = "REVIEW: possible switch of core fund"
+        core_reason = "; ".join([f"{f[2]} ({f[3]})" for f in core_flags] + ([] if ucits_ok else [f"{core_ucits} price feed stale"]) + ([f"expense ratio {er}%"] if er and er > .30 else []))
+    trend_flag = V.loc[core, "A08"] < 0 and V.loc[core, "A06"] < 0
+    dd = V.loc[core, "D01"]
+    cand = F[(F.ucits != "") & (F.index != core)].sort_values("composite", ascending=False).head(10)
+    deposit = f"US${float(cfg['monthly_deposit_usd']) * (1 - sat_share):,.0f} to {core_ucits}"
+    if sat_share > 0:
+        top = cand.iloc[0]; deposit += f" and US${float(cfg['monthly_deposit_usd']) * sat_share:,.0f} to {top.ucits} (top-ranked UCITS candidate, proxy {top.name})"
+
+    bt = json.loads((ROOT / "runs" / "backtest_latest.json").read_text())
+    write_report(wd, a.week, asof, cfg, core, core_ucits, core_decision, core_reason, trend_flag, dd, deposit, F, Pm, V, meta, readings, flags, cand, bt, h)
+    print("wrote", wd / "REPORT.md")
+
+def pct(x): return "n/a" if pd.isna(x) else f"{x * 100:+.1f}%"
+
+def write_report(wd, week, asof, cfg, core, core_ucits, core_decision, core_reason, trend_flag, dd, deposit, F, Pm, V, meta, readings, flags, cand, bt, h):
+    L = []; A = L.append
+    A(f"# Weekly ETF review, {week} (prices to {asof})\n")
+    A("Research for the owner's own portfolio, not personal financial advice. Generated by `etf-monitor/weekly/src/run_weekly.py`.\n")
+    A("## This week's decisions\n")
+    A("| Question | Answer | Why |\n|---|---|---|")
+    A(f"| Keep holding the core ({core_ucits})? | **{core_decision}** | {core_reason} |")
+    A(f"| Where does this month's deposit go? | **{deposit}** | Satellite share is {float(cfg.get('satellite_share', 0)):.0%}; the 2015-2026 backtest found no edge in redirecting deposits (see below). |")
+    A(f"| Sell anything? | **No** | Selling on scores, news or trend lost money in every tested variant. Sales happen only on structural red flags. |")
+    A(f"| Core trend flag | {'**ON**: below 200-day average with negative 12-month momentum. Information only; acting on it cost 3 points a year in the backtest.' if trend_flag else 'Off'} | Core is {pct(dd)} from its 52-week high{'; the drawdown protocol applies: keep depositing, change nothing' if dd < -0.20 else ''}. |\n")
+    A("## How you would know: what the evidence says\n")
+    A(f"Backtest {bt['period']}, US${bt['monthly_deposit']:,.0f} deposited monthly, costs {bt['cost_model']}, {bt['trials']} strategies tested. Universe is today's 200 ETFs, which flatters rotation (funds that died are missing).\n")
+    A("| Strategy | Return on your money | Time-weighted return | Worst drop | Trades per year | 2015-2019 | 2020-2026 |\n|---|---|---|---|---|---|---|")
+    for r in bt["results"]:
+        if r.get("money_weighted_return") is None: continue
+        A(f"| {r['strategy']} | {r['money_weighted_return']:.1f}% | {r['time_weighted_cagr']:.1f}% | {r['max_drawdown']:.0f}% | {r['trades_per_year']:.0f} | {r['cagr_2015_2019']:.1f}% | {r['cagr_2020_2026']:.1f}% |")
+    A("\nWhy rotation trails: the composite rewards a smooth ride (low volatility, small drawdowns, steady returns), so the top of the list leans toward defensive funds. Rotating into them gives up equity return over long periods.\n")
+    A(f"\nBest risk-adjusted result: **{bt['best_by_sharpe']}**. The engine re-runs this test monthly and will propose enabling a rotation rule only if it beats holding in both sub-periods and its deflated Sharpe probability exceeds 0.95.\n")
+    A(f"## Your core today ({core} as data proxy for {core_ucits})\n")
+    fam = F.loc[core]
+    A(f"Composite score **{fam.composite:.0f}/100**, rank **{int(fam['rank'])} of {len(F)}**. A broad world fund always ranks mid-pack against narrower funds; that is diversification, not weakness.\n")
+    A("| Family | Score |\n|---|---|")
+    for k, n in P.FAMILY_NAMES.items(): A(f"| {k}. {n} (weight {P.WEIGHTS[k]}) | {fam[k]:.0f} |")
+    A(f"\nKey readings: 1 week {pct(V.loc[core,'A01'])}, 3 months {pct(V.loc[core,'A03'])}, 12 months {pct(V.loc[core,'A05'])}, volatility 1y {V.loc[core,'C03']*100:.1f}%, max drawdown 3y {pct(V.loc[core,'D03'])}, P/E {V.loc[core,'I01']:.1f}.\n")
+    A("## Switch candidates you could actually buy (UCITS line verified on LSE)\n")
+    A("Shown for information. With satellite share at 0% none of these is bought.\n")
+    A("| Rank | Proxy | UCITS | Bucket | Composite | Change vs last week | 12m return | Volatility 1y |\n|---|---|---|---|---|---|---|---|")
+    for t, r in cand.iterrows():
+        A(f"| {int(r['rank'])} | {t} | {r.ucits} | {r.bucket} | {r.composite:.0f} | {'' if pd.isna(r.rank_change) else f'{int(r.rank_change):+d}'} | {pct(V.loc[t,'A05'])} | {V.loc[t,'C03']*100:.0f}% |")
+    A("\n## All 200 ETFs: top 20 and bottom 10\n")
+    A("| Rank | ETF | Bucket | Composite | Trend | Rel. strength | Volatility | Drawdown | Risk-adj. | Cost/UAE | News |\n|---|---|---|---|---|---|---|---|---|---|---|")
+    srt = F.sort_values("composite", ascending=False)
+    for t, r in pd.concat([srt.head(20), srt.tail(10)]).iterrows():
+        A(f"| {int(r['rank'])} | {t} | {r.bucket} | {r.composite:.0f} | {r.A:.0f} | {r.B:.0f} | {r.C:.0f} | {r.D:.0f} | {r.E:.0f} | {r.G:.0f} | {r.J:.0f} |")
+    A("\nFull scores: `pillar_scores.csv` (200 x 100), `family_scores.csv`, raw values in `pillar_values.csv`.\n")
+    A("## Market weather by bucket\n")
+    A("| Bucket | ETFs | Avg composite | Best ETF | News score | Macro score |\n|---|---|---|---|---|---|")
+    for b, g in F.groupby("bucket"):
+        A(f"| {b} | {len(g)} | {g.composite.mean():.0f} | {g.composite.idxmax()} | {g.J.mean():.0f} | {g.H.mean():.0f} |")
+    A("\n## News pillars (10 agents)\n")
+    A("Scores run from -2 (strong headwind) to +2 (strong tailwind) over the next 1 to 3 months. News is context: research shows its price effect fades within days.\n")
+    for pid in sorted(meta):
+        j = meta[pid]; sc = ", ".join(f"{b} {v['score']:+d} ({v.get('confidence','?')})" for b, v in j["bucket_scores"].items())
+        A(f"**{pid} {j.get('pillar_name', P.REG[pid][1])}**: {sc}\n\n{j.get('regime_notes','').strip()}\n")
+        hl = [x for v in j["bucket_scores"].values() for x in v.get("headlines", [])][:3]
+        for x in hl: A(f"- {x.get('date','')} {x.get('source','')}: [{x.get('title','')}]({x.get('url','')})")
+        A("")
+    A("## Macro pillars\n")
+    A("Positive intensity means risk-off. Mapped to buckets by a fixed sensitivity table (heuristic, weight 5 of 100).\n")
+    A("| Pillar | Reading | Risk-off intensity |\n|---|---|---|")
+    for k, (x, txt) in readings.items(): A(f"| {k} {P.REG[k][1]} | {txt} | {x:+.2f} |")
+    A("\n## Red flags raised by the news agents\n")
+    if flags:
+        A("| Pillar | Target | Issue |\n|---|---|---|")
+        for pid, tg, iss, url in flags: A(f"| {pid} | {tg} | {iss} {'([source](' + url + '))' if url else ''} |")
+    else: A("None.")
+    ev = [e for j in meta.values() for e in j.get("upcoming_events", [])]
+    if ev:
+        A("\n## Upcoming events\n")
+        for e in sorted(ev, key=lambda e: e.get("date", ""))[:15]: A(f"- {e.get('date','')}: {e.get('event','')} ({', '.join(e.get('buckets', []))})")
+    weeks = sorted(h.week.unique())
+    if len(weeks) > 1:
+        A("\n## Month to date\n")
+        piv = h.pivot_table(index="ticker", columns="week", values="rank").loc[[core] + list(cand.index[:5])]
+        A(piv.to_markdown())
+    A("\n## Caveats\n")
+    A("- Prices and fund facts come from Yahoo Finance via yfinance (unofficial, personal use). Bond duration from this source is unreliable and carries little weight.")
+    A("- US-listed ETFs are data proxies. As a UAE resident you buy the UCITS line: US-listed funds cost you 30% dividend withholding and US estate-tax exposure.")
+    A("- News scores are agent judgments with cited headlines; read the digests in `news/` before acting on any of them.")
+    (wd / "REPORT.md").write_text("\n".join(L) + "\n")
+
+if __name__ == "__main__":
+    main()

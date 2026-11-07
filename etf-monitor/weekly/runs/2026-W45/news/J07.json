@@ -1,0 +1,68 @@
+{
+  "pillar_id": "J07",
+  "pillar_name": "Emerging markets excluding China and the Gulf",
+  "week": "2026-W45",
+  "window": "2026-10-31..2026-11-07",
+  "bucket_scores": {
+    "india": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "Fact: Brent fell to about $93 on Nov 5 (from a peak near $118) on hopes of a US-Iran diplomatic exit after the Democratic midterm sweep, then rebounded to about $98 on Nov 6. NSE provisional data compiled by StockPil show FIIs were net cash-market buyers of Rs 45,960 crore over Nov 2-6, and the October HSBC manufacturing PMI stayed expansionary at 54.7 with output-price inflation at a near four-year low. Interpretation: lower oil and foreign buying (partly a rotation away from AI hardware markets) are a mild tailwind, but the oil relief is fragile (Hormuz attacks continue), and claims that rupee is near 94-95/USD and October CPI near 6% come only from a commercial blog and are unverified. Flow figures are from secondary sources, hence medium confidence.",
+      "headlines": [
+        {"date": "2026-11-07", "title": "FII vs DII this week (2-6 Nov): FIIs net buyers of Rs 45,960 crore", "source": "StockPil (NSE provisional data)", "url": "https://stockpil.com/fii-vs-dii-this-week-2026-11-06"},
+        {"date": "2026-11-02", "title": "India Manufacturing Growth Revised Down in October", "source": "Trading Economics (HSBC/S&P Global PMI)", "url": "https://tradingeconomics.com/india/manufacturing-pmi/news/597132"},
+        {"date": "2026-11-06", "title": "Trump Weighs Iran Strikes or Deal After Midterm Loss as Oil Prices Drop to $93", "source": "Gulf News", "url": "https://gulfnews.com/world/mena/trump-weighs-iran-strikes-or-deal-after-midterm-loss-as-vance-urges-agreement-qatar-mediates-brent-oil-falls-to-93-1.500736556"},
+        {"date": "2026-11-07", "title": "Nifty Rallies 10% as Democrats Sweep and FPIs Return with Force (opinion/commercial; figures unattributed)", "source": "Paterson Capital", "url": "https://patersoncapital.com/nifty-rallies-10-as-democrats-sweep-and-fpis-return-with-force/"}
+      ]
+    },
+    "em_asia_other": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "Fact: a global AI and semiconductor rout, tied to fears that the Democratic midterm sweep brings US data-center restrictions, hit Taiwan and Korea hard. KOSPI fell 5.28% on Nov 5 and 6.02% on Nov 6 (circuit breaker triggered, foreign net selling of 2.77tn won, won at 1,356.6). TAIEX fell 3.59% on Nov 3, 3.2% on Nov 5 and 4.51% on Nov 6 to 39,701, with the NT dollar at an 18-month low, a record US$28bn foreign outflow in October, and Taipei ordering the regulator to stabilise the market. Offset: fundamentals remain very strong, with Korea's October exports up 93.7% to a record $115.3bn and chips up 259%. Interpretation: this is a sentiment and flows headwind rather than a demand shock so far; it would move to -2 if US data-center moratoria materialise. ASEAN coverage this week was thin; lower oil is a mild help to importers.",
+      "headlines": [
+        {"date": "2026-11-06", "title": "Kospi plunges 6% amid brutal AI sell-off", "source": "The Korea Herald", "url": "https://www.koreaherald.com/article/10928857"},
+        {"date": "2026-11-07", "title": "TAIEX falls below 40,000 points", "source": "Taipei Times", "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/07/2003867287"},
+        {"date": "2026-11-05", "title": "Taiwan stocks sink 3.2% on AI data center concerns", "source": "Focus Taiwan (CNA)", "url": "https://focustaiwan.tw/business/202611050014"},
+        {"date": "2026-11-07", "title": "Foreign exchange reserves dip below US$600 billion", "source": "Taipei Times", "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/07/2003867290"},
+        {"date": "2026-11-06", "title": "Taiwan orders regulator to stabilize stock market", "source": "Taipei Times (AFP)", "url": "https://www.taipeitimes.com/News/front/archives/2026/11/06/2003867281"},
+        {"date": "2026-11-01", "title": "Korea's monthly exports hit $115.3 bil. in Oct. on strong chip sales", "source": "The Korea Times (Yonhap)", "url": "https://www.koreatimes.co.kr/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales"},
+        {"date": "2026-11-04", "title": "Seoul stocks face fresh uncertainty as Democrats retake US Congress", "source": "The Korea Times", "url": "https://www.koreatimes.co.kr/economy/others/20261104/seoul-stocks-face-fresh-uncertainty-as-democrats-retake-us-congress"}
+      ]
+    },
+    "latam": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "Fact: Brazil's Copom unanimously held the Selic at 13.75% on Nov 4, ending the easing cycle, and raised its 2026 IPCA projection to 5.6% (above the 4.5% ceiling), warning of de-anchoring expectations and a sharper activity slowdown; Money Times notes the dollar closed at its 2026 high against the real. Banxico cut by 25bp to 6.25% on Nov 5 in a 3-2 split vote, raised its Q4 inflation forecast to 3.7%, and called it a 'one-time adjustment' as the peso has depreciated. Interpretation: stagflation-tinged news in Brazil and a dovish move into currency weakness in Mexico point to a mild headwind for LatAm assets. No in-window Argentina news was found.",
+      "headlines": [
+        {"date": "2026-11-05", "title": "Monetary policy statement: Banco de Mexico lowers target rate by 25 bp to 6.25%", "source": "Banco de Mexico", "url": "https://www.banxico.org.mx/publications-and-press/announcements-of-monetary-policy-decisions/%7B2E04D4F1-397A-2B77-F666-252D80D8EC69%7D.pdf"},
+        {"date": "2026-11-04", "title": "Copom interrompe ciclo de cortes e mantem Selic em 13,75%", "source": "Gazeta do Povo", "url": "https://www.gazetadopovo.com.br/economia/copom-interrompe-ciclo-de-cortes-e-mantem-selic-em-1375/"},
+        {"date": "2026-11-04", "title": "O que mudou no comunicado do Copom que manteve a Selic em 13,75%? Veja a comparacao", "source": "Money Times", "url": "https://www.moneytimes.com.br/o-que-mudou-no-comunicado-do-copom-selic-novembro-26-lils/"}
+      ]
+    },
+    "em_broad": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "Fact: the two largest non-China EM index weights, Taiwan and Korea, suffered multi-day crashes on the AI/semiconductor sell-off with heavy foreign selling and currency weakness. Turkey's October CPI beat forecasts at 29.77% and the lira broke 50/USD to a record low, and the Brazilian real and Mexican peso weakened. Offsetting this, Brent dropped sharply on Iran-diplomacy hopes, which helps oil importers such as India. Interpretation: for a cap-weighted EM basket, the tech-heavy North Asia drawdown outweighs the oil relief, so this is a mild headwind.",
+      "headlines": [
+        {"date": "2026-11-06", "title": "Kospi plunges 6% amid brutal AI sell-off", "source": "The Korea Herald", "url": "https://www.koreaherald.com/article/10928857"},
+        {"date": "2026-11-04", "title": "TAIEX tumbles 3.59% as NT dollar falls", "source": "Taipei Times", "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/04/2003867095"},
+        {"date": "2026-11-03", "title": "Turkey Inflation Rate Above Expectations", "source": "Trading Economics (TurkStat)", "url": "https://tradingeconomics.com/turkey/inflation-cpi/news/597566"},
+        {"date": "2026-11-03", "title": "Turkish lira breaches 50 per dollar to record low", "source": "Shafaq News", "url": "https://shafaq.com/en/Economy/Turkish-lira-breaches-50-per-dollar-to-record-low"},
+        {"date": "2026-11-06", "title": "Trump Weighs Iran Strikes or Deal After Midterm Loss as Oil Prices Drop to $93", "source": "Gulf News", "url": "https://gulfnews.com/world/mena/trump-weighs-iran-strikes-or-deal-after-midterm-loss-as-vance-urges-agreement-qatar-mediates-brent-oil-falls-to-93-1.500736556"}
+      ]
+    }
+  },
+  "regime_notes": "The week was dominated by two US-driven shocks that cut opposite ways for EM. First, the Democratic midterm sweep triggered a violent AI and semiconductor sell-off on fears of US data-center restrictions; Korea and Taiwan saw circuit breakers, record foreign outflows, and weaker won and NT dollar, even though Korea's October chip exports hit records. Second, the same result raised hopes of a US-Iran diplomatic exit, so Brent fell from near $118 to about $93 before rebounding to around $98 as Hormuz attacks continued; this favoured oil importers, and India drew strong FII inflows. Elsewhere, Brazil paused at 13.75% with rising inflation projections, Banxico cut to 6.25% despite peso weakness, and Turkey's inflation surprise pushed the lira past 50/USD. The key swing factors for the next 1-3 months are whether US data-center moratoria actually materialise and whether the Iran talks hold. Caveat: in-window coverage of ASEAN, South Africa and Argentina was thin, and the search budget ran out before they could be covered.",
+  "red_flags": [
+    {"target": "EWT / Taiwan equity ETFs", "issue": "TAIEX fell up to 9% intraday on Nov 6 and Taipei ordered the FSC to stabilise markets (Taipei Times reports the NT$500bn National Stabilization Fund was authorised). Possible trading-measure changes and wide NAV premium/discount for US-listed Taiwan ETFs; record US$28bn October foreign outflow.", "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/07/2003867287"},
+    {"target": "EWY / Korea equity ETFs", "issue": "KOSPI circuit breaker and sell-sidecar triggered on Nov 6 (intraday low -8.78%). There is a risk of NAV/price dislocation for US-listed Korea ETFs, and high concentration in Samsung and SK hynix (-6.35% and -10.44% that day).", "url": "https://www.koreaherald.com/article/10928857"},
+    {"target": "TUR / Turkey ETFs", "issue": "The lira hit a record low past 50/USD after an October CPI upside surprise; currency-translation losses for USD-based holders.", "url": "https://shafaq.com/en/Economy/Turkish-lira-breaches-50-per-dollar-to-record-low"}
+  ],
+  "upcoming_events": [
+    {"date": "2026-11-09", "event": "Taiwan October trade data (MOF usually publishes around the 7th-9th; date not confirmed)", "buckets": ["em_asia_other", "em_broad"]},
+    {"date": "2026-11-12", "event": "Turkey CBRT Governor Karahan presents the quarterly inflation report with updated forecasts", "buckets": ["em_broad"]},
+    {"date": "2026-11-12", "event": "India October CPI (customary mid-month release; a commercial blog expects about 6.1%, above the RBI 6% upper band; unverified)", "buckets": ["india"]},
+    {"date": "2026-11-12", "event": "South Africa Medium-Term Budget Policy Statement (date from an older report; verify)", "buckets": ["em_broad"]},
+    {"date": "2026-12-09", "event": "Brazil Copom final 2026 decision (Dec 8-9 meeting)", "buckets": ["latam"]}
+  ]
+}

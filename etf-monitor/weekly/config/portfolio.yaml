@@ -1,0 +1,10 @@
+# Owner portfolio as the weekly engine sees it. Edit when holdings change.
+owner: Canadian citizen resident in the UAE (Branch A of plan v5), IBKR account
+monthly_deposit_usd: 2500
+core:
+  ucits: VWRA          # what you actually buy (LSE, USD line)
+  proxy: VT            # US-listed fund with the same index, used for 18 years of data
+satellites: []         # e.g. [{ucits: CNDX, proxy: QQQ}] if you ever hold one
+# Share of each monthly deposit the engine may direct to its top-ranked UCITS candidate.
+# Default 0 because the 2015-2026 backtest found no edge (S5). Max allowed 0.20.
+satellite_share: 0.0
