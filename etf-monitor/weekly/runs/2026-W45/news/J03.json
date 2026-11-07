@@ -7,41 +7,435 @@
     "tech_ai_semis": {
       "score": -1,
       "confidence": "medium",
-      "rationale": "Facts: after Democrats won both chambers of Congress in the Nov 3 midterms, prominent Democrats called for limits on AI data centers (including a 'national data center moratorium'), and on Nov 5 the Philadelphia Semiconductor Index fell more than 12% (Nvidia -9.3%, AMD -17.3%, Micron -17.5%, Broadcom -10.4%); XLK fell 8% on the week, its worst since April 2025. Bloomberg/CNBC report Microsoft is winding down its Oracle capacity deal and trimming its neocloud partners, with some GPU contracts pushed into 1H27. Offsetting fundamentals are strong: AMD posted record Q3 revenue of $13.4B with data center up 97% and guided Q4 to about $17B, and Apple reported record September-quarter iPhone revenue. Interpretation: earnings are holding up, but policy risk to the US data center buildout, signs of hyperscaler capacity discipline and a market pricing about 70% odds of a December Fed hike point to lower multiples and a mild headwind. The risk is skewed to the downside, and Nvidia's Nov 17 report is the key swing factor; this is not yet a -2 because no law or rule has changed and analysts doubt legislation can stall construction (any bill needs the President's signature).",
+      "rationale": "Facts: the midterm sweep put AI data-center limits on the agenda (Sanders 'national moratorium', 40 of 41 local measures lost, Texas Gov-elect Hinojosa's approval ban from Jan 19, Ohio's Acton) and SOX fell ~12% on Nov 5 (NVDA -9.3%, AMD -17%, MU -17%), spreading to Korea (KOSPI circuit breaker), Taiwan (stabilisation fund) and Japan (Nikkei bear market). The funding side is strained: Microsoft is winding down the Oracle rental and trimming neoclouds, Oracle raised $20B at 7-8.65% coupons and 11% below market, CoreWeave/Nebius roughly halved in a month, and crowded software winners de-rated (FTNT -31%, NOW -27%, DDOG -14%). Offsetting, demand data is intact: AMD data center +97%, Korea chip exports +259%, TSMC Q4 guide ~+14% q/q, Nvidia's own Q3 guide $108B, hyperscalers' own 2027 capex guided up, and chips rebounded 5-8% on Nov 6. Interpretation: a policy, financing and valuation unwind rather than a demand collapse; a federal moratorium is a long shot (needs reintroduction in 2027, no 60 Senate votes, veto) and state statute risk lands after the 1-3 month window, so -1 not -2. TSMC October sales (~Nov 10), CoreWeave/Nebius (Nov 10-12) and Nvidia (Nov 17) can move this either way.",
       "headlines": [
-        {"date": "2026-11-05", "title": "Stocks plunge as Dem midterm sweep fuels AI regulatory concerns", "source": "Fox Business", "url": "https://www.foxbusiness.com/markets/stocks-nov-5-2026"},
-        {"date": "2026-11-05", "title": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html"},
-        {"date": "2026-11-06", "title": "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html"},
-        {"date": "2026-11-06", "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html"},
-        {"date": "2026-11-06", "title": "Microsoft Is Winding Down Oracle Deal to Rent AI Cloud Capacity (Bloomberg)", "source": "Bloomberg via Yahoo Finance", "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-winding-down-oracle-deal-173639264.html"},
-        {"date": "2026-11-03", "title": "AMD Reports Third Quarter 2026 Financial Results", "source": "AMD press release (GlobeNewswire)", "url": "https://www.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html"},
-        {"date": "2026-11-02", "title": "Apple reports fourth quarter results", "source": "Apple Newsroom", "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"},
-        {"date": "2026-11-06", "title": "Nasdaq rebounds 1% following worst session in 18 months as traders snap up tech shares: Live updates", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"}
+        {
+          "date": "2026-11-05",
+          "title": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Democrats' data-center moratorium push gains momentum after midterms but Congress remains a long shot",
+          "source": "MLQ.ai",
+          "url": "https://mlq.ai/news/democrats-data-center-moratorium-push-gains-momentum-after-midterms-but-congress-remains-a-long-shot/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "After the midterms, a bigger clash over data centers could be coming",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Voters reject data centers in 40 of 41 local ballot measures",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Hinojosa pledges ban on Texas data-center approvals; Abbott pause tied to December audit",
+          "source": "The Texas Tribune",
+          "url": "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Stock market today, Nov 5: SOX -12%, Nasdaq -5.5% into correction",
+          "source": "Stocktitan",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Chip stocks slide on election, Qualcomm forecast and memory shortage",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Stocks plunge as Dem midterm sweep fuels AI regulatory concerns",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/markets/stocks-nov-5-2026"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Microsoft Is Winding Down Oracle Deal to Rent AI Cloud Capacity (Bloomberg)",
+          "source": "Bloomberg via Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-winding-down-oracle-deal-173639264.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Oracle falls 4% as Microsoft reportedly winds down AI cloud capacity deal",
+          "source": "Investing.com",
+          "url": "https://za.investing.com/news/stock-market-news/oracle-falls-4-as-microsoft-reportedly-winds-down-ai-cloud-capacity-deal-4558984"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Oracle prices $10.0B senior notes at 7.000%-8.650% coupons (free writing prospectus)",
+          "source": "Oracle / SEC EDGAR",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526443918/d87441dfwp.htm"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Oracle sells ~$10.0B of common stock at $116.00 (prospectus supplement)",
+          "source": "Oracle / SEC EDGAR",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526445847/d181425d424b5.htm"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Why Oracle stock is down today ($20B equity and debt raise)",
+          "source": "The Motley Fool",
+          "url": "https://fool.com/investing/2026/11/02/why-oracle-stock-is-down-today"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "J.P. Morgan sees 'supply fear, not solvency' in AI credit widening (HY HPC index 503bp; CoreWeave 2031s ~950bp)",
+          "source": "Exencial Research (summarising J.P. Morgan)",
+          "url": "https://exencialrp.substack.com/p/jp-morgan-sees-supply-fear-not-solvency"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "AI cloud crash puts CoreWeave and Nebius on sale; their next reports decide what happens next",
+          "source": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/06/ai-cloud-crash-puts-coreweave-and-nebius-on-sale-their-next-reports-decide-what-happens-next/"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "AMD Reports Third Quarter 2026 Financial Results (data center +97%)",
+          "source": "AMD press release (GlobeNewswire)",
+          "url": "https://www.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "AMD jumps 8%, Intel and Nvidia climb 5% as chip stocks rebound from worst sell-off since 2020",
+          "source": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/06/amd-jumps-8-intel-and-nvidia-climb-5-as-chip-stocks-rebound-from-worst-sell-off-since-2020/"
+        },
+        {
+          "date": "2026-11-01",
+          "title": "Korea's October exports hit record $115.3B; chip exports +259% to $56.4B",
+          "source": "Korea Times",
+          "url": "https://www.koreatimes.co.kr/amp/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales"
+        },
+        {
+          "date": "2026-11-01",
+          "title": "2026년 10월 수출입 동향 (October trade: semis $56.4B; DDR5 contract $50)",
+          "source": "Ministry of Trade, Industry and Resources (Korea)",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Taiwan activates National Financial Stabilization Fund as TAIEX enters bear market",
+          "source": "Focus Taiwan (CNA)",
+          "url": "https://focustaiwan.tw/business/202611060020"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Taiwan semiconductor stocks jump 7.45% as Taiwan slashes short-selling after rout",
+          "source": "GuruFocus",
+          "url": "https://www.gurufocus.com/news/9181368/taiwan-semiconductor-stocks-jump-745-as-taiwan-slashes-short-selling-after-rout"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Tech stocks: SK Hynix, Samsung, SoftBank tumble as selloff spreads to Asia",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/tech-stocks-sk-hynix-samsung-softbank.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Japan's Nikkei enters bear market as AI stocks (Advantest, Kioxia, SoftBank) slump",
+          "source": "IBTimes Australia",
+          "url": "https://www.ibtimes.com.au/japan-nikkei-bear-market-ai-stock-selloff-1878028"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Fortinet sinks 31% in a week despite beating and raising guidance",
+          "source": "TIKR",
+          "url": "https://www.tikr.com/blog/share-donor-fortinet-sinks-31-in-a-week-despite-beating-and-raising-guidance"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Why Datadog stock took a dive today (Q4 guide implies ~25% growth vs 35%)",
+          "source": "The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/11/04/why-datadog-stock-took-a-dive-today/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Cloudflare Q3 2026: revenue +39%, FY guide raised (8-K Exhibit 99.1)",
+          "source": "Cloudflare / SEC EDGAR",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001477333/000147733326000060/q326exhibit991.htm"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Copper slides to 17-week low on AI data-centre regulation worries",
+          "source": "Trading Economics",
+          "url": "https://tradingeconomics.com/commodity/copper"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Vistra Reports Third Quarter 2026 Results (beat, raised guide, 207 MW Texas data-center PPA)",
+          "source": "Vistra press release",
+          "url": "https://investor.vistracorp.com/2026-11-06-Vistra-Reports-Third-Quarter-2026-Results"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Hong Kong and mainland tech lead declines on US$2.3tr US plunge",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/business/china-business/article/3373474/tech-stocks-lead-declines-hong-kong-mainland-china-us23-trillion-carnage-us"
+        },
+        {
+          "date": "2026-10-15",
+          "title": "Background: TSMC 3Q26 results; Q4 guide US$52.3-54.3B, gross margin 65-67%",
+          "source": "TSMC press release",
+          "url": "https://pr.tsmc.com/english/news/3346"
+        },
+        {
+          "date": "2026-10-28",
+          "title": "Background: Microsoft FQ1: Azure +48%, GPU-related contracts slip into 1H 2027",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html"
+        },
+        {
+          "date": "2026-10-28",
+          "title": "Background: NVIDIA sets conference call for Q3 FY2027 results on Nov 17",
+          "source": "NVIDIA Newsroom",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
+        }
       ]
     },
     "us_large_broad": {
       "score": -1,
-      "confidence": "medium",
-      "rationale": "Facts: the S&P 500 fell 4.4% on Nov 5, with all 11 sectors lower. It was the index's worst day since April 2025, and the Magnificent Seven lost more than $1 trillion in combined market value. The S&P ended the week down 2.7% and the Nasdaq entered correction territory. October payrolls rose 165,000 against roughly 59,000-65,000 expected, and markets priced about a 70% chance of a December Fed hike. Interpretation: the earnings base is intact (Apple record quarter, Palantir beat-and-raise), and Bank of America frames the selloff as multiple compression rather than estimate cuts. But the index's heavy tech/AI weight, a new policy overhang on the AI capex cycle and rising rate-hike risk make the next 1-3 months a mild headwind for cap-weighted US large caps.",
+      "confidence": "low",
+      "rationale": "Facts: the S&P 500 fell ~4.4% on Nov 5 (worst day since April 2025) and ~2.7% on the week, the Nasdaq entered correction and the Magnificent Seven lost >$1T in a day; HY OAS widened 16bp to 348bp the same day while IG stayed at 93bp. Strong October payrolls (+165k) lifted December hike odds to ~75%, though the 10y rallied to ~4.84% and the Cleveland core CPI nowcast is a soft 0.21%. Breadth is healthy: equal-weight RSP, XLP, XLV and quality-dividend ETFs set records on Nov 4 and hyperscalers fell only 2-4%. Interpretation: the drag is concentrated in the ~third of cap-weighted indices tied to AI capex plus hike risk, so a mild headwind for cap-weighted trackers with low confidence; equal-weight is the better expression within the bucket. CPI/10y auction (Nov 10) and Nvidia (Nov 17) are the swing events; Dec 11 CR expiry is a secondary risk.",
       "headlines": [
-        {"date": "2026-11-06", "title": "Nasdaq rebounds 1% following worst session in 18 months as traders snap up tech shares: Live updates", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"},
-        {"date": "2026-11-05", "title": "Tech stocks are suffering their biggest selloff since Covid, as investors see premature end to AI datacenter boom", "source": "Fortune", "url": "https://fortune.com/2026/11/05/tech-stocks-are-suffering-the-biggest-selloff-since-covid-as-investors-see-premature-end-to-ai-datacenter-boom/"},
-        {"date": "2026-11-06", "title": "Nasdaq rallies as chip stocks recover from brutal losses", "source": "Fox Business", "url": "https://www.foxbusiness.com/markets/stocks-11-6-2026"},
-        {"date": "2026-11-06", "title": "AI stocks halt their brutal, worldwide sell-off as Wall Street trims its loss for the week (AP)", "source": "Washington Times / AP", "url": "https://washingtontimes.com/news/2026/nov/6/ai-stocks-rebound-halt-brutal-worldwide-sell-wall-street-trims-loss"}
+        {
+          "date": "2026-11-06",
+          "title": "Nasdaq rebounds 1% following worst session in 18 months as traders snap up tech shares: Live updates",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Tech stocks are suffering their biggest selloff since Covid, as investors see premature end to AI datacenter boom",
+          "source": "Fortune",
+          "url": "https://fortune.com/2026/11/05/tech-stocks-are-suffering-the-biggest-selloff-since-covid-as-investors-see-premature-end-to-ai-datacenter-boom/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "AI selloff deepens: SMH/SOXX -12%, QQQ -6.5%, VOO -4.4%; XLP and XLV at all-time highs",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ai-selloff-deepens-chip-etfs-025227411.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Global markets trade lower as AI concerns fuel selling pressure (S&P 500 -4.36%)",
+          "source": "Anadolu Agency",
+          "url": "https://www.aa.com.tr/en/economy/global-markets-trade-lower-as-ai-concerns-fuel-selling-pressure/4113783"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Nasdaq rallies as chip stocks recover from brutal losses",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/markets/stocks-11-6-2026"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "AI stocks halt their brutal, worldwide sell-off as Wall Street trims its loss for the week (AP)",
+          "source": "Washington Times / AP",
+          "url": "https://washingtontimes.com/news/2026/nov/6/ai-stocks-rebound-halt-brutal-worldwide-sell-wall-street-trims-loss"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "The Employment Situation, October 2026 (payrolls +165k, unemployment 4.1%)",
+          "source": "BLS",
+          "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Fed Rate Monitor: ~75% probability of a 25bp hike at the Dec 9 FOMC",
+          "source": "Investing.com",
+          "url": "https://www.investing.com/central-banks/fed-rate-monitor"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Cleveland Fed inflation nowcast: October core CPI +0.21% m/m",
+          "source": "Federal Reserve Bank of Cleveland",
+          "url": "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "ICE BofA US High Yield OAS 348bp on Nov 5 (+16bp on the day); IG flat at 93bp",
+          "source": "FRED / ICE Data",
+          "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Every stock that's moving as a result of the election (managed care, hospitals up; AI power down)",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/04/every-stock-thats-moving-as-a-result-of-the-election.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Record US IG issuance $1.88tn; hyperscalers about one fifth (Reuters/LSEG)",
+          "source": "Tech Insider",
+          "url": "https://tech-insider.org/big-tech-us-corporate-bond-record-1-88-trillion-2026/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Republicans have a ticking clock: CR expires Dec 11, shutdown risk (Breaking Defense)",
+          "source": "Breaking Defense",
+          "url": "https://breakingdefense.com/2026/11/republicans-have-a-ticking-clock-what-can-they-get-done-on-defense/"
+        }
       ]
     }
   },
-  "regime_notes": "The regime shifted this week from 'AI capex can only go up' to a political and financing-discipline test. Democrats' midterm sweep put data center restrictions on the agenda: moratorium calls, local ballot measures and Texas Governor-elect Hinojosa's call to halt data center work until protections are in place. That triggered a 12% one-day SOX drop and a Nasdaq correction. Microsoft's reported Oracle wind-down and neocloud consolidation add a second, demand-side signal: hyperscalers are rationing third-party capacity even as they keep 2026 capex at record levels (Alphabet about $195-205B, Meta $135-145B per late-October guidance). Reported fundamentals stay strong (AMD data center +97% and a $17B Q4 guide; TSMC guided Q4 to $52.3-54.3B in mid-October), so the hit is to multiples, not yet to earnings. Analysts disagree: BofA says it is a valuation reset, while Yorkville's Dan Ives now sees Big Tech capex growth peaking in 2027. A strong jobs print and about 70% odds of a December Fed hike work against long-duration tech valuations. Asia's chip-heavy markets were hit too: CNBC reported that the Nikkei and Taiwan's Taiex entered bear markets and the Kospi fell more than 6%.",
+  "regime_notes": "One AI-buildout factor drove the week: the midterm data-center backlash met existing AI-ROI and financing doubts (Microsoft's Oracle/neocloud pullback, Oracle's $20B raise, neocloud credit near distress), producing SOX -12% on Nov 5 and contagion across Korea, Taiwan, Japan, copper, merchant power, HY credit and small caps. Treat the resulting -1 scores across those buckets as one correlated bet, not independent views. Hard demand data (TSMC guide, Korea chip exports, AMD, Nvidia's guide, hyperscaler own capex) contradicts a demand collapse, so mean reversion is the base case unless the Nov 10-17 prints disappoint. Stress is on the funding side: watch CoreWeave, Nebius, Oracle spreads and Nvidia's $105B contingent guarantee on OpenAI leases. State and federal policy risk is mostly back-loaded (Congress Jan 3, Hinojosa Jan 19, ERCOT audit mid-December). Rates matter too: ~75% December hike odds against a 10y rally and soft core nowcast; Nov 10 stacks CPI, the 10y auction, TSMC sales and SoftBank.",
   "red_flags": [
-    {"target": "XLK, QQQ, SMH, SOXX (tech-heavy and semiconductor ETFs)", "issue": "Concentration risk has materialised. The risk sits in a single factor: AI data center capex now has political and regulatory exposure after the midterms. On Nov 5 the SOX fell more than 12% and the Magnificent Seven lost more than $1T (Nvidia alone more than $440B); XLK fell 8% on the week, its worst since April 2025. The Magnificent Seven were about 32-35% of the S&P 500 in mid/late 2026 (FinanceBuzz; secondary source). Note that index weights probably fell this week because the mega-caps dropped most, so this flag reflects concentrated, correlated drawdown risk, not a new high in weights.", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"},
-    {"target": "SMH, SOXX (semiconductor ETFs)", "issue": "Volatility regime break: SOX fell more than 12% in one session (Nov 5), then rose 4.2% on Nov 6. Expect wide intraday moves and possible bid-ask widening in leveraged semiconductor products around Nvidia's Nov 17 earnings.", "url": "https://www.foxbusiness.com/markets/stocks-nov-5-2026"},
-    {"target": "us_large_broad (cap-weighted S&P 500 / Nasdaq-100 trackers)", "issue": "Index-level concentration: the Magnificent Seven are about a third of the S&P 500 (secondary source), so 'broad' US large-cap ETFs carry a large implicit AI/semis bet.", "url": "https://financebuzz.com/news/magnificent-seven-index-fund-concentration"}
+    {
+      "target": "XLK, QQQ, SMH, SOXX",
+      "issue": "Single-factor concentration has materialised: SOX/SMH/SOXX ~-12% on Nov 5 (worst since 2020), SOXX ~40% and SMH ~33% below highs; XLK -8% on the week. Expect high volatility into Nvidia (Nov 17).",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ai-selloff-deepens-chip-etfs-025227411.html"
+    },
+    {
+      "target": "SOXL and other leveraged semiconductor ETFs",
+      "issue": "SOXL fell ~73% from Oct 1 to Nov 5 while Korean retail bought a net US$4.28B; daily-reset leveraged products carry severe path-dependence and possible spread widening in this regime.",
+      "url": "https://en.sedaily.com/finance/2026/11/07/korean-retail-investors-pile-into-soxl-as-chip-stocks-crash"
+    },
+    {
+      "target": "us_large_broad (cap-weighted S&P 500 / Nasdaq-100 trackers)",
+      "issue": "Magnificent Seven ~a third of the S&P 500 (secondary source), so broad cap-weighted ETFs carry a large implicit AI bet; equal-weight (RSP) behaved differently (record on Nov 4).",
+      "url": "https://financebuzz.com/news/magnificent-seven-index-fund-concentration"
+    },
+    {
+      "target": "tech_ai_semis (AI infrastructure credit: CoreWeave, Oracle, Nebius)",
+      "issue": "Neocloud/Oracle credit stress: CoreWeave 2031 bonds ~950bp and reportedly >17% yields, Oracle 7-8.65% new-issue coupons at BBB-/Baa2 negative, Nebius on a 364-day facility. A miss on Nov 10-12 could hit HY/convert holders and AI-infrastructure equities together.",
+      "url": "https://exencialrp.substack.com/p/jp-morgan-sees-supply-fear-not-solvency"
+    },
+    {
+      "target": "HACK, CIBR",
+      "issue": "No fund-level event found (EDGAR/issuer pages), but heavy volume and crowded holdings after earnings de-ratings (Fortinet -31% in a week); YTD flows still positive, so redemption risk is residual.",
+      "url": "https://www.etfcentral.com/compare-etfs/HACK-vs-CIBR"
+    },
+    {
+      "target": "EWY (index methodology, related to semis exposure)",
+      "issue": "iShares moves EWY to MSCI 25/50 Daily 25 Capped index around Nov 9 (group cap trims Samsung weight); mechanical, not a switch reason.",
+      "url": "https://www.sec.gov/Archives/edgar/data/930667/000119312526430564/d108274d497.htm"
+    }
   ],
   "upcoming_events": [
-    {"date": "2026-11-10", "event": "TSMC October monthly revenue (approximate date; usually released around the 10th)", "buckets": ["tech_ai_semis"]},
-    {"date": "2026-11-12", "event": "CoreWeave and Nebius Q3 results, 'next week' per CNBC (exact dates unconfirmed); watch for Microsoft contract exposure", "buckets": ["tech_ai_semis"]},
-    {"date": "2026-11-17", "event": "Nvidia Q3 FY2027 earnings after the close", "buckets": ["tech_ai_semis", "us_large_broad"]},
-    {"date": "2026-12-09", "event": "FOMC decision (about 70% hike odds priced as of Nov 6)", "buckets": ["tech_ai_semis", "us_large_broad"]},
-    {"date": "2027-01-03", "event": "New Democratic-controlled Congress convenes; watch for AI and data center hearings or moratorium bills (approximate date)", "buckets": ["tech_ai_semis", "us_large_broad"]}
+    {
+      "date": "2026-11-09",
+      "event": "Taiwan short-sale curbs take effect; Korea margin-collateral waiver starts; EWY index cap change",
+      "buckets": [
+        "tech_ai_semis"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "event": "US October CPI (08:30 ET) and 10y auction; TSMC October revenue (approx.); SoftBank FY Q2 results; CoreWeave Q3 (date unconfirmed)",
+      "buckets": [
+        "tech_ai_semis",
+        "us_large_broad"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "event": "MSCI November index review announcement; Korea Nov 1-10 exports",
+      "buckets": [
+        "tech_ai_semis"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Nebius Q3 results before the open; 30y auction",
+      "buckets": [
+        "tech_ai_semis",
+        "us_large_broad"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "event": "US October PPI",
+      "buckets": [
+        "us_large_broad"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "event": "Nvidia Q3 FY2027 results (guide $108B, 74% GM)",
+      "buckets": [
+        "tech_ai_semis",
+        "us_large_broad"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "event": "Tencent Q3 results; APEC Shenzhen (Xi-Trump) Nov 18-19; Alibaba Nov 19",
+      "buckets": [
+        "tech_ai_semis"
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "event": "Snowflake results (software sentiment test)",
+      "buckets": [
+        "tech_ai_semis"
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "event": "FOMC decision (~75% hike odds priced as of Nov 6)",
+      "buckets": [
+        "tech_ai_semis",
+        "us_large_broad"
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "event": "Continuing resolution expires; shutdown risk",
+      "buckets": [
+        "us_large_broad"
+      ]
+    },
+    {
+      "date": "2026-12-15",
+      "event": "ERCOT/Texas data-center audit expected to conclude (approximate, mid-December)",
+      "buckets": [
+        "tech_ai_semis"
+      ]
+    },
+    {
+      "date": "2027-01-03",
+      "event": "120th Congress convenes; moratorium bills would need reintroduction",
+      "buckets": [
+        "tech_ai_semis",
+        "us_large_broad"
+      ]
+    },
+    {
+      "date": "2027-01-19",
+      "event": "Texas Governor Hinojosa inauguration; promised data-center approval ban could start",
+      "buckets": [
+        "tech_ai_semis"
+      ]
+    }
   ]
 }

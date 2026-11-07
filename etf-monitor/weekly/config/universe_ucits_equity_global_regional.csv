@@ -1,0 +1,86 @@
+ticker,name,isin,scope,currency,ter,accumulating,first_date,last_price,verified
+VWRA.L,Vanguard FTSE All-World UCITS ETF USD Accumulation,IE00BK5BQT80,global,USD,0.19,yes,2019-07-23,184.98,yes
+ISAC.L,iShares MSCI All Country World UCITS ETF USD Acc,IE00B6R52259,global,USD,0.20,yes,2011-10-21,118.47,yes
+IWDA.L,iShares Core MSCI World UCITS ETF USD (Acc),IE00B4L5Y983,global,USD,0.20,yes,2009-09-25,141.98,yes
+XDWD.L,Xtrackers MSCI World UCITS ETF 1C,IE00BJ0KDQ92,global,USD,0.12,yes,2014-07-22,155.35,yes
+SWRD.L,State Street SPDR MSCI World UCITS ETF,IE00BFY0GT14,global,USD,0.12,yes,2019-02-26,51.94,yes
+HMWD.L,HSBC MSCI World UCITS ETF,IE00B4X9L533,global,USD,0.15,no,2010-12-09,47.77,yes
+FWRA.L,Invesco FTSE All-World UCITS ETF USD Accumulation,IE000716YHJ7,global,USD,0.15,yes,2023-06-26,9.139,yes
+VHVE.L,Vanguard FTSE Developed World UCITS ETF USD Accumulation,IE00BK5BQV03,global,USD,0.12,yes,2019-09-24,147.16,yes
+WSML.L,iShares MSCI World Small Cap UCITS ETF USD (Acc),IE00BF4RFH31,global,USD,0.35,yes,2018-03-27,10.056,yes
+CSPX.L,iShares Core S&P 500 UCITS ETF USD (Acc),IE00B5BMR087,us,USD,0.07,yes,2010-09-15,802.21,yes
+VUAA.L,Vanguard S&P 500 UCITS ETF USD Accumulation,IE00BFMXXD54,us,USD,0.07,yes,2019-05-14,143.9,yes
+SPXS.L,Invesco S&P 500 UCITS ETF,IE00B3YCGJ38,us,USD,0.05,yes,2010-05-25,14.9495,yes
+SPY5.L,State Street SPDR S&P 500 UCITS ETF USD Distribution UnHedged,IE00B6YX5C33,us,USD,0.03,no,2012-03-19,742.18,yes
+HSPD.L,HSBC S&P 500 UCITS ETF,IE00B5KQNG97,us,USD,0.09,no,2010-05-14,75.0725,yes
+XSPU.L,Xtrackers S&P 500 Swap UCITS ETF 1C,LU0490618542,us,USD,0.15,yes,2010-03-26,150.18,yes
+CNDX.L,iShares NASDAQ 100 UCITS ETF USD (Acc),IE00B53SZB19,us,USD,0.30,yes,2010-09-15,1562.8,yes
+EQQU.L,Invesco EQQQ NASDAQ-100 UCITS ETF,IE0032077012,us,USD,0.30,no,2015-03-26,665.13,yes
+XNAS.L,Xtrackers NASDAQ 100 UCITS ETF 1C,IE00BMFKG444,us,USD,0.20,yes,2021-01-21,63.16,yes
+XDEW.L,Xtrackers S&P 500 Equal Weight UCITS ETF 1C,IE00BLNMYC90,us,USD,0.20,yes,2014-06-10,121.11,yes
+CSUS.L,iShares VII PLC - iShares MSCI USA ETF USD Acc,IE00B52SFT06,us,USD,0.03,yes,2010-09-15,770.6,yes
+VNRA.L,Vanguard FTSE North America UCITS ETF USD Accumulation,IE00BK5BQW10,us,USD,0.10,yes,2019-07-23,187.68,yes
+R2US.L,State Street SPDR Russell 2000 US Small Cap UCITS ETF,IE00BJ38QD84,us,USD,0.30,no,2014-06-30,80.38,yes
+SPY4.L,State Street SPDR S&P 400 US Mid Cap UCITS ETF,IE00B4YBJ215,us,USD,0.30,no,2012-01-30,112.4,yes
+CUSS.L,iShares MSCI USA Small Cap CTB Enhanced ESG UCITS ETF USD Acc,IE00B3VWM098,us,USD,0.43,yes,2010-09-15,669.3,yes
+VEUA.L,Vanguard FTSE Developed Europe UCITS ETF EUR Accumulation,IE00BK5BQX27,europe,GBP,0.10,yes,2019-07-23,50.49,yes
+VERG.L,Vanguard FTSE Developed Europe ex UK UCITS ETF Accumulation,,europe,GBP,0.10,yes,2019-07-23,50.72,yes
+SMEA.L,iShares Core MSCI Europe UCITS ETF EUR (Acc),IE00B4K48X80,europe,GBX,0.12,yes,2009-09-25,8811.0,yes
+IEUX.L,iShares MSCI Europe ex-UK UCITS ETF EUR (Dist),IE00B14X4N27,europe,GBX,0.40,no,2009-01-02,4628.0,yes
+CSX5.L,iShares VII PLC - iShares Core EURO STOXX 50 ETF EUR Acc,IE00B53L3W79,europe,EUR,0.10,yes,2010-09-15,240.85,yes
+XESC.L,Xtrackers Euro Stoxx 50 UCITS ETF 1C,LU0380865021,europe,GBX,0.09,yes,2009-01-02,9215.0,yes
+XDAX.L,Xtrackers DAX UCITS ETF 1C,LU0274211480,single_country,GBX,0.09,yes,2009-01-02,20100.0,yes
+CACX.L,Amundi CAC 40 UCITS ETF Dist,FR0007052782,single_country,GBX,0.25,no,2009-01-02,6879.5,yes
+CSWG.L,Amundi Index Solutions - Amundi MSCI Switzerland UCITS ETF-C CHF,,single_country,GBX,0.25,yes,2010-06-17,1248.3,yes
+IAEX.L,iShares AEX UCITS ETF EUR (Dist),IE00B0M62Y33,single_country,GBX,0.30,no,2009-01-02,9319.0,yes
+CUKX.L,iShares VII PLC - iShares Core FTSE 100 ETF GBP Acc,IE00B53HP851,uk,GBX,0.07,yes,2010-09-16,22065.0,yes
+VUKG.L,Vanguard FTSE 100 UCITS ETF GBP Accumulation,IE00BFMXYP42,uk,GBP,0.09,yes,2019-05-14,57.57,yes
+VMIG.L,Vanguard FTSE 250 UCITS ETF GBP Accumulation,IE00BFMXVQ44,uk,GBP,0.10,yes,2019-05-14,46.715,yes
+MIDD.L,iShares FTSE 250 UCITS ETF GBP (Dist),IE00B00FV128,uk,GBX,0.40,no,2009-01-02,2260.5,yes
+HUKX.L,HSBC FTSE 100 UCITS ETF,IE00B42TW061,uk,GBX,0.07,no,2009-08-24,10642.0,yes
+CUKS.L,iShares VII PLC - iShares MSCI UK Small Cap ETF GBP Acc,IE00B3VWLG82,uk,GBX,0.58,yes,2010-09-22,28855.0,yes
+IJPA.L,iShares Core MSCI Japan IMI UCITS ETF USD (Acc),IE00B4L5YX21,japan,USD,0.15,yes,2009-09-25,76.95,yes
+CSJP.L,iShares VII PLC - iShares MSCI Japan ETF USD Acc,IE00B53QDK08,japan,GBX,0.48,yes,2010-01-11,20669.0,yes
+VJPA.L,Vanguard FTSE Japan UCITS ETF USD Accumulation,IE00BFMXYX26,japan,USD,0.15,yes,2019-09-24,45.69,yes
+XMJD.L,Xtrackers MSCI Japan UCITS ETF 1C,LU0274209740,japan,USD,0.12,yes,2008-01-02,111.44,yes
+HMJD.L,HSBC MSCI JAPAN UCITS ETF,IE00B5VX7566,japan,USD,0.19,no,2010-12-09,53.37,yes
+LCJP.L,Amundi Core MSCI Japan UCITS ETF Acc,LU1781541252,japan,GBP,0.12,yes,2018-02-28,18.51,yes
+XDJP.L,Xtrackers Nikkei 225 UCITS ETF 1D,LU0839027447,japan,GBX,0.09,no,2013-01-25,2873.5,yes
+IDJP.L,iShares MSCI Japan Small Cap UCITS ETF USD (Dist),IE00B2QWDY88,japan,USD,0.58,no,2008-05-09,57.45,yes
+CPXJ.L,iShares VII PLC - iShares Core MSCI Pac ex-Jpn ETF USD Acc,IE00B52MJY50,asia_pacific,USD,0.20,yes,2010-09-28,245.4,yes
+VAPU.L,Vanguard FTSE Developed Asia Pacific ex Japan UCITS ETF USD Accumulation,,asia_pacific,USD,0.15,yes,2019-09-24,50.92,yes
+HMXJ.L,HSBC MSCI Pacific ex Japan UCITS ETF,,asia_pacific,GBX,0.40,no,2010-09-07,1294.0,yes
+XPXD.L,Xtrackers MSCI Pacific ex Japan Screened UCITS ETF 1C,LU0322252338,asia_pacific,USD,0.25,yes,2009-01-20,94.66,yes
+IFFF.L,iShares MSCI AC Far East ex-Japan UCITS ETF USD (Dist),IE00B0M63730,asia_pacific,GBX,0.74,no,2009-01-02,6175.0,yes
+HMAD.L,HSBC MSCI AC FAR EAST ex JAPAN UCITS ETF,IE00BBQ2W338,asia_pacific,USD,0.45,no,2013-09-26,80.18,yes
+XMAD.L,Xtrackers MSCI EM Asia Screened Swap UCITS ETF 1C,LU0292107991,asia_pacific,USD,0.65,yes,2009-01-02,91.205,yes
+EIMI.L,iShares Core MSCI EM IMI UCITS ETF USD (Acc),IE00BKM4GZ66,emerging,USD,0.18,yes,2014-05-30,48.91,yes
+VFEA.L,Vanguard FTSE Emerging Markets UCITS ETF USD Accumulation,IE00BK5BR733,emerging,USD,0.17,yes,2019-09-24,82.24,yes
+IEMA.L,iShares MSCI EM UCITS ETF USD (Acc),IE00B4L5YC18,emerging,USD,0.18,yes,2009-09-25,57.53,yes
+XMME.L,Xtrackers MSCI Emerging Markets UCITS ETF 1C,IE00BTJRMP35,emerging,USD,0.18,yes,2017-06-21,83.3,yes
+HMEM.L,HSBC MSCI Emerging Markets UCITS ETF,IE00B5SSQT16,emerging,USD,0.40,no,2011-09-07,15.085,yes
+EMXC.L,Amundi MSCI Emerging Ex China Swap UCITS ETF Acc,LU2009202107,emerging,USD,0.15,yes,2019-06-20,41.27,yes
+EMSD.L,State Street SPDR MSCI Emerging Markets Small Cap UCITS ETF,IE00B48X4842,emerging,USD,0.55,yes,2011-05-16,137.14,yes
+XMMD.L,Xtrackers MSCI Emerging Markets Swap UCITS ETF 1C,LU0292107645,emerging,USD,0.49,yes,2009-01-02,75.175,yes
+NDIA.L,iShares MSCI India UCITS ETF USD Acc,IE00BZCQB185,single_country,USD,0.65,yes,2018-05-29,9.104,yes
+FLXI.L,Franklin FTSE India UCITS ETF,IE00BHZRQZ17,single_country,USD,0.19,no,2019-06-25,42.59,yes
+XCS5.L,Xtrackers MSCI India Swap UCITS ETF 1C,LU0514695187,single_country,USD,0.19,yes,2010-06-24,19.565,yes
+CNYA.L,iShares MSCI China A UCITS ETF USD (Acc),IE00BQT3WG13,single_country,USD,0.40,yes,2015-04-08,5.265,yes
+XCS6.L,Xtrackers MSCI China UCITS ETF 1C,LU0514695690,single_country,USD,0.65,yes,2010-11-18,17.37,yes
+HMCD.L,HSBC MSCI China UCITS ETF,IE00B44T3H88,single_country,USD,0.30,no,2011-01-28,7.1225,yes
+FXC.L,iShares China Large Cap UCITS ETF USD (Dist),IE00B02KXK85,single_country,GBX,0.74,no,2009-01-02,7466.0,yes
+KWEB.L,KraneShares CSI China Internet UCITS ETF USD,IE00BFXR7892,single_country,USD,0.75,yes,2018-11-20,18.8,yes
+CSKR.L,iShares VII PLC - iShares MSCI Korea ETF USD Acc,IE00B5W4TY14,single_country,USD,0.65,yes,2010-09-17,384.95,yes
+ITWN.L,iShares MSCI Taiwan UCITS ETF USD (Dist),IE00B0M63623,single_country,GBX,0.74,no,2009-01-02,12440.5,yes
+XMTD.L,Xtrackers MSCI Taiwan UCITS ETF 1C,LU0292109187,single_country,USD,0.65,yes,2009-01-02,128.03,yes
+IBZL.L,iShares MSCI Brazil UCITS ETF USD (Dist),IE00B0M63516,single_country,GBX,0.74,no,2009-01-02,1931.5,yes
+XMBD.L,Xtrackers MSCI Brazil UCITS ETF 1C,LU0292109344,single_country,USD,0.25,yes,2009-01-02,59.745,yes
+CMXC.L,iShares VII PLC - iShares MSCI Mexico Capped ETF USD Acc,IE00B5WHFQ43,single_country,USD,0.65,yes,2010-09-30,224.4,yes
+IKSA.L,iShares MSCI Saudi Arabia Capped UCITS ETF USD (Acc),IE00BYYR0489,single_country,USD,0.60,yes,2019-04-10,6.104,yes
+IRSA.L,iShares MSCI South Africa UCITS ETF USD (Acc),IE00B52XQP83,single_country,USD,0.65,yes,2010-01-22,59.86,yes
+IDTK.L,iShares MSCI Turkey UCITS ETF USD (Dist),IE00B1FZS574,single_country,USD,0.74,no,2008-01-02,19.5925,yes
+IAUS.L,iShares MSCI Australia UCITS ETF USD (Acc),IE00B5377D42,single_country,USD,0.50,yes,2010-01-22,63.81,yes
+CCAU.L,iShares VII PLC - iShares MSCI Canada ETF USD Acc,IE00B52SF786,single_country,USD,0.48,yes,2010-01-13,312.18,yes
+IPOL.L,iShares MSCI Poland UCITS ETF USD (Acc),IE00B4M7GH52,single_country,USD,0.74,yes,2011-01-21,40.86,yes
+XVTD.L,Xtrackers Vietnam Swap UCITS ETF 1C,LU0322252924,single_country,USD,0.85,yes,2008-01-15,38.985,yes
+HIDD.L,HSBC MSCI Indonesia UCITS ETF,,single_country,USD,0.50,no,2011-03-30,32.02,yes

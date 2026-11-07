@@ -6,8 +6,8 @@
   "bucket_scores": {
     "us_large_broad": {
       "score": 1,
-      "confidence": "high",
-      "rationale": "US equity ETFs took $112.3bn of October's $140bn equity inflow (80%), per State Street; VOO led all funds with +$23.7bn and SPYM +$10.1bn, while SPY lost $6.9bn (rotation to cheaper S&P 500 wrappers, not a demand loss). TD Securities flags that tax-loss harvesting may have inflated October totals.",
+      "confidence": "medium",
+      "rationale": "US equity ETFs took $112.3bn of October's $140bn equity inflow; VOO led all funds (+$23.7bn) and SPYM +$10.1bn while SPY lost $6.9bn (fee rotation, not lost demand). Confidence cut from high: the data predate the Nov 5 risk-off day, and TD Securities warns tax-loss harvesting swaps inflated October totals.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -32,7 +32,7 @@
     "global_equity": {
       "score": 1,
       "confidence": "medium",
-      "rationale": "US-listed global equity ETFs took +$5.8bn in October (State Street). In Europe, World ETFs gathered EUR 1.84bn in the week of Oct 26-30, with Vanguard FTSE All-World Acc (VWCE, same fund family as VWRA) the second-largest single-fund inflow at EUR 491.6m and SPDR MSCI ACWI (SPYY) also in the top 10.",
+      "rationale": "US-listed global equity ETFs took +$5.8bn in October; in Europe, World ETFs gathered EUR 1.84bn in the week of Oct 26-30, with Vanguard FTSE All-World (VWCE, VWRA's fund) the second-largest single inflow at EUR 491.6m. Steady core-allocation demand; no adverse fund event for VWRA/SSAC/IWDA.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -49,9 +49,9 @@
       ]
     },
     "developed_ex_us": {
-      "score": 1,
+      "score": 0,
       "confidence": "medium",
-      "rationale": "International-developed ETFs still took +$13.5bn in October, although non-US share of equity flows fell from about 35% to 20% as investors pulled back from non-US markets. European-listed developed-markets exposures led weekly geographic inflows at EUR 1.87bn (Oct 26-30).",
+      "rationale": "International-developed ETFs still took +$13.5bn in October, but the non-US share of equity flows fell from about 35% to 20%. Positive in level, decelerating in share, so the flow signal is mixed rather than a tailwind.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -74,9 +74,9 @@
       ]
     },
     "em_broad": {
-      "score": 1,
+      "score": 0,
       "confidence": "medium",
-      "rationale": "EM ETFs added $3.9bn in October, the 20th inflow month of the last 21, taking 2026 YTD to a record $56bn despite October drawdowns in China and Brazil.",
+      "rationale": "EM ETFs took +$3.9bn in October (20 of the last 21 months, record $56bn YTD), but in-window market-level flows split hard: record foreign selling in Taiwan (NT$994bn in October, NT$524bn MTD) and Korea (about 12tn won over six sessions) versus a sharp FPI return to India (Rs 45,960cr, about $4.1bn, Nov 2-6). That is reallocation inside EM, not net new demand.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -92,16 +92,140 @@
         },
         {
           "date": "2026-11-06",
-          "title": "ETF Monthly: The Market Starts Playing Defense Over Attack",
-          "source": "MarketScreener",
-          "url": "https://www.marketscreener.com/news/etf-monthly-the-market-starts-playing-defense-over-attack-ce785fdcd08af12c"
+          "title": "Taiwan stabilisation fund authorised to intervene; foreigners net sold record NT$994bn in October, NT$524bn so far in November",
+          "source": "Focus Taiwan (CNA)",
+          "url": "https://focustaiwan.tw/business/202611060020"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "KOSPI -6% with circuit breaker; foreigners net sell about 12tn won over six sessions, 1.92tn in SK hynix on Nov 6",
+          "source": "BusinessKorea",
+          "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280725"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "FII vs DII this week: FIIs net buy Rs 45,960cr in Nov 2-6 (NSE provisional)",
+          "source": "StockPil",
+          "url": "https://stockpil.com/fii-vs-dii-this-week-2026-11-06"
+        }
+      ]
+    },
+    "em_asia_other": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "Taiwan posted a record foreign net outflow (US$28bn / NT$994bn in October, NT$524bn more by Nov 6), FX reserves fell below US$600bn, and the stabilisation fund was authorised. Indonesia still has continuing equity outflows and an MSCI standalone-reclassification overhang (index freeze); EIDO traded at a +0.68% premium on Nov 6.",
+      "headlines": [
+        {
+          "date": "2026-11-06",
+          "title": "Taiwan stabilisation fund authorised to intervene; foreigners net sold record NT$994bn in October, NT$524bn so far in November",
+          "source": "Focus Taiwan (CNA)",
+          "url": "https://focustaiwan.tw/business/202611060020"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Taiwan FX reserves fall below US$600bn; record US$28bn foreign net outflow in October",
+          "source": "Taipei Times",
+          "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/07/2003867290"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Govt urges calm, cites solid fundamentals amid market pressures (MSCI standalone review acknowledged)",
+          "source": "ANTARA News",
+          "url": "https://en.antaranews.com/news/440815/govt-urges-calm-cites-solid-fundamentals-amid-market-pressures"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "iShares MSCI Indonesia ETF (EIDO): net assets $384.1m, +0.68% premium to NAV",
+          "source": "iShares (BlackRock)",
+          "url": "https://www.ishares.com/us/products/239661/ishares-msci-indonesia-etf"
+        }
+      ]
+    },
+    "asia_dev_other": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "Foreign investors net sold about 12tn won of Korean stocks over six straight sessions, 2.77tn won on Nov 6 alone (1.92tn in SK hynix), while domestic institutions and retail bought. EWY shows no NAV stress (-0.09% on Nov 6). Persistent foreign outflow concentrated in memory names is a mild headwind.",
+      "headlines": [
+        {
+          "date": "2026-11-06",
+          "title": "KOSPI -6% with circuit breaker; foreigners net sell about 12tn won over six sessions, 1.92tn in SK hynix on Nov 6",
+          "source": "BusinessKorea",
+          "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280725"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Foreigners net sell KRW 2.769tn on KOSPI for a sixth straight session; institutions and retail buy",
+          "source": "Kyunghyang Shinmun",
+          "url": "https://www.khan.co.kr/en/article/202611061703007/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "iShares MSCI South Korea Capped ETF (EWY): NAV $137.14, close $137.01 (-0.09% to NAV), net assets $20.06bn",
+          "source": "iShares (BlackRock)",
+          "url": "https://www.ishares.com/us/products/239681/ishares-msci-south-korea-capped-etf"
+        }
+      ]
+    },
+    "india": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "FPI flows reversed sharply: -$3.67bn in October (second half +$1.38bn) to about +$4.1bn (Rs 45,960cr) in Nov 2-6, including the largest single-day foreign purchase in nearly six years on Nov 5. Sources are secondary aggregators and the move is rotation out of North-Asia AI hardware, so it could fade if semis rebound.",
+      "headlines": [
+        {
+          "date": "2026-11-05",
+          "title": "IT and Jio Platforms IPO trigger late FPI recovery in October 2026 (FPIs net -$3.67bn in October)",
+          "source": "Paterson Capital",
+          "url": "https://patersoncapital.com/it-and-jio-platforms-ipo-trigger-late-fpi-recovery-in-october-2026/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "FII vs DII this week: FIIs net buy Rs 45,960cr in Nov 2-6 (NSE provisional)",
+          "source": "StockPil",
+          "url": "https://stockpil.com/fii-vs-dii-this-week-2026-11-06"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Nifty rallies 10% as Democrats sweep and FPIs return with force (about $4.12bn in five sessions)",
+          "source": "Paterson Capital",
+          "url": "https://patersoncapital.com/nifty-rallies-10-as-democrats-sweep-and-fpis-return-with-force/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Sensex best week in six years; foreigners' largest single-day net purchase in nearly six years on Nov 5",
+          "source": "Trading Economics",
+          "url": "https://tradingeconomics.com/india/stock-market"
+        }
+      ]
+    },
+    "china": {
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Mixed and thin flow data: China ETFs lost EUR 111.5m in Europe in the week of Oct 26-30, margin holdings are at a one-year low and new A-share accounts fell more than 30% in October, against state-directed buying via the third swap-facility round (over 100bn yuan applied).",
+      "headlines": [
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Chinese investors stay on sidelines despite Beijing's latest rescue push (margin holdings at one-year low, new accounts -30% in October)",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/business/china-business/article/3373215/chinese-stock-investors-stay-sidelines-even-state-intervention-gathers-pace"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Central bank to conduct third swap-facility operation (31 brokers and funds applied for over 100bn yuan)",
+          "source": "Caixin Global",
+          "url": "https://www.caixinglobal.com/2026-11-02/central-bank-to-conduct-third-swap-facility-operation-102500130.html"
         }
       ]
     },
     "latam": {
       "score": 0,
       "confidence": "low",
-      "rationale": "Mixed: Brazil-focused US ETFs took about $3bn in October, but State Street attributes this mainly to long-to-lend activity by traders hedging or shorting Brazil after the surprise election result, which is not investor demand. Brazil exposures returned -22.2% and Latin America -14.9% in the week of Oct 26-30 (European data).",
+      "rationale": "Brazil-focused US ETFs took about $3bn in October, but State Street attributes this mainly to long-to-lend activity by traders hedging or shorting after the election, not investor demand. Brazil exposures returned -22.2% in the week of Oct 26-30 (European data).",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -117,10 +241,23 @@
         }
       ]
     },
+    "japan": {
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Only one flow source: Japan exposures took about +EUR 163m in the Oct 26-30 European weekly data. Fewer than two sourced flow headlines, so 0 low.",
+      "headlines": [
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
     "tech_ai_semis": {
-      "score": 1,
+      "score": 0,
       "confidence": "medium",
-      "rationale": "Technology ETFs took $7.4bn in October (State Street; $66bn YTD, 70% of all sector flows); TD Securities data puts tech at +$23.8bn with SOXX +$4.8bn and SOXL +$9.0bn. Flows came despite a 9% drop in hyperscaler stocks on AI capex concerns; European weekly IT inflows were +EUR 189.6m.",
+      "rationale": "October tech ETF inflows were large (+$7.4bn State Street; +$23.8bn TD, with SOXX +$4.8bn and SOXL +$9.0bn), and HACK/CIBR flows stay positive YTD, so there is no redemption wave. But much of the demand is leveraged dip-buying (Korean retail bought $4.28bn of SOXL while it fell 73%) going into the Nov 5 SMH/SOXX -12% day. Crowded leveraged positioning offsets the headline inflows.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -135,23 +272,29 @@
           "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
         },
         {
-          "date": "2026-11-06",
-          "title": "ETF Monthly: The Market Starts Playing Defense Over Attack",
-          "source": "MarketScreener",
-          "url": "https://www.marketscreener.com/news/etf-monthly-the-market-starts-playing-defense-over-attack-ce785fdcd08af12c"
+          "date": "2026-11-07",
+          "title": "Korean retail investors pile into SOXL as chip stocks crash (US$4.28bn net bought Oct 1-Nov 5 while it fell 73%)",
+          "source": "Seoul Economic Daily",
+          "url": "https://en.sedaily.com/finance/2026/11/07/korean-retail-investors-pile-into-soxl-as-chip-stocks-crash"
         },
         {
-          "date": "2026-11-02",
-          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
-          "source": "ETF Express",
-          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+          "date": "2026-11-06",
+          "title": "HACK vs CIBR: YTD flows +$359M and +$2.28B despite selloff",
+          "source": "ETF Central",
+          "url": "https://www.etfcentral.com/compare-etfs/HACK-vs-CIBR"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "AI selloff deepens: chip ETFs SMH and SOXX fall about 12%, worst day since 2020",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ai-selloff-deepens-chip-etfs-025227411.html"
         }
       ]
     },
     "financials": {
-      "score": 1,
+      "score": 0,
       "confidence": "low",
-      "rationale": "Small positive October inflows: +$255m per State Street, +$1.2bn per TD Securities. The sector is still negative YTD (-$3.6bn) and over the trailing 3 months (-$5.1bn), so the signal is weak.",
+      "rationale": "October inflows were small (+$255m State Street, +$1.2bn TD) against -$3.6bn YTD and -$5.1bn over three months. Too weak to call a tailwind.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -170,7 +313,7 @@
     "healthcare_biotech": {
       "score": 1,
       "confidence": "medium",
-      "rationale": "Health care ETFs took +$2.4bn in October (State Street; TD: +$1.9bn), backed by the strongest earnings-surprise magnitude of any sector (13.15%). Health care also led European sector inflows in the week of Oct 26-30 (+EUR 306.6m).",
+      "rationale": "Health care ETFs took +$2.4bn in October (TD +$1.9bn) and led European sector inflows in the week of Oct 26-30 (+EUR 306.6m), consistent with the defensive rotation that took XLV to a record on Nov 4.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -199,9 +342,9 @@
       ]
     },
     "energy_oil": {
-      "score": 1,
+      "score": 0,
       "confidence": "medium",
-      "rationale": "Energy sector ETFs took about $2.8bn in October, pushing YTD to a record $12.2bn, the first positive calendar year in four years (State Street). Energy-focused commodity ETPs added another $724m.",
+      "rationale": "Energy ETFs took about $2.8bn in October (record $12.2bn YTD) plus $724m into energy commodity ETPs, but those flows chased the war premium into the Oct 30 peak; XLE then fell about 12% in W45 as the premium unwound. Late-cycle inflows raise outflow risk, so the flow signal is neutralised.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -220,13 +363,19 @@
           "title": "ETF Monthly: The Market Starts Playing Defense Over Attack",
           "source": "MarketScreener",
           "url": "https://www.marketscreener.com/news/etf-monthly-the-market-starts-playing-defense-over-attack-ce785fdcd08af12c"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Oil bounces after worst 3-day drop since 2021; XLE 12% below its Oct 30 high",
+          "source": "AOL (Yahoo Finance)",
+          "url": "https://www.aol.com/articles/oil-bounces-worst-3-day-184905000.html"
         }
       ]
     },
     "materials_mining_metals": {
       "score": 0,
       "confidence": "low",
-      "rationale": "Mixed: US materials ETFs had +$381m in October (State Street), but materials had the largest European sector outflow in the week of Oct 26-30 (-EUR 145.9m), and copper ETPs lost EUR 43.9m.",
+      "rationale": "Mixed: US materials ETFs +$381m in October, but materials had the largest European sector outflow in the week of Oct 26-30 (-EUR 145.9m) and copper ETPs lost EUR 43.9m.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -245,7 +394,7 @@
     "industrials_defense_infra": {
       "score": -1,
       "confidence": "medium",
-      "rationale": "Industrials ETFs lost $1.25bn in October, the largest sector outflow (State Street), and industrials were among the largest European sector outflows in the week of Oct 26-30 (-EUR 127.4m).",
+      "rationale": "Industrials ETFs lost $1.25bn in October, the largest US sector outflow, and were among the largest European sector outflows in the week of Oct 26-30 (-EUR 127.4m).",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -264,7 +413,7 @@
     "consumer": {
       "score": -1,
       "confidence": "medium",
-      "rationale": "Consumer discretionary ETFs had outflows of $524m in October per State Street (-$1.6bn per TD Securities), and consumer staples lost $86m. In Europe, consumer discretionary lost EUR 142.6m in the week of Oct 26-30 while staples took EUR 52.7m.",
+      "rationale": "Consumer discretionary ETFs lost $524m in October (State Street; -$1.6bn TD) and staples -$86m; in Europe discretionary lost EUR 142.6m in the week of Oct 26-30 while staples took EUR 52.7m.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -289,7 +438,7 @@
     "us_factor_dividend": {
       "score": 1,
       "confidence": "medium",
-      "rationale": "Dividend ETFs took $3.2bn in October, more than half of factor inflows, and the factor category is near $80bn YTD. Equity-income strategies passed $100bn YTD, an annual record. Low-volatility ETFs remain in secular outflow (-$406m in October), a minor negative for USMV/SPLV.",
+      "rationale": "Dividend ETFs took $3.2bn in October, more than half of factor inflows, and equity-income strategies passed a record $100bn YTD. Low-volatility ETFs remain in secular outflow (-$406m), a minor negative for USMV/SPLV.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -311,10 +460,49 @@
         }
       ]
     },
+    "us_small_mid_value": {
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Single source only: State Street shows Size +$966m and Value +$1.9bn in October. Fewer than two sourced flow headlines, so 0 low.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        }
+      ]
+    },
+    "utilities_realestate": {
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Single source only: State Street shows utilities and real estate ETFs at about -$517m and -$522m in October. Leaning negative but fewer than two sourced flow headlines, so 0 low.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        }
+      ]
+    },
+    "clean_energy_thematic": {
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Single source only: Sustainable Environment ETFs -$224m in October (State Street). 0 low.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        }
+      ]
+    },
     "govt_bonds": {
       "score": 1,
       "confidence": "high",
-      "rationale": "Bond ETFs took a record $74bn in October (sixth straight month above $50bn). Government ETFs took $12.4bn, led by short-term at $7.1bn, plus aggregate +$23.1bn and TIPS +$2.7bn; long-term government took only $287m. TD data: aggregate +$22.3bn, BND +$2.9bn. Europe: government IG +EUR 1.09bn in the week of Oct 26-30.",
+      "rationale": "Bond ETFs took a record $74bn in October (sixth straight month above $50bn). Government ETFs +$12.4bn led by short-term (+$7.1bn), aggregate +$23.1bn and TIPS +$2.7bn; long-term government only +$287m. Europe: government IG +EUR 1.09bn in the week of Oct 26-30. Demand favours the front end and belly over long duration.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -344,8 +532,8 @@
     },
     "credit_bonds": {
       "score": 1,
-      "confidence": "high",
-      "rationale": "Per State Street, IG corporate ETFs took +$9.3bn in October, high yield +$2.0bn, munis +$21.2bn and EM bonds +$0.6bn; bank loans lost $500m (BKLN). TD Securities reports a record municipal month, with MUB +$5.6bn and high yield +$1.9bn. Europe: corporate IG +EUR 1.32bn and high yield +EUR 474.8m in the week of Oct 26-30.",
+      "confidence": "medium",
+      "rationale": "Flows remain strong: IG corporate ETFs +$9.3bn, munis +$21.2bn (record month, MUB +$5.6bn), HY +$2.0bn; bank loans -$500m. Confidence cut from high: HY OAS widened 16bp to 348bp on Nov 5 with AI-linked credit stress, and record IG supply ($1.88tn) is meeting widening spreads, so the flow tailwind is concentrated in IG/munis.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -364,13 +552,25 @@
           "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
           "source": "ETF Express",
           "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "ICE BofA US High Yield OAS widens 16bp to 348bp",
+          "source": "FRED / ICE Data",
+          "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Big Tech pushes US corporate bond issuance to a record $1.88 trillion in 2026",
+          "source": "Tech Insider (citing Reuters/LSEG)",
+          "url": "https://tech-insider.org/big-tech-us-corporate-bond-record-1-88-trillion-2026/"
         }
       ]
     },
     "gold_precious": {
       "score": 1,
       "confidence": "medium",
-      "rationale": "Global physically backed gold ETFs took +$2.7bn in October, a fourth straight month of inflows, with holdings at a record 4,275t (WGC). Europe (+$1.8bn, the IGLN venue) and Asia (+$1.3bn) offset North American outflows of -$512m (WGC). State Street reports US gold ETFs at -$700m; GLD -$1.8bn versus GLDM +$905m. Score reflects global and European flows; US-listed flows were negative.",
+      "rationale": "Global gold ETFs took +$2.7bn in October (fourth straight month), holdings at a record 4,275t, led by Europe (+$1.8bn, IGLN venue) and Asia; Q3 ETF holdings rose 211t. North America was negative (-$512m WGC; GLD -$1.8bn vs GLDM +$905m). Supportive for UCITS gold, weaker for US-listed GLD.",
       "headlines": [
         {
           "date": "2026-11-05",
@@ -379,6 +579,12 @@
           "url": "https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/11"
         },
         {
+          "date": "2026-11-03",
+          "title": "Global central bank gold purchases reach 321 tonnes in Q3; gold ETF holdings +211t to a record (WGC Gold Demand Trends Q3 2026)",
+          "source": "Angel One",
+          "url": "https://www.angelone.in/news/economy/global-central-bank-gold-purchases-reach-321-tonnes-in-q3-says-wgc"
+        },
+        {
           "date": "2026-10-31",
           "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
           "source": "State Street Investment Management",
@@ -389,19 +595,13 @@
           "title": "US ETF flows hit $204BN in October as fixed income sets record",
           "source": "InvestmentNews (TD Securities data)",
           "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
-        },
-        {
-          "date": "2026-11-02",
-          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
-          "source": "ETF Express",
-          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
         }
       ]
     },
     "commodities_broad": {
       "score": 1,
-      "confidence": "medium",
-      "rationale": "Broad commodity ETFs had +$481m in October, the 16th inflow month of 17, taking 2026 YTD to $7.6bn, close to the 2021 record of $8.1bn. Energy commodity ETFs took +$724m (State Street). Europe: multi-commodity ETPs +EUR 137.6m in the week of Oct 26-30.",
+      "confidence": "low",
+      "rationale": "Broad commodity ETFs +$481m in October, 16 inflow months of 17, YTD $7.6bn near the 2021 record; multi-commodity ETPs +EUR 137.6m in Europe (Oct 26-30). Confidence low because energy-heavy indices just lost the war premium and part of the inflow chased it.",
       "headlines": [
         {
           "date": "2026-10-31",
@@ -416,50 +616,137 @@
           "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
         }
       ]
+    },
+    "multi_asset_alt": {
+      "score": 0,
+      "confidence": "low",
+      "rationale": "October: mixed allocation +$596m, alternatives -$1.15bn (State Street). Fund-level checks found no closure, merger or index event for KMLM, DBMF or AOM; KraneShares and iMGP are expanding the MLM and DBi franchises. The KMLM/DBMF/AOM volume spikes remain unexplained.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "KraneShares Mount Lucas Managed Futures Index Strategy ETF (KMLM): NAV $29.19, net assets $583.8M, no fund-event notice",
+          "source": "KraneShares",
+          "url": "https://kraneshares.com/kmlm/"
+        }
+      ]
     }
   },
-  "regime_notes": "Scores in this pillar are flow-based (+1 for inflows, -1 for outflows, 0 for mixed) from the October monthly reports and the Oct 26-30 European weekly data. They are not fundamental views. US-listed ETFs took $211bn in October (State Street; $204bn per TD/Bloomberg), the second-largest month ever, with a record $74bn into bonds and 80% of equity flows going to US exposures as non-US equities sold off. Sector flows went to tech and energy, while industrials, consumer, utilities and real estate bled. Gold is split by region: US outflows, but record global holdings driven by Europe and Asia, which is supportive for IGLN. No closure, merger, fee or index change was found for VWRA, SSAC/ACWD, IWDA, CSPX, VUAA, CNDX, EIMI, IGLN or AGGU in the window. The most recent fee event found for these funds is Vanguard's cut of the FTSE All-World UCITS ETF OCF from 0.19% to 0.14%, effective 2026-07-28. Gaps: the shared web-search budget ran out mid-run, so the 2026 scan of US universe tickers for closures, mergers, ticker changes and fee changes is incomplete. Utilities/real estate, clean energy, small/mid value, multi-asset/alt, Japan and China had only one flow source or ambiguous categories and are left unscored; see the digest.",
+  "regime_notes": "Scores are flow-based and calibrated: October ETF flows (State Street, TD Securities, WGC, Trackinsight) were strong almost everywhere, but they predate the Nov 5 AI/semis shock and the oil war-premium unwind, so late-cycle chasing (energy, leveraged semis) is neutralised rather than scored +1. In-window market-level flows show a reallocation inside EM: record foreign selling in Taiwan and Korea concentrated in memory names, and a sharp FPI return to India. Bond ETFs took a record $74bn, concentrated in short/aggregate government, IG and munis; credit flow support is intact but HY spreads widened 16bp on Nov 5. Fund-level events are mechanical (EWY/EWS capped-index switch Nov 9, EWG/EWM Dec 1) or slow-burn (MSCI Indonesia standalone consultation); no closure, merger or fee hike was found for held UCITS funds or for KMLM, DBMF, AOM, MUB, MBB, HACK, EIDO. MSCI November review results (expected Nov 11) remain unverified.",
   "red_flags": [
     {
+      "target": "EWY, EWS",
+      "issue": "Index change: iShares moves EWY (Korea) and EWS (Singapore) to MSCI 25/50 Daily 25 Capped indexes on or around 2026-11-09; any group entity above 25% between quarterly rebalances is trimmed to 22.5% (Samsung group in EWY). Mechanical rebalance trades, not a reason to switch.",
+      "url": "https://www.sec.gov/Archives/edgar/data/930667/000119312526430564/d108274d497.htm"
+    },
+    {
+      "target": "EWG, EWM",
+      "issue": "Index change: move to MSCI 25/50 indexes on or around 2026-12-01 (same iShares, Inc. supplements).",
+      "url": "https://www.sec.gov/Archives/edgar/data/930667/000119312526430564/d108274d497.htm"
+    },
+    {
+      "target": "EIDO (and EIMI Indonesia weight)",
+      "issue": "MSCI consultation (Oct 15) on reclassifying Indonesia from Emerging to Standalone; MSCI expects to proceed unless governance improves (decision by 2027-06-30). Freeze on Indonesia FIF/NOS increases and IMI additions stays in place; HSC-flagged names keep being deleted. Small fund ($384m) traded at a +0.68% premium on Nov 6.",
+      "url": "https://www.msci.com/downloads/documents/press-releases/media-room/Indonesia_PR_Oct_26.pdf"
+    },
+    {
+      "target": "SOXL (leveraged semis)",
+      "issue": "Positioning risk, not a fund change: SOXL took +$9.0bn in October and Korean retail net bought $4.28bn Oct 1-Nov 5 while it fell 73%. Leveraged daily-reset decay and forced de-risking risk if semis fall further.",
+      "url": "https://en.sedaily.com/finance/2026/11/07/korean-retail-investors-pile-into-soxl-as-chip-stocks-crash"
+    },
+    {
+      "target": "EWT",
+      "issue": "Market-structure change: from Nov 9 Taiwan caps intraday short-sale orders of borrowed shares at 3% of 30-day ADV (from 30%) and raises short-sale margin to 130%; could raise AP hedging costs and widen EWT spreads/premiums. Stabilisation fund authorised Nov 6.",
+      "url": "https://theedgemalaysia.com/node/824904"
+    },
+    {
+      "target": "KMLM, DBMF, AOM, MUB, MBB, HACK, EIDO",
+      "issue": "EDGAR full-text and issuer-page scan found no liquidation, merger, sub-adviser or index-change filing for these funds. KraneShares liquidated seven other funds (2x China single-stock, Asia bond) on 2026-10-29; iMGP DEF 14A is a trustee election only (meeting 2027-01-15). Low closure risk; volume spikes unexplained.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1547576/000182912626010998/kraneshares_497.htm"
+    },
+    {
       "target": "VWRA",
-      "issue": "Fee cut, a favourable change rather than a risk: Vanguard FTSE All-World UCITS ETF OCF cut from 0.19% to 0.14%, effective 2026-07-28 (announced 2026-07-21). The cut applies at fund level, so it covers the VWRA share class.",
+      "issue": "Favourable fee change: Vanguard FTSE All-World UCITS ETF OCF cut from 0.19% to 0.14%, effective 2026-07-28.",
       "url": "https://rankiapro.com/en/news/vanguard-cuts-25-commission-best-selling-global-etf-europe/"
     },
     {
-      "target": "US universe tickers (all)",
-      "issue": "Scan incomplete: the shared web-search budget was exhausted before targeted 2026 closure, merger, ticker-change and fee-change searches for universe tickers could run. The searches that did run turned up no such event for any universe ticker; the liquidations they found (MEMY, the Tidal real-estate ETFs, the T-REX 2X funds AFRU/TEUP/ASUP/SBTU, Themes and Defiance funds) are all outside the universe. Re-run this check before relying on the absence of flags.",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001771146/000177114626002186/etfof-supplementxtuttlecap.htm"
-    },
-    {
       "target": "SPY",
-      "issue": "Not a fund-level event, recorded for context: SPY had the largest passive equity outflow in October (-$6.9bn) while VOO (+$23.7bn) and SPYM (+$10.1bn) led inflows, a continuing fee-driven rotation. No change to the fund.",
+      "issue": "Context, not a fund event: largest passive equity outflow in October (-$6.9bn) while VOO (+$23.7bn) and SPYM (+$10.1bn) led inflows (fee-driven rotation).",
       "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
     },
     {
       "target": "GLD",
-      "issue": "Not a fund-level event, recorded for context: GLD lost $1.8bn in October while GLDM gained $905m, so US gold ETF flows were net -$0.7bn against global gold ETF inflows of +$2.7bn. No change to the fund.",
+      "issue": "Context, not a fund event: GLD -$1.8bn in October vs GLDM +$905m; US gold ETFs net -$0.7bn while global gold ETFs took +$2.7bn.",
       "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
     }
   ],
   "upcoming_events": [
     {
-      "date": "2026-11-30",
-      "event": "Expected effective date of the MSCI November 2026 semi-annual index review, by MSCI's usual end-November timetable; the announcement usually comes in mid-November. Neither date is verified for 2026. The review affects IWDA, SSAC/ACWD and EIMI.",
+      "date": "2026-11-09",
+      "event": "EWY and EWS switch to MSCI 25/50 Daily 25 Capped indexes; Taiwan short-sale curbs take effect; Korea margin-loan collateral waiver begins",
+      "buckets": [
+        "asia_dev_other",
+        "em_asia_other",
+        "tech_ai_semis"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "event": "US October CPI (08:30 ET) and 10y auction; TSMC October sales; CoreWeave Q3 (date unconfirmed): key test for bond-ETF and leveraged semis-ETF flows",
+      "buckets": [
+        "govt_bonds",
+        "credit_bonds",
+        "tech_ai_semis"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "event": "MSCI November 2026 semi-annual index review announcement (expected; affects IWDA, SSAC/ACWD, EIMI, EIDO); results not yet verified",
       "buckets": [
         "global_equity",
         "developed_ex_us",
-        "em_broad"
+        "em_broad",
+        "em_asia_other"
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Expected effective date of MSCI November review changes (end-November timetable, unverified for 2026)",
+      "buckets": [
+        "global_equity",
+        "em_broad",
+        "em_asia_other"
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "event": "EWG and EWM switch to MSCI 25/50 indexes",
+      "buckets": [
+        "europe",
+        "em_asia_other"
       ]
     },
     {
       "date": "2026-12-04",
-      "event": "Approximate release of November US ETF flow reports (State Street flash flows) and the WGC November gold ETF flows, used to re-check this pillar's flow scores.",
+      "event": "Approximate release of November US ETF flow reports (State Street) and WGC November gold ETF flows",
       "buckets": [
         "us_large_broad",
         "govt_bonds",
         "credit_bonds",
         "gold_precious",
         "tech_ai_semis"
+      ]
+    },
+    {
+      "date": "2027-01-15",
+      "event": "iM Global Partner Funds special meeting (trustee election only; covers DBMF)",
+      "buckets": [
+        "multi_asset_alt"
       ]
     }
   ]

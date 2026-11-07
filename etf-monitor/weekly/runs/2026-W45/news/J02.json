@@ -5,64 +5,313 @@
   "window": "2026-10-31..2026-11-07",
   "bucket_scores": {
     "us_large_broad": {
-      "score": 0,
+      "score": -1,
       "confidence": "medium",
-      "rationale": "Fact: with most companies reported, Q3 2026 S&P 500 blended EPS growth is 31.4% and revenue growth 14.3%. 84% beat EPS, but the average beat was only 2.7%, and analysts expect 28.4% growth in Q4 (FactSet, Nov 6). Fact: the S&P 500 fell 2.68% on the week, after a 4.4% drop on Nov 5, its worst day since April 2025. The Nasdaq entered a correction as AI and chip stocks sold off, partly on worries that the Democratic Congress will restrict data-center buildout. Interpretation: BofA described the drop as multiple compression rather than estimate cuts, and the forward P/E is now 17.7. That leaves strong earnings against higher volatility, tech-concentration risk and live December Fed-hike risk, so the net score is neutral.",
+      "rationale": "Facts: Q3 S&P 500 blended EPS growth is 31.4% (84% beat, but the average beat was only 2.7%), and the forward P/E has compressed to 17.7 (FactSet). On Nov 5 the S&P fell 4.4% and the Nasdaq 5.5%, entering a correction on post-midterm data-centre restriction fears plus Microsoft trimming Oracle and neocloud capacity and Oracle's $20B raise at 7-8.65% coupons. Interpretation: the cap-weighted index carries the shared AI-capex/funding factor, while a December hike is about 75% priced and Nov 10 CPI, Nov 17 Nvidia and the Dec 11 funding deadline cluster ahead. Equal-weight RSP hit a record on Nov 4, so breadth is healthy and the drawdown is concentrated: -1, not -2. This is the same risk as tech_ai_semis and should not be counted separately.",
       "headlines": [
-        {"date": "2026-11-06", "title": "S&P 500 Earnings Season Update: November 6, 2026", "source": "FactSet Insight", "url": "https://insight.factset.com/sp-500-earnings-season-update-november-6-2026"},
-        {"date": "2026-11-05", "title": "Stock market today: Dow plunges 1,800 points, Nasdaq enters correction in AI trade meltdown", "source": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html"},
-        {"date": "2026-11-06", "title": "Stock market news for Nov. 6, 2026", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"},
-        {"date": "2026-11-06", "title": "Post-Market & Weekly Summary (2026-11-06)", "source": "The Closing Print", "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-06/"}
+        {
+          "date": "2026-11-06",
+          "title": "S&P 500 Earnings Season Update: November 6, 2026",
+          "source": "FactSet Insight",
+          "url": "https://insight.factset.com/sp-500-earnings-season-update-november-6-2026"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Stock market today: Dow plunges 1,800 points, Nasdaq enters correction in AI trade meltdown",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Chip stocks plunge after election, Qualcomm forecast; hyperscalers fall 2-4%",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Microsoft winding down Oracle AI capacity deal",
+          "source": "Bloomberg via Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-winding-down-oracle-deal-173639264.html"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Oracle prices $10.0B of senior notes (7.00%-8.65% coupons)",
+          "source": "Oracle FWP (SEC EDGAR)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526443918/d87441dfwp.htm"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Fed funds futures: about 75% implied odds of a Dec 9 hike (Investing.com Fed Rate Monitor)",
+          "source": "Investing.com",
+          "url": "https://www.investing.com/central-banks/fed-rate-monitor"
+        }
       ]
     },
     "us_small_mid_value": {
-      "score": 1,
+      "score": 0,
       "confidence": "low",
-      "rationale": "Fact: in the Nov 5 rout, Large Value (IVE) fell 2.80% and Large Growth (IVW) fell 5.75%. Over one month, IVE is +2.6% against IVW -11.6%, and Small Value (IJS) is up 16.2% year to date. The Russell 2000 fell 2.05% on the week, against -2.68% for the S&P 500. Fact: October ISM manufacturing rose to 55.5, and payrolls beat (+165k), which supports domestic cyclical earnings. Interpretation: rotation away from AI megacaps and firm domestic data favor value and mid-caps. December Fed-hike risk (roughly 70% priced before the jobs report) is the main headwind for leveraged small caps, so confidence is low.",
+      "rationale": "Facts: IWM fell 2.0% on the week and 4.6% on Nov 5, the same day HY OAS widened 16bp to 348bp and CoreWeave fell about 10%. The Fed held at 3.75-4.00% with two dissents for a hike. Facts: value beat growth on Nov 5 (IVE -2.8% vs IVW -5.75%). Payrolls (+165k) and ISM manufacturing (55.5) are firm, and regional banks (KRE +0.3%) held. Interpretation: rotation away from AI and firm domestic data help value, but leveraged small caps face hike risk and HY stress, and E&P constituents are hurt by the oil-premium unwind. Net neutral, cut from round 0's +1.",
       "headlines": [
-        {"date": "2026-11-06", "title": "AI Trade Unwinds as Tech Leads Broad Selloff", "source": "ETF Action", "url": "https://www.etfaction.com/ai-trade-unwinds-as-tech-leads-broad-selloff/"},
-        {"date": "2026-11-02", "title": "Stock market news for Nov. 2, 2026 (rotation into old-economy names; ISM 55.5)", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html"},
-        {"date": "2026-11-06", "title": "Post-Market & Weekly Summary (2026-11-06)", "source": "The Closing Print", "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-06/"}
+        {
+          "date": "2026-11-05",
+          "title": "ICE BofA US High Yield OAS 3.48% (+16bp in one day)",
+          "source": "FRED / ICE Data",
+          "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "iShares Russell 2000 (IWM) historical prices",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/IWM/history/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "AI Trade Unwinds as Tech Leads Broad Selloff",
+          "source": "ETF Action",
+          "url": "https://www.etfaction.com/ai-trade-unwinds-as-tech-leads-broad-selloff/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "The Employment Situation: October payrolls +165k, unemployment 4.1%",
+          "source": "BLS",
+          "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+        }
       ]
     },
     "us_factor_dividend": {
       "score": 1,
-      "confidence": "low",
-      "rationale": "Fact: defensive and income sectors held up in the selloff. On Nov 5, Staples (XLP) fell 0.75% and Utilities (XLU) 0.71%, against 4.4% for the S&P 500. Over one month, XLP is +12.6%, Health Care +10.5% and XLU +8.3%. Fact: McDonald's raised its dividend 4% (Nov 4) and Lam Research authorized a $25B buyback; companies have authorized a record pace of buybacks in 2026, and November is typically the heaviest month for executing them (secondary source). Interpretation: the AI de-rating favors quality and dividend factors. The offsets are a 10-year yield near 4.86% and possible Fed tightening, which keep the tailwind mild.",
+      "confidence": "medium",
+      "rationale": "Facts: XLP, XLV, SCHD, NOBL, SPLV, USMV, VIG and RSP all set all-time highs on Nov 4, while over one month MTUM fell about 20% and SMH about 24%. McDonald's raised its dividend 4% and Lam Research authorized a $25B buyback. Michigan 1-year inflation expectations eased to 4.3% and gasoline is down 33c in a month, supporting staples margins. Interpretation: defensive/quality leadership is a coordinated factor rotation out of AI momentum. It is +1, not +2, because these are price facts more than catalysts, prices are already 2-3% off the Nov 4 highs, the 10y is near 4.86% with hike risk, and high-yield variants (VYM, DVY) lag. Shares a driver with healthcare_biotech +1; do not double count.",
       "headlines": [
-        {"date": "2026-11-06", "title": "AI Trade Unwinds as Tech Leads Broad Selloff", "source": "ETF Action", "url": "https://www.etfaction.com/ai-trade-unwinds-as-tech-leads-broad-selloff/"},
-        {"date": "2026-11-04", "title": "McDonald's Rises 5% as Earnings Beat Outweighs U.S. Sales Dip (dividend raised 4%)", "source": "24/7 Wall St. via Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonald-rises-5-earnings-beat-160448146.html"},
-        {"date": "2026-11-06", "title": "Stock market news for Nov. 6, 2026 (Lam Research $25B buyback)", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"}
+        {
+          "date": "2026-11-06",
+          "title": "AI Trade Unwinds as Tech Leads Broad Selloff",
+          "source": "ETF Action",
+          "url": "https://www.etfaction.com/ai-trade-unwinds-as-tech-leads-broad-selloff/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "SMH and SOXX worst day since 2020; XLP and XLV hit all-time highs Nov 4",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ai-selloff-deepens-chip-etfs-025227411.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "McDonald's Rises 5% as Earnings Beat Outweighs U.S. Sales Dip (dividend raised 4%)",
+          "source": "24/7 Wall St. via Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonald-rises-5-earnings-beat-160448146.html"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Preliminary November consumer sentiment 51.0; 1-year inflation expectations 4.3%",
+          "source": "University of Michigan",
+          "url": "https://www.sca.isr.umich.edu/"
+        }
       ]
     },
     "consumer": {
       "score": 0,
       "confidence": "medium",
-      "rationale": "Fact: October payrolls rose 165k (about 65k expected), unemployment fell to 4.1%, and hourly earnings rose 0.4% m/m. Preliminary November UMich sentiment improved to 51 from 48 but stays near record lows, and 1-year inflation expectations are elevated (4.7% in October). Fact: earnings were mixed. McDonald's US comps were -0.2%, though they improved through the quarter. Airbnb beat and guided Q4 revenue above consensus, Uber gross bookings rose 20%, and DraftKings missed. Interpretation: solid jobs and income support spending, while oil near $90-98, weak sentiment and Fed-hike risk weigh, so the net reading is neutral with an upside tilt.",
+      "rationale": "Facts: AAA gasoline is $4.04, down 33c in a month as crude fell about 12-15% on the Qatar draft and the post-midterm politics, but still about $1 (31%) above a year ago and a November record. Payrolls rose 165k with AHE +0.4% m/m. NRF projects holiday sales +4.2% to $1.013T, but Michigan sentiment is very weak at 51. Earnings were mixed: McDonald's US comps -0.2%, Airbnb beat, DraftKings missed. Interpretation: falling fuel costs and jobs are a tailwind, but they are part of the oil-unwind trade that reverses on any Iran strike (FGE window mid-Nov to mid-Dec). Diesel stays tight, XLY is -1% YTD, and HD/TGT/WMT report Nov 17-19. Net neutral with an upside tilt.",
       "headlines": [
-        {"date": "2026-11-06", "title": "Stock market today: Nasdaq and S&P 500 rebound, Dow slips to cap bruising week for AI stocks (jobs, UMich, Airbnb)", "source": "Yahoo Finance", "url": "https://ca.finance.yahoo.com/news/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"},
-        {"date": "2026-11-04", "title": "McDonald's Rises 5% as Earnings Beat Outweighs U.S. Sales Dip; Chipotle Climbs 4%, Starbucks Gains 3%", "source": "24/7 Wall St. via Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonald-rises-5-earnings-beat-160448146.html"},
-        {"date": "2026-11-06", "title": "Stock market news for Nov. 6, 2026 (DraftKings miss, Airbnb beat)", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html"}
+        {
+          "date": "2026-11-07",
+          "title": "AAA national average gas price $4.037",
+          "source": "AAA",
+          "url": "https://gasprices.aaa.com/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "National average falls 12 cents in one week",
+          "source": "AAA Newsroom",
+          "url": "https://newsroom.aaa.com/2026/11/national-average-falls-12-cents-in-one-week/"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Preliminary November consumer sentiment 51.0",
+          "source": "University of Michigan",
+          "url": "https://www.sca.isr.umich.edu/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Stock market today: Nasdaq and S&P 500 rebound (jobs, UMich, Airbnb)",
+          "source": "Yahoo Finance",
+          "url": "https://ca.finance.yahoo.com/news/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "McDonald's Rises 5% as Earnings Beat Outweighs U.S. Sales Dip",
+          "source": "24/7 Wall St. via Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonald-rises-5-earnings-beat-160448146.html"
+        }
       ]
     },
     "financials": {
       "score": 0,
       "confidence": "medium",
-      "rationale": "Fact: Financials (XLF) rose 1.15% on the week while the S&P 500 fell 2.7%. AIG beat Q3 estimates on 42.5% higher net investment income and 7% premium growth, but its combined ratio rose to 91.3% on convective-storm catastrophe losses. Fact: Democrats won the Senate (about 54 seats) and are projected to win the House, raising oversight and regulatory risk. The Fed is trying to finalize a capital-rule overhaul by year end, and Senate control limits the White House's ability to reshape the Fed. Interpretation: the curve is steep (2y 4.51%, 10y 4.86%) and the economy is firm, which helps net interest income. Higher regulatory risk from 2027 and catastrophe losses offset that, so the net reading is neutral.",
+      "rationale": "Facts: XLF rose 1.2%, KRE 0.3% and BIZD 1.1% on the week despite the neocloud selloff. 2s10s is +35bp, and the Fed's hawkish hold supports NIMs; no new Fed capital or supervision rule was issued. New CoreWeave debt is bank-agented (MUFG, Morgan Stanley, JPMorgan), mostly non-recourse SPV paper, while the Blackstone/Magnetar DDTLs are amortizing. Facts: BDC Q3 non-accruals at cost are elevated (ARCC 2.4%, OBDC 2.9%, BXSL 2.8%, FSK 6.4%), NII is falling, and BXSL declared a $0.60 March dividend vs $0.77. AIG beat but carried catastrophe losses. Interpretation: lender equity has not priced AI contagion and exposure looks dispersed. Slow private-credit erosion, Democratic oversight from 2027 and the CoreWeave/Nebius prints offset this, so neutral. Correction: falling BDC NII reflects spread compression, not Fed cuts (the Fed hiked in September).",
       "headlines": [
-        {"date": "2026-11-03", "title": "AIG beats profit estimates on premium growth, investment income", "source": "Reuters via WMBD", "url": "https://wmbdradio.com/2026/11/03/aig-beats-profit-estimates-on-premium-growth-investment-income/"},
-        {"date": "2026-11-04", "title": "US midterm election results and markets", "source": "XTB", "url": "https://www.xtb.com/en/education/us-midterm-election-results-markets"},
-        {"date": "2026-11-06", "title": "Post-Market & Weekly Summary (2026-11-06)", "source": "The Closing Print", "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-06/"}
+        {
+          "date": "2026-11-06",
+          "title": "Financial Select Sector SPDR (XLF) historical prices",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/XLF/history/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Blackstone Secured Lending Q3 2026 results",
+          "source": "BXSL 8-K (SEC EDGAR)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026115721/ea0310494-01_ex991.htm"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Blue Owl Capital Corporation announces September 30, 2026 results",
+          "source": "Blue Owl press release",
+          "url": "https://www.blueowlcapitalcorporation.com/investors/news-events/press-releases/detail/96/blue-owl-capital-corporation-announces-september-30-2026"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "FS KKR Capital Corp Q3 2026 results",
+          "source": "FS KKR press release",
+          "url": "https://www.fskkrcapitalcorp.com/wp-content/uploads/2026/11/fsk-q3-2026-press-release.pdf"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "AIG beats profit estimates on premium growth, investment income",
+          "source": "Reuters via WMBD",
+          "url": "https://wmbdradio.com/2026/11/03/aig-beats-profit-estimates-on-premium-growth-investment-income/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "10-year minus 2-year Treasury spread +0.35pp",
+          "source": "FRED",
+          "url": "https://fred.stlouisfed.org/series/T10Y2Y"
+        }
       ]
     }
   },
-  "regime_notes": "Two forces dominated the week. First, the midterms gave Democrats the Senate (about 54 seats) and a projected House majority, which means gridlock with the White House from January and more oversight. Second, a violent AI and semiconductor de-rating on Nov 5: the S&P 500 fell 4.4%, the Nasdaq entered a correction and the VIX jumped more than 65% intraday, partly on fears of restrictions on data-center buildout. Fundamentals are strong. Q3 S&P 500 EPS growth is 31.4% blended with 84% beating, although the average beat is small, and the forward P/E has compressed to 17.7. Leadership rotated hard from growth to value, defensives and healthcare. Macro is hawkish: payrolls rose 165k, unemployment is 4.1%, ISM prices are 75.2 and oil is near $90-98, which keeps a December 9 Fed hike live (about 70% priced before the jobs report). October CPI and PPI next week are the key swing factor for multiples.",
-  "red_flags": [],
+  "regime_notes": "One AI-capex/funding factor drove the week. The midterm data-centre backlash, Microsoft's Oracle/neocloud pullback and Oracle's expensive $20B raise produced the Nov 5 rout (S&P -4.4%, Nasdaq -5.5%, IWM -4.6%, HY +16bp). Fundamentals stayed strong: Q3 EPS +31.4%, Nvidia guided $108B, TSMC Q4 +14% q/q. So the cap-weighted drawdown reads as multiple compression and financing stress rather than demand collapse, and mean reversion is the base case. Leadership rotated hard into defensive, quality, dividend and equal-weight (all at records on Nov 4), which should be treated as one factor bet. The oil-premium unwind (Brent about $118 futures to about $98) helps consumers and inflation expectations but reverses on any Iran strike decision. The Fed is hiking, not cutting: a Dec 9 hike is about 75% priced and Oct CPI on Nov 10 (Cleveland core nowcast 0.21%) is the key swing factor.",
+  "red_flags": [
+    {
+      "target": "BIZD / BDC holdings (BXSL)",
+      "issue": "BXSL declared $0.60 for the March 2027 record date vs a $0.77 run-rate (about -22%), with Q4 only 88% NII-covered. OBDC's base dividend is down to $0.31 from $0.37. BDC income ETF yields likely reset lower.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026115721/ea0310494-01_ex991.htm"
+    },
+    {
+      "target": "us_large_broad (SPY/QQQ/VOO)",
+      "issue": "Concentration risk: cap-weighted indices carry the AI-capex factor (QQQ -6.5%, VOO -4.4% on Nov 5) while equal-weight RSP set a record. No fund event, but prefer equal-weight within the bucket.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ai-selloff-deepens-chip-etfs-025227411.html"
+    }
+  ],
   "upcoming_events": [
-    {"date": "2026-11-09", "event": "Week of Nov 9: October CPI and PPI releases (exact dates per BLS calendar)", "buckets": ["us_large_broad", "us_small_mid_value", "us_factor_dividend", "consumer", "financials"]},
-    {"date": "2026-11-27", "event": "Black Friday, start of holiday shopping season; retailer Q3 reports (Walmart, Target, Home Depot) due mid/late November", "buckets": ["consumer"]},
-    {"date": "2026-12-04", "event": "November jobs report, last major data before FOMC", "buckets": ["us_large_broad", "us_small_mid_value", "financials"]},
-    {"date": "2026-12-09", "event": "FOMC decision; markets priced about 70% odds of a 25bp hike before the October jobs beat", "buckets": ["us_large_broad", "us_small_mid_value", "us_factor_dividend", "consumer", "financials"]},
-    {"date": "2027-01-10", "event": "US-China tariff truce expiry (extended from Nov 10, 2026)", "buckets": ["us_large_broad", "consumer"]}
+    {
+      "date": "2026-11-09",
+      "event": "Constellation Energy and Barrick Q3; 3y Treasury auction",
+      "buckets": [
+        "us_large_broad"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "event": "October CPI 08:30 ET, 10y auction, Waller/Bowman speak; TSMC October sales; CoreWeave Q3 (date unconfirmed)",
+      "buckets": [
+        "us_large_broad",
+        "us_small_mid_value",
+        "us_factor_dividend",
+        "consumer",
+        "financials"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Nebius Q3 (pre-market); 30y Treasury auction",
+      "buckets": [
+        "us_large_broad",
+        "financials"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "event": "October PPI 08:30 ET",
+      "buckets": [
+        "us_large_broad",
+        "consumer"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "event": "Nvidia Q3 FY27 results (after close); Home Depot Q3",
+      "buckets": [
+        "us_large_broad",
+        "consumer"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "event": "Target Q3; FOMC October minutes; Tencent results",
+      "buckets": [
+        "consumer",
+        "us_large_broad"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Walmart Q3 FY27",
+      "buckets": [
+        "consumer",
+        "us_factor_dividend"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "event": "Q3 GDP second estimate and October PCE",
+      "buckets": [
+        "us_large_broad",
+        "consumer"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "event": "Black Friday / start of holiday season (NRF forecast +4.2%)",
+      "buckets": [
+        "consumer"
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "event": "November jobs report, last payrolls before FOMC",
+      "buckets": [
+        "us_large_broad",
+        "us_small_mid_value",
+        "financials"
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "event": "FOMC decision with SEP (about 75% priced for a 25bp hike)",
+      "buckets": [
+        "us_large_broad",
+        "us_small_mid_value",
+        "us_factor_dividend",
+        "consumer",
+        "financials"
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "event": "Continuing resolution expires; Polymarket about 31.5% shutdown by Dec 12",
+      "buckets": [
+        "us_large_broad",
+        "financials"
+      ]
+    },
+    {
+      "date": "2027-01-09",
+      "event": "Proposed end of extended Section 301 maritime suspension (US-China truce rollover, USTR proposal)",
+      "buckets": [
+        "us_large_broad",
+        "consumer"
+      ]
+    }
   ]
 }

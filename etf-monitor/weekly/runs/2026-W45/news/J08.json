@@ -7,53 +7,275 @@
     "mena_gulf": {
       "score": 0,
       "confidence": "medium",
-      "rationale": "Facts: Gulf bourses rallied midweek (Nov 4: Dubai +4%, Qatar +2.8%, Saudi +1.7%; Nov 5: Qatar +1.8%, Saudi and Abu Dhabi +0.6%) on bets that Democratic midterm gains narrow the room for a wider US-Iran war, and Aramco beat estimates (adjusted net income $31.2bn, base dividend $21.9bn, but the performance-linked dividend is still suspended). Against that, Saudi Q3 oil revenue fell 23% y/y and the 9M deficit reached SR244.3bn, the 2027 pre-budget deficit was raised to 3.6% of GDP, tanker attacks in Hormuz continue and drones were intercepted over Riyadh and Mecca on Nov 6. Interpretation: a US-Iran deal via Qatari mediation would be a strong tailwind and renewed US strikes a strong headwind; with neither confirmed and fiscal news negative, the net 1-3 month view is neutral.",
+      "rationale": "Facts: Gulf bourses rallied on Nov 4-5 (Dubai +4%, Qatar +2.8%) on bets that the Democratic midterm sweep narrows room for a wider US-Iran war, Aramco beat Q3 estimates, Qatari mediation is active and Iran gives Qatari ships free Hormuz passage. Against that: Brent fell from about $118 to about $99, Aramco cut Asian OSPs $2/bbl, Saudi Q3 oil revenue fell 23% y/y, UKMTO counted at least 11 ships attacked around Hormuz in the week to Nov 6 (3 sank), and the US resumed 'minor strikes' on Qeshm on Nov 6. Interpretation: de-escalation upside and fiscal/kinetic downside offset; explorer rounds split between 0 and -1, so 0 with a downside skew while the FGE strike window (mid-Nov to mid-Dec) is open.",
       "headlines": [
-        {"date": "2026-11-05", "title": "Gulf stocks gain as investors assess US midterm fallout", "source": "Business Recorder (Reuters)", "url": "https://www.brecorder.com/news/40447433/gulf-stocks-gain-as-investors-assess-us-midterm-fallout"},
-        {"date": "2026-11-05", "title": "Mideast Stocks: Most Gulf equities gain on easing Iran fears after US midterms, earnings", "source": "Zawya (Reuters)", "url": "https://www.zawya.com/en/capital-markets/mideast-stocks-most-gulf-equities-gain-on-easing-iran-fears-after-us-midterms-earnings-2022479"},
-        {"date": "2026-11-03", "title": "Saudi Arabia posts $22.38bn budget deficit in Q3", "source": "Arab News", "url": "https://www.arabnews.com/business/saudi-arabia-posts-2238bn-budget-deficit-in-q3-3009626"},
-        {"date": "2026-11-03", "title": "Aramco's profit rises as refining margins strengthen amid Iran war", "source": "CNBC", "url": "https://www.cnbc.com/2026/11/03/saudi-aramcos-third-quarter-middle-east-.html"},
-        {"date": "2026-11-06", "title": "Iran war updates: Trump says US talking to Tehran's representatives", "source": "Al Jazeera (live blog)", "url": "https://www.aljazeera.com/amp/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran"}
+        {
+          "date": "2026-11-05",
+          "title": "Mideast Stocks: Most Gulf equities gain on easing Iran fears after US midterms, earnings",
+          "source": "Zawya (Reuters)",
+          "url": "https://www.zawya.com/en/capital-markets/mideast-stocks-most-gulf-equities-gain-on-easing-iran-fears-after-us-midterms-earnings-2022479"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Gulf stocks gain as investors assess US midterm fallout",
+          "source": "Business Recorder (Reuters)",
+          "url": "https://www.brecorder.com/news/40447433/gulf-stocks-gain-as-investors-assess-us-midterm-fallout"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Saudi Arabia posts $22.38bn budget deficit in Q3",
+          "source": "Arab News",
+          "url": "https://www.arabnews.com/business/saudi-arabia-posts-2238bn-budget-deficit-in-q3-3009626"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Aramco's profit rises as refining margins strengthen amid Iran war",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/03/saudi-aramcos-third-quarter-middle-east-.html"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Qeshm Island and Hormuz hit as mediators try to prevent US-Iran escalation",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Why is Iran exempting India, China, Qatar and Iraq from Hormuz restrictions?",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "UAE weighs plans for third Strait of Hormuz bypass pipeline",
+          "source": "OilPrice.com (ZeroHedge via Bloomberg)",
+          "url": "https://oilprice.com/Energy/Crude-Oil/UAE-Weighs-Plans-for-Third-Strait-of-Hormuz-Bypass-Pipeline.html"
+        }
       ]
     },
     "global_equity": {
       "score": 0,
       "confidence": "medium",
-      "rationale": "Geopolitical angle only. Facts: Democrats won both chambers of Congress, MSCI All-World rose 1.38% on Nov 4 and Trump acknowledged the Iran war contributed to the losses; Qatar says the US and Iran remain committed to mediation and Trump says he has no immediate plans for new strikes. However, at least five vessels have been hit in Hormuz since Nov 1 (35 in October), Trump warned the US may have to 'destroy' the rest of Iran, and Reuters sources still expect renewed strikes. Russia tariff/sanction measures are waived pending a 60-day review, and the US-China tariff truce runs to Jan 10. Interpretation: escalation risk eased modestly but not resolved; net geopolitical effect on global equities is neutral (this week's Nov 5 tech sell-off was domestic-political/AI driven, not geopolitical).",
+      "rationale": "Geopolitical channel only. Facts: the oil war premium unwound (Brent about -13% on the like-for-like Jan contract, Oct 30 to Nov 6), Vance and Trump tied the midterm loss to the war, Qatar says mediation remains active, and the US-China truce is being rolled forward (USTR proposes extending the 301 maritime suspension to Jan 9, 2027; Xi-Trump at APEC Shenzhen Nov 18-19). Against that, Trump confirmed new strikes on Qeshm (Nov 6), Axios/NYT report combat preparations, and FGE sees a high chance of a limited strike before Jan 3. Interpretation: geopolitics is a mild net relief offset by live escalation tail risk, so 0. The Nov 5 AI/semis sell-off (the main -1 driver for global equity in other topics) is a domestic-policy and financing story scored in other pillars and is deliberately not repeated here to avoid double counting.",
       "headlines": [
-        {"date": "2026-11-04", "title": "World shares advance as Democrats' victory eases political uncertainty", "source": "Reuters via Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-dip-investors-010842458.html"},
-        {"date": "2026-11-06", "title": "More ships attacked in Persian Gulf, oil prices rebound slightly after post-midterm plunge", "source": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/"},
-        {"date": "2026-11-05", "title": "Iran Maintains Pressure as Three Tankers Hit in Hormuz", "source": "MarineLink (Reuters)", "url": "https://www.marinelink.com/news/iran-maintains-pressure-three-tankers-hit-544179"},
-        {"date": "2026-11-06", "title": "Trump's Russian oil deal unravels as tankers change course", "source": "Washington Times", "url": "https://washingtontimes.com/news/2026/nov/6/donald-trumps-russian-oil-deal-unravels-tankers-change-course"}
+        {
+          "date": "2026-11-04",
+          "title": "World shares advance as Democrats' victory eases political uncertainty",
+          "source": "Reuters via Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-dip-investors-010842458.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Trump weighs Iran strikes or deal after midterm loss as Vance urges agreement; Qatar mediates",
+          "source": "Gulf News (live blog)",
+          "url": "https://gulfnews.com/world/mena/trump-weighs-iran-strikes-or-deal-after-midterm-loss-as-vance-urges-agreement-qatar-mediates-brent-oil-falls-to-93-1.500736556"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Trump confirms new US strikes on Iran's Qeshm Island",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "FGE NexantECA sees slim chance of US-Iran deal",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/FGE-NexantECA-Sees-Slim-Chance-of-US-Iran-Deal.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "What the Democrat midterms sweep changes for US-China tech rivalry",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/what-the-democrat-midterms-sweep-changes-for-us-china-tech-rivalry.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Global markets trade lower as AI concerns fuel selling pressure",
+          "source": "Anadolu Agency",
+          "url": "https://www.aa.com.tr/en/economy/global-markets-trade-lower-as-ai-concerns-fuel-selling-pressure/4113783"
+        }
       ]
     },
     "energy_oil": {
       "score": -1,
       "confidence": "medium",
-      "rationale": "Geopolitical angle only. Facts: Brent fell nearly 9% to $94.62 on Nov 4 and about 15% week-on-week to ~$99 by Nov 6, after settling at $117.64 (expiring Dec contract) on Oct 30, as traders priced in US-Iran diplomatic progress; Aramco cut December Asian OSPs by $2/bbl. OPEC+ core members held December targets, but Gulf members still pump well below quota due to Hormuz disruption, and analysts flag a possible 2027 surplus if Gulf flows normalise. Interpretation: the war risk premium is now skewed to the downside over 1-3 months (any deal or Hormuz reopening releases shut-in supply), though continued tanker attacks and possible renewed US strikes keep two-way tail risk very high.",
+      "rationale": "Facts: Brent futures settled $117.64 on Oct 30 (expiring Dec contract) and fell to $94.62 on Nov 4 (-8.6%, lowest since Sep 4) before ending near $98-99 on Nov 6; the like-for-like Jan contract fell about 13% on the week (the continuous series overstates the drop by about $4 because of the roll). JPMorgan's surplus widened to 1.4 mb/d, Dubai flipped to contango, Aramco cut December Asian OSPs $2/bbl, and the Nov 29 OPEC+ meeting on 2027 baselines points to a market-share contest; IEA sees a large 2027 surplus once Hormuz reopens. Interpretation: the war premium is deflating and physical signals are loose, so -1; not -2 because attacks continue (11 ships in a week), the US resumed minor strikes and FGE puts a limited-strike window at mid-Nov to mid-Dec, leaving a $10-20 upside gap risk.",
       "headlines": [
-        {"date": "2026-10-31", "title": "OPEC+ keeps December oil output targets steady ahead of tougher call for 2027", "source": "CNBC", "url": "https://www.cnbc.com/2026/10/31/opec-oil-output-targets-december.html"},
-        {"date": "2026-11-04", "title": "World shares advance as Democrats' victory eases political uncertainty", "source": "Reuters via Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-dip-investors-010842458.html"},
-        {"date": "2026-11-06", "title": "The Iran War Isn't Over, but Oil Traders Are Already Pricing In Peace (analysis)", "source": "Oilprice.com", "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Isnt-Over-but-Oil-Traders-Are-Already-Pricing-In-Peace.html"},
-        {"date": "2026-11-06", "title": "More ships attacked in Persian Gulf, oil prices rebound slightly after post-midterm plunge", "source": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/"}
+        {
+          "date": "2026-11-04",
+          "title": "Oil crashes 9% as Trump and Vance blame Iran war for midterm rout",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Crashes-9-as-Trump-and-Vance-Blame-Iran-War-for-Midterm-Rout.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Brent falls to $100 as traders bet on a US-Iran deal",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Falls-to-100-as-Traders-Bet-on-a-US-Iran-Deal.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Oil prices head for 12% weekly loss despite fresh tanker attacks",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-12-Weekly-Loss-Despite-Fresh-Tanker-Attacks.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "The Iran war isn't over, but oil traders are already pricing in peace (analysis)",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Isnt-Over-but-Oil-Traders-Are-Already-Pricing-In-Peace.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Asia's fuel oil market signals hopes of US-Iran de-escalation",
+          "source": "OilPrice.com (LSEG/Kpler via Reuters)",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/Asias-Fuel-Oil-Market-Signals-Hopes-of-US-Iran-De-Escalation.html"
+        },
+        {
+          "date": "2026-11-01",
+          "title": "OPEC+ keeps December oil output targets steady ahead of tougher call for 2027",
+          "source": "Reuters via GV Wire",
+          "url": "https://gvwire.com/2026/11/01/opec-keeps-december-oil-output-targets-steady-ahead-of-tougher-call-for-2027/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "FGE NexantECA sees slim chance of US-Iran deal",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/FGE-NexantECA-Sees-Slim-Chance-of-US-Iran-Deal.html"
+        }
       ]
     }
   },
-  "regime_notes": "The US-Iran war (since February) and the Strait of Hormuz remain the dominant driver for Gulf assets and oil. The Democratic sweep in the Nov 3 midterms, which Trump partly blamed on the war, shifted markets toward pricing de-escalation: Brent dropped about 15% on the week and Gulf equities rallied, led by Dubai and Qatar. Qatari mediation is active but Iran demands an end to the US naval blockade, sanctions relief and frozen funds before reopening Hormuz, and tanker attacks continued daily through Nov 6. Saudi public finances are deteriorating (Q3 oil revenue -23% y/y, 2027 deficit seen at 3.6% of GDP) because export volumes, not prices, are constrained. Key swing factors next: a deal or renewed US strikes, the OPEC+ capacity review and Nov 29 2027-quota meeting, and the MSCI November review.",
+  "regime_notes": "The US-Iran war and Hormuz remain the dominant driver for Gulf assets and oil, but US domestic politics now sets the direction: after the Nov 3 Democratic sweep, Vance and Trump tied the loss to the war and Brent lost about 13-15% on the week as markets priced a Qatar-mediated deal. Price is diverging from the physical war: at least 11 ships were attacked around Hormuz in the week to Nov 6 and the US resumed minor strikes on Qeshm, while Iran still demands an end to the blockade, sanctions relief and frozen funds before reopening the strait. Physical oil signals (Dubai contango, JPM 1.4 mb/d surplus, Aramco OSP cut) argue the premium bleeds out slowly absent escalation. The oil-short/importer-long legs (energy_oil, mena_gulf vs india, consumer, govt_bonds) are one paired position that reverses on a single strike decision; FGE puts that window at mid-Nov to mid-Dec. Data hygiene: $118 is the Oct 30 Brent futures settle and $135 the Oct 2 Dated spot print; the Russia-oil tariff waiver is open-ended and revocable at will, not a Dec 15 review.",
   "red_flags": [
-    {"target": "KSA, UAE, QAT", "issue": "Active regional war: daily tanker attacks in Hormuz, a tanker reportedly hit off Qatar, drones intercepted over Riyadh and Mecca (Nov 6); Iran's supreme leader reportedly ordered responses 'without geographical limitations'. Direct physical risk to Gulf holdings and possible market disruption.", "url": "https://www.aljazeera.com/amp/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran"},
-    {"target": "QAT", "issue": "QatarEnergy LNG force majeure has been extended month by month (through at least November per late-September reports); Ras Laffan export capacity reportedly cut ~17% by missile strikes, repairs possibly 3-5 years. Background, outside window.", "url": "https://thenationalnews.com/business/energy/2026/09/28/qatar-extends-lng-force-majeure-as-hormuz-disruption-threatens-winter-supply"},
-    {"target": "KSA", "issue": "Aramco (large KSA weight) keeps its performance-linked dividend suspended; Saudi fiscal deficit widening and Q3 oil revenue -23% y/y.", "url": "https://www.arabnews.com/business/saudi-arabia-posts-2238bn-budget-deficit-in-q3-3009626"},
-    {"target": "USO, XOP, OIH, XLE, VDE", "issue": "Extreme two-way geopolitical gap risk in crude: Brent -9% in one session (Nov 4), ~-15% on the week, and a reported $6 flash crash; a US-Iran deal could remove a large war premium while renewed strikes could reverse it. USO is most exposed via front-month futures.", "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Isnt-Over-but-Oil-Traders-Are-Already-Pricing-In-Peace.html"},
-    {"target": "INDA, EPI, TUR", "issue": "US Treasury issued new sanctions on India- and Turkey-based firms and individuals for ties to Iran (Nov 4) and warned of more; listed-holding exposure not confirmed, likely limited.", "url": "https://www.thestar.com.my/news/world/2026/11/05/us-slaps-sanctions-on-indian-turkish-firms-and-people-for-aiding-iran"},
-    {"target": "INDA, EPI, TUR, MCHI, FXI", "issue": "Russia sanctions: 100% tariffs on top buyers of Russian oil under the Graham Sanctioning Russia and Iran Act were waived on Oct 16 pending a ~60-day review; reinstatement would hit the largest buyers of Russian energy.", "url": "https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/"}
+    {
+      "target": "KSA, UAE, QAT",
+      "issue": "Active regional war: at least 11 ships attacked around Hormuz in the week to Nov 6 (3 sank), IRGC mine claims, Houthi claims on Saudi East-West pipeline pumping stations, drones over Riyadh and Mecca, and Iranian threats to Gulf data centres and cables. Direct physical risk to Gulf holdings and possible market disruption.",
+      "url": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation"
+    },
+    {
+      "target": "QAT",
+      "issue": "QatarEnergy LNG force majeure extended month by month (background, outside window); Ras Laffan capacity reportedly cut by missile strikes.",
+      "url": "https://thenationalnews.com/business/energy/2026/09/28/qatar-extends-lng-force-majeure-as-hormuz-disruption-threatens-winter-supply"
+    },
+    {
+      "target": "KSA",
+      "issue": "Aramco (large KSA weight) keeps its performance-linked dividend suspended; Saudi Q3 oil revenue -23% y/y and 9M deficit SR244.3bn; Aramco cut December Asian OSPs by $2/bbl.",
+      "url": "https://www.arabnews.com/business/saudi-arabia-posts-2238bn-budget-deficit-in-q3-3009626"
+    },
+    {
+      "target": "USO, BNO, XOP, OIH, XLE, VDE",
+      "issue": "Extreme two-way gap risk: Brent -8.6% on Nov 4 and a $6 intraday flash crash on Nov 3 on deal headlines, while a renewed US strike could reverse the whole move. Continuous Brent futures overstate the W45 drop by about $4.2 because of the Dec-to-Jan roll; use the Jan-27 contract for momentum signals.",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Flash-Crashes-6-Before-Rebounding-Towards-104.html"
+    },
+    {
+      "target": "INDA, EPI, TUR",
+      "issue": "OFAC (Nov 4) designated India-based shadow-fleet registry firms and Turkey's Fugo Ground Services over Iran oil; small, unlisted entities, but shows secondary-sanctions willingness toward India and Turkey.",
+      "url": "https://ofac.treasury.gov/recent-actions/20261104"
+    },
+    {
+      "target": "INDA, EPI, TUR, MCHI, FXI",
+      "issue": "Graham Act 100% tariffs on top Russian-energy buyers are waived under EO 14436 with no expiry date; the President or Secretary of State can revoke at any time. Revocation risk rises as lower oil weakens the energy-price rationale. Corrects the earlier ~Dec 15 review date, which has no source.",
+      "url": "https://www.federalregister.gov/documents/full_text/text/2026/10/21/2026-21599.txt"
+    }
   ],
   "upcoming_events": [
-    {"date": "2026-11-11", "event": "MSCI November 2026 index review announcement (effective Dec 1); possible Saudi/UAE/Qatar adds/deletes", "buckets": ["mena_gulf", "em_broad"]},
-    {"date": "2026-11-15", "event": "OPEC+ production capacity review expected by mid-November (approximate date)", "buckets": ["energy_oil", "mena_gulf"]},
-    {"date": "2026-11-16", "event": "Aramco Q3 base dividend record date (payment Nov 25)", "buckets": ["mena_gulf", "energy_oil"]},
-    {"date": "2026-11-29", "event": "Full OPEC+ (21 members) meeting to set 2027 quotas", "buckets": ["energy_oil", "mena_gulf"]},
-    {"date": "2026-12-15", "event": "Approximate end of 60-day review of waived Russia oil-buyer tariffs/sanctions", "buckets": ["energy_oil", "india", "china", "em_broad"]},
-    {"date": "2027-01-10", "event": "Expiry of US-China tariff escalation pause", "buckets": ["global_equity", "china"]}
+    {
+      "date": "2026-11-10",
+      "event": "Original US-China truce anchor date (301 exclusions, reciprocal tariff suspension); USTR proposes rolling the maritime 301 suspension to Jan 9, 2027; China rare-earth suspension status unconfirmed",
+      "buckets": [
+        "global_equity",
+        "china",
+        "materials_mining_metals"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "event": "EIA Short-Term Energy Outlook",
+      "buckets": [
+        "energy_oil"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "event": "MSCI November 2026 index review announcement (effective around Dec 1); possible Saudi/UAE/Qatar changes",
+      "buckets": [
+        "mena_gulf",
+        "em_broad"
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "event": "OPEC+ production capacity review expected around mid-November (approximate), setting 2027 baselines",
+      "buckets": [
+        "energy_oil",
+        "mena_gulf"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "event": "Aramco Q3 base dividend record date (payment Nov 25)",
+      "buckets": [
+        "mena_gulf",
+        "energy_oil"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "event": "APEC leaders' meeting in Shenzhen (Nov 18-19) with expected Xi-Trump meeting",
+      "buckets": [
+        "global_equity",
+        "china"
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "event": "Full OPEC+ meeting to set 2027 quotas",
+      "buckets": [
+        "energy_oil",
+        "mena_gulf"
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Approximate start of FGE's limited US/Israeli strike window (mid-Nov to mid-Dec); Iran fiscal exhaustion expected around end-November",
+      "buckets": [
+        "energy_oil",
+        "mena_gulf",
+        "global_equity"
+      ]
+    },
+    {
+      "date": "2026-12-10",
+      "event": "CBRT final 2026 MPC decision (Turkey)",
+      "buckets": [
+        "mena_gulf"
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "event": "US continuing resolution expires; lame-duck fight over Iran war funding and defense topline",
+      "buckets": [
+        "global_equity",
+        "industrials_defense_infra"
+      ]
+    },
+    {
+      "date": "2027-01-03",
+      "event": "Democratic-controlled 120th Congress convenes; Meeks plans binding Iran war-powers resolutions",
+      "buckets": [
+        "energy_oil",
+        "mena_gulf",
+        "global_equity"
+      ]
+    },
+    {
+      "date": "2027-01-09",
+      "event": "Proposed end of extended Section 301 maritime suspension against China",
+      "buckets": [
+        "global_equity",
+        "china"
+      ]
+    }
   ]
 }

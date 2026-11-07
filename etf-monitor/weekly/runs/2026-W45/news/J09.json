@@ -7,58 +7,294 @@
     "energy_oil": {
       "score": -1,
       "confidence": "medium",
-      "rationale": "Facts: OPEC+ (seven countries) held December targets at September levels (~31.01 mb/d) for a third straight month; Brent fell 8.7% to $94.62 on Nov 4 after Democrats won both chambers in the US midterms and the White House tied the losses to the Iran war; Gulf crude flows are recovering toward pre-war levels and JP Morgan flags a possible 1.1 mb/d surplus. Offsets: US commercial crude stocks fell a fifth straight week, distillates are 13% below the 5-year average (below 100m bbl for the first time since 2003), the SPR is at its lowest since 1982 and Asian reserve refills may put a floor under prices. Interpretation: the war risk premium is eroding and political pressure favours de-escalation, a mild headwind for crude and energy equities over 1-3 months, but escalation risk (Eurasia Group 60% odds of renewed US strikes, ongoing Gulf ship incidents) keeps this from -2.",
+      "rationale": "Facts: the Iran war premium unwound after the US midterms. Like-for-like Jan-27 Brent futures fell 13% from $113.43 (Oct 30) to $98.32 (Nov 6), front-month WTI fell from $104.12 to $90.83 and XLE fell 12%. Physical and supply signals are bearish: Aramco cut December Asian OSPs by $2 (Arab Light at its widest discount since June 2020), Dubai flipped into contango for the first time since July, JPMorgan puts the October surplus at 1.4 mb/d, the IEA sees a large 2027 surplus once Hormuz flows recover, and the Nov 29 full OPEC+ meeting on 2027 baselines risks a market-share contest. US activity is not being cut (604 rigs, +56 y/y; FANG/DVN/EOG/COP capex steady to higher). Offsets keep this from -2: renewed 'minor' US strikes on Qeshm (Nov 6), 11 ships attacked in the week, CENTCOM combat preparations, FGE's mid-Nov to mid-Dec limited-strike window, and US distillate stocks at their lowest since 2003. The upside gap risk is $10-20/bbl and two-sided.",
       "headlines": [
-        {"date": "2026-11-01", "title": "Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman reaffirm commitment to market stability", "source": "OPEC (press release)", "url": "https://www.opec.org/pr-detail/2033620-1-november-2026.html"},
-        {"date": "2026-11-02", "title": "OPEC+ to maintain oil output for 3rd consecutive month in December", "source": "China Daily HK / Xinhua", "url": "https://www.chinadailyhk.com/article/642088"},
-        {"date": "2026-11-04", "title": "Oil Crashes 9% as Trump and Vance Blame Iran War for Midterm Rout", "source": "Oilprice.com", "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Crashes-9-as-Trump-and-Vance-Blame-Iran-War-for-Midterm-Rout.html"},
-        {"date": "2026-11-05", "title": "Oil Prices Rebound Sharply After Brutal Midweek Rout", "source": "Oilprice.com", "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rebound-Sharply-After-Brutal-Midweek-Rout.html"},
-        {"date": "2026-11-05", "title": "Brent Crude Slides as Political Shift Chips Away at War Risk Premium", "source": "Tradingpedia (citing ING)", "url": "https://www.tradingpedia.com/2026/11/05/brent-crude-slides-as-political-shift-chips-away-at-war-risk-premium/"},
-        {"date": "2026-11-06", "title": "Oil prices fall as mid-terms signal possible end to Iran war", "source": "Oil & Gas Journal (market commentary)", "url": "https://www.ogj.com/general-interest/economics-markets/article/55417388/oil-prices-fall-as-mid-terms-signal-possible-end-to-iran-war"}
+        {
+          "date": "2026-11-01",
+          "title": "OPEC keeps December oil output targets steady ahead of tougher call for 2027",
+          "source": "Reuters via GV Wire",
+          "url": "https://gvwire.com/2026/11/01/opec-keeps-december-oil-output-targets-steady-ahead-of-tougher-call-for-2027/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Oil Crashes 9% as Trump and Vance Blame Iran War for Midterm Rout",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Crashes-9-as-Trump-and-Vance-Blame-Iran-War-for-Midterm-Rout.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Brent Falls to $100 as Traders Bet on a US-Iran Deal (JPMorgan: surplus 1.4 mb/d in October)",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Falls-to-100-as-Traders-Bet-on-a-US-Iran-Deal.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "The Iran War Isn't Over but Oil Traders Are Already Pricing In Peace (Aramco cuts Asian OSPs $2)",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Isnt-Over-but-Oil-Traders-Are-Already-Pricing-In-Peace.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Asia's Fuel Oil Market Signals Hopes of US-Iran De-Escalation (Dubai in contango)",
+          "source": "OilPrice.com (citing LSEG/Kpler via Reuters)",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/Asias-Fuel-Oil-Market-Signals-Hopes-of-US-Iran-De-Escalation.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "FGE NexantECA Sees Slim Chance of US-Iran Deal (limited strike likely mid-Nov to mid-Dec)",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/FGE-NexantECA-Sees-Slim-Chance-of-US-Iran-Deal.html"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Trump confirms new US strikes on Iran's Qeshm Island",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Baker Hughes rig count 11/6: US total 604 (+1), oil rigs 463",
+          "source": "Oil & Gas 360",
+          "url": "https://www.oilandgas360.com/baker-hughes-rig-count-11-6/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "US crude stocks, gasoline and distillate inventories fall (EIA)",
+          "source": "BOE Report (Reuters)",
+          "url": "https://boereport.com/2026/11/04/us-crude-stocks-gasoline-and-distillate-inventories-fall-eia-2/"
+        }
       ]
     },
     "materials_mining_metals": {
       "score": 0,
       "confidence": "medium",
-      "rationale": "Facts: LME copper was on course for its worst week since March (-3.4%, ~$13,663/t on Nov 6), with CRU linking the drop to post-midterm AI/data-centre sentiment; at the same time SHFE copper stocks fell 24% in a week to a near three-year low and Shanghai spot premiums hit a record RMB 2,615/t as smelter output fell and metal moved to the US ahead of possible refined-copper tariffs. Lithium carbonate spot hit new lows (Mysteel, Nov 2) amid supply additions and soft demand. Interpretation: weaker demand sentiment (AI capex, lithium) is balanced by very tight physical copper supply, so the net 1-3 month signal for miners is neutral.",
+      "rationale": "Facts: copper fell to a 17-week low (~$6.18-6.22/lb, about -5.5% m/m) on AI data-centre regulation fears after the midterms, and copper miners fell with it (FCX -7.5% and SCCO -6.5% on Nov 5; FCX about -11% from late October). Non-China rare-earth names lost their scarcity premium (MP -15% w/w) as the US-China truce looks set to roll forward (USTR proposal to Jan 9, 2027). Against that, physical supply is very tight (Shanghai spot copper premium at a record, SHFE stocks near a three-year low, smelter cuts), Grasberg stays constrained into 2027, copper is still about +26% y/y with FCX unit costs near $2/lb, gold majors keep returning large amounts of capital, and SA PGM output is shrinking (Sibanye SA PGM -10% y/y, US PGM guidance cut ~15% after a strike) while the 4E basket is +15% y/y. Interpretation: demand sentiment and supply tightness offset; neutral with a downside skew because copper miners now trade as an AI-capex proxy.",
       "headlines": [
-        {"date": "2026-11-02", "title": "Lithium Daily: Lithium prices remain soft with further confirmation on supply increase and demand softness", "source": "Mysteel", "url": "https://www.mysteel.net/analysis/5146934-lithium-daily-lithium-prices-remain-soft-with-further-confirmation-on-supply-increase-and-demand-softness"},
-        {"date": "2026-11-06", "title": "Copper price on the LME heads for its worst week since March (citing Reuters)", "source": "Asharq Al-Awsat via UA.NEWS", "url": "https://ua.news/en/dovkolo-svitu/tsina-midi-na-lme-priamuie-do-naigirshogo-tizhnia-z-bereznia-asharq-al-awsat"},
-        {"date": "2026-11-06", "title": "Shanghai spot copper premiums surge to 2615 yuan/mt, the highest level in history", "source": "Shanghai Metals Market (SMM)", "url": "https://news.metal.com/newscontent/104210314-shanghai-spot-copper-premiums-surge-to-2615-yuanmt-the-highest-level-in-history-how-tight-is-supply-before-delivery"}
+        {
+          "date": "2026-11-04",
+          "title": "Freeport-McMoRan board approves $4.5bn Bagdad expansion (first production mid-2030)",
+          "source": "Freeport-McMoRan (press release)",
+          "url": "https://s22.q4cdn.com/529358580/files/doc_news/2026/FCX_261104.pdf"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Sibanye-Stillwater Q3 2026 operating update: SA PGM output -10% y/y, US PGM guidance cut after strike",
+          "source": "Sibanye-Stillwater (company release)",
+          "url": "https://thevault.exchange/wp-json/tv/https://thevault.exchange?get_group_doc=245%2F1793860921-ssw-Q32026-operating-update-20261105.pdf&tvh=MzY1"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Copper price on the LME heads for its worst week since March (citing Reuters)",
+          "source": "Asharq Al-Awsat via UA.NEWS",
+          "url": "https://ua.news/en/dovkolo-svitu/tsina-midi-na-lme-priamuie-do-naigirshogo-tizhnia-z-bereznia-asharq-al-awsat"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Shanghai spot copper premiums surge to 2615 yuan/mt, the highest level in history",
+          "source": "Shanghai Metals Market (SMM)",
+          "url": "https://news.metal.com/newscontent/104210314-shanghai-spot-copper-premiums-surge-to-2615-yuanmt-the-highest-level-in-history-how-tight-is-supply-before-delivery"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Copper commodity page: copper at 17-week low on AI data-centre regulation fears; China supply tightening",
+          "source": "Trading Economics",
+          "url": "https://tradingeconomics.com/commodity/copper"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "China critical minerals: rare-earth licensing persists, yttrium ex-China ~179x two-year-ago level",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/04/china-critical-minerals-rare-earths-trump-japan-export-control-.html"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Lithium Daily: Lithium prices remain soft with further confirmation on supply increase and demand softness",
+          "source": "Mysteel",
+          "url": "https://www.mysteel.net/analysis/5146934-lithium-daily-lithium-prices-remain-soft-with-further-confirmation-on-supply-increase-and-demand-softness"
+        }
       ]
     },
     "gold_precious": {
       "score": 0,
       "confidence": "medium",
-      "rationale": "Facts: spot gold rebounded from a one-year low of $3,869.85 (Oct 30) to ~$4,100 on Nov 5 (+3.4% on Nov 4) as the dollar and 10-year yield fell after the midterms and lower oil eased inflation fears; Poland's central bank reached its 700t reserve target and left the door open to more buying. Against that, October payrolls rose 165k vs ~59-65k expected and unemployment fell to 4.1%, and CME FedWatch priced ~66% odds of a December Fed hike (Fed at 3.75-4.00% after a 10-2 hold on Oct 28); gold slipped back to ~$4,070 on Nov 6 while silver held ~$52. Interpretation: a hiking Fed and gold being one of 2026's weakest assets offset the softer dollar and steady official demand; neutral.",
+      "rationale": "Facts: COMEX gold futures rebounded from a one-year low of $3,898.9 (Oct 30) to $4,113.5 (Nov 5) and $4,074.9 (Nov 6), about +4.5% on the week but still ~23% below the January peak; the bounce came from the midterm dollar and yield drop and lower oil. Strong October payrolls (+165k) pushed December Fed hike odds back to ~70-75%, gold was sold for margin in the Nov 5 equity rout, and Goldman cut its end-2026 forecast to $4,150 (end-2027 $4,800). Central-bank buying is a floor (WGC Q3 321t, +42% y/y; Goldman nowcast 85t/month). Miners' ~2.8x beta came from extremely oversold breadth, and spot sits $200-250 below Q3 realised prices while Q4 AISC guidance rises (Newmont ~$1,900). Platinum's rally conflicts with WPIC's 2026 surplus forecast. Interpretation: gold is trading as a Fed/real-rate asset, not a hedge; neutral. Barrick (Nov 9) and US CPI (Nov 10) are the next tests.",
       "headlines": [
-        {"date": "2026-11-05", "title": "Gold at more than two-week high as dollar, yields weaken; U.S. payrolls data awaited", "source": "CNBC (Reuters copy)", "url": "https://www.cnbc.com/2026/11/05/gold-hits-two-week-high-as-dollar-yields-ease-after-us-midterms.html"},
-        {"date": "2026-11-05", "title": "Gold prices today, Thursday, November 5, 2026: Did one of 2026's worst assets just get a boost?", "source": "Yahoo Finance", "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-november-5-2026-did-one-of-2026s-worst-assets-just-get-a-boost-142402603.html"},
-        {"date": "2026-11-06", "title": "A Surging Jobs Report Knocked Gold Down. Silver Shrugged It Off.", "source": "GoldSilver.com (dealer commentary)", "url": "https://goldsilver.com/industry-news/goldsilver-news/gold-silver-price-today-jobs-report-rate-hike-odds/"},
-        {"date": "2026-11-06", "title": "Silver price today: rises on November 6", "source": "FXStreet", "url": "https://fxstreet.com/news/silver-price-today-silver-rises-according-to-fxstreet-data-202611060930"}
+        {
+          "date": "2026-11-05",
+          "title": "Gold at more than two-week high as dollar, yields weaken; U.S. payrolls data awaited",
+          "source": "CNBC (Reuters copy)",
+          "url": "https://www.cnbc.com/2026/11/05/gold-hits-two-week-high-as-dollar-yields-ease-after-us-midterms.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Gold eases on inflation worries from higher oil; US payrolls data in focus",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/amp/2026/11/06/gold-eases-on-inflation-worries-from-higher-oil-us-payrolls-data-in-focus.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Goldman lowers end-2026 gold price forecast to $4,150",
+          "source": "Yahoo Finance / Investing.com",
+          "url": "https://finance.yahoo.com/markets/commodities/articles/goldman-lowers-end-gold-price-081423381.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Gold drops but stays on track for best week in over two months",
+          "source": "Reuters via Kitco",
+          "url": "https://www.kitco.com/news/off-the-wire/2026-11-06/gold-drops-stays-track-best-week-over-two-months"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Global central bank gold purchases reach 321 tonnes in Q3, says WGC",
+          "source": "Angel One (WGC Gold Demand Trends)",
+          "url": "https://www.angelone.in/news/economy/global-central-bank-gold-purchases-reach-321-tonnes-in-q3-says-wgc"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Gold mining shares rally after Democratic sweep",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/commodities/articles/gold-mining-shares-rally-democratic-120258345.html"
+        }
       ]
     },
     "commodities_broad": {
       "score": -1,
       "confidence": "medium",
-      "rationale": "Facts: energy, the largest weight in broad indices, lost its war premium this week (WTI December -$13, Brent down almost $15 week on week); the Bloomberg Commodity Spot Index fell 2.04% on Nov 4. Grains are soft on supply: CBOT soybeans hit an 11-week low as Chinese buying slowed against a record US crop and fast Brazilian planting, and wheat fell to a six-month low (WEAT). Copper had its worst week since March. Interpretation: falling energy premium plus ample grain supply and a likely December Fed hike are a mild headwind for broad commodity baskets; tight oil products, tight physical copper and Middle East escalation risk limit the downside.",
+      "rationale": "Facts: energy, the largest weight in broad indices, lost much of its war premium (Jan-27 Brent -13% w/w, WTI -11% to -13%; the Bloomberg Commodity Spot Index fell 2.04% on Nov 4). Industrial metals are softer (copper -5% m/m to a 17-week low) and grains are heavy on supply (soybeans at an 11-week low on slower Chinese buying and a record US crop; wheat at a six-month low). The Fed is pricing a December hike (~75%). Gold is roughly flat-to-up and cannot offset energy. Offsets: tight oil products (US distillates at a 2003 low), record-tight Chinese physical copper and a live Middle East strike window make the risk two-sided. Interpretation: mild headwind for broad baskets over 1-3 months.",
       "headlines": [
-        {"date": "2026-11-06", "title": "Oil prices fall as mid-terms signal possible end to Iran war", "source": "Oil & Gas Journal (market commentary)", "url": "https://www.ogj.com/general-interest/economics-markets/article/55417388/oil-prices-fall-as-mid-terms-signal-possible-end-to-iran-war"},
-        {"date": "2026-11-06", "title": "Soybean Futures Fall to 11-Week Low as Chinese Buying Slows", "source": "Global Agriculture", "url": "https://www.global-agriculture.com/global-agriculture/soybean-futures-fall-to-11-week-low-as-chinese-buying-slows/"},
-        {"date": "2026-11-06", "title": "Wheat Fund Falls 0.91% to a Six-Month Low | Grains Wrap, Nov 6", "source": "The Rio Times", "url": "https://riotimesonline.com/grains-soy-corn-latam-friday-november-6-2026"},
-        {"date": "2026-11-06", "title": "Copper price on the LME heads for its worst week since March (citing Reuters)", "source": "Asharq Al-Awsat via UA.NEWS", "url": "https://ua.news/en/dovkolo-svitu/tsina-midi-na-lme-priamuie-do-naigirshogo-tizhnia-z-bereznia-asharq-al-awsat"}
+        {
+          "date": "2026-11-06",
+          "title": "Oil Prices Head for 12% Weekly Loss Despite Fresh Tanker Attacks",
+          "source": "OilPrice.com",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-12-Weekly-Loss-Despite-Fresh-Tanker-Attacks.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Oil prices fall as mid-terms signal possible end to Iran war",
+          "source": "Oil & Gas Journal (market commentary)",
+          "url": "https://www.ogj.com/general-interest/economics-markets/article/55417388/oil-prices-fall-as-mid-terms-signal-possible-end-to-iran-war"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Soybean Futures Fall to 11-Week Low as Chinese Buying Slows",
+          "source": "Global Agriculture",
+          "url": "https://www.global-agriculture.com/global-agriculture/soybean-futures-fall-to-11-week-low-as-chinese-buying-slows/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Wheat Fund Falls 0.91% to a Six-Month Low | Grains Wrap, Nov 6",
+          "source": "The Rio Times",
+          "url": "https://riotimesonline.com/grains-soy-corn-latam-friday-november-6-2026"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Copper commodity page: copper at 17-week low on AI data-centre regulation fears",
+          "source": "Trading Economics",
+          "url": "https://tradingeconomics.com/commodity/copper"
+        }
       ]
     }
   },
-  "regime_notes": "The dominant driver this week was the US midterm result: Democrats took both chambers, the White House blamed the Iran war and gasoline prices, and markets priced faster de-escalation, knocking Brent from ~$106 on Monday to ~$93-95 midweek before a partial rebound to ~$98. Geopolitical risk is not resolved (Gulf ship incidents continue, Eurasia Group sees 60% odds of renewed US strikes), and physical product markets remain very tight, so oil is volatile around a shrinking risk premium. The Fed is in a hiking cycle (3.75-4.00%, ~66% odds of a December hike), and Friday's strong payrolls reinforced that, a headwind for gold and for non-yielding commodities broadly, partly offset by a softer dollar earlier in the week. Copper shows a split between weaker AI/data-centre demand sentiment and record-tight Chinese physical supply, with tariff-driven flows into the US distorting regional stocks. Grains are heavy on record US soybean supply and slower Chinese buying; lithium remains in a supply-driven slump.",
+  "regime_notes": "Two common factors drove commodities this week. First, the US midterm sweep unwound the Iran war premium: the White House blamed the war for the loss, Qatar-mediated talks advanced, and Brent fell ~13% on a like-for-like contract to ~$98, with Aramco OSP cuts and Dubai contango confirming a looser physical market. That move is reversible in one decision: minor US strikes resumed on Nov 6 and FGE sees a limited strike window from mid-November to mid-December. Second, the AI/data-centre selloff hit copper and copper miners (17-week low, FCX -7.5% on Nov 5), so materials now trade partly as an AI-capex proxy while Chinese physical copper stays record-tight. Gold behaves as a real-rate asset: it rose on the lower dollar and yields, then fell on strong payrolls and ~75% December hike odds, with central-bank buying as a floor. Data caveats: the $118 Brent figure is the Oct 30 expiring futures settle and $135 is the Oct 2 Dated spot print; continuous BZ=F overstates the week's drop by ~$4.2 because of the Dec-to-Jan roll; the Nov 10 rare-earth cliff looks defused by a truce roll-forward (USTR proposal to Jan 9, 2027) but MOFCOM has not confirmed.",
   "red_flags": [
-    {"target": "copper futures ETFs (e.g. CPER) / materials_mining_metals", "issue": "Possible US tariff on refined copper imports is pulling metal into the US and draining stocks elsewhere; COMEX vs LME/SHFE basis and roll yield may diverge sharply from global copper fundamentals. Not a fund-specific event; monitor tracking.", "url": "https://ua.news/en/dovkolo-svitu/tsina-midi-na-lme-priamuie-do-naigirshogo-tizhnia-z-bereznia-asharq-al-awsat"}
+    {
+      "target": "copper futures ETFs (e.g. CPER) / materials_mining_metals",
+      "issue": "Possible US refined-copper tariff is pulling metal into the US; COMEX vs LME/SHFE basis and roll yield may diverge from global fundamentals. Not fund-specific; monitor tracking.",
+      "url": "https://ua.news/en/dovkolo-svitu/tsina-midi-na-lme-priamuie-do-naigirshogo-tizhnia-z-bereznia-asharq-al-awsat"
+    },
+    {
+      "target": "Brent-linked futures ETFs (e.g. BNO) / energy_oil",
+      "issue": "Continuous BZ=F series overstates the W45 drop by ~$4.2 (Dec-26 to Jan-27 roll on Oct 30-Nov 2); Dated spot ran up to ~$33 above futures in early October, so headline '$135' levels were never captured by futures ETFs. Dubai flipped to contango, which can turn roll yield negative for crude ETFs. Use like-for-like contracts for momentum signals.",
+      "url": "https://finance.yahoo.com/quote/BZF27.NYM/history"
+    },
+    {
+      "target": "PPLT / gold_precious",
+      "issue": "Platinum rally (in sympathy with gold and SA supply headlines) conflicts with WPIC's forecast of a 265 koz 2026 surplus with demand -18%; mean-reversion risk. Not a fund-level event.",
+      "url": "https://platinuminvestment.com/news"
+    }
   ],
   "upcoming_events": [
-    {"date": "2026-11-10", "event": "End of vessel traffic controls around the China International Import Expo; delayed copper import cargoes may clear customs", "buckets": ["materials_mining_metals"]},
-    {"date": "2026-11-12", "event": "EIA weekly petroleum status report (date approximate, Veterans Day week) and mid-month OPEC/IEA monthly oil reports (dates not confirmed)", "buckets": ["energy_oil", "commodities_broad"]},
-    {"date": "2026-11-16", "event": "SHFE CU2611 copper contract last trading day (delivery Nov 17-18), test of record backwardation and spot premiums", "buckets": ["materials_mining_metals"]},
-    {"date": "2026-11-29", "event": "Next meeting of the seven OPEC+ countries on January production levels", "buckets": ["energy_oil", "commodities_broad"]},
-    {"date": "2026-12-09", "event": "FOMC decision with new projections; markets price a hike", "buckets": ["gold_precious", "commodities_broad"]}
+    {
+      "date": "2026-11-09",
+      "event": "Barrick Q3 2026 results (consensus AISC ~$1,929/oz)",
+      "buckets": [
+        "gold_precious",
+        "materials_mining_metals"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "event": "US October CPI (08:30 ET) and 10y auction; original Nov 10 anchor date of the US-China truce (rare-earth suspension roll-forward unconfirmed by MOFCOM); end of CIIE vessel traffic controls for delayed copper cargoes; EIA STEO",
+      "buckets": [
+        "gold_precious",
+        "commodities_broad",
+        "materials_mining_metals",
+        "energy_oil"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "event": "EIA weekly petroleum status report (approximate, Veterans Day week); mid-November OPEC+ capacity review on 2027 baselines expected (date not confirmed)",
+      "buckets": [
+        "energy_oil",
+        "commodities_broad"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "event": "US October PPI",
+      "buckets": [
+        "gold_precious",
+        "commodities_broad"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "event": "SHFE CU2611 copper last trading day (delivery Nov 17-18), test of record spot premiums",
+      "buckets": [
+        "materials_mining_metals"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "event": "APEC Shenzhen, Xi-Trump meeting (Nov 18-19): truce, rare earths and critical minerals",
+      "buckets": [
+        "materials_mining_metals",
+        "commodities_broad"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "event": "SARB MPC decision (SA miners, rand)",
+      "buckets": [
+        "materials_mining_metals",
+        "gold_precious"
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "event": "Full OPEC+ (21-country) meeting expected to set 2027 quotas",
+      "buckets": [
+        "energy_oil",
+        "commodities_broad"
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "event": "FOMC decision with projections; ~75% priced for a 25bp hike",
+      "buckets": [
+        "gold_precious",
+        "commodities_broad"
+      ]
+    },
+    {
+      "date": "2026-12-15",
+      "event": "FGE limited US/Israeli strike window on Iran (mid-November to mid-December) closes; ERCOT data-centre audit due mid-December (copper demand sentiment)",
+      "buckets": [
+        "energy_oil",
+        "commodities_broad",
+        "materials_mining_metals"
+      ]
+    }
   ]
 }

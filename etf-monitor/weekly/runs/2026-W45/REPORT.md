@@ -7,7 +7,7 @@ Research for the owner's own portfolio, not personal financial advice. Generated
 | Question | Answer | Why |
 |---|---|---|
 | Keep holding the core (VWRA)? | **HOLD and keep depositing** | No structural red flag for the core fund. |
-| Where does this month's deposit go? | **US$2,500 to VWRA** | Satellite share is 0%. Redirecting deposits to the top-ranked fund has no robust edge: it wins or loses depending on execution timing and fails the promotion gate (see below). |
+| Where does this month's deposit go? | **US$681 to VWRA** | Satellite share is 0%. Redirecting deposits to the top-ranked fund has no robust edge: it wins or loses depending on execution timing and fails the promotion gate (see below). |
 | Sell anything? | **No** | No tested price-score or trend rule beat holding under both execution assumptions; news-based selling cannot be backtested. Sales happen only on structural red flags. |
 | Core trend flag | Off | Core is -6.3% from its 52-week high. |
 
@@ -40,7 +40,7 @@ Best risk-adjusted result: **S0 Hold VT, deposit monthly (benchmark)**. The engi
 
 ## Your core today (VT as data proxy for VWRA)
 
-Composite score **57/100**, rank **51 of 200**. A broad world fund always ranks mid-pack against narrower funds; that is diversification, not weakness.
+Composite score **57/100**, rank **50 of 200**. A broad world fund always ranks mid-pack against narrower funds; that is diversification, not weakness.
 
 | Family | Score |
 |---|---|
@@ -64,50 +64,50 @@ Shown for information. With satellite share at 0% none of these is bought.
 | Rank | Proxy | UCITS | Bucket | Composite | Change vs last week | 12m return | Volatility 1y |
 |---|---|---|---|---|---|---|---|
 | 5 | XLV | IUHC | healthcare_biotech | 66 |  | +29.0% | 17% |
-| 10 | ACWV | MVOL | global_equity | 65 |  | +10.6% | 9% |
+| 11 | ACWV | MVOL | global_equity | 65 |  | +10.6% | 9% |
 | 12 | USMV | MVOL | us_factor_dividend | 65 |  | +10.5% | 9% |
-| 19 | IAGG | AGGU | govt_bonds | 63 |  | +1.7% | 3% |
+| 18 | IAGG | AGGU | govt_bonds | 63 |  | +1.7% | 3% |
 | 24 | QUAL | IWQU | us_factor_dividend | 62 |  | +13.3% | 13% |
 | 26 | XLF | IUFS | financials | 61 |  | +10.4% | 15% |
 | 29 | SPY | CSPX | us_large_broad | 60 |  | +9.7% | 14% |
 | 31 | VOO | CSPX | us_large_broad | 60 |  | +9.8% | 14% |
-| 33 | VTI | CSPX | us_large_broad | 60 |  | +9.9% | 14% |
+| 33 | VTI | CSPX | us_large_broad | 59 |  | +9.9% | 14% |
 | 34 | BNDX | AGGU | govt_bonds | 59 |  | -0.1% | 4% |
 
 ## All 200 ETFs: top 20 and bottom 10
 
 | Rank | ETF | Bucket | Composite | Trend | Rel. strength | Volatility | Drawdown | Risk-adj. | Cost/UAE | News |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | IWD | us_small_mid_value | 69 | 82 | 90 | 68 | 64 | 87 | 59 | 51 |
-| 2 | VTV | us_small_mid_value | 68 | 74 | 85 | 71 | 65 | 89 | 61 | 51 |
-| 3 | SCHD | us_factor_dividend | 68 | 86 | 88 | 72 | 68 | 81 | 51 | 53 |
-| 4 | HDV | us_factor_dividend | 68 | 85 | 91 | 70 | 74 | 90 | 46 | 53 |
-| 5 | XLV | healthcare_biotech | 66 | 90 | 90 | 52 | 67 | 58 | 76 | 53 |
-| 6 | SHY | govt_bonds | 66 | 56 | 60 | 82 | 90 | 79 | 59 | 52 |
-| 7 | DGRO | us_factor_dividend | 66 | 78 | 76 | 70 | 69 | 90 | 53 | 53 |
-| 8 | MGV | us_small_mid_value | 66 | 73 | 84 | 70 | 66 | 90 | 54 | 51 |
-| 9 | SGOV | govt_bonds | 65 | 58 | 67 | 79 | 70 | 88 | 54 | 52 |
-| 10 | ACWV | global_equity | 65 | 71 | 79 | 71 | 80 | 74 | 53 | 50 |
-| 11 | VGSH | govt_bonds | 65 | 56 | 60 | 82 | 82 | 80 | 58 | 52 |
-| 12 | USMV | us_factor_dividend | 65 | 68 | 64 | 75 | 73 | 74 | 62 | 53 |
-| 13 | BIL | govt_bonds | 64 | 57 | 65 | 79 | 70 | 84 | 57 | 52 |
-| 14 | VIG | us_factor_dividend | 64 | 71 | 65 | 64 | 65 | 83 | 61 | 53 |
-| 15 | RSP | us_large_broad | 64 | 71 | 80 | 67 | 59 | 69 | 56 | 49 |
-| 16 | FLOT | credit_bonds | 64 | 58 | 66 | 79 | 77 | 84 | 51 | 51 |
-| 17 | VCSH | credit_bonds | 63 | 49 | 59 | 81 | 82 | 76 | 58 | 51 |
-| 18 | SCHV | us_small_mid_value | 63 | 68 | 76 | 68 | 62 | 81 | 54 | 51 |
-| 19 | IAGG | govt_bonds | 63 | 61 | 65 | 83 | 77 | 58 | 62 | 52 |
-| 20 | VHT | healthcare_biotech | 62 | 88 | 84 | 53 | 66 | 59 | 62 | 53 |
+| 1 | IWD | us_small_mid_value | 69 | 82 | 90 | 68 | 64 | 87 | 59 | 50 |
+| 2 | VTV | us_small_mid_value | 68 | 74 | 85 | 71 | 65 | 89 | 61 | 50 |
+| 3 | SCHD | us_factor_dividend | 68 | 86 | 88 | 72 | 68 | 81 | 51 | 54 |
+| 4 | HDV | us_factor_dividend | 68 | 85 | 91 | 70 | 74 | 90 | 46 | 54 |
+| 5 | XLV | healthcare_biotech | 66 | 90 | 90 | 52 | 67 | 58 | 76 | 54 |
+| 6 | SHY | govt_bonds | 66 | 56 | 60 | 82 | 90 | 79 | 59 | 54 |
+| 7 | DGRO | us_factor_dividend | 66 | 78 | 76 | 70 | 69 | 90 | 53 | 54 |
+| 8 | MGV | us_small_mid_value | 65 | 73 | 84 | 70 | 66 | 90 | 54 | 50 |
+| 9 | SGOV | govt_bonds | 65 | 58 | 67 | 79 | 70 | 88 | 54 | 54 |
+| 10 | VGSH | govt_bonds | 65 | 56 | 60 | 82 | 82 | 80 | 58 | 54 |
+| 11 | ACWV | global_equity | 65 | 71 | 79 | 71 | 80 | 74 | 53 | 50 |
+| 12 | USMV | us_factor_dividend | 65 | 68 | 64 | 75 | 73 | 74 | 62 | 54 |
+| 13 | BIL | govt_bonds | 64 | 57 | 65 | 79 | 70 | 84 | 57 | 54 |
+| 14 | VIG | us_factor_dividend | 64 | 71 | 65 | 64 | 65 | 83 | 61 | 54 |
+| 15 | FLOT | credit_bonds | 64 | 58 | 66 | 79 | 77 | 84 | 51 | 50 |
+| 16 | RSP | us_large_broad | 63 | 71 | 80 | 67 | 59 | 69 | 56 | 48 |
+| 17 | VCSH | credit_bonds | 63 | 49 | 59 | 81 | 82 | 76 | 58 | 50 |
+| 18 | IAGG | govt_bonds | 63 | 61 | 65 | 83 | 77 | 58 | 62 | 54 |
+| 19 | SCHV | us_small_mid_value | 63 | 68 | 76 | 68 | 62 | 81 | 54 | 50 |
+| 20 | VHT | healthcare_biotech | 63 | 88 | 84 | 53 | 66 | 59 | 62 | 54 |
 | 191 | PPLT | gold_precious | 32 | 23 | 18 | 23 | 15 | 25 | 42 | 52 |
-| 192 | ARKK | tech_ai_semis | 32 | 26 | 33 | 20 | 30 | 21 | 35 | 50 |
-| 193 | TAN | clean_energy_thematic | 32 | 33 | 26 | 24 | 24 | 10 | 38 | 52 |
-| 194 | KWEB | china | 31 | 32 | 18 | 41 | 16 | 3 | 33 | 50 |
-| 195 | ROBO | tech_ai_semis | 30 | 21 | 17 | 21 | 31 | 21 | 36 | 50 |
+| 192 | ARKK | tech_ai_semis | 32 | 26 | 33 | 20 | 30 | 21 | 35 | 48 |
+| 193 | TAN | clean_energy_thematic | 31 | 33 | 26 | 24 | 24 | 10 | 38 | 48 |
+| 194 | KWEB | china | 31 | 32 | 18 | 41 | 16 | 3 | 33 | 51 |
+| 195 | ROBO | tech_ai_semis | 30 | 21 | 17 | 21 | 31 | 21 | 36 | 48 |
 | 196 | LIT | materials_mining_metals | 30 | 24 | 17 | 32 | 29 | 15 | 34 | 50 |
-| 197 | TUR | em_broad | 27 | 20 | 10 | 28 | 11 | 17 | 30 | 50 |
-| 198 | BOTZ | tech_ai_semis | 27 | 11 | 6 | 28 | 32 | 15 | 34 | 50 |
+| 197 | TUR | em_broad | 27 | 20 | 10 | 28 | 11 | 17 | 30 | 48 |
+| 198 | BOTZ | tech_ai_semis | 27 | 11 | 6 | 28 | 32 | 15 | 34 | 48 |
 | 199 | URA | materials_mining_metals | 25 | 6 | 3 | 25 | 20 | 22 | 26 | 50 |
-| 200 | EIDO | em_asia_other | 22 | 13 | 5 | 20 | 8 | 1 | 26 | 48 |
+| 200 | EIDO | em_asia_other | 21 | 13 | 5 | 20 | 8 | 1 | 26 | 46 |
 
 Full scores: `pillar_scores.csv` (200 x 100), `family_scores.csv`, raw values in `pillar_values.csv`.
 
@@ -115,114 +115,114 @@ Full scores: `pillar_scores.csv` (200 x 100), `family_scores.csv`, raw values in
 
 | Bucket | ETFs | Avg composite | Best ETF | News score | Macro score |
 |---|---|---|---|---|---|
-| asia_dev_other | 3 | 50 | EWS | 49 | 46 |
-| china | 3 | 37 | FXI | 50 | 45 |
-| clean_energy_thematic | 2 | 32 | ICLN | 52 | 46 |
-| commodities_broad | 3 | 50 | PDBC | 50 | 50 |
+| asia_dev_other | 3 | 50 | EWS | 46 | 46 |
+| china | 3 | 37 | FXI | 51 | 45 |
+| clean_energy_thematic | 2 | 32 | ICLN | 48 | 46 |
+| commodities_broad | 3 | 50 | PDBC | 49 | 50 |
 | consumer | 6 | 49 | XLP | 48 | 48 |
-| credit_bonds | 10 | 57 | FLOT | 51 | 48 |
-| developed_ex_us | 10 | 53 | EWC | 52 | 47 |
-| em_asia_other | 6 | 35 | EWT | 48 | 45 |
-| em_broad | 7 | 42 | VWO | 50 | 45 |
-| energy_oil | 5 | 48 | XLE | 48 | 54 |
+| credit_bonds | 10 | 57 | FLOT | 50 | 48 |
+| developed_ex_us | 10 | 53 | EWC | 50 | 47 |
+| em_asia_other | 6 | 35 | EWT | 46 | 45 |
+| em_broad | 7 | 42 | VWO | 48 | 45 |
+| energy_oil | 5 | 48 | XLE | 46 | 54 |
 | europe | 11 | 51 | EWU | 50 | 46 |
-| financials | 5 | 55 | XLF | 51 | 48 |
+| financials | 5 | 55 | XLF | 50 | 48 |
 | global_equity | 5 | 59 | ACWV | 50 | 48 |
 | gold_precious | 4 | 41 | GLD | 52 | 50 |
-| govt_bonds | 18 | 57 | SHY | 52 | 52 |
-| healthcare_biotech | 5 | 55 | XLV | 53 | 51 |
-| india | 2 | 49 | INDA | 52 | 43 |
+| govt_bonds | 18 | 57 | SHY | 54 | 52 |
+| healthcare_biotech | 5 | 55 | XLV | 54 | 51 |
+| india | 2 | 49 | INDA | 54 | 43 |
 | industrials_defense_infra | 9 | 45 | IGF | 46 | 47 |
 | japan | 2 | 51 | DXJ | 48 | 46 |
 | latam | 3 | 39 | EWW | 48 | 46 |
 | materials_mining_metals | 8 | 40 | XLB | 50 | 46 |
 | mena_gulf | 2 | 41 | UAE | 50 | 52 |
-| multi_asset_alt | 6 | 52 | AOM | 49 | 51 |
-| tech_ai_semis | 16 | 42 | QQQ | 50 | 46 |
-| us_factor_dividend | 15 | 60 | SCHD | 53 | 51 |
-| us_large_broad | 7 | 59 | RSP | 49 | 49 |
-| us_small_mid_value | 21 | 53 | IWD | 51 | 47 |
-| utilities_realestate | 6 | 50 | XLU | 49 | 50 |
+| multi_asset_alt | 6 | 52 | AOM | 50 | 51 |
+| tech_ai_semis | 16 | 41 | QQQ | 48 | 46 |
+| us_factor_dividend | 15 | 60 | SCHD | 54 | 51 |
+| us_large_broad | 7 | 59 | RSP | 48 | 49 |
+| us_small_mid_value | 21 | 53 | IWD | 50 | 47 |
+| utilities_realestate | 6 | 50 | XLU | 48 | 50 |
 
 ## News pillars (10 agents)
 
 Scores run from -2 (strong headwind) to +2 (strong tailwind) over the next 1 to 3 months. News is context: research shows its price effect fades within days.
 
-**J01 Global macro and central banks**: govt_bonds +0 (medium), credit_bonds -1 (medium), global_equity -1 (medium), us_large_broad -1 (medium), multi_asset_alt -1 (low), gold_precious +0 (medium)
+**J01 Global macro and central banks**: govt_bonds +1 (low), credit_bonds -1 (medium), global_equity -1 (medium), us_large_broad -1 (low), multi_asset_alt +0 (low), gold_precious +0 (medium)
 
-Risk-off this week. The defining macro theme is a global tightening cycle in response to the Middle East energy shock: the Fed held at 3.75-4.00% on 28 Oct with two hawkish dissents and markets price ~75-77% odds of a December hike after the October payroll beat (+165k, wages +0.4% m/m); the BoE hiked 8-1 to 4% on 5 Nov and projects CPI near 5% by mid-2027; the RBA reportedly hiked to 4.85% on 3 Nov (secondary sources only); the ECB (2.50%) and BoJ (1.25%) held at end-October but flagged December hikes. On top of that, the Democratic midterm sweep triggered an AI-led global equity rout (S&P 500 -4.4% on 5 Nov, VIX ~25.6), with havens bid. Partial offsets: Brent fell about 13% on the week on US-Iran de-escalation hopes, which lowers the inflation impulse, and divided government is read as fiscally restraining, which helps the long end. US activity data are strong (ISM manufacturing 55.5), so this is a rates-and-valuation risk-off, not a recession scare.
+Two common factors dominate. First, an AI-buildout and funding shock after the midterm data-centre backlash: SOX -12% on Nov 5, Asian bear markets, and stress concentrated in levered AI credit (Oracle, CoreWeave, neoclouds), while IG and CCC spreads are flat. Second, an Iran war-premium unwind: Jan-27 Brent fell 13% to about $98 because the midterm loss lowered escalation odds. That pulled breakevens and long yields down even as December Fed hike odds stayed near 75% (EFFR 3.88% after September's hike, so it is a hike, not a cut). Central banks are tightening together on energy pass-through (BoE 4%, RBA 4.85%, BoC 2.5%, ECB signalling December), so a sustained oil drop is the main relief valve, and a US strike decision (FGE window mid-November to mid-December) would reverse it. Nov 10 stacks October CPI, the 10y auction, Waller and Bowman, TSMC October sales and SoftBank results. The November payrolls report (Dec 4) comes before the Dec 9 FOMC, so the Dec 11 CR expiry cannot blind the Fed.
 
-- 2026-11-03 CNBC: [10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop](https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html)
-- 2026-11-05 CNBC: [10-year Treasury rises as investors exit tech stocks, look ahead to jobs data](https://www.cnbc.com/2026/11/05/treasury-yields-bonds-interest-rates.html)
-- 2026-11-04 U.S. Treasury: [Quarterly Refunding Statement of Assistant Secretary for Financial Markets](https://home.treasury.gov/news/press-releases/sb0678)
+- 2026-11-04 U.S. Treasury: [Quarterly Refunding Statement: $125bn refunding, sizes held 'for the next several quarters' ('at least' removed)](https://home.treasury.gov/news/press-releases/sb0678)
+- 2026-11-04 U.S. Treasury: [TBAC Report to the Secretary: coupon increases 'warranted later in FY27', long-end sizing debated](https://home.treasury.gov/news/press-releases/sb0679)
+- 2026-11-06 Federal Reserve Bank of Cleveland: [Inflation Nowcasting: October core CPI +0.21% m/m, headline +0.24% m/m](https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting)
 
-**J02 US equity market and earnings**: us_large_broad +0 (medium), us_small_mid_value +1 (low), us_factor_dividend +1 (low), consumer +0 (medium), financials +0 (medium)
+**J02 US equity market and earnings**: us_large_broad -1 (medium), us_small_mid_value +0 (low), us_factor_dividend +1 (medium), consumer +0 (medium), financials +0 (medium)
 
-Two forces dominated the week. First, the midterms gave Democrats the Senate (about 54 seats) and a projected House majority, which means gridlock with the White House from January and more oversight. Second, a violent AI and semiconductor de-rating on Nov 5: the S&P 500 fell 4.4%, the Nasdaq entered a correction and the VIX jumped more than 65% intraday, partly on fears of restrictions on data-center buildout. Fundamentals are strong. Q3 S&P 500 EPS growth is 31.4% blended with 84% beating, although the average beat is small, and the forward P/E has compressed to 17.7. Leadership rotated hard from growth to value, defensives and healthcare. Macro is hawkish: payrolls rose 165k, unemployment is 4.1%, ISM prices are 75.2 and oil is near $90-98, which keeps a December 9 Fed hike live (about 70% priced before the jobs report). October CPI and PPI next week are the key swing factor for multiples.
+One AI-capex/funding factor drove the week. The midterm data-centre backlash, Microsoft's Oracle/neocloud pullback and Oracle's expensive $20B raise produced the Nov 5 rout (S&P -4.4%, Nasdaq -5.5%, IWM -4.6%, HY +16bp). Fundamentals stayed strong: Q3 EPS +31.4%, Nvidia guided $108B, TSMC Q4 +14% q/q. So the cap-weighted drawdown reads as multiple compression and financing stress rather than demand collapse, and mean reversion is the base case. Leadership rotated hard into defensive, quality, dividend and equal-weight (all at records on Nov 4), which should be treated as one factor bet. The oil-premium unwind (Brent about $118 futures to about $98) helps consumers and inflation expectations but reverses on any Iran strike decision. The Fed is hiking, not cutting: a Dec 9 hike is about 75% priced and Oct CPI on Nov 10 (Cleveland core nowcast 0.21%) is the key swing factor.
 
 - 2026-11-06 FactSet Insight: [S&P 500 Earnings Season Update: November 6, 2026](https://insight.factset.com/sp-500-earnings-season-update-november-6-2026)
 - 2026-11-05 Yahoo Finance: [Stock market today: Dow plunges 1,800 points, Nasdaq enters correction in AI trade meltdown](https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html)
-- 2026-11-06 CNBC: [Stock market news for Nov. 6, 2026](https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html)
+- 2026-11-05 CNBC: [Chip stocks plunge after election, Qualcomm forecast; hyperscalers fall 2-4%](https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html)
 
-**J03 Technology, AI and semiconductors**: tech_ai_semis -1 (medium), us_large_broad -1 (medium)
+**J03 Technology, AI and semiconductors**: tech_ai_semis -1 (medium), us_large_broad -1 (low)
 
-The regime shifted this week from 'AI capex can only go up' to a political and financing-discipline test. Democrats' midterm sweep put data center restrictions on the agenda: moratorium calls, local ballot measures and Texas Governor-elect Hinojosa's call to halt data center work until protections are in place. That triggered a 12% one-day SOX drop and a Nasdaq correction. Microsoft's reported Oracle wind-down and neocloud consolidation add a second, demand-side signal: hyperscalers are rationing third-party capacity even as they keep 2026 capex at record levels (Alphabet about $195-205B, Meta $135-145B per late-October guidance). Reported fundamentals stay strong (AMD data center +97% and a $17B Q4 guide; TSMC guided Q4 to $52.3-54.3B in mid-October), so the hit is to multiples, not yet to earnings. Analysts disagree: BofA says it is a valuation reset, while Yorkville's Dan Ives now sees Big Tech capex growth peaking in 2027. A strong jobs print and about 70% odds of a December Fed hike work against long-duration tech valuations. Asia's chip-heavy markets were hit too: CNBC reported that the Nikkei and Taiwan's Taiex entered bear markets and the Kospi fell more than 6%.
+One AI-buildout factor drove the week: the midterm data-center backlash met existing AI-ROI and financing doubts (Microsoft's Oracle/neocloud pullback, Oracle's $20B raise, neocloud credit near distress), producing SOX -12% on Nov 5 and contagion across Korea, Taiwan, Japan, copper, merchant power, HY credit and small caps. Treat the resulting -1 scores across those buckets as one correlated bet, not independent views. Hard demand data (TSMC guide, Korea chip exports, AMD, Nvidia's guide, hyperscaler own capex) contradicts a demand collapse, so mean reversion is the base case unless the Nov 10-17 prints disappoint. Stress is on the funding side: watch CoreWeave, Nebius, Oracle spreads and Nvidia's $105B contingent guarantee on OpenAI leases. State and federal policy risk is mostly back-loaded (Congress Jan 3, Hinojosa Jan 19, ERCOT audit mid-December). Rates matter too: ~75% December hike odds against a 10y rally and soft core nowcast; Nov 10 stacks CPI, the 10y auction, TSMC sales and SoftBank.
 
-- 2026-11-05 Fox Business: [Stocks plunge as Dem midterm sweep fuels AI regulatory concerns](https://www.foxbusiness.com/markets/stocks-nov-5-2026)
 - 2026-11-05 CNBC: [Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'](https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html)
-- 2026-11-06 CNBC: [AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'](https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html)
+- 2026-11-05 MLQ.ai: [Democrats' data-center moratorium push gains momentum after midterms but Congress remains a long shot](https://mlq.ai/news/democrats-data-center-moratorium-push-gains-momentum-after-midterms-but-congress-remains-a-long-shot/)
+- 2026-11-04 TechCrunch: [After the midterms, a bigger clash over data centers could be coming](https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/)
 
-**J04 US and global sectors: healthcare, industrials and defense, utilities and real estate, clean energy**: healthcare_biotech +1 (low), industrials_defense_infra -1 (medium), utilities_realestate -1 (low), clean_energy_thematic +1 (medium)
+**J04 US and global sectors: healthcare, industrials and defense, utilities and real estate, clean energy**: healthcare_biotech +1 (medium), industrials_defense_infra -1 (medium), utilities_realestate -1 (medium), clean_energy_thematic -1 (medium)
 
-The Nov 3 midterms dominated the week. Democrats won both chambers and the Texas governorship, which reshuffled the sector trade on Nov 4. Hospitals, managed care, homebuilders, airlines and renewables rallied. Defense, drones and power or capex names linked to data centres sold off. Most analysts expect gridlock under a presidential veto, so many of these moves are sentiment-driven rather than based on enacted policy. The backlash against data centres is concrete, though: an existing Texas permit freeze, a governor-elect who backs a moratorium, and about 40 local ballot measures almost all rejecting data centres. That challenges the power-demand case behind utilities, IPPs and electrical infrastructure. Rates remain a headwind for rate-sensitive sectors: a strong October payrolls report pushed the odds of a Dec 9 Fed hike to about 78%, with the 30-year yield near 5.27%. The Iran war still moves oil and jet fuel, and hopes for peace talks helped transports early in the week.
+The Nov 3 Democratic sweep reshuffled sectors on Nov 4: managed care, hospitals, homebuilders, airlines and renewables rallied while defense, merchant power and data-centre capex names sold off. Most of the policy effect lands after the 1-3 month window (Congress seats Jan 3, Hinojosa Jan 19, Acton budget Mar 15); inside the window the binding items are the Dec 11 CR expiry (defense, ACA subsidies, PBM riders and clean-energy credits ride the same vehicle), the mid-December ERCOT data-centre audit, the Dec 4 Section 232 solar tariff and the Dec 9 FOMC. The utilities IPP leg and the industrials data-centre leg belong to the same AI-buildout factor that drove SOX -12% on Nov 5, so they should not be counted as independent negatives. Healthcare's strength overlaps the defensive/quality rotation (XLP, XLV, SPLV, SCHD ATHs on Nov 4). Rates remain the shared driver for utilities, REITs and clean energy: the 10y rallied to ~4.86% as oil fell, but Dec hike odds are ~70-78%, and Oct CPI on Nov 10 (Cleveland core nowcast 0.21%) is the key swing input. A US strike on Iran would reverse the oil-driven relief that helped airlines and rate-sensitive sectors.
 
 - 2026-11-04 Reuters (via Yahoo Finance): [Health insurers, hospitals rally after sweeping midterm win for Democrats](https://finance.yahoo.com/healthcare/articles/health-insurers-hospitals-rally-sweeping-150037226.html)
 - 2026-11-04 CNBC: [Every stock that's moving as a result of the election](https://www.cnbc.com/amp/2026/11/04/every-stock-thats-moving-as-a-result-of-the-election.html)
 - 2026-11-05 American Hospital Association News: [CMS finalizes rule to codify Medicare Drug Price Negotiation Program](https://www.aha.org/news/headline/2026-11-05-cms-finalizes-rule-codify-medicare-drug-price-negotiation-program)
 
-**J05 Europe and developed markets ex-US/Japan**: europe +0 (medium), developed_ex_us +0 (low), asia_dev_other -1 (low)
+**J05 Europe and developed markets ex-US (scorer pass)**: europe +0 (medium), developed_ex_us +0 (medium), asia_dev_other -1 (medium)
 
-The week turned on two US-driven shocks. First, the Democratic midterm sweep raised hopes for a US-Iran deal (Qatar is mediating), and Brent and TTF gas dropped sharply from their highs. That is the single biggest potential relief for Europe's energy-driven inflation (euro area HICP is at 4.0% with energy at +20.8%), but EU gas storage is only about 74% full and Qatari LNG remains under force majeure, so a breakdown in talks would quickly reverse the move. Second, the Nasdaq fell about 5.5% on 5 Nov on AI and antitrust repricing, and Europe and the other developed markets fell less because they hold less AI exposure. Central banks outside the US are hiking, not cutting: the BoE hiked to 4.0% (first rise since 2023), the RBA to 4.85% and the BoC to 2.5%, and the ECB held at 2.50% on 29 Oct with December live, so rate risk is a headwind for duration-sensitive sectors and for housing in Australia, the UK and Canada. A weaker dollar (sterling's trade-weighted index is at its highest since June 2016, and GBP/EUR is above 1.20) helps unhedged USD-based holders of European ETFs. European defence lost momentum after Rheinmetall's second guidance cut and the selloff on US defence-scrutiny worries.
+One AI-buildout shock (the US midterm data-centre backlash plus the Microsoft/Oracle/neocloud pullback, SOX -12% on 5 Nov) spread to Korea, Taiwan and Japan on 6 Nov. Europe, Canada and Australia were largely bystanders because of their low AI weight. Hard AI demand data (Korean chip exports +259%, TSMC Q4 guide) contradicts a demand collapse, so the Asian developed markets get -1, not -2, and the score can mean-revert with SOX. The second driver is the Iran war-premium unwind: Brent and TTF fell sharply, which relieves Europe's energy-led inflation (HICP 4.0%), but it depends on diplomacy and would reverse on a US strike decision. Central banks outside the US are hiking into slowing growth (BoE 4.0%, RBA 4.85%, BoC 2.5%, ECB December live), a headwind for rate-sensitive sectors and housing. Nov 9-10 is the key window: Taiwan short curbs and the Korea margin waiver start on 9 Nov, the EWY/EWS index switch happens on 9 Nov, and TSMC October sales, SoftBank results and US CPI land on 10 Nov.
 
 - 2026-11-04 Eurostat: [Euro area annual inflation up to 4.0% (flash estimate, October 2026)](https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap)
 - 2026-11-05 Bank of England: [Bank Rate increased to 4% - November 2026 Monetary Policy Summary and Minutes](https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026)
-- 2026-11-05 Trading and Investment News (citing ING, Oilprice.com): [European gas prices slide more than 15% from 4-year high on Iran deal hopes](https://www.tradingandinvestmentnews.co.uk/european-gas-prices-slide-more-than-15-from-a-4-year-high-on-iran-deal-hopes/)
+- 2026-11-06 The Private Banker (citing Bloomberg, Investing.com): [Stoxx 600 erases its weekly gain as tech rout hits Europe, but index still leads the S&P 500 this year](https://leprivatebanker.com/2026/11/06/stoxx-600-erases-its-weekly-gain-as-tech-rout-hits-europe-but-index-still-leads-the-sp-500-this-year/)
 
-**J06 Japan and China**: japan -1 (medium), china +0 (medium)
+**J06 Japan and China**: japan -1 (medium), china +1 (low)
 
-The week was dominated by a global AI/semiconductor selloff after the Democratic sweep of the US midterms, with markets pricing in tighter AI regulation and slower data-centre spending. Japan was hit hardest: the Nikkei, which is heavy in chip-equipment and SoftBank, entered a bear market and had its worst week in more than six years, while the broader Topix held up better until Friday. Hong Kong was the mirror image, with funds rotating out of AI hardware into discounted Chinese internet platforms. Hang Seng Tech rose about 8.6% on the week (single-source figure). Policy is diverging: the BoJ is set to hike to 1.5% on Dec 18, which supports the yen (USD/JPY around 157.5-158.5) and Japanese banks, while China keeps policy on hold despite a sub-50 official PMI. Lower oil on Iran peace hopes helps both energy importers. The main near-term binary risk is whether Beijing formally extends its rare-earth control suspension before it lapses on Nov 10.
+One AI-buildout shock dominated: the post-midterm data-centre backlash and the Microsoft/Oracle/neocloud pullback drove SOX -12% on Nov 5, and Japan's AI-hardware names (SoftBank, Advantest, TEL, Kioxia) took the hit as high-beta proxies, pushing the Nikkei into a bear market. Japan's damage is index-specific: the price-weighted Nikkei fell far more than Topix/MSCI Japan, and domestic and real-estate names gained on lower oil. China/HK is not a hedge against that factor: HK tech rallied on Nov 5 and then fell with the US on Nov 6, while policy support (swap facility, relending cut, State Council) limits drawdowns without driving a durable rally. The trade truce appears to be rolling forward (USTR maritime-301 proposal to Jan 9, 2027; Xi-Trump at APEC Shenzhen Nov 18-19), but MOFCOM has not confirmed the rare-earth suspension beyond Nov 10. Nov 10 (SoftBank results, TSMC October sales, US CPI, China rare-earth date) and Nov 17-19 (Nvidia, APEC, Tencent, Alibaba) are the decisive dates for both buckets. The BoJ's likely Dec 18 hike to 1.5% supports the yen and banks but adds pressure on a falling equity market.
 
-- 2026-11-02 Reuters (via AOL): [Analysis-BOJ locks in December hike, but neutral-rate uncertainty muddies outlook](https://www.aol.com/articles/analysis-boj-locks-december-hike-053516000.html)
-- 2026-11-05 FXStreet (via TMGM): [The Yen rises on BoJ minutes, with Ueda and US NFP on the Friday docket](https://www.tmgm.com/en/analysis/market-news/article/the-yen-rises-on-boj-minutes-with-ueda-and-us-nfp-on-the-friday-docket-202611052245)
-- 2026-11-05 AP (via WTOP): [Toyota raises profit projection for the year as sales hold up](https://wtop.com/world/2026/11/toyota-raises-profit-projection-for-the-year-as-sales-hold-up)
+- 2026-11-06 IBTimes Australia: [Japan's Nikkei enters bear market as AI stock selloff deepens](https://www.ibtimes.com.au/japan-nikkei-bear-market-ai-stock-selloff-1878028)
+- 2026-11-06 Reuters (via Business Recorder): [Japan's Nikkei slumps more than 5% as market rout deepens on AI worries](https://www.brecorder.com/news/40447732/japans-nikkei-slumps-more-than-5-as-market-rout-deepens-on-ai-worries)
+- 2026-11-06 Bloomberg: [Japan's Nikkei Breaks Below Key 60,000 Level on AI Selloff](https://www.bloomberg.com/news/articles/2026-11-06/japan-s-nikkei-breaks-below-key-60-000-level-on-ai-selloff)
 
 **J07 Emerging markets excluding China and the Gulf**: india +1 (medium), em_asia_other -1 (medium), latam -1 (medium), em_broad -1 (medium)
 
-The week was dominated by two US-driven shocks that cut opposite ways for EM. First, the Democratic midterm sweep triggered a violent AI and semiconductor sell-off on fears of US data-center restrictions; Korea and Taiwan saw circuit breakers, record foreign outflows, and weaker won and NT dollar, even though Korea's October chip exports hit records. Second, the same result raised hopes of a US-Iran diplomatic exit, so Brent fell from near $118 to about $93 before rebounding to around $98 as Hormuz attacks continued; this favoured oil importers, and India drew strong FII inflows. Elsewhere, Brazil paused at 13.75% with rising inflation projections, Banxico cut to 6.25% despite peso weakness, and Turkey's inflation surprise pushed the lira past 50/USD. The key swing factors for the next 1-3 months are whether US data-center moratoria actually materialise and whether the Iran talks hold. Caveat: in-window coverage of ASEAN, South Africa and Argentina was thin, and the search budget ran out before they could be covered.
+Two US-driven shocks pulled EM in opposite directions. First, the midterm data-centre backlash and the Microsoft/Oracle/neocloud pullback set off the Nov 5 SOX -12% crash, which hit Korea (circuit breaker) and Taiwan (bear market, stabilisation fund) hardest even though their export data are at records. Second, the political read that the Iran war cost Republicans the election helped knock Brent from about $118 to about $94-99, which favoured importers: India had its best week in six years on record FII buying, and Turkey rallied. This was rotation within EM, not new money, and it is likely to reverse together if semis rebound or a US strike lifts oil. Brazil carries its own post-election fiscal premium, and both Copom and Banxico have stopped easing. Nov 10-12 (TSMC October sales, US CPI, India CPI, the CBRT inflation report) and the FGE mid-November to mid-December Iran strike window are the swing factors.
 
-- 2026-11-07 StockPil (NSE provisional data): [FII vs DII this week (2-6 Nov): FIIs net buyers of Rs 45,960 crore](https://stockpil.com/fii-vs-dii-this-week-2026-11-06)
-- 2026-11-02 Trading Economics (HSBC/S&P Global PMI): [India Manufacturing Growth Revised Down in October](https://tradingeconomics.com/india/manufacturing-pmi/news/597132)
-- 2026-11-06 Gulf News: [Trump Weighs Iran Strikes or Deal After Midterm Loss as Oil Prices Drop to $93](https://gulfnews.com/world/mena/trump-weighs-iran-strikes-or-deal-after-midterm-loss-as-vance-urges-agreement-qatar-mediates-brent-oil-falls-to-93-1.500736556)
+- 2026-11-06 StockPil (NSE provisional data): [FII vs DII this week (2-6 Nov): FIIs net buyers of Rs 45,960 crore](https://stockpil.com/fii-vs-dii-this-week-2026-11-06)
+- 2026-11-06 Trading Economics: [India stock market: Sensex best week in six years, record foreign buying on Nov 5](https://tradingeconomics.com/india/stock-market)
+- 2026-11-06 Trading Economics: [Indian rupee at strongest since May near 94.1 per dollar](https://tradingeconomics.com/india/currency)
 
 **J08 Middle East, Gulf and geopolitics**: mena_gulf +0 (medium), global_equity +0 (medium), energy_oil -1 (medium)
 
-The US-Iran war (since February) and the Strait of Hormuz remain the dominant driver for Gulf assets and oil. The Democratic sweep in the Nov 3 midterms, which Trump partly blamed on the war, shifted markets toward pricing de-escalation: Brent dropped about 15% on the week and Gulf equities rallied, led by Dubai and Qatar. Qatari mediation is active but Iran demands an end to the US naval blockade, sanctions relief and frozen funds before reopening Hormuz, and tanker attacks continued daily through Nov 6. Saudi public finances are deteriorating (Q3 oil revenue -23% y/y, 2027 deficit seen at 3.6% of GDP) because export volumes, not prices, are constrained. Key swing factors next: a deal or renewed US strikes, the OPEC+ capacity review and Nov 29 2027-quota meeting, and the MSCI November review.
+The US-Iran war and Hormuz remain the dominant driver for Gulf assets and oil, but US domestic politics now sets the direction: after the Nov 3 Democratic sweep, Vance and Trump tied the loss to the war and Brent lost about 13-15% on the week as markets priced a Qatar-mediated deal. Price is diverging from the physical war: at least 11 ships were attacked around Hormuz in the week to Nov 6 and the US resumed minor strikes on Qeshm, while Iran still demands an end to the blockade, sanctions relief and frozen funds before reopening the strait. Physical oil signals (Dubai contango, JPM 1.4 mb/d surplus, Aramco OSP cut) argue the premium bleeds out slowly absent escalation. The oil-short/importer-long legs (energy_oil, mena_gulf vs india, consumer, govt_bonds) are one paired position that reverses on a single strike decision; FGE puts that window at mid-Nov to mid-Dec. Data hygiene: $118 is the Oct 30 Brent futures settle and $135 the Oct 2 Dated spot print; the Russia-oil tariff waiver is open-ended and revocable at will, not a Dec 15 review.
 
-- 2026-11-05 Business Recorder (Reuters): [Gulf stocks gain as investors assess US midterm fallout](https://www.brecorder.com/news/40447433/gulf-stocks-gain-as-investors-assess-us-midterm-fallout)
 - 2026-11-05 Zawya (Reuters): [Mideast Stocks: Most Gulf equities gain on easing Iran fears after US midterms, earnings](https://www.zawya.com/en/capital-markets/mideast-stocks-most-gulf-equities-gain-on-easing-iran-fears-after-us-midterms-earnings-2022479)
+- 2026-11-05 Business Recorder (Reuters): [Gulf stocks gain as investors assess US midterm fallout](https://www.brecorder.com/news/40447433/gulf-stocks-gain-as-investors-assess-us-midterm-fallout)
 - 2026-11-03 Arab News: [Saudi Arabia posts $22.38bn budget deficit in Q3](https://www.arabnews.com/business/saudi-arabia-posts-2238bn-budget-deficit-in-q3-3009626)
 
 **J09 Commodities**: energy_oil -1 (medium), materials_mining_metals +0 (medium), gold_precious +0 (medium), commodities_broad -1 (medium)
 
-The dominant driver this week was the US midterm result: Democrats took both chambers, the White House blamed the Iran war and gasoline prices, and markets priced faster de-escalation, knocking Brent from ~$106 on Monday to ~$93-95 midweek before a partial rebound to ~$98. Geopolitical risk is not resolved (Gulf ship incidents continue, Eurasia Group sees 60% odds of renewed US strikes), and physical product markets remain very tight, so oil is volatile around a shrinking risk premium. The Fed is in a hiking cycle (3.75-4.00%, ~66% odds of a December hike), and Friday's strong payrolls reinforced that, a headwind for gold and for non-yielding commodities broadly, partly offset by a softer dollar earlier in the week. Copper shows a split between weaker AI/data-centre demand sentiment and record-tight Chinese physical supply, with tariff-driven flows into the US distorting regional stocks. Grains are heavy on record US soybean supply and slower Chinese buying; lithium remains in a supply-driven slump.
+Two common factors drove commodities this week. First, the US midterm sweep unwound the Iran war premium: the White House blamed the war for the loss, Qatar-mediated talks advanced, and Brent fell ~13% on a like-for-like contract to ~$98, with Aramco OSP cuts and Dubai contango confirming a looser physical market. That move is reversible in one decision: minor US strikes resumed on Nov 6 and FGE sees a limited strike window from mid-November to mid-December. Second, the AI/data-centre selloff hit copper and copper miners (17-week low, FCX -7.5% on Nov 5), so materials now trade partly as an AI-capex proxy while Chinese physical copper stays record-tight. Gold behaves as a real-rate asset: it rose on the lower dollar and yields, then fell on strong payrolls and ~75% December hike odds, with central-bank buying as a floor. Data caveats: the $118 Brent figure is the Oct 30 expiring futures settle and $135 is the Oct 2 Dated spot print; continuous BZ=F overstates the week's drop by ~$4.2 because of the Dec-to-Jan roll; the Nov 10 rare-earth cliff looks defused by a truce roll-forward (USTR proposal to Jan 9, 2027) but MOFCOM has not confirmed.
 
-- 2026-11-01 OPEC (press release): [Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman reaffirm commitment to market stability](https://www.opec.org/pr-detail/2033620-1-november-2026.html)
-- 2026-11-02 China Daily HK / Xinhua: [OPEC+ to maintain oil output for 3rd consecutive month in December](https://www.chinadailyhk.com/article/642088)
-- 2026-11-04 Oilprice.com: [Oil Crashes 9% as Trump and Vance Blame Iran War for Midterm Rout](https://oilprice.com/Latest-Energy-News/World-News/Oil-Crashes-9-as-Trump-and-Vance-Blame-Iran-War-for-Midterm-Rout.html)
+- 2026-11-01 Reuters via GV Wire: [OPEC keeps December oil output targets steady ahead of tougher call for 2027](https://gvwire.com/2026/11/01/opec-keeps-december-oil-output-targets-steady-ahead-of-tougher-call-for-2027/)
+- 2026-11-04 OilPrice.com: [Oil Crashes 9% as Trump and Vance Blame Iran War for Midterm Rout](https://oilprice.com/Latest-Energy-News/World-News/Oil-Crashes-9-as-Trump-and-Vance-Blame-Iran-War-for-Midterm-Rout.html)
+- 2026-11-04 OilPrice.com: [Brent Falls to $100 as Traders Bet on a US-Iran Deal (JPMorgan: surplus 1.4 mb/d in October)](https://oilprice.com/Latest-Energy-News/World-News/Brent-Falls-to-100-as-Traders-Bet-on-a-US-Iran-Deal.html)
 
-**J10 ETF industry and fund-level events**: us_large_broad +1 (high), global_equity +1 (medium), developed_ex_us +1 (medium), em_broad +1 (medium), latam +0 (low), tech_ai_semis +1 (medium), financials +1 (low), healthcare_biotech +1 (medium), energy_oil +1 (medium), materials_mining_metals +0 (low), industrials_defense_infra -1 (medium), consumer -1 (medium), us_factor_dividend +1 (medium), govt_bonds +1 (high), credit_bonds +1 (high), gold_precious +1 (medium), commodities_broad +1 (medium)
+**J10 ETF industry and fund-level events**: us_large_broad +1 (medium), global_equity +1 (medium), developed_ex_us +0 (medium), em_broad +0 (medium), em_asia_other -1 (medium), asia_dev_other -1 (medium), india +1 (medium), china +0 (low), latam +0 (low), japan +0 (low), tech_ai_semis +0 (medium), financials +0 (low), healthcare_biotech +1 (medium), energy_oil +0 (medium), materials_mining_metals +0 (low), industrials_defense_infra -1 (medium), consumer -1 (medium), us_factor_dividend +1 (medium), us_small_mid_value +0 (low), utilities_realestate +0 (low), clean_energy_thematic +0 (low), govt_bonds +1 (high), credit_bonds +1 (medium), gold_precious +1 (medium), commodities_broad +1 (low), multi_asset_alt +0 (low)
 
-Scores in this pillar are flow-based (+1 for inflows, -1 for outflows, 0 for mixed) from the October monthly reports and the Oct 26-30 European weekly data. They are not fundamental views. US-listed ETFs took $211bn in October (State Street; $204bn per TD/Bloomberg), the second-largest month ever, with a record $74bn into bonds and 80% of equity flows going to US exposures as non-US equities sold off. Sector flows went to tech and energy, while industrials, consumer, utilities and real estate bled. Gold is split by region: US outflows, but record global holdings driven by Europe and Asia, which is supportive for IGLN. No closure, merger, fee or index change was found for VWRA, SSAC/ACWD, IWDA, CSPX, VUAA, CNDX, EIMI, IGLN or AGGU in the window. The most recent fee event found for these funds is Vanguard's cut of the FTSE All-World UCITS ETF OCF from 0.19% to 0.14%, effective 2026-07-28. Gaps: the shared web-search budget ran out mid-run, so the 2026 scan of US universe tickers for closures, mergers, ticker changes and fee changes is incomplete. Utilities/real estate, clean energy, small/mid value, multi-asset/alt, Japan and China had only one flow source or ambiguous categories and are left unscored; see the digest.
+Scores are flow-based and calibrated: October ETF flows (State Street, TD Securities, WGC, Trackinsight) were strong almost everywhere, but they predate the Nov 5 AI/semis shock and the oil war-premium unwind, so late-cycle chasing (energy, leveraged semis) is neutralised rather than scored +1. In-window market-level flows show a reallocation inside EM: record foreign selling in Taiwan and Korea concentrated in memory names, and a sharp FPI return to India. Bond ETFs took a record $74bn, concentrated in short/aggregate government, IG and munis; credit flow support is intact but HY spreads widened 16bp on Nov 5. Fund-level events are mechanical (EWY/EWS capped-index switch Nov 9, EWG/EWM Dec 1) or slow-burn (MSCI Indonesia standalone consultation); no closure, merger or fee hike was found for held UCITS funds or for KMLM, DBMF, AOM, MUB, MBB, HACK, EIDO. MSCI November review results (expected Nov 11) remain unverified.
 
 - 2026-10-31 State Street Investment Management: [US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)](https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf)
 - 2026-11-03 ETF Express: [Records broken in October's US ETF inflows: State Street Investment Management](https://etfexpress.com/2026/11/03/records-broken-in-octobers-us-etf-inflows-state-street-investment-management/)
@@ -249,44 +249,70 @@ Positive intensity means risk-off. Mapped to buckets by a fixed sensitivity tabl
 
 | Pillar | Target | Issue |
 |---|---|---|
-| J03 | XLK, QQQ, SMH, SOXX (tech-heavy and semiconductor ETFs) | Concentration risk has materialised. The risk sits in a single factor: AI data center capex now has political and regulatory exposure after the midterms. On Nov 5 the SOX fell more than 12% and the Magnificent Seven lost more than $1T (Nvidia alone more than $440B); XLK fell 8% on the week, its worst since April 2025. The Magnificent Seven were about 32-35% of the S&P 500 in mid/late 2026 (FinanceBuzz; secondary source). Note that index weights probably fell this week because the mega-caps dropped most, so this flag reflects concentrated, correlated drawdown risk, not a new high in weights. ([source](https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html)) |
-| J03 | SMH, SOXX (semiconductor ETFs) | Volatility regime break: SOX fell more than 12% in one session (Nov 5), then rose 4.2% on Nov 6. Expect wide intraday moves and possible bid-ask widening in leveraged semiconductor products around Nvidia's Nov 17 earnings. ([source](https://www.foxbusiness.com/markets/stocks-nov-5-2026)) |
-| J03 | us_large_broad (cap-weighted S&P 500 / Nasdaq-100 trackers) | Index-level concentration: the Magnificent Seven are about a third of the S&P 500 (secondary source), so 'broad' US large-cap ETFs carry a large implicit AI/semis bet. ([source](https://financebuzz.com/news/magnificent-seven-index-fund-concentration)) |
-| J05 | European defence ETFs (industrials_defense_infra / europe) | Holding-level, not fund-level: Rheinmetall, a top weight in most European defence ETFs, cut its 2026 guidance for the second time and fell more than 17% on 5 Nov (down 48% YTD), and BAE, Leonardo and Saab also fell. Check each fund's concentration. ([source](https://www.euronews.com/2026/11/05/rheinmetall-shares-plunge-more-than-17-after-profit-warning-over-order-delays)) |
-| J06 | china | China's suspension of its October 2025 rare-earth export controls legally lapses on 2026-11-10 unless Beijing publishes an extension. The US says the truce runs to 2027-01-10, but there is no Chinese notice yet. Check holdings of China and HK tech ETFs and ETFs exposed to US chip supply chains for headline risk. ([source](https://www.fool.com/investing/2026/11/05/china-rare-earth-export-pause-usar-mp-materials/)) |
-| J06 | japan | Not fund-specific: Nikkei-225-tracking ETFs carry a much larger weight in AI/chip names (Advantest, Tokyo Electron, SoftBank Group) than Topix trackers. Index choice materially changed returns this week, when the Nikkei fell about 9% versus a smaller Topix decline. ([source](https://www.brecorder.com/news/40447732/japans-nikkei-slumps-more-than-5-as-market-rout-deepens-on-ai-worries)) |
-| J07 | EWT / Taiwan equity ETFs | TAIEX fell up to 9% intraday on Nov 6 and Taipei ordered the FSC to stabilise markets (Taipei Times reports the NT$500bn National Stabilization Fund was authorised). Possible trading-measure changes and wide NAV premium/discount for US-listed Taiwan ETFs; record US$28bn October foreign outflow. ([source](https://www.taipeitimes.com/News/biz/archives/2026/11/07/2003867287)) |
-| J07 | EWY / Korea equity ETFs | KOSPI circuit breaker and sell-sidecar triggered on Nov 6 (intraday low -8.78%). There is a risk of NAV/price dislocation for US-listed Korea ETFs, and high concentration in Samsung and SK hynix (-6.35% and -10.44% that day). ([source](https://www.koreaherald.com/article/10928857)) |
-| J07 | TUR / Turkey ETFs | The lira hit a record low past 50/USD after an October CPI upside surprise; currency-translation losses for USD-based holders. ([source](https://shafaq.com/en/Economy/Turkish-lira-breaches-50-per-dollar-to-record-low)) |
-| J08 | KSA, UAE, QAT | Active regional war: daily tanker attacks in Hormuz, a tanker reportedly hit off Qatar, drones intercepted over Riyadh and Mecca (Nov 6); Iran's supreme leader reportedly ordered responses 'without geographical limitations'. Direct physical risk to Gulf holdings and possible market disruption. ([source](https://www.aljazeera.com/amp/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran)) |
-| J08 | QAT | QatarEnergy LNG force majeure has been extended month by month (through at least November per late-September reports); Ras Laffan export capacity reportedly cut ~17% by missile strikes, repairs possibly 3-5 years. Background, outside window. ([source](https://thenationalnews.com/business/energy/2026/09/28/qatar-extends-lng-force-majeure-as-hormuz-disruption-threatens-winter-supply)) |
-| J08 | KSA | Aramco (large KSA weight) keeps its performance-linked dividend suspended; Saudi fiscal deficit widening and Q3 oil revenue -23% y/y. ([source](https://www.arabnews.com/business/saudi-arabia-posts-2238bn-budget-deficit-in-q3-3009626)) |
-| J08 | USO, XOP, OIH, XLE, VDE | Extreme two-way geopolitical gap risk in crude: Brent -9% in one session (Nov 4), ~-15% on the week, and a reported $6 flash crash; a US-Iran deal could remove a large war premium while renewed strikes could reverse it. USO is most exposed via front-month futures. ([source](https://oilprice.com/Energy/Energy-General/The-Iran-War-Isnt-Over-but-Oil-Traders-Are-Already-Pricing-In-Peace.html)) |
-| J08 | INDA, EPI, TUR | US Treasury issued new sanctions on India- and Turkey-based firms and individuals for ties to Iran (Nov 4) and warned of more; listed-holding exposure not confirmed, likely limited. ([source](https://www.thestar.com.my/news/world/2026/11/05/us-slaps-sanctions-on-indian-turkish-firms-and-people-for-aiding-iran)) |
-| J08 | INDA, EPI, TUR, MCHI, FXI | Russia sanctions: 100% tariffs on top buyers of Russian oil under the Graham Sanctioning Russia and Iran Act were waived on Oct 16 pending a ~60-day review; reinstatement would hit the largest buyers of Russian energy. ([source](https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/)) |
-| J09 | copper futures ETFs (e.g. CPER) / materials_mining_metals | Possible US tariff on refined copper imports is pulling metal into the US and draining stocks elsewhere; COMEX vs LME/SHFE basis and roll yield may diverge sharply from global copper fundamentals. Not a fund-specific event; monitor tracking. ([source](https://ua.news/en/dovkolo-svitu/tsina-midi-na-lme-priamuie-do-naigirshogo-tizhnia-z-bereznia-asharq-al-awsat)) |
-| J10 | VWRA | Fee cut, a favourable change rather than a risk: Vanguard FTSE All-World UCITS ETF OCF cut from 0.19% to 0.14%, effective 2026-07-28 (announced 2026-07-21). The cut applies at fund level, so it covers the VWRA share class. ([source](https://rankiapro.com/en/news/vanguard-cuts-25-commission-best-selling-global-etf-europe/)) |
-| J10 | US universe tickers (all) | Scan incomplete: the shared web-search budget was exhausted before targeted 2026 closure, merger, ticker-change and fee-change searches for universe tickers could run. The searches that did run turned up no such event for any universe ticker; the liquidations they found (MEMY, the Tidal real-estate ETFs, the T-REX 2X funds AFRU/TEUP/ASUP/SBTU, Themes and Defiance funds) are all outside the universe. Re-run this check before relying on the absence of flags. ([source](https://www.sec.gov/Archives/edgar/data/0001771146/000177114626002186/etfof-supplementxtuttlecap.htm)) |
-| J10 | SPY | Not a fund-level event, recorded for context: SPY had the largest passive equity outflow in October (-$6.9bn) while VOO (+$23.7bn) and SPYM (+$10.1bn) led inflows, a continuing fee-driven rotation. No change to the fund. ([source](https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895)) |
-| J10 | GLD | Not a fund-level event, recorded for context: GLD lost $1.8bn in October while GLDM gained $905m, so US gold ETF flows were net -$0.7bn against global gold ETF inflows of +$2.7bn. No change to the fund. ([source](https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895)) |
+| J01 | govt_bonds | Treasury removed 'at least' from its coupon-size guidance, and TBAC flags increases in 2H FY27 plus a $2.14tn FY28-29 funding gap. This is term-premium risk for long duration (TLT/long-end) more than for the belly. ([source](https://home.treasury.gov/news/press-releases/sb0678)) |
+| J01 | credit_bonds | AI-linked issuers are paying high-yield-like concessions (Oracle 7-8.65% coupons at Baa2 negative/BBB-; CoreWeave bonds reportedly above 17%). CoreWeave (date unconfirmed, around Nov 10) and Nebius (Nov 12) earnings are near-term spread catalysts for tech-heavy IG/HY ETFs. ([source](https://www.sec.gov/Archives/edgar/data/1341439/000119312526443918/d87441dfwp.htm)) |
+| J01 | govt_bonds | Data integrity: December Fed pricing is about 75% for a 25bp HIKE, not a cut (EFFR 3.88% since Sep 17). Brent '$118' is the Oct 30 expiring futures settle and '$135' is the Oct 2 Dated spot print. Continuous BZ=F overstates the weekly drop by about $4.2 because of the contract roll, so use BZF27. ([source](https://fred.stlouisfed.org/series/DFF)) |
+| J01 | multi_asset_alt | No fund-level event found for KMLM, DBMF, AOM, MUB or MBB (EDGAR scan). Their early-November volume spikes remain unexplained, possibly tax-loss harvesting (unverified). ([source](https://kraneshares.com/kmlm/)) |
+| J02 | BIZD / BDC holdings (BXSL) | BXSL declared $0.60 for the March 2027 record date vs a $0.77 run-rate (about -22%), with Q4 only 88% NII-covered. OBDC's base dividend is down to $0.31 from $0.37. BDC income ETF yields likely reset lower. ([source](https://www.sec.gov/Archives/edgar/data/1736035/000121390026115721/ea0310494-01_ex991.htm)) |
+| J02 | us_large_broad (SPY/QQQ/VOO) | Concentration risk: cap-weighted indices carry the AI-capex factor (QQQ -6.5%, VOO -4.4% on Nov 5) while equal-weight RSP set a record. No fund event, but prefer equal-weight within the bucket. ([source](https://finance.yahoo.com/markets/stocks/articles/ai-selloff-deepens-chip-etfs-025227411.html)) |
+| J03 | XLK, QQQ, SMH, SOXX | Single-factor concentration has materialised: SOX/SMH/SOXX ~-12% on Nov 5 (worst since 2020), SOXX ~40% and SMH ~33% below highs; XLK -8% on the week. Expect high volatility into Nvidia (Nov 17). ([source](https://finance.yahoo.com/markets/stocks/articles/ai-selloff-deepens-chip-etfs-025227411.html)) |
+| J03 | SOXL and other leveraged semiconductor ETFs | SOXL fell ~73% from Oct 1 to Nov 5 while Korean retail bought a net US$4.28B; daily-reset leveraged products carry severe path-dependence and possible spread widening in this regime. ([source](https://en.sedaily.com/finance/2026/11/07/korean-retail-investors-pile-into-soxl-as-chip-stocks-crash)) |
+| J03 | us_large_broad (cap-weighted S&P 500 / Nasdaq-100 trackers) | Magnificent Seven ~a third of the S&P 500 (secondary source), so broad cap-weighted ETFs carry a large implicit AI bet; equal-weight (RSP) behaved differently (record on Nov 4). ([source](https://financebuzz.com/news/magnificent-seven-index-fund-concentration)) |
+| J03 | tech_ai_semis (AI infrastructure credit: CoreWeave, Oracle, Nebius) | Neocloud/Oracle credit stress: CoreWeave 2031 bonds ~950bp and reportedly >17% yields, Oracle 7-8.65% new-issue coupons at BBB-/Baa2 negative, Nebius on a 364-day facility. A miss on Nov 10-12 could hit HY/convert holders and AI-infrastructure equities together. ([source](https://exencialrp.substack.com/p/jp-morgan-sees-supply-fear-not-solvency)) |
+| J03 | HACK, CIBR | No fund-level event found (EDGAR/issuer pages), but heavy volume and crowded holdings after earnings de-ratings (Fortinet -31% in a week); YTD flows still positive, so redemption risk is residual. ([source](https://www.etfcentral.com/compare-etfs/HACK-vs-CIBR)) |
+| J03 | EWY (index methodology, related to semis exposure) | iShares moves EWY to MSCI 25/50 Daily 25 Capped index around Nov 9 (group cap trims Samsung weight); mechanical, not a switch reason. ([source](https://www.sec.gov/Archives/edgar/data/930667/000119312526430564/d108274d497.htm)) |
+| J04 | XLU / utilities ETFs with VST and CEG weight | Merchant IPP holdings face Texas moratorium policy risk (KeyBanc downgraded VST to Sector Weight); not a fund event but a concentration risk inside broad utility ETFs. ([source](https://www.investing.com/news/stock-market-news/vistra-plunges-135-as-texas-election-rattles-ai-power-trade-keybanc-downgrades-5000811)) |
+| J04 | TAN / ICLN | Section 232 15% tariff plus minimum import prices on polysilicon-containing solar products take effect Dec 4, 2026, raising costs for installer and importer holdings (positive only for domestic makers like FSLR). ([source](https://mgrid.org/2026/08/08/section-232-polysilicon-tariff-15-percent-38-cents-watt-solar-panel-price-floor/)) |
+| J04 | ITA / XAR / PPA (defense ETFs) | CR expires Dec 11 with 31.5-50% shutdown odds; a full-year CR bans new starts and delays contract awards for platform/shipbuilding holdings. ([source](https://breakingdefense.com/2026/11/republicans-have-a-ticking-clock-what-can-they-get-done-on-defense/)) |
+| J05 | EWY, EWS (asia_dev_other) | Index change: iShares moves EWY (Korea) and EWS (Singapore) to MSCI 25/50 Daily 25 Capped indexes on or around 9 Nov, trimming any group entity above 25% back to 22.5% between rebalances. Expect mechanical trims to the Samsung group and some tracking difference against older benchmarks. ([source](https://www.sec.gov/Archives/edgar/data/930667/000119312526430564/d108274d497.htm)) |
+| J05 | EWG (europe) | Index change: EWG (Germany) moves to an MSCI 25/50 index on or around 1 Dec 2026, per the same iShares supplement. ([source](https://www.sec.gov/Archives/edgar/data/930667/000119312526430564/d108274d497.htm)) |
+| J05 | Taiwan ETFs (EWT) / asia_dev_other | Market-structure change: from 9 Nov Taiwan caps intraday short sales of borrowed shares at 3% of the 30-day average daily volume (from 30%) and raises the short-sale margin to 130%. The stabilisation fund is authorised to buy. This can distort hedging and creation/redemption costs and cause NAV/price gaps. ([source](https://theedgemalaysia.com/node/824904)) |
+| J05 | EWY (asia_dev_other) | Korea is at a Level-1 circuit breaker (the 11th of 2026) and the US-listed ETF priced the move a day before the home market (EWY -13.46% on 5 Nov). EWY was at -0.09% to NAV on 6 Nov, so there is no discount now, but expect large overnight timing gaps. ([source](https://www.ishares.com/us/products/239681/ishares-msci-south-korea-capped-etf)) |
+| J05 | European defence ETFs (europe / industrials_defense_infra) | Holding-level: Rheinmetall, a top weight, cut its 2026 guidance for the second time and fell more than 17% on 5 Nov. Check each fund's concentration. ([source](https://www.euronews.com/2026/11/05/rheinmetall-shares-plunge-more-than-17-after-profit-warning-over-order-delays)) |
+| J06 | china | China's suspension of its October 2025 rare-earth export controls legally lapses Nov 10 unless Beijing publishes an extension. US-side signals (Bessent; USTR proposal to extend the Section 301 maritime suspension to 2027-01-09) point to a roll-forward, but no MOFCOM notice was found. Headline risk for China/HK tech ETFs and rare-earth ETFs (MP fell about 15% on the week as the scarcity premium unwound). ([source](https://www.federalregister.gov/documents/2026/10/26/2026-21755/request-for-comments-on-further-suspension-of-section-301-action-chinas-targeting-of-the-maritime)) |
+| J06 | china | Fund-level: KraneShares liquidated seven funds on 2026-10-29, including the KraneShares China Alpha Index ETF and the 2x Long BABA/JD/BIDU/PDD daily ETFs. KWEB and KMLM are not affected; check that no held China product is on the list. ([source](https://www.sec.gov/Archives/edgar/data/1547576/000182912626010998/kraneshares_497.htm)) |
+| J06 | japan | Index choice: Nikkei-225 trackers carry much heavier AI/chip and SoftBank weights than Topix or MSCI Japan trackers; the Nikkei fell more than 9% on the week versus a smaller Topix decline, and SoftBank results (Nov 10, CDS near a 4-year high) are a concentrated single-name risk for Nikkei ETFs. ([source](https://www.ibtimes.com.au/japan-nikkei-bear-market-ai-stock-selloff-1878028)) |
+| J07 | EWY | Index change: iShares moves EWY to the MSCI Korea 25/50 Daily 25 Capped index on or around 2026-11-09, so any group entity above 25% is trimmed to 22.5% between rebalances. This is mechanical trimming of Samsung group weight and causes rebalance trades during a volatile market. The ETF priced the Nov 5 US move ahead of the KOSPI (EWY -13.46% that day), but it was at -0.09% to NAV on Nov 6, with no stress discount. ([source](https://www.sec.gov/Archives/edgar/data/930667/000119312526430564/d108274d497.htm)) |
+| J07 | EWT | Taiwan market intervention: the NT$500bn stabilisation fund is authorised, short-sale limits are cut to 3% of volume and short margin raised to 130% from Nov 9, and the TAIEX fell as much as 9% intraday on Nov 6. Expect timing gaps between the US-listed ETF and the home market, and wider premiums or discounts. ([source](https://focustaiwan.tw/business/202611060020)) |
+| J07 | EIDO | MSCI consultation (Oct 15) on reclassifying Indonesia from Emerging to Standalone status. MSCI expects to proceed unless governance materially improves, with a decision on or before 2027-06-30. The index freeze and High Shareholding Concentration (HSC) deletions continue. EIDO is small ($384M) and traded at a +0.68% premium on Nov 6. ([source](https://www.msci.com/downloads/documents/press-releases/media-room/Indonesia_PR_Oct_26.pdf)) |
+| J07 | TUR | Lira above 50/USD (USD/TRY 50.158 on Nov 6) after an upside surprise in October CPI (29.77%), a currency-translation drag for USD holders. The 'record low' claim has not been confirmed by a top-tier source. ([source](https://www.aa.com.tr/en/economy/turkiyes-bist-100-up-13-at-close/4114560)) |
+| J07 | india | The Graham Act 100% tariff on major Russian-oil buyers is waived without an expiry date, but the President or Secretary of State can revoke it at any time. A separate OFAC action on Nov 4 sanctioned an India-based Iran-oil shipping network. ([source](https://www.federalregister.gov/documents/full_text/text/2026/10/21/2026-21599.txt)) |
+| J08 | KSA, UAE, QAT | Active regional war: at least 11 ships attacked around Hormuz in the week to Nov 6 (3 sank), IRGC mine claims, Houthi claims on Saudi East-West pipeline pumping stations, drones over Riyadh and Mecca, and Iranian threats to Gulf data centres and cables. Direct physical risk to Gulf holdings and possible market disruption. ([source](https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation)) |
+| J08 | QAT | QatarEnergy LNG force majeure extended month by month (background, outside window); Ras Laffan capacity reportedly cut by missile strikes. ([source](https://thenationalnews.com/business/energy/2026/09/28/qatar-extends-lng-force-majeure-as-hormuz-disruption-threatens-winter-supply)) |
+| J08 | KSA | Aramco (large KSA weight) keeps its performance-linked dividend suspended; Saudi Q3 oil revenue -23% y/y and 9M deficit SR244.3bn; Aramco cut December Asian OSPs by $2/bbl. ([source](https://www.arabnews.com/business/saudi-arabia-posts-2238bn-budget-deficit-in-q3-3009626)) |
+| J08 | USO, BNO, XOP, OIH, XLE, VDE | Extreme two-way gap risk: Brent -8.6% on Nov 4 and a $6 intraday flash crash on Nov 3 on deal headlines, while a renewed US strike could reverse the whole move. Continuous Brent futures overstate the W45 drop by about $4.2 because of the Dec-to-Jan roll; use the Jan-27 contract for momentum signals. ([source](https://oilprice.com/Latest-Energy-News/World-News/Brent-Flash-Crashes-6-Before-Rebounding-Towards-104.html)) |
+| J08 | INDA, EPI, TUR | OFAC (Nov 4) designated India-based shadow-fleet registry firms and Turkey's Fugo Ground Services over Iran oil; small, unlisted entities, but shows secondary-sanctions willingness toward India and Turkey. ([source](https://ofac.treasury.gov/recent-actions/20261104)) |
+| J08 | INDA, EPI, TUR, MCHI, FXI | Graham Act 100% tariffs on top Russian-energy buyers are waived under EO 14436 with no expiry date; the President or Secretary of State can revoke at any time. Revocation risk rises as lower oil weakens the energy-price rationale. Corrects the earlier ~Dec 15 review date, which has no source. ([source](https://www.federalregister.gov/documents/full_text/text/2026/10/21/2026-21599.txt)) |
+| J09 | copper futures ETFs (e.g. CPER) / materials_mining_metals | Possible US refined-copper tariff is pulling metal into the US; COMEX vs LME/SHFE basis and roll yield may diverge from global fundamentals. Not fund-specific; monitor tracking. ([source](https://ua.news/en/dovkolo-svitu/tsina-midi-na-lme-priamuie-do-naigirshogo-tizhnia-z-bereznia-asharq-al-awsat)) |
+| J09 | Brent-linked futures ETFs (e.g. BNO) / energy_oil | Continuous BZ=F series overstates the W45 drop by ~$4.2 (Dec-26 to Jan-27 roll on Oct 30-Nov 2); Dated spot ran up to ~$33 above futures in early October, so headline '$135' levels were never captured by futures ETFs. Dubai flipped to contango, which can turn roll yield negative for crude ETFs. Use like-for-like contracts for momentum signals. ([source](https://finance.yahoo.com/quote/BZF27.NYM/history)) |
+| J09 | PPLT / gold_precious | Platinum rally (in sympathy with gold and SA supply headlines) conflicts with WPIC's forecast of a 265 koz 2026 surplus with demand -18%; mean-reversion risk. Not a fund-level event. ([source](https://platinuminvestment.com/news)) |
+| J10 | EWY, EWS | Index change: iShares moves EWY (Korea) and EWS (Singapore) to MSCI 25/50 Daily 25 Capped indexes on or around 2026-11-09; any group entity above 25% between quarterly rebalances is trimmed to 22.5% (Samsung group in EWY). Mechanical rebalance trades, not a reason to switch. ([source](https://www.sec.gov/Archives/edgar/data/930667/000119312526430564/d108274d497.htm)) |
+| J10 | EWG, EWM | Index change: move to MSCI 25/50 indexes on or around 2026-12-01 (same iShares, Inc. supplements). ([source](https://www.sec.gov/Archives/edgar/data/930667/000119312526430564/d108274d497.htm)) |
+| J10 | EIDO (and EIMI Indonesia weight) | MSCI consultation (Oct 15) on reclassifying Indonesia from Emerging to Standalone; MSCI expects to proceed unless governance improves (decision by 2027-06-30). Freeze on Indonesia FIF/NOS increases and IMI additions stays in place; HSC-flagged names keep being deleted. Small fund ($384m) traded at a +0.68% premium on Nov 6. ([source](https://www.msci.com/downloads/documents/press-releases/media-room/Indonesia_PR_Oct_26.pdf)) |
+| J10 | SOXL (leveraged semis) | Positioning risk, not a fund change: SOXL took +$9.0bn in October and Korean retail net bought $4.28bn Oct 1-Nov 5 while it fell 73%. Leveraged daily-reset decay and forced de-risking risk if semis fall further. ([source](https://en.sedaily.com/finance/2026/11/07/korean-retail-investors-pile-into-soxl-as-chip-stocks-crash)) |
+| J10 | EWT | Market-structure change: from Nov 9 Taiwan caps intraday short-sale orders of borrowed shares at 3% of 30-day ADV (from 30%) and raises short-sale margin to 130%; could raise AP hedging costs and widen EWT spreads/premiums. Stabilisation fund authorised Nov 6. ([source](https://theedgemalaysia.com/node/824904)) |
+| J10 | KMLM, DBMF, AOM, MUB, MBB, HACK, EIDO | EDGAR full-text and issuer-page scan found no liquidation, merger, sub-adviser or index-change filing for these funds. KraneShares liquidated seven other funds (2x China single-stock, Asia bond) on 2026-10-29; iMGP DEF 14A is a trustee election only (meeting 2027-01-15). Low closure risk; volume spikes unexplained. ([source](https://www.sec.gov/Archives/edgar/data/1547576/000182912626010998/kraneshares_497.htm)) |
+| J10 | VWRA | Favourable fee change: Vanguard FTSE All-World UCITS ETF OCF cut from 0.19% to 0.14%, effective 2026-07-28. ([source](https://rankiapro.com/en/news/vanguard-cuts-25-commission-best-selling-global-etf-europe/)) |
+| J10 | SPY | Context, not a fund event: largest passive equity outflow in October (-$6.9bn) while VOO (+$23.7bn) and SPYM (+$10.1bn) led inflows (fee-driven rotation). ([source](https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895)) |
+| J10 | GLD | Context, not a fund event: GLD -$1.8bn in October vs GLDM +$905m; US gold ETFs net -$0.7bn while global gold ETFs took +$2.7bn. ([source](https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895)) |
 
 ## Upcoming events
 
-- 2026-11-09: US Treasury 3-year note auction ($58bn) (govt_bonds)
-- 2026-11-09: Week of Nov 9: October CPI and PPI releases (exact dates per BLS calendar) (us_large_broad, us_small_mid_value, us_factor_dividend, consumer, financials)
+- 2026-11-08: Lula national address on fiscal responsibility (expected; no specific measures signalled) (latam)
+- 2026-11-09: US 3-year note auction ($58bn) (govt_bonds)
+- 2026-11-09: Constellation Energy and Barrick Q3; 3y Treasury auction (us_large_broad)
+- 2026-11-09: Taiwan short-sale curbs take effect; Korea margin-collateral waiver starts; EWY index cap change (tech_ai_semis)
 - 2026-11-09: Constellation Energy Q3 2026 results (data-centre and Texas exposure in focus) (utilities_realestate)
-- 2026-11-09: Taiwan October trade data (MOF usually publishes around the 7th-9th; date not confirmed) (em_asia_other, em_broad)
-- 2026-11-10: US Treasury 10-year note auction ($42bn) (govt_bonds, credit_bonds)
-- 2026-11-10: TSMC October monthly revenue (approximate date; usually released around the 10th) (tech_ai_semis)
-- 2026-11-10: STOXX 600 Q3 earnings continue (Vodafone, Infineon, Henkel); heavy reporting week 9-13 Nov (europe)
-- 2026-11-10: China's rare-earth export-control suspension and remaining US Section 301 exclusions expire unless extended (china)
-- 2026-11-10: China October trade data (customs); September exports were +36.3% y/y (china)
-- 2026-11-10: End of vessel traffic controls around the China International Import Expo; delayed copper import cargoes may clear customs (materials_mining_metals)
-- 2026-11-11: MSCI November 2026 index review announcement (effective Dec 1); possible Saudi/UAE/Qatar adds/deletes (mena_gulf, em_broad)
-- 2026-11-12: US Treasury 30-year bond auction ($25bn) (govt_bonds, multi_asset_alt)
-- 2026-11-12: CoreWeave and Nebius Q3 results, 'next week' per CNBC (exact dates unconfirmed); watch for Microsoft contract exposure (tech_ai_semis)
-- 2026-11-12: Hong Kong IPO debuts cluster (Denglin Nov 10, Hosin Nov 12, Adaspace Nov 13) (china)
-- 2026-11-12: Turkey CBRT Governor Karahan presents the quarterly inflation report with updated forecasts (em_broad)
+- 2026-11-09: Taiwan short-sale curbs and Korea margin-collateral waiver take effect; EWY/EWS switch to MSCI 25/50 Daily 25 Capped indexes (asia_dev_other)
+- 2026-11-09: BoJ Summary of Opinions (October meeting) (japan)
+- 2026-11-09: China October trade data (customs; date approximate, Nov 7-10); September exports +29.6% y/y in yuan (china)
+- 2026-11-09: Taiwan short-selling curbs take effect; Korea 3-month margin-collateral waiver starts; EWY/EWS move to 25/50 Daily capped indexes (em_asia_other, em_broad)
+- 2026-11-09: Barrick Q3 2026 results (consensus AISC ~$1,929/oz) (gold_precious, materials_mining_metals)
+- 2026-11-09: EWY and EWS switch to MSCI 25/50 Daily 25 Capped indexes; Taiwan short-sale curbs take effect; Korea margin-loan collateral waiver begins (asia_dev_other, em_asia_other, tech_ai_semis)
+- 2026-11-10: US October CPI (08:30 ET), 10-year auction ($42bn), Waller and Bowman speak; TSMC October sales and SoftBank results; CoreWeave Q3 (date unconfirmed) (govt_bonds, credit_bonds, us_large_broad, global_equity, gold_precious, multi_asset_alt)
+- 2026-11-10: October CPI 08:30 ET, 10y auction, Waller/Bowman speak; TSMC October sales; CoreWeave Q3 (date unconfirmed) (us_large_broad, us_small_mid_value, us_factor_dividend, consumer, financials)
+- 2026-11-10: US October CPI (08:30 ET) and 10y auction; TSMC October revenue (approx.); SoftBank FY Q2 results; CoreWeave Q3 (date unconfirmed) (tech_ai_semis, us_large_broad)
+- 2026-11-10: US October CPI (08:30 ET) and 10y auction; Waller and Bowman speak (utilities_realestate, clean_energy_thematic, healthcare_biotech)
 
 ## Caveats
 

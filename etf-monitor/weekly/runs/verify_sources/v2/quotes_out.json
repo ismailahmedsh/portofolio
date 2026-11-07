@@ -1,0 +1,124 @@
+  out[t]["rmt_utc"]=str(dt.datetime.utcfromtimestamp(rmt)) if isinstance(rmt,(int,float)) else rmt
+{
+ "VWRA.L": {
+  "bid": 184.98,
+  "ask": 185.0,
+  "bidSize": null,
+  "askSize": null,
+  "regularMarketPrice": 184.98,
+  "currency": "USD",
+  "exchange": "LSE",
+  "quoteType": "ETF",
+  "annualHoldingsTurnover": null,
+  "sharesOutstanding": null,
+  "totalAssets": 87294672896,
+  "navPrice": 183.4672,
+  "regularMarketTime": 1793991402,
+  "rmt_utc": "2026-11-06 18:56:42",
+  "spread_bp": 1.1
+ },
+ "CSPX.L": {
+  "bid": 841.29,
+  "ask": 799.2,
+  "bidSize": 1000,
+  "askSize": 5000,
+  "regularMarketPrice": 802.21,
+  "currency": "USD",
+  "exchange": "LSE",
+  "quoteType": "ETF",
+  "annualHoldingsTurnover": null,
+  "sharesOutstanding": null,
+  "totalAssets": null,
+  "navPrice": null,
+  "regularMarketTime": 1793990951,
+  "rmt_utc": "2026-11-06 18:49:11",
+  "spread_bp": -513.1
+ },
+ "IWDA.L": {
+  "bid": 141.75,
+  "ask": 142.09,
+  "bidSize": 100088,
+  "askSize": 561,
+  "regularMarketPrice": 141.98,
+  "currency": "USD",
+  "exchange": "LSE",
+  "quoteType": "ETF",
+  "annualHoldingsTurnover": null,
+  "sharesOutstanding": null,
+  "totalAssets": null,
+  "navPrice": 140.9885,
+  "regularMarketTime": 1793989671,
+  "rmt_utc": "2026-11-06 18:27:51",
+  "spread_bp": 24.0
+ },
+ "EIMI.L": {
+  "bid": 48.75,
+  "ask": 48.77,
+  "bidSize": 0,
+  "askSize": 0,
+  "regularMarketPrice": 48.91,
+  "currency": "USD",
+  "exchange": "LSE",
+  "quoteType": "ETF",
+  "annualHoldingsTurnover": null,
+  "sharesOutstanding": null,
+  "totalAssets": 46803992576,
+  "navPrice": 48.3878,
+  "regularMarketTime": 1793984587,
+  "rmt_utc": "2026-11-06 17:03:07",
+  "spread_bp": 4.1
+ },
+ "SWDA.L": {
+  "bid": 10613.0,
+  "ask": 10524.0,
+  "bidSize": 0,
+  "askSize": 0,
+  "regularMarketPrice": 10621.0,
+  "currency": "GBp",
+  "exchange": "LSE",
+  "quoteType": "ETF",
+  "annualHoldingsTurnover": null,
+  "sharesOutstanding": null,
+  "totalAssets": null,
+  "navPrice": 140.9885,
+  "regularMarketTime": 1793982909,
+  "rmt_utc": "2026-11-06 16:35:09",
+  "spread_bp": -84.2
+ },
+ "EWJ": {
+  "n_divs": 50,
+  "last_div": "2026-06-15",
+  "ttm": 4.153
+ },
+ "EWU": {
+  "n_divs": 56,
+  "last_div": "2026-06-15",
+  "ttm": 2.306
+ },
+ "EWG": {
+  "n_divs": 42,
+  "last_div": "2026-06-15",
+  "ttm": 1.511
+ },
+ "MCHI": {
+  "n_divs": 31,
+  "last_div": "2026-06-15",
+  "ttm": 1.632
+ },
+ "INDA": {
+  "n_divs": 22,
+  "last_div": "2024-12-17",
+  "ttm": 0.399
+ },
+ "GC=F": {
+  "first": "2000-08-01",
+  "last": "2026-11-06",
+  "rows": 270
+ },
+ "VWRA.L_hist": {
+  "first": "2019-07-23",
+  "last": "2026-11-06",
+  "rows": 1843,
+  "last_close": 184.97999572753906
+ }
+}

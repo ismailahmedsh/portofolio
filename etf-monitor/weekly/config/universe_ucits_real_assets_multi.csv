@@ -1,0 +1,58 @@
+ticker,name,isin,scope,currency,ter,accumulating,first_date,last_price,verified
+IGLN.L,iShares Physical Gold ETC,IE00B4ND3602,gold_physical_etc,USD,0.12,yes,2011-04-08,78.73,yes
+SGLD.L,Invesco Physical Gold ETC,IE00B579F325,gold_physical_etc,USD,0.12,yes,2009-06-26,390.41,yes
+XGDU.L,Xtrackers IE Physical Gold ETC Securities,DE000A2T0VU5,gold_physical_etc,USD,0.11,yes,2020-04-22,62.4,yes
+WGLD.L,WisdomTree Core Physical Gold,JE00BN2CJ301,gold_physical_etc,USD,0.12,yes,2020-11-30,402.98,yes
+PHAU.L,WisdomTree Physical Gold,JE00B1VS3770,gold_physical_etc,USD,0.39,yes,2008-01-02,376.13,yes
+SGBX.L,WisdomTree Physical Swiss Gold,JE00B588CD74,gold_physical_etc,GBp,0.15,yes,2009-12-16,29038.5,yes
+XGLD.L,Xtrackers Physical Gold ETC,GB00B5840F36,gold_physical_etc,USD,0.25,yes,2010-06-15,388.3,yes
+RMAU.L,The Royal Mint Responsibly Sourced Physical Gold ETC,XS2115336336,gold_physical_etc,USD,0.22,yes,2020-02-14,39.945,yes
+GDX.L,VanEck Gold Miners UCITS ETF,IE00BQQP9F84,gold_miners,USD,0.53,yes,2015-03-25,98.25,yes
+GDXJ.L,VanEck Junior Gold Miners UCITS ETF,IE00BQQP9G91,gold_miners,USD,0.55,yes,2015-03-25,97.82,yes
+IAUP.L,iShares Gold Producers UCITS ETF USD (Acc),IE00B6R52036,gold_miners,USD,0.55,yes,2011-09-16,40.42,yes
+AUCO.L,L&G Gold Mining UCITS ETF,IE00B3CNHG25,gold_miners,USD,0.55,yes,2008-09-11,111.59,yes
+ISLN.L,iShares Physical Silver ETC,IE00B4NCWG09,silver_physical_etc,USD,0.20,yes,2011-04-08,49.4575,yes
+SSLV.L,Invesco Physical Silver ETC,IE00B43VDT70,silver_physical_etc,USD,0.19,yes,2011-04-13,49.525,yes
+PHAG.L,WisdomTree Physical Silver,JE00B1VS3333,silver_physical_etc,USD,0.49,yes,2008-01-02,47.24,yes
+SILV.L,Global X Silver Miners UCITS ETF USD Acc,IE000UL6CLP7,silver_miners,USD,0.65,yes,2022-05-06,36.8,yes
+PHPM.L,WisdomTree Physical Precious Metals,JE00B1VS3W29,precious_metals_basket_etc,USD,0.44,yes,2008-01-02,239.6,yes
+IPLT.L,iShares Physical Platinum ETC,IE00B4LHWP62,platinum_physical_etc,USD,0.20,yes,2011-04-08,22.0175,yes
+IPDM.L,iShares Physical Palladium ETC,IE00B4556L06,palladium_physical_etc,USD,0.20,yes,2011-04-08,29.21,yes
+CMOD.L,Invesco Bloomberg Commodity UCITS ETF Acc,IE00BD6FTQ80,commodities_broad,USD,0.19,yes,2017-01-09,33.575,yes
+ICOM.L,iShares Diversified Commodity Swap UCITS ETF,IE00BDFL4P12,commodities_broad,USD,0.19,yes,2017-07-18,10.06,yes
+BCOM.L,L&G All Commodities UCITS ETF,IE00BF0BCP69,commodities_broad,USD,0.15,yes,2017-07-06,20.295,yes
+COMF.L,L&G Longer Dated All Commodities UCITS ETF,IE00B4WPHX27,commodities_broad,USD,0.30,yes,2010-03-15,31.325,yes
+ROLL.L,iShares Bloomberg Roll Select Commodity Swap UCITS ETF USD,IE00BZ1NCS44,commodities_broad,USD,0.28,yes,2018-10-03,11.328,yes
+WCOA.L,WisdomTree Enhanced Commodity UCITS ETF USD Acc,IE00BYMLZY74,commodities_broad,USD,0.23,yes,2016-04-27,22.38,yes
+ENCO.L,L&G Multi-Strategy Enhanced Commodities UCITS ETF USD Acc,IE00BFXR6159,commodities_broad,USD,0.30,yes,2021-07-05,18.929,yes
+AIGC.L,WisdomTree Broad Commodities ETC,GB00B15KY989,commodities_broad_etc,USD,0.49,yes,2008-01-02,16.323,yes
+AIGI.L,WisdomTree Industrial Metals ETC,GB00B15KYG56,commodities_industrial_metals_etc,USD,0.49,yes,2008-01-02,19.005,yes
+COPA.L,WisdomTree Copper ETC,GB00B15KXQ89,commodities_industrial_metals_etc,USD,0.49,yes,2008-01-02,53.58,yes
+BRNT.L,WisdomTree Brent Crude Oil ETC,JE00B78CGV99,commodities_energy_etc,USD,0.49,yes,2012-02-22,100.21,yes
+CRUD.L,WisdomTree WTI Crude Oil ETC,GB00B15KXV33,commodities_energy_etc,USD,0.49,yes,2008-01-02,17.351,yes
+GDIG.L,VanEck S&P Global Mining UCITS ETF A,IE00BDFBTQ78,commodity_equity_mining,USD,0.50,yes,2018-04-18,58.4,yes
+COPX.L,Global X Copper Miners UCITS ETF USD Acc,IE0003Z9E2Y3,commodity_equity_mining,USD,0.55,yes,2021-11-22,56.02,yes
+REMX.L,VanEck Rare Earth and Strategic Metals UCITS ETF A,IE0002PG6CA6,commodity_equity_mining,USD,0.59,yes,2021-09-24,10.066,yes
+URNU.L,Global X Uranium UCITS ETF USD Acc,IE000NDWFGA5,commodity_equity_uranium,USD,0.65,yes,2022-04-22,18.95,yes
+URNM.L,Sprott Uranium Miners UCITS ETF Acc,IE0005YK6564,commodity_equity_uranium,USD,0.85,yes,2022-05-03,10.416,yes
+SPAG.L,iShares Agribusiness UCITS ETF USD (Acc),IE00B6R52143,commodity_equity_agri,GBp,0.55,yes,2011-09-16,4066.0,yes
+WOOD.L,iShares Global Timber & Forestry UCITS ETF USD (Dist),IE00B27YCF74,commodity_equity_timber,GBp,0.65,no,2009-01-02,1688.5,yes
+DPYA.L,iShares Developed Markets Property Yield UCITS ETF USD (Acc),IE00BFM6T921,reit_global,USD,0.59,yes,2018-05-10,6.419,yes
+GLRA.L,SPDR Dow Jones Global Real Estate UCITS ETF USD (Acc),IE00BH4GR342,reit_global,USD,0.40,yes,2019-10-16,22.965,yes
+HPRD.L,HSBC FTSE EPRA NAREIT Developed UCITS ETF USD,IE00B5L01S80,reit_global,USD,0.24,no,2011-06-21,23.465,yes
+EPRA.L,Amundi FTSE EPRA NAREIT Global UCITS ETF Acc,LU1437018838,reit_global,GBp,0.24,yes,2016-11-11,6030.5,yes
+TRET.L,VanEck Global Real Estate UCITS ETF,NL0009690239,reit_global,USD,0.25,no,2011-03-09,46.71,yes
+IDUP.L,iShares US Property Yield UCITS ETF USD (Dist),IE00B1FZSF77,reit_us,USD,0.40,no,2009-01-02,32.25,yes
+XRES.L,Invesco US Real Estate Sector UCITS ETF Acc,IE00BYM8JD58,reit_us,USD,0.14,yes,2016-02-17,27.61,yes
+IPRP.L,iShares European Property Yield UCITS ETF EUR (Dist),IE00B0M63284,reit_europe,GBp,0.40,no,2009-01-02,2338.0,yes
+XDER.L,Xtrackers FTSE EPRA/NAREIT Developed Europe Real Estate UCITS ETF 1C,LU0489337690,reit_europe,GBp,0.33,yes,2010-03-25,2007.5,yes
+IDAR.L,iShares Asia Property Yield UCITS ETF USD (Dist),IE00B1FZS244,reit_asia,USD,0.59,no,2008-01-02,21.75,yes
+IUKP.L,iShares UK Property UCITS ETF GBP (Dist),IE00B1TXLS18,reit_uk,GBp,0.40,no,2009-01-02,447.95,yes
+IDIN.L,iShares Global Infrastructure UCITS ETF USD (Dist),IE00B1FZS467,infrastructure_global,USD,0.65,no,2008-01-02,38.77,yes
+XGID.L,Xtrackers S&P Global Infrastructure Swap UCITS ETF 1C,LU0322253229,infrastructure_global,USD,0.60,yes,2008-01-15,79.705,yes
+GIN.L,SPDR Morningstar Multi-Asset Global Infrastructure UCITS ETF,IE00BQWJFQ70,infrastructure_global_multi_asset,GBP,0.40,no,2015-04-14,28.02,yes
+PAVE.L,Global X U.S. Infrastructure Development UCITS ETF USD Acc,IE00BLCHJ534,infrastructure_us,USD,0.47,yes,2021-11-02,47.82,yes
+MAGG.L,iShares Growth Portfolio UCITS ETF GBP Hedged (Acc),IE00BLLZQ912,multi_asset_growth,GBP,0.25,yes,2020-09-14,8.864,yes
+MAMG.L,iShares Moderate Portfolio UCITS ETF GBP Hedged (Acc),IE00BLLZQ797,multi_asset_moderate,GBP,0.25,yes,2020-09-14,7.226,yes
+MACG.L,iShares Conservative Portfolio UCITS ETF GBP Hedged (Acc),IE00BLP53N06,multi_asset_conservative,GBP,0.25,yes,2020-09-14,5.763,yes
+NTSX.L,WisdomTree US Efficient Core UCITS ETF USD Acc,IE000KF370H3,multi_asset_efficient_core,USD,0.20,yes,2023-10-10,42.2,yes

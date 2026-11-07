@@ -7,43 +7,273 @@
     "japan": {
       "score": -1,
       "confidence": "medium",
-      "rationale": "Facts: the Nikkei 225 fell 5.96% on Nov 6 to 57,434.77 and entered a bear market (more than 20% below its June 22 record). Reports put the weekly loss near 9%. The selloff came from the US AI/semiconductor rout after the Democratic midterm sweep (fears of AI regulation and slower data-centre capex), and Advantest, Tokyo Electron, SoftBank Group and Kioxia were the main drags. Topix was more resilient early in the week (+1.16% on Nov 5 on lower oil) but fell about 5-6% on Friday with all 33 sectors down. Offsets: the BoJ held at 1.25% (8-1, Takata wanted 1.5%) and Reuters says Ueda has all but locked in a December hike to 1.5%, which is supportive for the yen and banks. Toyota raised its FY net profit forecast to 3.57tn yen despite tariffs. Interpretation: the weight of AI hardware in Japan's index and the earnings risk to chip-equipment names outweigh the solid non-tech fundamentals, so the outlook is a mild headwind for the next 1-3 months rather than a strong one.",
+      "rationale": "Facts: the Nikkei 225 fell 5.96% to 57,434.77 on Nov 6, entering a bear market (more than 20% below the Jun 22 record), and lost more than 9% on the week, its worst since March 2020. The losses were concentrated in AI hardware imported from the US semis crash (SOX -12.3% on Nov 5): SoftBank -20.8%, Kioxia -36.8%, Advantest -19.6%, Tokyo Electron -13.2% on the week. Topix held up early (+1.2% on Nov 5, when 161-168 of 225 Nikkei names rose on lower oil) but fell about 6% on Nov 6. Interpretation: the shock is mostly US AI beta, not domestic macro (Toyota raised guidance, wages are strongest in about three decades), and Topix/MSCI Japan trackers are less exposed than the Nikkei. It stays -1 rather than 0 because SoftBank reports Nov 10 with CDS near a 4-year high and an OpenAI funding shortfall, and a December BoJ hike to 1.5% is likely while the equity rout continues; the yen near 157.5-158 partly cushions unhedged USD holders.",
       "headlines": [
-        {"date": "2026-11-02", "title": "Analysis-BOJ locks in December hike, but neutral-rate uncertainty muddies outlook", "source": "Reuters (via AOL)", "url": "https://www.aol.com/articles/analysis-boj-locks-december-hike-053516000.html"},
-        {"date": "2026-11-05", "title": "The Yen rises on BoJ minutes, with Ueda and US NFP on the Friday docket", "source": "FXStreet (via TMGM)", "url": "https://www.tmgm.com/en/analysis/market-news/article/the-yen-rises-on-boj-minutes-with-ueda-and-us-nfp-on-the-friday-docket-202611052245"},
-        {"date": "2026-11-05", "title": "Toyota raises profit projection for the year as sales hold up", "source": "AP (via WTOP)", "url": "https://wtop.com/world/2026/11/toyota-raises-profit-projection-for-the-year-as-sales-hold-up"},
-        {"date": "2026-11-05", "title": "168 of 225 Nikkei stocks rise, but AI losses drag the index lower as the Topix rallies", "source": "investingLive", "url": "https://investinglive.com/stock-market-update/168-of-225-nikkei-stocks-rise-but-ai-losses-drag-the-index-lower-as-the-topix-rallies/"},
-        {"date": "2026-11-06", "title": "Japan's Nikkei slumps more than 5% as market rout deepens on AI worries", "source": "Reuters (via Business Recorder)", "url": "https://www.brecorder.com/news/40447732/japans-nikkei-slumps-more-than-5-as-market-rout-deepens-on-ai-worries"},
-        {"date": "2026-11-06", "title": "Japan's Nikkei Breaks Below Key 60,000 Level on AI Selloff", "source": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-06/japan-s-nikkei-breaks-below-key-60-000-level-on-ai-selloff"}
+        {
+          "date": "2026-11-06",
+          "title": "Japan's Nikkei enters bear market as AI stock selloff deepens",
+          "source": "IBTimes Australia",
+          "url": "https://www.ibtimes.com.au/japan-nikkei-bear-market-ai-stock-selloff-1878028"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Japan's Nikkei slumps more than 5% as market rout deepens on AI worries",
+          "source": "Reuters (via Business Recorder)",
+          "url": "https://www.brecorder.com/news/40447732/japans-nikkei-slumps-more-than-5-as-market-rout-deepens-on-ai-worries"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Japan's Nikkei Breaks Below Key 60,000 Level on AI Selloff",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/japan-s-nikkei-breaks-below-key-60-000-level-on-ai-selloff"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Japan stock market: Nikkei posts steepest weekly loss since March 2020",
+          "source": "Trading Economics",
+          "url": "https://tradingeconomics.com/japan/stock-market"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "168 of 225 Nikkei stocks rise, but AI losses drag the index lower as the Topix rallies",
+          "source": "investingLive",
+          "url": "https://investinglive.com/stock-market-update/168-of-225-nikkei-stocks-rise-but-ai-losses-drag-the-index-lower-as-the-topix-rallies/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Nikkei drops 3% as Democratic midterm gains hit AI and chip stocks",
+          "source": "investingLive",
+          "url": "https://investinglive.com/stock-market-update/nikkei-drops-3-as-democratic-midterm-gains-hit-ai-and-chip-stocks/"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Analysis-BOJ locks in December hike, but neutral-rate uncertainty muddies outlook",
+          "source": "Reuters (via AOL)",
+          "url": "https://www.aol.com/articles/analysis-boj-locks-december-hike-053516000.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Yen near 157.8 as record wage growth lifts December BoJ hike bets",
+          "source": "Trading Economics",
+          "url": "https://tradingeconomics.com/japan/currency"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Toyota raises profit projection for the year as sales hold up",
+          "source": "AP (via WTOP)",
+          "url": "https://wtop.com/world/2026/11/toyota-raises-profit-projection-for-the-year-as-sales-hold-up"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "SoftBank Group IR calendar: Earnings Results for Q2/FY2026 on Nov 10",
+          "source": "SoftBank Group IR (issuer)",
+          "url": "https://group.softbank/en/ir/calendar"
+        },
+        {
+          "date": "2026-11-01",
+          "title": "SoftBank stock at risk of hitting 3k as OpenAI woes mount, Arm earnings loom",
+          "source": "Invezz (via TradingView)",
+          "url": "https://www.tradingview.com/news/invezz:009299a1c094b:0-softbank-stock-at-risk-of-hitting-3k-as-openai-woes-mount-arm-earnings-loom/"
+        }
       ]
     },
     "china": {
-      "score": 0,
-      "confidence": "medium",
-      "rationale": "Facts: the official NBS manufacturing PMI fell to 49.3 in October (from 50.1; consensus 50.0) and the non-manufacturing PMI fell to 49.7. The PBoC has held LPRs at 3.0%/3.5% (October background), and no new fiscal or monetary stimulus was announced this week. Hong Kong was a relative winner from the global AI rotation: on Nov 5 the Hang Seng rose 3.67% and HS Tech rose 5.55%, led by Alibaba, Tencent and NetEase, before giving back 1-2% on Nov 6. Mainland A-shares fell on Friday (ChiNext -3.96%). The US-China truce has been extended to Jan 10, 2027 per Treasury Secretary Bessent, but Beijing has not published a notice extending its rare-earth control suspension, which legally lapses Nov 10. The HK IPO pipeline is busy, mostly with chip names. Interpretation: soft domestic data and no stimulus offset favourable rotation flows into cheap Chinese internet stocks and a stable trade truce, so the net view is neutral.",
+      "score": 1,
+      "confidence": "low",
+      "rationale": "Facts: Beijing stepped up market support this week (third SFISF swap operation above 100bn yuan on Nov 3, buyback relending rate cut to 1%, permanent buyback lending, PBOC pledge to back Central Huijin, State Council call on Nov 6 to stabilise the stock market). The trade truce looks set to roll forward rather than lapse on Nov 10: Bessent says it runs to January, USTR proposed extending the Section 301 maritime suspension to Jan 9, 2027, the US paused a blacklist rule, and Xi and Trump meet at APEC Shenzhen on Nov 18-19; MOFCOM has not published a rare-earth extension. Offsets: October NBS PMI 49.3, CSI 300 in a bear market, retail participation at one-year lows, and HK tech fell with the US $2.3tr tech plunge on Nov 6 after rallying on Nov 5. Interpretation: a policy put plus a lower trade-tail risk tilt the 1-3 month view mildly positive, but the rally is beta to US AI sentiment and binary on the summit and the Tencent (Nov 18) / Alibaba (Nov 19) prints, hence low confidence; downgrade to 0 if the summit slips or Beijing lets the rare-earth suspension lapse.",
       "headlines": [
-        {"date": "2026-11-01", "title": "China's NBS Manufacturing PMI falls to 49.3 in October, Non-Manufacturing PMI eases to 49.7", "source": "FXStreet", "url": "https://www.fxstreet.com/news/chinas-nbs-manufacturing-pmi-falls-to-493-in-october-non-manufacturing-pmi-eases-to-497-202611012335"},
-        {"date": "2026-11-05", "title": "Hang Seng Index surges nearly 900 points at close", "source": "The Standard (HK)", "url": "https://www.thestandard.com.hk/finance/article/347630/Hang-Seng-Index-surges-nearly-900-points-at-close"},
-        {"date": "2026-11-05", "title": "Hong Kong Stocks Roar Back as Value Rotation Boosts China Tech", "source": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-05/hong-kong-stocks-roar-back-as-investors-rotate-away-from-ai"},
-        {"date": "2026-11-05", "title": "China's Rare-Earth Export Pause Expires Nov. 10. Here's What It Means for USA Rare Earth and MP Materials.", "source": "The Motley Fool (analysis)", "url": "https://www.fool.com/investing/2026/11/05/china-rare-earth-export-pause-usar-mp-materials/"},
-        {"date": "2026-11-06", "title": "Everything You Should Know About China's Economy on Friday (Nov. 6)", "source": "CrossPacificWatchers newsletter (secondary)", "url": "https://crosspacificwatchers.substack.com/p/everything-you-should-know-about-ae9"},
-        {"date": "2026-11-07", "title": "China GPU Chip Company Suzhou Denglin Technology Hong Kong IPO to Raise $225 Million with Expected IPO Listing on 10th November 2026", "source": "Caproasia", "url": "https://www.caproasia.com/2026/11/07/china-gpu-chip-company-suzhou-denglin-technology-hong-kong-ipo-to-raise-225-million-with-expected-ipo-listing-on-10th-november-2026-founded-in-2017-by-li-jianwen/"}
+        {
+          "date": "2026-11-03",
+          "title": "China moves to support stocks with buyback and liquidity measures",
+          "source": "Caixin Global",
+          "url": "https://www.caixinglobal.com/2026-11-03/china-moves-to-support-stocks-with-buyback-and-liquidity-measures-102500134.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "China cuts stock buyback relending rate to 1% to support market",
+          "source": "Caixin Global",
+          "url": "https://www.caixinglobal.com/2026-11-04/china-cuts-stock-buyback-relending-rate-to-1-to-support-market-102500962.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "China's central bank pledges more support to stabilize markets",
+          "source": "Caixin Global",
+          "url": "https://www.caixinglobal.com/2026-11-05/chinas-central-bank-pledges-more-support-to-stabilize-markets-102501489.html"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Li Qiang chairs State Council executive meeting on capital-market stabilisation and domestic demand",
+          "source": "english.www.gov.cn",
+          "url": "https://english.www.gov.cn/news/202611/07/content_WS6aee87b5c6d00ca5f9a0e29b.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "What the Democrat midterms sweep changes for US-China tech rivalry",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/what-the-democrat-midterms-sweep-changes-for-us-china-tech-rivalry.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Ahead of Shenzhen trade talks, US holds blacklist rule that angered Beijing",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/economy/policy/article/3373520/ahead-shenzhen-trade-talks-us-holds-blacklist-rule-angered-beijing"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "He Lifeng holds video call with Bessent and Greer on implementing heads-of-state consensus",
+          "source": "Xinhua via english.www.gov.cn",
+          "url": "https://english.www.gov.cn/news/202611/07/content_WS6aee87ddc6d00ca5f9a0e29f.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Readout of Ambassador Greer's call with China's Vice Premier He Lifeng",
+          "source": "USTR",
+          "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/readout-ambassador-greers-call-chinas-vice-premier-he-lifeng"
+        },
+        {
+          "date": "2026-11-01",
+          "title": "China's NBS Manufacturing PMI falls to 49.3 in October, Non-Manufacturing PMI eases to 49.7",
+          "source": "FXStreet",
+          "url": "https://www.fxstreet.com/news/chinas-nbs-manufacturing-pmi-falls-to-493-in-october-non-manufacturing-pmi-eases-to-497-202611012335"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Hong Kong Stocks Roar Back as Value Rotation Boosts China Tech",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/hong-kong-stocks-roar-back-as-investors-rotate-away-from-ai"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Tech stocks lead declines in Hong Kong, mainland China on US$2.3tr plunge in US",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/business/china-business/article/3373474/tech-stocks-lead-declines-hong-kong-mainland-china-us23-trillion-carnage-us"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Chinese investors stay on sidelines despite Beijing's latest rescue push",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/business/china-business/article/3373215/chinese-stock-investors-stay-sidelines-even-state-intervention-gathers-pace"
+        }
       ]
     }
   },
-  "regime_notes": "The week was dominated by a global AI/semiconductor selloff after the Democratic sweep of the US midterms, with markets pricing in tighter AI regulation and slower data-centre spending. Japan was hit hardest: the Nikkei, which is heavy in chip-equipment and SoftBank, entered a bear market and had its worst week in more than six years, while the broader Topix held up better until Friday. Hong Kong was the mirror image, with funds rotating out of AI hardware into discounted Chinese internet platforms. Hang Seng Tech rose about 8.6% on the week (single-source figure). Policy is diverging: the BoJ is set to hike to 1.5% on Dec 18, which supports the yen (USD/JPY around 157.5-158.5) and Japanese banks, while China keeps policy on hold despite a sub-50 official PMI. Lower oil on Iran peace hopes helps both energy importers. The main near-term binary risk is whether Beijing formally extends its rare-earth control suspension before it lapses on Nov 10.",
+  "regime_notes": "One AI-buildout shock dominated: the post-midterm data-centre backlash and the Microsoft/Oracle/neocloud pullback drove SOX -12% on Nov 5, and Japan's AI-hardware names (SoftBank, Advantest, TEL, Kioxia) took the hit as high-beta proxies, pushing the Nikkei into a bear market. Japan's damage is index-specific: the price-weighted Nikkei fell far more than Topix/MSCI Japan, and domestic and real-estate names gained on lower oil. China/HK is not a hedge against that factor: HK tech rallied on Nov 5 and then fell with the US on Nov 6, while policy support (swap facility, relending cut, State Council) limits drawdowns without driving a durable rally. The trade truce appears to be rolling forward (USTR maritime-301 proposal to Jan 9, 2027; Xi-Trump at APEC Shenzhen Nov 18-19), but MOFCOM has not confirmed the rare-earth suspension beyond Nov 10. Nov 10 (SoftBank results, TSMC October sales, US CPI, China rare-earth date) and Nov 17-19 (Nvidia, APEC, Tencent, Alibaba) are the decisive dates for both buckets. The BoJ's likely Dec 18 hike to 1.5% supports the yen and banks but adds pressure on a falling equity market.",
   "red_flags": [
-    {"target": "china", "issue": "China's suspension of its October 2025 rare-earth export controls legally lapses on 2026-11-10 unless Beijing publishes an extension. The US says the truce runs to 2027-01-10, but there is no Chinese notice yet. Check holdings of China and HK tech ETFs and ETFs exposed to US chip supply chains for headline risk.", "url": "https://www.fool.com/investing/2026/11/05/china-rare-earth-export-pause-usar-mp-materials/"},
-    {"target": "japan", "issue": "Not fund-specific: Nikkei-225-tracking ETFs carry a much larger weight in AI/chip names (Advantest, Tokyo Electron, SoftBank Group) than Topix trackers. Index choice materially changed returns this week, when the Nikkei fell about 9% versus a smaller Topix decline.", "url": "https://www.brecorder.com/news/40447732/japans-nikkei-slumps-more-than-5-as-market-rout-deepens-on-ai-worries"}
+    {
+      "target": "china",
+      "issue": "China's suspension of its October 2025 rare-earth export controls legally lapses Nov 10 unless Beijing publishes an extension. US-side signals (Bessent; USTR proposal to extend the Section 301 maritime suspension to 2027-01-09) point to a roll-forward, but no MOFCOM notice was found. Headline risk for China/HK tech ETFs and rare-earth ETFs (MP fell about 15% on the week as the scarcity premium unwound).",
+      "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21755/request-for-comments-on-further-suspension-of-section-301-action-chinas-targeting-of-the-maritime"
+    },
+    {
+      "target": "china",
+      "issue": "Fund-level: KraneShares liquidated seven funds on 2026-10-29, including the KraneShares China Alpha Index ETF and the 2x Long BABA/JD/BIDU/PDD daily ETFs. KWEB and KMLM are not affected; check that no held China product is on the list.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1547576/000182912626010998/kraneshares_497.htm"
+    },
+    {
+      "target": "japan",
+      "issue": "Index choice: Nikkei-225 trackers carry much heavier AI/chip and SoftBank weights than Topix or MSCI Japan trackers; the Nikkei fell more than 9% on the week versus a smaller Topix decline, and SoftBank results (Nov 10, CDS near a 4-year high) are a concentrated single-name risk for Nikkei ETFs.",
+      "url": "https://www.ibtimes.com.au/japan-nikkei-bear-market-ai-stock-selloff-1878028"
+    }
   ],
   "upcoming_events": [
-    {"date": "2026-11-10", "event": "China's rare-earth export-control suspension and remaining US Section 301 exclusions expire unless extended", "buckets": ["china"]},
-    {"date": "2026-11-10", "event": "China October trade data (customs); September exports were +36.3% y/y", "buckets": ["china"]},
-    {"date": "2026-11-12", "event": "Hong Kong IPO debuts cluster (Denglin Nov 10, Hosin Nov 12, Adaspace Nov 13)", "buckets": ["china"]},
-    {"date": "2026-11-16", "event": "China October 70-city home prices", "buckets": ["china"]},
-    {"date": "2026-11-20", "event": "PBoC Loan Prime Rate fixing (some calendars list Nov 19)", "buckets": ["china"]},
-    {"date": "2026-12-09", "event": "FOMC decision (Dec 8-9), which affects the US-Japan rate gap and USD/JPY", "buckets": ["japan"]},
-    {"date": "2026-12-18", "event": "BoJ policy decision (Dec 17-18); hike to 1.5% widely expected", "buckets": ["japan"]},
-    {"date": "2027-01-10", "event": "US-China trade truce deadline", "buckets": ["china"]}
+    {
+      "date": "2026-11-09",
+      "event": "BoJ Summary of Opinions (October meeting)",
+      "buckets": [
+        "japan"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "event": "China October trade data (customs; date approximate, Nov 7-10); September exports +29.6% y/y in yuan",
+      "buckets": [
+        "china"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "event": "SoftBank Group Q2 FY2026 results (LTV, OpenAI mark)",
+      "buckets": [
+        "japan"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "event": "TSMC October sales and US October CPI; read-through for Japanese semicap",
+      "buckets": [
+        "japan"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "event": "China rare-earth export-control suspension lapses unless MOFCOM extends it; Denglin HK IPO debut",
+      "buckets": [
+        "china"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "event": "Singles' Day sales; MSCI November index review announcement",
+      "buckets": [
+        "china",
+        "japan"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "event": "China October activity data and 70-city home prices",
+      "buckets": [
+        "china"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "event": "Nvidia Q3 FY27 results (AI-hardware read-through for Advantest, TEL, SoftBank)",
+      "buckets": [
+        "japan"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "event": "Tencent Q3 results; APEC Shenzhen leaders' meeting Nov 18-19 with Xi-Trump meeting",
+      "buckets": [
+        "china"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Alibaba September-quarter results",
+      "buckets": [
+        "china"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "event": "PBoC Loan Prime Rate fixing",
+      "buckets": [
+        "china"
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "event": "FOMC decision (Dec 8-9); US-Japan rate gap and USD/JPY",
+      "buckets": [
+        "japan"
+      ]
+    },
+    {
+      "date": "2026-12-18",
+      "event": "BoJ policy decision; hike to 1.5% widely expected",
+      "buckets": [
+        "japan"
+      ]
+    },
+    {
+      "date": "2027-01-09",
+      "event": "Proposed end of the extended US Section 301 maritime suspension / US-China truce roll-forward",
+      "buckets": [
+        "china"
+      ]
+    }
   ]
 }

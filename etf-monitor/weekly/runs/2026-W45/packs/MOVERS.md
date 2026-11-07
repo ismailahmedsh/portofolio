@@ -112,25 +112,25 @@
 ## Composite rank: 10 best and 10 worst
 |      | bucket             |   composite |
 |:-----|:-------------------|------------:|
-| IWD  | us_small_mid_value |        68.6 |
-| VTV  | us_small_mid_value |        68.4 |
+| IWD  | us_small_mid_value |        68.5 |
+| VTV  | us_small_mid_value |        68.3 |
 | SCHD | us_factor_dividend |        67.9 |
-| HDV  | us_factor_dividend |        67.6 |
+| HDV  | us_factor_dividend |        67.7 |
+| DGRO | us_factor_dividend |        66.4 |
 | XLV  | healthcare_biotech |        66.4 |
-| DGRO | us_factor_dividend |        66.3 |
-| SHY  | govt_bonds         |        66.3 |
-| MGV  | us_small_mid_value |        65.5 |
-| VGSH | govt_bonds         |        64.8 |
-| SGOV | govt_bonds         |        64.8 |
+| SHY  | govt_bonds         |        66.4 |
+| MGV  | us_small_mid_value |        65.4 |
+| VGSH | govt_bonds         |        64.9 |
+| SGOV | govt_bonds         |        64.9 |
 |      | bucket                  |   composite |
 |:-----|:------------------------|------------:|
-| EIDO | em_asia_other           |        21.7 |
+| EIDO | em_asia_other           |        21.5 |
 | URA  | materials_mining_metals |        25.2 |
-| BOTZ | tech_ai_semis           |        27.1 |
-| TUR  | em_broad                |        27.4 |
+| BOTZ | tech_ai_semis           |        26.9 |
+| TUR  | em_broad                |        27.2 |
 | LIT  | materials_mining_metals |        29.9 |
-| ROBO | tech_ai_semis           |        30.3 |
-| KWEB | china                   |        30.5 |
-| TAN  | clean_energy_thematic   |        31.9 |
+| ROBO | tech_ai_semis           |        30.1 |
+| KWEB | china                   |        30.6 |
+| TAN  | clean_energy_thematic   |        31.5 |
+| ARKK | tech_ai_semis           |        31.8 |
 | PPLT | gold_precious           |        32   |
-| ARKK | tech_ai_semis           |        32   |

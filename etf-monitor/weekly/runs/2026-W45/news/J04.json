@@ -6,8 +6,8 @@
   "bucket_scores": {
     "healthcare_biotech": {
       "score": 1,
-      "confidence": "low",
-      "rationale": "Facts: Democrats won both chambers on Nov 3. Medicaid- and ACA-exposed insurers and hospital operators rallied on Nov 4, with Centene up 12.6% and HCA up 10.3% (CNBC), because analysts expect a delay to the OBBBA Medicaid cuts and better odds for the ACA subsidies. Reports on Nov 4-6 say AstraZeneca made a non-binding offer of about $10B for Rhythm, adding to 2026 biotech M&A of about $208B. Against that, CMS on Nov 5 made Medicare drug price negotiation permanent from 2029, with up to 20 more drugs to be picked by Feb 1, 2027, and the GLOBE Part B MFN model takes effect Nov 30. Interpretation: providers and biotech M&A give a mild net tailwind. J.P. Morgan and Morgan Stanley expect gridlock, and drug-pricing pressure on pharma continues, so confidence is low.",
+      "confidence": "medium",
+      "rationale": "Facts: the Democratic sweep gave Medicaid/ACA-exposed insurers and hospitals a sourced re-rating on Nov 4 (CNC +12.6%, MOH +8.9%, HCA +10.3%, UHS +10.9%, THC +9.6%) on expected delays to OBBBA Medicaid cuts and better ACA-subsidy odds. XLV acted as a defensive leader (ATH Nov 4, -2.5% vs SPY -4.4% on Nov 5, flat on the week), with biotech trading as rate-sensitive growth (XBI -6.7% Nov 5). Headwinds are slow and largely known: Medicare negotiation made permanent from 2029, GLP-1 negotiated prices from Jan 1, 2027, GLOBE MFN from Nov 30; JPM expects gridlock and lame-duck ACA/PBM status is unverified. Interpretation: mild tailwind, best expressed via broad XLV/VHT or providers rather than XBI; overlaps the defensive-factor rotation, so do not double count with us_factor_dividend.",
       "headlines": [
         {
           "date": "2026-11-04",
@@ -38,13 +38,25 @@
           "title": "This week in health care policy: October 31-November 6, 2026",
           "source": "Competitive Enterprise Institute (think-tank commentary)",
           "url": "https://cei.org/blog/this-week-in-health-care-policy-october-31-november-6-2026/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Every stock that's moving as a result of the election (final: CNC +12.6%, MOH +8.9%, HCA +10.3%, UHS +10.9%, THC +9.6%)",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/04/every-stock-thats-moving-as-a-result-of-the-election.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Repo price cache: XLV flat on week vs SPY -2.7%; XLV -2.5% vs SPY -4.4% on Nov 5; XBI -6.7% on Nov 5; XLV ATH Nov 4",
+          "source": "Project price cache (Yahoo daily closes)",
+          "url": "file:///home/user/portofolio/etf-monitor/weekly/cache/close.pkl"
         }
       ]
     },
     "industrials_defense_infra": {
       "score": -1,
       "confidence": "medium",
-      "rationale": "Facts: defense stocks fell on Nov 4 after Democrats took Congress. Lockheed fell 6.9% and L3Harris 6.9%, and drone makers fell 7-12%. Jefferies sees the FY2027 budget near the House's roughly $1.15T rather than Trump's $1.5T request, and TD Cowen calls the Golden Dome and Golden Fleet programmes at risk. The Pentagon is funded by a stopgap only to Dec 11. Data-centre capex names in industrial ETFs also fell (GE Vernova -11.5%, Comfort Systems -15.1%) after voters rejected data centres in nearly every local ballot measure. On the other side, October ISM manufacturing was strong at 55.5, and airlines rallied on Nov 2 as oil fell on hopes for US-Iran talks and again on Nov 4. Interpretation: the budget risk for defense plus the backlash against data-centre buildout outweigh the strong ISM reading.",
+      "rationale": "Facts: both legs point negative. Defense: defense advocates lost seats (Collins, Kiggans), the likely FY27 topline is about $1.1T vs the ~$1.5T request, reconciliation odds were cut to ~10%, the CR expires Dec 11 (Callan 50% shutdown risk; Polymarket 31.5% by Dec 12), and NDAA/appropriations likely slip to 2027; LMT and LHX fell 6.9% on Nov 4. Data-centre build-out: GEV -7 to -11.5%, FIX -15.1%, PAVE -6.7% on the week, with Goldman and Morgan Stanley expecting project delays in Texas, Ohio and Georgia. Offsets: strong ISM (55.5), Iran-war munitions replenishment and a $67B supplemental support missile-defense primes, and signed backlogs cushion near-term earnings. Interpretation: -1 not -2; expect dispersion (missile-defense over platforms/shipbuilding) and treat the data-centre leg as part of the common AI-buildout factor.",
       "headlines": [
         {
           "date": "2026-11-04",
@@ -75,13 +87,49 @@
           "title": "JetBlue Soars 11%, United Rallies 6% as Oil Drops on Iran Peace Talk Hopes",
           "source": "24/7 Wall St.",
           "url": "https://247wallst.com/investing/2026/11/02/jetblue-soars-11-united-rallies-6-as-oil-drops-on-iran-peace-talk-hopes-american-airlines-gains-5/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Congress's defense advocates take big hit in 2026 midterm elections",
+          "source": "Breaking Defense",
+          "url": "https://breakingdefense.com/2026/11/congresss-defense-advocates-take-big-hit-in-2026-midterm-elections/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Republicans have a ticking clock: what can they get done on defense? (CR expires Dec 11; Callan 50% shutdown odds; FY27 topline ~$1.1T)",
+          "source": "Breaking Defense",
+          "url": "https://breakingdefense.com/2026/11/republicans-have-a-ticking-clock-what-can-they-get-done-on-defense/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "The Pentagon needs more ammo for the Iran war (Patriot ~800 from >2,300; THAAD ~-50%)",
+          "source": "Defense News",
+          "url": "https://www.defensenews.com/pentagon/2026/11/04/the-pentagon-needs-more-ammo-for-the-iran-war-small-communities-are-paying-the-price/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "After the midterms, a bigger clash over data centers could be coming (Goldman expects construction delays in Georgia and Texas)",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Texas economy, business, oil and gas, tech companies and data centers after the election (industry may cut back Texas spending)",
+          "source": "The Texas Tribune",
+          "url": "https://www.texastribune.org/2026/11/06/texas-economy-business-oil-and-gas-tech-companies-data-centers/"
+        },
+        {
+          "date": "2026-11-07",
+          "title": "Polymarket: Government shutdown by December 12? (31.5% Yes)",
+          "source": "Polymarket (prediction market)",
+          "url": "https://gamma-api.polymarket.com/markets?slug=government-shutdown-by-december-12"
         }
       ]
     },
     "utilities_realestate": {
       "score": -1,
-      "confidence": "low",
-      "rationale": "Facts: the October payrolls report (+165k against about 65k expected) lifted the odds of a Fed hike on Dec 9 to 78%. The 10-year yield was about 4.87% and the 30-year about 5.27%, after the Fed hiked in September and held at 3.75-4.00% on Oct 28. Texas elected Democrat Gina Hinojosa as governor; she campaigned on a data-centre moratorium. Vistra fell about 14% and was downgraded by KeyBanc, Constellation fell about 9%, and voters rejected data centres in all but one of about 40 local measures. Offsets: Vistra raised its 2026 EBITDA guidance on Nov 6, Entergy reported higher data-centre sales on Nov 2, the 10-year yield is well below its October peak of 5.28%, mortgage rates fell for a third week (still above 7%), and homebuilders rallied 7-8% on Nov 4. Interpretation: the risk of further hikes and the political backlash against data-centre power demand are a mild headwind. The offsets keep confidence low.",
+      "confidence": "medium",
+      "rationale": "Facts: merchant IPPs with Texas/data-centre exposure were hit hardest (VST -13.5 to -15%, CEG -8 to -9%) after Hinojosa won Texas on a data-centre approval moratorium, Ohio elected Acton (conditional moratorium) and voters rejected data centres in 40 of 41 local measures; KeyBanc downgraded VST. Rates add a second headwind: Dec 9 hike odds about 70-78% after +165k payrolls. Offsets: Vistra beat and raised (2027 EBITDA guide $7.7-8.5B, ~98% hedged, new 207 MW Texas PPA), Entergy reported higher data-centre sales, no source says the moratorium reaches signed ERCOT agreements, it cannot start before Jan 19 and statute needs a 19-12 GOP Senate; the 10y fell to ~4.86% from 5.24%, XLRE/VNQ rose ~0.8% while XLU fell ~0.7%, and regulated renewables (NEE +4.6%) gained. Interpretation: mild headwind concentrated in IPPs; -2 only if the moratorium targets signed interconnection agreements or the December ERCOT audit brings clawbacks.",
       "headlines": [
         {
           "date": "2026-11-06",
@@ -118,13 +166,55 @@
           "title": "US Mortgage Rates Retreat for Third Week While Holding Above 7%",
           "source": "Bloomberg",
           "url": "https://bloomberg.com/news/articles/2026-11-04/us-mortgage-rates-retreat-for-third-week-while-holding-above-7"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Constellation Energy sinks 8%, Vistra down 14% as Democrats' midterm sweep hits AI power stocks",
+          "source": "TIKR",
+          "url": "https://www.tikr.com/blog/constellation-energy-sinks-8-vistra-down-14-as-democrats-midterm-sweep-hits-ai-power-stocks"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Data center Texas pause: Gina Hinojosa governor policies",
+          "source": "The Texas Tribune",
+          "url": "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Texas Senate Republican majority could strip lieutenant governor's powers",
+          "source": "The Texas Tribune",
+          "url": "https://www.texastribune.org/2026/11/05/texas-senate-republican-majority-lieutenant-governor-powers/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Democratic gains in legislative races could end supermajority in Ohio House",
+          "source": "Statehouse News Bureau (Ohio)",
+          "url": "https://www.statenews.org/government-politics/2026-11-04/democratic-gains-in-legislative-races-could-end-supermajority-in-ohio-house"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "AI data-center stocks dip as renewables rally after Democratic sweep (VST -15.4%, GEV -11.5%, CEG -9.2%, NEE +4.6%)",
+          "source": "Reuters via Yahoo Finance",
+          "url": "https://finance.yahoo.com/energy/articles/ai-data-center-stocks-dip-113427491.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Treasury Daily Par Yield Curve Rates (10y 4.86% on Nov 6, from 5.24% on Oct 1)",
+          "source": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Orsted Q3 2026 investor presentation (DKK 3.4bn impairment from higher long-dated US rates)",
+          "source": "Orsted (issuer)",
+          "url": "https://cdn.orsted.com/-/media/q32026/q3-2026-orsted-ir-presentation.pdf?rev=615dea761a924a319f939b261d3f949a&hash=8AA44580526AC08A7854B636F6C7BF49"
         }
       ]
     },
     "clean_energy_thematic": {
-      "score": 1,
+      "score": -1,
       "confidence": "medium",
-      "rationale": "Facts: renewables rallied on Nov 4 after the Democratic sweep. First Solar rose 4.6-9%, Enphase about 9%, Nextpower 11.2% and NextEra 4.9%, while Orsted and Vestas also gained. At least seven bills to restore IRA solar credits or remove the FEOC rules are pending, but none has had a hearing, all lapse on Jan 3, 2027, and a presidential veto stands in the way. Kalshi prices a veto override before 2028 at 28%. Orsted's Revolution Wind (704 MW) reached full commercial operation (WBUR, Nov 5). Against this, First Solar cut its 2026 sales guidance, and SolarEdge gave weak Q4 guidance, citing soft US residential demand and delayed FEOC guidance. Interpretation: policy sentiment has improved and the new solar import tariffs from Dec 4 are reported to favour domestic makers, but restoring the credits remains unlikely in the near term, so the tailwind is mild.",
+      "rationale": "Facts: renewables rallied on Nov 4 (ENPH +8.8%, FSLR +8.4%, RUN +6.9%, NEE +4.6%) but the rally reversed into a sharp sell-off on Nov 5 and ICLN sits >30% below end-May. Analysts (Morningstar, PV Tech Research) say 'for solar, nothing changes': the lame duck is still Republican, credit-restoration bills lapse Jan 3, Democrats lack 60 Senate votes and a veto override. Reported fundamentals are weak: First Solar cut FY26 guidance (Oct 29), Enphase guided Q4 far below consensus with sell-through -35% (Oct 28), Sunrun cut its cash-generation guide, Orsted took a DKK 3.4bn rate-driven US impairment while keeping guidance and reaching Revolution Wind COD. The Section 232 15% tariff plus $0.38/W module floor starts Dec 4, raising installer costs (relative positive only for FSLR), and a December Fed hike is likely. Interpretation: this revises round 0's +1 down: the pop was a policy-relief squeeze from a depressed base, not a re-rating; mean reversion likely over 1-3 months.",
       "headlines": [
         {
           "date": "2026-11-04",
@@ -155,12 +245,76 @@
           "title": "SolarEdge (SEDG) Q3 2026 Earnings Call Transcript",
           "source": "The Motley Fool",
           "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/solaredge-sedg-q3-2026-earnings-call-transcript/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Democratic sweep in US midterms brings reprieve for solar but federal gridlock persists ('For solar, nothing changes')",
+          "source": "PV Tech",
+          "url": "https://www.pv-tech.org/democratic-sweep-in-us-midterms-brings-reprieve-for-solar-but-federal-gridlock-persists/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Solar stocks rise on Democrat victory in US midterms",
+          "source": "PV Tech",
+          "url": "https://www.pv-tech.org/solar-stocks-rise-democrat-victory-us-midterms/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Democratic midterms sweep: wind and solar stocks rally reversed into sharp Nov 5 sell-off; ICLN >30% below end-May (column)",
+          "source": "The Globe and Mail (opinion column, David Berman)",
+          "url": "https://www.theglobeandmail.com/investing/markets/inside-the-market/article-democratic-midterms-sweep-wind-solar-stocks/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "Blue trade: clean energy vs AI infrastructure (rally reflects lower policy risk, not better economics)",
+          "source": "Gaining Green (opinion)",
+          "url": "https://gaininggreen.com/article/blue-trade-clean-energy-ai-infrastructure"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Sunrun Q3 2026 results (FY26 cash generation guide revised to ~$200M)",
+          "source": "Sunrun 8-K (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001469367/000162828026070143/exhibit991q326.htm"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Orsted Q3 2026 investor presentation (FY EBITDA guide kept; DKK 3.4bn US impairment on rates)",
+          "source": "Orsted (issuer)",
+          "url": "https://cdn.orsted.com/-/media/q32026/q3-2026-orsted-ir-presentation.pdf?rev=615dea761a924a319f939b261d3f949a&hash=8AA44580526AC08A7854B636F6C7BF49"
+        },
+        {
+          "date": "2026-10-29",
+          "title": "First Solar Q3 2026 results: FY26 net sales guide cut to $4.6-4.9B (background, before window)",
+          "source": "First Solar 8-K (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001274494/000127449426000211/ex991pressreleaseq3-2026.htm"
+        },
+        {
+          "date": "2026-10-28",
+          "title": "Enphase plunges 16% on Q3 miss and weak outlook (background, before window)",
+          "source": "Tradingpedia",
+          "url": "https://www.tradingpedia.com/2026/10/28/enphase-energy-plunges-16-on-q3-miss-and-weak-outlook/"
         }
       ]
     }
   },
-  "regime_notes": "The Nov 3 midterms dominated the week. Democrats won both chambers and the Texas governorship, which reshuffled the sector trade on Nov 4. Hospitals, managed care, homebuilders, airlines and renewables rallied. Defense, drones and power or capex names linked to data centres sold off. Most analysts expect gridlock under a presidential veto, so many of these moves are sentiment-driven rather than based on enacted policy. The backlash against data centres is concrete, though: an existing Texas permit freeze, a governor-elect who backs a moratorium, and about 40 local ballot measures almost all rejecting data centres. That challenges the power-demand case behind utilities, IPPs and electrical infrastructure. Rates remain a headwind for rate-sensitive sectors: a strong October payrolls report pushed the odds of a Dec 9 Fed hike to about 78%, with the 30-year yield near 5.27%. The Iran war still moves oil and jet fuel, and hopes for peace talks helped transports early in the week.",
-  "red_flags": [],
+  "regime_notes": "The Nov 3 Democratic sweep reshuffled sectors on Nov 4: managed care, hospitals, homebuilders, airlines and renewables rallied while defense, merchant power and data-centre capex names sold off. Most of the policy effect lands after the 1-3 month window (Congress seats Jan 3, Hinojosa Jan 19, Acton budget Mar 15); inside the window the binding items are the Dec 11 CR expiry (defense, ACA subsidies, PBM riders and clean-energy credits ride the same vehicle), the mid-December ERCOT data-centre audit, the Dec 4 Section 232 solar tariff and the Dec 9 FOMC. The utilities IPP leg and the industrials data-centre leg belong to the same AI-buildout factor that drove SOX -12% on Nov 5, so they should not be counted as independent negatives. Healthcare's strength overlaps the defensive/quality rotation (XLP, XLV, SPLV, SCHD ATHs on Nov 4). Rates remain the shared driver for utilities, REITs and clean energy: the 10y rallied to ~4.86% as oil fell, but Dec hike odds are ~70-78%, and Oct CPI on Nov 10 (Cleveland core nowcast 0.21%) is the key swing input. A US strike on Iran would reverse the oil-driven relief that helped airlines and rate-sensitive sectors.",
+  "red_flags": [
+    {
+      "target": "XLU / utilities ETFs with VST and CEG weight",
+      "issue": "Merchant IPP holdings face Texas moratorium policy risk (KeyBanc downgraded VST to Sector Weight); not a fund event but a concentration risk inside broad utility ETFs.",
+      "url": "https://www.investing.com/news/stock-market-news/vistra-plunges-135-as-texas-election-rattles-ai-power-trade-keybanc-downgrades-5000811"
+    },
+    {
+      "target": "TAN / ICLN",
+      "issue": "Section 232 15% tariff plus minimum import prices on polysilicon-containing solar products take effect Dec 4, 2026, raising costs for installer and importer holdings (positive only for domestic makers like FSLR).",
+      "url": "https://mgrid.org/2026/08/08/section-232-polysilicon-tariff-15-percent-38-cents-watt-solar-panel-price-floor/"
+    },
+    {
+      "target": "ITA / XAR / PPA (defense ETFs)",
+      "issue": "CR expires Dec 11 with 31.5-50% shutdown odds; a full-year CR bans new starts and delays contract awards for platform/shipbuilding holdings.",
+      "url": "https://breakingdefense.com/2026/11/republicans-have-a-ticking-clock-what-can-they-get-done-on-defense/"
+    }
+  ],
   "upcoming_events": [
     {
       "date": "2026-11-09",
@@ -170,10 +324,51 @@
       ]
     },
     {
+      "date": "2026-11-10",
+      "event": "US October CPI (08:30 ET) and 10y auction; Waller and Bowman speak",
+      "buckets": [
+        "utilities_realestate",
+        "clean_energy_thematic",
+        "healthcare_biotech"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "event": "US 30y auction",
+      "buckets": [
+        "utilities_realestate",
+        "clean_energy_thematic"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "event": "US October PPI",
+      "buckets": [
+        "utilities_realestate",
+        "industrials_defense_infra"
+      ]
+    },
+    {
       "date": "2026-11-14",
       "event": "FDA PDUFA date for Summit/Akeso ivonescimab plus chemo in EGFR-mutant NSCLC (per RTTNews calendar)",
       "buckets": [
         "healthcare_biotech"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "event": "Nvidia Q3 FY27 results (AI-capex read-through for data-centre power and electrical equipment)",
+      "buckets": [
+        "utilities_realestate",
+        "industrials_defense_infra"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "event": "October FOMC minutes",
+      "buckets": [
+        "utilities_realestate",
+        "clean_energy_thematic"
       ]
     },
     {
@@ -185,9 +380,10 @@
     },
     {
       "date": "2026-12-04",
-      "event": "Reported new solar import measures take effect (38c/W minimum price, 15% duty on covered imports)",
+      "event": "Section 232 solar tariff (15% plus $0.38/W module floor) takes effect; US November payrolls",
       "buckets": [
-        "clean_energy_thematic"
+        "clean_energy_thematic",
+        "utilities_realestate"
       ]
     },
     {
@@ -199,22 +395,25 @@
     },
     {
       "date": "2026-12-09",
-      "event": "FOMC decision; markets price about 78% odds of a 25bp hike",
+      "event": "FOMC decision (Dec 8-9 meeting, with SEP); ~70-78% odds of a 25bp hike",
       "buckets": [
         "utilities_realestate",
-        "govt_bonds"
+        "clean_energy_thematic",
+        "healthcare_biotech"
       ]
     },
     {
       "date": "2026-12-11",
-      "event": "FY2027 continuing resolution expires; Pentagon funded at FY2026 level until then",
+      "event": "FY2027 continuing resolution expires; shutdown risk; ACA subsidies, PBM riders, defense topline in play",
       "buckets": [
-        "industrials_defense_infra"
+        "industrials_defense_infra",
+        "healthcare_biotech",
+        "clean_energy_thematic"
       ]
     },
     {
       "date": "2026-12-15",
-      "event": "Approximate: ERCOT data-centre audit expected mid-December; Texas permit pause tied to it",
+      "event": "Approximate: ERCOT data-centre audit result expected mid-December; Abbott grid/permit pause tied to it",
       "buckets": [
         "utilities_realestate",
         "industrials_defense_infra"
@@ -222,10 +421,18 @@
     },
     {
       "date": "2027-01-03",
-      "event": "New Congress seated; pending clean-energy credit bills lapse and must be refiled",
+      "event": "120th Congress seated; pending clean-energy credit bills must be refiled; Democrats control both chambers",
       "buckets": [
         "clean_energy_thematic",
         "healthcare_biotech",
+        "industrials_defense_infra"
+      ]
+    },
+    {
+      "date": "2027-01-19",
+      "event": "Hinojosa inaugurated as Texas governor; earliest date for a data-centre approval moratorium",
+      "buckets": [
+        "utilities_realestate",
         "industrials_defense_infra"
       ]
     },

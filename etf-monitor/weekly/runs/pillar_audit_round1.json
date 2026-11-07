@@ -1,0 +1,386 @@
+[
+ {
+  "scores": [
+   {
+    "criterion": 1,
+    "score": 2,
+    "evidence": "Every pillar carries a decision tag, and the three views (line, exposure, fit) map onto the GOAL cadences. Cash-flow routing (FIT01, FIT02) answers the owner's 'pool' question directly. The weakness is the weekly composite in scoring_method step 8. It sums family scores that use three different references: the sleeve median for CST/TAX/DUR, VWRA for EXR/FAC/RSK/CON/MOM, and the current portfolio for FIT. It then ranks all 322 lines on that sum. The cross-sleeve ranking the owner will read has no decision meaning. A line in a weak sleeve scores 50 on line cost simply because it is the sleeve median. Many pillars are display only (CON02, CON03, MOM05, FAC05, MAC01, MAC02, RSK09), which is acceptable for the weekly review but thins the 'every pillar decides something' claim."
+   },
+   {
+    "criterion": 2,
+    "score": 3,
+    "evidence": "The citations fit the horizon used. Cost and tracking difference: Sharpe 1991, Elton et al. 2002. CAPE at 10-15 years, with its weakness at 1 year noted. Long-term reversal replaces the old wrong-signed CAGR pillars (De Bondt-Thaler). Hype penalty: Ben-David et al. 2023. Macro is weight 0 per Welch-Goyal. Momentum is down-weighted per McLean-Pontiff and this system's own failed S3. Cash-flow rebalancing: Jaconetti et al. Remaining soft spots are calibration, not evidence: the tanh k scales, the 55/15 tilt thresholds and the 0.98/50 bp splice test are pre-registered but uncalibrated."
+   },
+   {
+    "criterion": 3,
+    "score": 2,
+    "evidence": "Momentum is now counted once and withholding is no longer double-counted (CST02 beyond TER, TAX01/TAX02 dropping out after 3 years of TD), which is a real fix. Value is now counted several times instead: EXR01 CAPE yield, EXR02 CAPE vs own history, EXR03 multi-ratio (which also contains E/P), EXR08 long-term reversal (described as 'the price-based value proxy') and FAC01 HML. That is about 45% of EXR plus FAC01, roughly 10 of 100 points on one idea. Restricted-market risk enters three times: CON04 scored, CON04 above 5% as a gate, and an EVT07 penalty in the exposure score. RSK01, RSK02, RSK04 and RSK05 are all drawdown or underperformance-spell measures, likely to be highly correlated. CON01 penalises fund-level concentration while FIT09 caps it at portfolio level, a residual of the double count the merge removed for CON02/CON03. DUR01 and DUR02 overlap. The universe also has duplicate rows (CUSS.L, R2US.L, WSML.L, XDEW.L), so '322 lines' is 318 unique, and XDEW has conflicting scope (us/equal_weight) and TER (0.20/0.15)."
+   },
+   {
+    "criterion": 4,
+    "score": 3,
+    "evidence": "All required areas are covered. Expected return: EXR01-EXR11. Risk: RSK01-RSK08. Cost: CST01-CST10. Tax: TAX01-TAX05 plus EVT06. Durability: DUR01-DUR08. Diversification and fit with holdings: FIT03-FIT11. Valuation: EXR. Macro: MAC01-MAC04. News and events: EVT01-EVT10. Owner-specific items are also present: the AED peg (MAC04, EVT08), the US$2 FX minimum (REC05), whole-share residue (CST08), the GBp line trap (ELG02) and Canadian residency rules (EVT06)."
+   },
+   {
+    "criterion": 5,
+    "score": 2,
+    "evidence": "Prices, iShares holdings, TER and TD tables, FRED, Shiller via shillerdata.com and Ken French are verified. But much of the EXR family, the main tilt driver at weight 20, rests on sources that failed or do not exist:\n- EXR01 regional CAPE: Research Affiliates is a JS app, StarCapital redirects, Barclays needs a login.\n- EXR02: non-US history missing.\n- EXR04: S&P DJI buyback pages return 403, and accumulating .L lines give no yield.\n- EXR05: config/cma.csv does not exist.\nFIT04 (40% of FIT and a qualification condition for targets) depends on these.\n\nSeveral source_status labels say 'verified' against the probe results:\n- CON01 and FIT09 cite 'SSGA xlsx (D1 probe OK)', but the brief lists SSGA as unverified.\n- CST02, CST07 and DUR02 are verified only for iShares, while the core VWRA is a Vanguard line whose TD, NAV and share-class AUM are unverified.\n- EVT01 cites LSE RNS (probe: 403/JS); Investegate works instead.\n- DUR03 is verified only for iShares shares-outstanding.\n\nOwner-input pillars (ELG08, CST09, REC01, REC05, REC06) have no schema in portfolio.yaml and no upload location. DUR05 (justETF lists 404) and DUR08 (no KID history, EVT04 not built) are correctly marked unverified. Half weight for unverified sources mitigates this, so it is feasible with fixes."
+   },
+   {
+    "criterion": 6,
+    "score": 2,
+    "evidence": "Strong on the UCITS mechanics: the IE/LU gate, USD-line mapping with the GBp trap (ELG02), whole-share residue (VUAA US$143.90 and XNAS US$63.16 instead of CSPX US$802.21 and CNDX US$1,562.80, confirmed in the universe files), at most 2 orders of at least US$340, and the worked example arithmetic checks out (gap S&P +2,068, VWRA -2,422, 4 x 143.90 + 1.70, residue 102.70).\n\nProblems:\n(1) ELG01 requires 'the fund is UCITS'. IGLN.L and SGLD.L (scope gold_physical_etc) are Irish-issued ETC debt securities, not UCITS funds. So the gold sleeve either can never be bought or ELG01 is silently not applied, and ELG04 contradicts ELG01.\n(2) Sleeve lines named in the allocation are missing from the universe: EQAC (only EQQU.L exists, at US$665), EXUS, and the core alternatives SPYY and ACWD that DECISION_RULES names. CST10 and DUR06 cannot score them.\n(3) The US$2 FX minimum (about 29 bps per deposit) exceeds the commission. It is only logged (REC05), not handled in the routing rule. Converting every two months, or holding USD residue, is not a rule option.\n(4) Step (a) says 'about US$680 after the US$2 FX minimum', but 2,500 / 3.6725 = 680.74, so it is about 678.7 after the fee. Minor."
+   },
+   {
+    "criterion": 7,
+    "score": 2,
+    "evidence": "Most pillars have closed-form definitions, and agents are limited to cited events with fixed severity-to-score maps. The exception is the most important fit pillar. FIT04 defines alpha_i = E[R_i - R_f] - beta x E[R_P - R_f] with 'expected excess returns from the EXR blend'. But the EXR blend is a 0-100 tanh score built from mixed units (yields in %, z-scores, a percentile, bps drags). No mapping from score to an expected return in % is given. FIT04 therefore cannot be computed deterministically, yet it gates every satellite target and is the only route for gold. Other gaps:\n- 'Approved equivalent' index tables (ELG07, DUR06) and the treaty and rules tables (TAX02, TAX04) are hand-kept with no named owner or version.\n- The CON04 list is maintained by an agent (EVT07), so an agent sets a scored input.\n- EXR05 region mapping and the GMO real-to-nominal +2.5% are fixed constants, which is acceptable if logged."
+   },
+   {
+    "criterion": 8,
+    "score": 2,
+    "evidence": "Weekly scoring, monthly routing and quarterly targets is a sound layering for a 15-year goal, and smoothing (4-week median, 13-week mean, 2 consecutive quarters, at most 5 points per quarter) stops weekly noise from moving money. Mismatch: MOM01 and MOM02 (a 3-12 month signal) sit inside X, which needs two consecutive quarterly qualifications plus hysteresis. A tilt can take 6-9 months to build, by which time the momentum reading is stale. The weight is small (4), but the score is noise at that horizon. The 'first targets from backfilled scores' sentence also conflicts with the 2-consecutive-quarters rule."
+   },
+   {
+    "criterion": 9,
+    "score": 1,
+    "evidence": "The anti-low-volatility design is good: ELG04 excludes cash, risk pillars are one-sided or scale-free, cash gets 0 in FIT04, and FIT06 rewards volatile diversifiers. Cash-flow rebalancing toward fixed targets also avoids the S5 timing coin flip. However:\n(a) The rule that actually moves money is the X >= 55 tilt to quarterly targets. It is untested, yet satellites may take up to 20% of the portfolio before REC04 passes. That contradicts GOAL ('any rule that moves money must be backtested ... and beat holding the world under both execution assumptions') and DECISION_RULES rule 2, which defaults satellite_share to 0 and caps the satellite share of each deposit, not the portfolio, at 20%. The candidate also routes 100% of a deposit to a satellite sleeve for months.\n(b) REC04 tests a different rule from the live one. It covers only the backtestable subset, and even that is not computable as written: 'US CAPE against the world' needs a world CAPE history the data probes found unavailable.\n(c) The FIT04 qualification condition is undefined (see criterion 7).\n(d) The weekly composite sums scores with three different references (sleeve median, VWRA, portfolio), so cross-sleeve ranking is not meaningful.\n(e) Unverified pillars still move money at half weight rather than zero."
+   },
+   {
+    "criterion": 10,
+    "score": 2,
+    "evidence": "Point-in-time logging is well specified. REC02 snapshots every deposit including record-only and MAC pillars; REC03 measures live IC with a promotion bar of t > 2 after 36 months; REC04 runs both execution timings with deflated Sharpe; REC01 tracks the VWRA shadow. Gaps:\n- Most of X cannot be backtested (EXR03, EXR05, EXR09, CON01, CON05, EVT03, EVT04, EVT07), so the live tilt can only be validated by REC03.\n- REC03 computes IC 'across eligible lines'. Many lines share one index (CSPX, VUAA and SPXS; VWRA, FWRA and ISAC), which inflates the cross-section and the t-statistic. The decision is made per sleeve (about 8), so power at quarterly frequency is very low.\n- REC03 halves a family's weight on IC <= 0 after 52 weeks, a noisy one-year test.\n- No pre-registered test exists for the line rule (CST10 choice) beyond the REC06 regret log."
+   }
+  ],
+  "blocking": [
+   "Criterion 9: the money-moving tilt rule (X >= 55 then target = band max x clip((X-55)/15)) can put up to 20% of the portfolio into satellites before REC04 passes. This breaks the agreed GOAL evidence rule and DECISION_RULES rule 2, which defaults satellite_share to 0 and caps 20% of each deposit, not of the portfolio. The candidate also routes 100% of a deposit to one satellite. REC04 tests only a subset of the live X, and that subset needs a world-CAPE history that is not available.",
+   "Criterion 9 / 7: FIT04 (40% of FIT and a required condition for every satellite target, including gold) derives E[R] from 'the EXR blend'. That is a 0-100 score in mixed units with no defined mapping to a % return, so the qualification test cannot be computed deterministically.",
+   "Criterion 6 (scored 2, but must be fixed before any gold target): ELG01 requires a UCITS fund. IGLN.L and SGLD.L are Irish-issued ETCs, not UCITS, so the gold sleeve in the allocation and in ELG04 is either unbuyable or ELG01 is applied inconsistently."
+  ],
+  "fixes": [
+   "Satellite money before the gate: until REC04 gate_pass is true, set the satellite cap to the DECISION_RULES limit, expressed the same way. Either satellites at most 20% of each deposit, or an explicit owner-discretionary satellite allowance (for example at most 10% of the portfolio) labelled 'untested, owner choice' in REC06. Record the change in DECISION_RULES via CHANGELOG, since the candidate redefines the cap as a share of the portfolio.",
+   "Make the money-moving X equal to the tested X. Score sleeves for targets only from pillars REC04 can rebuild point-in-time: EXR01 US-only plus EXR06, EXR07, EXR08, FAC01-FAC04, MOM01, MOM02, RSK01-RSK05. Give EXR03, EXR05, EXR09, CON01, CON05 and exposure EVT weight 0 in X (record-only, logged by REC02) until REC03 promotes them. Replace 'US CAPE against the world' in REC04 with US CAPE vs its own history (EXR02 US), or drop it, because no free world-CAPE history exists.",
+   "Define FIT04 in return units. E[R_i] = a building-block estimate in %/yr: EXR01 CAPE yield (US) or EXR03 earnings yield, plus inflation from MAC04 breakeven, minus EXR09 drag, minus CST10. Or use the EXR05 CMA directly when at least 3 houses are present. Gold uses EXR11 mapped by a stated percentile-to-return table, and bonds use EXR10. State the formula and its units in pillar_scales.yaml.",
+   "ELG01: add an explicit branch for physically backed ETCs (IE-issued, segregated allocated bullion, non-US-situs) that are eligible only for the gold or silver sleeve, and add a vault/custodian check to DUR07 and EVT05. Resolve the contradiction with ELG04.",
+   "Universe: add EQAC (or name EQQU.L at US$665), EXUS, SPYY and ACWD as LSE USD lines, or remove them from the sleeve lists and S1 substitutes. Deduplicate CUSS.L, R2US.L, WSML.L and XDEW.L, and fix XDEW's scope (S&P 500 equal weight is a US sleeve, not 'factor or small-cap') and its TER conflict (0.20 vs 0.15). Fix VWRA's TER from 0.19 to 0.14 in universe_ucits_equity_global_regional.csv.",
+   "Value redundancy: treat EXR01, EXR02, EXR03, EXR08 and FAC01 as one value cluster with a capped combined weight (for example 0.30 of EXR plus FAC01), or merge EXR01 into EXR03 for non-US exposures. Have REC03's 13-week |rho| > 0.85 check run from week 1 on this cluster.",
+   "Restricted-market risk: keep CON04 as a gate only (above 5% blocks deposits) and set its scored weight to 0. Make EVT07 the only score penalty, so the same hazard is not counted three times.",
+   "Weekly composite: drop the single cross-sleeve composite of 322 lines. Report (a) the exposure score X by sleeve against VWRA = 50 and (b) the line score ranked within each sleeve. Ranking lines across sleeves on mixed-reference sums misleads the owner.",
+   "Momentum horizon: move MOM01 and MOM02 out of quarterly X into record-only (REC02), or use them only as a quarter-on-quarter veto (do not raise a target while 12-1 momentum vs VWRA is below -20 points). A 3-12 month signal cannot survive 2-quarter confirmation plus hysteresis.",
+   "REC03: compute IC per exposure (one row per sleeve or index family, not per line), with errors clustered by exposure. Lengthen the family-demotion test from 52 weeks to 36 months, matching the promotion bar.",
+   "Correct source_status labels to match the probe results:\n- CON01 and FIT09: SSGA is unverified; use iShares CSVs plus yfinance top holdings.\n- CST02, CST07 and DUR02: verified only for iShares; for VWRA and other Vanguard lines, use the CST02 peer-gap fallback against ISAC.L and mark the NAV premium unverified.\n- EVT01: use Investegate (verified) instead of LSE RNS.\n- EXR04: dividends only via the US proxy's ttm dividends or Shiller D/P; the buyback part is unverified with a failing source.",
+   "Owner inputs: add a portfolio.yaml schema (positions: line, units, cost; ibkr_checks: line, orderable, kid_ok, checked_on; fills: date, line, qty, price, mid_at_entry, commission; fx: date, aed, usd, fee). Add a runs/statements/ upload folder and a parser, so that ELG08, CST09, REC01, REC05 and REC06 become computable.",
+   "FX minimum: add a routing option to CST10 and the monthly rule. Convert AED every 2 months, or carry USD residue, when the US$2 FX minimum plus US$1.70 commission exceeds the expected monthly cost of being uninvested. REC05 already compares monthly with bimonthly batching, so promote that comparison into a pre-registered rule.",
+   "Remove the 'first targets from backfilled scores' sentence, or state that backfilled quarters count toward the 2-consecutive-quarter rule only for REC04-testable pillars."
+  ],
+  "pass": false
+ },
+ {
+  "scores": [
+   {
+    "criterion": 1,
+    "score": 3,
+    "evidence": "Every pillar carries a decision tag, and the three views map cleanly onto the GOAL cadences. Line score plus CST10 picks the line, exposure score sets the quarterly targets, FIT01 gaps route the monthly deposit, S0-S6 cover sells, and REC01-REC06 keep the testing record. Context-only pillars (MOM04, MOM05, RSK09, MAC01-MAC04) feed the weekly note and are explicitly kept away from money. The one weak spot is the weekly composite across all 322 lines. It sums three different references (sleeve median, VWRA and current portfolio), so it has no single meaning, but it is labelled display-only."
+   },
+   {
+    "criterion": 2,
+    "score": 2,
+    "evidence": "Citations are mostly appropriate to the horizon: CAPE at 10-15 years, a 5-year reversal window, Ben-David 2023 for CON05, Petajisto for EXR09, and a 60-month window for the FAC loadings. Four gaps remain. (a) MOM01 and MOM02 still carry 4 points in the exposure score that sets targets, but the repo's own S3 failed the gate and lost 4-6% a year in 2015-19. (b) EXR09's front-running parameters come from Petajisto 2011 and have shrunk since. (c) RSK06 and EXR07 rest on weak or regime-dependent evidence. (d) The value-type signals together (EXR01, EXR02, EXR03, EXR05, EXR08, FAC01) amount to an ex-US value tilt that lost 2010-2025. The set never says that its own evidence implies the S&P 500 and Nasdaq-100 sleeves will almost never qualify, with US CAPE at 40.7 (Shiller 2026.10)."
+   },
+   {
+    "criterion": 3,
+    "score": 1,
+    "evidence": "Momentum is counted once (MOM01 and MOM02, 4 points) and the TER/TD/withholding double count is fixed. Valuation, however, is now the multiply-counted factor. EXR01 (1/CAPE), EXR02 (CAPE z-score), EXR03 (whose E/P component is close to 1/CAPE across markets), EXR05 (RA and GMO CMAs are explicit CAPE mean-reversion models) and EXR08 (5-year reversal, the price-based value proxy in AMP 2013) together hold 0.60 of EXR, or 12 composite points. Add FAC01 HML and value is about 28% of the exposure score. FIT03 overlap, FIT07 US weight, FIT08 sector, FIT09 single name and FIT10 tracking error are all monotone in the same S&P/Nasdaq weight, so one addition is penalised up to five times. That contradicts the stated CON02/CON03 de-duplication. DUR01 and DUR02 are identical for single-share-class funds such as CSPX. CST06 traded value and DUR01 AUM are strongly related. No pre-launch correlation matrix is given, and REC03's |rho|>0.85 check only runs after 13 weeks. The old set had 59 such pairs, and this one has not been shown to be clean."
+   },
+   {
+    "criterion": 4,
+    "score": 3,
+    "evidence": "All required areas are present. Expected return: EXR01-EXR11. Risk: RSK01-RSK08. Cost: CST01-CST10. Tax: TAX01-TAX05. Durability: DUR01-DUR08. Diversification and fit with holdings: FIT03-FIT11. Valuation: EXR01-EXR03 and EXR11. Macro: MAC01-MAC04, at weight 0. News and events: EVT01-EVT10. Bond and gold sleeves get their own valuation pillars (EXR10, EXR11)."
+   },
+   {
+    "criterion": 5,
+    "score": 2,
+    "evidence": "Many money-relevant inputs fail the source tests. ELG08 has no schema in portfolio.yaml. DUR05 fails because the justETF closure and provider URLs return 404. DUR07 fails because Invesco returns 406 and the Xtrackers API is empty. DUR08 has no history and EVT04 does not exist. EXR04 fails on both halves: buybacks return 403, and accumulating UCITS lines give no yield. EXR05 has no cma.csv. EXR01 has no regional CAPE. EXR02 non-US is missing. CST05 quotes are stale or crossed. REC01, REC05 and REC06 have no owner uploads. Several pillars carry status labels the tests contradict. EXR04 claims a verified dividend yield, but accumulating lines read 0 or null. CON01 cites SSGA as verified, but the brief lists it as unverified. EXR01 cites the Shiller file without noting that the Yale URL is stale and that shillerdata.com has to be scraped. The decisive problem: VWRA is about 38% non-US, and EXR01 needs non-US CAPE, so it cannot be computed even for the reference. With EXR01, EXR02, EXR04 and EXR05 at half weight or missing, 45% of EXR rests on unverified sources, and FIT04 inherits that. The half-weight rule and coverage gate keep this at 2 rather than 1."
+   },
+   {
+    "criterion": 6,
+    "score": 3,
+    "evidence": "The cost and execution details match UAE and IBKR reality. The checks below were confirmed against the universe files and portfolio.yaml:\n- The US$1.70 commission is in the line choice, and a second order only goes ahead at US$340 or more each, so there are at most 2 orders a month.\n- The US$2 FX minimum is costed at about 29 bps, which is correct for US$680.\n- CST08 handles whole-share residue and routes around CSPX (about US$802) and CNDX (about US$1,563) to VUAA and XNAS.\n- ELG02 catches GBp lines, and ELG01 enforces IE domicile with the treaty and estate-tax rationale.\n- Residue carries over by at most one month.\n- The VWRA TER of 0.19 in the universe file and the SPXS price of 14.95 were both confirmed in config/universe_ucits_equity_global_regional.csv, and ELG10 flags the TER mismatch.\n- The 322-line count matches the 4 universe CSVs (326 rows minus 4 headers)."
+   },
+   {
+    "criterion": 7,
+    "score": 2,
+    "evidence": "The code pillars are deterministic, and their tanh scales are pre-registered. Two agent outputs still move money on judgement. EVT03's intact, weakened or broken verdict changes the exposure score (40 or 25) and can freeze a sleeve, from qualitative facts such as 'Japanese governance reform' or 'Taiwan risk'. The EVT01, EVT02, EVT05 and EVT07 severity levels gate deposits and open S1. EVT10 has an agent typing CMA and CAPE numbers into cma.csv and cape.csv with no code check, so a hallucinated or mis-mapped figure flows straight into EXR05, FIT04 and the targets. FIT04 says expected excess returns 'come from the EXR blend', but no deterministic mapping from a 0-100 score to a % return is defined."
+   },
+   {
+    "criterion": 8,
+    "score": 2,
+    "evidence": "The cadences fit: a weekly display, a 4-week median for monthly decisions, and a 13-week mean plus 2 consecutive quarters for targets, matching 10-15 year pillars. The testing loop does not fit. REC03 cuts a family's weight by half after 52 weeks if its 13- or 52-week IC is 0 or below. By the candidate's own evidence, EXR (CAPE explains under 5% at 1 year) and FAC have near-zero IC at those horizons, so REC03 would demote the long-horizon family on noise. After 52 weeks a 52-week horizon gives only one non-overlapping observation."
+   },
+   {
+    "criterion": 9,
+    "score": 1,
+    "evidence": "There are good parts: gates keep cash out (ELG04), the one-sided RSK and FIT pillars cannot reward calm funds, deposits rebalance by cash flow with no rotation, and S0 bans trend selling. The money-moving rule still conflicts with the evidence.\n(a) Satellites can receive up to 20% of the portfolio now, through targets from the exposure score X, before REC04 has passed any gate. DECISION_RULES sets satellite_share to 0 because no tested rule beats holding, and GOAL requires every money-moving rule to be backtested first. The clip((X-55)/15) rule has never been tested. With about 6 sleeves and about 44 quarterly decisions, REC04 has little power, so the 'pre-gate' 20% will in practice be the permanent rule.\n(b) X is taken from each sleeve's best eligible line. That is max-of-N selection bias: sleeves with more lines (S&P 500 and Nasdaq-100 have 3 each) get inflated X, so exposure should be scored on the index, not the line.\n(c) The thresholds 55 and 15, the 2.5 and 5 point hysteresis, the bands and about 60 k scales were chosen after seeing the 2015-2026 backtest, while N_TRIALS stays at 8.\n(d) Missing data is treated asymmetrically. US exposures have Shiller data and get scored down. Data-poor exposures shrink to 50, the same as VWRA, so they look relatively better by construction.\n(e) FIT04 has no defined unit conversion from score to return."
+   },
+   {
+    "criterion": 10,
+    "score": 2,
+    "evidence": "Every pillar is snapshotted in REC02, and REC04 re-runs a subset monthly with deposits, costs, whole shares and both timings. The test design still has look-ahead and inference gaps.\n- REC04 tests a different rule from the live one. It covers about half the exposure score, and 'US CAPE against the world' cannot be built without non-US CAPE history.\n- The 'scores backfilled where the history allows' for first targets would use today's holdings, TER, AUM and revised Shiller, FRED and Ken French data, which is look-ahead. RSK01, RSK02 and RSK05 over the 'longest valid history' must use expanding windows at each date.\n- The universe holds only today's 322 surviving lines (no closed-fund list), and the sleeves S&P 500 and Nasdaq-100 were chosen after their run, which is survivorship and hindsight bias.\n- REC03 pools about 322 lines, many tracking the same index, with overlapping 13- and 52-week windows. Its t-statistics are overstated unless it clusters by exposure and uses non-overlapping or Newey-West errors.\n- CST family IC is measured against VWRA returns, but cost should be tested within a sleeve against the same-index peer's forward return gap."
+   }
+  ],
+  "blocking": [
+   "Criterion 9: satellite sleeves can take up to 20% of the portfolio through X-driven targets before REC04 has passed any gate. GOAL and DECISION_RULES require every money-moving rule to beat holding VWRA in both sub-periods, under both timings, with deflated Sharpe probability above 0.95. The clip((X-55)/15) tilt rule has never been tested, and with about 6 sleeves REC04 will probably never have the power to pass, so the 'temporary' 20% becomes the permanent unvalidated rule.",
+   "Criterion 9: the exposure score X is taken from each sleeve's best eligible line (max of N). This inflates X for sleeves with more lines (S&P 500 has VUAA, CSPX and SPXS; Nasdaq-100 has XNAS, CNDX and EQAC), a selection bias that moves targets.",
+   "Criterion 9: the thresholds (55 and 15, the 2.5 and 5 point hysteresis, the bands, about 60 tanh scales) were fixed after the 2015-2026 backtest had been seen, yet N_TRIALS in src/backtest.py is still 8. Any later REC04 'pass' would be data-snooped.",
+   "Criterion 3: value is counted about 5 times. EXR01, EXR02, EXR03, EXR05 and EXR08 make up 0.60 of EXR, about 12 composite points, and FAC01 adds more, so value is about 28% of the exposure score. No pre-launch correlation matrix shows these are distinct.",
+   "Criterion 3: FIT03, FIT07, FIT08, FIT09 and FIT10 are all monotone in the same S&P 500 or Nasdaq-100 weight, so one purchase is penalised up to 5 times. DUR01 and DUR02 are identical for single-share-class funds.",
+   "Total is 21 of 30, below the 25 required."
+  ],
+  "fixes": [
+   "Pre-gate satellite policy. While REC04 fails, X must not set satellite targets. Two options: (a) the owner sets static sleeve weights in config/portfolio.yaml (for example S&P 500 at 0-10%), logged as an owner policy choice and not a system signal, with FIT01 routing deposits to those fixed targets; or (b) X-driven targets are capped at 10% in total and run as a pre-registered live experiment, compared with the REC02 VWRA shadow. Raise to 20-30% only after the REC04 gate passes. State plainly in the owner note that the evidence currently supports VWRA as the default destination, and that S&P 500 and Nasdaq-100 are allowed but not evidence-favoured.",
+   "Score each sleeve's exposure on its reference index or reference line (for example the S&P 500 index through the ELG07 splice), not the maximum over its lines. Line differences belong only in the line score and CST10.",
+   "Freeze a config hash (pillar_scales.yaml, thresholds, bands) before the first REC04 run. Raise N_TRIALS to count every tilt-rule variant considered across the four designs and the merge (at least the number of distinct threshold and weight sets). Report the effective number of independent sleeve decisions next to the deflated Sharpe.",
+   "Collapse the valuation cluster. Keep one equity valuation composite: EXR01 if regional CAPE becomes verified, otherwise EXR03. Fold EXR02 into it, or make it record-only. Set EXR05 to record-only (or use it only as a shrinkage target), because RA and GMO CMAs are CAPE-based. Keep EXR08 only if its measured rank correlation with the composite on the 9 sleeve proxies is below 0.7. Publish a pre-launch Spearman matrix of every scored pillar over the 322 lines and the sleeve proxies, and merge any pair with |rho| of 0.85 or more before launch rather than after 13 weeks (REC03).",
+   "In FIT, set FIT03 overlap to weight 0 as context, since the candidate's own evidence says active share does not predict returns. Keep FIT10 tracking error as the single scored active-risk measure, and treat FIT07, FIT08 and FIT09 as hard constraints with weight 0, not scored pillars.",
+   "Merge DUR01 and DUR02 into one size pillar using min(fund AUM, share-class AUM x 5), or score DUR02 only when the fund has several share classes. Drop CST06 from scoring above the saturation level, or merge it with CST05 and CST09 as one liquidity pillar.",
+   "Set MOM01 and MOM02 to record-only (weight 0) for quarterly targets until REC04 shows they add value inside the tilt rule. The repo's S3 failed the gate and lost 4-6% a year in 2015-19.",
+   "EXR01 and EXR02 data: VWRA's look-through 1/CAPE needs non-US CAPE, which is unverified, so EXR01 is undefined for the reference itself. Until config/cape.csv holds dated, cited regional CAPE, set EXR01 and EXR02 to missing for every exposure, including the US, so that US-only data does not bias the comparison. Read Shiller only from the scraped shillerdata.com link, not the stale Yale URL.",
+   "Correct the source_status labels. EXR04: unverified (accumulating UCITS yields read 0 or null, S&P DJI returns 403); use the proxy's trailing dividends, as the test showed for VT at 1.56%. CON01: drop SSGA as a verified source. DUR05, DUR07 and DUR08: unverified or failing, at half weight. ELG08: add the schema (units, cost, orderable flag, check date) to config/portfolio.yaml.",
+   "Make EVT10 harvests checkable by code. Each cma.csv and cape.csv row must carry a URL plus the quoted text span, and a parser fetches the page and confirms the number before EXR05 or EXR01 reads it. Otherwise the row is marked unverified (half weight) or missing.",
+   "Limit EVT03 to recording. It may block deposits only on a primary-source fact from a pre-defined list (sanctions, capital controls, exchange closure, delisting, which overlap EVT07). It must not change exposure scores on a qualitative verdict such as 'weakened'.",
+   "Define how FIT04 turns scores into returns: E[R] = VWRA CMA + sum of family score deviations x k (per-pillar scale in % a year). Otherwise compute FIT04 from EXR pillars in natural units only, never from 0-100 scores.",
+   "REC03: never demote EXR or FAC on 13- or 52-week IC, which is uninformative by their own evidence. Test them only on the REC04 historical backtest and at horizons of 36 months or more. Compute IC by exposure cluster, not by line (lines on the same index count once), with non-overlapping windows or Newey-West errors. Test the CST family within each sleeve against the same-index peer's forward return gap, not against VWRA.",
+   "REC04 and backfill: use point-in-time, expanding windows for RSK01, RSK02, RSK05 and FAC01-FAC05. Lag Ken French and FRED by their release delays. Do not backfill FIT07-FIT09, CST, DUR or holdings-based pillars with today's data. Add a survivorship note and include closed exposures where any proxy exists. Specify the exact REC04 rule that is tested (the US CAPE versus own-history variant), and do not claim it validates the live X.",
+   "Missing data symmetry: when the reference (VWRA) lacks a pillar, that pillar is missing for every exposure, so data-rich exposures are not handicapped against data-poor ones that shrink to 50."
+  ],
+  "pass": false
+ },
+ {
+  "scores": [
+   {
+    "criterion": 1,
+    "score": 3,
+    "evidence": "All 100 pillars carry a decision tag (monthly_allocation, sell_or_reduce, weekly_review, portfolio_mix, record_for_testing). The three views (line, exposure, fit) map directly onto GOAL.md's weekly, monthly and quarterly questions. Weight-0 pillars are tied to a gate, constraint, routing input (FIT01, FIT02), sell rule or record."
+   },
+   {
+    "criterion": 2,
+    "score": 2,
+    "evidence": "Evidence is cited at the right horizon: CAPE at 10-15 years with the 1-year caveat, momentum decay, Welch-Goyal for MAC at weight 0, and the S1-S8 backtest for the no-sell-on-trend rule. The weak points are FIT04's forward alpha, which rests on CMA and CAPE estimates with wide error bands, and carry and EXR12, whose evidence is thin."
+   },
+   {
+    "criterion": 3,
+    "score": 2,
+    "evidence": "The TER, tracking-difference and withholding double count is fixed (CST02 is measured beyond TER, and TAX01/02 drop out after 3 years of TD), and momentum is counted once (MOM01/02, 4 points). Valuation still appears four times: EXR01, EXR03, EXR05 (CMAs are largely built from CAPE) and EXR08. EXR also enters twice, through the exposure score X and through FIT04, which is both a scored pillar and the qualification gate. RSK01, RSK04 and RSK05 are likely highly correlated."
+   },
+   {
+    "criterion": 4,
+    "score": 3,
+    "evidence": "Every required area is covered. Expected return: EXR. Risk: RSK. Cost: CST. Tax: TAX01-05. Durability: DUR. Diversification and fit with current holdings: FIT03-FIT11. Valuation: EXR01-03 and EXR11. Macro: MAC01-04. News and events: EVT01-10."
+   },
+   {
+    "criterion": 5,
+    "score": 1,
+    "evidence": "Many sources fail or are mislabelled. iShares is 129 of 322 universe rows. The core and the practical buy lines are Vanguard, Xtrackers or Invesco (VWRA, VUAA, XNAS, SPXS, FWRA, XDEW), and for those lines tracking difference (CST02, CST03), NAV (CST07), share-class size and flows (DUR02, DUR03) and holdings are all unverified. The Vanguard holdings page is month-end only (as at 30 Sept, which is 38 days old and past ELG09's 35-day limit). Source tests failed for: ELG08 (portfolio.yaml has no schema for it), CST09, REC01, REC05 and REC06 (no uploads and no parser), DUR05 (justETF lists return 404), DUR07 (Invesco returns 406, Xtrackers is a JS app), DUR08 (no KID history), EXR04 buybacks (S&P DJI returns 403, and accumulating UCITS lines show 0 yield) and EXR05 (config/cma.csv does not exist). Regional CAPE for EXR01 is JS or login-only. My probes today: yfinance annualHoldingsTurnover is None for VWRA.L (EXR09 claims 7%, verified). GC=F starts 2000-08 and the FRED LBMA gold series returns HTML, so EXR11's 1975 history is unsourced. VT starts 2008-06, which leaves part of the Oct 2007 stress window (RSK04, RSK07) without a world reference. Pillars labelled verified that are not: FIT01 (no positions exist), DUR03 (the snapshot series starts 2026-W45 and needs 12 months), CON01 (SSGA holdings are unverified per the task) and EVT01 (the LSE RNS feed fails; Investegate works). Universe: 322 rows but only 318 unique tickers (CUSS, R2US, WSML and XDEW appear twice). 64 lines are non-USD. EQAC, EXUS, SPYY, ACWD and SSAC are named in sleeves but are not in the universe. Verified: FRED REER and rates, the Ken French Developed and Emerging zips, Damodaran, EPU, GPR, ^MOVE, ^VIX3M, AED=X, yfinance .L OHLCV and yfinance equity_holdings valuation (returned as yields despite the P/E labels)."
+   },
+   {
+    "criterion": 6,
+    "score": 3,
+    "evidence": "Execution fit is designed for this owner. USD LSE lines are enforced by ELG02, with the GBp checks. Whole shares and residue are handled by CST08 and step (e), so CSPX at US$802 and CNDX at US$1,563 route to VUAA and XNAS. Orders are at most 2 and each at least US$340, so commission is at most US$3.40. The FX minimum of US$2 (29 bps) is costed. The VUAA worked example is arithmetically correct (4 x 143.90 + 1.70, US$102.70 carried). IE versus LU withholding, the US-situs gate and 871(m) fragility (TAX03) are all covered. Execution windows and EVT08 broker constants are included."
+   },
+   {
+    "criterion": 7,
+    "score": 2,
+    "evidence": "Pillar formulas are deterministic, the tanh scales are pre-registered in config/pillar_scales.yaml, and 90 of the pillars are computed by code. Agents still set severities by judgment (EVT03 'weakened' scores 40, EVT02 substitute flags), and EVT10 hand-enters CMA and CAPE numbers that drive EXR01, EXR05 and FIT04, with no code check against the cited document. The source_status labels that drive the half-weight rule are set per pillar, not per issuer, so they overstate verification."
+   },
+   {
+    "criterion": 8,
+    "score": 3,
+    "evidence": "Weekly runs score and report but never move money. Monthly routing uses the 4-week median. Quarterly targets use the 13-week mean, 2 consecutive qualifying quarters and hysteresis of 2.5 to 5 points. Long-horizon pillars (CAPE, reversal, CMA) move only the quarterly targets, inside bands."
+   },
+   {
+    "criterion": 9,
+    "score": 2,
+    "evidence": "Cash is excluded by construction (ELG04). Risk pillars are one-sided or scale-free. VWRA = 50 is the reference and a run check. Cash-flow rebalancing removes the S5 timing coin flip. However, satellites may take up to 20% before REC04 passes its gate, and GOAL.md says any rule that moves money must first beat holding the world in backtest. The coverage shrink toward 50, combined with the X >= 55 threshold, means qualification depends on data availability: exposures with only iShares data or only a US CAPE get scored, and the rest drift to 50. Filling missing line facts with the worse quartile systematically penalises the non-iShares lines that CST08 makes the practical buys (VUAA, XNAS)."
+   },
+   {
+    "criterion": 10,
+    "score": 2,
+    "evidence": "Several parts are testable now. REC04 backtests price-based pillars (MOM, EXR08), the Ken French loadings, REER from 1994 and the OECD carry rates. REC02 logs point-in-time snapshots of the record-only pillars and MAC, and REC03 tracks live information coefficients. REC04's 'US CAPE against the world' cannot be backtested because no free world or regional CAPE history exists. EXR03 (yfinance gives no history), EXR05, holdings-based FIT07-FIT09 and CST02 for non-iShares lines can only be recorded from now on. So the full tilt rule cannot be validated before it moves money."
+   }
+  ],
+  "blocking": [
+   "Criterion 5 (data feasibility) scores 1, and the total is 23 of 30, below 25. The set fails.",
+   "ELG08 is a buy gate that fails closed, but its source (an owner check stored in config/portfolio.yaml) has no schema and no data. As specified, no line, including VWRA, can receive a deposit. FIT01-FIT03, FIT05 and FIT07-FIT11 likewise need owner positions (units, cost, as-of date) that portfolio.yaml cannot hold today, yet FIT01 is labelled verified.",
+   "The core and the practical buy lines are not iShares (VWRA and VUAA are Vanguard, XNAS and XDEW are Xtrackers, SPXS is Invesco). For them, CST02, CST03, CST07, DUR02, DUR03 and the holdings-based pillars (CON01, CON04, TAX01, TAX02, FIT03, FIT07-FIT09) have no verified source. The Vanguard holdings are month-end and 38 days old, past ELG09's 35-day limit. ELG09's 70% coverage gate and the worse-quartile fill can therefore block or penalise exactly the lines the worked example buys.",
+   "EXR01 cannot be computed even for the reference: VWRA's look-through CAPE needs regional CAPE, which is unverified (Research Affiliates is a JS app, Barclays needs a login). EXR04's buyback half fails (S&P DJI returns 403) and EXR05's config/cma.csv does not exist. Together that is 40% of the EXR internal weight, and FIT04 (40% of FIT and the satellite qualification test) is built on EXR, while its source_status is unverified.",
+   "Source labels overstate verification, and the half-weight rule depends on them: FIT01, DUR03, EXR09, CON01 (SSGA), EVT01 (LSE RNS), and CST02, CST03, CST07 and DUR02 outside iShares. The universe has 4 duplicated tickers (318 unique, not 322) and omits EQAC, EXUS, SPYY, ACWD and SSAC, which the sleeves name. The VWRA TER is still 0.19 instead of 0.14."
+  ],
+  "fixes": [
+   "ELG08, FIT01-FIT11, REC01: add a schema to config/portfolio.yaml: positions [{ticker, units, avg_cost_usd, as_of}] and orderable {ticker: {ok, checked_on}}. Seed VWRA.L as orderable from the owner's existing holding so the gate does not block the core on day one. Relabel FIT01 as unverified until the owner fills it in.",
+   "CST09, REC01, REC05, REC06: define an upload folder (for example inputs/ibkr/) and write an IBKR activity-statement CSV parser before these pillars are counted. They stay missing until then.",
+   "CST05: drop the 4-snapshots-a-session design. The engine runs weekly with no intraday scheduler, weekend quotes are stale or crossed (CSPX 841.29 bid against 799.20 ask), and Abdi-Ranaldo gave VWRA 0 bps. Use yfinance bid/ask only when fetched during LSE hours and it passes the gates; otherwise mark it missing and move its weight to CST06 until CST09 has 3 fills.",
+   "CST02, CST03, CST07, DUR02: give each pillar and issuer its own source_status. For non-iShares lines, make the verified same-exchange peer-gap fallback the primary CST02 source. CST07 for VWRA must not use Yahoo navPrice (stale, an 82 bp fake premium); leave it missing until a Vanguard NAV source is verified.",
+   "Holdings (CON01, CON04, TAX01, TAX02, FIT03, FIT07-FIT09): build the iShares productId map (129 lines; there is no ISIN URL; use the /products/<id>/<slug>/latest-holdings.csv pattern). Parse the Vanguard UK server-rendered month-end holdings for VWRA and VUAA, and raise ELG09's holdings limit to 45 days for issuers that publish month-end. List every iShares stand-in (ISAC for FTSE All-World, which is MSCI ACWI) in the ELG07 approved-equivalents table instead of calling it a line-level fact. Remove the 'SSGA (D1 probe OK)' claim from CON01 and FIT09.",
+   "EXR01: set the weight to 0 until EVT10 fills config/cape.csv with regional CAPE that code validates. Keep the US CAPE (Shiller, scraped from the shillerdata.com link, dates read as strings, not the stale Yale URL) as a recorded value only. Remove 'US CAPE against the world' from REC04, because no world CAPE history exists.",
+   "EXR04: drop the net-buyback term (S&P DJI returns 403). Compute the dividend yield from the same-index proxy's trailing-12-month Ticker.dividends, because accumulating UCITS lines report 0. Flag INDA (no dividend in 23 months).",
+   "EXR05 and EVT10: create the config/cma.csv schema (house, exposure, horizon, nominal_usd, url, published_on). Code rejects rows without a URL or older than 200 days and needs at least 3 houses. EXR05 stays missing until then.",
+   "EXR09: yfinance annualHoldingsTurnover returned None for VWRA.L today. Compute turnover only from monthly iShares holdings snapshots, mark it unverified for other issuers, and correct the 7% claim.",
+   "EXR11: GC=F history starts 2000-08 and the FRED LBMA gold series is removed. Either find and verify a 1975+ gold source or shorten the window to 2000+ and mark it unverified.",
+   "RSK04 and RSK07: VT starts 2008-06. For the Oct 2007 to Mar 2009 window, use the Ken French Developed market factor plus RF, or ACWI from 2008-03, as the world reference, and declare it in ELG07.",
+   "DUR03: the shares-outstanding series starts 2026-W45, so mark it missing until 12 months exist. DUR05, DUR07, DUR08: set the weight to 0, or keep them as records, until a source is verified. justETF lists return 404, Invesco returns 406, Xtrackers is a JS app and there is no KID history. Use justETF replication and counterparty fields only as a flag for DUR07.",
+   "Universe: correct the VWRA TER to 0.14 in universe_ucits_equity_global_regional.csv now, not only through ELG10. Remove the duplicated CUSS, R2US, WSML and XDEW rows (318 unique lines). Add or verify EQAC, EXUS, SPYY, ACWD and SSAC, or stop naming them in the sleeves and ELG02. Prefer universe or issuer first_date over yfinance fundInceptionDate in DUR04 (XNAS shows a 2026-09 inception against 2021-01-21).",
+   "EXR03: yfinance equity_holdings returns yields (VWRA.L 'Price/Earnings' 0.0489) with no history. Document that the values are yields and treat the pillar as record-from-now for REC04.",
+   "Allocation (criterion 9): to honour GOAL's evidence rule, keep satellites at 0% (or a small, explicitly owner-approved test share) until REC04 passes on its backtestable subset. Do not open the full 20% before the gate."
+  ],
+  "pass": false
+ },
+ {
+  "scores": [
+   {
+    "criterion": 1,
+    "score": 3,
+    "evidence": "Every pillar carries a decision tag and a use. Routing uses FIT01, line choice uses CST10, quarterly targets use the exposure score, sells use S1-S6 tied to ELG/EVT/FIT02, and records use REC01-06. Context pillars (CON02, CON03, MOM04, MOM05, MAC01-04, RSK09) feed the weekly note or the drawdown protocol. The answer to the owner's question is direct: VWRA is the yardstick, and the pool (S&P 500, Nasdaq-100, ex-US, EM, factor, gold) competes for each deposit through sleeve gaps. One weakness: the weekly 322-line composite adds families scored against three different references (sleeve median, VWRA, current portfolio). It is display only, but the ranking has no clear meaning."
+   },
+   {
+    "criterion": 2,
+    "score": 2,
+    "evidence": "Line-cost pillars (TER, tracking difference, withholding, residue) have known signs and compound over 15 years, which is strong. Valuation pillars cite 10-15 year evidence (Campbell-Shiller, Keimling, AMP 2013). But they move quarterly targets inside bands, where out-of-sample evidence for country and region tilts is weak, and REC04 has not been run. The tilt rule that sends up to 20% of the portfolio to satellites has no backtest yet, and the only tested deposit-tilt rule (S5) had a deflated Sharpe probability of 0.855, below the 0.95 bar."
+   },
+   {
+    "criterion": 3,
+    "score": 2,
+    "evidence": "Momentum is counted once (MOM01/02 = 4 points), and withholding is correctly taken out of the line score when tracking difference covers 3 years or more. Valuation still enters EXR about five times: EXR01 CAPE yield, EXR02 CAPE z-score, EXR03 multi-ratio, EXR05 CMA (built mostly from CAPE and yield) and EXR08 5-year reversal, about 55% of EXR, or 11 points. Withholding comes back in FIT04, because its 'EXR blend net of costs' contains EXR04 (net of TAX01/02) and CST10 (tracking difference, which already includes withholding). Smaller overlaps: CST04 price noise with CST07 premium, DUR01 with DUR02, RSK01, RSK04 and RSK05 on the same crash windows."
+   },
+   {
+    "criterion": 4,
+    "score": 3,
+    "evidence": "All required areas are covered: expected return (EXR, FAC), risk (RSK, one-sided), cost (CST01-10), tax (TAX01-05 plus EVT06 for US estate tax, the treaty, 871(m), Irish CAT, UAE and Canadian residency), durability (DUR, EVT01, EVT05), diversification and fit with holdings (FIT03-FIT11), valuation, macro (MAC, weight 0) and news (EVT01-10, structural and cited)."
+   },
+   {
+    "criterion": 5,
+    "score": 2,
+    "evidence": "Statuses are mostly honest, and the gaps match the data tests: regional CAPE, buybacks (403), cma.csv missing, KID history, DUR05 closure list (404), Invesco and Xtrackers swap pages, and IBKR statements are all marked unverified, and unverified pillars count at half weight. But FIT01 (the routing input) is labelled verified while config/portfolio.yaml has no positions schema (test 1), and the same holds for FIT03, FIT05, FIT07-FIT11 and RSK09. REC02 cites a plan log that does not exist. EVT01 relies on LSE RNS, which fails; Investegate works. CON01 claims SSGA holdings are verified, but they are listed as unverified. EXR11 needs gold prices back to 1975, which yfinance GC=F does not give. The bigger issue: the lines the allocator would actually buy (VWRA, VUAA, XNAS, SPXS, FWRA) are all Vanguard, Xtrackers or Invesco, and their CST02, CST03, CST07, DUR02, DUR03, DUR07 and DUR08 inputs are unverified. Verified line data exists mainly for iShares lines (CSPX, CNDX), which cost more than one month's deposit per share."
+   },
+   {
+    "criterion": 6,
+    "score": 2,
+    "evidence": "The design handles the account well: USD LSE lines (ELG02), Irish domicile (ELG01), whole-share residue (CST08), at most 2 orders with a US$340 floor so commission stays at 0.5% or less, residue carry-over, VUAA (US$143.90) and XNAS (US$63.16) in place of CSPX (US$802) and CNDX (US$1,563), and the FX minimum (2/680 = 29 bps). The worked-example arithmetic checks: 4 x 143.90 + 1.70 leaves 102.70. Defects: (a) ELG08 fails closed and config/portfolio.yaml has no field for it, so on day one every line, VWRA included, is unbuyable, and no fallback is defined (this contradicts 'the deposit is never skipped'). (b) The worked example buys VUAA, but the candidate's own CST10 would pick SPXS (TER 0.05%, about 19 bps better tracking difference, price US$14.95), because TAX03 is applied only in S2 switching, not in line choice. (c) The Developed ex-US sleeve names EXUS and the Nasdaq-100 sleeve names EQAC as a substitute (DUR06), but neither is in the universe files; the ex-US sleeve has no eligible USD line (the Europe lines VEUA and VERG are GBP, and VERG has no ISIN). (d) CST05 drops snapshots older than 15 minutes, but Yahoo LSE quotes are delayed about 15 minutes, so most snapshots would be discarded. (e) The cost of funding the deposit (bank wire and correspondent fees, the bank's AED/USD spread, and whether IBKR accepts AED) is only logged afterwards in REC05, yet for a US$680 deposit it may exceed the commission."
+   },
+   {
+    "criterion": 7,
+    "score": 2,
+    "evidence": "Most definitions are deterministic, with pre-registered tanh scales in config/pillar_scales.yaml, one-sided forms and fixed thresholds. Agents output severities with citation rules, and EVT10 extracts numbers rather than opinions. But FIT04, which is 40% of FIT and the qualifying condition for every satellite target, says 'expected excess returns come from the EXR blend net of costs' without defining how a 0-100 family score becomes a % expected return. ELG09 does not say whether half-weight unverified pillars count as covered. The weekly composite's mix of references is also not defined in a way that can be interpreted."
+   },
+   {
+    "criterion": 8,
+    "score": 3,
+    "evidence": "The cadences line up: weekly scoring and reporting move no money; monthly routing uses the median of the last 4 weekly readings; quarterly targets use the 13-week mean, 2 consecutive qualifying quarters, 2.5-point hysteresis and at most 5 points per quarter; costs are amortised over 15 years (CST10); sells need a 30-day cooling-off. This matches the weekly review, monthly allocation and 15+ year goal."
+   },
+   {
+    "criterion": 9,
+    "score": 2,
+    "evidence": "The aggregation is sound by construction: ELG04 removes cash, T-bill, money-market and ultra-short funds; risk pillars are one-sided against VWRA or scale-free; FAC05 beta is context only; FIT06 rewards volatile, low-correlation assets; routing is cash-flow rebalancing with no weekly selection, which removes the S5 coin flip. Two inconsistencies with the evidence and the goal: (1) GOAL.md and DECISION_RULES require any money-moving rule to pass the backtest gate, yet the score-driven tilt can put up to 20% of the portfolio into satellites before REC04 has run once; the only comparable tested rule (S5) failed the gate. (2) FIT04 counts withholding twice, through EXR04 and CST10."
+   },
+   {
+    "criterion": 10,
+    "score": 3,
+    "evidence": "REC04 backtests the price- and Shiller/French-based subset with deposits, the US$1.70 minimum, whole shares and both execution timings. REC02 logs the actual pick, the S5 shadow pick, the top exposure-score sleeve and the all-VWRA order, plus snapshots of every record-only pillar. REC03 gives live information coefficients with explicit promotion and demotion thresholds. DUR03 and CON03 build histories from weekly snapshots. Note: src/backtest.py currently models '10 bps per side plus US$1.7', not whole shares, so REC04 still has to be built."
+   }
+  ],
+  "blocking": [
+   "Total is 24 of 30, below the 25 bar.",
+   "ELG08 (IBKR orderability) is a buy gate that fails closed, and config/portfolio.yaml has no field for it. On day one every line, VWRA included, is unbuyable, and the allocation method gives no fallback when the target sleeve, or the core, has no eligible line. This contradicts 'the deposit is never skipped'.",
+   "FIT01 (sleeve gap, the routing input) and FIT03, FIT05, FIT07-FIT11 and RSK09 need current units per line, but config/portfolio.yaml holds no positions or units schema, and no IBKR statement parser exists. The monthly allocator cannot run as specified.",
+   "Line choice contradicts itself. CST10 ignores TAX03, so it would pick SPXS (TER 0.05%, about 19 bps better tracking difference, US$14.95) over VUAA, yet the worked example buys VUAA, and S2 treats tax-rule-dependent savings differently from new-money routing.",
+   "Pool sleeves name lines that are not in the universe: EXUS for Developed ex-US, and EQAC as the Nasdaq-100 substitute in DUR06. The ex-US sleeve has no eligible USD LSE line at all (VEUA and VERG are GBP, VERG and VAPU have no ISIN).",
+   "The score-driven satellite tilt (up to 20% of the portfolio) can move money before REC04 has run, against the GOAL evidence rule and DECISION_RULES (satellite_share 0 because S5 failed the gate). FIT04, the qualifying condition for every satellite, has no defined mapping from EXR scores to % expected return, and it counts withholding twice."
+  ],
+  "fixes": [
+   "ELG08: add to config/portfolio.yaml an 'orderable' map {ticker: {confirmed: true, date}}. Pre-fill it with VWRA and the first-choice line of each sleeve at setup. Add allocation rule (h): if no line in the target sleeve passes the gates, route to the next sleeve; if no sleeve qualifies, buy the core's designated line (VWRA, then FWRA, then SPYY) provided ELG01, ELG02 and EVT01 pass. Cash is never held for more than one month.",
+   "FIT01: add a positions block to config/portfolio.yaml (ticker, units, as_of, optional cost) as the owner-maintained source, and later replace it with an IBKR activity-statement CSV parser saved in a named folder such as data/ibkr/. Relabel FIT01, FIT03, FIT05, FIT07-FIT11, RSK09, REC01, REC05 and REC06 as owner-input until a statement is parsed.",
+   "CST10: subtract half of the tax-rule-dependent saving measured by TAX03 (or add TAX03 bps x 0.5 as a cost), so new-money line choice and the S2 switch rule use the same logic. Redo the worked example under the final CST10: SPXS with about 45 shares (residue about US$6) or VUAA, with the numbers shown.",
+   "Universe and DUR06: add an affordable USD Developed ex-US line (for example Xtrackers MSCI World ex USA 1C, IE0006WW1TQ4, after verifying it on yfinance) and EQAC, or drop them from the sleeve lists. Fix the missing ISINs (VERG, VAPU), unify the GBX, GBp and GBP spellings, remove the duplicate WSML and XDEW rows, and correct the VWRA TER to 0.14% before ELG10 goes live.",
+   "CST05: check the quote's regularMarketTime rather than a 15-minute freshness filter (Yahoo LSE quotes are delayed about 15 minutes), allow up to 25 minutes, and schedule the four intraday snapshots as a separate weekday job, since the weekly run cannot take them.",
+   "Funding cost: before the first deposit, record in portfolio.yaml how the 2,500 AED reaches IBKR (AED wire with IBKR conversion, or a USD wire from a UAE bank), including the bank wire fee, any correspondent fee and the spread to the 3.6725 peg. Include it in the deposit-size arithmetic and decide monthly versus bimonthly batching up front (rule (a)), not only afterwards in REC05.",
+   "Evidence gate for tilts: run REC04 before the first quarterly target. Until it passes, either cap score-driven satellite targets at 10% in total, or let satellite weights be set only as owner-fixed policy targets (cash-flow rebalanced, no scores), consistent with DECISION_RULES rule 2.",
+   "FIT04: define E[R_i] in % directly, for example EXR05 CMA where present, else 1/CAPE plus 1.5% real growth plus 2.5% inflation, gross of withholding, minus CST10 bps. Do not take it from the EXR family score, which already nets withholding through EXR04.",
+   "EXR non-redundancy: cap the combined valuation weight (EXR01, EXR02, EXR03, EXR05, EXR08) at about 40% of EXR, or have REC03 merge them at the first 13-week check. Shift the freed weight to EXR09 (index drag), whose sign is known.",
+   "Source labels: EVT01 and EVT02 should use investegate.co.uk with NAV notices filtered out, not LSE RNS. Mark CON01's SSGA source and REC02's plan log as unverified until they exist. Use VWRA's own month-end holdings from vanguard.co.uk (verified) in FIT03 and FIT07-FIT09 instead of the ISAC/SSAC stand-in, with ISAC weekly data only between month-ends. Name a pre-2000 gold source for EXR11, such as the World Bank Pink Sheet.",
+   "ELG09: state that a half-weight unverified pillar counts as covered only if it has a value, and exempt the core's designated line from the 70% coverage block, since the core is the default destination."
+  ],
+  "pass": false
+ },
+ {
+  "scores": [
+   {
+    "criterion": 1,
+    "score": 3,
+    "evidence": "All 100 pillars carry a decision tag, and each one feeds a gate, the line, exposure or fit view, a sell rule (S0-S6), the weekly note or a REC log. The weight-0 pillars (ELG, MAC, REC, CST10, FIT01/02, RSK07-09, MOM03-05, EVT06/08/09/10) all have a named consumer. Count checked: 10+10+5+8+12+5+9+5+11+5+6+4+10 = 100. 37 of them carry weight 0, and for an equity line with 3 or more years of tracking difference only about 55 are actually scored."
+   },
+   {
+    "criterion": 2,
+    "score": 2,
+    "evidence": "The citations are mostly sound. But EXR rests on long-horizon valuation evidence (CAPE R2 of about 40% from overlapping 10-year windows, which is inflated; see Boudoukh, Richardson and Whitelaw 2008), and the system's own window points the other way. My yfinance check, Jan 2015 to Nov 2026 monthly CAGR: EEM 5.8%, EFA 7.5%, VT 10.6%, SPY 13.5%, QQQ 18.0%. The cheap regions trailed VT in both sub-periods (2015-19: EEM 5.3, EFA 5.7, VT 9.2; 2020-26: EEM 7.3, EFA 9.3, VT 12.0), so a CAPE-led EXR tilt would have lost in-sample. RSK05 penalises past 5-year underperformance against VWRA, which has the opposite sign to EXR08 reversal (De Bondt-Thaler). Ben-David et al. 2023 is in the Review of Financial Studies, not the Journal of Finance. The backtest figures the rationale quotes (S1/S2/S4 -2 to -10, S5 10.0/11.1 vs 10.4, DSR 0.855, S8 -1 to -3) match runs/backtest_latest.json."
+   },
+   {
+    "criterion": 3,
+    "score": 2,
+    "evidence": "Momentum is counted once (MOM01/MOM02 at 4 points, MOM05 display only), and withholding is de-duplicated through CST02 'beyond TER' and the TAX01/02 drop-out. Value, however, is counted several times. EXR01 (0.15), EXR02 (0.05), EXR03 (0.15), EXR05 (0.15; house CMAs are mostly valuation-built) and EXR08 (0.10, which the candidate itself calls the price-based value proxy) make up about 60% of EXR, and FAC01 HML is on top of that. RSK01, RSK02 and RSK04 are three drawdown views of one history. RSK05 partly cancels EXR08."
+   },
+   {
+    "criterion": 4,
+    "score": 3,
+    "evidence": "Every required area is covered. Expected return: EXR01-11. Risk: RSK01-09. Cost: CST01-10. Tax: TAX01-05. Durability: DUR01-08. Diversification and fit with holdings: FIT03-FIT11, CON01. Valuation: EXR01-03, EXR11. Macro: MAC01-04. News and events: EVT01-10."
+   },
+   {
+    "criterion": 5,
+    "score": 1,
+    "evidence": "9 of the 16 tested sources do not work: 1, 3, 8, 11 (buyback half), 12, 13, 14, 15 and 16. Several source_status labels contradict the tests. FIT01, FIT02, FIT03 and FIT11 are marked verified, but config/portfolio.yaml has no position fields (only core VWRA, satellites [], satellite_share 0.0). FIT04 needs EXR/CST10 engine input that does not exist (test 13). EXR04's dividend leg fails on accumulating lines and the buyback leg returns 403 (test 11). EXR05 needs config/cma.csv, which does not exist (test 12). DUR07 cannot reach Invesco pages (406), so the SPXS swap data is unavailable (test 7). DUR08 has no history and no EVT04 (test 8). CST02 for the practical lines VWRA, VUAA and XNAS needs Vanguard/Xtrackers factsheets, which are unverified. EVT01 names LSE RNS, which is blocked; Investegate works. More seriously, the gates fail closed: ELG08 has no schema and no owner data (test 1), so every line fails ELG08 on day one, VWRA included, and with this many unverified pillars ELG09 coverage under 70% may also block the non-iShares core line."
+   },
+   {
+    "criterion": 6,
+    "score": 2,
+    "evidence": "Strong points: one order, a second order only when both are US$340 or more, the US$1.70 and US$2 FX minimums, whole-share residue (CST08), and VUAA/XNAS chosen over CSPX/CNDX. The worked example is arithmetically correct (4 x 143.90 = 575.60, residue 102.70). Problems: EQAC is listed as a Nasdaq-100 line and as a DUR06 substitute, but EQAC.L returns 404 on yfinance and is not in the universe; the only Invesco Nasdaq line there is EQQU.L, distributing, TER 0.30. The SPXS ticker conflict is unresolved: SPXS.L closes at 14.95 while SPXP.L closes at 1118.6 for what may be the same ISIN IE00B3YCGJ38, and this affects CST08 routing. The backtest the candidate leans on uses MONTHLY = 2500 in USD (src/backtest.py line 12; contributed 357,500 = 143 x 2,500), so commission there is about 0.07% per deposit, against about 0.25% at the owner's US$680. A minimum satellite of 5% does not fit continuous targets: gold's 0-5% band means gold gets weight only at X of 70 or more. The 4-line cap in FIT11 ignores the diversifier sleeve D."
+   },
+   {
+    "criterion": 7,
+    "score": 2,
+    "evidence": "Most definitions are deterministic, with pre-registered tanh scales. But FIT04 is 40% of FIT and the qualification gate for any sleeve, and the conversion of 'the EXR blend' (scores and z-scores) into E[R] in % a year is not defined; neither is the mapping of the EXR11 gold percentile to an expected return. The scored pillar CON04 depends on a restricted-market list that the EVT07 agent maintains. EVT03 intact/weakened/broken is an agent judgement, though capped at 40 without a primary source. The ELG07 'approved equivalent' table is maintained by hand."
+   },
+   {
+    "criterion": 8,
+    "score": 3,
+    "evidence": "Weekly scoring and reporting only. Monthly routing uses the median of 4 weekly readings and FIT01 gaps. Quarterly targets use the 13-week mean, need 2 consecutive qualifying quarters, and move by at least 2.5 and at most 5 points. EXR moves only quarterly targets, and momentum is never a sell reason."
+   },
+   {
+    "criterion": 9,
+    "score": 1,
+    "evidence": "Cash is excluded (ELG04) and the risk pillars are one-sided, which is good. But the method lets score-driven satellites take up to 20% of the portfolio before any version of the rule is backtested. That breaks the GOAL evidence rule ('any rule that moves money must be backtested ... and beat holding the world market under both execution assumptions') and departs from DECISION_RULES (satellite_share default 0; S5 DSR 0.855 is below 0.95). In the 2015-2026 window the valuation-led tilt would have pointed to the losing sleeves (see criterion 2). The weekly composite adds line scores (vs sleeve median), exposure scores (vs VWRA) and fit scores (vs the portfolio) into one cross-universe rank, which has no coherent meaning. The built-in 'VWRA = 50 on every exposure family' check conflicts with EVT04, EVT07 and CON04 being able to penalise VWRA itself."
+   },
+   {
+    "criterion": 10,
+    "score": 2,
+    "evidence": "Each pillar is snapshotted point-in-time (REC02), REC03 measures live information coefficients, and REC04 re-runs a backtest. However, REC04 tests only a price, Shiller and French subset (US CAPE, FAC, MOM, EXR06-08, RSK07), while the live rule also uses EXR03, EXR05, EXR09, CON and EVT. Passing REC04 would therefore lift the cap to 30% on the strength of a different rule. No N_TRIALS accounting is specified for monthly REC04 re-runs and variants. The backtest deposit size is US$2,500, not US$680."
+   }
+  ],
+  "blocking": [
+   "Criterion 9 (and the GOAL evidence rule): score-driven sleeve targets move up to 20% of the money before any backtest. DECISION_RULES keeps satellite_share at 0 because S5 had no robust edge (DSR 0.855). In the 2015-11/2026 window, EEM (5.8%) and EFA (7.5%) trailed VT (10.6%) in both sub-periods, so the CAPE-led EXR tilt would have gone the wrong way.",
+   "Criterion 5: gates fail closed on sources that do not exist yet. ELG08 has no portfolio.yaml schema and no owner data, so every line fails it, VWRA included. ELG09 coverage under 70% can block the Vanguard core line because many pillars are unverified. Day one could leave no buyable line.",
+   "Criterion 5: several source_status labels are wrong. FIT01-FIT03 and FIT11 are marked verified with no holdings in portfolio.yaml. FIT04 is missing its engine input. EXR04's dividend leg fails on accumulating lines and its buyback leg returns 403. EXR05 has no config/cma.csv. DUR07 cannot reach Invesco pages. CST02 for VWRA, VUAA and XNAS is unverified. EVT01 names LSE RNS, which is blocked.",
+   "Criteria 7 and 10: FIT04 is the qualification gate and 40% of FIT, but the mapping from EXR scores to E[R] in %, and from the EXR11 percentile, is undefined. REC04 validates a different, smaller rule than the live allocation, and a pass would lift the cap to 30%."
+  ],
+  "fixes": [
+   "Allocation, REC04, and the answer to the owner: set score-driven satellite targets to 0 until REC04 passes the DECISION_RULES gate (both sub-periods, both execution timings, DSR above 0.95, every variant counted in N_TRIALS). For the S&P 500, Nasdaq-100 and EM sleeves the owner wants, allow an explicit owner policy mix in portfolio.yaml (for example a fixed 10% S&P 500). Backtest it first as static cash-flow rebalancing; it is price-only, so it can be tested now with VT/SPY/QQQ/EEM over 2015-2026. Label it owner policy, not a system signal. Tell the owner that with US CAPE at about 40.7 the EXR family will score S&P 500 and Nasdaq-100 below VWRA, so the pool will rarely route to them on scores alone.",
+   "REC04 must test the exact live rule. Hold the pillars without history (EXR03, EXR05, EXR09, CON01/04/05, EVT03/04/07) at 50 in both the backtest and the live rule, until REC03 promotes them. Re-run src/backtest.py with MONTHLY = 681 (not 2500), whole shares and the US$2 FX minimum.",
+   "ELG08 and ELG09: add portfolio.yaml fields (positions with units, cost, and an ibkr_orderable date per line) and a parser for IBKR CSV uploads. Never block the core: if the core lacks owner or optional data, fall back to VWRA, and fail it only on a structural S1 trigger. Compute ELG09 coverage over pillars whose sources are verified.",
+   "Correct the source_status labels. Mark FIT01, FIT02, FIT03 and FIT11 unverified until positions exist, and FIT04 unverified (engine). EXR04: use proxy ttm dividends (VT) or Shiller D/P, and set the buyback leg to missing. EXR05: create config/cma.csv. DUR07: use justETF counterparties for Invesco and Xtrackers. DUR08: build from the engine's own snapshots. CST02 for Vanguard and Xtrackers lines: use the peer fallback until factsheets are verified. EVT01: use Investegate with NAV notices filtered out.",
+   "FIT04 and EXR11: write the formula, e.g. E[R_i] = E[R_VWRA] + sum_j b_j x (natural-unit difference on EXR01/03/05/06/07/08/09), with pre-registered b_j, plus a gold mapping (e.g. a regression of the real-price percentile on 10-year forward real return) or none. Until then FIT04 is missing and no sleeve can qualify.",
+   "Value double-counting: cap the combined weight of EXR01, EXR02, EXR03, EXR05, EXR08 and FAC01, or merge EXR01-EXR03 into one valuation composite. Run the REC03 |rho| above 0.85 merge check before launch, not after 13 weeks.",
+   "RSK05: replace the in-sample worst 60-month regret, which has the opposite sign to EXR08 and penalises EM, ex-US and value for past outcomes, with an ex-ante, tracking-error-based probability of a 5-year shortfall, or make it context only.",
+   "Sleeve lines: remove EQAC (not on yfinance and not in the universe) from the Nasdaq-100 sleeve and the DUR06 substitutes, or verify its listing; the universe has EQQU.L (distributing, TER 0.30). Resolve SPXS.L (14.95) against SPXP.L (1118.6) for ISIN IE00B3YCGJ38 before CST08 or routing uses either. Fix VWRA's TER in the universe file to 0.14%.",
+   "Internal consistency: round targets to 0 or at least 5% (and say so for gold's 0-5% band). Count the diversifier sleeve D in the FIT11 line cap. Make the VWRA = 50 check net out the penalties EVT04, EVT07 and CON04 apply to VWRA itself. Drop the weekly cross-view composite or show three separate ranks (line, exposure, fit).",
+   "Citations: Ben-David, Franzoni, Kim and Moussawi 2023 is in the Review of Financial Studies. State that CAPE's 10-year R2 comes from overlapping windows (Boudoukh, Richardson and Whitelaw 2008)."
+  ],
+  "pass": false
+ }
+]
