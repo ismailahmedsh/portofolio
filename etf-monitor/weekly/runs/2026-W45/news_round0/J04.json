@@ -1,0 +1,240 @@
+{
+  "pillar_id": "J04",
+  "pillar_name": "US and global sectors: healthcare, industrials and defense, utilities and real estate, clean energy",
+  "week": "2026-W45",
+  "window": "2026-10-31..2026-11-07",
+  "bucket_scores": {
+    "healthcare_biotech": {
+      "score": 1,
+      "confidence": "low",
+      "rationale": "Facts: Democrats won both chambers on Nov 3. Medicaid- and ACA-exposed insurers and hospital operators rallied on Nov 4, with Centene up 12.6% and HCA up 10.3% (CNBC), because analysts expect a delay to the OBBBA Medicaid cuts and better odds for the ACA subsidies. Reports on Nov 4-6 say AstraZeneca made a non-binding offer of about $10B for Rhythm, adding to 2026 biotech M&A of about $208B. Against that, CMS on Nov 5 made Medicare drug price negotiation permanent from 2029, with up to 20 more drugs to be picked by Feb 1, 2027, and the GLOBE Part B MFN model takes effect Nov 30. Interpretation: providers and biotech M&A give a mild net tailwind. J.P. Morgan and Morgan Stanley expect gridlock, and drug-pricing pressure on pharma continues, so confidence is low.",
+      "headlines": [
+        {
+          "date": "2026-11-04",
+          "title": "Health insurers, hospitals rally after sweeping midterm win for Democrats",
+          "source": "Reuters (via Yahoo Finance)",
+          "url": "https://finance.yahoo.com/healthcare/articles/health-insurers-hospitals-rally-sweeping-150037226.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Every stock that's moving as a result of the election",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/amp/2026/11/04/every-stock-thats-moving-as-a-result-of-the-election.html"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "CMS finalizes rule to codify Medicare Drug Price Negotiation Program",
+          "source": "American Hospital Association News",
+          "url": "https://www.aha.org/news/headline/2026-11-05-cms-finalizes-rule-codify-medicare-drug-price-negotiation-program"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "AstraZeneca offers $10B to buy drugmaker Rhythm",
+          "source": "Manila Times (wire report; deal not confirmed by companies)",
+          "url": "https://www.manilatimes.net/2026/11/06/business/foreign-business/astrazeneca-offers-10b-to-buy-drugmaker-rhythm/2463261"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "This week in health care policy: October 31-November 6, 2026",
+          "source": "Competitive Enterprise Institute (think-tank commentary)",
+          "url": "https://cei.org/blog/this-week-in-health-care-policy-october-31-november-6-2026/"
+        }
+      ]
+    },
+    "industrials_defense_infra": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "Facts: defense stocks fell on Nov 4 after Democrats took Congress. Lockheed fell 6.9% and L3Harris 6.9%, and drone makers fell 7-12%. Jefferies sees the FY2027 budget near the House's roughly $1.15T rather than Trump's $1.5T request, and TD Cowen calls the Golden Dome and Golden Fleet programmes at risk. The Pentagon is funded by a stopgap only to Dec 11. Data-centre capex names in industrial ETFs also fell (GE Vernova -11.5%, Comfort Systems -15.1%) after voters rejected data centres in nearly every local ballot measure. On the other side, October ISM manufacturing was strong at 55.5, and airlines rallied on Nov 2 as oil fell on hopes for US-Iran talks and again on Nov 4. Interpretation: the budget risk for defense plus the backlash against data-centre buildout outweigh the strong ISM reading.",
+      "headlines": [
+        {
+          "date": "2026-11-04",
+          "title": "Defense firms fall as Democratic victory stokes fears of tighter Pentagon budget",
+          "source": "Reuters (via Investing.com)",
+          "url": "https://www.investing.com/news/stock-market-news/defense-firms-fall-as-democratic-victory-stokes-fears-of-tighter-pentagon-budget-5000702"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Every stock that's moving as a result of the election",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/amp/2026/11/04/every-stock-thats-moving-as-a-result-of-the-election.html"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "AI data-center stocks slide, renewables rally after Democratic US midterm sweep",
+          "source": "Reuters (via WTVB)",
+          "url": "https://wtvbam.com/2026/11/04/ai-data-center-stocks-dip-renewables-surge-after-democrat-sweep-in-us-midterm-elections/"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Manufacturing PMI at 55.5%; October 2026 ISM Manufacturing PMI Report",
+          "source": "ISM (PR Newswire)",
+          "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "JetBlue Soars 11%, United Rallies 6% as Oil Drops on Iran Peace Talk Hopes",
+          "source": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/02/jetblue-soars-11-united-rallies-6-as-oil-drops-on-iran-peace-talk-hopes-american-airlines-gains-5/"
+        }
+      ]
+    },
+    "utilities_realestate": {
+      "score": -1,
+      "confidence": "low",
+      "rationale": "Facts: the October payrolls report (+165k against about 65k expected) lifted the odds of a Fed hike on Dec 9 to 78%. The 10-year yield was about 4.87% and the 30-year about 5.27%, after the Fed hiked in September and held at 3.75-4.00% on Oct 28. Texas elected Democrat Gina Hinojosa as governor; she campaigned on a data-centre moratorium. Vistra fell about 14% and was downgraded by KeyBanc, Constellation fell about 9%, and voters rejected data centres in all but one of about 40 local measures. Offsets: Vistra raised its 2026 EBITDA guidance on Nov 6, Entergy reported higher data-centre sales on Nov 2, the 10-year yield is well below its October peak of 5.28%, mortgage rates fell for a third week (still above 7%), and homebuilders rallied 7-8% on Nov 4. Interpretation: the risk of further hikes and the political backlash against data-centre power demand are a mild headwind. The offsets keep confidence low.",
+      "headlines": [
+        {
+          "date": "2026-11-06",
+          "title": "Strong October jobs report sends yields higher",
+          "source": "Reuters (via Investing.com)",
+          "url": "https://ca.investing.com/news/economic-indicators/strong-october-jobs-report-sends-yields-higher-4939320"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Vistra plunges 13.5% as Texas election rattles AI power trade, KeyBanc downgrades",
+          "source": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/vistra-plunges-135-as-texas-election-rattles-ai-power-trade-keybanc-downgrades-5000811"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Voters rebuff data centers in every ballot measure except one during the 2026 midterms",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Vistra Reports Third Quarter 2026 Results",
+          "source": "Vistra (issuer press release)",
+          "url": "https://investor.vistracorp.com/2026-11-06-Vistra-Reports-Third-Quarter-2026-Results"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Entergy reports third quarter 2026 financial results",
+          "source": "Entergy (issuer press release via Nasdaq)",
+          "url": "https://www.nasdaq.com/press-release/entergy-reports-third-quarter-2026-financial-results-2026-11-02"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "US Mortgage Rates Retreat for Third Week While Holding Above 7%",
+          "source": "Bloomberg",
+          "url": "https://bloomberg.com/news/articles/2026-11-04/us-mortgage-rates-retreat-for-third-week-while-holding-above-7"
+        }
+      ]
+    },
+    "clean_energy_thematic": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "Facts: renewables rallied on Nov 4 after the Democratic sweep. First Solar rose 4.6-9%, Enphase about 9%, Nextpower 11.2% and NextEra 4.9%, while Orsted and Vestas also gained. At least seven bills to restore IRA solar credits or remove the FEOC rules are pending, but none has had a hearing, all lapse on Jan 3, 2027, and a presidential veto stands in the way. Kalshi prices a veto override before 2028 at 28%. Orsted's Revolution Wind (704 MW) reached full commercial operation (WBUR, Nov 5). Against this, First Solar cut its 2026 sales guidance, and SolarEdge gave weak Q4 guidance, citing soft US residential demand and delayed FEOC guidance. Interpretation: policy sentiment has improved and the new solar import tariffs from Dec 4 are reported to favour domestic makers, but restoring the credits remains unlikely in the near term, so the tailwind is mild.",
+      "headlines": [
+        {
+          "date": "2026-11-04",
+          "title": "AI data-center stocks slide, renewables rally after Democratic US midterm sweep",
+          "source": "Reuters (via WTVB)",
+          "url": "https://wtvbam.com/2026/11/04/ai-data-center-stocks-dip-renewables-surge-after-democrat-sweep-in-us-midterm-elections/"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "First Solar Jumps 9% as Democratic Sweep Revives Clean-Energy Hopes; Enphase Surges 9%, SolarEdge Sinks 8%",
+          "source": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/04/first-solar-jumps-9-as-democratic-sweep-revives-clean-energy-hopes-enphase-surges-9-solaredge-sinks-8/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "'Moving into a positive political environment for solar' - is the ITC coming back?",
+          "source": "pv magazine USA (news analysis)",
+          "url": "https://pv-magazine-usa.com/2026/11/06/moving-into-a-positive-political-environment-for-solar-is-the-itc-coming-back/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "A large offshore wind project in New England, Revolution Wind, is fully operational",
+          "source": "WBUR",
+          "url": "https://wbur.org/news/2026/11/05/revolution-wind-full-power-orsted"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "SolarEdge (SEDG) Q3 2026 Earnings Call Transcript",
+          "source": "The Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/solaredge-sedg-q3-2026-earnings-call-transcript/"
+        }
+      ]
+    }
+  },
+  "regime_notes": "The Nov 3 midterms dominated the week. Democrats won both chambers and the Texas governorship, which reshuffled the sector trade on Nov 4. Hospitals, managed care, homebuilders, airlines and renewables rallied. Defense, drones and power or capex names linked to data centres sold off. Most analysts expect gridlock under a presidential veto, so many of these moves are sentiment-driven rather than based on enacted policy. The backlash against data centres is concrete, though: an existing Texas permit freeze, a governor-elect who backs a moratorium, and about 40 local ballot measures almost all rejecting data centres. That challenges the power-demand case behind utilities, IPPs and electrical infrastructure. Rates remain a headwind for rate-sensitive sectors: a strong October payrolls report pushed the odds of a Dec 9 Fed hike to about 78%, with the 30-year yield near 5.27%. The Iran war still moves oil and jet fuel, and hopes for peace talks helped transports early in the week.",
+  "red_flags": [],
+  "upcoming_events": [
+    {
+      "date": "2026-11-09",
+      "event": "Constellation Energy Q3 2026 results (data-centre and Texas exposure in focus)",
+      "buckets": [
+        "utilities_realestate"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "event": "FDA PDUFA date for Summit/Akeso ivonescimab plus chemo in EGFR-mutant NSCLC (per RTTNews calendar)",
+      "buckets": [
+        "healthcare_biotech"
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "event": "CMS GLOBE Medicare Part B most-favored-nation model takes effect",
+      "buckets": [
+        "healthcare_biotech"
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "event": "Reported new solar import measures take effect (38c/W minimum price, 15% duty on covered imports)",
+      "buckets": [
+        "clean_energy_thematic"
+      ]
+    },
+    {
+      "date": "2026-12-05",
+      "event": "CMS Medicare drug price negotiation final rule effective",
+      "buckets": [
+        "healthcare_biotech"
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "event": "FOMC decision; markets price about 78% odds of a 25bp hike",
+      "buckets": [
+        "utilities_realestate",
+        "govt_bonds"
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "event": "FY2027 continuing resolution expires; Pentagon funded at FY2026 level until then",
+      "buckets": [
+        "industrials_defense_infra"
+      ]
+    },
+    {
+      "date": "2026-12-15",
+      "event": "Approximate: ERCOT data-centre audit expected mid-December; Texas permit pause tied to it",
+      "buckets": [
+        "utilities_realestate",
+        "industrials_defense_infra"
+      ]
+    },
+    {
+      "date": "2027-01-03",
+      "event": "New Congress seated; pending clean-energy credit bills lapse and must be refiled",
+      "buckets": [
+        "clean_energy_thematic",
+        "healthcare_biotech",
+        "industrials_defense_infra"
+      ]
+    },
+    {
+      "date": "2027-02-01",
+      "event": "CMS deadline to select up to 20 more drugs for Medicare negotiation",
+      "buckets": [
+        "healthcare_biotech"
+      ]
+    }
+  ]
+}

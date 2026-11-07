@@ -1,0 +1,466 @@
+{
+  "pillar_id": "J10",
+  "pillar_name": "ETF industry and fund-level events",
+  "week": "2026-W45",
+  "window": "2026-10-31..2026-11-07",
+  "bucket_scores": {
+    "us_large_broad": {
+      "score": 1,
+      "confidence": "high",
+      "rationale": "US equity ETFs took $112.3bn of October's $140bn equity inflow (80%), per State Street; VOO led all funds with +$23.7bn and SPYM +$10.1bn, while SPY lost $6.9bn (rotation to cheaper S&P 500 wrappers, not a demand loss). TD Securities flags that tax-loss harvesting may have inflated October totals.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Records broken in October's US ETF inflows: State Street Investment Management",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/03/records-broken-in-octobers-us-etf-inflows-state-street-investment-management/"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "US ETF flows hit $204BN in October as fixed income sets record",
+          "source": "InvestmentNews (TD Securities data)",
+          "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+        }
+      ]
+    },
+    "global_equity": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "US-listed global equity ETFs took +$5.8bn in October (State Street). In Europe, World ETFs gathered EUR 1.84bn in the week of Oct 26-30, with Vanguard FTSE All-World Acc (VWCE, same fund family as VWRA) the second-largest single-fund inflow at EUR 491.6m and SPDR MSCI ACWI (SPYY) also in the top 10.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "developed_ex_us": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "International-developed ETFs still took +$13.5bn in October, although non-US share of equity flows fell from about 35% to 20% as investors pulled back from non-US markets. European-listed developed-markets exposures led weekly geographic inflows at EUR 1.87bn (Oct 26-30).",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Records broken in October's US ETF inflows: State Street Investment Management",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/03/records-broken-in-octobers-us-etf-inflows-state-street-investment-management/"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "em_broad": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "EM ETFs added $3.9bn in October, the 20th inflow month of the last 21, taking 2026 YTD to a record $56bn despite October drawdowns in China and Brazil.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Records broken in October's US ETF inflows: State Street Investment Management",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/03/records-broken-in-octobers-us-etf-inflows-state-street-investment-management/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "ETF Monthly: The Market Starts Playing Defense Over Attack",
+          "source": "MarketScreener",
+          "url": "https://www.marketscreener.com/news/etf-monthly-the-market-starts-playing-defense-over-attack-ce785fdcd08af12c"
+        }
+      ]
+    },
+    "latam": {
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Mixed: Brazil-focused US ETFs took about $3bn in October, but State Street attributes this mainly to long-to-lend activity by traders hedging or shorting Brazil after the surprise election result, which is not investor demand. Brazil exposures returned -22.2% and Latin America -14.9% in the week of Oct 26-30 (European data).",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "tech_ai_semis": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "Technology ETFs took $7.4bn in October (State Street; $66bn YTD, 70% of all sector flows); TD Securities data puts tech at +$23.8bn with SOXX +$4.8bn and SOXL +$9.0bn. Flows came despite a 9% drop in hyperscaler stocks on AI capex concerns; European weekly IT inflows were +EUR 189.6m.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "US ETF flows hit $204BN in October as fixed income sets record",
+          "source": "InvestmentNews (TD Securities data)",
+          "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "ETF Monthly: The Market Starts Playing Defense Over Attack",
+          "source": "MarketScreener",
+          "url": "https://www.marketscreener.com/news/etf-monthly-the-market-starts-playing-defense-over-attack-ce785fdcd08af12c"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "financials": {
+      "score": 1,
+      "confidence": "low",
+      "rationale": "Small positive October inflows: +$255m per State Street, +$1.2bn per TD Securities. The sector is still negative YTD (-$3.6bn) and over the trailing 3 months (-$5.1bn), so the signal is weak.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "US ETF flows hit $204BN in October as fixed income sets record",
+          "source": "InvestmentNews (TD Securities data)",
+          "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+        }
+      ]
+    },
+    "healthcare_biotech": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "Health care ETFs took +$2.4bn in October (State Street; TD: +$1.9bn), backed by the strongest earnings-surprise magnitude of any sector (13.15%). Health care also led European sector inflows in the week of Oct 26-30 (+EUR 306.6m).",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "US ETF flows hit $204BN in October as fixed income sets record",
+          "source": "InvestmentNews (TD Securities data)",
+          "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "ETF Monthly: The Market Starts Playing Defense Over Attack",
+          "source": "MarketScreener",
+          "url": "https://www.marketscreener.com/news/etf-monthly-the-market-starts-playing-defense-over-attack-ce785fdcd08af12c"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "energy_oil": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "Energy sector ETFs took about $2.8bn in October, pushing YTD to a record $12.2bn, the first positive calendar year in four years (State Street). Energy-focused commodity ETPs added another $724m.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Records broken in October's US ETF inflows: State Street Investment Management",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/03/records-broken-in-octobers-us-etf-inflows-state-street-investment-management/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "ETF Monthly: The Market Starts Playing Defense Over Attack",
+          "source": "MarketScreener",
+          "url": "https://www.marketscreener.com/news/etf-monthly-the-market-starts-playing-defense-over-attack-ce785fdcd08af12c"
+        }
+      ]
+    },
+    "materials_mining_metals": {
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Mixed: US materials ETFs had +$381m in October (State Street), but materials had the largest European sector outflow in the week of Oct 26-30 (-EUR 145.9m), and copper ETPs lost EUR 43.9m.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "industrials_defense_infra": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "Industrials ETFs lost $1.25bn in October, the largest sector outflow (State Street), and industrials were among the largest European sector outflows in the week of Oct 26-30 (-EUR 127.4m).",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "consumer": {
+      "score": -1,
+      "confidence": "medium",
+      "rationale": "Consumer discretionary ETFs had outflows of $524m in October per State Street (-$1.6bn per TD Securities), and consumer staples lost $86m. In Europe, consumer discretionary lost EUR 142.6m in the week of Oct 26-30 while staples took EUR 52.7m.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "US ETF flows hit $204BN in October as fixed income sets record",
+          "source": "InvestmentNews (TD Securities data)",
+          "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "us_factor_dividend": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "Dividend ETFs took $3.2bn in October, more than half of factor inflows, and the factor category is near $80bn YTD. Equity-income strategies passed $100bn YTD, an annual record. Low-volatility ETFs remain in secular outflow (-$406m in October), a minor negative for USMV/SPLV.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Records broken in October's US ETF inflows: State Street Investment Management",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/03/records-broken-in-octobers-us-etf-inflows-state-street-investment-management/"
+        },
+        {
+          "date": "2026-11-06",
+          "title": "ETF Monthly: The Market Starts Playing Defense Over Attack",
+          "source": "MarketScreener",
+          "url": "https://www.marketscreener.com/news/etf-monthly-the-market-starts-playing-defense-over-attack-ce785fdcd08af12c"
+        }
+      ]
+    },
+    "govt_bonds": {
+      "score": 1,
+      "confidence": "high",
+      "rationale": "Bond ETFs took a record $74bn in October (sixth straight month above $50bn). Government ETFs took $12.4bn, led by short-term at $7.1bn, plus aggregate +$23.1bn and TIPS +$2.7bn; long-term government took only $287m. TD data: aggregate +$22.3bn, BND +$2.9bn. Europe: government IG +EUR 1.09bn in the week of Oct 26-30.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "US ETF flows hit $204BN in October as fixed income sets record",
+          "source": "InvestmentNews (TD Securities data)",
+          "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Records broken in October's US ETF inflows: State Street Investment Management",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/03/records-broken-in-octobers-us-etf-inflows-state-street-investment-management/"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "credit_bonds": {
+      "score": 1,
+      "confidence": "high",
+      "rationale": "Per State Street, IG corporate ETFs took +$9.3bn in October, high yield +$2.0bn, munis +$21.2bn and EM bonds +$0.6bn; bank loans lost $500m (BKLN). TD Securities reports a record municipal month, with MUB +$5.6bn and high yield +$1.9bn. Europe: corporate IG +EUR 1.32bn and high yield +EUR 474.8m in the week of Oct 26-30.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "US ETF flows hit $204BN in October as fixed income sets record",
+          "source": "InvestmentNews (TD Securities data)",
+          "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "gold_precious": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "Global physically backed gold ETFs took +$2.7bn in October, a fourth straight month of inflows, with holdings at a record 4,275t (WGC). Europe (+$1.8bn, the IGLN venue) and Asia (+$1.3bn) offset North American outflows of -$512m (WGC). State Street reports US gold ETFs at -$700m; GLD -$1.8bn versus GLDM +$905m. Score reflects global and European flows; US-listed flows were negative.",
+      "headlines": [
+        {
+          "date": "2026-11-05",
+          "title": "Gold ETF Flows: October 2026 - Europe remains in driver's seat",
+          "source": "World Gold Council",
+          "url": "https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/11"
+        },
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-05",
+          "title": "US ETF flows hit $204BN in October as fixed income sets record",
+          "source": "InvestmentNews (TD Securities data)",
+          "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    },
+    "commodities_broad": {
+      "score": 1,
+      "confidence": "medium",
+      "rationale": "Broad commodity ETFs had +$481m in October, the 16th inflow month of 17, taking 2026 YTD to $7.6bn, close to the 2021 record of $8.1bn. Energy commodity ETFs took +$724m (State Street). Europe: multi-commodity ETPs +EUR 137.6m in the week of Oct 26-30.",
+      "headlines": [
+        {
+          "date": "2026-10-31",
+          "title": "US-Listed ETF Flows, October 31, 2026: Fall back, and look forward (monthly flash flows)",
+          "source": "State Street Investment Management",
+          "url": "https://www.ssga.com/library-content/pdfs/etf/us/monthly-flash-flows.pdf"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "European ETF Market Wrap: Flows, Performance and Leaders | Week 44, 2026 (Trackinsight data, Oct 26-30)",
+          "source": "ETF Express",
+          "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/"
+        }
+      ]
+    }
+  },
+  "regime_notes": "Scores in this pillar are flow-based (+1 for inflows, -1 for outflows, 0 for mixed) from the October monthly reports and the Oct 26-30 European weekly data. They are not fundamental views. US-listed ETFs took $211bn in October (State Street; $204bn per TD/Bloomberg), the second-largest month ever, with a record $74bn into bonds and 80% of equity flows going to US exposures as non-US equities sold off. Sector flows went to tech and energy, while industrials, consumer, utilities and real estate bled. Gold is split by region: US outflows, but record global holdings driven by Europe and Asia, which is supportive for IGLN. No closure, merger, fee or index change was found for VWRA, SSAC/ACWD, IWDA, CSPX, VUAA, CNDX, EIMI, IGLN or AGGU in the window. The most recent fee event found for these funds is Vanguard's cut of the FTSE All-World UCITS ETF OCF from 0.19% to 0.14%, effective 2026-07-28. Gaps: the shared web-search budget ran out mid-run, so the 2026 scan of US universe tickers for closures, mergers, ticker changes and fee changes is incomplete. Utilities/real estate, clean energy, small/mid value, multi-asset/alt, Japan and China had only one flow source or ambiguous categories and are left unscored; see the digest.",
+  "red_flags": [
+    {
+      "target": "VWRA",
+      "issue": "Fee cut, a favourable change rather than a risk: Vanguard FTSE All-World UCITS ETF OCF cut from 0.19% to 0.14%, effective 2026-07-28 (announced 2026-07-21). The cut applies at fund level, so it covers the VWRA share class.",
+      "url": "https://rankiapro.com/en/news/vanguard-cuts-25-commission-best-selling-global-etf-europe/"
+    },
+    {
+      "target": "US universe tickers (all)",
+      "issue": "Scan incomplete: the shared web-search budget was exhausted before targeted 2026 closure, merger, ticker-change and fee-change searches for universe tickers could run. The searches that did run turned up no such event for any universe ticker; the liquidations they found (MEMY, the Tidal real-estate ETFs, the T-REX 2X funds AFRU/TEUP/ASUP/SBTU, Themes and Defiance funds) are all outside the universe. Re-run this check before relying on the absence of flags.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001771146/000177114626002186/etfof-supplementxtuttlecap.htm"
+    },
+    {
+      "target": "SPY",
+      "issue": "Not a fund-level event, recorded for context: SPY had the largest passive equity outflow in October (-$6.9bn) while VOO (+$23.7bn) and SPYM (+$10.1bn) led inflows, a continuing fee-driven rotation. No change to the fund.",
+      "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+    },
+    {
+      "target": "GLD",
+      "issue": "Not a fund-level event, recorded for context: GLD lost $1.8bn in October while GLDM gained $905m, so US gold ETF flows were net -$0.7bn against global gold ETF inflows of +$2.7bn. No change to the fund.",
+      "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+    }
+  ],
+  "upcoming_events": [
+    {
+      "date": "2026-11-30",
+      "event": "Expected effective date of the MSCI November 2026 semi-annual index review, by MSCI's usual end-November timetable; the announcement usually comes in mid-November. Neither date is verified for 2026. The review affects IWDA, SSAC/ACWD and EIMI.",
+      "buckets": [
+        "global_equity",
+        "developed_ex_us",
+        "em_broad"
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "event": "Approximate release of November US ETF flow reports (State Street flash flows) and the WGC November gold ETF flows, used to re-check this pillar's flow scores.",
+      "buckets": [
+        "us_large_broad",
+        "govt_bonds",
+        "credit_bonds",
+        "gold_precious",
+        "tech_ai_semis"
+      ]
+    }
+  ]
+}
