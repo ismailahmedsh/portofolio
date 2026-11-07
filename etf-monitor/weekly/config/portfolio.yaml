@@ -1,6 +1,7 @@
 # Owner portfolio as the weekly engine sees it. Edit when holdings change.
 owner: Canadian citizen resident in the UAE (Branch A of plan v5), IBKR account
-monthly_deposit_usd: 2500
+monthly_deposit_aed: 2500         # about US$680 at the 3.6725 peg; converted at IBKR (0.20 bp, min US$2)
+monthly_deposit_usd: 681
 core:
   ucits: VWRA          # what you actually buy (LSE, USD line)
   proxy: VT            # US-listed fund with the same index, used for 18 years of data
