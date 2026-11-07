@@ -14,3 +14,7 @@ Self-contained study produced 2026-11-02 to 2026-11-03. Start with the three fil
 | data/ | GitHub repo search snapshot (269 active repos) and the verification scripts and logs for the TSX data path, contribution backtest and repo status. Raw vendor downloads are gitignored because their terms bar redistribution |
 
 Nothing here is personal financial advice. It is research the owner commissioned for their own portfolio.
+
+## Weekly analysis system (added 2026-11-07)
+
+`etf-monitor/weekly/` scores 200 ETFs on 100 pillars every week (90 computed in Python, 10 news pillars scored by one agent each) and turns them into hold, deposit and sell decisions using rules backed by a 2015-2026 switching backtest. Start with `etf-monitor/weekly/runs/2026-W45/REPORT.md`, then `DECISION_RULES.md`, `PILLARS.md` and `WEEKLY_RUN.md`. An independent review is in `runs/2026-W45/REVIEW.md`. A cloud scheduled task runs it every Saturday at 09:17 Dubai time.

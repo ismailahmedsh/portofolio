@@ -88,6 +88,7 @@ def _maxdd(s):
 def compute_quant(d, asof=None):
     u = universe(); T = list(u.ticker); bucket = dict(zip(u.ticker, u.bucket))
     adj = d["adj"].loc[:asof] if asof else d["adj"]
+    adj = adj[adj["SPY"].notna()]  # US trading days only (London-only days would drop returns around US holidays)
     vol = d["vol"].reindex(adj.index); high = d["high"].reindex(adj.index); low = d["low"].reindex(adj.index); close = d["close"].reindex(adj.index)
     r = adj.pct_change(fill_method=None)
     wk = adj.resample("W-FRI").last(); wr = wk.pct_change(fill_method=None)

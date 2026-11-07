@@ -50,11 +50,12 @@ def main():
     flags = []
     for pid, j in meta.items():
         for rf in j.get("red_flags", []): flags.append((pid, rf.get("target", ""), rf.get("issue", ""), rf.get("url", "")))
-    structural = ("clos", "liquidat", "merg", "suspend", "delist", "fee increase", "terminat", "sanction")
-    core_flags = [f for f in flags if (core_ucits in f[1] or f[1] == core) and any(k in f[2].lower() for k in structural)]
+    import re
+    structural = re.compile(r"\b(clos(e|ure|ing)|liquidat\w*|merg(e|er|ing)|suspen\w*|delist\w*|fee increase|terminat\w*|sanction\w*)\b", re.I)
+    core_flags = [f for f in flags if re.search(rf"\b({core_ucits}|{core})\b", f[1]) and structural.search(f[2])]
     ucits_px = d["adj"].get(core_ucits + ".L")
     ucits_ok = ucits_px is not None and ucits_px.dropna().index[-1].date() >= (pd.Timestamp(asof) - pd.Timedelta(days=7)).date()
-    er = V.loc[core, "G01"]
+    er = V.loc[core, "G01"]  # proxy fund fee; VWRA fee (0.14%) is checked quarterly by hand, see WEEKLY_RUN.md
     core_decision, core_reason = "HOLD and keep depositing", "No structural red flag for the core fund."
     if core_flags or not ucits_ok or (er and er > 0.30):
         core_decision = "REVIEW: possible switch of core fund"
@@ -79,16 +80,20 @@ def write_report(wd, week, asof, cfg, core, core_ucits, core_decision, core_reas
     A("## This week's decisions\n")
     A("| Question | Answer | Why |\n|---|---|---|")
     A(f"| Keep holding the core ({core_ucits})? | **{core_decision}** | {core_reason} |")
-    A(f"| Where does this month's deposit go? | **{deposit}** | Satellite share is {float(cfg.get('satellite_share', 0)):.0%}; the 2015-2026 backtest found no edge in redirecting deposits (see below). |")
-    A(f"| Sell anything? | **No** | Selling on scores, news or trend lost money in every tested variant. Sales happen only on structural red flags. |")
-    A(f"| Core trend flag | {'**ON**: below 200-day average with negative 12-month momentum. Information only; acting on it cost 3 points a year in the backtest.' if trend_flag else 'Off'} | Core is {pct(dd)} from its 52-week high{'; the drawdown protocol applies: keep depositing, change nothing' if dd < -0.20 else ''}. |\n")
+    A(f"| Where does this month's deposit go? | **{deposit}** | Satellite share is {float(cfg.get('satellite_share', 0)):.0%}. Redirecting deposits to the top-ranked fund has no robust edge: it wins or loses depending on execution timing and fails the promotion gate (see below). |")
+    A(f"| Sell anything? | **No** | No tested price-score or trend rule beat holding under both execution assumptions; news-based selling cannot be backtested. Sales happen only on structural red flags. |")
+    A(f"| Core trend flag | {'**ON**: below 200-day average with negative 12-month momentum. Information only; acting on it cost 1 to 3 points a year in the backtest, depending on execution timing.' if trend_flag else 'Off'} | Core is {pct(dd)} from its 52-week high{'; the drawdown protocol applies: keep depositing, change nothing' if dd < -0.20 else ''}. |\n")
     A("## How you would know: what the evidence says\n")
-    A(f"Backtest {bt['period']}, US${bt['monthly_deposit']:,.0f} deposited monthly, costs {bt['cost_model']}, {bt['trials']} strategies tested. Universe is today's 200 ETFs, which flatters rotation (funds that died are missing).\n")
-    A("| Strategy | Return on your money | Time-weighted return | Worst drop | Trades per year | 2015-2019 | 2020-2026 |\n|---|---|---|---|---|---|---|")
+    A(f"Backtest {bt['period']}, US${bt['monthly_deposit']:,.0f} deposited monthly, costs {bt['cost_model']}, {bt['trials']} strategies tested. Universe is today's 200 ETFs, which flatters rotation (funds that died are missing). Only a 9-feature price composite can be rebuilt historically; the live 100-pillar score itself is untested.\n")
+    A(f"Execution: {bt.get('execution','')}\n")
+    A("| Strategy | Return on your money (same-week / lagged) | Time-weighted (same-week / lagged) | Worst drop | Trades per year | Turnover per year | 2015-2019 | 2020-2026 |\n|---|---|---|---|---|---|---|---|")
     for r in bt["results"]:
         if r.get("money_weighted_return") is None: continue
-        A(f"| {r['strategy']} | {r['money_weighted_return']:.1f}% | {r['time_weighted_cagr']:.1f}% | {r['max_drawdown']:.0f}% | {r['trades_per_year']:.0f} | {r['cagr_2015_2019']:.1f}% | {r['cagr_2020_2026']:.1f}% |")
-    A("\nWhy rotation trails: the composite rewards a smooth ride (low volatility, small drawdowns, steady returns), so the top of the list leans toward defensive funds. Rotating into them gives up equity return over long periods.\n")
+        A(f"| {r['strategy']} | {r['money_weighted_return']:.1f}% / {r.get('money_weighted_return_lagged', float('nan')):.1f}% | {r['time_weighted_cagr']:.1f}% / {r.get('time_weighted_cagr_lagged', float('nan')):.1f}% | {r['max_drawdown']:.0f}% | {r['trades_per_year']:.0f} | {r['turnover_x_per_year']:.1f}x | {r['cagr_2015_2019']:.1f}% | {r['cagr_2020_2026']:.1f}% |")
+    A("\nS6 never triggered: a broad world fund never ranks low against 199 narrower funds, so a ranking cannot tell you when to sell the core. S8 tests that question with VT's own trend instead.\n")
+    pc = bt.get("promotion_candidates", [])
+    A(f"**Promotion gate** (beat holding in 2015-2019, 2020-today and overall, under both execution assumptions, with deflated Sharpe probability above 0.95): {'passed by ' + ', '.join(pc) if pc else 'no strategy passes'}.\n")
+    A("\nWhy rotation trails: trading. Weekly top-5 switching turned the portfolio over about 39 times a year, roughly 4 points a year in costs at 10 bps per side, and its picks did not earn that back. The closest call is sending each deposit to the top-ranked fund without selling, which wins with lagged execution and loses with same-week execution.\n")
     A(f"\nBest risk-adjusted result: **{bt['best_by_sharpe']}**. The engine re-runs this test monthly and will propose enabling a rotation rule only if it beats holding in both sub-periods and its deflated Sharpe probability exceeds 0.95.\n")
     A(f"## Your core today ({core} as data proxy for {core_ucits})\n")
     fam = F.loc[core]

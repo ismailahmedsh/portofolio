@@ -7,33 +7,40 @@ Research for the owner's own portfolio, not personal financial advice. Generated
 | Question | Answer | Why |
 |---|---|---|
 | Keep holding the core (VWRA)? | **HOLD and keep depositing** | No structural red flag for the core fund. |
-| Where does this month's deposit go? | **US$2,500 to VWRA** | Satellite share is 0%; the 2015-2026 backtest found no edge in redirecting deposits (see below). |
-| Sell anything? | **No** | Selling on scores, news or trend lost money in every tested variant. Sales happen only on structural red flags. |
+| Where does this month's deposit go? | **US$2,500 to VWRA** | Satellite share is 0%. Redirecting deposits to the top-ranked fund has no robust edge: it wins or loses depending on execution timing and fails the promotion gate (see below). |
+| Sell anything? | **No** | No tested price-score or trend rule beat holding under both execution assumptions; news-based selling cannot be backtested. Sales happen only on structural red flags. |
 | Core trend flag | Off | Core is -6.3% from its 52-week high. |
 
 ## How you would know: what the evidence says
 
-Backtest 2015-01-09 to 2026-11-06, US$2,500 deposited monthly, costs 10 bps per side plus US$1.7 per trade, 8 strategies tested. Universe is today's 200 ETFs, which flatters rotation (funds that died are missing).
+Backtest 2015-01-09 to 2026-11-06, US$2,500 deposited monthly, costs 10 bps per side plus US$1.7 per trade, 8 strategies tested. Universe is today's 200 ETFs, which flatters rotation (funds that died are missing). Only a 9-feature price composite can be rebuilt historically; the live 100-pillar score itself is untested.
 
-| Strategy | Return on your money | Time-weighted return | Worst drop | Trades per year | 2015-2019 | 2020-2026 |
-|---|---|---|---|---|---|---|
-| S0 Hold VT, deposit monthly (benchmark) | 11.8% | 10.4% | -33% | 12 | 8.9% | 11.6% |
-| S1 Weekly switch: top 5 by composite | 5.7% | 3.0% | -36% | 355 | -1.6% | 6.5% |
-| S2 Monthly switch: top 5 by composite | 8.7% | 5.0% | -39% | 148 | 0.9% | 8.1% |
-| S3 Weekly switch: top 5 by 12-1 momentum | 14.4% | 7.8% | -50% | 306 | -6.0% | 18.9% |
-| S4 Weekly switch: top 1 by composite | 2.8% | 0.3% | -49% | 64 | -5.3% | 4.7% |
-| S5 Never sell; each deposit to top-ranked ETF | 12.2% | 10.0% | -31% | 12 | 7.7% | 11.7% |
-| S6 Hold VT but sell to T-bills on weak score | 11.8% | 10.4% | -33% | 12 | 8.9% | 11.6% |
-| S8 Hold VT but sell to T-bills on own downtrend | 10.0% | 7.4% | -33% | 15 | 4.5% | 9.6% |
+Execution: same-week: trade at the Friday close that produced the signal (optimistic); lagged: trade one week later (pessimistic). Reality (LSE on Monday) sits between.
 
-Why rotation trails: the composite rewards a smooth ride (low volatility, small drawdowns, steady returns), so the top of the list leans toward defensive funds. Rotating into them gives up equity return over long periods.
+| Strategy | Return on your money (same-week / lagged) | Time-weighted (same-week / lagged) | Worst drop | Trades per year | Turnover per year | 2015-2019 | 2020-2026 |
+|---|---|---|---|---|---|---|---|
+| S0 Hold VT, deposit monthly (benchmark) | 11.8% / 11.8% | 10.4% / 10.4% | -33% | 12 | 0.1x | 8.9% | 11.6% |
+| S1 Weekly switch: top 5 by composite | 5.7% / 8.7% | 3.0% / 5.8% | -36% | 355 | 38.7x | -1.6% | 6.5% |
+| S2 Monthly switch: top 5 by composite | 8.7% / 9.2% | 5.0% / 7.5% | -39% | 148 | 15.3x | 0.9% | 8.1% |
+| S3 Weekly switch: top 5 by 12-1 momentum | 14.4% / 15.0% | 7.8% / 9.1% | -50% | 306 | 19.0x | -6.0% | 18.9% |
+| S4 Weekly switch: top 1 by composite | 2.8% / 3.3% | 0.3% / 0.3% | -49% | 64 | 55.6x | -5.3% | 4.7% |
+| S5 Never sell; each deposit to top-ranked ETF | 12.2% / 13.0% | 10.0% / 11.1% | -31% | 12 | 0.1x | 7.7% | 11.7% |
+| S6 Hold VT but sell to T-bills on weak score | 11.8% / 11.8% | 10.4% / 10.4% | -33% | 12 | 0.1x | 8.9% | 11.6% |
+| S8 Hold VT but sell to T-bills on own downtrend | 10.0% / 11.2% | 7.4% / 9.4% | -33% | 15 | 2.0x | 4.5% | 9.6% |
+
+S6 never triggered: a broad world fund never ranks low against 199 narrower funds, so a ranking cannot tell you when to sell the core. S8 tests that question with VT's own trend instead.
+
+**Promotion gate** (beat holding in 2015-2019, 2020-today and overall, under both execution assumptions, with deflated Sharpe probability above 0.95): no strategy passes.
+
+
+Why rotation trails: trading. Weekly top-5 switching turned the portfolio over about 39 times a year, roughly 4 points a year in costs at 10 bps per side, and its picks did not earn that back. The closest call is sending each deposit to the top-ranked fund without selling, which wins with lagged execution and loses with same-week execution.
 
 
 Best risk-adjusted result: **S0 Hold VT, deposit monthly (benchmark)**. The engine re-runs this test monthly and will propose enabling a rotation rule only if it beats holding in both sub-periods and its deflated Sharpe probability exceeds 0.95.
 
 ## Your core today (VT as data proxy for VWRA)
 
-Composite score **57/100**, rank **53 of 200**. A broad world fund always ranks mid-pack against narrower funds; that is diversification, not weakness.
+Composite score **57/100**, rank **51 of 200**. A broad world fund always ranks mid-pack against narrower funds; that is diversification, not weakness.
 
 | Family | Score |
 |---|---|
@@ -42,13 +49,13 @@ Composite score **57/100**, rank **53 of 200**. A broad world fund always ranks 
 | C. Volatility (weight 10) | 53 |
 | D. Drawdown and tail risk (weight 10) | 56 |
 | E. Risk-adjusted return (weight 15) | 69 |
-| F. Liquidity and trading (weight 5) | 52 |
+| F. Liquidity and trading (weight 5) | 53 |
 | G. Cost, structure and UAE investability (weight 20) | 73 |
 | H. Macro regime (bucket-mapped) (weight 5) | 48 |
 | I. Valuation and holdings (weight 5) | 54 |
 | J. News and events (agents) (weight 10) | 50 |
 
-Key readings: 1 week -2.3%, 3 months -5.5%, 12 months +10.4%, volatility 1y 14.6%, max drawdown 3y -16.5%, P/E 19.3.
+Key readings: 1 week -2.3%, 3 months -5.5%, 12 months +10.4%, volatility 1y 14.7%, max drawdown 3y -16.5%, P/E 19.3.
 
 ## Switch candidates you could actually buy (UCITS line verified on LSE)
 
@@ -56,49 +63,49 @@ Shown for information. With satellite share at 0% none of these is bought.
 
 | Rank | Proxy | UCITS | Bucket | Composite | Change vs last week | 12m return | Volatility 1y |
 |---|---|---|---|---|---|---|---|
-| 5 | XLV | IUHC | healthcare_biotech | 67 |  | +29.0% | 17% |
-| 9 | ACWV | MVOL | global_equity | 65 |  | +10.6% | 9% |
-| 12 | USMV | MVOL | us_factor_dividend | 64 |  | +10.5% | 9% |
-| 17 | IAGG | AGGU | govt_bonds | 63 |  | +1.7% | 3% |
-| 24 | QUAL | IWQU | us_factor_dividend | 62 |  | +13.3% | 12% |
-| 25 | XLF | IUFS | financials | 62 |  | +10.4% | 15% |
-| 28 | SPY | CSPX | us_large_broad | 61 |  | +9.7% | 13% |
-| 31 | VOO | CSPX | us_large_broad | 61 |  | +9.8% | 13% |
-| 32 | VTI | CSPX | us_large_broad | 60 |  | +9.9% | 14% |
-| 34 | BNDX | AGGU | govt_bonds | 60 |  | -0.1% | 4% |
+| 5 | XLV | IUHC | healthcare_biotech | 66 |  | +29.0% | 17% |
+| 10 | ACWV | MVOL | global_equity | 65 |  | +10.6% | 9% |
+| 12 | USMV | MVOL | us_factor_dividend | 65 |  | +10.5% | 9% |
+| 19 | IAGG | AGGU | govt_bonds | 63 |  | +1.7% | 3% |
+| 24 | QUAL | IWQU | us_factor_dividend | 62 |  | +13.3% | 13% |
+| 26 | XLF | IUFS | financials | 61 |  | +10.4% | 15% |
+| 29 | SPY | CSPX | us_large_broad | 60 |  | +9.7% | 14% |
+| 31 | VOO | CSPX | us_large_broad | 60 |  | +9.8% | 14% |
+| 33 | VTI | CSPX | us_large_broad | 60 |  | +9.9% | 14% |
+| 34 | BNDX | AGGU | govt_bonds | 59 |  | -0.1% | 4% |
 
 ## All 200 ETFs: top 20 and bottom 10
 
 | Rank | ETF | Bucket | Composite | Trend | Rel. strength | Volatility | Drawdown | Risk-adj. | Cost/UAE | News |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | IWD | us_small_mid_value | 69 | 82 | 90 | 68 | 64 | 87 | 59 | 51 |
-| 2 | VTV | us_small_mid_value | 69 | 74 | 85 | 71 | 65 | 89 | 61 | 51 |
+| 2 | VTV | us_small_mid_value | 68 | 74 | 85 | 71 | 65 | 89 | 61 | 51 |
 | 3 | SCHD | us_factor_dividend | 68 | 86 | 88 | 72 | 68 | 81 | 51 | 53 |
 | 4 | HDV | us_factor_dividend | 68 | 85 | 91 | 70 | 74 | 90 | 46 | 53 |
-| 5 | XLV | healthcare_biotech | 67 | 90 | 91 | 52 | 67 | 58 | 76 | 53 |
-| 6 | SHY | govt_bonds | 67 | 56 | 61 | 83 | 90 | 78 | 59 | 52 |
-| 7 | DGRO | us_factor_dividend | 66 | 78 | 77 | 70 | 69 | 90 | 53 | 53 |
-| 8 | MGV | us_small_mid_value | 65 | 73 | 83 | 70 | 66 | 90 | 54 | 51 |
-| 9 | ACWV | global_equity | 65 | 71 | 80 | 71 | 80 | 74 | 53 | 50 |
-| 10 | SGOV | govt_bonds | 65 | 58 | 67 | 79 | 70 | 88 | 54 | 52 |
-| 11 | VGSH | govt_bonds | 65 | 56 | 61 | 83 | 82 | 79 | 58 | 52 |
-| 12 | USMV | us_factor_dividend | 64 | 68 | 65 | 74 | 73 | 74 | 62 | 53 |
-| 13 | BIL | govt_bonds | 64 | 57 | 66 | 79 | 70 | 84 | 57 | 52 |
-| 14 | VIG | us_factor_dividend | 64 | 71 | 66 | 64 | 65 | 84 | 61 | 53 |
+| 5 | XLV | healthcare_biotech | 66 | 90 | 90 | 52 | 67 | 58 | 76 | 53 |
+| 6 | SHY | govt_bonds | 66 | 56 | 60 | 82 | 90 | 79 | 59 | 52 |
+| 7 | DGRO | us_factor_dividend | 66 | 78 | 76 | 70 | 69 | 90 | 53 | 53 |
+| 8 | MGV | us_small_mid_value | 66 | 73 | 84 | 70 | 66 | 90 | 54 | 51 |
+| 9 | SGOV | govt_bonds | 65 | 58 | 67 | 79 | 70 | 88 | 54 | 52 |
+| 10 | ACWV | global_equity | 65 | 71 | 79 | 71 | 80 | 74 | 53 | 50 |
+| 11 | VGSH | govt_bonds | 65 | 56 | 60 | 82 | 82 | 80 | 58 | 52 |
+| 12 | USMV | us_factor_dividend | 65 | 68 | 64 | 75 | 73 | 74 | 62 | 53 |
+| 13 | BIL | govt_bonds | 64 | 57 | 65 | 79 | 70 | 84 | 57 | 52 |
+| 14 | VIG | us_factor_dividend | 64 | 71 | 65 | 64 | 65 | 83 | 61 | 53 |
 | 15 | RSP | us_large_broad | 64 | 71 | 80 | 67 | 59 | 69 | 56 | 49 |
-| 16 | FLOT | credit_bonds | 63 | 58 | 66 | 79 | 77 | 84 | 51 | 51 |
-| 17 | IAGG | govt_bonds | 63 | 61 | 66 | 83 | 77 | 61 | 62 | 52 |
-| 18 | VCSH | credit_bonds | 63 | 49 | 60 | 81 | 82 | 74 | 58 | 51 |
-| 19 | DVY | us_factor_dividend | 63 | 72 | 67 | 73 | 60 | 73 | 48 | 53 |
-| 20 | EWC | developed_ex_us | 63 | 70 | 80 | 54 | 72 | 84 | 50 | 52 |
-| 191 | ARKK | tech_ai_semis | 32 | 26 | 32 | 20 | 30 | 20 | 35 | 50 |
-| 192 | TAN | clean_energy_thematic | 32 | 33 | 24 | 25 | 24 | 9 | 39 | 52 |
-| 193 | PPLT | gold_precious | 31 | 23 | 17 | 23 | 15 | 23 | 42 | 52 |
-| 194 | KWEB | china | 30 | 32 | 18 | 41 | 16 | 4 | 33 | 50 |
-| 195 | LIT | materials_mining_metals | 30 | 24 | 17 | 30 | 29 | 16 | 34 | 50 |
-| 196 | ROBO | tech_ai_semis | 30 | 21 | 16 | 21 | 31 | 20 | 36 | 50 |
-| 197 | TUR | em_broad | 27 | 20 | 10 | 27 | 11 | 15 | 30 | 50 |
-| 198 | BOTZ | tech_ai_semis | 27 | 11 | 6 | 28 | 32 | 14 | 34 | 50 |
+| 16 | FLOT | credit_bonds | 64 | 58 | 66 | 79 | 77 | 84 | 51 | 51 |
+| 17 | VCSH | credit_bonds | 63 | 49 | 59 | 81 | 82 | 76 | 58 | 51 |
+| 18 | SCHV | us_small_mid_value | 63 | 68 | 76 | 68 | 62 | 81 | 54 | 51 |
+| 19 | IAGG | govt_bonds | 63 | 61 | 65 | 83 | 77 | 58 | 62 | 52 |
+| 20 | VHT | healthcare_biotech | 62 | 88 | 84 | 53 | 66 | 59 | 62 | 53 |
+| 191 | PPLT | gold_precious | 32 | 23 | 18 | 23 | 15 | 25 | 42 | 52 |
+| 192 | ARKK | tech_ai_semis | 32 | 26 | 33 | 20 | 30 | 21 | 35 | 50 |
+| 193 | TAN | clean_energy_thematic | 32 | 33 | 26 | 24 | 24 | 10 | 38 | 52 |
+| 194 | KWEB | china | 31 | 32 | 18 | 41 | 16 | 3 | 33 | 50 |
+| 195 | ROBO | tech_ai_semis | 30 | 21 | 17 | 21 | 31 | 21 | 36 | 50 |
+| 196 | LIT | materials_mining_metals | 30 | 24 | 17 | 32 | 29 | 15 | 34 | 50 |
+| 197 | TUR | em_broad | 27 | 20 | 10 | 28 | 11 | 17 | 30 | 50 |
+| 198 | BOTZ | tech_ai_semis | 27 | 11 | 6 | 28 | 32 | 15 | 34 | 50 |
 | 199 | URA | materials_mining_metals | 25 | 6 | 3 | 25 | 20 | 22 | 26 | 50 |
 | 200 | EIDO | em_asia_other | 22 | 13 | 5 | 20 | 8 | 1 | 26 | 48 |
 
@@ -111,14 +118,14 @@ Full scores: `pillar_scores.csv` (200 x 100), `family_scores.csv`, raw values in
 | asia_dev_other | 3 | 50 | EWS | 49 | 46 |
 | china | 3 | 37 | FXI | 50 | 45 |
 | clean_energy_thematic | 2 | 32 | ICLN | 52 | 46 |
-| commodities_broad | 3 | 50 | DBC | 50 | 50 |
+| commodities_broad | 3 | 50 | PDBC | 50 | 50 |
 | consumer | 6 | 49 | XLP | 48 | 48 |
 | credit_bonds | 10 | 57 | FLOT | 51 | 48 |
 | developed_ex_us | 10 | 53 | EWC | 52 | 47 |
 | em_asia_other | 6 | 35 | EWT | 48 | 45 |
 | em_broad | 7 | 42 | VWO | 50 | 45 |
-| energy_oil | 5 | 49 | XLE | 48 | 54 |
-| europe | 11 | 50 | EWU | 50 | 46 |
+| energy_oil | 5 | 48 | XLE | 48 | 54 |
+| europe | 11 | 51 | EWU | 50 | 46 |
 | financials | 5 | 55 | XLF | 51 | 48 |
 | global_equity | 5 | 59 | ACWV | 50 | 48 |
 | gold_precious | 4 | 41 | GLD | 52 | 50 |
@@ -134,7 +141,7 @@ Full scores: `pillar_scores.csv` (200 x 100), `family_scores.csv`, raw values in
 | tech_ai_semis | 16 | 42 | QQQ | 50 | 46 |
 | us_factor_dividend | 15 | 60 | SCHD | 53 | 51 |
 | us_large_broad | 7 | 59 | RSP | 49 | 49 |
-| us_small_mid_value | 21 | 54 | IWD | 51 | 47 |
+| us_small_mid_value | 21 | 53 | IWD | 51 | 47 |
 | utilities_realestate | 6 | 50 | XLU | 49 | 50 |
 
 ## News pillars (10 agents)

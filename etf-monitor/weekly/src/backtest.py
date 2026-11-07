@@ -137,25 +137,40 @@ if __name__ == "__main__":
         "S6 Hold VT but sell to T-bills on weak score": (vt_guard, {}),
         "S8 Hold VT but sell to T-bills on own downtrend": (vt_abs, {}),
     }
-    rows, rets = [], {}
+    rows, rets, rets2 = [], {}, {}
     for name, (fn, kw) in runs.items():
-        state["in"] = True; st2["in"] = True
-        vals, flows, tr, to = simulate(wret, fn, **kw)
-        s, r = stats(name, vals, flows, tr, to); rows.append(s); rets[name] = r
-        vals2, flows2, tr2, to2 = simulate(wret, fn, delay=2, **kw) if name != list(runs)[0] else (vals, flows, tr, to)
-        s2, _ = stats(name, vals2, flows2, tr2, to2); s["money_weighted_return_1w_delay"] = s2["money_weighted_return"]
-        print(name, s["money_weighted_return"], s["final_value"], file=sys.stderr)
+        out = {}
+        for delay in (1, 2):
+            state["in"] = True; st2["in"] = True
+            vals, flows, tr, to = simulate(wret, fn, delay=delay, **kw)
+            out[delay] = stats(name, vals, flows, tr, to)
+        s, r = out[1]; s2, r2 = out[2]; rets[name] = r; rets2[name] = r2
+        for k in ["money_weighted_return", "time_weighted_cagr", "max_drawdown", "cagr_2015_2019", "cagr_2020_2026"]:
+            s[k + "_lagged"] = s2[k]
+        rows.append(s); print(name, s["money_weighted_return"], s["money_weighted_return_lagged"], file=sys.stderr)
     # 80/20 core-satellite from weekly returns, rebalanced weekly at no extra cost (optimistic)
     cs = .8 * rets[list(runs)[0]] + .2 * rets["S1 Weekly switch: top 5 by composite"]
     navcs = (1 + cs).cumprod(); yrs = len(cs) / 52
     rows.append({"strategy": "S7 80% VT + 20% weekly top-5 (return blend)", "time_weighted_cagr": round((navcs.iloc[-1] ** (1 / yrs) - 1) * 100, 2),
                  "max_drawdown": round((navcs / navcs.cummax() - 1).min() * 100, 1), "sharpe": round(cs.mean() / cs.std() * np.sqrt(52), 3)})
-    srs = [rets[k].mean() / rets[k].std() for k in rets]
+    # Promotion gate (DECISION_RULES.md section 4): must pass under BOTH execution assumptions.
+    bench = rows[0]; srs = [rets[k].mean() / rets[k].std() for k in rets] + [rets2[k].mean() / rets2[k].std() for k in rets2]
+    for row in rows[1:]:
+        if "money_weighted_return_lagged" not in row: continue
+        n = row["strategy"]; probs = []
+        for rr in (rets[n], rets2[n]):
+            pr, _ = dsr(rr.mean() / rr.std(), srs, len(rr), rr.skew(), rr.kurt() + 3); probs.append(round(pr, 3))
+        sub = all(row[f"{k}{lag}"] > bench[f"{k}{lag}"] for k in ["cagr_2015_2019", "cagr_2020_2026", "time_weighted_cagr"] for lag in ("", "_lagged"))
+        row["deflated_sharpe_prob"] = probs
+        row["gate_beats_hold_everywhere"] = sub
+        row["gate_pass"] = bool(sub and min(probs) > 0.95)
     best = max(rets, key=lambda k: rets[k].mean() / rets[k].std())
     rb = rets[best]; p, sr0 = dsr(rb.mean() / rb.std(), srs, len(rb), rb.skew(), rb.kurt() + 3)
     res = {"period": f"{wret.index[1].date()} to {wret.index[-1].date()}", "monthly_deposit": MONTHLY,
-           "cost_model": f"{COST_BPS} bps per side plus US${FIXED} per trade", "trials": N_TRIALS,
-           "best_by_sharpe": best, "deflated_sharpe_probability": round(p, 3), "results": rows}
+           "cost_model": f"{COST_BPS} bps per side plus US${FIXED} per trade",
+           "execution": "same-week: trade at the Friday close that produced the signal (optimistic); lagged: trade one week later (pessimistic). Reality (LSE on Monday) sits between.",
+           "trials": N_TRIALS, "best_by_sharpe": best, "deflated_sharpe_probability": round(p, 3),
+           "promotion_candidates": [r["strategy"] for r in rows if r.get("gate_pass")], "results": rows}
     from datetime import date
     res["run_date"] = str(date.today())
     for out in [ROOT / "runs" / f"backtest_{date.today()}.json", ROOT / "runs" / "backtest_latest.json"]:
