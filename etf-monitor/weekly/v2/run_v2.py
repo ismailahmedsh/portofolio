@@ -6,6 +6,7 @@ from statistics import NormalDist
 import numpy as np, pandas as pd, yaml
 sys.path.insert(0, str(Path(__file__).parent)); sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import engine_v2 as E2
+sys.path.insert(0, str(Path(__file__).parent))
 import extras_v2 as X2
 
 ROOT = Path(__file__).resolve().parents[1]; CACHE = ROOT / "cache"
@@ -30,7 +31,7 @@ def plan(R, cfg):
     sv = {k: sum(v for t, v in val.items() if sleeve_of(t, R) == k) for k in R["mix"]}
     gaps = {k: R["mix"][k] * (V + C) - sv[k] for k in R["mix"]}
     orders, notes, left = [], [], C
-    n_orders = 1 if C < 2 * 680 else min(len(R["mix"]), int(C // 340))
+    n_orders = 1 if C < 2 * 680 else 2  # never more than 2 orders (allocation 3c)
     for k in sorted(gaps, key=gaps.get, reverse=True):
         if left < 340 and orders: break
         if gaps[k] <= 0 and orders: break
@@ -55,114 +56,125 @@ def plan(R, cfg):
     return {"cash_usd": round(C, 2), "portfolio_value_usd": round(V, 2), "sleeve_values": {k: round(v, 2) for k, v in sv.items()}, "gaps": {k: round(v, 2) for k, v in gaps.items()},
             "orders": orders, "residue_usd": round(left, 2), "notes": notes}
 
-# ---------------- backtests on US-listed proxies (adjusted closes) ----------------
-def proxies():
-    c = pd.read_pickle(CACHE / "v2_close_usd.pkl")[["VT", "SPY", "QQQ", "EFA", "EEM"]]
-    v1 = pd.read_pickle(CACHE / "adj.pkl") if (CACHE / "adj.pkl").exists() else pd.DataFrame()
-    for t in ["IWD", "IWM", "IWN", "QUAL", "MTUM", "USMV", "VLUE", "EWJ", "VGK", "BIL"]:
-        if t in v1: c[t] = v1[t]
-    return c.resample("ME").last()
+# ---------------- backtests (shared exposure module, point-in-time) ----------------
+import exposure as XP
+SLEEVE_PROXY = {"world": None, "sp500": "SPY", "ndx100": "QQQ", "exus": "EFA", "eimi": "EEM"}  # US-listed, dividend-adjusted
+BAND_MAX = {"exus": 0.10, "eimi": 0.075}  # tilt candidates with long history; factor sleeves excluded (no passing splice)
+TRIAL_IR_SPREAD = 0.25  # assumed spread of annual information ratios across trials (disclosed in the report)
 
-def sim_mix(m, weights, monthly, start, tilt_fn=None, lag=1, comm=1.70):
-    """Monthly gap routing: one order a month to the sleeve furthest below target. tilt_fn(date) -> target dict (overrides)."""
-    r = m.pct_change(fill_method=None).loc[start:]; dates = r.index; hold = {k: 0.0 for k in m.columns}; vals, flows = [], []
-    tg_hist = []
-    sat_months = []
+def monthly():
+    c = pd.read_pickle(CACHE / "v2_close_usd.pkl"); m = c.resample("ME").last().pct_change(fill_method=None)
+    asof = c["VT"].dropna().index[-1]; dt = asof + pd.offsets.MonthEnd(0) if asof.is_month_end else asof - pd.offsets.MonthEnd(1)
+    f = XP.factors(pd.read_pickle(CACHE / "v2_french.pkl")); m = m.loc[:dt]; W = XP.world_reference(m, f)
+    R = pd.DataFrame({k: (W if v is None else m[v]) for k, v in SLEEVE_PROXY.items()}).loc[:dt]
+    return R, f, W, asof
+
+def sim(R, targets_fn, monthly_usd, start, end=None, comm=1.70, cap_sleeves=()):
+    """Monthly deposits routed to the sleeve furthest below target (one order), commission and 10 bps spread.
+    targets_fn(i, dates) -> target weights. Sleeves in cap_sleeves get at most 2 of any 12 deposits."""
+    r = R.loc[start:end]; dates = r.index; hold = {k: 0.0 for k in R.columns}; vals, flows, hist = [], [], []
     for i, dt in enumerate(dates):
         for k in hold: hold[k] *= 1 + (0 if pd.isna(r.loc[dt, k]) else r.loc[dt, k])
-        tg = dict(weights)
-        if tilt_fn is not None and i - lag >= 0:
-            tg = tilt_fn(dates[i - lag], weights)
-        V = sum(hold.values()); gaps = {k: tg.get(k, 0) * (V + monthly) - hold.get(k, 0) for k in tg}
-        k = max(gaps, key=gaps.get)
-        if k not in weights:  # tilt sleeve: at most 2 of any 12 deposits
-            recent = [x for x in sat_months if x > i - 12]
-            if len(recent) >= 2: k = max(weights, key=lambda x: gaps.get(x, -1e9))
-            else: sat_months.append(i)
-        hold[k] = hold.get(k, 0) + monthly - comm - monthly * SPREAD_BPS / 1e4
-        vals.append(sum(hold.values())); flows.append(monthly)
+        tg = targets_fn(i, dates); V = sum(hold.values())
+        gaps = sorted(((tg.get(k, 0) * (V + monthly_usd) - hold[k], k) for k in tg), reverse=True)
+        for g, k in gaps:
+            if k in cap_sleeves and sum(1 for x in hist[-11:] if x == k) >= 2: continue
+            break
+        hold[k] += monthly_usd - comm - monthly_usd * SPREAD_BPS / 1e4; hist.append(k)
+        vals.append(sum(hold.values())); flows.append(monthly_usd)
     return pd.Series(vals, dates), pd.Series(flows, dates)
 
+def xirr(cf):
+    t0 = cf[0][1]; lo, hi = -0.95, 2.0
+    for _ in range(200):
+        mid = (lo + hi) / 2; npv = sum(a / (1 + mid) ** ((d - t0).days / 365.25) for a, d in cf); lo, hi = (mid, hi) if npv > 0 else (lo, mid)
+    return mid
+
 def metrics(vals, flows, periods):
-    r = ((vals - flows) / vals.shift(1) - 1).dropna()
-    def xirr():
-        cf = [(-f, d) for d, f in flows.items()] + [(vals.iloc[-1], vals.index[-1])]; t0 = cf[0][1]; lo, hi = -0.9, 1.0
-        for _ in range(200):
-            mid = (lo + hi) / 2; npv = sum(a / (1 + mid) ** ((d - t0).days / 365.25) for a, d in cf); lo, hi = (mid, hi) if npv > 0 else (lo, mid)
-        return mid
-    nav = (1 + r).cumprod(); yrs = len(r) / 12
-    out = {"final": round(vals.iloc[-1]), "paid_in": round(flows.sum()), "mwr": round(xirr() * 100, 2), "twr": round((nav.iloc[-1] ** (1 / yrs) - 1) * 100, 2),
-           "max_dd": round((nav / nav.cummax() - 1).min() * 100, 1), "worst_year": round(r.groupby(r.index.year).apply(lambda x: (1 + x).prod() - 1).min() * 100, 1)}
-    for a, b in periods: x = r.loc[a:b]; out[f"twr_{a}_{b}"] = round(((1 + x).prod() ** (12 / len(x)) - 1) * 100, 2) if len(x) > 11 else None
+    r = ((vals - flows) / vals.shift(1) - 1).dropna(); nav = (1 + r).cumprod(); yrs = len(r) / 12
+    out = {"final": round(vals.iloc[-1]), "paid_in": round(flows.sum()), "mwr": round(xirr([(-f, d) for d, f in flows.items()] + [(vals.iloc[-1], vals.index[-1])]) * 100, 2),
+           "twr": round((nav.iloc[-1] ** (1 / yrs) - 1) * 100, 2), "max_dd": round((nav / nav.cummax() - 1).min() * 100, 1),
+           "worst_year": round(r.groupby(r.index.year).apply(lambda x: (1 + x).prod() - 1).min() * 100, 1)}
+    for a, b in periods:
+        v = vals.loc[a:b]; f = flows.loc[a:b]
+        if len(v) < 12: out[f"mwr_{a}_{b}"] = None; continue
+        prev = vals.loc[:v.index[0]].iloc[:-1]; start_val = prev.iloc[-1] if len(prev) else 0.0
+        cf = ([(-start_val, v.index[0] - pd.offsets.MonthEnd(1))] if start_val > 0 else []) + [(-x, d) for d, x in f.items()] + [(v.iloc[-1], v.index[-1])]
+        out[f"mwr_{a}_{b}"] = round(xirr(cf) * 100, 2)
     return out, r
 
-def rec07(cfg, monthly):
-    m = proxies()[["VT", "SPY", "QQQ"]].rename(columns={"VT": "world", "SPY": "sp500", "QQQ": "ndx100"}); start = "2008-07-31"
-    per = [("2008", "2014"), ("2015", "2019"), ("2020", "2026")]
+def rec07(cfg, monthly_usd):
+    R, f, W, asof = monthly(); start = "2003-01-31"
+    per = [("2003", "2007"), ("2008", "2014"), ("2015", "2019"), ("2020", "2026")]
     owner = {k: v["target"] for k, v in cfg["strategic_mix"].items()}
-    mixes = {"Your mix " + "/".join(f"{int(v*100)}" for v in owner.values()): owner, "100% world": {"world": 1.0}, "100% S&P 500": {"sp500": 1.0}, "100% Nasdaq-100": {"ndx100": 1.0},
+    mixes = {"Your mix " + "/".join(f"{v*100:g}" for v in owner.values()): owner, "100% world": {"world": 1.0}, "100% S&P 500": {"sp500": 1.0}, "100% Nasdaq-100": {"ndx100": 1.0},
              "80/10/10": {"world": .8, "sp500": .1, "ndx100": .1}, "60/25/15": {"world": .6, "sp500": .25, "ndx100": .15}, "50/30/20": {"world": .5, "sp500": .3, "ndx100": .2}}
     rows = []
     for n, w in mixes.items():
-        v, f = sim_mix(m, w, monthly, start); o, _ = metrics(v, f, per); rows.append({"mix": n, **o})
-    return {"period": f"{start[:7]} to {pd.read_pickle(CACHE / 'v2_close_usd.pkl')['VT'].dropna().index[-1].date()}", "proxies": "VT world, SPY S&P 500, QQQ Nasdaq-100 (US-listed, dividend-adjusted, before UAE withholding)", "rows": rows}
+        v, fl = sim(R[["world", "sp500", "ndx100"]], lambda i, d, w=w: w, monthly_usd, start); o, _ = metrics(v, fl, per); rows.append({"mix": n, **o})
+    return {"period": f"{start[:7]} to {asof.date()}", "periods": per,
+            "proxies": "world reference (Ken French Developed market + T-bill to 2008-02, ACWI to 2008-05, then VT), SPY for the S&P 500, QQQ for the Nasdaq-100; US-listed, dividend-adjusted, before UAE withholding",
+            "rows": rows}
 
-def x_point_in_time(m, fr, cand, world, dt):
-    """Exposure score X of cand against world, using data up to dt only (same formulas as engine_v2, EXR06 missing)."""
-    j = pd.concat([m[cand], m[world]], axis=1).loc[:dt].pct_change(fill_method=None).dropna().iloc[-120:]
-    if len(j) < 36: return np.nan
-    def ex(y, w):
-        e = {}; b = np.cov(y, w)[0, 1] / w.var(); e["beta"] = .67 * b + .33
-        ff = fr.reindex(y.index).dropna(); ff = ff.loc[:dt - pd.offsets.MonthEnd(1)]
-        if len(ff) >= 36:
-            X = np.column_stack([np.ones(len(ff)), ff[["Mkt-RF", "SMB", "HML", "RMW", "CMAp"]].values]); co = np.linalg.lstsq(X, (y.reindex(ff.index) - ff["RF"]).values, rcond=None)[0]
-            e.update(FAC01=co[3], FAC02=co[4], FAC03=co[5], FAC04=co[2] if co[4] >= -0.1 else min(co[2], 0))
-        nav = (1 + y).cumprod(); e["dd"] = (nav / nav.cummax() - 1).min()
-        up, dn = w > 0, w < 0
-        e["RSK03"] = np.cov(y[dn], w[dn])[0, 1] / w[dn].var() - np.cov(y[up], w[up])[0, 1] / w[up].var()
-        q = y.quantile(.05); e["RSK05"] = -y[y <= q].mean() / y.std()
-        e["EXR08"] = ((1 + y.iloc[-60:]).prod() - (1 + w.iloc[-60:]).prod()) * 100 if len(y) >= 48 else np.nan
-        return e
-    a, b = ex(j.iloc[:, 0], j.iloc[:, 1]), ex(j.iloc[:, 1], j.iloc[:, 1])
-    nav_w = (1 + j.iloc[:, 1]).cumprod(); ddw = (nav_w / nav_w.cummax() - 1).min()
-    s = {k: E2.tanh_score(a.get(k), b.get(k), .2, 1) for k in ["FAC01", "FAC02", "FAC03", "FAC04"]}
-    s["RSK01"] = E2.tanh_score((a["dd"] - a["beta"] * ddw) * 100, 0, 10, 1, True); s["RSK03"] = E2.tanh_score(a["RSK03"], b["RSK03"], .2, -1, True)
-    s["RSK05"] = E2.tanh_score(a["RSK05"], b["RSK05"], .5, -1, True); s["EXR08"] = E2.tanh_score(a.get("EXR08"), b.get("EXR08"), 20, -1)
-    exr, _ = E2.fam_score(s, {"EXR06": .4, "EXR08": .6}); fac, _ = E2.fam_score(s, {"FAC01": .12, "FAC02": .30, "FAC03": .28, "FAC04": .30}); rsk, _ = E2.fam_score(s, {"RSK01": .35, "RSK03": .35, "RSK05": .30})
-    return (20 * exr + 40 * fac + 40 * rsk) / 100
-
-def rec04(cfg, monthly):
-    m = proxies(); fr = pd.read_pickle(CACHE / "v2_french.pkl")["Developed_5_Factors"].copy(); fr.index = fr.index + pd.offsets.MonthEnd(0)
-    fr["CMAp"] = fr["CMA"] - np.polyfit(fr["HML"], fr["CMA"], 1)[0] * fr["HML"]
-    owner = {k: v["target"] for k, v in cfg["strategic_mix"].items()}; lim = cfg["tilt_limits"]
-    base = m[["VT", "SPY", "QQQ"]].rename(columns={"VT": "world", "SPY": "sp500", "QQQ": "ndx100"})
-    cands = [c for c in ["EFA", "EEM", "IWD", "IWM", "IWN", "QUAL", "MTUM", "USMV", "VLUE", "EWJ", "VGK"] if c in m]
-    mm = pd.concat([base, m[cands]], axis=1); start = "2011-12-31"
-    qs = [d for d in mm.loc[start:].index if d.month in (3, 6, 9, 12)]
-    X = pd.DataFrame({c: {q: x_point_in_time(m, fr, c, "VT", q) for q in qs} for c in cands})
-    def tilt(dt, w):
-        q = max([x for x in qs if x <= dt], default=None)
-        if q is None: return dict(w)
-        i = qs.index(q); qual = {c: X.loc[q, c] for c in cands if i >= 1 and X.loc[q, c] >= 55 and X.loc[qs[i - 1], c] >= 55}
-        t = {c: lim["per_sleeve_max"] * float(np.clip((x - 55) / 15, 0, 1)) for c, x in qual.items()}
-        t = {c: (v if v >= 0.05 else 0.0) for c, v in t.items()}; tot = sum(t.values())
-        if tot > lim["total_tilt_max"]: t = {c: v * lim["total_tilt_max"] / tot for c, v in t.items()}; tot = lim["total_tilt_max"]
-        out = {k: v * (1 - tot) for k, v in w.items()}; out.update({c: v for c, v in t.items() if v > 0}); return out
-    per = [("2012", "2016"), ("2017", "2021"), ("2022", "2026")]
-    vb, fb = sim_mix(mm, owner, monthly, start); ob, rb = metrics(vb, fb, per)
-    res = {"rule": "Quarterly: sleeves with X >= 55 at two consecutive quarter-ends get a tilt of up to 10% (X 55 -> 0, X 70 -> 10%), total tilt at most 15%, at most 2 of any 12 deposits; candidates " + ", ".join(cands),
-           "period": f"{start[:7]} to {pd.read_pickle(CACHE / 'v2_close_usd.pkl')['VT'].dropna().index[-1].date()}", "owner_mix": ob, "n_trials": N_TRIALS}
-    gate = True
-    for lag, name in [(1, "same_month"), (2, "lagged")]:
-        vt_, ft_ = sim_mix(mm, owner, monthly, start, tilt_fn=tilt, lag=lag); o, rt = metrics(vt_, ft_, per)
-        act = (rt - rb.reindex(rt.index)).dropna(); ir = act.mean() / act.std() if act.std() > 0 else 0
-        nd = NormalDist(); g = .5772156649; sd_trials = 0.25 / np.sqrt(12)  # assumed spread of monthly IRs across trials
-        sr0 = sd_trials * ((1 - g) * nd.inv_cdf(1 - 1 / N_TRIALS) + g * nd.inv_cdf(1 - 1 / (N_TRIALS * np.e)))
-        z = (ir - sr0) * np.sqrt(len(act) - 1) / np.sqrt(1 - act.skew() * ir + (act.kurt() + 2) / 4 * ir ** 2); dsr = nd.cdf(z)
-        beats = all((o.get(f"twr_{a}_{b}") or -99) - (ob.get(f"twr_{a}_{b}") or 99) >= 0.25 for a, b in per) and o["mwr"] - ob["mwr"] >= 0.25
-        res[name] = {**o, "info_ratio_annual": round(ir * np.sqrt(12), 2), "deflated_prob": round(dsr, 3), "beats_mix_everywhere": beats}
-        gate = gate and beats and dsr > 0.95
-    res["gate_pass"] = bool(gate); res["latest_X"] = {c: round(float(X[c].iloc[-1]), 1) for c in cands}
+def rec04(cfg, monthly_usd):
+    R, f, W, asof = monthly(); owner = {k: v["target"] for k, v in cfg["strategic_mix"].items()}; lim = cfg["tilt_limits"]
+    cands = list(BAND_MAX); start = "2008-01-31"; dates = R.loc[start:].index
+    # point-in-time measures and X for every month (world measures recomputed at each date)
+    Xh, FIT4 = {c: {} for c in cands}, {c: {} for c in cands}
+    def ex_pp(e, ew, priors): return XP.exp_excess(e, ew, priors=priors)
+    for dt in R.loc["2005-12-31":].index:
+        ew = XP.raw_measures(W, W, f, dt); es = {k: XP.raw_measures(R[k].dropna(), W, f, dt) for k in list(owner) + cands}
+        if any("FAC05" not in es[k] for k in owner): continue
+        bP = sum(w * es[k]["FAC05"] for k, w in owner.items())
+        for priors in (True, False):
+            EP = sum(w * ex_pp(es[k], ew, priors) for k, w in owner.items())
+            for c in cands:
+                if "FAC05" not in es[c]: continue
+                if priors: Xh[c][dt] = XP.score(es[c], ew)["X"]
+                FIT4[c][(dt, priors)] = XP.fit04(ex_pp(es[c], ew, priors), es[c]["FAC05"], EP, bP)
+    Xh = pd.DataFrame(Xh)
+    Xs = Xh.rolling(3, min_periods=3).mean()  # X used for targets: mean of the last 3 month-end values
+    def make_targets(priors, lag):
+        state = {"t": {c: 0.0 for c in cands}, "q": None, "prev_ok": {c: False for c in cands}}
+        def fn(i, ds):
+            j = i - lag
+            if j < 0: return dict(owner)
+            d = ds[j]
+            if d.month in (3, 6, 9, 12) and state["q"] != d:
+                state["q"] = d; new = {}
+                for c in cands:
+                    x = Xs[c].get(d, np.nan); a = FIT4[c].get((d, priors), np.nan)
+                    ok = (not pd.isna(x)) and x >= 55 and (not pd.isna(a)) and a > 0
+                    tgt = BAND_MAX[c] * float(np.clip((x - 55) / 15, 0, 1)) if ok and state["prev_ok"][c] else 0.0
+                    tgt = tgt if tgt >= 0.05 else 0.0
+                    old = state["t"][c]; ch = tgt - old
+                    if abs(ch) < 0.025: tgt = old  # hysteresis: changes below 2.5 points are ignored
+                    elif abs(ch) > 0.05: tgt = old + np.sign(ch) * 0.05  # at most 5 points a quarter
+                    new[c] = tgt; state["prev_ok"][c] = ok
+                tot = sum(new.values())
+                if tot > lim["total_tilt_max"]: new = {c: v * lim["total_tilt_max"] / tot for c, v in new.items()}
+                state["t"] = new
+            tot = sum(state["t"].values()); out = {k: v * (1 - tot) for k, v in owner.items()}; out.update({c: v for c, v in state["t"].items() if v > 0}); return out
+        return fn
+    per = [("2008", "2014"), ("2015", "2019"), ("2020", "2026")]
+    vb, fb = sim(R, lambda i, d: owner, monthly_usd, start); ob, rb = metrics(vb, fb, per)
+    res = {"rule": "Quarterly: a sleeve qualifies when its X (3-month average) is 55 or more at two consecutive quarter-ends and its expected alpha against your mix is positive; target = band max x clip((X - 55) / 15), 0 or at least 5%, changes of 2.5 to 5 points a quarter, total tilt at most 15%, at most 2 of any 12 deposits. Candidates: developed ex-US (EFA, band 10%), emerging markets (EEM, band 7.5%). Factor and small-cap sleeves excluded: no proxy passes the splice test.",
+           "period": f"{start[:7]} to {asof.date()}", "periods": per, "owner_mix": ob, "n_trials": N_TRIALS, "trial_ir_spread_assumed": TRIAL_IR_SPREAD, "variants": {}}
+    nd = NormalDist(); g = .5772156649; gate = True
+    for priors in (True, False):
+        for lag, name in [(0, "same month"), (1, "one month later")]:
+            v, fl = sim(R, make_targets(priors, lag), monthly_usd, start, cap_sleeves=tuple(cands)); o, rt = metrics(v, fl, per)
+            act = (rt - rb.reindex(rt.index)).dropna(); ir = act.mean() / act.std() if act.std() > 0 else 0.0
+            sr0 = TRIAL_IR_SPREAD / np.sqrt(12) * ((1 - g) * nd.inv_cdf(1 - 1 / N_TRIALS) + g * nd.inv_cdf(1 - 1 / (N_TRIALS * np.e)))
+            den = 1 - act.skew() * ir + (act.kurt() + 2) / 4 * ir ** 2
+            dsr = nd.cdf((ir - sr0) * np.sqrt(len(act) - 1) / np.sqrt(den)) if den > 0 and act.std() > 0 else 0.0
+            beats = all((o.get(f"mwr_{a}_{b}") or -99) > (ob.get(f"mwr_{a}_{b}") or 99) for a, b in per)
+            tilt_months = int(sum(1 for i in range(len(rt)) if True))
+            key = f"{'with priors' if priors else 'priors = 0'}, {name}"
+            res["variants"][key] = {**o, "info_ratio_annual": round(ir * np.sqrt(12), 2), "deflated_prob": round(dsr, 3), "beats_mix_every_period": beats}
+            if priors: gate = gate and beats and dsr > 0.95
+    res["gate_pass"] = bool(gate)
+    res["latest_X"] = {c: (round(float(Xs[c].dropna().iloc[-1]), 1) if Xs[c].notna().any() else None) for c in cands}
     return res
 
 # ---------------- report ----------------
@@ -186,16 +198,18 @@ def report(week, R, pl, r07, r04, cfg):
         for t, e in ev[:20]: w(f"| {t[:-2]} | {e[0]} | {e[1]} | {e[2]} {'([source](' + e[3] + '))' if e[3] else ''} |")
         w("")
     w("## Your mix against the alternatives (REC07, information)\n")
-    w(f"{r07['period']}, deposits of US${R['C_usd']:,.2f} a month routed to the sleeve furthest below target, US$1.70 commission and {SPREAD_BPS} bps spread per buy. Proxies: {r07['proxies']}. Past leadership is not a forecast.\n")
-    w("| Mix | Final value | Paid in | Return on your money | Time-weighted | Worst drop | Worst year | 2008-2014 | 2015-2019 | 2020-2026 |\n|---|---|---|---|---|---|---|---|---|---|")
-    for r in r07["rows"]: w(f"| {r['mix']} | US${r['final']:,} | US${r['paid_in']:,} | {r['mwr']:.1f}% | {r['twr']:.1f}% | {r['max_dd']:.0f}% | {r['worst_year']:.0f}% | {r['twr_2008_2014']:.1f}% | {r['twr_2015_2019']:.1f}% | {r['twr_2020_2026']:.1f}% |")
+    w(f"{r07['period']}, deposits of US${R['C_usd']:,.2f} a month routed to the sleeve furthest below target, US$1.70 commission and {SPREAD_BPS} bps spread per buy. Proxies: {r07['proxies']}. Per-period returns are money-weighted, starting from the balance at the start of the period. Past leadership is not a forecast.\n")
+    per = r07["periods"]
+    w("| Mix | Final value | Paid in | Return on your money | Time-weighted | Worst drop | Worst year | " + " | ".join(f"{a}-{b}" for a, b in per) + " |\n|" + "---|" * (7 + len(per)))
+    for r in r07["rows"]: w(f"| {r['mix']} | US${r['final']:,} | US${r['paid_in']:,} | {r['mwr']:.1f}% | {r['twr']:.1f}% | {r['max_dd']:.0f}% | {r['worst_year']:.0f}% | " + " | ".join(f"{r.get(f'mwr_{a}_{b}'):.1f}%" if r.get(f'mwr_{a}_{b}') is not None else "n/a" for a, b in per) + " |")
     w("\n## May scores move money yet? (REC04 gate)\n")
-    w(f"Rule tested: {r04['rule']}. Period {r04['period']}, against your mix, {r04['n_trials']} trials counted.\n")
-    w("| Execution | Return on your money | Time-weighted | 2012-2016 | 2017-2021 | 2022-2026 | Information ratio | Deflated probability | Beats your mix everywhere |\n|---|---|---|---|---|---|---|---|---|")
-    ob = r04["owner_mix"]; w(f"| Your mix (yardstick) | {ob['mwr']:.1f}% | {ob['twr']:.1f}% | {ob['twr_2012_2016']:.1f}% | {ob['twr_2017_2021']:.1f}% | {ob['twr_2022_2026']:.1f}% | | | |")
-    for k in ["same_month", "lagged"]:
-        o = r04[k]; w(f"| Tilts, {k.replace('_', ' ')} | {o['mwr']:.1f}% | {o['twr']:.1f}% | {o['twr_2012_2016']:.1f}% | {o['twr_2017_2021']:.1f}% | {o['twr_2022_2026']:.1f}% | {o['info_ratio_annual']:.2f} | {o['deflated_prob']:.2f} | {'yes' if o['beats_mix_everywhere'] else 'no'} |")
-    w(f"\n**Gate: {'PASSED, tilts may be proposed for your confirmation' if r04['gate_pass'] else 'not passed, so scores stay display-only and every deposit follows your mix'}.**\n")
+    w(f"Rule tested: {r04['rule']} Period {r04['period']}, against your mix, {r04['n_trials']} trials counted. The deflated probability assumes the information ratios of the {r04['n_trials']} trials spread by {r04['trial_ir_spread_assumed']} a year; this is an assumption, not a measurement.\n")
+    per = r04["periods"]
+    w("| Variant | Return on your money | " + " | ".join(f"{a}-{b}" for a, b in per) + " | Information ratio | Deflated probability | Beats your mix every period |\n|" + "---|" * (5 + len(per)))
+    ob = r04["owner_mix"]; w(f"| Your mix (yardstick) | {ob['mwr']:.1f}% | " + " | ".join(f"{ob.get(f'mwr_{a}_{b}'):.1f}%" for a, b in per) + " | | | |")
+    for k, o in r04["variants"].items(): w(f"| Tilts, {k} | {o['mwr']:.1f}% | " + " | ".join(f"{o.get(f'mwr_{a}_{b}'):.1f}%" for a, b in per) + f" | {o['info_ratio_annual']:.2f} | {o['deflated_prob']:.2f} | {'yes' if o['beats_mix_every_period'] else 'no'} |")
+    w(f"\nLatest smoothed X: " + ", ".join(f"{k} {v}" for k, v in r04["latest_X"].items()) + ".\n")
+    w(f"**Gate: {'PASSED, tilts may be proposed for your confirmation' if r04['gate_pass'] else 'not passed, so scores stay display-only and every deposit follows your mix'}.** The prior-free variants (priors = 0) are shown to separate what the data say from what the priors assume; only the with-priors variants decide the gate.\n")
     w("## Lines in your sleeves (line view, scored within each same-index group)\n")
     for k, ref in R["sleeves"].items():
         idx = [t for t in (R["world_lines"] if k == "world" else L.index[L.cluster == ref]) if t in L.index]
@@ -214,7 +228,8 @@ def report(week, R, pl, r07, r04, cfg):
     w(X2.report_section(R["extras"], R))
     cov = coverage_table(R)
     w("## Pillar coverage this week\n"); w(cov)
-    w("\n## Data notes\n\n- Prices: Yahoo Finance via yfinance, LSE lines converted to USD; unofficial and for personal use.\n- Fund size is missing from Yahoo for " + str(int(L['DUR01'].isna().sum())) + " lines (for example CSPX, CNDX); it is listed as missing, not held against them.\n- Tracking difference (CST02) fails closed until fee history is collected, so line choice uses current fee plus US withholding.\n- Same-index groups come from the index named in each fund's name, confirmed by return correlation.")
+    sp = R.get("splices", {})
+    w("\n## Data notes\n\n- Splice tests (ELG07: 24+ months overlap, correlation 0.98+, gap 50 bps or less): " + "; ".join(f"{k[:-2]} {'used' if v['used'] else 'not used'} (correlation {v['corr']:.3f}, gap {v['gap_bps']:.0f} bps)" for k, v in sp.items()) + ". Where a splice fails, the exposure view uses the line's own London history.\n- Prices: Yahoo Finance via yfinance, LSE lines converted to USD; unofficial and for personal use.\n- Fund size is missing from Yahoo for " + str(int(L['DUR01'].isna().sum())) + " lines (for example CSPX, CNDX); it is listed as missing, not held against them.\n- Tracking difference (CST02) fails closed until fee history is collected, so line choice uses current fee plus US withholding.\n- Same-index groups come from the index named in each fund's name, confirmed by return correlation.")
     return "\n".join(A) + "\n"
 
 BUILT = set()
@@ -233,7 +248,7 @@ def coverage_table(R):
     for f, d in rows.items():
         out.append(f"| {f} | {', '.join(d.get('built', [])) or '-'} | {', '.join(d.get('agent (weekly workflow)', [])) or '-'} | {', '.join(d.get('not built yet', [])) or '-'} | {', '.join(d.get('not built: unverified source', [])) or '-'} |")
     n = sum(len(v.get("built", [])) for v in rows.values()); a = sum(len(v.get("agent (weekly workflow)", [])) for v in rows.values())
-    return f"{n} of 100 pillars are computed by code this week and {a} are scored by the event agents in the weekly workflow; the rest are listed below.\n\n" + "\n".join(out)
+    return f"{n} of 100 pillars have code that computes them this week (some as record or context with weight 0, as the spec defines) and {a} are scored by the event agents in the weekly workflow; the rest are listed below with the reason.\n\n" + "\n".join(out)
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--week", required=True); ap.add_argument("--backtests", action="store_true"); a = ap.parse_args()

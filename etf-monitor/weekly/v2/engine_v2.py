@@ -4,8 +4,9 @@ fit view (against the owner's strategic mix). Gates decide what may receive mone
 import json, re, sys
 from pathlib import Path
 import numpy as np, pandas as pd, yaml
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src")); sys.path.insert(0, str(Path(__file__).resolve().parent))
 import pillars as P1  # reuse FRED fetch with cache
+import exposure as XP
 
 ROOT = Path(__file__).resolve().parents[1]; CACHE = ROOT / "cache"
 SPEC = json.loads((ROOT / "config" / "pillars_v2.json").read_text())
@@ -35,7 +36,7 @@ def load():
     fp = CACHE / "v2_facts.json"; d["facts"] = json.loads(fp.read_text()) if fp.exists() else {}
     return d
 
-ISSUER_WORDS = r"\b(ishares|vanguard|invesco|xtrackers|spdr|state street|hsbc|amundi|l&g|legal & general|wisdomtree|franklin|jpmorgan|j\.p\. morgan|ubs|lyxor|global x|vaneck|hanetf|first trust|core|edge|swap|physical|ucits|etf|etc|fund|usd|gbp|eur|acc|accumulating|accumulation|dist|distributing|distribution|unhedged|hedged|1c|1d|2c|class|a|b|c|plc|the|index|ii|sicav|ftse epra nareit|daily)\b"
+ISSUER_WORDS = r"\b(ishares|vanguard|invesco|xtrackers|spdr|state street|hsbc|amundi|l&g|legal & general|wisdomtree|franklin|jpmorgan|j\.p\. morgan|ubs|lyxor|global x|vaneck|hanetf|first trust|core|edge|swap|physical|ucits|etf|etc|fund|usd|gbp|eur|acc|accumulating|accumulation|dist|distributing|distribution|unhedged|hedged|1c|1d|2c|class|a|b|c|plc|the|index|ii|sicav|ftse epra nareit|daily|line|eqqq)\b"
 def index_key(name):
     k = re.sub(r"\(.*?\)", " ", str(name).lower()); k = re.sub(ISSUER_WORDS, " ", k)
     k = k.replace("nasdaq-100", "nasdaq 100").replace("s&p500", "s&p 500").replace("all country world", "acwi")
@@ -62,7 +63,7 @@ def clean_units(c):
     for t in c.columns:
         s = c[t].dropna(); r = s / s.shift(1)
         for dt, x in r[(r > 50) | (r < 0.02)].items():
-            f = x  # multiply everything before dt by the jump factor
+            f = 100.0 if x > 1 else 0.01  # unit switch is exactly x100 or /100; keeps the genuine move on the day
             c.loc[:dt - pd.Timedelta(days=1), t] = c.loc[:dt - pd.Timedelta(days=1), t] * f
     return c
 
@@ -117,6 +118,7 @@ def run(asof=None, week_dir=None):
         v["ELG04"] = row["scope"] not in ("money-market",)
         v["ELG05_days"] = (asof_ts - s.index[-1]).days if len(s) else 999; v["ELG05"] = v["ELG05_days"] <= 7
         r63 = s.pct_change().iloc[-63:]; v["ELG06"] = not (r63.abs() > 0.20).any()
+        v["integrity_full"] = not (s.pct_change().abs() > 0.5).any()  # corrupt history: excluded from exposure and fit views
         v["ELG08"] = t in set(CFG.get("orderable") or []) or t == "VWRA.L"
         ter = row.get("ter"); ter = float(ter) if ter is not None and not pd.isna(ter) else (f.get("netExpenseRatio") if f.get("netExpenseRatio") else np.nan)
         v["CST01"] = ter * 100 if not pd.isna(ter) else np.nan  # bps
@@ -184,83 +186,57 @@ def run(asof=None, week_dir=None):
     gates = ["ELG01", "ELG02", "ELG03", "ELG04", "ELG05", "ELG06", "ELG08", "ELG09"]
     L["buyable"] = L[gates].fillna(False).astype(bool).all(axis=1) & ~L["CON04"].astype(bool) & ~L["EVT_block"].astype(bool)
     L["fail_reasons"] = [", ".join([g for g in gates if not bool(L.loc[t, g])] + (["CON04"] if L.loc[t, "CON04"] else []) + (["event"] if L.loc[t, "EVT_block"] else [])) for t in L.index]
-    # ---------- exposure view X (equity clusters, on the cluster reference line, monthly USD returns) ----------
+    # ---------- exposure view X (spec-faithful, shared with REC04 via exposure.py) ----------
+    XP.self_check()
     eq_scopes = lambda sc: not any(k in str(sc) for k in ["government", "corporate", "high-yield", "inflation", "em-debt", "aggregate", "money", "gold", "silver", "platinum", "palladium", "precious", "commodities", "multi_asset"])
-    refs = sorted({cl[t] for t in lines if eq_scopes(u.loc[t, "scope"])})
     mret = close.resample("ME").last().pct_change(fill_method=None)
-    # ELG07 splice: the world reference uses VWRA.L returns, extended back with VT (same FTSE All-World index) before VWRA existed
-    wr = mret[world_ref].copy(); first = close[world_ref].first_valid_index()
-    vt = mret["VT"]; wr = wr.where(wr.index > first + pd.offsets.MonthEnd(1), vt)
-    mret = mret.assign(**{world_ref: wr})
-    fr = d["french"]["Developed_5_Factors"].copy(); fr.index = fr.index + pd.offsets.MonthEnd(0)
-    fr["CMAp"] = fr["CMA"] - np.polyfit(fr["HML"], fr["CMA"], 1)[0] * fr["HML"]
-    def expo(t):
-        y = mret[t].dropna().iloc[-121:-1] if mret[t].dropna().index[-1] >= asof_ts - pd.Timedelta(days=5) else mret[t].dropna().iloc[-120:]
-        w = mret[world_ref].reindex(y.index)
-        j = pd.concat([y, w], axis=1).dropna()
-        if len(j) < 36: return None
-        e = {}
-        b = np.cov(j.iloc[:, 0], j.iloc[:, 1])[0, 1] / j.iloc[:, 1].var(); e["FAC05"] = 0.67 * b + 0.33
-        ff = fr.reindex(j.index).dropna()
-        yy = (j.iloc[:, 0].reindex(ff.index) - ff["RF"]).values
-        Xf = np.column_stack([np.ones(len(ff)), ff[["Mkt-RF", "SMB", "HML", "RMW", "CMAp"]].values])
-        if len(ff) >= 36:
-            co = np.linalg.lstsq(Xf, yy, rcond=None)[0]
-            e["FAC01"], e["FAC02"], e["FAC03"] = co[3], co[4], co[5]
-            e["FAC04"] = co[2] if co[4] >= -0.1 else min(co[2], 0)
-        nav = (1 + j).cumprod(); dd = (nav / nav.cummax() - 1).min()
-        e["RSK01"] = float(dd.iloc[0] - e["FAC05"] * dd.iloc[1]) * 100  # points of extra drawdown beyond beta (negative = worse)
-        up, dn = j[j.iloc[:, 1] > 0], j[j.iloc[:, 1] < 0]
-        bu = np.cov(up.iloc[:, 0], up.iloc[:, 1])[0, 1] / up.iloc[:, 1].var(); bd = np.cov(dn.iloc[:, 0], dn.iloc[:, 1])[0, 1] / dn.iloc[:, 1].var()
-        e["RSK03"] = bd - bu
-        q = j.iloc[:, 0].quantile(.05); e["RSK05"] = float(-j.iloc[:, 0][j.iloc[:, 0] <= q].mean() / j.iloc[:, 0].std())
-        e["RSK02"] = float(((nav.iloc[:, 0] / nav.iloc[:, 0].cummax()) < 0.95).mean() - ((nav.iloc[:, 1] / nav.iloc[:, 1].cummax()) < 0.95).mean()) * len(j)
-        last60 = j.iloc[-60:]; e["EXR08"] = float(((1 + last60.iloc[:, 0]).prod() - (1 + last60.iloc[:, 1]).prod()) * 100) if len(last60) >= 48 else np.nan
-        e["months"] = len(j)
-        return e
-    E = {r: expo(r) for r in refs}; E = {k: v for k, v in E.items() if v}
-    Eref = E[world_ref]; XS = {}
-    for r, e in E.items():
-        s = {k: tanh_score(e.get(k), Eref.get(k), 0.2, 1) for k in ["FAC01", "FAC02", "FAC03", "FAC04"]}
-        s["RSK01"] = tanh_score(e["RSK01"], Eref["RSK01"], 10, 1, one_sided=True)
-        s["RSK03"] = tanh_score(e["RSK03"], Eref["RSK03"], 0.2, -1, one_sided=True)
-        s["RSK05"] = tanh_score(e["RSK05"], Eref["RSK05"], 0.5, -1, one_sided=True)
-        s["EXR08"] = tanh_score(e.get("EXR08"), Eref.get("EXR08"), 20, -1)
-        s["EXR06"] = np.nan  # currency valuation: REER source unverified, drops out
-        exr, ce = fam_score(s, {"EXR06": .4, "EXR08": .6}); fac, cf = fam_score(s, {"FAC01": .12, "FAC02": .30, "FAC03": .28, "FAC04": .30})
-        rsk, cr = fam_score(s, {"RSK01": .35, "RSK03": .35, "RSK05": .30})
-        X = (20 * exr + 40 * fac + 40 * rsk) / 100
-        XS[r] = {**{k: round(v, 3) if isinstance(v, float) else v for k, v in e.items()}, **{k + "_s": s[k] for k in s}, "EXR": exr, "FAC": fac, "RSK": rsk, "X": X}
-    XS = pd.DataFrame(XS).T
+    dt = asof_ts + pd.offsets.MonthEnd(0) if asof_ts.is_month_end else asof_ts - pd.offsets.MonthEnd(1)  # last completed month
+    mret = mret.loc[:dt]
+    fac = XP.factors(d["french"]); W = XP.world_reference(mret, fac)
+    PROXY = {"sp500": "SPY", "ndx100": "QQQ"}; proxy_by_ref = {sleeves[k]: v for k, v in PROXY.items() if sleeves.get(k)}
+    for t in lines:
+        if "EIMI" in t: proxy_by_ref[cl[t]] = "EEM"
+    splices = {}
+    def series(ref):
+        if ref == world_ref: return W
+        if ref in proxy_by_ref and proxy_by_ref[ref] in mret:
+            sp, info = XP.spliced(mret[ref], mret[proxy_by_ref[ref]]); splices[ref] = info; return sp
+        return mret[ref].dropna()
+    refs = sorted({cl[t] for t in lines if eq_scopes(u.loc[t, "scope"]) and L.loc[cl[t], "integrity_full"]} | {world_ref})
+    e_w = XP.raw_measures(W, W, fac, dt); E = {}; XSd = {}
+    for r in refs:
+        e = e_w if r == world_ref else XP.raw_measures(series(r), W, fac, dt)
+        if e.get("months", 0) < 36 or "FAC05" not in e: continue
+        E[r] = e; sc = XP.score(e, e_w); XSd[r] = {**{k: (round(v, 4) if isinstance(v, float) else v) for k, v in e.items()}, **{k + "_s": sc[k] for k in ["FAC01", "FAC02", "FAC03", "FAC04", "RSK01", "RSK03", "RSK05", "EXR08", "EXR06"]}, "EXR": sc["EXR"], "FAC": sc["FAC"], "RSK": sc["RSK"], "X": sc["X"]}
+    XS = pd.DataFrame(XSd).T
     assert abs(XS.loc[world_ref, "X"] - 50) < 1e-9, "built-in check failed: world reference must score exactly 50"
+    Eref = e_w
     # ---------- fit view against the owner's strategic mix ----------
     mix = {k: v["target"] for k, v in CFG["strategic_mix"].items()}
-    port = sum(mret[sleeves[k]].fillna(0) * w for k, w in mix.items() if sleeves[k] in mret)
-    port = port.iloc[-121:-1] if mret.index[-1] >= asof_ts - pd.Timedelta(days=5) else port.iloc[-120:]
+    cost = lambda r: float(L.loc[L.cluster == r, "CST10"].min()) if (L.cluster == r).any() else float(L.loc[r, "CST10"])
+    cref = float(L.loc["VWRA.L", "CST10"])
+    Ex = {r: XP.exp_excess(E[r], e_w, cost(r), cref) for r in E}
+    beta_P = sum(w * E[sleeves[k]]["FAC05"] for k, w in mix.items()); E_P = sum(w * Ex[sleeves[k]] for k, w in mix.items())
+    port = sum(series(sleeves[k]).reindex(mret.index).fillna(0) * w for k, w in mix.items()).iloc[-120:]
     FT = {}
-    def exp_ret(r):
-        e = E.get(r);
-        if not e: return np.nan
-        tilt = sum(B_PRIORS[k] * ((e.get(k) or 0) - (Eref.get(k) or 0)) for k in ["FAC01", "FAC02", "FAC03", "FAC04"]) + B_PRIORS["EXR08"] * ((e.get("EXR08") or 0) - (Eref.get("EXR08") or 0))
-        return e["FAC05"] * ERP + float(np.clip(tilt, -2, 2))
-    Ep = sum(exp_ret(sleeves[k]) * w for k, w in mix.items())
     for r in set(cl.values()):
-        y = mret[r].reindex(port.index); j = pd.concat([y, port], axis=1).dropna()
+        if not L.loc[r, "integrity_full"]: continue
+        y = series(r).reindex(port.index); j = pd.concat([y, port], axis=1).dropna()
         if len(j) < 36: continue
         f = {}
         dn = j[j.iloc[:, 1] < 0]; f["FIT05"] = float(dn.corr().iloc[0, 1]) if len(dn) > 10 else np.nan
         vi, vp = j.iloc[:, 0].var() * 12, j.iloc[:, 1].var() * 12; vm = (0.1 * j.iloc[:, 0] + 0.9 * j.iloc[:, 1]).var() * 12
-        f["FIT06"] = 0.5 * (0.1 * vi + 0.9 * vp - vm) * 1e4  # bps a year, diversification return of a 10% position
-        f["FIT10"] = float((0.1 * (j.iloc[:, 0] - j.iloc[:, 1])).std() * np.sqrt(12) * 100)  # % tracking error of 90/10 vs mix
+        f["FIT06"] = 0.5 * (0.1 * vi + 0.9 * vp - vm) * 1e4
+        f["FIT10"] = float((0.1 * (j.iloc[:, 0] - j.iloc[:, 1])).std() * np.sqrt(12) * 100)
         f["FIT03"] = float(j.corr().iloc[0, 1])
-        f["FIT04"] = exp_ret(r) - Ep if r in E else np.nan
+        f["FIT04"] = XP.fit04(Ex[r], E[r]["FAC05"], E_P, beta_P) if r in E else np.nan
         sc = {"FIT04": tanh_score(f["FIT04"], 0, 1, 1), "FIT05": tanh_score(f["FIT05"], 0.9, 0.2, -1), "FIT06": tanh_score(f["FIT06"], 0, 10, 1),
               "FIT10": 50.0 if f["FIT10"] <= 2 else tanh_score(f["FIT10"], 2, 0.5, -1, one_sided=True)}
         w = {"FIT04": .4, "FIT05": .2, "FIT06": .2, "FIT10": .2} if r in E else {"FIT05": 1 / 3, "FIT06": 1 / 3, "FIT10": 1 / 3}
         fit, _ = fam_score(sc, w)
         FT[r] = {**f, **{k + "_s": v for k, v in sc.items()}, "fit": fit}
     FT = pd.DataFrame(FT).T
-    return {"world_lines": world_lines, "E": E, "Eref": Eref, "world_ref": world_ref, "asof": asof_ts, "L": L, "LS": LS, "XS": XS, "FT": FT, "cl": cl, "sleeves": sleeves, "C_usd": C_usd, "us_yield": us_yield, "close": close, "mret": mret, "mix": mix}
+    return {"world_lines": world_lines, "E": E, "Eref": Eref, "world_ref": world_ref, "W": W, "splices": splices, "dt": dt, "asof": asof_ts, "L": L, "LS": LS, "XS": XS, "FT": FT, "cl": cl, "sleeves": sleeves, "C_usd": C_usd, "us_yield": us_yield, "close": close, "mret": mret, "mix": mix}
 
 if __name__ == "__main__":
     R = run()
