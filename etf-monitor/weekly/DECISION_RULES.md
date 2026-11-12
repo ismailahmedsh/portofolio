@@ -1,5 +1,7 @@
 # Decision rules
 
+> Engine v2 uses DECISION_RULES_V2.md. This file documents the v1 rules and the original backtest evidence.
+
 The weekly engine answers four questions. The rules come from the 2015-2026 backtest in `src/backtest.py` (results in `runs/backtest_latest.json`), not from opinion.
 
 ## 1. Keep holding the core fund (VWRA)?

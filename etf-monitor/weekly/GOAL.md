@@ -6,7 +6,7 @@ Build and grow a portfolio of UCITS ETFs, bought through IBKR on the London Stoc
 ## Owner context
 - Canadian citizen resident in the UAE, Branch A of plan v5: no UAE tax, Canadian non-resident, so Irish-domiciled UCITS funds are the default wrapper. US-listed funds cost 30% dividend withholding and US estate-tax exposure above US$60,000.
 - Horizon 15+ years. Deposits arrive monthly in AED.
-- Existing anchor: VWRA, which is one candidate, not a fixed answer. S&P 500 (CSPX, VUAA), Nasdaq-100 (CNDX, EQAC), regional, factor, sector, bond and gold UCITS funds are all candidates.
+- Starting mix and yardstick (owner decision, 2026-11-12): the owner's own strategic mix in config/portfolio_v2.yaml, initially 70% world (VWRA), 20% S&P 500, 10% Nasdaq-100. Every deposit goes to the sleeve furthest below its target; any score-driven rule must beat this mix in the backtest gate before it can move money. Results are also shown against 100% world, 100% S&P 500 and 100% Nasdaq-100. S&P 500 (CSPX, VUAA), Nasdaq-100 (CNDX, EQAC), regional, factor, sector, bond and gold UCITS funds are all candidates.
 
 ## What the system must answer
 | Cadence | Question |
@@ -22,7 +22,7 @@ Build and grow a portfolio of UCITS ETFs, bought through IBKR on the London Stoc
 - Evidence: any rule that moves money must be backtested with monthly deposits and realistic costs, and beat holding the world market under both execution assumptions (see DECISION_RULES.md); the system records every pick so the rule can be re-tested on live data.
 
 ## Success measures
-- Money-weighted return after all costs versus a VWRA-only portfolio with the same deposits.
+- Money-weighted return after all costs versus the owner's strategic mix with the same deposits (also shown against 100% world, S&P 500 and Nasdaq-100).
 - Worst drawdown versus the world market.
 - No unforced sells in drawdowns.
 - A few hours a month of the owner's time.

@@ -1,0 +1,28 @@
+# Owner portfolio for engine v2. Edit this file; every change is logged in CHANGELOG.md.
+owner: Canadian citizen resident in the UAE (plan v5 Branch A), IBKR, buys UCITS lines on the LSE
+deposit:
+  aed_per_month: 2500
+  aed_per_usd: 3.6725          # UAE dirham peg
+  fx_fixed_usd: 2.0            # IBKR AED to USD conversion minimum; change if you convert at your bank
+  commission_min_usd: 1.70     # IBKR LSE tiered minimum per order
+
+# Your strategic mix: the starting point for every deposit and the yardstick for every result.
+# Chosen by the owner on 2026-11-12 (example values from the decision; change them any time).
+strategic_mix:
+  world:    {target: 0.70, line: VWRA.L, fallbacks: [FWRA.L, ACWD.L]}
+  sp500:    {target: 0.20, line: null,   note: "line picked by cost (CST10) among the S&P 500 lines"}
+  ndx100:   {target: 0.10, line: null,   note: "line picked by cost (CST10) among the Nasdaq-100 lines"}
+
+# Score-driven tilts away from the mix: off until a tilt rule beats the mix in the backtest gate.
+target_mode: policy            # policy | score
+tilt_limits: {total_tilt_max: 0.15, per_sleeve_max: 0.10, deposits_per_12_max: 2}
+
+# Current holdings, units per line. Empty = starting from zero. Update after each buy (or from the IBKR statement).
+positions: {}
+#  VWRA.L: {units: 0, as_of: 2026-11-12}
+
+# Lines you have confirmed you can buy in IBKR (TWS shows the LSE USD line and lets you place an order). VWRA is exempt.
+orderable: [VWRA.L]
+
+# One row per executed buy: date, ticker, units, price_usd, commission_usd, fx_usd
+fills: []
