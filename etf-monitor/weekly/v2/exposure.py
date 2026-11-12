@@ -28,7 +28,9 @@ def world_reference(mret, f):
     """Monthly USD total return of the single declared world reference."""
     kf = (f["Mkt-RF"] + f["RF"])
     w = kf.copy()
-    if "ACWI" in mret: w = w.where(~((w.index >= "2008-03-31") & (w.index <= "2008-05-31")), mret["ACWI"].reindex(w.index))
+    if "ACWI" in mret:
+        acwi = mret["ACWI"].reindex(w.index); win = (w.index >= "2008-03-31") & (w.index <= "2008-05-31") & acwi.notna()
+        w = w.where(~win, acwi)  # months without an ACWI return keep the Ken French figure
     vt = mret["VT"].dropna(); w = pd.concat([w.loc[:vt.index[0] - pd.offsets.MonthEnd(1)], vt]).sort_index()
     return w[~w.index.duplicated(keep="last")]
 
@@ -112,9 +114,10 @@ def score(e, w):
     s["EXR08"] = tanh_score(e.get("EXR08"), 0.0, 20, -1); s["EXR06"] = np.nan  # REER source unverified
     exr, _ = fam_score(s, {"EXR06": .4, "EXR08": .6}); fac, _ = fam_score(s, {"FAC01": .12, "FAC02": .30, "FAC03": .28, "FAC04": .30})
     rsk, _ = fam_score(s, {"RSK01": .35, "RSK03": .35, "RSK05": .30})
-    parts = [(20, exr), (40, fac), (40, rsk)]; have = [(wt, v) for wt, v in parts if not pd.isna(v)]
-    X = sum(wt * v for wt, v in have) / sum(wt for wt, _ in have) if have else np.nan
-    return {**s, "EXR": exr, "FAC": fac, "RSK": rsk, "X": X}
+    # scoring rule 10: a family with no data scores 50 (it is not dropped and the others are not re-weighted)
+    exr, fac, rsk = [50.0 if pd.isna(v) else v for v in (exr, fac, rsk)]
+    X = (20 * exr + 40 * fac + 40 * rsk) / 100
+    return {**s, "EXR": exr, "FAC": fac, "RSK": rsk, "X": X, "risk_available": "DD_excess" in e}
 
 def exp_excess(e, w, cost_bps=0.0, cost_ref_bps=0.0, priors=True):
     """EXR02: beta x ERP + clip(sum b_j x (x_ij - x_world,j), -2, 2) - cost difference, % a year."""

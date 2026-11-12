@@ -130,7 +130,9 @@ def rec04(cfg, monthly_usd):
             EP = sum(w * ex_pp(es[k], ew, priors) for k, w in owner.items())
             for c in cands:
                 if "FAC05" not in es[c]: continue
-                if priors: Xh[c][dt] = XP.score(es[c], ew)["X"]
+                if priors:
+                    sc = XP.score(es[c], ew)
+                    Xh[c][dt] = sc["X"] if sc["risk_available"] else np.nan  # a sleeve starts only once its risk family exists (120 months)
                 FIT4[c][(dt, priors)] = XP.fit04(ex_pp(es[c], ew, priors), es[c]["FAC05"], EP, bP)
     Xh = pd.DataFrame(Xh)
     Xs = Xh.rolling(3, min_periods=3).mean()  # X used for targets: mean of the last 3 month-end values
@@ -168,7 +170,7 @@ def rec04(cfg, monthly_usd):
             sr0 = TRIAL_IR_SPREAD / np.sqrt(12) * ((1 - g) * nd.inv_cdf(1 - 1 / N_TRIALS) + g * nd.inv_cdf(1 - 1 / (N_TRIALS * np.e)))
             den = 1 - act.skew() * ir + (act.kurt() + 2) / 4 * ir ** 2
             dsr = nd.cdf((ir - sr0) * np.sqrt(len(act) - 1) / np.sqrt(den)) if den > 0 and act.std() > 0 else 0.0
-            beats = all((o.get(f"mwr_{a}_{b}") or -99) > (ob.get(f"mwr_{a}_{b}") or 99) for a, b in per)
+            beats = all((o.get(f"mwr_{a}_{b}") or -99) - (ob.get(f"mwr_{a}_{b}") or 99) >= 0.25 for a, b in per)  # DECISION_RULES_V2: at least 0.25 points
             tilt_months = int(sum(1 for i in range(len(rt)) if True))
             key = f"{'with priors' if priors else 'priors = 0'}, {name}"
             res["variants"][key] = {**o, "info_ratio_annual": round(ir * np.sqrt(12), 2), "deflated_prob": round(dsr, 3), "beats_mix_every_period": beats}
@@ -205,11 +207,11 @@ def report(week, R, pl, r07, r04, cfg):
     w("\n## May scores move money yet? (REC04 gate)\n")
     w(f"Rule tested: {r04['rule']} Period {r04['period']}, against your mix, {r04['n_trials']} trials counted. The deflated probability assumes the information ratios of the {r04['n_trials']} trials spread by {r04['trial_ir_spread_assumed']} a year; this is an assumption, not a measurement.\n")
     per = r04["periods"]
-    w("| Variant | Return on your money | " + " | ".join(f"{a}-{b}" for a, b in per) + " | Information ratio | Deflated probability | Beats your mix every period |\n|" + "---|" * (5 + len(per)))
+    w("| Variant | Return on your money | " + " | ".join(f"{a}-{b}" for a, b in per) + " | Information ratio | Deflated probability | Beats your mix by 0.25+ points every period |\n|" + "---|" * (5 + len(per)))
     ob = r04["owner_mix"]; w(f"| Your mix (yardstick) | {ob['mwr']:.1f}% | " + " | ".join(f"{ob.get(f'mwr_{a}_{b}'):.1f}%" for a, b in per) + " | | | |")
     for k, o in r04["variants"].items(): w(f"| Tilts, {k} | {o['mwr']:.1f}% | " + " | ".join(f"{o.get(f'mwr_{a}_{b}'):.1f}%" for a, b in per) + f" | {o['info_ratio_annual']:.2f} | {o['deflated_prob']:.2f} | {'yes' if o['beats_mix_every_period'] else 'no'} |")
     w(f"\nLatest smoothed X: " + ", ".join(f"{k} {v}" for k, v in r04["latest_X"].items()) + ".\n")
-    w(f"**Gate: {'PASSED, tilts may be proposed for your confirmation' if r04['gate_pass'] else 'not passed, so scores stay display-only and every deposit follows your mix'}.** The prior-free variants (priors = 0) are shown to separate what the data say from what the priors assume; only the with-priors variants decide the gate.\n")
+    w(f"**Gate: {'PASSED, tilts may be proposed for your confirmation' if r04['gate_pass'] else 'not passed, so scores stay display-only and every deposit follows your mix'}.** With priors set to 0, expected alpha against your mix is exactly zero, so the prior-free variants can never qualify and equal your mix: any qualification comes from the assumed priors, not from estimated returns. Only the with-priors variants decide the gate.\n")
     w("## Lines in your sleeves (line view, scored within each same-index group)\n")
     for k, ref in R["sleeves"].items():
         idx = [t for t in (R["world_lines"] if k == "world" else L.index[L.cluster == ref]) if t in L.index]
