@@ -1,0 +1,26 @@
+{
+ "cash_usd": 678.74,
+ "portfolio_value_usd": 0,
+ "sleeve_values": {
+  "world": 0,
+  "sp500": 0,
+  "ndx100": 0
+ },
+ "gaps": {
+  "world": 475.11,
+  "sp500": 135.75,
+  "ndx100": 67.87
+ },
+ "orders": [
+  {
+   "sleeve": "world",
+   "ticker": "VWRA.L",
+   "units": 3,
+   "price_usd": 188.96,
+   "cost_usd": 568.58,
+   "gap_before_usd": 475.11
+  }
+ ],
+ "residue_usd": 110.16,
+ "notes": []
+}

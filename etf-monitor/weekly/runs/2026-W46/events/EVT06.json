@@ -1,0 +1,35 @@
+{
+ "pillar_id": "EVT06",
+ "week": "2026-W46",
+ "summary": "No confirmed adverse change to the owner's tax or legal regime was found for 2026-W46, so nothing here blocks a buy or triggers S6. For US withholding, IRS Notice 2026-61 (September 2026, primary source verified) extends the section 871(m) phase-in through 2028. It keeps the status quo for the swap S&P 500 lines SPXS.L and XSPU.L, and it is recorded as information for TAX03. Canada's Budget 2026 (tabled Nov 5) changes section 116 withholding and trust distributions to non-residents, but nothing touches a non-resident individual's directly held Irish UCITS ETFs, departure tax or s.94.1. Ireland's Finance (No. 2) Bill 2026 cuts exit tax to 35% for Irish residents only. No US estate-tax or situs change for non-resident aliens ($60,000 exemption unchanged), no Ireland-US treaty change, no section 899 revival and no UAE personal income tax move was found. UAE CRS 2.0 starts 2027-01-01 as already announced. The explorer findings (AI credit stress, Nvidia governance) are outside this pillar's scope.",
+ "events": [
+  {
+   "target": "SPXS.L",
+   "severity": 0,
+   "issue": "IRS Notice 2026-61 (released 2026-09-21) extends the section 871(m) phase-in through 2028: only delta-one transactions are in scope, and the QDD net-delta relief and the simplified combination standard run to the end of 2028. Index swaps on a qualified index such as the S&P 500 stay outside 871(m), so the fund-level withholding of about 0% on this swap line does not change. TAX03 already charges for dependence on this one rule. Mayer Brown notes this may be the last relief notice before new regulations, so the next notice or proposed regulation is the item to watch. No adverse change.",
+   "url": "https://www.irs.gov/pub/irs-drop/n-26-61.pdf",
+   "date": "2026-09-21"
+  },
+  {
+   "target": "XSPU.L",
+   "severity": 0,
+   "issue": "IRS Notice 2026-61 (released 2026-09-21) extends the section 871(m) phase-in through 2028: only delta-one transactions are in scope, and the QDD net-delta relief and the simplified combination standard run to the end of 2028. Index swaps on a qualified index such as the S&P 500 stay outside 871(m), so the fund-level withholding of about 0% on this swap line (Luxembourg domicile) does not change. TAX03 already charges for dependence on this one rule. Mayer Brown notes this may be the last relief notice before new regulations, so the next notice or proposed regulation is the item to watch. No adverse change.",
+   "url": "https://www.irs.gov/pub/irs-drop/n-26-61.pdf",
+   "date": "2026-09-21"
+  },
+  {
+   "target": "world",
+   "severity": 0,
+   "issue": "Applies to the owner, not to one line. Canada's Budget 2026 (tabled 2026-11-05) contains two non-resident measures. Section 116 withholding changes for taxable Canadian property apply from 2027-01-01, with a 5-year anti-avoidance window for non-residents. Trust rollout denial is extended to distributions to Canadian corporations or partnerships with any non-resident owner. Neither touches a non-resident individual holding Irish UCITS ETFs: these are not taxable Canadian property, and the owner holds them directly, not through a trust. No change to departure tax (s.128.1) or the offshore-fund rule (s.94.1) was found. The text is from a law-firm briefing; the Finance Canada annex has not yet been checked.",
+   "url": "https://www.osler.com/en/insights/updates/federal-budget-briefing-2026/",
+   "date": "2026-11-05"
+  },
+  {
+   "target": "world",
+   "severity": 0,
+   "issue": "Applies to the owner, not to one line. Ireland's Finance (No. 2) Bill 2026 cuts the investment-undertaking exit tax from 38% to 35% from 2027-01-01 and adds self-assessment for Irish-resident holders of Irish ETFs held through a clearing system. Eight-year deemed disposal is unchanged. Exit tax applies only to Irish residents, so it does not affect a UAE-resident non-Irish holder, and no change to the fund-level regime or the Ireland-US treaty 15% rate was found.",
+   "url": "https://kpmg.com/ie/en/insights/tax/finance-bill-2026/investment-funds-life-assurance.html",
+   "date": "2026-10-20"
+  }
+ ]
+}

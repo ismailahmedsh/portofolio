@@ -1,0 +1,42 @@
+{
+ "pillar_id": "EVT04",
+ "week": "2026-W46",
+ "summary": "No benchmark switch, capping-rule change, special rebalance or country reclassification was announced from 2026-11-07 to 2026-11-12 for the world (FTSE All-World), S&P 500 or Nasdaq-100 sleeves. Only scheduled reviews are under way. The FTSE GEIS December quarterly review released its monitor list on 9 Nov, publishes indicative files on 13 Nov and takes effect 21 Dec. MSCI announced its November review on 11 Nov, effective at the close on 30 Nov; this affects only ACWD.L among the world substitutes. The Nasdaq-100 annual reconstitution is expected to be announced around 11 Dec, effective about 21 Dec, but that is inferred from the 2025 pattern and not confirmed. The main concentration item is Nvidia, the largest constituent (about 8.4% of the S&P 500 at 30 Sep and more in the Nasdaq-100). Its board opened a probe into the CEO and the stock fell roughly 29% from its October high. That is a price and governance event with no index-rule consequence, so it is recorded at severity 0 and left to market pillars.",
+ "events": [
+  {
+   "target": "world",
+   "severity": 0,
+   "issue": "FTSE GEIS December 2026 quarterly review is in progress (covers FTSE All-World; VWRA.L/FWRA.L). Monitor list released 2026-11-09, indicative review files 2026-11-13, final files 2026-12-04, effective 2026-12-21. Lockdown starts 2026-11-30 for US-traded securities and 2026-12-07 for non-US. Routine shares, free-float and IPO changes only; no methodology change announced.",
+   "url": "https://www.lseg.com/content/dam/ftse-russell/en_us/documents/policy-documents/ftse-faq-document-geis-2026.pdf",
+   "date": "2026-11-09"
+  },
+  {
+   "target": "ACWD.L",
+   "severity": 0,
+   "issue": "MSCI November 2026 Index Review results were announced 2026-11-11 after 23:00 CET, with all changes made as of the close on 2026-11-30. Affects the MSCI ACWI substitute (ACWD.L) only, not the FTSE-based VWRA.L/FWRA.L. Routine review; ACWI addition and deletion counts were not retrieved.",
+   "url": "https://www.msci.com/downloads/documents/press-releases/media-room/MSCI_Nov_2026_IR_Pre-Ann_PR_Doc.pdf",
+   "date": "2026-11-11"
+  },
+  {
+   "target": "sp500",
+   "severity": 0,
+   "issue": "Routine S&P 500 constituent change: Okta replaced Kenvue (being acquired by Kimberly-Clark) before the open on 2026-11-04. Announced 2026-10-30. No S&P 500 methodology consultation found for the week; the 2026 megacap consultation ended in June with eligibility rules unchanged.",
+   "url": "https://press.spglobal.com/2026-10-30-Okta-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+   "date": "2026-11-04"
+  },
+  {
+   "target": "ndx100",
+   "severity": 0,
+   "issue": "Mega-cap concentration watch: Nvidia's board opened an independent investigation on 2026-11-08 into reports that the CEO was targeted by a foreign intelligence effort. On 2026-11-11 the board met on the CEO's position without a decision, and the stock was about 29% below its 2026-10-06 high. Nvidia is the largest weight in the Nasdaq-100 and S&P 500 (about 8.4% of the S&P 500 at 30 Sep). No index-rule action follows from this; the Nov 17 earnings report is the next catalyst. Weight effects are price-driven and belong to market pillars.",
+   "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+   "date": "2026-11-08"
+  },
+  {
+   "target": "ndx100",
+   "severity": 0,
+   "issue": "Nasdaq-100 annual reconstitution is expected around 2026-12-11, effective about 2026-12-21. This is inferred from the December 2025 pattern (announced 12 Dec, effective 22 Dec) and not yet confirmed. No special rebalance has been announced. Recheck in W50.",
+   "url": "https://www.nasdaq.com/press-release/annual-changes-nasdaq-100-indexr-2025-12-13",
+   "date": "2026-11-12"
+  }
+ ]
+}

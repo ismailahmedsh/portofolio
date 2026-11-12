@@ -1,0 +1,14 @@
+{
+  "pillar_id": "EVT02",
+  "week": "2026-W46",
+  "summary": "No adverse fee, structure, KID, distribution or domicile change was found for any line in the world, sp500 or ndx100 sleeves in the 2026-11-07 to 2026-11-12 window, and no new cheaper LSE USD line on FTSE All-World, S&P 500 or Nasdaq-100 was announced. The only line item is a data correction: Vanguard cut the VWRA ongoing charge from 0.19% to 0.14% effective 2026-07-28, but config/universe_ucits_equity_global_regional.csv still shows 0.19, so ter_history and CST01 need the 0.14 entry. FWRA stays at 0.15%, so VWRA is now the cheaper FTSE All-World line on TER. Amundi delisted 26 share classes from the LSE (last trading day 2026-11-06, effective 2026-11-09); none of the 13 Amundi lines in the universe (US13, US71, US10, GAGU, TIPU, UCRP, CACX, CSWG, LCJP, EMXC, SEMU, WATU, EPRA) is on the published ticker list. SPY5 charges 0.03% against CSPX and VUAA at 0.07%; that fee has been in place since 2023, it is not new this week, and the cheaper-substitute test is computed by code, not by this agent.",
+  "events": [
+    {
+      "target": "VWRA.L",
+      "severity": 0,
+      "issue": "Ongoing charge cut from 0.19% to 0.14% a year, effective 2026-07-28 (Vanguard notice of 2026-07-20). Favourable. The universe file still lists 0.19; append 0.14 from 2026-07-28 to ter_history and refresh CST01.",
+      "url": "https://www.nl.vanguard/professional/insights/were-lowering-fees-on-one-of-our-most-popular-etfs",
+      "date": "2026-07-28"
+    }
+  ]
+}

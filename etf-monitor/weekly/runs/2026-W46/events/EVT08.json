@@ -1,0 +1,28 @@
+{
+  "pillar_id": "EVT08",
+  "week": "2026-W46",
+  "summary": "The broker, venue and funding channel had no adverse change this week. No Interactive Brokers outage, fee change, entity change or regulatory action dated 2026-11-07 to 2026-11-12 was found; the most recent confirmed IBKR access incident was on 2026-08-05 (APAC-hosted accounts, restored within an hour). IBKR's October metrics (released 2026-11-02) show a healthy broker: 5.678m accounts, $928.6bn client equity and margin loans of $106.8bn. No LSE trading outage was found this week, and the October UK Budget changes on stamp duty do not affect Irish-domiciled UCITS ETFs, which are already exempt. The AED/USD peg at 3.6725 is intact; the CBUAE held its base rate at 3.90% on 2026-10-28 and will very likely mirror the December Fed hike that markets now price as near-certain, which changes AED cash yields but not the conversion cost. Nothing here penalises or blocks any line.",
+  "events": [
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "Channel-wide (applies to every line): IBKR October 2026 metrics show 5.678m accounts (+34% y/y), $928.6bn client equity, $106.8bn margin loans and $180.5bn credit balances. No outage, fee change or enforcement action found for 2026-11-07 to 2026-11-12. Information only.",
+      "url": "https://finviz.com/news/413393/interactive-brokers-group-reports-brokerage-metrics-and-other-financial-information-for-october-2026-includes-reg-nms-execution-statistics",
+      "date": "2026-11-02"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "Channel-wide (funding): the CBUAE held its base rate at 3.90% on 2026-10-28 and keeps it anchored to Fed IORB. A December Fed hike is now priced as near-certain after the hot October CPI, so a matching CBUAE hike is likely. The AED/USD peg (3.6725) is unchanged, so AED-to-USD conversion cost is unaffected; only AED cash yields move. Information only.",
+      "url": "https://www.khaleejtimes.com/uae/uae-central-bank-interest-benchmark-rate-unchanged-fed-decision-october-28",
+      "date": "2026-10-28"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "Venue-wide (LSE): the UK Budget will replace stamp duty on shares with a single Securities Transfer Tax from late 2027, with no rate change now. Irish-domiciled UCITS ETFs traded on the LSE are already outside UK stamp duty; whether the new tax treats them the same way should be checked once the Finance Bill 2026-27 text is published. Information only.",
+      "url": "https://www.investmentweek.co.uk/news/4537996/budget-26-stamp-duty-shares-replaced-securities-transfer-tax",
+      "date": "2026-10-28"
+    }
+  ]
+}

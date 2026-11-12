@@ -1,0 +1,42 @@
+{
+ "pillar_id": "EVT10",
+ "week": "2026-W46",
+ "summary": "No new capital market assumption set was published between 2026-11-07 and 2026-11-12. The latest sets were J.P. Morgan's 2027 LTCMA (Oct 19), Vanguard's Sept 30 VCMM run (Oct 21), GMO's Sept 30 7-year forecast (Oct 16) and PGIM's Q4 2026 10-year forecast (as of Sept 30, published November). They disagree on the US: J.P. Morgan raised US large cap to 7.5%, equal to its global-equity figure. Vanguard (US 4.8-6.8% vs developed ex-US 5.3-7.3%), PGIM (US 6.0% vs ex-US 6.8%) and GMO (US large -7.3% real vs international large -0.9% real, normal-rates case) all rank the US below ex-US. Valuation data: Shiller CAPE was 40.24 on Nov 11 (long-run mean 17.45), and the excess CAPE yield was 0.56pp in October, the lowest since March 2002, with the 10-year Treasury touching 5.03% on Nov 10. All events are severity 0. These are slow-moving valuation facts, not changes to any fund, and penalising lines here would double-count the quant valuation pillars.",
+ "events": [
+  {
+   "target": "world",
+   "severity": 0,
+   "issue": "J.P. Morgan 2027 LTCMA (10-15y, USD): global equities 7.5% (from 7.0%), US large cap 7.5% (from 6.7%, on margins above 15%), EM equities 7.1% (lower), global aggregate bonds 5.3%, US intermediate Treasuries 4.6%, 60/40 7.0%. Developed-market equities now rank above EM.",
+   "url": "https://am.jpmorgan.com/us/en/asset-management/institutional/about-us/media/press-releases/jp-morgan-releases-2027-long-term-capital-market-assumptions/",
+   "date": "2026-10-19"
+  },
+  {
+   "target": "world",
+   "severity": 0,
+   "issue": "Vanguard VCMM 10-year nominal forecasts (Sept 30, 2026 run): US equities 4.8-6.8% (from 4.2-6.2%), developed ex-US equities 5.3-7.3% (from 4.5-6.5%), EM equities 3.7-5.7% (from 2-4%), US aggregate bonds 5.1-6.1%, global ex-US bonds hedged 5.2-6.2%. Ex-US developed still ranks above the US.",
+   "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html",
+   "date": "2026-10-21"
+  },
+  {
+   "target": "world",
+   "severity": 0,
+   "issue": "PGIM 10-year forecasts (Q4 2026 edition, data as of Sept 30, published November 2026), USD geometric: US large cap 6.0%, international ex-US 6.8%, EM 7.0%, US aggregate bonds 5.9%, US long Treasuries 7.9%, US high yield 6.4%, global 60/40 6.2%. Equity forecasts were cut across all regions on less favourable valuations. The date field is the as-of date; the publication day is not stated.",
+   "url": "https://www.pgim.com/ae/en/institutional/insights/market-portfolio/outlooks/capital-market-assumptions.html",
+   "date": "2026-09-30"
+  },
+  {
+   "target": "sp500",
+   "severity": 0,
+   "issue": "GMO 7-year real return forecasts (as of Sept 30, published Oct 16), normal-rates / low-rates cases: US large -7.3% / -4.3%, US small -5.1% / -2.2%, international large -0.9% / 1.5%, EM 0.2% / 1.9%, EM value 4.2% / 5.3%, US bonds 3.5% / 4.7%, US cash 1.9% / 1.4%. Figures are read from the PDF chart's text layer, where the pairing of values to bars is inferred from layout.",
+   "url": "https://www.gmo.com/globalassets/articles/gmo-7-year-asset-class-forecast/2026/gmo-7-year-asset-class-forecastsep26.pdf",
+   "date": "2026-10-16"
+  },
+  {
+   "target": "sp500",
+   "severity": 0,
+   "issue": "S&P 500 Shiller CAPE 40.24 on Nov 11 (mean 17.45, median 16.14; dot-com peak about 44). The Shiller monthly reading was 40.7 in October. The excess CAPE yield was 0.56pp in October, the lowest since March 2002 (secondary source: thetrading.tools, from Shiller data). The 10-year Treasury touched 5.03% on Nov 10.",
+   "url": "https://www.multpl.com/shiller-pe",
+   "date": "2026-11-11"
+  }
+ ]
+}
