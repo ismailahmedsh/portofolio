@@ -4,7 +4,7 @@ Status as of 2026-11-07. Machine-readable copy: `config/pillars_v2.json`. This s
 
 ## The goal
 
-Invest the owner's 2,500 AED a month (about US$679 after the FX minimum) for 15 years or more in low-cost Irish-domiciled UCITS ETFs on the London Stock Exchange, with VWRA (the whole world) as the default and the yardstick for every alternative. Money moves away from VWRA only when a rule run exactly as it would be live has beaten simply holding the world after all costs, and holdings are sold only under the written sell rules, never because of price trends, scores or news mood.
+Invest the owner's 2,500 AED a month (about US$679 after the FX minimum) for 15 years or more in low-cost Irish-domiciled UCITS ETFs on the London Stock Exchange, with VWRA (the whole world) as the default and the yardstick for every alternative. **Amended by the owner on 2026-11-12 (CHANGELOG.md): the owner's strategic mix in config/portfolio_v2.yaml (initially 70% world, 20% S&P 500, 10% Nasdaq-100) is now the default for every deposit and the yardstick every rule must beat. The world remains the neutral zero point of the exposure view (world = 50), which measures tilts, not success.** Money moves away from VWRA only when a rule run exactly as it would be live has beaten simply holding the world after all costs, and holdings are sold only under the written sell rules, never because of price trends, scores or news mood.
 
 ## Where this stands, in plain terms
 

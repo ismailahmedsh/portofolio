@@ -6,7 +6,7 @@ Week 2026-W46.
 ## From this week's report
 Pillar coverage this week
 
-63 of 100 pillars are computed by code this week and 10 are scored by the event agents in the weekly workflow; the rest are listed below.
+63 of 100 pillars have code that computes them this week (some as record or context with weight 0, as the spec defines) and 10 are scored by the event agents in the weekly workflow; the rest are listed below with the reason.
 
 | Family | Built and computed | Agents | Not built yet | Unverified source |
 |---|---|---|---|---|

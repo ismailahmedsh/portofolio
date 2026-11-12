@@ -13,15 +13,19 @@ Week 2026-W46.
 ## From this week's report
 May scores move money yet? (REC04 gate)
 
-Rule tested: Quarterly: sleeves with X >= 55 at two consecutive quarter-ends get a tilt of up to 10% (X 55 -> 0, X 70 -> 10%), total tilt at most 15%, at most 2 of any 12 deposits; candidates EFA, EEM, IWD, IWM, IWN, QUAL, MTUM, USMV, VLUE, EWJ, VGK. Period 2011-12 to 2026-11-11, against your mix, 26 trials counted.
+Rule tested: Quarterly: a sleeve qualifies when its X (3-month average) is 55 or more at two consecutive quarter-ends and its expected alpha against your mix is positive; target = band max x clip((X - 55) / 15), 0 or at least 5%, changes of 2.5 to 5 points a quarter, total tilt at most 15%, at most 2 of any 12 deposits. Candidates: developed ex-US (EFA, band 10%), emerging markets (EEM, band 7.5%). Factor and small-cap sleeves excluded: no proxy passes the splice test. Period 2008-01 to 2026-11-11, against your mix, 26 trials counted. The deflated probability assumes the information ratios of the 26 trials spread by 0.25 a year; this is an assumption, not a measurement.
 
-| Execution | Return on your money | Time-weighted | 2012-2016 | 2017-2021 | 2022-2026 | Information ratio | Deflated probability | Beats your mix everywhere |
-|---|---|---|---|---|---|---|---|---|
-| Your mix (yardstick) | 12.8% | 12.7% | 11.0% | 16.6% | 10.6% | | | |
-| Tilts, same month | 12.8% | 12.7% | 11.0% | 16.6% | 10.6% | 0.08 | 0.05 | no |
-| Tilts, lagged | 12.8% | 12.7% | 11.0% | 16.6% | 10.6% | 0.14 | 0.08 | no |
+| Variant | Return on your money | 2008-2014 | 2015-2019 | 2020-2026 | Information ratio | Deflated probability | Beats your mix by 0.25+ points every period |
+|---|---|---|---|---|---|---|---|
+| Your mix (yardstick) | 12.4% | 12.2% | 10.4% | 13.7% | | | |
+| Tilts, with priors, same month | 12.3% | 12.2% | 10.4% | 13.6% | -0.24 | 0.00 | no |
+| Tilts, with priors, one month later | 12.4% | 12.2% | 10.4% | 13.6% | -0.21 | 0.00 | no |
+| Tilts, priors = 0, same month | 12.4% | 12.2% | 10.4% | 13.7% | 0.00 | 0.00 | no |
+| Tilts, priors = 0, one month later | 12.4% | 12.2% | 10.4% | 13.7% | 0.00 | 0.00 | no |
 
-**Gate: not passed, so scores stay display-only and every deposit follows your mix.**
+Latest smoothed X: exus 65.0, eimi 48.8.
+
+**Gate: not passed, so scores stay display-only and every deposit follows your mix.** With priors set to 0, expected alpha against your mix is exactly zero, so the prior-free variants can never qualify and equal your mix: any qualification comes from the assumed priors, not from estimated returns. Only the with-priors variants decide the gate.
 
 ## Exposure view: equity groups against the world (X, world = 50)
 
@@ -29,35 +33,35 @@ X combines expected-return signals (20), rewarded factor tilts (40) and crash ri
 
 | Line (group reference) | X | Expected return | Factors | Risk | Beta | Fit with your mix | Name |
 |---|---|---|---|---|---|---|---|
-| IUMS | 72 | 77 | 91 | 50 | 1.02 | 83 | iShares S&P 500 Materials Sector UCITS ETF USD (Acc) |
-| XDWM | 72 | 74 | 96 | 46 | 1.07 | 84 | Xtrackers MSCI World Materials UCITS ETF 1C |
-| SXLB | 72 | 77 | 91 | 49 | 1.01 | 83 | State Street SPDR S&P U.S. Materials Select Sector UCITS ETF |
-| CPXJ | 70 | 76 | 89 | 47 | 0.99 | 83 | iShares VII PLC - iShares Core MSCI Pac ex-Jpn ETF USD Acc |
-| XPXD | 68 | 78 | 96 | 34 | 1.00 | 86 | Xtrackers MSCI Pacific ex Japan Screened UCITS ETF 1C |
-| XDWS | 67 | 76 | 93 | 36 | 0.69 | 81 | Xtrackers MSCI World Consumer Staples UCITS ETF 1C |
-| IEFQ | 66 | 78 | 92 | 34 | 0.97 | 80 | iShares Edge MSCI Europe Quality Factor UCITS ETF EUR (Acc) |
-| IDIN | 64 | 77 | 96 | 26 | 0.74 | 81 | iShares Global Infrastructure UCITS ETF USD (Dist) |
-| GGRA | 64 | 71 | 84 | 40 | 0.97 | 68 | WisdomTree Global Quality Dividend Growth UCITS ETF - USD Ac |
-| IAUS | 64 | 75 | 88 | 33 | 1.07 | 84 | iShares MSCI Australia UCITS ETF USD (Acc) |
-| IEUX | 63 | 78 | 88 | 31 | 1.02 | 80 | iShares MSCI Europe ex-UK UCITS ETF EUR (Dist) |
-| MVOL | 63 | 76 | 87 | 32 | 0.71 | 77 | iShares Edge MSCI World Minimum Volatility UCITS ETF USD (Ac |
-| HMXJ | 63 | 80 | 85 | 32 | 0.97 | 83 | HSBC MSCI Pacific ex Japan UCITS ETF |
-| UDVD | 63 | 71 | 94 | 27 | 0.86 | 81 | State Street SPDR S&P US Dividend Aristocrats UCITS ETF Dis |
-| WHEA | 63 | 75 | 85 | 34 | 0.75 | 78 | State Street SPDR MSCI World Health Care UCITS ETF |
-| SEMU | 19 | 20 | 2 | 36 | 1.34 | 59 | Amundi MSCI Semiconductors UCITS ETF Acc |
-| XNGI | 20 | 21 | 1 | 39 | 1.09 | 49 | Xtrackers MSCI Next Generation Internet Innovation UCITS ETF |
-| AIAI | 22 | 24 | 7 | 36 | 1.30 | 58 | L&G Artificial Intelligence UCITS ETF |
-| EQQU | 22 | 26 | 3 | 39 | 1.08 | 42 | Invesco EQQQ NASDAQ-100 UCITS ETF |
-| CNDX | 22 | 26 | 3 | 39 | 1.08 | 42 | iShares NASDAQ 100 UCITS ETF USD (Acc) |
-| WTEC | 23 | 20 | 4 | 42 | 1.15 | 45 | State Street SPDR MSCI World Technology UCITS ETF USD Acc |
-| XDWT | 23 | 20 | 5 | 42 | 1.14 | 45 | Xtrackers MSCI World Information Technology UCITS ETF 1C |
-| XLKS | 23 | 20 | 4 | 44 | 1.12 | 45 | Invesco Technology S&P US Select Sector UCITS ETF |
+| XDWS | 74 | 77 | 99 | 47 | 0.57 | 85 | Xtrackers MSCI World Consumer Staples UCITS ETF 1C |
+| IUCS | 74 | 72 | 99 | 50 | 0.54 | 86 | iShares S&P 500 Consumer Staples Sector UCITS ETF USD (Acc) |
+| GLRA | 74 | 80 | 94 | 50 | 1.05 | 78 | SPDR Dow Jones Global Real Estate UCITS ETF USD (Acc) |
+| SXLP | 74 | 74 | 99 | 47 | 0.54 | 86 | State Street SPDR S&P U.S. Consumer Staples Select Sector UC |
+| DPYA | 71 | 80 | 89 | 50 | 0.94 | 81 | iShares Developed Markets Property Yield UCITS ETF USD (Acc) |
+| EPRA | 71 | 80 | 87 | 50 | 0.93 | 81 | Amundi FTSE EPRA NAREIT Global UCITS ETF Acc |
+| IEFQ | 69 | 76 | 89 | 46 | 0.94 | 79 | iShares Edge MSCI Europe Quality Factor UCITS ETF EUR (Acc) |
+| IUMS | 69 | 78 | 83 | 50 | 1.01 | 83 | iShares S&P 500 Materials Sector UCITS ETF USD (Acc) |
+| SXLB | 69 | 78 | 83 | 50 | 1.00 | 82 | State Street SPDR S&P U.S. Materials Select Sector UCITS ETF |
+| VERG | 69 | 66 | 88 | 50 | 1.03 | 78 | Vanguard FTSE Developed Europe ex UK UCITS ETF Accumulation |
+| JPGL | 68 | 64 | 88 | 50 | 0.84 | 74 | JPM Global Equity Multi-Factor UCITS ETF USD Acc |
+| VEUA | 68 | 61 | 90 | 50 | 1.00 | 78 | Vanguard FTSE Developed Europe UCITS ETF EUR Accumulation |
+| IUUS | 68 | 44 | 97 | 50 | 0.53 | 87 | iShares S&P 500 Utilities Sector UCITS ETF USD (Acc) |
+| GGRA | 67 | 65 | 86 | 50 | 0.90 | 68 | WisdomTree Global Quality Dividend Growth UCITS ETF - USD Ac |
+| IEUX | 67 | 75 | 88 | 41 | 1.02 | 78 | iShares MSCI Europe ex-UK UCITS ETF EUR (Dist) |
+| XLES | 26 | 23 | 36 | 16 | 1.09 | 79 | Invesco Energy S&P US Select Sector UCITS ETF |
+| SXLE | 27 | 23 | 39 | 18 | 1.06 | 79 | State Street SPDR S&P U.S. Energy Select Sector UCITS ETF |
+| IUES | 27 | 23 | 39 | 17 | 1.04 | 79 | iShares S&P 500 Energy Sector UCITS ETF USD (Acc) |
+| WNRG | 29 | 26 | 41 | 19 | 0.92 | 83 | State Street SPDR MSCI World Energy UCITS ETF |
+| WFIN | 32 | 34 | 36 | 26 | 1.02 | 67 | State Street SPDR MSCI World Financials UCITS ETF USD Acc |
+| CNDX | 32 | 25 | 27 | 41 | 1.00 | 43 | iShares NASDAQ 100 UCITS ETF USD (Acc) |
+| XLKS | 32 | 20 | 28 | 43 | 1.05 | 45 | Invesco Technology S&P US Select Sector UCITS ETF |
+| XDWT | 33 | 20 | 31 | 42 | 1.08 | 44 | Xtrackers MSCI World Information Technology UCITS ETF 1C |
 
-Your sleeves: world 50, S&P 500 37, Nasdaq-100 22. A low X for Nasdaq-100 reflects growth tilt (negative value loading) and deeper crashes than its beta implies, not a sell signal.
+Your sleeves: world 50, S&P 500 40, Nasdaq-100 32. A low X for Nasdaq-100 reflects growth tilt (negative value loading) and deeper crashes than its beta implies, not a sell signal.
 
 ## Pillar coverage this week
 
-63 of 100 pillars are computed by code this week and 10 are scored by the event agents in the weekly workflow; the rest are listed below.
+63 of 100 pillars have code that computes them this week (some as record or context with weight 0, as the spec defines) and 10 are scored by the event agents in the weekly workflow; the rest are listed below with the reason.
 
 | Family | Built and computed | Agents | Not built yet | Unverified source |
 |---|---|---|---|---|

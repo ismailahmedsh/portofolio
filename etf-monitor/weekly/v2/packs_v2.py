@@ -15,12 +15,14 @@ if __name__ == "__main__":
     n = 0
     for pid, p in SPEC.items():
         col = next((c for c in LINE + EXPO + FIT if c == pid or c.startswith(pid + "_")), None)
+        if col in EXPO and col not in X.columns: col = col + "_s" if col + "_s" in X.columns else None
+        if col and col.endswith("_s"): EXPO.append(col)
         head = [f"# Pillar {pid}: {p['name']}", f"Definition: {p['definition']}", f"Source: {p['data_source']} ({p['source_status']}). Better when: {p['better_when']}. Informs: {p['decision']}.", f"Week {a.week}.", ""]
         if col in LINE:
             t = Lv[list(dict.fromkeys(c for c in ["cluster", "scope", col, "buyable"] if c in Lv))].join(Ls[list(dict.fromkeys(c for c in [pid, "line_score"] if c in Ls))], rsuffix="_score")
             body = ["## Lines in your sleeves (VWRA, S&P 500 and Nasdaq-100 groups) and the 15 most extreme values", t.sort_values(col).head(15).to_markdown(), t.sort_values(col).tail(15).to_markdown(), "", "## All lines (csv)", t.to_csv()]
         elif col in EXPO:
-            t = X[list(dict.fromkeys(c for c in [col, col + "_s", "X", "FAC05", "months"] if c in X))]
+            t = X[list(dict.fromkeys(c for c in [col, col.removesuffix("_s") + "_s", "DD_excess", "RSK02", "RSK04", "X", "FAC05", "months"] if c in X and (c == col or pid == "RSK01" or c not in ("DD_excess", "RSK02", "RSK04"))))]
             body = ["## Equity groups (reference line), world reference = 50", t.sort_values(col).to_csv()]
         elif col in FIT:
             body = ["## Fit against your strategic mix", F[list(dict.fromkeys(c for c in [col, col + "_s", "fit"] if c in F))].sort_values(col).to_csv()]

@@ -11,14 +11,14 @@ Portfolio limits and context
 | RSK06 Drawdown budget (10 years) | Your mix -24.6% vs world -24.3% (budget -29.3%) | within |
 | RSK07 Risk share, world | weight 70%, risk share 68%, ratio 0.98 | within 1.5 |
 | RSK07 Risk share, sp500 | weight 20%, risk share 20%, ratio 1.0 | within 1.5 |
-| RSK07 Risk share, ndx100 | weight 10%, risk share 12%, ratio 1.16 | within 1.5 |
+| RSK07 Risk share, ndx100 | weight 10%, risk share 12%, ratio 1.17 | within 1.5 |
 | FIT07 US look-through weight | Your mix 69.4% vs world 59.9% (tilt limit 69.9%) | within |
 | FIT11 Lines held or bought | VWRA | within 4 |
 | RSK08 Drawdown now | Your mix -3.3% from its high, world -3.2% from its 52-week high | protocol at -20%: keep depositing |
 | MOM04 Core trend flag | VWRA below 10-month average: no; 12-1 momentum +12.3% | off |
 | MOM03 Momentum-crash state | world -3.2% from high, 1-month volatility 21.4% | normal |
 | REC01 Live record | no fills recorded yet: the live record starts with your first logged buy | |
-| REC03 Redundancy | 0 scored pairs with correlation 0.7 or more across groups | no pair at 0.85 or more |
+| REC03 Redundancy | 1 scored pairs with correlation 0.7 or more across groups | no pair at 0.85 or more |
 
 **Your sleeves against the world (MOM05, display only)**
 
@@ -39,13 +39,13 @@ Portfolio limits and context
 
 | Sleeve | Covid crash | 2022 rate shock | Global financial crisis |
 |---|---|---|---|
-| world | +0.0 pts | +0.0 pts | +0.0 pts |
-| sp500 | +1.0 pts | +1.8 pts | n/a |
-| ndx100 | +9.4 pts | -4.8 pts | n/a |
+| world | +0.0 pts | +0.0 pts | n/a |
+| sp500 | -0.3 pts | +0.1 pts | n/a |
+| ndx100 | +7.9 pts | -6.7 pts | n/a |
 
 ## Pillar coverage this week
 
-63 of 100 pillars are computed by code this week and 10 are scored by the event agents in the weekly workflow; the rest are listed below.
+63 of 100 pillars have code that computes them this week (some as record or context with weight 0, as the spec defines) and 10 are scored by the event agents in the weekly workflow; the rest are listed below with the reason.
 
 | Family | Built and computed | Agents | Not built yet | Unverified source |
 |---|---|---|---|---|

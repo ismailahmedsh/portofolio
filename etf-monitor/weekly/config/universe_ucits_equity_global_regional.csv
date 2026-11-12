@@ -1,5 +1,5 @@
 ticker,name,isin,scope,currency,ter,accumulating,first_date,last_price,verified
-VWRA.L,Vanguard FTSE All-World UCITS ETF USD Accumulation,IE00BK5BQT80,global,USD,0.19,yes,2019-07-23,184.98,yes
+VWRA.L,Vanguard FTSE All-World UCITS ETF USD Accumulation,IE00BK5BQT80,global,USD,0.14,yes,2019-07-23,184.98,yes
 ISAC.L,iShares MSCI All Country World UCITS ETF USD Acc,IE00B6R52259,global,USD,0.20,yes,2011-10-21,118.47,yes
 IWDA.L,iShares Core MSCI World UCITS ETF USD (Acc),IE00B4L5Y983,global,USD,0.20,yes,2009-09-25,141.98,yes
 XDWD.L,Xtrackers MSCI World UCITS ETF 1C,IE00BJ0KDQ92,global,USD,0.12,yes,2014-07-22,155.35,yes

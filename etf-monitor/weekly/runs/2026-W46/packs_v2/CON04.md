@@ -89,7 +89,7 @@ XDGU.L,XDGU.L,corporate,False,False,45.21
 CRPU.L,CRPU.L,corporate,False,False,43.78
 HLQD.L,HLQD.L,corporate,False,False,38.11
 FLOA.L,FLOA.L,corporate,False,False,53.11
-UCRP.L,UCRP.L,corporate,False,False,42.57
+UCRP.L,UCRP.L,corporate,False,False,40.12
 IEAA.L,IEAA.L,corporate,False,False,53.5
 IHYA.L,IHYA.L,high-yield,False,False,43.09
 HYLA.L,HYLA.L,high-yield,False,False,41.94
@@ -114,7 +114,7 @@ ERNS.L,ERNS.L,money-market,False,False,54.59
 XSTR.L,XSTR.L,money-market,False,False,47.73
 ERNE.L,ERNE.L,money-market,False,False,50.97
 VWRA.L,VWRA.L,global,False,True,52.93
-ISAC.L,ISAC.L,global,False,False,44.55
+ISAC.L,ACWD.L,global,False,False,49.57
 IWDA.L,IWDA.L,global,False,False,51.14
 XDWD.L,IWDA.L,global,False,False,50.13
 SWRD.L,IWDA.L,global,False,False,51.37
@@ -128,9 +128,9 @@ SPXS.L,XSPU.L,us,False,False,56.04
 SPY5.L,XSPU.L,us,False,False,52.82
 HSPD.L,XSPU.L,us,False,False,47.04
 XSPU.L,XSPU.L,us,False,False,45.12
-CNDX.L,CNDX.L,us,False,False,52.49
-EQQU.L,EQQU.L,us,False,False,41.39
-XNAS.L,CNDX.L,us,False,False,50.96
+CNDX.L,CNDX.L,us,False,False,56.06
+EQQU.L,CNDX.L,us,False,False,51.98
+XNAS.L,CNDX.L,us,False,False,52.88
 XDEW.L,XDEW.L,us,False,False,45.25
 CSUS.L,CSUS.L,us,False,False,55.65
 VNRA.L,VNRA.L,us,False,False,50.32
@@ -159,7 +159,7 @@ VJPA.L,VJPA.L,japan,False,False,46.36
 XMJD.L,XMJD.L,japan,False,False,58.22
 HMJD.L,XMJD.L,japan,False,False,45.61
 LCJP.L,LCJP.L,japan,False,False,49.25
-XDJP.L,XDJP.L,japan,False,False,50.4
+XDJP.L,XDJP.L,japan,False,False,49.3
 IDJP.L,IDJP.L,japan,False,False,36.72
 CPXJ.L,CPXJ.L,asia_pacific,False,False,46.93
 VAPU.L,VAPU.L,asia_pacific,False,False,48.27
@@ -359,7 +359,7 @@ MAGG.L,MAGG.L,multi_asset_growth,False,False,37.37
 MAMG.L,MAMG.L,multi_asset_moderate,False,False,38.02
 MACG.L,MACG.L,multi_asset_conservative,False,False,38.44
 NTSX.L,NTSX.L,multi_asset_efficient_core,False,False,30.24
-ACWD.L,ACWD.L,global,False,False,49.72
+ACWD.L,ACWD.L,global,False,False,56.16
 SPYY.L,SPYY.L,global,False,False,36.04
 EXUS.L,EXUS.L,developed_ex_us,False,False,48.48
 

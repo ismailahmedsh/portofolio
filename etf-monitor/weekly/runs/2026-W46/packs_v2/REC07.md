@@ -15,21 +15,21 @@ Week 2026-W46.
 ## From this week's report
 Your mix against the alternatives (REC07, information)
 
-2008-07 to 2026-11-11, deposits of US$678.74 a month routed to the sleeve furthest below target, US$1.70 commission and 10 bps spread per buy. Proxies: VT world, SPY S&P 500, QQQ Nasdaq-100 (US-listed, dividend-adjusted, before UAE withholding). Past leadership is not a forecast.
+2003-01 to 2026-11-11, deposits of US$678.74 a month routed to the sleeve furthest below target, US$1.70 commission and 10 bps spread per buy. Proxies: world reference (Ken French Developed market + T-bill to 2008-02, ACWI to 2008-05, then VT), SPY for the S&P 500, QQQ for the Nasdaq-100; US-listed, dividend-adjusted, before UAE withholding. Per-period returns are money-weighted, starting from the balance at the start of the period. Past leadership is not a forecast.
 
-| Mix | Final value | Paid in | Return on your money | Time-weighted | Worst drop | Worst year | 2008-2014 | 2015-2019 | 2020-2026 |
-|---|---|---|---|---|---|---|---|---|---|
-| Your mix 70/20/10 | US$540,112 | US$150,000 | 12.6% | 10.4% | -41% | -31% | 7.6% | 10.1% | 13.4% |
-| 100% world | US$460,508 | US$150,000 | 11.2% | 8.8% | -44% | -32% | 5.4% | 8.7% | 12.1% |
-| 100% S&P 500 | US$654,719 | US$150,000 | 14.4% | 12.2% | -42% | -28% | 9.9% | 11.5% | 14.8% |
-| 100% Nasdaq-100 | US$1,088,982 | US$150,000 | 18.9% | 16.8% | -41% | -35% | 14.5% | 16.6% | 19.2% |
-| 80/10/10 | US$519,067 | US$150,000 | 12.2% | 9.8% | -44% | -32% | 6.3% | 9.7% | 13.2% |
-| 60/25/15 | US$573,157 | US$150,000 | 13.2% | 10.8% | -43% | -33% | 7.8% | 10.6% | 13.9% |
-| 50/30/20 | US$608,101 | US$150,000 | 13.7% | 11.5% | -42% | -31% | 8.6% | 11.1% | 14.4% |
+| Mix | Final value | Paid in | Return on your money | Time-weighted | Worst drop | Worst year | 2003-2007 | 2008-2014 | 2015-2019 | 2020-2026 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Your mix 70/20/10 | US$886,835 | US$194,118 | 11.2% | 11.2% | -52% | -38% | 14.8% | 7.4% | 10.3% | 13.8% |
+| 100% world | US$729,598 | US$194,118 | 9.9% | 10.3% | -53% | -39% | 16.4% | 5.6% | 8.9% | 12.3% |
+| 100% S&P 500 | US$1,062,047 | US$194,118 | 12.4% | 11.5% | -51% | -37% | 10.2% | 10.1% | 11.8% | 14.9% |
+| 100% Nasdaq-100 | US$2,034,197 | US$194,118 | 16.7% | 15.9% | -50% | -42% | 12.8% | 14.2% | 16.8% | 19.5% |
+| 80/10/10 | US$853,116 | US$194,118 | 11.0% | 11.0% | -53% | -39% | 15.3% | 7.0% | 10.1% | 13.5% |
+| 60/25/15 | US$953,734 | US$194,118 | 11.7% | 11.6% | -52% | -39% | 14.3% | 8.1% | 10.9% | 14.3% |
+| 50/30/20 | US$1,022,647 | US$194,118 | 12.2% | 11.9% | -52% | -39% | 13.8% | 8.7% | 11.4% | 14.8% |
 
 ## Pillar coverage this week
 
-63 of 100 pillars are computed by code this week and 10 are scored by the event agents in the weekly workflow; the rest are listed below.
+63 of 100 pillars have code that computes them this week (some as record or context with weight 0, as the spec defines) and 10 are scored by the event agents in the weekly workflow; the rest are listed below with the reason.
 
 | Family | Built and computed | Agents | Not built yet | Unverified source |
 |---|---|---|---|---|
