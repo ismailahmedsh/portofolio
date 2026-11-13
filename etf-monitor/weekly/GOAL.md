@@ -30,3 +30,6 @@ Build and grow a portfolio of UCITS ETFs, bought through IBKR on the London Stoc
 - Worst drawdown versus the world market.
 - No unforced sells in drawdowns.
 - A few hours a month of the owner's time.
+
+## Owner decision (2026-11-13, later the same day)
+Crypto is excluded for now; focus on the baseline mix (70% world, 20% S&P 500, 10% Nasdaq-100). Options-income is shown for information at 0%. Both can be revisited later.

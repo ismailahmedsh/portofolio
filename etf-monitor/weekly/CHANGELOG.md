@@ -14,3 +14,11 @@
 - New types: spot bitcoin ETFs in, labelled speculative, capped at 5% of the portfolio; options-income ETFs in (US-listed and UCITS), scored on upside given up. Leveraged and single-stock ETFs are shown for information only, never bought.
 - Same-index lines count once in scoring.
 - Unchanged: the owner mix sets deposits; structural events act at once; scores and news move deposit money only after passing the test against the mix.
+
+## 2026-11-13: pillars v3 approved and engine v3 built (baseline)
+- Pillars v3 (config/pillars_v3.json, PILLARS_V3.md): 100 pillars, news 25 / macro 10 / line choice 20 / exposure 25 / fit 10 / record 10. Passed 5 auditors (round 2) and 3 reviewers (approve with conditions).
+- Owner decision: crypto excluded for now ("ignore crypto for now, focus on the baseline"). Bitcoin lines are not fetched; NWS15, BTC01, FIT13 and S7 are switched off. Options-income target 0 (information only). Mix unchanged at 70/20/10, so REC04 and REC07 results apply to v3 as run (re-run on 2026-11-13).
+- Engine v3 (v3/): US-listed lines priced with 30% withholding on trailing cash distributions; same-index groups across London and US (S&P 500, Nasdaq-100, world); US line wins only with a 10 bps edge, W-8BEN and IBKR entity recorded and owner confirmation; US$60k gauge; MAC01-MAC10 flags; options-income table on matched windows; news view N; REC08 news log.
+- Reviewer conditions applied: US$340 minimum is for buys only (S7 off with crypto); withholding counted the same way on both wrappers (fund-level foreign withholding on non-US holdings left out of both); options-income compared over the same months as the underlying; peg flag needs 2 consecutive closes; news has its own agent budget; one-page weekly output.
+- New config fields (config/portfolio_v2.yaml): excluded, options_income, us_listed.
+- N_TRIALS: unchanged (no new tested rule).
