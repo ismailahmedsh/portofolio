@@ -17,13 +17,18 @@ const A = args || {}
 const WEEK = A.week, ROOT = A.root, WINDOW = A.window
 const RUN = `${ROOT}/runs/${WEEK}`
 const NEWS_BUDGET = A.newsBudget || 260, OTHER_BUDGET = A.otherBudget || 60
+const VERIFY_BUDGET = A.verifyBudget || 24  // own budget: one blind verifier per pillar, never used up by leads and explorers
 const MAX_ROUNDS = A.maxRounds || 4, MAX_PER_ROUND = A.maxPerRound || 6, MAX_PER_PILLAR = A.maxPerPillar || 18
 const MAX_COMMITTEE = A.maxCommitteeRounds || 3
 const PILLARS = A.pillars || []  // contents of runs/<week>/news_packs/index.json
-let newsSpent = 0, otherSpent = 0; const skipped = []
+let newsSpent = 0, otherSpent = 0, verifySpent = 0; const skipped = []
 async function spawnNews(prompt, opts) {
   if (newsSpent >= NEWS_BUDGET) { skipped.push(opts.label); log(`news budget ${NEWS_BUDGET} reached, skipped ${opts.label}`); return null }
   newsSpent++; return agent(prompt, opts)
+}
+async function spawnVerify(prompt, opts) {
+  if (verifySpent >= VERIFY_BUDGET) { skipped.push(opts.label); log(`verify budget ${VERIFY_BUDGET} reached, skipped ${opts.label}`); return null }
+  verifySpent++; return agent(prompt, opts)
 }
 async function spawnOther(prompt, opts) {
   if (otherSpent >= OTHER_BUDGET) { skipped.push(opts.label); log(`budget ${OTHER_BUDGET} reached, skipped ${opts.label}`); return null }
@@ -92,7 +97,7 @@ async function runLead(p) {
 
 async function verify(res) {
   if (!res) return null
-  return spawnNews(`You are the blind verifier for news pillar ${res.id} (${res.name}), week ${WEEK}, window ${WINDOW}. You did not produce these scores. (1) Fetch every URL behind a score of +/-2 and every severity of 2 or more and check the page exists, its date is inside the window, and the quoted text is on the page; also spot-check at least 3 other cited URLs. Search for a missing counter-fact for each +/-2. A +/-2 survives only if there is no missing counter-fact and no unconfirmed source; otherwise lower it to +/-1. A severity of 2+ survives only with a confirmed T1 quote; otherwise lower to 1. Any score left with fewer than 2 valid dated sources becomes 0 with low confidence. ${res.saturated ? '' : 'The pillar stopped unsaturated: cap every score at |1| and confidence at low.'} (2) Write ${RUN}/news/${res.id}.json (create the folder) with: {"pillar_id","week","saturated","rounds","explorers","group_scores":[{group,score,confidence,rationale,falsifier,fact_ids,n_sources}],"severities":[...],"facts":[{id,claim,date,source,url,quote,tier,kind,in_window,verified}],"open_threads":[...],"verifier_changes":[...]}${res.event ? ` and also ${RUN}/events/${res.id}.json with {"pillar_id":"${res.id}","week":"${WEEK}","summary":"...","events":[{"target":"line ticker such as VWRA.L or a sleeve name world/sp500/ndx100","severity":0,"issue":"...","url":"...","date":"YYYY-MM-DD"}]}` : ''}. (3) Write a digest under 300 words to ${RUN}/news/${res.id}.md. Return what you wrote.\n\nLead result:\n${JSON.stringify({ rounds: res.rounds, explorers: res.explorers, saturated: res.saturated, final: res.final, facts: res.findings.flatMap(f => f.facts) })}`,
+  return spawnVerify(`You are the blind verifier for news pillar ${res.id} (${res.name}), week ${WEEK}, window ${WINDOW}. You did not produce these scores. (1) Fetch every URL behind a score of +/-2 and every severity of 2 or more and check the page exists, its date is inside the window, and the quoted text is on the page; also spot-check at least 3 other cited URLs. Search for a missing counter-fact for each +/-2. A +/-2 survives only if there is no missing counter-fact and no unconfirmed source; otherwise lower it to +/-1. A severity of 2+ survives only with a confirmed T1 quote; otherwise lower to 1. Any score left with fewer than 2 valid dated sources becomes 0 with low confidence. ${res.saturated ? '' : 'The pillar stopped unsaturated: cap every score at |1| and confidence at low.'} (2) Write ${RUN}/news/${res.id}.json (create the folder) with: {"pillar_id","week","saturated","rounds","explorers","group_scores":[{group,score,confidence,rationale,falsifier,fact_ids,n_sources}],"severities":[...],"facts":[{id,claim,date,source,url,quote,tier,kind,in_window,verified}],"open_threads":[...],"verifier_changes":[...]}${res.event ? ` and also ${RUN}/events/${res.id}.json with {"pillar_id":"${res.id}","week":"${WEEK}","summary":"...","events":[{"target":"line ticker such as VWRA.L or a sleeve name world/sp500/ndx100","severity":0,"issue":"...","url":"...","date":"YYYY-MM-DD"}]}` : ''}. (3) Write a digest under 300 words to ${RUN}/news/${res.id}.md. Return what you wrote.\n\nLead result:\n${JSON.stringify({ rounds: res.rounds, explorers: res.explorers, saturated: res.saturated, final: res.final, facts: res.findings.flatMap(f => f.facts) })}`,
     { label: `verify:${res.id}`, phase: 'Verify', schema: VOUT })
 }
 
@@ -100,7 +105,7 @@ phase('News')
 const order = [...PILLARS].sort((a, b) => (b.event - a.event) || (b.touches_owner - a.touches_owner) || ((b.A || 0) - (a.A || 0)))
 const verified = (await pipeline(order, p => runLead(p), res => verify(res).then(v => v ? { id: res.id, rounds: res.rounds, explorers: res.explorers, saturated: res.saturated, ...v } : null))).filter(Boolean)
 const leadsDone = verified.length
-log(`news: ${leadsDone}/${order.length} pillars written; ${newsSpent} news agents`)
+log(`news: ${leadsDone}/${order.length} pillars written; ${newsSpent} news agents, ${verifySpent} verifiers`)
 
 phase('Synthesis')
 const syn = await spawnOther(`You are the cross-pillar news synthesiser, week ${WEEK}. Read every ${RUN}/news/*.json. (1) De-duplicate facts by URL and event: each event gets one owning pillar and is scored once; where the same event drives a score in a second pillar, edit that second file so its group score no longer counts it (lower the score or set it to 0 with a note in verifier_changes). (2) Flag contradictions between pillars. (3) Name cross-topic chains (for example oil supply shock, then breakevens, then real yields, then the Nasdaq-100). (4) List what matters to this owner's three sleeves (global_equity, us_large_broad, tech_ai_semis) and any EVT severity of 1 or more. Write ${RUN}/news/SYNTHESIS.md (under 400 words). ${OWNER}`,
@@ -152,7 +157,7 @@ for (let r = 1; r <= MAX_COMMITTEE; r++) {
 const unanimous = votes.length === MEMBERS.length && votes.every(v => v.approve)
 
 phase('Write')
-const stats = { news_pillars: leadsDone, news_rounds: verified.reduce((a, v) => a + (v.rounds || 0), 0), news_explorers: verified.reduce((a, v) => a + (v.explorers || 0), 0), news_agents: newsSpent, other_agents: otherSpent, committee_rounds: history.length, unanimous, skipped: skipped.length }
+const stats = { news_pillars: leadsDone, news_rounds: verified.reduce((a, v) => a + (v.rounds || 0), 0), news_explorers: verified.reduce((a, v) => a + (v.explorers || 0), 0), news_agents: newsSpent, verify_agents: verifySpent, other_agents: otherSpent, committee_rounds: history.length, unanimous, skipped: skipped.length }
 const written = await spawnOther(`Write the owner's one-page weekly plan to ${RUN}/WEEKLY_PLAN_V3.md. Plain language, short sentences, no em-dashes, no jargon codes in the main text (pillar ids only in the last line). Under 400 words. Sections, in this order:
 1. "This month": the order as one line (buy N x LINE, about US$X, carry US$Y), then 3 short reasons.
 2. "Hold or sell": one line.
@@ -160,7 +165,7 @@ const written = await spawnOther(`Write the owner's one-page weekly plan to ${RU
 4. "News that matters to you": at most 5 bullets, each one line with a link.
 5. "Watch": at most 3 bullets with the trigger.
 6. "Your to-do": at most 4 bullets.
-7. One last line: committee ${unanimous ? 'unanimous' : 'not unanimous (rules default applied: engine order, no sales)'} after ${history.length} round(s); agents used: ${newsSpent} news, ${otherSpent} other.
+7. One last line: committee ${unanimous ? 'unanimous' : 'not unanimous (rules default applied: engine order, no sales)'} after ${history.length} round(s); agents used: ${newsSpent} news, ${verifySpent} verifiers, ${otherSpent} other.
 If the committee was not unanimous, the default under DECISION_RULES_V3.md applies (the engine's v3_plan.json order, no sales) and you must say so.
 Final plan: ${JSON.stringify(plan)}\nVotes: ${JSON.stringify(votes)}\nReply with the full text you wrote.`,
   { label: 'writer', phase: 'Write' })

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-13: news verifiers get their own budget; run records saved
+- W46 run: leads and explorers used all 260 news agents, so no verifier ran and no checked news was logged. Verifiers now have their own budget of 24.
+- New `v3/save_run_v3.py` saves each run's record to `runs/<week>/workflow/` (summary, every agent's output, final result). Saved for W46.
+
 ## 2026-11-12: owner mix replaces VWRA as the default and the yardstick
 - Owner decision: each month's deposit follows the owner's own strategic mix (config/portfolio_v2.yaml), starting at 70% world (VWRA), 20% S&P 500, 10% Nasdaq-100. The same mix is the yardstick that any score-driven rule must beat in the backtest gate before it can move money.
 - This is an owner choice outside the evidence rule, as pillars v2 allows ("the owner may amend GOAL.md explicitly"). REC07 still runs every month and shows how the mix compares with 100% world, 100% S&P 500 and 100% Nasdaq-100, as information.
