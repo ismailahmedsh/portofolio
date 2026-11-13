@@ -16,6 +16,10 @@ Build and grow a portfolio of UCITS ETFs, bought through IBKR on the London Stoc
 | Monthly | Does any holding need to be reduced or sold, and why |
 | Quarterly | Is the portfolio's mix still right (regions, sectors, styles, concentration, overlap) |
 
+## Owner requirements (2026-11-13)
+- News is essential: a main pillar category with expanding agent research every week, logged so it can earn a vote.
+- Candidates include US-listed ETFs (30% dividend withholding priced in; total US-listed holdings capped at US$60,000), spot bitcoin ETFs (speculative, at most 5% of the portfolio) and options-income ETFs. Leveraged and single-stock ETFs are information only.
+
 ## Constraints
 - Cost per buy: IBKR LSE minimum US$1.70 per order, about 0.25% of a US$680 buy. Prefer one or two funds per month.
 - Taxes: no capital-gains tax in the UAE, so selling has no tax cost while Branch A holds; costs are commission, spread and FX.
