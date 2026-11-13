@@ -1,0 +1,147 @@
+[
+ {
+  "url": "https://247wallst.com/investing/2026/11/02/jetblue-soars-11-united-rallies-6-as-oil-drops-on-iran-peace-talk-hopes-american-airlines-gains-5/",
+  "code": 200,
+  "text_chars": 24140
+ },
+ {
+  "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-sobe-para-r-551-com-dados-de-emprego-nos-eua",
+  "code": 200,
+  "text_chars": 7108
+ },
+ {
+  "url": "https://am.jpmorgan.com/us/en/asset-management/institutional/about-us/media/press-releases/jp-morgan-releases-2027-long-term-capital-market-assumptions/",
+  "code": 200,
+  "text_chars": 15152
+ },
+ {
+  "url": "https://bloomberg.com/news/articles/2026-11-04/us-mortgage-rates-retreat-for-third-week-while-holding-above-7",
+  "err": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "url": "https://boereport.com/2026/11/04/us-crude-stocks-gasoline-and-distillate-inventories-fall-eia-2/",
+  "code": 200,
+  "text_chars": 22890
+ },
+ {
+  "url": "https://breakingdefense.com/2026/11/congresss-defense-advocates-take-big-hit-in-2026-midterm-elections/",
+  "code": 200,
+  "text_chars": 53827
+ },
+ {
+  "url": "https://brecorder.com/news/40447851/china-hk-stocks-tumble-as-global-tech-selloff-deepens",
+  "code": 200,
+  "text_chars": 43770
+ },
+ {
+  "url": "https://businesstech.co.za/news/finance/882731/good-news-for-south-africa-after-major-change/",
+  "code": 200,
+  "text_chars": 16955
+ },
+ {
+  "url": "https://ca.finance.yahoo.com/news/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
+  "code": 200,
+  "text_chars": 60975
+ },
+ {
+  "url": "https://ca.investing.com/news/economic-indicators/strong-october-jobs-report-sends-yields-higher-4939320",
+  "err": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "url": "https://cdn.orsted.com/-/media/q32026/q3-2026-orsted-ir-presentation.pdf?rev=615dea761a924a319f939b261d3f949a&hash=8AA44580526AC08A7854B636F6C7BF49",
+  "code": 200,
+  "text_chars": 580125
+ },
+ {
+  "url": "https://cei.org/blog/this-week-in-health-care-policy-october-31-november-6-2026/",
+  "code": 200,
+  "text_chars": 62028
+ },
+ {
+  "url": "https://census.gov/retail/release_schedule.html",
+  "code": 200,
+  "text_chars": 4500
+ },
+ {
+  "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html",
+  "code": 200,
+  "text_chars": 27880
+ },
+ {
+  "url": "https://crosspacificwatchers.substack.com/p/everything-you-should-know-about-ae9",
+  "code": 200,
+  "text_chars": 24579
+ },
+ {
+  "url": "https://drwealth.com/dbs-and-uob-miss-ocbc-beats-what-q3-2026-results-say-about-singapore-banks/",
+  "err": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap",
+  "code": 200,
+  "text_chars": 24157
+ },
+ {
+  "url": "https://en.antaranews.com/news/440815/govt-urges-calm-cites-solid-fundamentals-amid-market-pressures",
+  "code": 200,
+  "text_chars": 6785
+ },
+ {
+  "url": "https://en.sedaily.com/finance/2026/11/07/korean-retail-investors-pile-into-soxl-as-chip-stocks-crash",
+  "code": 200,
+  "text_chars": 11289
+ },
+ {
+  "url": "https://english.www.gov.cn/news/202611/07/content_WS6aee87b5c6d00ca5f9a0e29b.html",
+  "code": 200,
+  "text_chars": 3132
+ },
+ {
+  "url": "https://etfexpress.com/2026/11/02/european-etf-market-wrap-flows-performance-and-leaders-week-44-2026/",
+  "code": 200,
+  "text_chars": 75872
+ },
+ {
+  "url": "https://exencialrp.substack.com/p/jp-morgan-sees-supply-fear-not-solvency",
+  "code": 200,
+  "text_chars": 25328
+ },
+ {
+  "url": "https://finance.yahoo.com/energy/articles/ai-data-center-stocks-dip-113427491.html",
+  "code": 200,
+  "text_chars": 49784
+ },
+ {
+  "url": "https://financebuzz.com/news/magnificent-seven-index-fund-concentration",
+  "code": 200,
+  "text_chars": 364204
+ },
+ {
+  "url": "https://finviz.com/news/413393/interactive-brokers-group-reports-brokerage-metrics-and-other-financial-information-for-october-2026-includes-reg-nms-execution-statistics",
+  "code": 200,
+  "text_chars": 11873
+ },
+ {
+  "url": "https://focustaiwan.tw/business/202611050014",
+  "code": 200,
+  "text_chars": 7750
+ },
+ {
+  "url": "https://fool.com/investing/2026/11/02/why-oracle-stock-is-down-today",
+  "code": 200,
+  "text_chars": 8974
+ },
+ {
+  "url": "https://fortune.com/2026/11/05/tech-stocks-are-suffering-the-biggest-selloff-since-covid-as-investors-see-premature-end-to-ai-datacenter-boom/",
+  "code": 200,
+  "text_chars": 9739
+ },
+ {
+  "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+  "err": "TimeoutError('The read operation timed out')"
+ },
+ {
+  "url": "https://fxstreet.com/news/silver-price-today-silver-rises-according-to-fxstreet-data-202611060930",
+  "err": "<HTTPError 403: 'Forbidden'>"
+ }
+]

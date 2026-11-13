@@ -1,0 +1,211 @@
+{
+ "VWRA.L": {
+  "n_closes_2y": 506,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-13",
+   189.04
+  ],
+  "n_divs_365d": 0,
+  "ttm_yield_pct": 0.0,
+  "currency": "USD",
+  "yield": 0.0,
+  "dividendYield": 0.0,
+  "trailingAnnualDividendYield": null,
+  "netExpenseRatio": null,
+  "totalAssets": 88843730944,
+  "quoteType": "ETF",
+  "fundFamily": "Vanguard Group (Ireland) Limited",
+  "fwd_20d_ret_from_60d_ago": 0.0012
+ },
+ "CSPX.L": {
+  "n_closes_2y": 505,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-13",
+   822.18
+  ],
+  "n_divs_365d": 0,
+  "ttm_yield_pct": 0.0,
+  "currency": "USD",
+  "yield": null,
+  "dividendYield": null,
+  "trailingAnnualDividendYield": null,
+  "netExpenseRatio": 0.07,
+  "totalAssets": null,
+  "quoteType": "ETF",
+  "fundFamily": "BlackRock Asset Management Ireland - ETF",
+  "fwd_20d_ret_from_60d_ago": 0.007
+ },
+ "SPY": {
+  "n_closes_2y": 501,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-12",
+   757.12
+  ],
+  "n_divs_365d": 4,
+  "ttm_yield_pct": 1.0,
+  "currency": "USD",
+  "yield": 0.01,
+  "dividendYield": 1.0,
+  "trailingAnnualDividendYield": 0.007451863,
+  "netExpenseRatio": 0.0945,
+  "totalAssets": 796865200128,
+  "quoteType": "ETF",
+  "fundFamily": "State Street Investment Management",
+  "fwd_20d_ret_from_60d_ago": -0.0012
+ },
+ "QQQ": {
+  "n_closes_2y": 501,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-12",
+   688.17
+  ],
+  "n_divs_365d": 4,
+  "ttm_yield_pct": 0.45,
+  "currency": "USD",
+  "yield": 0.0045,
+  "dividendYield": 0.45,
+  "trailingAnnualDividendYield": 0.0025638053,
+  "netExpenseRatio": 0.18,
+  "totalAssets": 463833595904,
+  "quoteType": "ETF",
+  "fundFamily": "Invesco",
+  "fwd_20d_ret_from_60d_ago": 0.0148
+ },
+ "JEPQ": {
+  "n_closes_2y": 501,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-12",
+   56.78
+  ],
+  "n_divs_365d": 12,
+  "ttm_yield_pct": 12.24,
+  "currency": "USD",
+  "yield": 0.1196,
+  "dividendYield": 11.96,
+  "trailingAnnualDividendYield": 0.0,
+  "netExpenseRatio": 0.35,
+  "totalAssets": 42491858944,
+  "quoteType": "ETF",
+  "fundFamily": "JPMorgan",
+  "fwd_20d_ret_from_60d_ago": 0.0097
+ },
+ "JEPI": {
+  "n_closes_2y": 501,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-12",
+   58.04
+  ],
+  "n_divs_365d": 12,
+  "ttm_yield_pct": 7.86,
+  "currency": "USD",
+  "yield": 0.0793,
+  "dividendYield": 7.93,
+  "trailingAnnualDividendYield": 0.0,
+  "netExpenseRatio": 0.35,
+  "totalAssets": 46156169216,
+  "quoteType": "ETF",
+  "fundFamily": "JPMorgan",
+  "fwd_20d_ret_from_60d_ago": -0.0256
+ },
+ "IBIT": {
+  "n_closes_2y": 501,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-12",
+   40.36
+  ],
+  "n_divs_365d": 0,
+  "ttm_yield_pct": 0.0,
+  "currency": "USD",
+  "yield": 0.0,
+  "dividendYield": 0.0,
+  "trailingAnnualDividendYield": 0.0,
+  "netExpenseRatio": 0.25,
+  "totalAssets": 62297755648,
+  "quoteType": "ETF",
+  "fundFamily": "iShares",
+  "fwd_20d_ret_from_60d_ago": 0.117
+ },
+ "VOO": {
+  "n_closes_2y": 501,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-12",
+   696.0
+  ],
+  "n_divs_365d": 4,
+  "ttm_yield_pct": 1.07,
+  "currency": "USD",
+  "yield": 0.0107,
+  "dividendYield": 1.07,
+  "trailingAnnualDividendYield": null,
+  "netExpenseRatio": 0.03,
+  "totalAssets": 1735726989312,
+  "quoteType": "ETF",
+  "fundFamily": "Vanguard",
+  "fwd_20d_ret_from_60d_ago": 0.0011
+ },
+ "AGG": {
+  "n_closes_2y": 501,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-12",
+   95.22
+  ],
+  "n_divs_365d": 12,
+  "ttm_yield_pct": 4.18,
+  "currency": "USD",
+  "yield": 0.041100003,
+  "dividendYield": 4.11,
+  "trailingAnnualDividendYield": null,
+  "netExpenseRatio": 0.03,
+  "totalAssets": 139937972224,
+  "quoteType": "ETF",
+  "fundFamily": "iShares",
+  "fwd_20d_ret_from_60d_ago": -0.0157
+ },
+ "IEF": {
+  "n_closes_2y": 501,
+  "first": "2024-11-13",
+  "last": [
+   "2026-11-12",
+   90.21
+  ],
+  "n_divs_365d": 12,
+  "ttm_yield_pct": 4.12,
+  "currency": "USD",
+  "yield": 0.0405,
+  "dividendYield": 4.05,
+  "trailingAnnualDividendYield": null,
+  "netExpenseRatio": 0.15,
+  "totalAssets": 43529359360,
+  "quoteType": "ETF",
+  "fundFamily": "iShares",
+  "fwd_20d_ret_from_60d_ago": -0.0237
+ },
+ "^IRX": {
+  "n_closes_2y": 502,
+  "first": "2024-11-12",
+  "last": [
+   "2026-11-12",
+   4.128
+  ],
+  "n_divs_365d": 0,
+  "ttm_yield_pct": 0.0,
+  "currency": "USD",
+  "yield": null,
+  "dividendYield": null,
+  "trailingAnnualDividendYield": null,
+  "netExpenseRatio": null,
+  "totalAssets": null,
+  "quoteType": "INDEX",
+  "fundFamily": null,
+  "fwd_20d_ret_from_60d_ago": 0.0743
+ }
+}

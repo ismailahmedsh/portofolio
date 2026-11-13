@@ -1,0 +1,10 @@
+{"asof":"2026-11-13",
+ "cftc_FinFutWk":"200, report 2026-11-03, has E-mini S&P 500, Micro Nasdaq-100, CME Bitcoin, MSCI EAFE/EM",
+ "aaii_sentiment_xls":"200, latest 2026-11-12 bull 30.8 neutral 17.8 bear 51.4",
+ "finra_margin":"200, Sep-26 debit 1,480,054 $m",
+ "ici_combined_flows":"curl 403 Akamai; WebFetch OK: week ended 2026-11-04 ETF net issuance $49.83bn",
+ "ishares_shares_outstanding":"IBIT 1,393,000,000 and CSPX 189,294,635 as of 2026-11-12; yfinance sharesOutstanding null for all tested",
+ "bis_ws_eer_MRB_US":"200 CSV v1 and v2 API, latest 2026-09 107.11",
+ "fred":"needs --http1.1; RBUSBIS last 2026-07 108.25; DTB3 4.12 2026-11-10; IUDSOIA 3.9845 and ECB ESTR 2.439 2026-11-11; DGS10 4.98",
+ "moodys":"2837-byte JS shell",
+ "yfinance_extra":"JEPI.L 7.44%, JEPQ.L 11.47%, VUAA.L 0.2% (accumulating line, suspect), AGGH.L 404"}

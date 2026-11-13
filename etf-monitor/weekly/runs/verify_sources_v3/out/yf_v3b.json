@@ -1,0 +1,69 @@
+{
+ "JEPI.L": {
+  "yield": 0.0744,
+  "dividendYield": 7.44,
+  "sharesOutstanding": null,
+  "last_close": [
+   "2026-11-13",
+   25.03
+  ],
+  "currency": "USD"
+ },
+ "JEPQ.L": {
+  "yield": 0.114700004,
+  "dividendYield": 11.47,
+  "sharesOutstanding": null,
+  "last_close": [
+   "2026-11-13",
+   25.81
+  ],
+  "currency": "USD"
+ },
+ "VUAA.L": {
+  "yield": 0.002,
+  "dividendYield": 0.2,
+  "sharesOutstanding": null,
+  "last_close": [
+   "2026-11-13",
+   147.34
+  ],
+  "currency": "USD"
+ },
+ "CSPX.L": {
+  "yield": null,
+  "dividendYield": null,
+  "sharesOutstanding": null,
+  "last_close": [
+   "2026-11-13",
+   821.62
+  ],
+  "currency": "USD"
+ },
+ "IBIT": {
+  "yield": 0.0,
+  "dividendYield": 0.0,
+  "sharesOutstanding": null,
+  "last_close": [
+   "2026-11-12",
+   40.36
+  ],
+  "currency": "USD"
+ },
+ "VWRA.L": {
+  "yield": 0.0,
+  "dividendYield": 0.0,
+  "sharesOutstanding": null,
+  "last_close": [
+   "2026-11-13",
+   188.92
+  ],
+  "currency": "USD"
+ },
+ "AGGH.L": {
+  "yield": null,
+  "dividendYield": null,
+  "sharesOutstanding": null,
+  "last_close": null,
+  "currency": null
+ }
+}
