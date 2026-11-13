@@ -90,7 +90,7 @@ Same months for the fund and its underlying index. After-tax return deducts 30% 
 | Pillar | Reading | Flag |
 |---|---|---|
 | MAC01 Recession indicators | 10y-3m +0.78 pts; inverted 0 of last 6 months; Sahm 0.00 | ON |
-| MAC02 Credit stress | HY spread 3.30% (3m +0.59); Baa-10y 1.51 | off |
+| MAC02 Credit stress | HY spread 3.20% (3m +0.49); Baa-10y 1.51 | off |
 | MAC03 Volatility (execution only) | VIX 18.0, VIX/VIX3M 0.90 | off |
 | MAC04 Real rates and inflation | 10y TIPS 2.78% (3m +0.35); core CPI 3m ann. 3.7% vs 12m 2.9% | off |
 | MAC05 Dollar and AED peg | broad dollar 3m +2.4%; AED/USD 3.6726 (peg 3.6725) | off |
