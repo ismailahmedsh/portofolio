@@ -1,0 +1,133 @@
+{
+ "world": {
+  "best_ucits": "VWRA.L",
+  "best_ucits_cst10": 24.6,
+  "ucits_lines": {
+   "VWRA.L": 24.6,
+   "FWRA.L": 25.6,
+   "ACWD.L": 23.0
+  },
+  "best_us": "VT",
+  "best_us_cst10": 58.5,
+  "us_edge_bps": -33.8,
+  "us_lines": [
+   {
+    "ticker": "VT",
+    "CST10": 58.46054975113459,
+    "TER_bps": 6.0,
+    "yield_pct": 1.55,
+    "tax_bps": 46.5,
+    "corr_36m": 0.964,
+    "gap_bps_vs_ucits": -23,
+    "months": 36
+   },
+   {
+    "ticker": "ACWI",
+    "CST10": 81.0091152312965,
+    "TER_bps": 32.0,
+    "yield_pct": 1.43,
+    "tax_bps": 43.0,
+    "corr_36m": 0.968,
+    "gap_bps_vs_ucits": -5,
+    "months": 36
+   }
+  ],
+  "winner": "VWRA.L",
+  "why": "London line VWRA.L is cheaper after tax (25 vs 58 bps a year for VT)"
+ },
+ "sp500": {
+  "best_ucits": "SPXS.L",
+  "best_ucits_cst10": 14.0,
+  "ucits_lines": {
+   "CSPX.L": 23.5,
+   "VUAA.L": 23.3,
+   "SPXS.L": 14.0,
+   "SPY5.L": 24.4,
+   "HSPD.L": 30.4,
+   "XSPU.L": 24.0
+  },
+  "best_us": "SPYM",
+  "best_us_cst10": 38.6,
+  "us_edge_bps": -24.7,
+  "us_lines": [
+   {
+    "ticker": "VOO",
+    "CST10": 40.99946047233899,
+    "TER_bps": 3.0,
+    "yield_pct": 1.07,
+    "tax_bps": 32.0,
+    "corr_36m": 0.962,
+    "gap_bps_vs_ucits": -7,
+    "months": 36
+   },
+   {
+    "ticker": "IVV",
+    "CST10": 42.09428701006102,
+    "TER_bps": 3.0,
+    "yield_pct": 1.1,
+    "tax_bps": 33.1,
+    "corr_36m": 0.961,
+    "gap_bps_vs_ucits": -4,
+    "months": 36
+   },
+   {
+    "ticker": "SPYM",
+    "CST10": 38.61163774136491,
+    "TER_bps": 2.0,
+    "yield_pct": 1.02,
+    "tax_bps": 30.6,
+    "corr_36m": 0.962,
+    "gap_bps_vs_ucits": -6,
+    "months": 36
+   },
+   {
+    "ticker": "SPY",
+    "CST10": 45.47897541529286,
+    "TER_bps": 9.45,
+    "yield_pct": 1.0,
+    "tax_bps": 30.0,
+    "corr_36m": 0.962,
+    "gap_bps_vs_ucits": -15,
+    "months": 36
+   }
+  ],
+  "winner": "SPXS.L",
+  "why": "London line SPXS.L is cheaper after tax (14 vs 39 bps a year for SPYM)"
+ },
+ "ndx100": {
+  "best_ucits": "XNAS.L",
+  "best_ucits_cst10": 33.4,
+  "ucits_lines": {
+   "CNDX.L": 43.4,
+   "EQQU.L": 48.5,
+   "XNAS.L": 33.4
+  },
+  "best_us": "QQQM",
+  "best_us_cst10": 34.9,
+  "us_edge_bps": -1.6,
+  "us_lines": [
+   {
+    "ticker": "QQQM",
+    "CST10": 34.91354975370043,
+    "TER_bps": 15.0,
+    "yield_pct": 0.46,
+    "tax_bps": 13.9,
+    "corr_36m": 0.98,
+    "gap_bps_vs_ucits": 19,
+    "months": 36
+   },
+   {
+    "ticker": "QQQ",
+    "CST10": 37.45708755617496,
+    "TER_bps": 18.0,
+    "yield_pct": 0.45,
+    "tax_bps": 13.5,
+    "corr_36m": 0.981,
+    "gap_bps_vs_ucits": 11,
+    "months": 36
+   }
+  ],
+  "winner": "XNAS.L",
+  "why": "London line XNAS.L is cheaper after tax (33 vs 35 bps a year for QQQM)"
+ }
+}

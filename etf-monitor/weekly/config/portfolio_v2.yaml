@@ -26,3 +26,12 @@ orderable: [VWRA.L]
 
 # One row per executed buy: date, ticker, units, price_usd, commission_usd, fx_usd
 fills: []
+
+# ---- v3 additions (2026-11-13) ----
+# Owner decision 2026-11-13: crypto excluded for now (revisit later). Bitcoin pillars and lines stay in the files, switched off.
+excluded: [crypto]
+# Options-income funds are scored for information only; no money goes to them until you set a target, underlying and source sleeve.
+options_income: {target: 0, underlying: null, carved_from: null}
+# US-listed lines (30% tax on their dividends, US estate tax above US$60,000). A US line is bought only if it is 10 bps a year
+# cheaper after that tax AND you record your IBKR entity and W-8BEN date here AND you add it to orderable.
+us_listed: {cap_usd: 60000, buy_limit_usd: 54000, amber_usd: 45000, commission_usd: 1.00, ibkr_entity: null, w8ben_signed_on: null}

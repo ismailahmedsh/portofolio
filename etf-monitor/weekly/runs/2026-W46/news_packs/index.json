@@ -1,0 +1,355 @@
+[
+ {
+  "id": "NWS01",
+  "name": "Global macro and central banks",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "developed_ex_us",
+   "em_broad",
+   "govt_bonds",
+   "gold_precious"
+  ],
+  "A": 3,
+  "unexplained": [
+   "govt_bonds",
+   "gold_precious"
+  ],
+  "event": false,
+  "touches_owner": true
+ },
+ {
+  "id": "NWS02",
+  "name": "Rates, inflation and credit",
+  "groups": [
+   "govt_bonds",
+   "credit_bonds",
+   "us_large_broad",
+   "tech_ai_semis",
+   "utilities_realestate",
+   "gold_precious"
+  ],
+  "A": 2,
+  "unexplained": [
+   "govt_bonds",
+   "credit_bonds",
+   "gold_precious"
+  ],
+  "event": false,
+  "touches_owner": true
+ },
+ {
+  "id": "NWS03",
+  "name": "US equities and earnings",
+  "groups": [
+   "us_large_broad",
+   "us_small_mid_value",
+   "us_factor_dividend",
+   "global_equity"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": false,
+  "touches_owner": true
+ },
+ {
+  "id": "NWS04",
+  "name": "Technology, AI and semiconductors",
+  "groups": [
+   "tech_ai_semis",
+   "us_large_broad",
+   "global_equity"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": false,
+  "touches_owner": true
+ },
+ {
+  "id": "NWS05",
+  "name": "Cyclical sectors and financials",
+  "groups": [
+   "financials",
+   "industrials_defense_infra",
+   "materials_mining_metals",
+   "consumer",
+   "us_small_mid_value"
+  ],
+  "A": 1,
+  "unexplained": [
+   "consumer"
+  ],
+  "event": false,
+  "touches_owner": false
+ },
+ {
+  "id": "NWS06",
+  "name": "Defensive sectors and real assets",
+  "groups": [
+   "healthcare_biotech",
+   "utilities_realestate",
+   "consumer",
+   "us_factor_dividend"
+  ],
+  "A": 1,
+  "unexplained": [
+   "consumer"
+  ],
+  "event": false,
+  "touches_owner": false
+ },
+ {
+  "id": "NWS07",
+  "name": "Europe, UK and other developed markets",
+  "groups": [
+   "europe",
+   "developed_ex_us",
+   "global_equity"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": false,
+  "touches_owner": true
+ },
+ {
+  "id": "NWS08",
+  "name": "Japan and developed Asia-Pacific",
+  "groups": [
+   "japan",
+   "asia_dev_other",
+   "developed_ex_us"
+  ],
+  "A": 0,
+  "unexplained": [],
+  "event": false,
+  "touches_owner": false
+ },
+ {
+  "id": "NWS09",
+  "name": "China and Hong Kong",
+  "groups": [
+   "china",
+   "em_broad",
+   "em_asia_other"
+  ],
+  "A": 1,
+  "unexplained": [
+   "china"
+  ],
+  "event": false,
+  "touches_owner": false
+ },
+ {
+  "id": "NWS10",
+  "name": "India",
+  "groups": [
+   "india",
+   "em_broad"
+  ],
+  "A": 0,
+  "unexplained": [],
+  "event": false,
+  "touches_owner": false
+ },
+ {
+  "id": "NWS11",
+  "name": "Other emerging markets",
+  "groups": [
+   "em_broad",
+   "latam",
+   "em_asia_other",
+   "mena_gulf"
+  ],
+  "A": 0,
+  "unexplained": [],
+  "event": false,
+  "touches_owner": false
+ },
+ {
+  "id": "NWS12",
+  "name": "Gulf, Middle East and geopolitics",
+  "groups": [
+   "mena_gulf",
+   "energy_oil",
+   "global_equity",
+   "gold_precious"
+  ],
+  "A": 2,
+  "unexplained": [
+   "gold_precious"
+  ],
+  "event": false,
+  "touches_owner": true
+ },
+ {
+  "id": "NWS13",
+  "name": "Commodities and energy",
+  "groups": [
+   "energy_oil",
+   "commodities_broad",
+   "materials_mining_metals",
+   "gold_precious",
+   "clean_energy_thematic"
+  ],
+  "A": 1,
+  "unexplained": [
+   "gold_precious"
+  ],
+  "event": false,
+  "touches_owner": false
+ },
+ {
+  "id": "NWS14",
+  "name": "Fund flows and positioning",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "tech_ai_semis",
+   "em_broad",
+   "govt_bonds",
+   "credit_bonds"
+  ],
+  "A": 2,
+  "unexplained": [
+   "govt_bonds",
+   "credit_bonds"
+  ],
+  "event": false,
+  "touches_owner": true
+ },
+ {
+  "id": "NWS16",
+  "name": "Options-income fund news",
+  "groups": [
+   "sp500_premium_income",
+   "ndx100_premium_income",
+   "global_premium_income"
+  ],
+  "A": 0,
+  "unexplained": [],
+  "event": false,
+  "touches_owner": false
+ },
+ {
+  "id": "NWS17",
+  "name": "Trade, tariffs and fiscal policy",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "china",
+   "europe",
+   "industrials_defense_infra",
+   "em_broad"
+  ],
+  "A": 2,
+  "unexplained": [
+   "china"
+  ],
+  "event": false,
+  "touches_owner": true
+ },
+ {
+  "id": "EVT01",
+  "name": "Fund corporate actions",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "tech_ai_semis"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": true,
+  "touches_owner": true
+ },
+ {
+  "id": "EVT02",
+  "name": "Fees, structure, strategy and cheaper substitutes",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "tech_ai_semis"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": true,
+  "touches_owner": true
+ },
+ {
+  "id": "EVT04",
+  "name": "Index methodology, reclassification and mega-cap events",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "tech_ai_semis"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": true,
+  "touches_owner": true
+ },
+ {
+  "id": "EVT05",
+  "name": "Issuer, custodian and counterparty health",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "tech_ai_semis"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": true,
+  "touches_owner": true
+ },
+ {
+  "id": "EVT06",
+  "name": "Tax and legal regime for a UAE resident",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "tech_ai_semis"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": true,
+  "touches_owner": true
+ },
+ {
+  "id": "EVT07",
+  "name": "Sanctions, capital controls and market access (gate)",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "tech_ai_semis"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": true,
+  "touches_owner": true
+ },
+ {
+  "id": "EVT08",
+  "name": "Broker, venue, product access and funding channel",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "tech_ai_semis"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": true,
+  "touches_owner": true
+ },
+ {
+  "id": "EVT09",
+  "name": "Deposit-week calendar and market dislocations",
+  "groups": [
+   "global_equity",
+   "us_large_broad",
+   "tech_ai_semis"
+  ],
+  "A": 1,
+  "unexplained": [],
+  "event": true,
+  "touches_owner": true
+ }
+]

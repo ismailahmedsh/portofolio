@@ -1,0 +1,54 @@
+{
+ "MAC01": {
+  "name": "Recession indicators",
+  "reading": "10y-3m +0.78 pts; inverted 0 of last 6 months; Sahm 0.00",
+  "flag": true
+ },
+ "MAC02": {
+  "name": "Credit stress",
+  "reading": "HY spread 3.30% (3m +0.59); Baa-10y 1.51",
+  "flag": false
+ },
+ "MAC03": {
+  "name": "Volatility (execution only)",
+  "reading": "VIX 18.0, VIX/VIX3M 0.90",
+  "flag": false,
+  "execution_only": true
+ },
+ "MAC04": {
+  "name": "Real rates and inflation",
+  "reading": "10y TIPS 2.78% (3m +0.35); core CPI 3m ann. 3.7% vs 12m 2.9%",
+  "flag": false
+ },
+ "MAC05": {
+  "name": "Dollar and AED peg",
+  "reading": "broad dollar 3m +2.4%; AED/USD 3.6726 (peg 3.6725)",
+  "flag": false
+ },
+ "MAC06": {
+  "name": "Stock-bond correlation",
+  "reading": "1-year daily SPY/IEF correlation +0.25",
+  "flag": true
+ },
+ "MAC07": {
+  "name": "Oil and growth shock",
+  "reading": "oil 92.1 USD, 3m -0.4%",
+  "flag": false
+ },
+ "MAC08": {
+  "name": "Financial conditions",
+  "reading": "NFCI -0.46",
+  "flag": false
+ },
+ "MAC09": {
+  "name": "Market drawdown, trend and breadth",
+  "reading": "world -3.7% from high (-3.7% from 52-week high); above 10-month average; 12-1 return +12.0%; equal-weight vs S&P 500 6m +7.2%",
+  "flag": false
+ },
+ "MAC10": {
+  "name": "Regime count",
+  "reading": "2 of 9 flags on (policy-uncertainty flag off)",
+  "flag": false,
+  "state": "watch"
+ }
+}

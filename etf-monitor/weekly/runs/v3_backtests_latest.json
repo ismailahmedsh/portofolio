@@ -1,0 +1,256 @@
+{
+ "rec07": {
+  "period": "2003-01 to 2026-11-11",
+  "periods": [
+   [
+    "2003",
+    "2007"
+   ],
+   [
+    "2008",
+    "2014"
+   ],
+   [
+    "2015",
+    "2019"
+   ],
+   [
+    "2020",
+    "2026"
+   ]
+  ],
+  "proxies": "world reference (Ken French Developed market + T-bill to 2008-02, ACWI to 2008-05, then VT), SPY for the S&P 500, QQQ for the Nasdaq-100; US-listed, dividend-adjusted, before UAE withholding",
+  "rows": [
+   {
+    "mix": "Your mix 70/20/10",
+    "final": 886835,
+    "paid_in": 194118,
+    "mwr": 11.23,
+    "twr": 11.18,
+    "max_dd": -52.3,
+    "worst_year": -38.5,
+    "mwr_2003_2007": 14.79,
+    "mwr_2008_2014": 7.43,
+    "mwr_2015_2019": 10.35,
+    "mwr_2020_2026": 13.75
+   },
+   {
+    "mix": "100% world",
+    "final": 729598,
+    "paid_in": 194118,
+    "mwr": 9.9,
+    "twr": 10.28,
+    "max_dd": -53.2,
+    "worst_year": -38.6,
+    "mwr_2003_2007": 16.39,
+    "mwr_2008_2014": 5.62,
+    "mwr_2015_2019": 8.89,
+    "mwr_2020_2026": 12.26
+   },
+   {
+    "mix": "100% S&P 500",
+    "final": 1062047,
+    "paid_in": 194118,
+    "mwr": 12.44,
+    "twr": 11.5,
+    "max_dd": -50.8,
+    "worst_year": -36.8,
+    "mwr_2003_2007": 10.17,
+    "mwr_2008_2014": 10.09,
+    "mwr_2015_2019": 11.78,
+    "mwr_2020_2026": 14.95
+   },
+   {
+    "mix": "100% Nasdaq-100",
+    "final": 2034197,
+    "paid_in": 194118,
+    "mwr": 16.72,
+    "twr": 15.86,
+    "max_dd": -49.8,
+    "worst_year": -41.8,
+    "mwr_2003_2007": 12.84,
+    "mwr_2008_2014": 14.22,
+    "mwr_2015_2019": 16.8,
+    "mwr_2020_2026": 19.47
+   },
+   {
+    "mix": "80/10/10",
+    "final": 853116,
+    "paid_in": 194118,
+    "mwr": 10.97,
+    "twr": 11.01,
+    "max_dd": -52.6,
+    "worst_year": -38.7,
+    "mwr_2003_2007": 15.31,
+    "mwr_2008_2014": 6.96,
+    "mwr_2015_2019": 10.06,
+    "mwr_2020_2026": 13.5
+   },
+   {
+    "mix": "60/25/15",
+    "final": 953734,
+    "paid_in": 194118,
+    "mwr": 11.72,
+    "twr": 11.55,
+    "max_dd": -51.9,
+    "worst_year": -38.6,
+    "mwr_2003_2007": 14.3,
+    "mwr_2008_2014": 8.09,
+    "mwr_2015_2019": 10.9,
+    "mwr_2020_2026": 14.29
+   },
+   {
+    "mix": "50/30/20",
+    "final": 1022647,
+    "paid_in": 194118,
+    "mwr": 12.19,
+    "twr": 11.86,
+    "max_dd": -51.7,
+    "worst_year": -38.6,
+    "mwr_2003_2007": 13.8,
+    "mwr_2008_2014": 8.74,
+    "mwr_2015_2019": 11.44,
+    "mwr_2020_2026": 14.8
+   }
+  ]
+ },
+ "rec04": {
+  "rule": "Quarterly: a sleeve qualifies when its X (3-month average) is 55 or more at two consecutive quarter-ends and its expected alpha against your mix is positive; target = band max x clip((X - 55) / 15), 0 or at least 5%, changes of 2.5 to 5 points a quarter, total tilt at most 15%, at most 2 of any 12 deposits. Candidates: developed ex-US (EFA, band 10%), emerging markets (EEM, band 7.5%). Factor and small-cap sleeves excluded: no proxy passes the splice test.",
+  "period": "2008-01 to 2026-11-11",
+  "periods": [
+   [
+    "2008",
+    "2014"
+   ],
+   [
+    "2015",
+    "2019"
+   ],
+   [
+    "2020",
+    "2026"
+   ]
+  ],
+  "owner_mix": {
+   "final": 558521,
+   "paid_in": 153394,
+   "mwr": 12.42,
+   "twr": 9.8,
+   "max_dd": -49.2,
+   "worst_year": -34.0,
+   "mwr_2008_2014": 12.19,
+   "mwr_2015_2019": 10.44,
+   "mwr_2020_2026": 13.67
+  },
+  "n_trials": 26,
+  "trial_ir_spread_assumed": 0.25,
+  "variants": {
+   "with priors, same month": {
+    "final": 554361,
+    "paid_in": 153394,
+    "mwr": 12.35,
+    "twr": 9.75,
+    "max_dd": -49.2,
+    "worst_year": -34.0,
+    "mwr_2008_2014": 12.19,
+    "mwr_2015_2019": 10.41,
+    "mwr_2020_2026": 13.56,
+    "info_ratio_annual": -0.24,
+    "deflated_prob": 0.001,
+    "beats_mix_every_period": false
+   },
+   "with priors, one month later": {
+    "final": 554818,
+    "paid_in": 153394,
+    "mwr": 12.36,
+    "twr": 9.75,
+    "max_dd": -49.2,
+    "worst_year": -34.0,
+    "mwr_2008_2014": 12.19,
+    "mwr_2015_2019": 10.43,
+    "mwr_2020_2026": 13.56,
+    "info_ratio_annual": -0.21,
+    "deflated_prob": 0.001,
+    "beats_mix_every_period": false
+   },
+   "priors = 0, same month": {
+    "final": 558521,
+    "paid_in": 153394,
+    "mwr": 12.42,
+    "twr": 9.8,
+    "max_dd": -49.2,
+    "worst_year": -34.0,
+    "mwr_2008_2014": 12.19,
+    "mwr_2015_2019": 10.44,
+    "mwr_2020_2026": 13.67,
+    "info_ratio_annual": 0.0,
+    "deflated_prob": 0.0,
+    "beats_mix_every_period": false
+   },
+   "priors = 0, one month later": {
+    "final": 558521,
+    "paid_in": 153394,
+    "mwr": 12.42,
+    "twr": 9.8,
+    "max_dd": -49.2,
+    "worst_year": -34.0,
+    "mwr_2008_2014": 12.19,
+    "mwr_2015_2019": 10.44,
+    "mwr_2020_2026": 13.67,
+    "info_ratio_annual": 0.0,
+    "deflated_prob": 0.0,
+    "beats_mix_every_period": false
+   }
+  },
+  "gate_pass": false,
+  "latest_X": {
+   "exus": 65.0,
+   "eimi": 48.8
+  }
+ },
+ "cross_wrapper": [
+  {
+   "group": "S&P 500",
+   "us_line": "SPY",
+   "london_line": "CSPX.L",
+   "from": "2010-09",
+   "months": 194,
+   "us_final": 448598,
+   "us_mwr": 13.91,
+   "uc_final": 462038,
+   "uc_mwr": 14.22,
+   "paid_in": 131675,
+   "london_advantage_usd": 13440,
+   "london_advantage_pts": 0.31
+  },
+  {
+   "group": "Nasdaq-100",
+   "us_line": "QQQ",
+   "london_line": "CNDX.L",
+   "from": "2010-09",
+   "months": 194,
+   "us_final": 705294,
+   "us_mwr": 18.68,
+   "uc_final": 706025,
+   "uc_mwr": 18.69,
+   "paid_in": 131675,
+   "london_advantage_usd": 731,
+   "london_advantage_pts": 0.01
+  },
+  {
+   "group": "World",
+   "us_line": "VT",
+   "london_line": "VWRA.L",
+   "from": "2019-07",
+   "months": 88,
+   "us_final": 97309,
+   "us_mwr": 13.32,
+   "uc_final": 99892,
+   "uc_mwr": 14.03,
+   "paid_in": 59729,
+   "london_advantage_usd": 2583,
+   "london_advantage_pts": 0.71
+  }
+ ],
+ "note": "mix 70/20/10 (crypto excluded, options-income 0): identical to the v2 owner mix, so REC07/REC04 apply to v3 as run"
+}
