@@ -1,0 +1,45 @@
+{
+  "pillar_id": "EVT08",
+  "week": "2026-W47",
+  "window": "2026-11-14 to 2026-11-20",
+  "saturated": false,
+  "rounds": 2,
+  "explorers": 9,
+  "group_scores": [
+    {"group": "global_equity", "score": 0, "confidence": "low", "rationale": "No IBKR, issuer, tax or venue event for VWRA.L or its world substitutes (FWRA, ACWD, VT, ACWI) was verified inside the window. The IRS pages (verified) show the 30% NRA withholding and the US$60k estate threshold unchanged, which keeps the Irish UCITS advantage. That is out-of-window background. There are no in-window sources, so the score is a gap-driven default, not a confirmed null.", "falsifier": "An IBKR notice dated 14-20 Nov that changes the LSE minimum, FX fee or fractional access; a world-UCITS TER cut, closure or index change; or an in-window change to NRA estate tax, withholding or treaty rules.", "fact_ids": ["EVT08-W47-F3", "EVT08-W47-F4"], "n_sources": 0},
+    {"group": "us_large_broad", "score": 0, "confidence": "low", "rationale": "The only data points are SPY5's TER of 0.03% as of 31 Oct and the NYSE Thanksgiving calendar (closed 26 Nov, early close 27 Nov). Both were verified, but both are outside the window and only affect timing. IBKR US-ETF PRIIPs/KID access for UAE clients and the US commission plan were not checked. There are no in-window sources.", "falsifier": "IBKR withdraws US-ETF access for UAE residents or raises US commissions; or an S&P 500 UCITS issuer announces a TER cut, merger or closure on 14-20 Nov.", "fact_ids": ["EVT08-W47-F1", "EVT08-W47-F2"], "n_sources": 0},
+    {"group": "tech_ai_semis", "score": 0, "confidence": "low", "rationale": "No source was gathered for XNAS.L, EQQU, CNDX or QQQM. The Invesco page loaded with no fee content and the IBKR pages returned 403. This is an open gap, not a confirmed 'no news'.", "falsifier": "A Nasdaq-100 UCITS fee cut, share-class or listing change, or an IBKR change to LSE or US commissions, fractional shares or KID access announced in the window.", "fact_ids": [], "n_sources": 0}
+  ],
+  "severities": [
+    {"target": "US-situs lines held directly (VOO, IVV, SPYM, QQQM, VT): NRA estate-tax exposure", "severity": 1, "issue": "Standing watch: the US$60k NRA estate filing threshold is unchanged (IRS page updated 27 Jun 2026, re-verified). Nothing new in the window. Keep US-situs holdings under the US$60k cap.", "url": "https://www.irs.gov/individuals/international-taxpayers/some-nonresidents-with-us-assets-must-file-estate-tax-returns", "date": "2026-06-27"},
+    {"target": "IBKR LSE lines (VWRA.L, SPXS.L, XNAS.L): US$1.70 commission minimum, US$2 FX minimum, fractional shares", "severity": 0, "issue": "Unverified for the window (IBKR returned 403). Keep the existing allocator constants. This is not a confirmation that nothing changed.", "url": "https://www.interactivebrokers.com/en/pricing/commissions-stocks-europe.php", "date": "2026-11-23"},
+    {"target": "US-listed substitutes: PRIIPs/KID access for UAE residents and the IBKR US commission plan", "severity": 0, "issue": "Unverified. ELG08 stays owner-only, and US-situs orders stay blocked until ibkr_entity, w8ben_signed_on and positions_as_of are confirmed.", "url": "https://www.interactivebrokers.com/en/pricing/commissions-stocks.php", "date": "2026-11-23"},
+    {"target": "SPDR SPY5/SPXS (State Street)", "severity": 0, "issue": "Info only: TER is 0.03% as of 31 Oct 2026 (re-verified). There is no fee, index or listing notice dated November.", "url": "https://www.ssga.com/uk/en_gb/institutional/etfs/state-street-spdr-sp-500-ucits-etf-acc-spy5-gy", "date": "2026-10-31"},
+    {"target": "US funding-day timing (NYSE/Nasdaq)", "severity": 0, "issue": "Info: closed Thu 26 Nov, early close at 1:00 p.m. ET on Fri 27 Nov (re-verified). USD wires should land by 25 Nov.", "url": "https://www.nyse.com/markets/hours-calendars", "date": "2026-11-27"},
+    {"target": "AED/USD peg (funding channel)", "severity": 0, "issue": "MAC05 reads 3.6728 against the 3.6725 peg, with the flag off. The CBUAE site returned 403, so its stance was not checked. There is no sign of stress.", "url": "https://www.centralbank.ae/", "date": "2026-11-23"}
+  ],
+  "facts": [
+    {"id": "EVT08-W47-F1", "claim": "SPDR S&P 500 UCITS ETF (Acc) SPY5 shows a TER of 0.03% as of 31 Oct 2026. There is no fee, index or listing notice dated November 2026, and the only banner is an undated proxy-voting notice.", "date": "2026-10-31", "source": "State Street Investment Management product page", "url": "https://www.ssga.com/uk/en_gb/institutional/etfs/state-street-spdr-sp-500-ucits-etf-acc-spy5-gy", "quote": "TER | 0.03%", "tier": "T1", "kind": "fact", "in_window": false, "verified": true},
+    {"id": "EVT08-W47-F2", "claim": "NYSE observes Thanksgiving on Thu 26 Nov 2026 and closes early at 1:00 p.m. ET on Fri 27 Nov 2026.", "date": "2026 (calendar page, undated)", "source": "NYSE hours and calendars", "url": "https://www.nyse.com/markets/hours-calendars", "quote": "Each market will close early at 1:00 p.m. (1:15 p.m. for eligible options) on Friday, November 27, 2026", "tier": "T1", "kind": "fact", "in_window": false, "verified": true},
+    {"id": "EVT08-W47-F3", "claim": "The nonresident non-citizen estate-tax filing threshold (Form 706-NA) is still US-situated assets above US$60,000. The page was last updated 27 Jun 2026.", "date": "2026-06-27", "source": "IRS", "url": "https://www.irs.gov/individuals/international-taxpayers/some-nonresidents-with-us-assets-must-file-estate-tax-returns", "quote": "if the fair market value at death of the decedent's U.S.-situated assets exceeds $60,000", "tier": "T1", "kind": "fact", "in_window": false, "verified": true},
+    {"id": "EVT08-W47-F4", "claim": "US-source dividends paid to nonresident aliens are still withheld at 30% or a lower treaty rate. The UAE has no US income-tax treaty.", "date": "2026-07-23", "source": "IRS", "url": "https://www.irs.gov/individuals/international-taxpayers/federal-income-tax-withholding-and-reporting-on-other-kinds-of-us-source-income-paid-to-nonresident-aliens", "quote": "Withhold at 30% or lesser tax treaty rate", "tier": "T1", "kind": "fact", "in_window": false, "verified": true},
+    {"id": "EVT08-W47-F5", "claim": "Treasury's tax treaty page has no item dated November 2026. Its newest is the Croatia protocol of 28 Apr 2026, and there is no new US-Ireland or US-UAE treaty or protocol.", "date": "2026-04-28", "source": "US Treasury, Tax Treaty Documents", "url": "https://home.treasury.gov/policy-issues/tax-policy/treaties", "quote": "Protocol Amending the Convention", "tier": "T1", "kind": "fact", "in_window": false, "verified": false}
+  ],
+  "open_threads": [
+    "IBKR LSE, US and FX pricing and fractional-share checklist: unverified (403, no search budget)",
+    "PRIIPs/KID access to US ETFs for UAE residents by IBKR entity: not covered",
+    "Issuer checklist (TER, closures, mergers, index, share classes) for shortlisted and substitute UCITS lines: not covered beyond SPY5 background",
+    "Invesco EQQU/XNAS factsheet TER: page loaded without fee content",
+    "CBUAE peg stance: site returned 403; MAC05 3.6728 against the 3.6725 peg, flag off",
+    "NRA estate-tax proposals and US-UAE or US-Ireland treaty status: not checked in the window",
+    "IBKR W-8BEN recertification and USD/AED funding fees: not covered",
+    "UAE bank USD-wire fees and LSEG/Nasdaq notices or outages: not covered"
+  ],
+  "verifier_changes": [
+    "No score of +/-2 and no severity of 2 or more was submitted, so no downgrade was needed. All three group scores stay at 0 with low confidence, inside the unsaturated cap of |1| and low.",
+    "Spot-checked 4 cited URLs on 2026-11-23. NYSE calendar, IRS estate threshold (updated 27 Jun 2026), IRS 30% withholding (updated 23 Jul 2026) and SSGA SPY5 TER of 0.03% as of 31 Oct 2026 all exist and contain the quoted text. None is dated inside the window.",
+    "Fixed duplicate fact IDs (two F1 and two F2) by renumbering to EVT08-W47-F1..F5. The duplicate IRS estate fact was merged into F3. The Treasury treaty fact was not re-fetched and is marked verified=false.",
+    "Set n_sources to 0 for all groups, because none has a valid in-window dated source. Background facts stay linked in fact_ids.",
+    "Changed the NYSE severity date from '2026' to 2026-11-27, the event date, to fit the YYYY-MM-DD schema."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "pillar_id": "EVT05",
+  "week": "2026-W47",
+  "summary": "No in-window issuer, depositary, counterparty, sanction or broker event for VWRA.L, SPXS.L, XNAS.L or same-index substitutes; all severities 0. Open thread: IBKR shares fell about 13% on the week, apparently with the broker sector, cause unconfirmed.",
+  "events": [
+    {
+      "target": "VWRA.L",
+      "severity": 0,
+      "issue": "Vanguard Funds plc Investor Choice proxy-voting programme and 10 Dec AGM (KPMG re-appointment, UCITS VI liquidity-tool Articles). Governance only; no depositary, administrator, index or fee change.",
+      "url": "https://fund-docs.vanguard.com/Vanguard_Funds_plc_Investor_Choice_Notice_EN.pdf",
+      "date": "2026-11-10"
+    },
+    {
+      "target": "sp500",
+      "severity": 0,
+      "issue": "SPXS.L / Invesco Markets plc: no in-window notice, counterparty change or counterparty-bank downgrade; normal synthetic structure, about USD 57bn.",
+      "url": "https://www.invesco.com/content/dam/invesco/uk/en/product-documents/etf/share-class/factsheet/IE00B3YCGJ38_factsheet_en-uk.pdf",
+      "date": "2026-10-31"
+    },
+    {
+      "target": "sp500",
+      "severity": 0,
+      "issue": "Societe Generale (possible SPXS counterparty, unconfirmed): watch only; Moody's negative outlook since Oct 2025, S&P France review 27 Nov (outside window). No action in window.",
+      "url": "https://investors.societegenerale.com/en/financial-non-financial-information/ratings/credit-ratings",
+      "date": "2026-06-29"
+    },
+    {
+      "target": "XNAS.L",
+      "severity": 0,
+      "issue": "Xtrackers (IE) plc: only Borsa Italiana delistings of low-turnover non-S&P 500 / non-Nasdaq classes, none terminated. DWS rebrand keeps Xtrackers.",
+      "url": "https://etf.deutsche-am.com/download/asset/63fa2b27-45f4-4acc-8138-6a308c378be5",
+      "date": "2026-11-16"
+    },
+    {
+      "target": "ndx100",
+      "severity": 0,
+      "issue": "CNDX.L (iShares): normal NAV on 20 Nov 2026; no notice.",
+      "url": "https://www.ishares.com/uk/professional/en/products/253741/ishares-nasdaq-100-ucits-etf",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "world/sp500/ndx100 (Interactive Brokers, broker/custodian)",
+      "severity": 0,
+      "issue": "No outage, regulator action or client-asset incident found; Oct metrics normal; no Nov 8-K. Share drop of about 13% on the week matches a high-beta broker sector selloff; cause not confirmed (open thread).",
+      "url": "https://stockanalysis.com/stocks/ibkr/history/",
+      "date": "2026-11-20"
+    }
+  ]
+}

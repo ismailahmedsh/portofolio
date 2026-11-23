@@ -1,0 +1,450 @@
+{
+  "pillar_id": "EVT09",
+  "week": "2026-W47",
+  "saturated": false,
+  "rounds": 2,
+  "explorers": 10,
+  "group_scores": [
+    {
+      "group": "global_equity",
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Execution score for the VWRA.L order due in early December. Known frictions can be avoided by scheduling: the UAE National Day holiday on Dec 2-3 (send AED by about Nov 27-30), the NYSE Nov 26-27 closure and half day, and payrolls on Dec 4. LSE runs full sessions Dec 1-4 and Fedwire runs normally. In-window stress is confirmed at T1: VIX closed at 35.89 on 11/20 with VIX/VIX3M at 1.16. It describes the state now, not on the order day. Issuer NAVs on 11/20 show no VWRA dislocation.",
+      "falsifier": "Any of these makes it -1: a 2026 UAE bridge day (Dec 1 or Dec 4) or a CBUAE closure that delays funds past Dec 4; an MSCI/FTSE review, LSE or IBKR outage on Dec 1-4; MAC03 still ON with VIX/VIX3M above 1.05 on Dec 1; or a forced delay into the FOMC (Dec 9) / CPI (Dec 10) week.",
+      "fact_ids": [
+        "MAC03:F1",
+        "MAC03:F2",
+        "MAC03:F4",
+        "CAL:F1",
+        "CAL:F2",
+        "CAL:F3",
+        "CAL:F4",
+        "CB:F1",
+        "CB:F2",
+        "R2:F2",
+        "VWRA:F1"
+      ],
+      "n_sources": 7
+    },
+    {
+      "group": "us_large_broad",
+      "score": 0,
+      "confidence": "low",
+      "rationale": "No S&P 500 order is due this month, so EVT09 cannot score below 0 here. The week was severe and the FOMC minutes are hawkish (confirmed at T1), but return direction belongs to the NWS pillars. SPXS.L shows no structural change. Confidence was capped from medium to low because the pillar is unsaturated.",
+      "falsifier": "This month's order switches to the S&P 500 sleeve while MAC03 is ON or slips into the Dec 7-11 FOMC/CPI week, or an Invesco notice on SPXS.L appears.",
+      "fact_ids": [
+        "NVDA:F7",
+        "NVDA:F10",
+        "CB:F5",
+        "CB:F6",
+        "CB:F7",
+        "CHK:F2"
+      ],
+      "n_sources": 4
+    },
+    {
+      "group": "tech_ai_semis",
+      "score": 0,
+      "confidence": "low",
+      "rationale": "No Nasdaq-100 order is due this month, so EVT09's execution score is 0. The explorers' -1 is a fundamental call and out of EVT09 scope. Huang was reinstated on 11-23, and the SEC probe is second-hand. The NVIDIA results (revenue $115.8B, Q4 guide $130B) are confirmed at T1.",
+      "falsifier": "The order plan shifts to XNAS.L in December, the Dec 11 NDX announcement brings a special rebalance, or an issuer notice on XNAS.L appears.",
+      "fact_ids": [
+        "NVDA:F2",
+        "NVDA:F3",
+        "NVDA:F4",
+        "NVDA:F10",
+        "NVDA:F11",
+        "NVDA:F12",
+        "CHK:F3"
+      ],
+      "n_sources": 4
+    }
+  ],
+  "severities": [
+    {
+      "target": "VWRA.L",
+      "severity": 1,
+      "issue": "Watch the order timing. Send the AED by about Nov 27-30 so the UAE National Day holiday (Dec 2-3) does not delay it. Prefer the LSE session on Dec 1 or Dec 3 after about 15:00 London, and avoid 13:30 London on Dec 4 (payrolls). If the order slips one week it lands in the FOMC Dec 9 / CPI Dec 10 week. MAC03 was ON at the close: VIX 35.89, VIX/VIX3M 1.16.",
+      "url": "https://u.ae/en/information-and-services/public-holidays-and-religious-affairs/public-holidays",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "world",
+      "severity": 1,
+      "issue": "Cboe vol state (MAC03). The front end is inverted (VIX9D 40.72, VVIX 138). Expect wider UCITS spreads and iNAV gaps around the US open while VIX/VIX3M stays above 1.",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "ndx100",
+      "severity": 1,
+      "issue": "NVDA (top constituent): the CEO resignation was reversed on 11-23, and the SEC probe is reported second-hand only. Neither blocks buying a line.",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "SPXS.L",
+      "severity": 0,
+      "issue": "Info only: TER 0.05%, no changes listed. In-window RNS not checked.",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00B3YCGJ38",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "XNAS.L",
+      "severity": 0,
+      "issue": "Info only: TER 0.20%, no changes listed. NDX reconstitution date unconfirmed.",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00BMFKG444",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "LSE and IBKR venues not verified (LSE notices page showed only navigation; IBKR returned 403). No known outage.",
+      "url": "https://www.londonstockexchange.com/discover/news-and-insights/market-notices",
+      "date": "2026-11-23"
+    }
+  ],
+  "facts": [
+    {
+      "id": "MAC03:F1",
+      "claim": "Official Cboe VIX close 11/20 35.89 (intraday high 40.03); 11/19 28.44; 11/13 19.30.",
+      "date": "2026-11-20",
+      "source": "Cboe VIX_History.csv",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+      "quote": "11/20/2026,28.630000,40.030000,26.940000,35.890000",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "MAC03:F2",
+      "claim": "Official Cboe VIX3M close 11/20 30.94; VIX/VIX3M 1.16 at close (11/19 1.05, 11/17 1.02, 11/13 0.94).",
+      "date": "2026-11-20",
+      "source": "Cboe VIX3M_History.csv",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX3M_History.csv",
+      "quote": "11/20/2026,27.800000,33.310000,25.980000,30.940000",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "MAC03:F4",
+      "claim": "Pack MAC03 reading (VIX 29.2, ratio 1.11) matches no official Cboe close; it looks like an intraday 11/20 snapshot.",
+      "date": "2026-11-20",
+      "source": "Cboe cross-check vs runs/2026-W47/v3_macro.json",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+      "quote": "11/20/2026,28.630000,40.030000,26.940000,35.890000",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "CB:F3",
+      "claim": "VIX settlement (VRO) printed 24.25 on 11/18; 11/20 was monthly OPEX.",
+      "date": "2026-11-18",
+      "source": "Cboe VRO_History.csv",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VRO_History.csv",
+      "quote": "11/18/2026,24.250000",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "CB:F4",
+      "claim": "VVIX closed at 138.03 and VIX9D at 40.72 on 11/20.",
+      "date": "2026-11-20",
+      "source": "Cboe VVIX_History.csv",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv",
+      "quote": "11/20/2026,138.030000",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "NVDA:F2",
+      "claim": "NVIDIA FQ3 FY27 revenue $115.8B, up 103% y/y.",
+      "date": "2026-11-17",
+      "source": "NVIDIA press release",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "quote": "Revenue of $115.8 billion, up 103% from a year ago",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "NVDA:F3",
+      "claim": "NVIDIA Q4 FY27 revenue guide $130.0B +/-3%.",
+      "date": "2026-11-17",
+      "source": "NVIDIA press release",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "quote": "Revenue is expected to be $130.0 billion, plus or minus 3%.",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "NVDA:F4",
+      "claim": "Results release quotes Kress as interim CEO.",
+      "date": "2026-11-17",
+      "source": "NVIDIA press release",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "quote": "said Colette Kress, interim CEO and executive vice president and chief financial officer of NVIDIA",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "NVDA:F7",
+      "claim": "S&P 500 -1.03% to 7,340.53 on 11/17; Musalem says several hikes may be needed.",
+      "date": "2026-11-17",
+      "source": "CNBC live blog",
+      "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html",
+      "quote": "The economy will likely require several interest rate increases before the spring of 2027",
+      "tier": "T2",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "NVDA:F10",
+      "claim": "S&P 500 -3.7% on 11/20 into correction; -8.6% on the week. The cited quote says 'since March 2020' while the claim says 'since April 2025' (inconsistent; page returned 403 to the verifier).",
+      "date": "2026-11-20",
+      "source": "CNBC live blog",
+      "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+      "quote": "its worst weekly performance since March 2020",
+      "tier": "T2",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "NVDA:F11",
+      "claim": "CNBC cites Reuters: SEC exploring possible accounting issues at Nvidia (second-hand).",
+      "date": "2026-11-20",
+      "source": "CNBC live blog citing Reuters",
+      "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+      "quote": "SEC is exploring possible accounting issues",
+      "tier": "T2",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "NVDA:F12",
+      "claim": "Board reinstated Huang as CEO on 11-23 (after window).",
+      "date": "2026-11-23",
+      "source": "NVIDIA press release",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "quote": "the Board is confident that Mr. Huang's reinstatement poses no national security risk",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "CB:F5",
+      "claim": "Fed released Oct 27-28 FOMC minutes on 11/18.",
+      "date": "2026-11-18",
+      "source": "Federal Reserve press release",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+      "quote": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "CB:F6",
+      "claim": "FOMC held 3.75-4.00% in October; two dissents in favour of a hike.",
+      "date": "2026-11-18",
+      "source": "FOMC minutes",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "quote": "Two members voted against the decision to maintain the target range",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "CB:F7",
+      "claim": "Minutes say a hike of more than 25bp could be considered in December.",
+      "date": "2026-11-18",
+      "source": "FOMC minutes",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "quote": "an increase of more than 25 basis points could warrant consideration at the next meeting",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "CB:F1",
+      "claim": "FOMC Dec 8-9 meeting (decision Dec 9).",
+      "date": "2026-11-23",
+      "source": "Federal Reserve FOMC calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "quote": "Meeting associated with a Summary of Economic Projections.",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "CB:F2",
+      "claim": "November CPI on Thu Dec 10, 08:30 ET.",
+      "date": "2026-11-10",
+      "source": "BLS CPI release",
+      "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "quote": "The Consumer Price Index news release for November 2026 is scheduled to be published on Thursday, December 10, 2026",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "CAL:F1",
+      "claim": "NYSE closed Nov 26; early close 13:00 ET Nov 27.",
+      "date": "2026-11-23",
+      "source": "NYSE hours",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "quote": "Each market will close early at 1:00 p.m. (1:15 p.m. for eligible options) on Friday, November 27, 2026.",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "CAL:F2",
+      "claim": "Nov payrolls Fri Dec 4, 08:30 ET.",
+      "date": "2026-11-23",
+      "source": "BLS schedule",
+      "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+      "quote": "| November 2026 | Dec. 04, 2026 | 08:30 AM |",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "CAL:F3",
+      "claim": "UAE National Day holiday Dec 2-3 (page updated 29 Oct, year not named).",
+      "date": "2026-10-29",
+      "source": "u.ae",
+      "url": "https://u.ae/en/information-and-services/public-holidays-and-religious-affairs/public-holidays",
+      "quote": "National Day - 2 and 3 December (2 days).",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "CAL:F4",
+      "claim": "LSE full sessions Dec 1-4; next closures Dec 25 and 28.",
+      "date": "2026-11-23",
+      "source": "LSE business days",
+      "url": "https://www.londonstockexchange.com/equities-trading/business-days",
+      "quote": "Markets closing process commences from 12:30 London time.",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "R2:F2",
+      "claim": "Fed holidays 2026: Thanksgiving Nov 26, next is Dec 25; Fedwire normal Dec 1-4.",
+      "date": "2026-01-01",
+      "source": "Federal Reserve K.8",
+      "url": "https://www.federalreserve.gov/aboutthefed/k8.htm",
+      "quote": "Thanksgiving Day | November 26",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "VWRA:F1",
+      "claim": "VWRA NAV US$172.97 at 20 Nov close (-3.27%); GBP line -3.26%, no sign of dislocation.",
+      "date": "2026-11-20",
+      "source": "Vanguard UK product page",
+      "url": "https://www.vanguard.co.uk/professional/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating",
+      "quote": "US$172.97 ... -US$5.84-3.27%",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "VWRA:F2",
+      "claim": "VWRA OCF 0.14%, no merger/fee/closure notice.",
+      "date": "2026-11-20",
+      "source": "Vanguard UK product page",
+      "url": "https://www.vanguard.co.uk/professional/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating",
+      "quote": "OCF/TER 0.14%",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "VWRA:F3",
+      "claim": "ACWD official NAV $294.30 on 20 Nov (-3.30%).",
+      "date": "2026-11-20",
+      "source": "SSGA product page",
+      "url": "https://www.ssga.com/uk/en_gb/institutional/etfs/spdr-msci-acwi-ucits-etf-spyy-gy",
+      "quote": "NAV USD (Official NAV) $294.30",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "CHK:F2",
+      "claim": "SPXS TER 0.05%, no changes listed.",
+      "date": "2026-11-23",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00B3YCGJ38",
+      "quote": "The ETF's TER (total expense ratio) amounts to 0.05% p.a.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "CHK:F3",
+      "claim": "XNAS TER 0.20%, no changes listed.",
+      "date": "2026-11-23",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00BMFKG444",
+      "quote": "The ETF's TER (total expense ratio) amounts to 0.20% p.a.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    }
+  ],
+  "open_threads": [
+    "UAE 2026 National Day circular, any bridge day (Dec 1 or Dec 4), CBUAE/UAEFTS closures and IBKR USD credit timing.",
+    "MSCI November 2026 review effective date (Nov 30?) and FTSE GEIS December review dates.",
+    "MAC03 state Nov 23-Dec 1 after the Huang reinstatement rally; source of the pack's 29.2/1.11 reading.",
+    "Pack group-move table (QQQ +2.37% vs world, 1w) conflicts with Cboe/CNBC and the repo cache (QQQ about -10.5% vs URTH about -8.4%). Check the packs_v3 window.",
+    "VWRA issuer RNS in the window and LSE/IBKR outage status not verified.",
+    "SEC accounting probe at Nvidia is not confirmed at T1 (NWS scope)."
+  ],
+  "verifier_changes": [
+    "No score was +/-2 and no severity was 2 or higher, so no downgrades were needed. The cap at |1| and low confidence (pillar unsaturated) leaves all scores unchanged at 0.",
+    "us_large_broad confidence lowered from medium to low (unsaturated cap).",
+    "Spot-checked and confirmed: Cboe VIX_History.csv and VIX3M_History.csv rows for 11/13-11/20 (VIX 35.89, VIX3M 30.94, ratio 1.16); NVIDIA FQ3 release ($115.8B up 103%, $130.0B guide); Fed press release monetary20261118a (minutes published 11/18); FOMC minutes (two dissents, more than 25bp could warrant consideration).",
+    "Not confirmed: CNBC live blog 2026/11/19 returned 403. NVDA:F10 and NVDA:F11 stay unverified T2. NVDA:F10's quote ('since March 2020') contradicts its claim ('since April 2025').",
+    "Pack MAC03 input (VIX 29.2 / 1.11) confirmed as not matching any official close, so the stale-input flag stands.",
+    "Explorer fact IDs were duplicated across explorers (multiple F1s), so they were namespaced (MAC03, CB, CAL, NVDA, VWRA, CHK, R2) to match the group fact_ids.",
+    "Severity targets normalised to line tickers or sleeves (VWRA.L, world, ndx100, SPXS.L, XNAS.L)."
+  ]
+}

@@ -18,8 +18,9 @@ target_mode: policy            # policy | score
 tilt_limits: {total_tilt_max: 0.15, per_sleeve_max: 0.10, deposits_per_12_max: 2}
 
 # Current holdings, units per line. Empty = starting from zero. Update after each buy (or from the IBKR statement).
-positions: {}
-#  VWRA.L: {units: 0, as_of: 2026-11-12}
+positions:   # from IBKR (read-only) 2026-11-23
+  VWRA.L: {units: 1, as_of: 2026-11-23}
+  NVDA: {units: 3, as_of: 2026-11-23}   # US single stock, outside the strategic mix
 
 # Lines you have confirmed you can buy in IBKR (TWS shows the LSE USD line and lets you place an order). VWRA is exempt.
 orderable: [VWRA.L]

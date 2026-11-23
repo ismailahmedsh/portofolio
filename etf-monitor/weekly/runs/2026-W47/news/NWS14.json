@@ -1,0 +1,396 @@
+{
+ "pillar_id": "NWS14",
+ "week": "2026-W47",
+ "saturated": false,
+ "rounds": 2,
+ "explorers": 11,
+ "group_scores": [
+  {
+   "group": "govt_bonds",
+   "score": 0,
+   "confidence": "low",
+   "rationale": "ICI flows to Nov 11 (released in window) show bond ETF inflows offsetting mutual fund outflows: mixed, modestly positive, no extreme. CFTC as of Nov 17 shows 10Y/Ultra basis-trade positions growing (verified on page), but NY Fed SOFR/SRF data show orderly repo with no funding stress, which argues against forced deleveraging. IEF -4.5% week is a price move without a flow cause.",
+   "falsifier": "In-window T1+T2 evidence of capitulative bond fund/ETF outflows (+1), or T2 reports of forced basis-trade unwind / repo squeeze (-1).",
+   "fact_ids": [
+    "bond:F1",
+    "bond:F2",
+    "bond:F3",
+    "bond:F4",
+    "bond:F5",
+    "repo:F1",
+    "repo:F2"
+   ],
+   "n_sources": 3
+  },
+  {
+   "group": "credit_bonds",
+   "score": 0,
+   "confidence": "low",
+   "rationale": "Only aggregate taxable bond flows to Nov 11 from one source family (ICI, verifier got HTTP 403). No LQD/HYG data. Fewer than 2 valid dated sources: 0, low.",
+   "falsifier": "Confirmed multi-billion LQD/HYG/VCIT redemptions Nov 14-20 with HY spread widening from issuer plus T2 (+1 if capitulative).",
+   "fact_ids": [
+    "bond:F1",
+    "bond:F2",
+    "bond:F3"
+   ],
+   "n_sources": 1
+  },
+  {
+   "group": "us_large_broad",
+   "score": 0,
+   "confidence": "low",
+   "rationale": "AAII bears 42.2% on Nov 18, down from 51.4%: above average, not extreme (AAII unconfirmed by verifier, HTTP 403). CFTC ES as of Nov 17 (confirmed) shows leveraged-fund short covering and big asset-manager net long, not capitulation. FINRA Oct margin debt -2.1% m/m (confirmed), below June peak: no froth. Confidence capped at low because the pillar is unsaturated.",
+   "falsifier": "Record SPY/VOO/IVV outflows with extreme-fear sentiment from 2 dated sources (+1), or record inflows / bullish extreme (-1).",
+   "fact_ids": [
+    "eq:F1",
+    "eq:F2",
+    "eq:F4",
+    "tech:F1",
+    "tech:F2"
+   ],
+   "n_sources": 3
+  },
+  {
+   "group": "global_equity",
+   "score": 0,
+   "confidence": "low",
+   "rationale": "No in-window VT/ACWI, EPFR or BofA FMS data obtained. Only US-centric gauges, which are not extreme. No basis to leave default.",
+   "falsifier": "BofA Nov FMS cash >=6% (+1) or <4% sell signal (-1) with independent T2 confirmation.",
+   "fact_ids": [
+    "eq:F1",
+    "eq:F4"
+   ],
+   "n_sources": 2
+  },
+  {
+   "group": "tech_ai_semis",
+   "score": 0,
+   "confidence": "low",
+   "rationale": "Leverage gauges cooled: FINRA Oct margin debt down m/m (confirmed), NQ leveraged funds swung to ~10.9k net short as of Nov 17 (confirmed on CFTC page), consistent with hedging into Nvidia earnings. TQQQ $23.7bn net assets (confirmed) is a snapshot only, so no record test.",
+   "falsifier": "Issuer or T2 data showing TQQQ/SOXL/NVDL assets or inflows at records in window, or FMS naming long Mag 7/AI most crowded at an extreme with T2 confirmation (-1).",
+   "fact_ids": [
+    "tech:F1",
+    "tech:F2",
+    "tech:F4",
+    "tech:F5",
+    "tech:F6"
+   ],
+   "n_sources": 3
+  },
+  {
+   "group": "em_broad",
+   "score": 0,
+   "confidence": "low",
+   "rationale": "No in-window EM flow data. IIF October outflows are background, and the IEMG/EEM share counts are single snapshots with no change. Fewer than 2 valid dated sources: 0, low.",
+   "falsifier": "EPFR or ETF data for the week to Nov 19 showing top-5% EM inflow (-1) or capitulative outflow (+1), from 2 independent dated sources.",
+   "fact_ids": [
+    "em:NWS14-EMF-01",
+    "em:F1",
+    "em:F2"
+   ],
+   "n_sources": 1
+  }
+ ],
+ "severities": [
+  {
+   "target": "US Treasury futures basis trade (leveraged funds short 10Y/Ultra; IEF, GOVT, TLT)",
+   "severity": 1,
+   "issue": "Watch. CFTC TFF as of Nov 17 (figures confirmed on page): 10Y leveraged shorts 3.02m (+134k), Ultra shorts 953k (+55k). No T2 confirmation; NY Fed SOFR/SRF data show orderly funding, so no stress signal.",
+   "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+   "date": "2026-11-17"
+  },
+  {
+   "target": "XNAS.L (Nasdaq-100 line)",
+   "severity": 0,
+   "issue": "Info only. Leverage gauges cooled: Oct margin debt down m/m, NQ leveraged funds net short.",
+   "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+   "date": "2026-11-20"
+  }
+ ],
+ "facts": [
+  {
+   "id": "bond:F1",
+   "claim": "ICI: bond ETFs had ~$11.75bn net issuance in week ended Nov 11 ($10.09bn taxable); released Nov 17 (data period pre-window).",
+   "date": "2026-11-17",
+   "source": "ICI Estimated ETF Net Issuance",
+   "url": "https://www.ici.org/research/stats/etf_flows",
+   "quote": "Taxable bond ETFs saw estimated net issuance of $10.09 billion",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "unconfirmed (HTTP 403 to verifier)"
+  },
+  {
+   "id": "bond:F2",
+   "claim": "ICI: taxable bond mutual funds -$8.91bn, munis -$1.18bn, week ended Nov 11; released Nov 18.",
+   "date": "2026-11-18",
+   "source": "ICI Estimated Long-Term Mutual Fund Flows",
+   "url": "https://www.ici.org/research/stats/flows",
+   "quote": "Taxable bond funds saw estimated outflows of $8.91 billion (0.2%)",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "not checked"
+  },
+  {
+   "id": "bond:F3",
+   "claim": "ICI combined: taxable bond funds +$1.18bn, munis +$488m, equity +$37.02bn, week ended Nov 11; released Nov 18.",
+   "date": "2026-11-18",
+   "source": "ICI Combined Estimated Long-Term Fund Flows",
+   "url": "https://www.ici.org/research/stats/combined_flows",
+   "quote": "Taxable bond funds saw estimated inflows of $1.18 billion, and municipal bond funds had estimated inflows of $488 million.",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "unconfirmed (HTTP 403 to verifier)"
+  },
+  {
+   "id": "bond:F4",
+   "claim": "CFTC TFF as of Nov 17: 10Y leveraged funds short 3,022,168 (+134,007); asset managers long 4,019,307 (+180,449).",
+   "date": "2026-11-17",
+   "source": "CFTC Traders in Financial Futures",
+   "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+   "quote": "Traders in Financial Futures - Futures Only Positions as of November 17, 2026",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "confirmed (3,022,168 and 134,007 on page)"
+  },
+  {
+   "id": "bond:F5",
+   "claim": "CFTC TFF as of Nov 17: 2Y leveraged shorts -249,314 to 1,918,037; Ultra bond leveraged shorts +54,928 to 952,972.",
+   "date": "2026-11-17",
+   "source": "CFTC Traders in Financial Futures",
+   "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+   "quote": "Traders in Financial Futures - Futures Only Positions as of November 17, 2026",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "confirmed (952,972 on page)"
+  },
+  {
+   "id": "eq:F1",
+   "claim": "AAII week ending Nov 18: 33.3% bull / 24.4% neutral / 42.2% bear; spread -8.9pp.",
+   "date": "2026-11-18",
+   "source": "AAII Sentiment Survey",
+   "url": "https://www.aaii.com/sentimentsurvey",
+   "quote": "Week ending November 18, 2026 Bullish 33.3% ... Bearish 42.2%",
+   "tier": "T3",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "unconfirmed (HTTP 403 to verifier)"
+  },
+  {
+   "id": "eq:F2",
+   "claim": "AAII historical bearish average ~31%.",
+   "date": "2026-11-18",
+   "source": "AAII Sentiment Survey",
+   "url": "https://www.aaii.com/sentimentsurvey",
+   "quote": "The historical average for bearish sentiment is around 31%.",
+   "tier": "T3",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "unconfirmed (HTTP 403 to verifier)"
+  },
+  {
+   "id": "eq:F3",
+   "claim": "Background: AAII week ending Nov 11: 30.8% bull / 51.4% bear.",
+   "date": "2026-11-11",
+   "source": "AAII Sentiment Survey",
+   "url": "https://www.aaii.com/sentimentsurvey",
+   "quote": "30.8% bullish, 17.8% neutral, and 51.4% bearish",
+   "tier": "T3",
+   "kind": "fact",
+   "in_window": false,
+   "verified": "unconfirmed"
+  },
+  {
+   "id": "eq:F4",
+   "claim": "CFTC TFF as of Nov 17, E-mini S&P 500: asset managers ~1,122,337 long vs 227,288 short; leveraged funds +52,078 long, -16,004 short (short covering).",
+   "date": "2026-11-17",
+   "source": "CFTC Traders in Financial Futures",
+   "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+   "quote": "Traders in Financial Futures - Futures Only Positions as of November 17, 2026",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "confirmed (1,122,337 on page)"
+  },
+  {
+   "id": "tech:F1",
+   "claim": "FINRA margin debit balances Oct-26 $1,448,360m vs Sep-26 $1,480,054m (-2.1% m/m).",
+   "date": "2026-11",
+   "source": "FINRA Margin Statistics",
+   "url": "https://www.finra.org/rules-guidance/key-topics/margin-accounts/margin-statistics",
+   "quote": "Oct-26 | 1,448,360 ... Sep-26 | 1,480,054",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "confirmed (Oct-26 1,448,360 on page; exact release day not shown)"
+  },
+  {
+   "id": "tech:F2",
+   "claim": "FINRA 2026 margin debt peak June $1,502,072m; Oct ~3.6% below.",
+   "date": "2026-11",
+   "source": "FINRA Margin Statistics",
+   "url": "https://www.finra.org/rules-guidance/key-topics/margin-accounts/margin-statistics",
+   "quote": "Jun-26 | 1,502,072 | 217,441 | 223,412",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": false,
+   "verified": "not checked"
+  },
+  {
+   "id": "tech:F3",
+   "claim": "FINRA free credit balances fell in October.",
+   "date": "2026-11",
+   "source": "FINRA Margin Statistics",
+   "url": "https://www.finra.org/rules-guidance/key-topics/margin-accounts/margin-statistics",
+   "quote": "Oct-26 | 1,448,360 | 210,290 | 212,890",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "partially confirmed"
+  },
+  {
+   "id": "tech:F4",
+   "claim": "CFTC TFF NQ as of Nov 17: leveraged funds -5,327 long, +19,568 short; ~-10.9k net short.",
+   "date": "2026-11-17",
+   "source": "CFTC Traders in Financial Futures",
+   "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+   "quote": "Leveraged Funds | 53,394 | 64,322 | 8,838 ... -5,327 | 19,568 | 1,009",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "confirmed (53,394 and 19,568 on page)"
+  },
+  {
+   "id": "tech:F5",
+   "claim": "CFTC TFF NQ as of Nov 17: asset managers ~82.9k net long; OI 296,423.",
+   "date": "2026-11-17",
+   "source": "CFTC Traders in Financial Futures",
+   "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+   "quote": "Asset Manager/Institutional | 112,461 | 29,561 | 5,305 ... Open Interest: 296,423",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "not checked"
+  },
+  {
+   "id": "tech:F6",
+   "claim": "TQQQ net assets ~$23.69bn (page dated 11/20/2026); single snapshot, no record test possible.",
+   "date": "2026-11-20",
+   "source": "ProShares TQQQ page",
+   "url": "https://www.proshares.com/our-etfs/leveraged-and-inverse/tqqq",
+   "quote": "Net Assets $23,692,773,874",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "confirmed (figure on page; as-of date of figure not explicit)"
+  },
+  {
+   "id": "em:NWS14-EMF-01",
+   "claim": "IIF: EM nonresident portfolio outflows $33.8bn in October 2026 (background).",
+   "date": "2026-11-05",
+   "source": "IIF Capital Flows Tracker",
+   "url": "https://www.iif.com/Products/Capital-Flows-Tracker",
+   "quote": "Nonresident portfolio flows to emerging markets recorded $33.8 bn of outflows in October.",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": false,
+   "verified": "not checked (summarizer-sourced)"
+  },
+  {
+   "id": "em:F1",
+   "claim": "IEMG 1,966,800,000 shares outstanding, $129.62bn net assets as of Nov 20 (snapshot, no flow).",
+   "date": "2026-11-20",
+   "source": "iShares IEMG page",
+   "url": "https://www.ishares.com/us/products/244050/ishares-core-msci-emerging-markets-etf",
+   "quote": "Shares outstanding: 1,966,800,000, as of Nov 20, 2026",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "not checked"
+  },
+  {
+   "id": "em:F2",
+   "claim": "EEM 463,500,000 shares outstanding, $25.02bn net assets as of Nov 20 (snapshot, no flow).",
+   "date": "2026-11-20",
+   "source": "iShares EEM page",
+   "url": "https://www.ishares.com/us/products/239637/ishares-msci-emerging-markets-etf",
+   "quote": "Shares Outstanding: 463,500,000, as of Nov 20, 2026",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "not checked"
+  },
+  {
+   "id": "tech:NWS14-R2-F1",
+   "claim": "TQQQ net assets $23.69bn snapshot; no as-of date for the figure (duplicate of tech:F6).",
+   "date": "2026-11-20",
+   "source": "ProShares TQQQ page",
+   "url": "https://www.proshares.com/our-etfs/leveraged-and-inverse/tqqq",
+   "quote": "$23,692,773,874",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": false,
+   "verified": "confirmed (figure on page)"
+  },
+  {
+   "id": "repo:F1",
+   "claim": "SOFR 3.90-3.93% Nov 16-20, 99th pct <=4.00%, vol ~$3.1-3.2tn; no repo spike.",
+   "date": "2026-11-20",
+   "source": "NY Fed SOFR API",
+   "url": "https://markets.newyorkfed.org/api/rates/secured/sofr/search.json?startDate=2026-11-16&endDate=2026-11-20",
+   "quote": "\"effectiveDate\": \"2026-11-20\", \"type\": \"SOFR\" ,\"percentRate\": 3.92 ... \"percentPercentile99\": 4.00 ,\"volumeInBillions\": 3141",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "confirmed (exact string on page)"
+  },
+  {
+   "id": "repo:F2",
+   "claim": "SRF take-up max $104m (Nov 17 PM op RP 111726 27); no funding stress.",
+   "date": "2026-11-17",
+   "source": "NY Fed repo operation results API",
+   "url": "https://markets.newyorkfed.org/api/rp/results/search.json?startDate=2026-11-17&endDate=2026-11-17",
+   "quote": "\"operationId\": \"RP 111726 27\" ... \"totalAmtAccepted\": 104000000",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "confirmed (strings on page)"
+  },
+  {
+   "id": "repo:F3",
+   "claim": "ON RRP take-up ~$0.2-0.4bn/day at 3.75%; orderly.",
+   "date": "2026-11-17",
+   "source": "NY Fed repo operation results API",
+   "url": "https://markets.newyorkfed.org/api/rp/results/search.json?startDate=2026-11-17&endDate=2026-11-17",
+   "quote": "\"totalAmtAccepted\": 351000000 ... \"percentAwardRate\": 3.75",
+   "tier": "T1",
+   "kind": "fact",
+   "in_window": true,
+   "verified": "not checked individually"
+  }
+ ],
+ "open_threads": [
+  "BofA November 2026 Global FMS (cash, crowded trade) not covered.",
+  "EM equity flows week to Nov 19 (EPFR, IEMG/EEM/VWO creations) not obtained.",
+  "SPY/VOO/IVV and VT/ACWI weekly flows, LSEG Lipper week to Nov 19 not obtained.",
+  "Leveraged/single-stock ETF froth around Nvidia earnings (TQQQ/SOXL/NVDL history) unresolved.",
+  "Single-ticker bond ETF flows (TLT/IEF/LQD/HYG) and T2 press on basis trade not obtained.",
+  "Second sentiment gauge (CNN F&G, II, NAAIM) not obtained.",
+  "ICI week ended Nov 18 and mid-Nov short interest publish ~Nov 24-25: W48 background only.",
+  "ICI and AAII pages returned HTTP 403 to the verifier; their quotes remain unconfirmed.",
+  "IIF October EM outflow figure is summarizer-sourced and unchecked."
+ ],
+ "verifier_changes": [
+  "No +/-2 scores and no severity >=2 in lead result, so no downgrades of that kind were needed.",
+  "us_large_broad confidence lowered medium -> low (pillar unsaturated: confidence cap low).",
+  "All scores checked against the |1| cap: all are 0, so no change.",
+  "Spot-checked 7 URLs: CFTC financial_lf (dated Nov 17 header and 10Y/Ultra/ES/NQ figures confirmed), NY Fed SOFR API and repo API (quotes confirmed), FINRA margin stats (Oct-26 1,448,360 confirmed), ProShares TQQQ (net assets confirmed). ICI combined_flows and AAII returned HTTP 403, so they are marked unconfirmed.",
+  "Duplicate fact ids made unique with group prefixes (bond:, eq:, tech:, em:, repo:). NWS14-R2-F1 noted as a duplicate of tech:F6.",
+  "Added NY Fed SOFR/SRF facts (repo:F1, repo:F2) to govt_bonds sources and the basis-trade severity note as a counter-signal to deleveraging stress.",
+  "Added em:F1/em:F2 (IEMG/EEM snapshots) to em_broad fact_ids as context only; n_sources unchanged at 1 because they carry no flow information."
+ ]
+}

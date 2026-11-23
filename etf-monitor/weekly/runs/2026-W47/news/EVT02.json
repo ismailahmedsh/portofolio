@@ -1,0 +1,686 @@
+{
+  "pillar_id": "EVT02",
+  "week": "2026-W47",
+  "saturated": false,
+  "rounds": 2,
+  "explorers": 8,
+  "group_scores": [
+    {
+      "group": "global_equity",
+      "score": 0,
+      "confidence": "low",
+      "rationale": "No TER, replication, distribution or KID notice in the 14-20 Nov window for VWRA, FWRA, ACWD, VT or ACWI. The VWRA OCF cut to 0.14% (Jul) and the ACWD cut to 0.12% (Jun) are background. ACWD tracks a different index and is only 2bp cheaper. US withholding and estate-tax rules are unchanged: in-window Treasury and IRS null checks found nothing on Section 899, 871 or NRA estate tax. Confidence is capped at low because the pillar did not saturate.",
+      "falsifier": "A Vanguard or Invesco notice dated 14-20 Nov changing VWRA or FWRA structure; a confirmed same-index FTSE All-World UCITS at least 10bp cheaper; or a Section 899 revival or challenge to Irish treaty access in the window.",
+      "fact_ids": [
+        "W1:F1",
+        "W1:F2",
+        "W1:F3",
+        "W1:F4",
+        "T:F1",
+        "T:F4",
+        "T:F5",
+        "R2:F1",
+        "R3:F2"
+      ],
+      "n_sources": 7
+    },
+    {
+      "group": "us_large_broad",
+      "score": 0,
+      "confidence": "low",
+      "rationale": "Verified: Trackinsight, with AUM as of 20 Nov, shows the SPXS TER still at 0.05% and 'No content available for this fund'. No TER or structure notice for the S&P 500 UCITS substitutes in the window. 871(m) is unchanged after Notice 2026-61 (background), and the IRS 16-18 Nov releases contain nothing on withholding (verified). Confidence is capped at low because the pillar did not saturate and the issuer-level Invesco check is still outstanding.",
+      "falsifier": "An Invesco Markets plc notice in the window changing the SPXS swap fee, counterparties or replication; a TER cut of 10bp or more on an S&P 500 UCITS line; or 871(m) or Section 899 legislation in the window.",
+      "fact_ids": [
+        "S:F1",
+        "S:F2",
+        "S:F3",
+        "S:F4",
+        "S:F5",
+        "T:F5",
+        "T:F6",
+        "T:F7",
+        "R2:F2"
+      ],
+      "n_sources": 6
+    },
+    {
+      "group": "tech_ai_semis",
+      "score": 0,
+      "confidence": "low",
+      "rationale": "XNAS is unchanged at a 0.20% TER with physical full replication, and no DWS, iShares or Invesco notice was found in the window. The cheaper-twin evidence conflicts: an undated T3 table gives 0.13% (7bp below), while justETF gives Amundi Core Nasdaq-100 Swap at 0.22%. Either way it is below the 10bp trigger. The US fee war is background (2 Nov). Confidence is capped at low because the pillar did not saturate and the DWS issuer page was not checked.",
+      "falsifier": "A DWS notice in the window cutting the XNAS TER or changing its replication; a confirmed same-index UCITS line at least 10bp cheaper than XNAS; or an Invesco EQQQ/EQQU fee response dated 14-20 Nov.",
+      "fact_ids": [
+        "N:F1",
+        "N:F2",
+        "N:F3",
+        "N:F4",
+        "R3:F1",
+        "R3:F3",
+        "R3:F4"
+      ],
+      "n_sources": 3
+    }
+  ],
+  "severities": [
+    {
+      "target": "VWRA.L",
+      "severity": 0,
+      "issue": "Favourable background: OCF fell 0.19% to 0.14% on 28 Jul 2026. No structural notice in the window.",
+      "url": "https://fund-docs.vanguard.com/Vanguard_Funds_plc_Shareholder_notice_21July2026.pdf",
+      "date": "2026-07-21"
+    },
+    {
+      "target": "ACWD.L",
+      "severity": 0,
+      "issue": "TER 0.12% vs VWRA 0.14%, but tracks MSCI ACWI, and the 2bp gap is below the 10bp trigger. Remains the second fallback.",
+      "url": "https://www.ssga.com/at/en_gb/institutional/insights/lower-ter-ucits-etfs",
+      "date": "2026-06-24"
+    },
+    {
+      "target": "FWRA.L",
+      "severity": 0,
+      "issue": "TER still 0.15% (T3, 11 Nov); no notice.",
+      "url": "https://www.trackinsight.com/en/fund/FWRA",
+      "date": "2026-11-11"
+    },
+    {
+      "target": "SPXS.L",
+      "severity": 0,
+      "issue": "No change in the window (verified): TER 0.05% and no fund news as of 20 Nov. The swap-fee figure conflicts across Invesco documents (0.04% vs 0.07%), which is unresolved.",
+      "url": "https://www.trackinsight.com/en/fund/XDUB:SPXS",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "sp500",
+      "severity": 0,
+      "issue": "S&P 500 substitutes (CSPX, VUAA, SPY5, HSPD, XSPU, SNP5): no TER or structure change in the window. The SNP5 0.03% listing (29 Oct) is background.",
+      "url": "https://etfworld.co.uk/amundi-etf-london-stock-exchange-19-trading-lines-october-2026/",
+      "date": "2026-10-29"
+    },
+    {
+      "target": "XNAS.L",
+      "severity": 0,
+      "issue": "TER 0.20%, physical, unchanged. Same-index twin TERs conflict (0.13% undated T3 vs 0.22% justETF); either way the gap is below the 10bp trigger. Confirm against issuer KIDs.",
+      "url": "https://bull-run.org/etfs/index/NASDAQ100",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "ndx100",
+      "severity": 0,
+      "issue": "CNDX.L / QQQ / QQQM: no notices in the window. The US fee war (QNDX and IQQ at 0.10%) is background.",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00B53SZB19",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "US-domiciled VT/VOO/QQQM for a UAE holder: standing drag (30% NRA withholding, US$60k estate threshold) unchanged; the domicile gate handles it.",
+      "url": "https://www.ustaxfs.com/insights/us-estate-tax-for-non-residents-2026/",
+      "date": "2026-04-08"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "Irish Finance (No. 2) Bill 2026: Irish-resident investors only; no change for non-residents.",
+      "url": "https://www.grantthornton.ie/insights/factsheets/finance-no-2-bill-2026-financial-services/",
+      "date": "2026-10-19"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "Section 899-style retaliatory tax: dormant. In-window Treasury, IRS and Ways and Means null checks found no revival.",
+      "url": "https://www.bdo.com/insights/tax/lawmakers-threaten-to-resurrect-revenge-tax-over-pillar-two-negotiations",
+      "date": "2025-09-16"
+    },
+    {
+      "target": "IB1T.L",
+      "severity": 1,
+      "issue": "Watch only: the fee waiver ends 31 Dec 2026 and the TER rises 0.15% to 0.25% on 1 Jan 2027 (verified on the T1 issuer page). Crypto is excluded and the group is not mapped.",
+      "url": "https://www.ishares.com/uk/professionals/products/337088",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "BTCW.L",
+      "severity": 0,
+      "issue": "TER provisional at 0.15% (T3); conflicts with a 0.35% press figure, so the KID needs confirming. Information only.",
+      "url": "https://www.justetf.com/uk/etf-profile.html?isin=GB00BJYDH287",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "QYLD.L",
+      "severity": 0,
+      "issue": "TER 0.45% and swap fee -0.02% verified as of 20 Nov. Monthly distributions and the near-the-money roll are unchanged. Allocation 0%.",
+      "url": "https://globalxetfs.eu/en/funds/qyld",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "LSE venue (VWRA.L, SPXS.L, XNAS.L)",
+      "severity": 0,
+      "issue": "Main Market hours stay 08:00-16:30. LSE 24 ETP trading from H1 2027; no impact now.",
+      "url": "https://www.lseg.com/en/media-centre/press-releases/2026/london-stock-exchange-to-launch-lse-24",
+      "date": "2026-07-21"
+    }
+  ],
+  "facts": [
+    {
+      "id": "W1:F1",
+      "claim": "Vanguard notice: VWRA/VWRL OCF cut 0.19% to 0.14% effective 28 Jul 2026; no other structural change.",
+      "date": "2026-07-21",
+      "source": "Vanguard Funds plc shareholder notice",
+      "url": "https://fund-docs.vanguard.com/Vanguard_Funds_plc_Shareholder_notice_21July2026.pdf",
+      "quote": "will be reduced with effect from 28 July 2026 (the “Effective Date”)",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "W1:F2",
+      "claim": "Vanguard confirms All-World ongoing charge falls 0.19% to 0.14%.",
+      "date": "2026-08-02",
+      "source": "Vanguard Switzerland insights",
+      "url": "https://www.ch.vanguard/en/private-investor/insights/we-are-lowering-fees-on-one-of-our-most-popular-etfs",
+      "quote": "The ongoing charge2 for the Vanguard FTSE All-World UCITS ETF will fall from 0.19% to 0.14%.",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "W1:F3",
+      "claim": "SSGA cut ACWD (IE00B44Z5B48) TER 0.40% to 0.12%; tracks MSCI ACWI, not FTSE All-World.",
+      "date": "2026-06-24",
+      "source": "State Street Global Advisors",
+      "url": "https://www.ssga.com/at/en_gb/institutional/insights/lower-ter-ucits-etfs",
+      "quote": "IE00B44Z5B48 | State Street® SPDR® MSCI All Country World UCITS ETF (Acc) | ACWD LN | 0.40% | 0.12%",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "W1:F4",
+      "claim": "FWRA TER still 0.15% (AUM EUR 4.38bn as of 11 Nov); no fee notice.",
+      "date": "2026-11-11",
+      "source": "Trackinsight",
+      "url": "https://www.trackinsight.com/en/fund/FWRA",
+      "quote": "FWRA carries a total expense ratio (TER) of 0.15%.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "W1:F5",
+      "claim": "Vanguard FTSE Global All-Cap UCITS (VALL) launched at 0.07% OCF; different (all-cap) index.",
+      "date": "2026-08-25",
+      "source": "interactive investor",
+      "url": "https://www.ii.co.uk/analysis-commentary/vanguard-intensifies-price-war-global-etf-launch-ii540079",
+      "quote": "an ongoing charge of just 0.07%",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "S:F1",
+      "claim": "Trackinsight SPXS page (AUM as of 20 Nov 2026) shows TER 0.05%; no TER/structure change in window.",
+      "date": "2026-11-20",
+      "source": "Trackinsight",
+      "url": "https://www.trackinsight.com/en/fund/XDUB:SPXS",
+      "quote": "SPXS carries a total expense ratio (TER) of 0.05%.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "S:F2",
+      "claim": "Trackinsight shows no SPXS news items.",
+      "date": "2026-11-20",
+      "source": "Trackinsight",
+      "url": "https://www.trackinsight.com/en/fund/XDUB:SPXS",
+      "quote": "No content available for this fund.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "S:F3",
+      "claim": "Background: IRS Notice 2026-61 (21 Sep) extended 871(m) phase-in; delta-one framework unchanged.",
+      "date": "2026-09-23",
+      "source": "Mayer Brown",
+      "url": "https://www.mayerbrown.com/en/insights/publications/2026/09/section-871m-phase-in-extended-two-more-years",
+      "quote": "the Regulations continue to apply to any potential Section 871(m) transaction that is a delta-one transaction",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "S:F4",
+      "claim": "Background: Amundi Core S&P 500 (SNP5/SNP6) listed on LSE 29 Oct, physical, 0.03% TER.",
+      "date": "2026-10-29",
+      "source": "ETF World UK",
+      "url": "https://etfworld.co.uk/amundi-etf-london-stock-exchange-19-trading-lines-october-2026/",
+      "quote": "physical replication",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "S:F5",
+      "claim": "Background: Invesco markets swap ETFs on US/UK tax treatment (info as at 28 Feb 2026).",
+      "date": "2026-02-28",
+      "source": "Invesco",
+      "url": "https://www.invesco.com/be/en/capabilities/etfs/equity-etfs/etf-synthetic-replication-benefits.html",
+      "quote": "They also benefit from favourable tax treatment in the US and UK",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "N:F1",
+      "claim": "XNAS (IE00BMFKG444) TER 0.20%, physical full replication, ~EUR 2.76bn.",
+      "date": "2026-09-29",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en-de/etf-profile.html?isin=IE00BMFKG444",
+      "quote": "Physical (Full replication)",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "N:F2",
+      "claim": "CNDX (IE00B53SZB19) TER 0.30%, full replication, ~EUR 23.6bn.",
+      "date": "2026-11-23",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00B53SZB19",
+      "quote": "The ETF's TER (total expense ratio) amounts to 0.30% p.a.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "N:F3",
+      "claim": "Undated table: Amundi Core and UBS Nasdaq-100 UCITS at 0.13% vs XNAS 0.20% (7bp gap, below 10bp trigger). Conflicts with R3:F3 (Amundi Core Nasdaq-100 Swap at 0.22%).",
+      "date": "2026-11-23",
+      "source": "bull-run.org",
+      "url": "https://bull-run.org/etfs/index/NASDAQ100",
+      "quote": "| Ireland | 0.13% | Accumulating | SW, XETRA |",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "N:F4",
+      "claim": "US Nasdaq-100 fee war (QNDX, IQQ at 0.10% vs QQQM 0.15%); snippet only, page 403.",
+      "date": "2026-11-02",
+      "source": "ETF Trends",
+      "url": "https://www.etftrends.com/equity-etf-content-hub/nasdaq-100-etf-fee-war-room-4/",
+      "quote": "The Nasdaq-100 ETF Fee War: Why There's Room for 4",
+      "tier": "T3",
+      "kind": "opinion",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "T:F1",
+      "claim": "Irish Finance (No. 2) Bill 2026 cuts exit tax 38% to 35% from 1 Jan 2027; Irish residents only.",
+      "date": "2026-10-19",
+      "source": "Grant Thornton Ireland",
+      "url": "https://www.grantthornton.ie/insights/factsheets/finance-no-2-bill-2026-financial-services/",
+      "quote": "specified chargeable events, payments and disposals from 1 January 2027",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "T:F2",
+      "claim": "Bill keeps eight-year deemed disposal; adds self-assessment for Irish residents.",
+      "date": "2026-10-19",
+      "source": "Grant Thornton Ireland",
+      "url": "https://www.grantthornton.ie/insights/factsheets/finance-no-2-bill-2026-financial-services/",
+      "quote": "does not abolish the eight-year deemed disposal regime generally",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "T:F3",
+      "claim": "KPMG: new self-assessment rules for Irish investors in Irish ETFs; nothing on non-residents.",
+      "date": "2026-10-20",
+      "source": "KPMG Ireland",
+      "url": "https://kpmg.com/ie/en/insights/tax/finance-bill-2026/investment-funds-life-assurance.html",
+      "quote": "introducing new self-assessment rules for Irish investors in Irish exchange-traded funds",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "T:F4",
+      "claim": "Deemed-disposal reform deferred again ahead of Budget 2027; domestic only.",
+      "date": "2026-09-06",
+      "source": "The Irish Times",
+      "url": "https://www.irishtimes.com/your-money/2026/09/06/irelands-etf-investors-face-another-wait-for-deemed-disposal-reform/",
+      "quote": "reform of the existing regime has been put off again",
+      "tier": "T2",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "T:F5",
+      "claim": "US NRA estate-tax exemption remains US$60,000, not indexed.",
+      "date": "2026-04-08",
+      "source": "ustaxfs.com",
+      "url": "https://www.ustaxfs.com/insights/us-estate-tax-for-non-residents-2026/",
+      "quote": "The exemption threshold remains at USD 60,000 and is not indexed for inflation",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "T:F6",
+      "claim": "Section 899 dropped from OBBBA after G7 side-by-side deal; revival threatened.",
+      "date": "2025-09-16",
+      "source": "BDO USA",
+      "url": "https://www.bdo.com/insights/tax/lawmakers-threaten-to-resurrect-revenge-tax-over-pillar-two-negotiations",
+      "quote": "we will absolutely pass that bill",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "T:F7",
+      "claim": "BDO: revival threats largely posturing.",
+      "date": "2025-09-16",
+      "source": "BDO USA",
+      "url": "https://www.bdo.com/insights/tax/lawmakers-threaten-to-resurrect-revenge-tax-over-pillar-two-negotiations",
+      "quote": "may largely be posturing at this point",
+      "tier": "T3",
+      "kind": "opinion",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "X:F1",
+      "claim": "IB1T TER 0.15% during waiver; 0.25% from 1 Jan 2027.",
+      "date": "2026-11-20",
+      "source": "iShares IB1T product page",
+      "url": "https://www.ishares.com/uk/professionals/products/337088",
+      "quote": "From and including 1 January 2027, the TER will be 0.25% per annum.",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": true
+    },
+    {
+      "id": "X:F2",
+      "claim": "IB1T partial TER waiver runs to 31 Dec 2026.",
+      "date": "2026-11-20",
+      "source": "iShares IB1T product page",
+      "url": "https://www.ishares.com/uk/professionals/products/337088",
+      "quote": "A portion of the TER will be waived for the period up to and including 31 December 2026.",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": true
+    },
+    {
+      "id": "X:F3",
+      "claim": "BTCW TER 0.15% per justETF; conflicts with 0.35% press figure; KID unconfirmed.",
+      "date": "2026-11-23",
+      "source": "justETF",
+      "url": "https://www.justetf.com/uk/etf-profile.html?isin=GB00BJYDH287",
+      "quote": "The total expense ratio (TER) of WisdomTree Physical Bitcoin amounts to 0.15% p.a..",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "X:F4",
+      "claim": "Global X QYLD/QYLU TER 0.45%, swap fee -0.02% (as of 20 Nov 2026).",
+      "date": "2026-11-20",
+      "source": "Global X ETFs Europe",
+      "url": "https://globalxetfs.eu/en/funds/qyld",
+      "quote": "Total Expense Ratio 0.45%",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "X:F5",
+      "claim": "QYLD structure unchanged; monthly distributions on distributing class only.",
+      "date": "2026-11-20",
+      "source": "Global X ETFs Europe",
+      "url": "https://globalxetfs.eu/en/funds/qyld",
+      "quote": "seeks to make distributions on a monthly basis (Distributing Share Class only)",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "X:F6",
+      "claim": "QYLD 20 Nov roll: new call strike 25850 vs 25832.90 reference (near the money).",
+      "date": "2026-11-20",
+      "source": "Global X ETFs Europe",
+      "url": "https://globalxetfs.eu/en/funds/qyld",
+      "quote": "New Option Strike Price 25850.00",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "X:F7",
+      "claim": "LSE Main Market hours unchanged 08:00-16:30; LSE 24 ETPs from H1 2027.",
+      "date": "2026-07-21",
+      "source": "LSEG",
+      "url": "https://www.lseg.com/en/media-centre/press-releases/2026/london-stock-exchange-to-launch-lse-24",
+      "quote": "Trading will continue on the London Stock Exchange's Main Market between 08:00 and 16:30.",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "X:F8",
+      "claim": "LSE 24 hours 17:00-07:50 with pause 18:30-19:00.",
+      "date": "2026-07-21",
+      "source": "LSEG",
+      "url": "https://www.lseg.com/en/media-centre/press-releases/2026/london-stock-exchange-to-launch-lse-24",
+      "quote": "London Stock Exchange 24 will operate from 17:00 to 07:50 with a 30-minute pause between 18:30 and 19:00.",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "S2:F1",
+      "claim": "justETF: SPXS (IE00B3YCGJ38) TER 0.05%.",
+      "date": "2026-09-30",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00B3YCGJ38",
+      "quote": "The ETF's TER (total expense ratio) amounts to 0.05% p.a.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "S2:F2",
+      "claim": "justETF: SPXS unfunded swap; counterparties BofA, GS, JPM, MS, Nomura.",
+      "date": "2026-09-30",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00B3YCGJ38",
+      "quote": "BofA Merrill Lynch|Goldman Sachs|J.P. Morgan|Morgan Stanley|Nomura",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "S2:F3",
+      "claim": "justETF: XNAS TER 0.20%.",
+      "date": "2026-09-29",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00BMFKG444",
+      "quote": "The ETF's TER (total expense ratio) amounts to 0.20% p.a.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "S2:F4",
+      "claim": "justETF: XNAS full physical replication, securities lending yes.",
+      "date": "2026-09-29",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00BMFKG444",
+      "quote": "by full replication (buying all the index constituents)",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "R2:F1",
+      "claim": "Treasury press releases 14-20 Nov 2026: nothing on Section 899, Pillar Two, foreign withholding or estate tax (null check).",
+      "date": "2026-11-20",
+      "source": "US Treasury",
+      "url": "https://home.treasury.gov/news/press-releases",
+      "quote": "Treasury, IRS Issue Final Rules to Help Hardworking Americans Build a Financially Secure Retirement",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "R2:F2",
+      "claim": "IRS news releases 16-18 Nov 2026 (IR-2026-140..143): none on 871(m), NRA withholding or estate tax (null check).",
+      "date": "2026-11-18",
+      "source": "IRS Newsroom",
+      "url": "https://www.irs.gov/newsroom/news-releases-for-current-month",
+      "quote": "IRS Advisory Council issues annual public report",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": true
+    },
+    {
+      "id": "R2:F3",
+      "claim": "Ways and Means news: no items dated 14-20 Nov; nothing on Section 899/OECD/NRA estate tax (null check).",
+      "date": "2026-11-23",
+      "source": "House Ways and Means",
+      "url": "https://waysandmeans.house.gov/news/",
+      "quote": "Legislation strengthening and making more independent the Taxpayer Advocate signed into law",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": true,
+      "verified": false
+    },
+    {
+      "id": "R2:F4",
+      "claim": "Background: G7 June 2025 statement tied side-by-side Pillar Two to removal of Section 899.",
+      "date": "2025-06-28",
+      "source": "US Treasury",
+      "url": "https://home.treasury.gov/news/press-releases/sb0181",
+      "quote": "the removal of section 899 is crucial to this overall understanding",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "R2:F5",
+      "claim": "IRS: Form 706-NA threshold US$60,000 of US-situs assets (page reviewed 27 Jun 2026).",
+      "date": "2026-06-27",
+      "source": "IRS",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/some-nonresidents-with-us-assets-must-file-estate-tax-returns",
+      "quote": "if the fair market value at death of the decedent's U.S.-situated assets exceeds $60,000",
+      "tier": "T1",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "R3:F1",
+      "claim": "justETF (accessed 23 Nov): XNAS TER 0.20%, no fee change.",
+      "date": "2026-11-23",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00BMFKG444",
+      "quote": "The ETF's TER (total expense ratio) amounts to 0.20% p.a.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "R3:F2",
+      "claim": "justETF (accessed 23 Nov): VWRA TER 0.14%; a >=10bp cheaper same-index line would need <=0.04%.",
+      "date": "2026-11-23",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00BK5BQT80",
+      "quote": "The ETF's TER (total expense ratio) amounts to 0.14% p.a.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "R3:F3",
+      "claim": "justETF: Amundi Core Nasdaq-100 Swap (LU1829221024) TER 0.22%, not cheaper than XNAS.",
+      "date": "2026-11-23",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=LU1829221024",
+      "quote": "The ETF's TER (total expense ratio) amounts to 0.22% p.a.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    },
+    {
+      "id": "R3:F4",
+      "claim": "justETF: Amundi Nasdaq-100 Swap EUR Acc (LU1681038243) TER 0.23%.",
+      "date": "2026-11-23",
+      "source": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=LU1681038243",
+      "quote": "Total expense ratio 0.23% p.a.",
+      "tier": "T3",
+      "kind": "fact",
+      "in_window": false,
+      "verified": false
+    }
+  ],
+  "open_threads": [
+    "Issuer-level notices 14-20 Nov for XNAS (DWS) and SPXS (Invesco Markets plc): the DWS page was empty and the Invesco PDF returned 404, so these are unchecked.",
+    "Section 899 / Pillar Two side-by-side and NRA estate-tax legislation as of mid-Nov 2026: the Treasury, IRS and Ways and Means null checks are clean, but there is no news-search confirmation.",
+    "Issuer-confirmed TERs for the Amundi and UBS Nasdaq-100 UCITS and the FTSE All-World twins: the conflicting 0.13% and 0.22% figures need resolving from the KIDs.",
+    "SPXS swap fee conflict (0.04% vs 0.07%) across Invesco documents.",
+    "Confirm the BTCW TER from the KID (0.15% vs 0.35%); IB1T and QYLD KID ongoing costs for TER seeding.",
+    "Invesco EQQU UCITS fee response to the US Nasdaq-100 fee war."
+  ],
+  "verifier_changes": [
+    "No score was +/-2 and no severity was 2 or more, so the strict +/-2 and severity-2 checks did not apply.",
+    "Spot-checked 4 cited URLs, and all 4 confirmed the page, quote and date: Trackinsight SPXS (TER 0.05%, AUM as of 20 Nov, 'No content available for this fund'); iShares IB1T (waiver to 31 Dec 2026, 0.25% from 1 Jan 2027); Global X QYLD (TER 0.45%, swap fee -0.02%, strike 25850 as of 20 Nov); IRS news releases (IR-2026-140..143, 16-18 Nov, none on withholding or estate tax).",
+    "Confidence lowered from high to low on global_equity, us_large_broad and tech_ai_semis, because the pillar stopped unsaturated (cap |score|<=1, confidence low). Scores stay 0.",
+    "Added R2/R3 facts (Treasury, IRS and Ways and Means null checks; justETF re-checks) to the group fact_ids. Flagged the conflict between N:F3 (0.13% twins) and R3:F3 (Amundi Core Nasdaq-100 Swap 0.22%) in the XNAS rationale.",
+    "Severity targets normalised to line tickers or sleeve names (world/sp500/ndx100). IB1T severity 1 kept: it is below 2 and backed by a verified T1 quote.",
+    "Fact ids namespaced by explorer block (W1, S, N, T, X, S2, R2, R3) to remove duplicate F-numbers. Facts with no visible in-window date keep in_window=false."
+  ]
+}

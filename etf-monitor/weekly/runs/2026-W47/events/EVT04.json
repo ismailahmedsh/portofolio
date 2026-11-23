@@ -1,0 +1,70 @@
+{
+  "pillar_id": "EVT04",
+  "week": "2026-W47",
+  "summary": "Index mechanics routine in 14-20 Nov: MSCI Nov review and FTSE Dec quarterly review (both announced just before window) carry no reclassification; S&P DJI made only SmallCap/MidCap swaps; NDX methodology unchanged since May. In-window: Nvidia Q3 FY27 beat amid CEO exit (Huang reinstated 23 Nov, post-window) and Anthropic's $81.3B IPO (ANT) heading for NDX fast entry ~21 Dec. All severities <=1; no issuer, tax or venue event for VWRA.L, SPXS.L or XNAS.L.",
+  "events": [
+    {
+      "target": "VWRA.L / FWRA.L (FTSE All-World)",
+      "severity": 0,
+      "issue": "December 2026 GEIS quarterly review (effective 21 Dec) routine: no reclassification or methodology change; Indonesian HSC deletions immaterial at world level. Investor Choice voting programme and 10 Dec UCITS VI EGM are information only. HMRC reporting status intact. No fee, benchmark or closure event.",
+      "url": "https://research.ftserussell.com/products/index-notices/home/getnotice/?id=2622506",
+      "date": "2026-11-13"
+    },
+    {
+      "target": "ACWD.L / ACWI (MSCI ACWI)",
+      "severity": 0,
+      "issue": "November 2026 review (13 additions, 100 deletions) effective 30 Nov. Routine, low-turnover.",
+      "url": "https://www.msci.com/eqb/pressreleases/archive/MSCI_Nov26_QIRPR.pdf",
+      "date": "2026-11-11"
+    },
+    {
+      "target": "Indonesia weight inside world and EM indexes",
+      "severity": 1,
+      "issue": "MSCI consulting on Standalone status (decision by June 2027), freeze continues; FTSE deletion-only treatment, no watch list. Slow weight loss; immaterial for world sleeve.",
+      "url": "https://www.msci.com/downloads/documents/press-releases/media-room/Indonesia_PR_Oct_26.pdf",
+      "date": "2026-10-15"
+    },
+    {
+      "target": "sp500",
+      "severity": 0,
+      "issue": "SPXS.L and S&P 500 UCITS substitutes: no Invesco notice and no S&P 500 constituent or methodology change in window; only SmallCap/MidCap swaps. IPO seasoning stays 12 months, so no Anthropic S&P 500 fast entry.",
+      "url": "https://press.spglobal.com/2026-11-16-SiteOne-Landscape-Supply-Set-to-Join-S-P-SmallCap-600",
+      "date": "2026-11-16"
+    },
+    {
+      "target": "S&P 500 sector indices / GICS 2027 structure",
+      "severity": 1,
+      "issue": "Watch. GICS consultation results (AI semis, HPCaaS, foundation-model developers) due November, not yet found; S&P NA sector indices update of 17 Nov unread (403).",
+      "url": "https://press.spglobal.com/2026-07-17-S-P-DOW-JONES-INDICES-AND-MSCI-ANNOUNCE-CONSULTATION-ON-POTENTIAL-CHANGES-TO-THE-GLOBAL-INDUSTRY-CLASSIFICATION-STANDARD-GICS-R",
+      "date": "2026-07-17"
+    },
+    {
+      "target": "ndx100",
+      "severity": 1,
+      "issue": "XNAS.L/CNDX.L/EQQU.L/QQQM/QQQ and NDX premium-income: watch, not a rule change. NDX methodology unchanged since 1 May 2026. Anthropic (ANT, listed 19 Nov) faces fast-entry ranking test ~30 Nov; expected announcement 11 Dec, effective 21 Dec, float-capped weight ~1%, count temporarily >100. Nasdaq has not announced. Recompute FIT07, FIT08, CON02 once ANT and December 4.5%/48% capping result are confirmed.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/does-anthropic-join-nasdaq-100-000000439.html",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "NVDA (top-3 weight in QQQ, SPY and ACWI)",
+      "severity": 1,
+      "issue": "CEO resigned 12 Nov (8-K), CFO Kress interim CEO in window; Q3 release flags an ongoing independent board-committee investigation. Fundamentals intact (revenue $115.8B, Q4 guide $130B, verified). Post-window 23 Nov: board reinstated Huang as CEO (verified T1). Watch.",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+      "date": "2026-11-17"
+    },
+    {
+      "target": "XNAS.L",
+      "severity": 0,
+      "issue": "No issuer, benchmark, fee or venue event in window; HMRC reporting status intact. Aggregators disagree on TER (0.20% on justETF vs 0.10% elsewhere); verify against DWS KID.",
+      "url": "https://www.justetf.com/uk/etf-profile.html?isin=IE00BMFKG444",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "VT / VOO / QQQ (US-domiciled substitutes)",
+      "severity": 1,
+      "issue": "Standing watch. US-situs estate tax above US$60k for nonresident non-citizen with no estate treaty; 30% US dividend withholding. Rule unchanged, so these lines stay capped and disfavoured vs Irish UCITS.",
+      "url": "https://irs.gov/individuals/international-taxpayers/some-nonresidents-with-u-s-assets-must-file-estate-tax-returns",
+      "date": "2026-06-27"
+    }
+  ]
+}

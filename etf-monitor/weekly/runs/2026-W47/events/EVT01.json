@@ -1,0 +1,70 @@
+{
+  "pillar_id": "EVT01",
+  "week": "2026-W47",
+  "summary": "No fund corporate action dated 14-20 Nov 2026 was found on any shortlisted line (VWRA.L, SPXS.L, XNAS.L) or same-index substitute, so every severity is 0 and all three group scores are 0 with low confidence. The pillar did not saturate. The XNAS.L issuer RNS and FWRA.L remain unverified. The iShares plc S&P 500 Dist sibling rename (about 27 Nov) does not affect CSPX.",
+  "events": [
+    {
+      "target": "VWRA.L",
+      "severity": 0,
+      "issue": "Only NAV notices on RNS 14-20 Nov (confirmed by verifier). The Investor Choice notice is proxy-only and pre-window.",
+      "url": "https://www.investegate.co.uk/company/VWRA",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "SPXS.L",
+      "severity": 0,
+      "issue": "Invesco Markets plc RNS 14-20 Nov shows only NAV items (confirmed by verifier). No swap, fee or structure notice.",
+      "url": "https://www.investegate.co.uk/company/SPXP",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "XNAS.L",
+      "severity": 0,
+      "issue": "No DWS notice found. The Xtrackers (IE) plc Investegate table is empty, so the line is unverified (open thread).",
+      "url": "https://www.investegate.co.uk/company/XNAQ",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "VT",
+      "severity": 0,
+      "issue": "No EDGAR filing since 40-17G on 9 Oct 2026 (confirmed by verifier).",
+      "url": "https://data.sec.gov/submissions/CIK0000857489.json",
+      "date": "2026-10-09"
+    },
+    {
+      "target": "ACWI",
+      "severity": 0,
+      "issue": "In-window iShares Trust 497s concern other funds (confirmed by verifier).",
+      "url": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526470386/d173310d497.htm",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "CSPX.L",
+      "severity": 0,
+      "issue": "The iShares plc Dist sibling IE0031442068 is renamed 'iShares Core S&P 500 UCITS ETF B' from about 27 Nov. CSPX (IE00B5BMR087) is unaffected; check ISIN mapping.",
+      "url": "https://www.ishares.com/ch/privatkunden/de/literature/shareholder-letters/ishares-plc-shareholder-letters-ishsnp-agg-en-13-nov-26.pdf",
+      "date": "2026-11-13"
+    },
+    {
+      "target": "SPYM",
+      "severity": 0,
+      "issue": "The 497 filed 18 Nov keeps the SPYM name and S&P 500 index (confirmed by verifier).",
+      "url": "https://www.sec.gov/Archives/edgar/data/1064642/000119312526466495/d162980d497.htm",
+      "date": "2026-11-18"
+    },
+    {
+      "target": "CNDX.L",
+      "severity": 0,
+      "issue": "RNS 16-20 Nov shows only NAV items (confirmed by verifier).",
+      "url": "https://www.investegate.co.uk/company/CNDX",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "QQQ / QQQM",
+      "severity": 0,
+      "issue": "QQQ has no November filings. QQQM's trust filed only a routine N-CEN on 16 Nov.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1378872/000137887226002004/0001378872-26-002004-index.htm",
+      "date": "2026-11-16"
+    }
+  ]
+}

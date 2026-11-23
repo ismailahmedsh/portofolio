@@ -90,7 +90,7 @@ Same months for the fund and its underlying index. After-tax return deducts 30% 
 | Pillar | Reading | Flag |
 |---|---|---|
 | MAC01 Recession indicators | 10y-3m +0.60 pts; inverted 0 of last 6 months; Sahm 0.00 | ON |
-| MAC02 Credit stress | HY spread 3.52% (3m +0.77); Baa-10y 1.56 | off |
+| MAC02 Credit stress | HY spread 3.76% (3m +1.06); Baa-10y 1.56 | ON |
 | MAC03 Volatility (execution only) | VIX 29.2, VIX/VIX3M 1.11 | ON |
 | MAC04 Real rates and inflation | 10y TIPS 2.88% (3m +0.53); core CPI 3m ann. 3.7% vs 12m 2.9% | ON |
 | MAC05 Dollar and AED peg | broad dollar 3m +3.2%; AED/USD 3.6728 (peg 3.6725) | off |
@@ -98,4 +98,51 @@ Same months for the fund and its underlying index. After-tax return deducts 30% 
 | MAC07 Oil and growth shock | oil 92.9 USD, 3m -2.5% | off |
 | MAC08 Financial conditions | NFCI -0.48 | off |
 | MAC09 Market drawdown, trend and breadth | world -8.3% from high (-8.3% from 52-week high); below 10-month average; 12-1 return +12.0%; equal-weight vs S&P 500 6m +6.5% | off |
-| MAC10 Regime count | 3 of 9 flags on (policy-uncertainty flag off) | off |
+| MAC10 Regime count | 4 of 9 flags on (policy-uncertainty flag off) | ON |
+
+## News view N (display only; 50 neutral, 25-75)
+
+| Fund group | N |
+|---|---|
+| consumer | 56.2 |
+| china | 43.8 |
+| govt_bonds | 45.8 |
+| em_broad | 47.9 |
+| global_equity | 50.0 |
+| us_large_broad | 50.0 |
+| tech_ai_semis | 50.0 |
+| developed_ex_us | 50.0 |
+| gold_precious | 50.0 |
+| credit_bonds | 50.0 |
+| utilities_realestate | 50.0 |
+| us_small_mid_value | 50.0 |
+| us_factor_dividend | 50.0 |
+| financials | 50.0 |
+| materials_mining_metals | 50.0 |
+| industrials_defense_infra | 50.0 |
+| healthcare_biotech | 50.0 |
+| europe | 50.0 |
+| japan | 50.0 |
+| asia_dev_other | 50.0 |
+| em_asia_other | 50.0 |
+| india | 50.0 |
+| latam | 50.0 |
+| mena_gulf | 50.0 |
+| energy_oil | 50.0 |
+| commodities_broad | 50.0 |
+| clean_energy_thematic | 50.0 |
+| global_premium_income | 50.0 |
+| sp500_premium_income | 50.0 |
+| ndx100_premium_income | 50.0 |
+
+Your sleeves: world 50.0, sp500 50.0, ndx100 50.0. News moves no money until REC08 passes (104 weeks of log).
+
+## Structural events on lines
+
+- VWRA.L: EVT01 severity 0: Only NAV notices on RNS 14-20 Nov (confirmed by verifier). The Investor Choice notice is proxy-only and pre-window.; EVT02 severity 0: Favourable background: OCF fell 0.19% to 0.14% on 28 Jul 2026. No structural notice in the window.; EVT05 severity 0: Vanguard Funds plc Investor Choice proxy-voting programme and 10 Dec AGM (KPMG re-appointment, UCITS VI liquidity-tool Articles). Governance only; no depositary, administrator, index or fee change.; EVT06 severity 0: Investor Choice proxy-voting programme for professional intermediaries only (sign-up 16 Nov); fee, index, domicile unchanged.; EVT07 severity 0: OFAC 18-20 Nov and UK 17/20 Nov actions name no listed constituent; normal NAV 20 Nov, no issuer notice.; EVT08 severity 0: IBKR LSE pricing, FX minimum and fractional-share terms were unverified for the window (403). Constants are kept.; EVT09 severity 1: Watch the order timing. Send the AED by about Nov 27-30 so the UAE National Day holiday (Dec 2-3) does not delay it. Prefer the LSE session on Dec 1 or Dec 3 after about 15:00 London, and avoid 13:30 London on Dec 4 (payrolls). If the order slips one week it lands in the FOMC Dec 9 / CPI Dec 10 week. MAC03 was ON at the close: VIX 35.89, VIX/VIX3M 1.16.
+- FWRA.L: EVT02 severity 0: TER still 0.15% (T3, 11 Nov); no notice.
+- CSPX.L: EVT01 severity 0: The iShares plc Dist sibling IE0031442068 is renamed 'iShares Core S&P 500 UCITS ETF B' from about 27 Nov. CSPX (IE00B5BMR087) is unaffected; check ISIN mapping.
+- SPXS.L: EVT01 severity 0: Invesco Markets plc RNS 14-20 Nov shows only NAV items (confirmed by verifier). No swap, fee or structure notice.; EVT02 severity 0: No change in the window (verified): TER 0.05% and no fund news as of 20 Nov. The swap-fee figure conflicts across Invesco documents (0.04% vs 0.07%), which is unresolved.; EVT06 severity 0: No in-window notice found; swap fee 0.07% p.a. confirmed on 31 Oct factsheet (pre-window cost data, not a regime change).; EVT09 severity 0: Info only: TER 0.05%, no changes listed. In-window RNS not checked.
+- CNDX.L: EVT01 severity 0: RNS 16-20 Nov shows only NAV items (confirmed by verifier).
+- XNAS.L: EVT01 severity 0: No DWS notice found. The Xtrackers (IE) plc Investegate table is empty, so the line is unverified (open thread).; EVT02 severity 0: TER 0.20%, physical, unchanged. Same-index twin TERs conflict (0.13% undated T3 vs 0.22% justETF); either way the gap is below the 10bp trigger. Confirm against issuer KIDs.; EVT04 severity 0: No issuer, benchmark, fee or venue event in window; HMRC reporting status intact. Aggregators disagree on TER (0.20% on justETF vs 0.10% elsewhere); verify against DWS KID.; EVT05 severity 0: Xtrackers (IE) plc: only Borsa Italiana delistings of low-turnover non-S&P 500 / non-Nasdaq classes, none terminated. DWS rebrand keeps Xtrackers.; EVT06 severity 0: No in-window Xtrackers notice found, but notice pages not fully checked.; EVT09 severity 0: Info only: TER 0.20%, no changes listed. NDX reconstitution date unconfirmed.
+- ACWD.L: EVT02 severity 0: TER 0.12% vs VWRA 0.14%, but tracks MSCI ACWI, and the 2bp gap is below the 10bp trigger. Remains the second fallback.

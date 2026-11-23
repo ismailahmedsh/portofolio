@@ -1,0 +1,49 @@
+{
+  "pillar_id": "EVT07",
+  "week": "2026-W47",
+  "summary": "No sanctions, capital-control or market-access action in 14-20 Nov 2026 restricts any held or shortlisted line; OFAC/UK listings touch no index constituent (look-through about 0%). The BIS remote-access chip IFR (effective 19 Nov) and MOFCOM's 17 Nov countermeasure warning are semis watch items; the BIS Affiliates stay and China's rare-earth suspension both end 10 Jan 2027. IBKR/CBUAE access gate remains unverified. All group scores 0, low confidence.",
+  "events": [
+    {
+      "target": "ndx100",
+      "severity": 1,
+      "issue": "BIS remote-access/advanced-chip IFR effective 19 Nov 2026: licenses for Indonesia, Malaysia, Singapore, Thailand, Brazil; D:5/Macau compute controls. Revenue headwind for NVDA/AMD/AVGO, not a holdings restriction.",
+      "url": "https://www.federalregister.gov/api/v1/documents/2026-23529.json",
+      "date": "2026-11-19"
+    },
+    {
+      "target": "ndx100",
+      "severity": 1,
+      "issue": "MOFCOM warns of countermeasures if the US persists with the remote-access chip rule.",
+      "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_c9c0beb01b8640d3ba9160b73d315716.html",
+      "date": "2026-11-17"
+    },
+    {
+      "target": "ndx100",
+      "severity": 1,
+      "issue": "Background: BIS Affiliates Rule stay and China's rare-earth export-control suspension both end 10 Jan 2027.",
+      "url": "https://www.federalregister.gov/api/v1/documents/2026-22793.json",
+      "date": "2026-11-09"
+    },
+    {
+      "target": "sp500",
+      "severity": 0,
+      "issue": "BIS chip rule is a partial-weight sector headwind; no S&P 500 issuer sanctioned in window.",
+      "url": "https://www.federalregister.gov/api/v1/documents/2026-23529.json",
+      "date": "2026-11-19"
+    },
+    {
+      "target": "VWRA.L",
+      "severity": 0,
+      "issue": "OFAC 18-20 Nov and UK 17/20 Nov actions name no listed constituent; normal NAV 20 Nov, no issuer notice.",
+      "url": "https://ofac.treasury.gov/recent-actions/20261119",
+      "date": "2026-11-19"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "IBKR access for UAE-resident Canadian and CBUAE measures unverified (403); AED peg intact per MAC05. Clear before first deposit.",
+      "url": "https://www.interactivebrokers.com/en/general/education/news.php",
+      "date": "2026-11-23"
+    }
+  ]
+}

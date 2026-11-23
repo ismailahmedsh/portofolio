@@ -1,0 +1,12 @@
+{
+  "pillar_id": "EVT08",
+  "week": "2026-W47",
+  "summary": "Broker, venue, product access and funding: no verified in-window event (14-20 Nov 2026). The pillar is unsaturated and every group scores 0 with low confidence. One standing severity-1 watch remains: NRA estate-tax exposure on directly held US-situs lines (US$60k cap). IBKR pricing, KID access and the CBUAE peg are unverified because of 403s. Keep the allocator constants (LSE minimum US$1.70, FX minimum US$2). NYSE is closed 26 Nov with an early close on 27 Nov, so USD wires should land by 25 Nov.",
+  "events": [
+    {"target": "VOO/IVV/SPYM/QQQM/VT (US-situs direct holdings)", "severity": 1, "issue": "Standing watch: the NRA estate filing threshold of US$60k is unchanged. Keep US-situs holdings under the cap.", "url": "https://www.irs.gov/individuals/international-taxpayers/some-nonresidents-with-us-assets-must-file-estate-tax-returns", "date": "2026-06-27"},
+    {"target": "VWRA.L", "severity": 0, "issue": "IBKR LSE pricing, FX minimum and fractional-share terms were unverified for the window (403). Constants are kept.", "url": "https://www.interactivebrokers.com/en/pricing/commissions-stocks-europe.php", "date": "2026-11-23"},
+    {"target": "sp500", "severity": 0, "issue": "SPY5 TER is 0.03% as of 31 Oct 2026, with no November notice. Info only.", "url": "https://www.ssga.com/uk/en_gb/institutional/etfs/state-street-spdr-sp-500-ucits-etf-acc-spy5-gy", "date": "2026-10-31"},
+    {"target": "ndx100", "severity": 0, "issue": "No Nasdaq-100 UCITS issuer or IBKR source was gathered. This is a gap, not a confirmed null.", "url": "https://www.interactivebrokers.com/en/pricing/commissions-stocks.php", "date": "2026-11-23"},
+    {"target": "world", "severity": 0, "issue": "Funding timing: NYSE is closed 26 Nov with an early close at 1:00 p.m. ET on 27 Nov, so USD wires should land by 25 Nov. The AED peg flag is off; the CBUAE stance was unverified.", "url": "https://www.nyse.com/markets/hours-calendars", "date": "2026-11-27"}
+  ]
+}

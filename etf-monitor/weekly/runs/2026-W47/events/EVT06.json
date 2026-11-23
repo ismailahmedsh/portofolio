@@ -1,0 +1,91 @@
+{
+ "pillar_id": "EVT06",
+ "week": "2026-W47",
+ "summary": "No change to the tax or legal regime for a UAE-resident holder of US-listed or Irish UCITS ETFs between 14 and 20 Nov 2026. Four watch items at severity 1: Section 899 revival, UK CCI regime, UAE CARF implementation, Canadian non-resident trust rule. All group scores 0, low confidence.",
+ "events": [
+  {
+   "target": "sp500",
+   "severity": 0,
+   "issue": "US$60,000 NRA estate threshold for US-situs lines (VOO, IVV, SPY, QQQ, VT, ACWI) unchanged; no FR rule on IRC 2101-2106 in window.",
+   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=internal-revenue-service&conditions[publication_date][gte]=2026-11-14&conditions[publication_date][lte]=2026-11-20",
+   "date": "2026-11-20"
+  },
+  {
+   "target": "sp500",
+   "severity": 0,
+   "issue": "No IRS/Treasury rule on 30% NRA withholding, 871(k)/(m), 1446(f) or W-8BEN in window; only part-1 rule is a 1.36B-2 correction.",
+   "url": "https://www.federalregister.gov/documents/full_text/html/2026/11/18/2026-23514.html",
+   "date": "2026-11-18"
+  },
+  {
+   "target": "sp500",
+   "severity": 1,
+   "issue": "Watch: Section 899-style surcharge dormant since OECD side-by-side deal (Jan 2026); Treasury press index shows no in-window action; T2 coverage not checked.",
+   "url": "https://home.treasury.gov/news/press-releases",
+   "date": "2026-11-17"
+  },
+  {
+   "target": "VWRA.L",
+   "severity": 0,
+   "issue": "Investor Choice proxy-voting programme for professional intermediaries only (sign-up 16 Nov); fee, index, domicile unchanged.",
+   "url": "https://fund-docs.vanguard.com/Vanguard_Funds_plc_Investor_Choice_Notice_EN.pdf",
+   "date": "2026-11-10"
+  },
+  {
+   "target": "SPXS.L",
+   "severity": 0,
+   "issue": "No in-window notice found; swap fee 0.07% p.a. confirmed on 31 Oct factsheet (pre-window cost data, not a regime change).",
+   "url": "https://www.invesco.com/content/dam/invesco/emea/en/product-documents/etf/share-class/factsheet/IE00B3YCGJ38_factsheet_en.pdf",
+   "date": "2026-10-31"
+  },
+  {
+   "target": "XNAS.L",
+   "severity": 0,
+   "issue": "No in-window Xtrackers notice found, but notice pages not fully checked.",
+   "url": "https://www.revenue.ie/en/tax-professionals/ebrief/index.aspx",
+   "date": "2026-11-19"
+  },
+  {
+   "target": "world",
+   "severity": 0,
+   "issue": "Ireland-US treaty (15% dividend rate) and Irish fund regime unchanged; eBrief 167/26 is a generic MAP arbitration list update.",
+   "url": "https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1672026.aspx",
+   "date": "2026-11-18"
+  },
+  {
+   "target": "world",
+   "severity": 1,
+   "issue": "Watch: UK FCA CCI regime replaces PRIIPs/KID from 8 Jun 2027; nothing in window; IBKR LSE retail access depends on issuer documents.",
+   "url": "https://www.fca.org.uk/publications/policy-statements/ps25-20-supporting-informed-decision-making-final-rules-consumer-composite-investments",
+   "date": "2025-12-08"
+  },
+  {
+   "target": "world",
+   "severity": 0,
+   "issue": "No UAE personal income tax measure 14-20 Nov; 18 Nov MoF forum covered EOIR and beneficial ownership only.",
+   "url": "https://mof.gov.ae/en/news/ministry-of-finance-hosts-tax-information-exchange-forum-to-reinforce-compliance-with-international-standards-and-promote-transparency/",
+   "date": "2026-11-18"
+  },
+  {
+   "target": "world",
+   "severity": 1,
+   "issue": "Watch: UAE CARF Cabinet Decision targeted for 1 Jan 2027 (Oct circular); obligations on crypto service providers, individuals self-certify; CRS 2.0 adoption unconfirmed.",
+   "url": "https://mof.gov.ae/wp-content/uploads/2026/10/CARF-Readiness-Circular.pdf",
+   "date": "2026-10-08"
+  },
+  {
+   "target": "world",
+   "severity": 1,
+   "issue": "Canadian citizen: Budget 2026 (pre-window) broadens trust rollout denial to non-resident beneficiaries; no s.128.1/s.94.1 change in NWMM 1; s.116 cut from 2027 favourable.",
+   "url": "https://budget.canada.ca/2026/report-rapport/nwmm-amvm-1-en.html",
+   "date": "2026-11-05"
+  },
+  {
+   "target": "world",
+   "severity": 0,
+   "issue": "India FPI tax: SEBI shows no FPI tax circular in window; CBDT not checked (403). Not confirmed either way.",
+   "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0",
+   "date": "2026-11-17"
+  }
+ ]
+}

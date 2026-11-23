@@ -1,0 +1,49 @@
+{
+  "pillar_id": "EVT09",
+  "week": "2026-W47",
+  "summary": "No execution conflict in the window. The VWRA.L order (world sleeve) can be placed Dec 1 or Dec 3 in the LSE session if the AED is sent by about Nov 27-30, ahead of the UAE National Day holiday (Dec 2-3); avoid the Dec 4 payrolls print and any slip into the FOMC (Dec 9) / CPI (Dec 10) week. Cboe vol was stressed at the window close (VIX 35.89, VIX/VIX3M 1.16, confirmed T1). All severities are 1 or below.",
+  "events": [
+    {
+      "target": "VWRA.L",
+      "severity": 1,
+      "issue": "Watch the order timing. Send the AED by about Nov 27-30 so the UAE National Day holiday (Dec 2-3) does not delay it. Prefer the LSE session on Dec 1 or Dec 3 after about 15:00 London, and avoid 13:30 London on Dec 4 (payrolls). If the order slips one week it lands in the FOMC Dec 9 / CPI Dec 10 week. MAC03 was ON at the close: VIX 35.89, VIX/VIX3M 1.16.",
+      "url": "https://u.ae/en/information-and-services/public-holidays-and-religious-affairs/public-holidays",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "world",
+      "severity": 1,
+      "issue": "Cboe vol state (MAC03). The front end is inverted (VIX9D 40.72, VVIX 138). Expect wider UCITS spreads and iNAV gaps around the US open while VIX/VIX3M stays above 1.",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "ndx100",
+      "severity": 1,
+      "issue": "NVDA (top constituent): the CEO resignation was reversed on 11-23, and the SEC probe is reported second-hand only. Neither blocks buying a line.",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "SPXS.L",
+      "severity": 0,
+      "issue": "Info only: TER 0.05%, no changes listed. In-window RNS not checked.",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00B3YCGJ38",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "XNAS.L",
+      "severity": 0,
+      "issue": "Info only: TER 0.20%, no changes listed. NDX reconstitution date unconfirmed.",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00BMFKG444",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "LSE and IBKR venues not verified (LSE notices page showed only navigation; IBKR returned 403). No known outage.",
+      "url": "https://www.londonstockexchange.com/discover/news-and-insights/market-notices",
+      "date": "2026-11-23"
+    }
+  ]
+}

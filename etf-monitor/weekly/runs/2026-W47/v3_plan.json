@@ -55,9 +55,9 @@
   }
  },
  "news_by_sleeve": {
-  "world": null,
-  "sp500": null,
-  "ndx100": null
+  "world": 50.0,
+  "sp500": 50.0,
+  "ndx100": 50.0
  },
- "macro_state": "watch"
+ "macro_state": "stress"
 }

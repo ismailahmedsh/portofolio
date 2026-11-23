@@ -1,0 +1,105 @@
+{
+  "pillar_id": "EVT02",
+  "week": "2026-W47",
+  "summary": "No fee, replication, domicile or tax change dated 14-20 Nov 2026 touches VWRA, SPXS, XNAS or their same-index substitutes. All three groups score 0, with low confidence because the pillar did not saturate. The only non-zero item is an information-only watch: IB1T's TER rises from 0.15% to 0.25% on 1 Jan 2027.",
+  "events": [
+    {
+      "target": "VWRA.L",
+      "severity": 0,
+      "issue": "Favourable background: OCF fell 0.19% to 0.14% on 28 Jul 2026. No structural notice in the window.",
+      "url": "https://fund-docs.vanguard.com/Vanguard_Funds_plc_Shareholder_notice_21July2026.pdf",
+      "date": "2026-07-21"
+    },
+    {
+      "target": "ACWD.L",
+      "severity": 0,
+      "issue": "TER 0.12% vs VWRA 0.14%, but tracks MSCI ACWI, and the 2bp gap is below the 10bp trigger. Remains the second fallback.",
+      "url": "https://www.ssga.com/at/en_gb/institutional/insights/lower-ter-ucits-etfs",
+      "date": "2026-06-24"
+    },
+    {
+      "target": "FWRA.L",
+      "severity": 0,
+      "issue": "TER still 0.15% (T3, 11 Nov); no notice.",
+      "url": "https://www.trackinsight.com/en/fund/FWRA",
+      "date": "2026-11-11"
+    },
+    {
+      "target": "SPXS.L",
+      "severity": 0,
+      "issue": "No change in the window (verified): TER 0.05% and no fund news as of 20 Nov. The swap-fee figure conflicts across Invesco documents (0.04% vs 0.07%), which is unresolved.",
+      "url": "https://www.trackinsight.com/en/fund/XDUB:SPXS",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "sp500",
+      "severity": 0,
+      "issue": "S&P 500 substitutes (CSPX, VUAA, SPY5, HSPD, XSPU, SNP5): no TER or structure change in the window. The SNP5 0.03% listing (29 Oct) is background.",
+      "url": "https://etfworld.co.uk/amundi-etf-london-stock-exchange-19-trading-lines-october-2026/",
+      "date": "2026-10-29"
+    },
+    {
+      "target": "XNAS.L",
+      "severity": 0,
+      "issue": "TER 0.20%, physical, unchanged. Same-index twin TERs conflict (0.13% undated T3 vs 0.22% justETF); either way the gap is below the 10bp trigger. Confirm against issuer KIDs.",
+      "url": "https://bull-run.org/etfs/index/NASDAQ100",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "ndx100",
+      "severity": 0,
+      "issue": "CNDX.L / QQQ / QQQM: no notices in the window. The US fee war (QNDX and IQQ at 0.10%) is background.",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00B53SZB19",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "US-domiciled VT/VOO/QQQM for a UAE holder: standing drag (30% NRA withholding, US$60k estate threshold) unchanged; the domicile gate handles it.",
+      "url": "https://www.ustaxfs.com/insights/us-estate-tax-for-non-residents-2026/",
+      "date": "2026-04-08"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "Irish Finance (No. 2) Bill 2026: Irish-resident investors only; no change for non-residents.",
+      "url": "https://www.grantthornton.ie/insights/factsheets/finance-no-2-bill-2026-financial-services/",
+      "date": "2026-10-19"
+    },
+    {
+      "target": "world",
+      "severity": 0,
+      "issue": "Section 899-style retaliatory tax: dormant. In-window Treasury, IRS and Ways and Means null checks found no revival.",
+      "url": "https://www.bdo.com/insights/tax/lawmakers-threaten-to-resurrect-revenge-tax-over-pillar-two-negotiations",
+      "date": "2025-09-16"
+    },
+    {
+      "target": "IB1T.L",
+      "severity": 1,
+      "issue": "Watch only: the fee waiver ends 31 Dec 2026 and the TER rises 0.15% to 0.25% on 1 Jan 2027 (verified on the T1 issuer page). Crypto is excluded and the group is not mapped.",
+      "url": "https://www.ishares.com/uk/professionals/products/337088",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "BTCW.L",
+      "severity": 0,
+      "issue": "TER provisional at 0.15% (T3); conflicts with a 0.35% press figure, so the KID needs confirming. Information only.",
+      "url": "https://www.justetf.com/uk/etf-profile.html?isin=GB00BJYDH287",
+      "date": "2026-11-23"
+    },
+    {
+      "target": "QYLD.L",
+      "severity": 0,
+      "issue": "TER 0.45% and swap fee -0.02% verified as of 20 Nov. Monthly distributions and the near-the-money roll are unchanged. Allocation 0%.",
+      "url": "https://globalxetfs.eu/en/funds/qyld",
+      "date": "2026-11-20"
+    },
+    {
+      "target": "LSE venue (VWRA.L, SPXS.L, XNAS.L)",
+      "severity": 0,
+      "issue": "Main Market hours stay 08:00-16:30. LSE 24 ETP trading from H1 2027; no impact now.",
+      "url": "https://www.lseg.com/en/media-centre/press-releases/2026/london-stock-exchange-to-launch-lse-24",
+      "date": "2026-07-21"
+    }
+  ]
+}

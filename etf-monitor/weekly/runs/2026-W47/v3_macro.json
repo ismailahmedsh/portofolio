@@ -6,8 +6,8 @@
  },
  "MAC02": {
   "name": "Credit stress",
-  "reading": "HY spread 3.52% (3m +0.77); Baa-10y 1.56",
-  "flag": false
+  "reading": "HY spread 3.76% (3m +1.06); Baa-10y 1.56",
+  "flag": true
  },
  "MAC03": {
   "name": "Volatility (execution only)",
@@ -47,8 +47,8 @@
  },
  "MAC10": {
   "name": "Regime count",
-  "reading": "3 of 9 flags on (policy-uncertainty flag off)",
-  "flag": false,
-  "state": "watch"
+  "reading": "4 of 9 flags on (policy-uncertainty flag off)",
+  "flag": true,
+  "state": "stress"
  }
 }
