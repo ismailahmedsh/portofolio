@@ -1,0 +1,179 @@
+,name,type,venue,index,info_only,CST01,yield_12m_pct,TAX01,TAX05,after_tax_yield_pct,CST10,price_usd,ELG05_days,median_traded_usd,years,us_situs
+SPY,State Street SPDR S&P 500 ETF Trust,broad_us,US,S&P 500,False,9.45,1.05,31.6,5.0,0.74,46.99429768058523,720.77001953125,0,32389958062.426758,26.9,True
+VOO,Vanguard S&P 500 ETF,broad_us,US,S&P 500,False,3.0,1.12,33.6,5.0,0.79,42.62682380324125,662.3350219726562,0,4674928896.820068,16.2,True
+IVV,iShares Core S&P 500 ETF,broad_us,US,S&P 500,False,3.0,1.16,34.8,5.0,0.81,43.78555157664877,723.8099975585938,0,4235189506.6589355,26.5,True
+SPYM,State Street SPDR Portfolio S&P 500 ETF,broad_us,US,S&P 500,False,2.0,1.07,32.2,5.0,0.75,40.16802444344516,84.81999969482422,0,997188883.2054138,21.0,True
+VTI,Vanguard Morningstar Total Stock Market ETF,broad_us,US,CRSP US Total Market,False,3.0,1.11,33.4,5.0,0.78,42.40064714573336,354.5050048828125,0,1131833235.168457,25.4,True
+ITOT,iShares Core S&P Total U.S. Stock Market ETF,broad_us,US,S&P Total Market,False,3.0,1.07,32.2,5.0,0.75,41.16086259311544,157.18499755859375,0,224111771.90246582,22.8,True
+SCHB,Schwab U.S. Broad Market ETF,broad_us,US,Dow Jones US Broad Stock Market,False,3.0,1.11,33.2,5.0,0.78,42.21943767721056,27.70989990234375,0,331977185.6180191,17.1,True
+QQQ,Invesco QQQ Trust,broad_us,US,Nasdaq-100,False,18.0,0.48,14.3,5.0,0.33,38.27035468624899,649.0,0,24976610162.04834,26.9,True
+QQQM,Invesco NASDAQ 100 ETF,broad_us,US,Nasdaq-100,False,15.0,0.49,14.8,5.0,0.34,35.757115714600964,267.2099914550781,0,887900987.6037598,6.1,True
+DIA,State Street SPDR Dow Jones Industrial Average ETF Trust,broad_us,US,Dow Jones Industrial Average,False,16.0,1.45,43.5,5.0,1.02,65.48294844978336,493.44000244140625,0,1652615974.7924805,26.9,True
+RSP,Invesco S&P 500 Equal Weight ETF,broad_us,US,S&P 500 Equal Weight,False,20.0,1.5,45.1,5.0,1.05,71.07933157577949,211.61000061035156,0,1570207972.4655151,23.6,True
+IWM,iShares Russell 2000 ETF,broad_us,US,Russell 2000,False,19.0,1.03,31.0,5.0,0.72,56.00180848110223,263.92999267578125,0,6561712781.570435,26.5,True
+IJH,iShares Core S&P Mid-Cap ETF,broad_us,US,S&P MidCap 400,False,5.0,1.28,38.4,5.0,0.9,49.38971224005554,70.45500183105469,0,517236365.97442627,26.5,True
+IJR,iShares Core S&P Small-Cap ETF,broad_us,US,S&P SmallCap 600,False,6.0,1.28,38.3,5.0,0.89,50.239583436940016,133.93499755859375,0,442558009.6435547,26.5,True
+VB,Vanguard Morningstar Small-Cap ETF,broad_us,US,CRSP US Small Cap,False,3.0,1.31,39.4,5.0,0.92,48.392524140278326,277.7699890136719,0,146443974.85351562,22.8,True
+VO,Vanguard Morningstar Mid-Cap ETF,broad_us,US,CRSP US Mid Cap,False,3.0,1.41,42.3,5.0,0.99,51.25674408818644,78.14990234375,0,199991202.34222412,22.8,True
+VT,Vanguard Total World Stock Index Fund ETF Shares,world,US,FTSE Global All Cap,False,6.0,1.63,48.9,5.0,1.14,60.83661322772223,148.1750030517578,0,382966809.7564697,18.4,True
+ACWI,iShares MSCI ACWI ETF,world,US,MSCI ACWI,False,32.0,1.51,45.2,5.0,1.06,83.2048091099503,148.92999267578125,0,336317423.6328125,18.7,True
+URTH,iShares MSCI World ETF,world,US,MSCI World,False,24.0,1.46,43.7,5.0,1.02,73.65242395027295,195.02999877929688,0,118776820.16601562,14.9,True
+VXUS,Vanguard Total International Stock Index Fund ETF Shares,ex_us,US,FTSE Global All Cap ex US,False,5.0,2.53,75.9,5.0,1.77,86.88560142706416,78.45500183105469,0,442718713.6138916,15.8,True
+IXUS,iShares Core MSCI Total International Stock ETF,ex_us,US,MSCI ACWI ex USA IMI,False,7.000000000000001,3.19,95.7,5.0,2.23,108.72399097839333,87.83000183105469,0,141452755.53588867,14.1,True
+VEA,Vanguard FTSE Developed Markets Index Fund ETF Shares,ex_us,US,FTSE Developed All Cap ex US,False,3.0,2.59,77.7,5.0,1.81,86.71944284508726,65.76000213623047,0,643454407.8979492,19.3,True
+IEFA,iShares Core MSCI EAFE ETF,ex_us,US,MSCI EAFE IMI,False,7.000000000000001,3.57,107.2,5.0,2.5,120.19737463693012,92.02989959716797,0,814682700.0,14.1,True
+EFA,iShares MSCI EAFE ETF,ex_us,US,MSCI EAFE,False,32.0,3.4,102.1,5.0,2.38,140.09695968821558,98.83000183105469,0,1279639477.2628784,25.2,True
+VGK,Vanguard FTSE Europe ETF,ex_us,US,FTSE Developed Europe,False,6.0,3.06,91.7,5.0,2.14,103.70513537385904,84.44999694824219,0,181467182.9032898,21.7,True
+EWJ,iShares MSCI Japan ETF,ex_us,US,MSCI Japan,False,49.0,4.07,122.2,5.0,2.85,177.19173077689112,87.44000244140625,0,356183216.20025635,26.9,True
+VWO,Vanguard FTSE Emerging Markets Index Fund ETF Shares,em,US,FTSE Emerging Markets,False,6.0,2.26,67.8,5.0,1.58,79.81218145520083,53.869998931884766,0,419539482.1746826,21.7,True
+IEMG,iShares Core MSCI Emerging Markets ETF,em,US,MSCI Emerging Markets IMI,False,9.0,2.54,76.1,5.0,1.77,91.03497831618981,70.88500213623047,0,851349419.3183899,14.1,True
+EEM,iShares MSCI Emerging Markets ETF,em,US,MSCI Emerging Markets,False,72.0,1.92,57.5,5.0,1.34,135.43451589891308,58.16999816894531,0,1391700379.0863037,23.6,True
+INDA,iShares MSCI India ETF,em,US,MSCI India,False,61.0,0.0,0.0,0.0,0.0,61.982219093028654,51.974998474121094,0,255713771.21543884,14.8,True
+MCHI,iShares MSCI China ETF,em,US,MSCI China,False,59.0,2.33,69.8,5.0,1.63,134.7763171062119,47.11000061035156,0,94148598.30856323,15.6,True
+XLK,State Street Technology Select Sector SPDR ETF,sector,US,Technology Select Sector,False,8.0,0.51,15.4,5.0,0.36,29.43127697510417,162.33999633789062,0,1534530964.9658203,26.9,True
+XLF,State Street Financial Select Sector SPDR ETF,sector,US,Financial Select Sector,False,8.0,1.49,44.6,5.0,1.04,58.574625312365036,55.56999969482422,0,1853062664.716339,26.9,True
+XLV,State Street Health Care Select Sector SPDR ETF,sector,US,Health Care Select Sector,False,8.0,1.42,42.7,5.0,1.0,56.70413513300546,179.06500244140625,0,1467102578.302002,26.9,True
+XLE,State Street Energy Select Sector SPDR ETF,sector,US,Energy Select Sector,False,8.0,2.5,75.1,5.0,1.75,89.06232811231952,60.85499954223633,0,1989785963.356018,26.9,True
+XLI,State Street Industrial Select Sector SPDR ETF,sector,US,Industrial Select Sector,False,8.0,1.17,35.1,5.0,0.82,49.070373648228994,161.0800018310547,0,1324070789.0014648,26.9,True
+XLY,State Street Consumer Discretionary Select Sector SPDR ETF,sector,US,Consumer Discretionary Select Sector,False,8.0,0.8,24.1,5.0,0.56,38.055418807897276,116.3949966430664,0,746601988.092041,26.9,True
+XLP,State Street Consumer Staples Select Sector SPDR ETF,sector,US,Consumer Staples Select Sector,False,8.0,2.45,73.5,5.0,1.71,87.44000802685635,89.7249984741211,0,1119511489.6011353,26.9,True
+XLU,State Street Utilities Select Sector SPDR ETF,sector,US,Utilities Select Sector,False,8.0,2.82,84.5,5.0,1.97,98.52957531347963,42.970001220703125,0,1008418854.8812866,26.9,True
+XLB,State Street Materials Select Sector SPDR ETF,sector,US,Materials Select Sector,False,8.0,1.75,52.6,5.0,1.23,66.54007715670343,49.2599983215332,0,568431738.0905151,26.9,True
+XLRE,State Street Real Estate Select Sector SPDR ETF,sector,US,Real Estate Select Sector,False,8.0,3.36,100.8,5.0,2.35,114.82079279967923,42.93000030517578,0,289647405.23757935,11.1,True
+XLC,State Street Communication Services Select Sector SPDR ETF,sector,US,Communication Services Select Sector,False,8.0,1.35,40.5,5.0,0.94,54.46690211511135,102.33499908447266,0,653407256.1332703,8.4,True
+VGT,Vanguard Information Technology Index Fund ETF Shares,sector,US,MSCI US IMI Information Technology 25/50,False,9.0,0.44,13.3,5.0,0.31,28.29935052670702,106.47000122070312,0,537058547.3144531,22.8,True
+VHT,Vanguard Health Care Index Fund ETF Shares,sector,US,MSCI US IMI Health Care 25/50,False,9.0,1.39,41.8,5.0,0.98,56.781171928616764,331.2283935546875,0,67976415.47241211,22.8,True
+VNQ,Vanguard Real Estate Index Fund ETF Shares,sector,US,MSCI US IMI Real Estate 25/50,False,13.0,3.64,109.2,5.0,2.55,128.2159482085089,93.56999969482422,0,384803251.33743286,22.1,True
+XBI,State Street SPDR S&P Biotech ETF,sector,US,S&P Biotechnology Select Industry,False,35.0,0.37,11.2,5.0,0.26,52.21315726747252,145.5800018310547,0,1364061231.2011719,20.8,True
+KRE,State Street SPDR S&P Regional Banking ETF,sector,US,S&P Regional Banks Select Industry,False,35.0,2.33,69.8,5.0,1.63,110.75268587828668,69.2699966430664,0,1021937726.651001,20.4,True
+VUG,Vanguard Morningstar Growth ETF,factor,US,CRSP US Large Cap Growth,False,3.0,0.43,12.8,5.0,0.3,21.81782439424484,80.83000183105469,0,508217815.763855,22.8,True
+VTV,Vanguard Morningstar Value ETF,factor,US,CRSP US Large Cap Value,False,3.0,1.91,57.3,5.0,1.34,66.2770870925701,218.02999877929688,0,580748802.4337769,22.8,True
+IWF,iShares Russell 1000 Growth ETF,factor,US,Russell 1000 Growth,False,18.0,0.39,11.8,5.0,0.28,35.794103759280894,109.72000122070312,0,527569875.0,26.5,True
+IWD,iShares Russell 1000 Value ETF,factor,US,Russell 1000 Value,False,18.0,1.4,42.1,5.0,0.98,66.06803605145424,251.6999969482422,0,401569317.32177734,26.5,True
+MTUM,iShares MSCI USA Momentum Factor ETF,factor,US,MSCI USA Momentum SR Variant,False,15.0,0.73,21.8,5.0,0.51,42.77880059530027,63.7599983215332,0,256285202.25524902,13.6,True
+QUAL,iShares MSCI USA Quality Factor ETF,factor,US,MSCI USA Sector Neutral Quality,False,15.0,0.88,26.4,5.0,0.62,47.361673524949346,53.73500061035156,0,205701639.43481445,13.3,True
+USMV,iShares MSCI USA Min Vol Factor ETF,factor,US,MSCI USA Minimum Volatility,False,15.0,1.41,42.4,5.0,0.99,63.33763130628893,99.94000244140625,0,170347899.77264404,15.1,True
+VLUE,iShares MSCI USA Value Factor ETF,factor,US,MSCI USA Enhanced Value,False,15.0,1.74,52.2,5.0,1.22,73.20606919436446,177.6199951171875,0,89593741.41082764,13.6,True
+AVUV,Avantis US Small Cap Value ETF,factor,US,Active (small cap value),False,25.0,1.31,39.2,5.0,0.92,70.21280310437834,116.08290100097656,0,156817815.38772583,7.2,True
+SPLV,Invesco S&P 500 Low Volatility ETF,factor,US,S&P 500 Low Volatility,False,25.0,2.17,65.2,5.0,1.52,96.17391763899595,76.16000366210938,0,142479561.3166809,15.6,True
+VBR,Vanguard Morningstar Small-Cap Value ETF,factor,US,CRSP US Small Cap Value,False,5.0,1.88,56.4,5.0,1.32,67.42216061940633,234.94000244140625,0,61229152.75878906,22.8,True
+SCHD,Schwab U.S. Dividend Equity ETF,dividend,US,Dow Jones US Dividend 100,False,6.0,3.08,92.3,5.0,2.15,104.31011036213441,34.279998779296875,0,790361447.2114563,15.1,True
+VIG,Vanguard Dividend Appreciation Index Fund ETF Shares,dividend,US,S&P US Dividend Growers,False,4.0,1.52,45.5,5.0,1.06,55.520218079143,240.19500732421875,0,246158205.8944702,20.6,True
+VYM,Vanguard High Dividend Yield Index Fund ETF Shares,dividend,US,FTSE High Dividend Yield,False,4.0,2.35,70.6,5.0,1.65,80.53883959640856,156.3000030517578,0,171152766.42456055,20.0,True
+DGRO,iShares Core Dividend Growth ETF,dividend,US,Morningstar US Dividend Growth,False,8.0,1.91,57.3,5.0,1.34,71.24890124618639,78.2654037475586,0,114635627.02102661,12.4,True
+NOBL,ProShares S&P 500 Dividend Aristocrats ETF,dividend,US,S&P 500 Dividend Aristocrats,False,35.0,1.99,59.7,5.0,1.39,100.64160055610763,59.0099983215332,0,58020423.38562012,13.1,True
+HDV,iShares Core High Dividend ETF,dividend,US,Morningstar Dividend Yield Focus,False,8.0,3.43,102.8,5.0,2.4,116.81638863312506,29.850000381469727,0,116200771.69513702,15.6,True
+SDY,State Street SPDR S&P Dividend ETF,dividend,US,S&P High Yield Dividend Aristocrats,False,35.0,2.38,71.3,5.0,1.66,112.29253544863936,158.85499572753906,0,31685473.114013672,21.0,True
+JEPI,JPMorgan Equity Premium Income ETF,options_income,US,Active (S&P 500 covered call ELN),False,35.0,8.19,245.8,5.0,5.74,286.8211646900139,55.69499969482422,0,242179763.82865906,6.5,True
+JEPQ,JPMorgan Nasdaq Equity Premium Income ETF,options_income,US,Active (Nasdaq-100 covered call ELN),False,35.0,12.89,386.6,5.0,9.02,427.5952030929154,53.929901123046875,0,352685845.96481323,4.6,True
+QYLD,Global X NASDAQ 100 Covered Call ETF,options_income,US,Cboe Nasdaq-100 BuyWrite V2,False,60.0,13.06,391.7,5.0,9.14,457.63617227183437,16.415000915527344,0,94447018.44787598,12.9,True
+XYLD,Global X S&P 500 Covered Call ETF,options_income,US,Cboe S&P 500 BuyWrite,False,60.0,11.05,331.6,5.0,7.74,397.57762570434835,38.36000061035156,0,18204749.336242676,13.4,True
+DIVO,Amplify CWP Enhanced Dividend Income ETF,options_income,US,Active (dividend + covered call),False,56.00000000000001,6.74,202.2,5.0,4.72,264.1423403885969,44.904998779296875,0,40154335.441970825,9.9,True
+SPYI,Neos S&P 500(R) High Income ETF,options_income,US,Active (S&P 500 option income),False,68.0,13.71,411.2,5.0,9.6,485.2104862056456,49.891998291015625,0,152790049.7314453,4.2,True
+BOTZ,Global X Robotics & Artificial Intelligence ETF,theme_ai,US,Indxx Global Robotics & AI Thematic,False,68.0,0.59,17.8,5.0,0.42,91.83211771918954,29.579999923706055,0,23039913.09738159,10.2,True
+AIQ,Global X Artificial Intelligence & Technology ETF,theme_ai,US,Indxx AI & Big Data,False,68.0,0.08,2.5,5.0,0.06,76.44932430114994,54.720001220703125,0,67030668.28918457,8.5,True
+ROBO,Robo Global Robotics and Automation Index ETF,theme_ai,US,ROBO Global Robotics & Automation,False,95.0,0.43,13.0,5.0,0.3,114.02569664266174,67.16000366210938,0,8458350.326538086,13.1,True
+SMH,VanEck Semiconductor ETF,theme_semis,US,MVIS US Listed Semiconductor 25,False,35.0,0.24,7.2,5.0,0.17,48.20145292297904,459.19000244140625,0,4103108853.991699,26.5,True
+SOXX,iShares Semiconductor ETF,theme_semis,US,NYSE Semiconductor,False,33.0,0.3,9.0,5.0,0.21,47.980968148306424,139.1300048828125,0,4438453866.796875,25.4,True
+CIBR,First Trust NASDAQ Cybersecurity ETF,theme_cyber,US,Nasdaq CTA Cybersecurity,False,57.99999999999999,0.42,12.5,5.0,0.29,76.44258651827255,94.62000274658203,0,189248394.56176758,11.4,True
+BUG,Global X Cybersecurity ETF,theme_cyber,US,Indxx Cybersecurity,False,50.0,0.03,0.8,5.0,0.02,56.74850262539938,46.97999954223633,0,78689518.7171936,7.1,True
+HACK,Amplify Cybersecurity ETF,theme_cyber,US,Nasdaq ISE Cyber Security Select,False,60.0,0.05,1.5,5.0,0.04,67.49330032077958,119.12000274658203,0,43341948.00491333,12.0,True
+ITA,iShares U.S. Aerospace & Defense ETF,theme_defence,US,Dow Jones US Select Aerospace & Defense,False,37.0,0.28,8.3,5.0,0.19,51.33154778982702,67.79000091552734,0,177172459.04159546,20.6,True
+XAR,State Street SPDR S&P Aerospace & Defense ETF,theme_defence,US,S&P Aerospace & Defense Select Industry,False,35.0,0.2,5.9,5.0,0.14,46.887231677390325,212.8699951171875,0,61880864.15863037,15.2,True
+PPA,Invesco Aerospace & Defense ETF,theme_defence,US,SPADE Defense,False,57.99999999999999,0.44,13.2,5.0,0.31,77.16749748437418,150.39500427246094,0,36826876.58691406,21.1,True
+SHLD,Global X Defense Tech ETF,theme_defence,US,Global X Defense Tech,False,50.0,0.75,22.5,5.0,0.53,78.49549342931184,56.5,0,56261841.15066528,3.2,True
+ICLN,iShares Global Clean Energy ETF,theme_clean_energy,US,S&P Global Clean Energy Transition,False,38.0,1.28,38.5,5.0,0.9,82.47594253280019,14.34000015258789,0,103188226.98554993,18.4,True
+TAN,Invesco Solar ETF,theme_clean_energy,US,MAC Global Solar Energy,False,70.0,0.0,0.0,0.0,0.0,70.98221909302865,35.689998626708984,0,36312353.28826904,18.6,True
+QCLN,First Trust NASDAQ Clean Edge Green Energy Index Fund,theme_clean_energy,US,Nasdaq Clean Edge Green Energy,False,59.0,0.13,3.8,5.0,0.09,68.78629655091902,40.220001220703125,0,4387707.984924316,19.8,True
+PBW,Invesco WilderHill Clean Energy ETF,theme_clean_energy,US,WilderHill Clean Energy,False,63.0,3.02,90.6,5.0,2.11,159.5789606829106,22.1200008392334,0,10106036.830329895,21.7,True
+URA,Global X Uranium ETF,theme_clean_energy,US,Solactive Global Uranium & Nuclear Components,False,69.0,7.26,217.9,5.0,5.08,292.837122221212,28.697999954223633,0,135283027.25372314,16.0,True
+BND,Vanguard Total Bond Market Index Fund ETF Shares,bond,US,Bloomberg US Aggregate Float Adjusted,False,3.0,4.14,124.3,5.0,2.9,133.24058542340055,71.29499816894531,0,746757095.0431824,19.6,True
+AGG,iShares Core U.S. Aggregate Bond ETF,bond,US,Bloomberg US Aggregate,False,3.0,4.14,124.3,5.0,2.9,133.2590160715026,96.0999984741211,0,1059816045.1843262,23.2,True
+BNDX,Vanguard Total International Bond Index Fund ETF Shares,bond,US,Bloomberg Global Agg ex-USD Float Adj (USD hedged),False,7.000000000000001,4.65,139.5,5.0,3.26,152.49800856671285,47.5,0,208494637.44735718,13.5,True
+SHY,iShares 1-3 Year Treasury Bond ETF,bond,US,ICE US Treasury 1-3 Year,False,15.0,3.6,108.1,5.0,2.52,129.09629250647257,81.5250015258789,0,349488483.6730957,24.3,True
+IEF,iShares 7-10 Year Treasury Bond ETF,bond,US,ICE US Treasury 7-10 Year,False,15.0,4.07,122.1,5.0,2.85,143.03557697344834,91.45999908447266,0,898806301.1390686,24.3,True
+TLT,iShares 20+ Year Treasury Bond ETF,bond,US,ICE US Treasury 20+ Year,False,15.0,4.81,144.2,5.0,3.37,165.21831426884947,81.32499694824219,0,2967460285.660553,24.3,True
+GOVT,iShares U.S. Treasury Bond ETF,bond,US,ICE US Treasury Core,False,5.0,3.79,113.8,5.0,2.65,124.7474036219341,22.229999542236328,0,252400977.71148682,14.7,True
+SGOV,iShares 0-3 Month Treasury Bond ETF,bond,US,ICE 0-3 Month US Treasury,False,9.0,3.62,108.7,5.0,2.54,123.72452674801569,100.6416015625,0,2144021080.5244446,6.5,True
+BIL,State Street SPDR Bloomberg 1-3 Month T-Bill ETF,bond,US,Bloomberg 1-3 Month US Treasury Bill,False,13.52,3.67,110.0,5.0,2.57,129.48026778250662,91.60009765625,0,933805981.7481995,19.5,True
+TIP,iShares TIPS Bond ETF,bond,US,ICE US Treasury Inflation Linked,False,18.0,4.27,128.0,5.0,2.99,151.963284181786,105.625,0,217850326.27105713,23.0,True
+VGIT,Vanguard Intermediate-Term Treasury Index Fund ETF Shares,bond,US,Bloomberg US Treasury 3-10 Year,False,3.0,4.0,119.9,5.0,2.8,128.8363104005945,57.56999969482422,0,318208388.4590149,17.0,True
+LQD,iShares iBoxx $ Investment Grade Corporate Bond ETF,bond,US,Markit iBoxx USD Liquid Investment Grade,False,14.000000000000002,4.86,145.7,5.0,3.4,165.70186856014217,103.90499877929688,0,3114949549.23172,24.3,True
+VCIT,Vanguard Intermediate-Term Corporate Bond Index Fund ETF Shares,bond,US,Bloomberg US Corporate 5-10 Year,False,3.0,5.05,151.4,5.0,3.53,160.41870986382625,79.36000061035156,0,840951952.2018433,17.0,True
+HYG,iShares iBoxx $ High Yield Corporate Bond ETF,bond,US,Markit iBoxx USD Liquid High Yield,False,49.0,6.12,183.7,5.0,4.29,238.63412876107304,76.6449966430664,0,3461487764.6118164,19.6,True
+JNK,State Street SPDR Bloomberg High Yield Bond ETF,bond,US,Bloomberg High Yield Very Liquid,False,40.0,6.9,207.1,5.0,4.83,253.05434662734723,91.91000366210938,0,321956448.72436523,19.0,True
+EMB,iShares J.P. Morgan USD Emerging Markets Bond ETF,bond,US,JP Morgan EMBI Global Core,False,39.0,5.43,162.9,5.0,3.8,207.8573305163636,90.63999938964844,0,703868597.5341797,18.9,True
+MUB,iShares National Muni Bond ETF,bond,US,ICE AMT-Free US National Municipal,False,5.0,3.3,99.1,5.0,2.31,110.08470633301019,103.62000274658203,0,1160764536.9918823,19.2,True
+GLD,SPDR Gold Shares,gold,US,LBMA Gold Price PM,False,40.0,0.0,0.0,0.0,0.0,40.982219093028654,335.8800048828125,0,3302791189.9780273,22.0,True
+IAU,iShares Gold Trust,gold,US,LBMA Gold Price PM,False,25.0,0.0,0.0,0.0,0.0,25.98221909302865,68.9000015258789,0,368801985.6941223,21.8,True
+GLDM,SPDR Gold MiniShares,gold,US,LBMA Gold Price PM,False,10.0,0.0,0.0,0.0,0.0,10.982219093028652,72.5199966430664,0,364241234.58862305,8.4,True
+SGOL,abrdn Physical Gold Shares ETF,gold,US,LBMA Gold Price PM,False,17.0,0.0,0.0,0.0,0.0,17.98221909302865,34.88999938964844,0,102341983.39233398,17.2,True
+RYLD,Global X Russell 2000 Covered Call ETF,options_income,US,Cboe Russell 2000 BuyWrite,False,60.0,12.73,381.9,5.0,8.91,447.8561493937665,14.675000190734863,0,7237363.693618774,7.6,True
+DJIA,Global X Dow 30 Covered Call ETF,options_income,US,Cboe DJIA BuyWrite,False,60.0,10.46,313.9,5.0,7.32,379.89974262161286,21.34000015258789,0,1507877.5756835938,4.7,True
+QYLG,Global X Nasdaq 100 Covered Call & Growth ETF,options_income,US,Cboe Nasdaq-100 Half BuyWrite,False,35.0,18.9,567.0,5.0,13.23,608.000302783553,26.559999465942383,0,1668114.0043258667,6.2,True
+XYLG,Global X S&P 500 Covered Call & Growth ETF,options_income,US,Cboe S&P 500 Half BuyWrite,False,35.0,13.47,404.0,5.0,9.43,444.9727790148775,27.565000534057617,0,535808.0097198486,6.1,True
+PBP,Invesco S&P 500 BuyWrite ETF,options_income,US,Cboe S&P 500 BuyWrite,False,28.999999999999996,13.03,390.9,5.0,9.12,425.912332993778,21.610000610351562,0,1328880.0258636475,18.9,True
+IDVO,Amplify CWP International Enhanced Dividend Income ETF,options_income,US,Active (intl dividend stocks + covered calls),False,65.0,6.84,205.1,5.0,4.79,276.0809058772044,36.47999954223633,0,10634544.11315918,4.2,True
+QDVO,Amplify CWP Growth & Income ETF,options_income,US,Active (growth stocks + covered calls),False,56.00000000000001,11.78,353.3,5.0,8.24,415.25116311411773,26.920000076293945,0,5603612.157440186,2.3,True
+QQQI,NEOS NASDAQ-100(R) High Income ETF,options_income,US,Active (Nasdaq-100 + index call options),False,68.0,16.95,508.5,5.0,11.86,582.4410468075473,48.470001220703125,0,223031335.55145264,2.8,True
+IWMI,NEOS Russell 2000 High Income ETF,options_income,US,Active (Russell 2000 + index call options),False,68.0,16.98,509.5,5.0,11.89,583.5256973538982,46.0,0,22161279.318237305,2.4,True
+QQQH,NEOS Nasdaq-100 Hedged Equity Income ETF,options_income,US,Active (Nasdaq-100 hedged equity income),False,68.0,9.62,288.6,5.0,6.73,362.5704543871463,51.0,0,1220576.0375976562,6.9,True
+BTCI,NEOS ETF Trust - NEOS Bitcoin High Income ETF,options_income,US,Active (bitcoin ETPs + call options),True,,40.92,1227.6,5.0,28.65,,24.6299991607666,0,17988683.164215088,2.1,True
+GPIX,Goldman Sachs S&P 500 Premium Income ETF,options_income,US,Active (S&P 500 + dynamic overwrite),False,28.999999999999996,8.78,263.4,5.0,6.15,298.39126968993884,52.38999938964844,0,66666557.16705322,3.1,True
+GPIQ,,options_income,US,Active (Nasdaq-100 + dynamic overwrite),False,28.999999999999996,11.34,340.3,5.0,7.94,375.2518919280644,50.80970001220703,0,92134281.25076294,3.1,True
+BALI,iShares U.S. Large Cap Premium Income Active ETF,options_income,US,Active (US large cap + covered calls),False,35.0,8.24,247.1,5.0,5.77,288.10989892639213,32.29100036621094,0,12183548.053359985,3.2,True
+ISPY,ProShares S&P 500 High Income ETF,options_income,US,Active (S&P 500 + daily covered calls),False,55.00000000000001,6.33,190.0,5.0,4.43,250.95298068740905,44.470001220703125,0,2524213.976287842,2.9,True
+QDTE,Roundhill Nasdaq-100 0DTE Covered Call ETF Strategy ETF,options_income,US,Nasdaq-100 0DTE covered call strategy,False,96.0,47.42,1422.5,5.0,33.19,1524.5097171770713,25.479999542236328,0,12202559.676742554,2.7,True
+XDTE,Roundhill S&P 500 0DTE Covered Call Strategy ETF,options_income,US,S&P 500 0DTE covered call strategy,False,97.0,30.56,916.9,5.0,21.4,1019.9109383346214,35.619998931884766,0,5792360.092163086,2.7,True
+RDTE,Roundhill Russell 2000 0DTE Covered Call Strategy ETF,options_income,US,Russell 2000 0DTE covered call strategy,False,97.0,43.69,1310.6,5.0,30.58,1413.5347907568803,24.06999969482422,0,2457464.9868011475,2.2,True
+KNG,FT Cboe Vest S&P 500 Dividend Aristocrats Target Income ETF,options_income,US,Cboe S&P 500 Dividend Aristocrats Target Income,False,74.0,8.28,248.3,5.0,5.79,328.32058619590646,51.30500030517578,0,14119461.820983887,8.7,True
+FTHI,First Trust BuyWrite Income ETF,options_income,US,Active (US equity + index buy-write),False,75.0,9.67,290.1,5.0,6.77,371.09663050401883,21.850000381469727,0,15037677.397155762,12.9,True
+FTQI,First Trust Nasdaq BuyWrite Income ETF,options_income,US,Active (Nasdaq equity + index buy-write),False,75.0,12.4,372.0,5.0,8.68,452.9692735673038,20.41200065612793,0,8589868.81904602,12.9,True
+BUYW,Main Buywrite ETF,options_income,US,Active (ETF buy-write),False,97.0,5.49,164.8,5.0,3.85,267.76949080332065,14.454999923706055,0,5878523.829174042,4.2,True
+FEPI,REX FANG & Innovation Equity Premium Income ETF,options_income,US,Active (FANG/innovation stocks + covered calls),False,65.0,30.85,925.5,5.0,21.59,996.4450341070509,35.11000061035156,0,7609674.758911133,3.1,True
+SVOL,Simplify Volatility Premium ETF,options_income,US,Active (short VIX futures volatility premium),True,78.0,23.35,700.4,5.0,16.34,784.3539762369181,13.449999809265137,0,5246639.761734009,5.5,True
+TLTW,iShares 20+ Year Treasury Bond Buywrite Strategy ETF,options_income,US,Cboe TLT 2% OTM BuyWrite (Treasury bond buy-write),False,35.0,10.81,324.3,5.0,7.57,365.31661000413504,20.932100296020508,0,30748263.44833374,4.3,True
+HYGW,iShares High Yield Corporate Bond Buywrite Strategy ETF,options_income,US,Cboe HYG BuyWrite (high-yield bond buy-write),False,69.0,11.38,341.3,5.0,7.96,416.3093073096583,27.729999542236328,0,464223.99253845215,4.3,True
+ULTY,YieldMax Ultra Option Income Strategy ETF,options_income,US,Active (multi-stock option income),True,130.0,106.08,3182.3,5.0,74.25,3318.2386105318847,19.2947998046875,0,11004515.967178345,2.7,True
+YMAX,YieldMax Universe Fund of Option Income ETFs,options_income,US,Fund of YieldMax option income ETFs,True,133.0,65.04,1951.1,5.0,45.53,2090.089751391413,6.09499979019165,0,8668519.825696945,2.9,True
+TSLY,YieldMax TSLA Option Income Strategy ETF,options_income,US,Active (synthetic TSLA + options),True,107.0,74.66,2239.9,5.0,52.26,2352.8636723709537,20.983699798583984,0,9020375.0,4.0,True
+NVDY,YieldMax NVDA Option Income Strategy ETF,options_income,US,Active (synthetic NVDA + options),True,109.00000000000001,63.22,1896.7,5.0,44.26,2011.633614381417,8.98900032043457,0,22931250.0,3.5,True
+MSTY,Yieldmax MSTR Option Income Strategy ETF,options_income,US,Active (synthetic MSTR + options),True,103.0,194.73,5841.9,5.0,136.31,5950.883313669307,8.520000457763672,0,31263460.28327942,2.8,True
+CONY,YieldMax COIN Option Income Strategy ETF,options_income,US,Active (synthetic COIN + options),True,104.0,159.18,4775.3,5.0,111.42,4885.265497175844,11.389900207519531,0,10136430.192375183,3.3,True
+JEPI.L,JPM US Equity Premium Income Active UCITS ETF USD Dist,options_income_ucits,LSE,"Active (US equity + covered call ELNs), USD dist",False,35.0,7.72,18.0,5.0,7.72,59.66977245814871,23.899999618530273,0,711696.5524597168,2.1,False
+JEIP.L,JPM US Equity Premium Income Active UCITS ETF USD Dist,options_income_ucits,LSE,"Active (US equity + covered call ELNs), GBp line",False,35.0,7.72,18.0,5.0,7.72,59.66977245814871,23.908418108306506,0,364520.01344965113,2.1,False
+JEPQ.L,JPM Nasdaq Equity Premium Income Active UCITS ETF USD Dist,options_income_ucits,LSE,"Active (Nasdaq-100 + covered call ELNs), USD dist",False,35.0,12.49,18.0,5.0,12.49,59.66977245814871,24.385000228881836,0,6536068.5,2.1,False
+JEQP.L,JPM Nasdaq Equity Premium Income Active UCITS ETF USD Dist,options_income_ucits,LSE,"Active (Nasdaq-100 + covered call ELNs), GBp line",False,35.0,12.52,18.0,5.0,12.52,59.66977245814871,24.34439854025841,0,1859164.3626997946,2.1,False
+JEQA.L,JPM Nasdaq Equity Premium Income Active UCITS ETF USD Acc,options_income_ucits,LSE,"Active (Nasdaq-100 + covered call ELNs), USD acc",False,35.0,0.0,18.0,0.0,0.0,54.66977245814871,30.315000534057617,0,550698.0595703125,2.1,False
+JEPG.L,JPM Global Equity Premium Income Active UCITS ETF - USD (dist),options_income_ucits,LSE,"Active (global equity + covered call ELNs), USD dist",False,35.0,8.72,18.0,5.0,8.72,59.66977245814871,26.264999389648438,0,1582624.7429771423,3.0,False
+JEGP.L,JPM Global Equity Premium Income Active UCITS ETF - USD (dist),options_income_ucits,LSE,"Active (global equity + covered call ELNs), GBp line",False,35.0,804.43,18.0,5.0,804.43,59.66977245814871,26.191440038084984,0,892385.251374026,3.0,False
+JEGA.L,JPM Global Equity Premium Income Active UCITS ETF - USD (acc),options_income_ucits,LSE,"Active (global equity + covered call ELNs), USD acc",False,35.0,0.0,18.0,0.0,0.0,54.66977245814871,32.625,0,35620.48832321167,3.0,False
+QYLD.L,Global X NASDAQ 100 Covered Call UCITS ETF Dis,options_income_ucits,LSE,"Cboe Nasdaq-100 BuyWrite V2, USD dist",False,,13.13,0.0,5.0,13.13,,15.069999694824219,0,667254.1728782654,4.0,False
+QYLP.L,Global X NASDAQ 100 Covered Call UCITS ETF Dis,options_income_ucits,LSE,"Cboe Nasdaq-100 BuyWrite V2, GBP line",False,,13.14,0.0,5.0,13.14,,15.058283522231136,0,859010.2626638348,4.0,False
+QYLU.L,Global X NASDAQ 100 Covered Call UCITS ETF Acc,options_income_ucits,LSE,"Cboe Nasdaq-100 BuyWrite V2, USD acc",False,,0.0,0.0,0.0,0.0,,23.2549991607666,0,55893.480323791504,4.0,False
+XYLU.L,Global X S&P 500 Covered Call UCITS ETF Inc,options_income_ucits,LSE,"Cboe S&P 500 BuyWrite, USD dist",False,,15.22,0.0,0.0,15.22,,14.760000228881836,0,178217.93047714233,3.4,False
+XYLP.L,Global X S&P 500 Covered Call UCITS ETF Inc,options_income_ucits,LSE,"Cboe S&P 500 BuyWrite, GBP line",False,,13.6,0.0,5.0,13.6,,14.739782512547208,0,223783.90759661834,3.4,False
+QQQI.L,Nasdaq 100 Daily Covered Call UCITS ETF USD Distributing,options_income_ucits,LSE,"Nasdaq-100 daily covered call, USD dist",False,,0.85,0.0,5.0,0.85,,6.739999771118164,0,8061.375153064728,0.2,False
+QQQP.L,Nasdaq 100 Daily Covered Call UCITS ETF USD Distributing,options_income_ucits,LSE,"Nasdaq-100 daily covered call, GBp line",False,,0.82,0.0,5.0,0.82,,6.982208779372596,0,1531.9762338150495,0.2,False
+SPYI.L,Infrastructure Capital S&P 500 Option Income UCITS ETF USD Dis,options_income_ucits,LSE,"Active (S&P 500 + option income), GBp line",False,,0.91,18.0,5.0,0.91,,45.82359843194485,0,293.66819623947146,0.2,False
+FEPI.L,REX Tech Innovation Premium Income UCITS ETF Distributing,options_income_ucits,LSE,"Active (tech innovation + covered calls), USD dist",False,65.0,32.33,18.0,5.0,32.33,89.66977245814871,19.00200080871582,0,69246.13000679016,1.3,False
+FEPG.L,REX Tech Innovation Premium Income UCITS ETF Distributing,options_income_ucits,LSE,"Active (tech innovation + covered calls), GBp line",False,65.0,29.97,18.0,5.0,29.97,89.66977245814871,18.78108407957916,0,82761.11849285178,1.3,False
+YMAG.L,YieldMax Big Tech Option Income UCITS ETF,options_income_ucits,LSE,"Active (big tech + options), USD",False,99.0,32.77,18.0,5.0,32.77,123.66977245814871,35.45000076293945,0,35253.921142578125,1.6,False
+YMAP.L,YieldMax Big Tech Option Income UCITS ETF,options_income_ucits,LSE,"Active (big tech + options), GBp line",False,99.0,30.3,18.0,5.0,30.3,123.66977245814871,35.53107390165329,0,78010.98714731634,1.6,False
+CHPY.L,YieldMax Semiconductor Option Income UCITS ETF USD Dis,options_income_ucits,LSE,"Active (semiconductors + options), USD dist",False,,35.97,18.0,5.0,35.97,,42.63999938964844,0,144627.05319213867,0.7,False
+CHPP.L,YieldMax Semiconductor Option Income UCITS ETF USD Dis,options_income_ucits,LSE,"Active (semiconductors + options), GBp line",False,,34.25,18.0,5.0,34.25,,43.415265171527864,0,204659.19562525747,0.7,False
+TQQQ,ProShares UltraPro QQQ,leveraged_info,US,Nasdaq-100 3x daily,True,78.0,0.99,29.8,5.0,0.69,113.76575059566132,48.852500915527344,0,4098115695.448303,16.8,True
+SOXL,Direxion Daily Semiconductor Bull 3X Shares,leveraged_info,US,NYSE Semiconductor 3x daily,True,75.0,0.22,6.5,5.0,0.15,87.5276736384832,42.625,0,9433495180.913544,16.7,True
+QLD,ProShares Ultra QQQ,leveraged_info,US,Nasdaq-100 2x daily,True,89.0,0.17,5.2,5.0,0.12,100.17718364471526,71.60780334472656,0,397819514.5391388,20.4,True
+SSO,ProShares Ultra S&P500,leveraged_info,US,S&P 500 2x daily,True,84.0,0.78,23.4,5.0,0.55,113.40357338873932,60.970001220703125,0,246783263.22784424,20.4,True
+SPXL,Direxion Daily S&P500 Bull 3X Shares,leveraged_info,US,S&P 500 3x daily,True,84.0,0.64,19.2,5.0,0.45,109.13577629334974,227.89500427246094,0,465679035.15319824,18.0,True
+UPRO,ProShares UltraPro S&P500,leveraged_info,US,S&P 500 3x daily,True,88.0,0.95,28.5,5.0,0.66,122.4552258808022,119.16549682617188,0,290488199.9267578,17.4,True
+TECL,Direxion Daily Technology Bull 3X Shares,leveraged_info,US,Technology Select Sector 3x daily,True,87.0,7.31,219.2,5.0,5.11,312.1908205504915,117.13500213623047,0,109365178.87268066,17.9,True
+SOXS,Direxion Daily Semiconductor Bear 3X Shares,leveraged_info,US,NYSE Semiconductor -3x daily,True,100.0,23.2,696.1,5.0,16.24,802.0876571051831,51.224998474121094,0,2990485276.23291,16.7,True
+TSLL,Direxion Daily TSLA Bull 2X Shares,leveraged_info,US,TSLA 2x daily,True,83.0,9.59,287.8,5.0,6.71,376.7648676012344,10.070099830627441,0,536208856.58626556,4.3,True
+NVDL,GraniteShares 2x Long NVDA Daily ETF,leveraged_info,US,NVDA 2x daily,True,105.0,0.0,0.0,0.0,0.0,105.98221909302865,16.94499969482422,0,359451257.2265625,3.9,True
+USD,ProShares Ultra Semiconductors,leveraged_info,US,Dow Jones US Semiconductors 2x daily,True,94.0,0.87,26.2,5.0,0.61,126.18722949050792,47.5099983215332,0,52161182.41195679,19.8,True
+FAS,Direxion Daily Financial Bull 3X Shares,leveraged_info,US,Financial Select Sector 3x daily,True,88.0,9.54,286.1,5.0,6.67,380.04966869453455,153.30999755859375,0,62731462.255859375,18.0,True
+SQQQ,ProShares UltraPro Short QQQ,leveraged_info,US,Nasdaq-100 -3x daily,True,94.0,7.03,210.9,5.0,4.92,310.84379781092304,46.310001373291016,0,1840037649.7329712,16.8,True
+TMF,Direxion Daily 20+ Year Treasury Bull 3X Shares,leveraged_info,US,ICE US Treasury 20+ Year 3x daily,True,90.0,4.76,142.7,5.0,3.33,238.63528216846487,29.399999618530273,0,146002148.73428345,17.6,True
+TNA,Direxion Daily Small Cap Bull 3X Shares,leveraged_info,US,Russell 2000 3x daily,True,105.0,0.38,11.4,5.0,0.27,122.36621792019122,47.435001373291016,0,273283292.49458313,18.0,True
