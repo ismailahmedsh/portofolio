@@ -1,6 +1,6 @@
 # Weekly run v3
 
-Engine v3 on pillars v3 (PILLARS_V3.md), the owner's mix (config/portfolio_v2.yaml) and DECISION_RULES_V3.md. Runs every Saturday.
+Engine v3 on pillars v3 (PILLARS_V3.md), the owner's mix (config/portfolio_v2.yaml) and DECISION_RULES_V3.md. Runs every Monday morning (Dubai), using the Interactive Brokers (IBKR) connector read-only for holdings and line checks. Never places orders.
 
 ## Steps
 1. **Data (a few minutes).**
